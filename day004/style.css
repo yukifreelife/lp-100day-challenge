@@ -8,10 +8,9 @@
   --muted: #475569;    /* slate-600 */
   --border: #e2e8f0;   /* slate-200 */
 
-  /* accent (coffee-like but modern) */
-  --primary: #1d4ed8;      /* blue-700 */
-  --primary-dark: #1e40af; /* blue-800 */
-  --primary-soft: #eff6ff; /* blue-50 */
+  --primary: #0f766e;      /* teal-700 */
+  --primary-dark: #115e59; /* teal-800 */
+  --primary-soft: #ecfeff; /* cyan-50 */
 
   --shadow: 0 12px 28px rgba(15, 23, 42, 0.10);
 
@@ -19,10 +18,10 @@
   --radius-sm: 10px;
   --container: 1080px;
 
-  /* Coffee icons (data URI SVG) */
-  --icon-cup: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M18 8h1a3 3 0 0 1 0 6h-1a6 6 0 0 1-6 5H8a6 6 0 0 1-6-6V6h16v2zm-2 0H4v5a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V8zm2 2v4h1a1 1 0 0 0 0-2h-1z'/%3E%3C/svg%3E");
-  --icon-timer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M9 2h6v2H9V2zm3 6a8 8 0 1 1-8 8 8 8 0 0 1 8-8zm0 2a6 6 0 1 0 6 6 6 6 0 0 0-6-6zm1 1v5l3 2-.9 1.5L11 17V11z'/%3E%3C/svg%3E");
-  --icon-pin: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7zm0 9a2 2 0 1 0-2-2 2 2 0 0 0 2 2z'/%3E%3C/svg%3E");
+  /* Kakei icons (data URI SVG) */
+  --icon-calc: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v4h10V4H7zm2 8h2v2H9v-2zm4 0h2v2h-2v-2zM9 16h2v2H9v-2zm4 0h2v2h-2v-2z'/%3E%3C/svg%3E");
+  --icon-card: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2H3V6zm0 4h20v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8zm4 6h6v2H7v-2z'/%3E%3C/svg%3E");
+  --icon-chart: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 19h16v2H2V3h2v16zm4-2H6v-6h2v6zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm4 0h-2V5h2v12z'/%3E%3C/svg%3E");
 }
 
 
@@ -309,11 +308,9 @@ ul {
 }
 
 /* 3つのカードに別アイコンを割り当て */
-.card:nth-child(1) .card-icon { --icon: var(--icon-cup); }
-.card:nth-child(2) .card-icon { --icon: var(--icon-timer); }
-.card:nth-child(3) .card-icon { --icon: var(--icon-pin); }
-
-
+.card:nth-child(1) .card-icon { --icon: var(--icon-calc); }
+.card:nth-child(2) .card-icon { --icon: var(--icon-card); }
+.card:nth-child(3) .card-icon { --icon: var(--icon-chart); }
 
 
 .card-title {
@@ -546,23 +543,6 @@ ul {
   box-shadow: 0 8px 22px rgba(31, 26, 20, 0.12);
 }
 
-/* ドロワー本体 */
-.nav--mobile {
-  position: absolute;
-  left: 16px;
-  right: 16px;
-  top: calc(100% + 10px);
-
-  display: grid;
-  gap: 8px;
-  padding: 12px;
-
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  background: rgba(255, 250, 242, 0.96);
-  box-shadow: 0 12px 30px rgba(31, 26, 20, 0.14);
-}
-
 .nav-link--cta {
   margin-top: 4px;
   border: 1px solid rgba(122, 62, 44, 0.25);
@@ -600,13 +580,9 @@ ul {
   box-shadow: 0 18px 50px rgba(15, 23, 42, 0.10);
 }
 
-.btn-primary {
-  box-shadow: 0 14px 28px rgba(29, 78, 216, 0.22);
-}
+.btn-primary { box-shadow: 0 14px 28px rgba(15, 118, 110, 0.22); }
 .btn-primary:hover,
-.btn-primary:focus-visible {
-  box-shadow: 0 18px 36px rgba(29, 78, 216, 0.26);
-}
+.btn-primary:focus-visible { box-shadow: 0 18px 36px rgba(15, 118, 110, 0.26); }
 
 .hero-copy {
   backdrop-filter: blur(6px);
@@ -738,51 +714,40 @@ ul {
   .logo {
     white-space: nowrap;
   }
+
+  .nav-toggle {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    display: grid;
+    place-items: center;
+  }
+
+  .nav-toggle::before {
+    content: "≡";
+    font-size: 20px;
+    line-height: 1;
+  }
+
   .nav--mobile {
-    position: absolute;
-    right: 0;
-    top: calc(100% + 10px);
+    position: fixed;
+    top: 72px;
     width: min(92vw, 420px);
     padding: 12px;
     border: 1px solid var(--border);
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.98);
     box-shadow: 0 18px 48px rgba(15, 23, 42, 0.12);
-    z-index: 20;
-  }  
-
-.nav-toggle {
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  display: grid;
-  place-items: center;
-}
-
-.nav-toggle::before {
-  content: "≡";
-  font-size: 20px;
-  line-height: 1;
-}
-
-.nav--mobile {
-  position: absolute;
-  left: 12px;
-  right: 12px;
-  top: calc(100% + 10px);
-
-  width: auto;              /* ←right/leftが効くように */
-  max-width: none;          /* ←制限を外す */
-  box-sizing: border-box;
-
-  padding: 12px;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.12);
-  z-index: 20;
+    z-index: 9999;
+    left: auto;
+    right: 12px;
+    box-sizing: border-box;
+    max-height: calc(100dvh - 92px);
+    overflow: auto;
   }
-  
-.nav--mobile .nav-link { 
-  white-space: nowrap; }
+
+  .nav--mobile .nav-link { 
+    white-space: normal;
+    word-break: break-word;
+  }
 }
