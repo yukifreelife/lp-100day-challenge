@@ -152,7 +152,7 @@ ul {
 .btn-primary:focus-visible {
   background: var(--primary-dark);
   transform: translateY(-1px);
-  box-shadow: 0 10px 20px rgba(31, 26, 20, 0.22);
+  box-shadow: 0 10px 22px rgba(15, 118, 110, 0.22);
 }
 
 .btn-ghost {
@@ -164,8 +164,8 @@ ul {
 .btn-ghost:hover,
 .btn-ghost:focus-visible {
   background: var(--primary-soft);
-    transform: translateY(-1px);
-  box-shadow: 0 10px 20px rgba(31, 26, 20, 0.22);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(15, 118, 110, 0.22);
 }
 
 .btn-block {
