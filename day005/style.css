@@ -138,7 +138,7 @@ ul {
 .btn:hover,
 .btn:focus-visible {
   transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(235, 199, 37, 0.2);
+  box-shadow: 0 10px 22px rgba(219, 39, 119, 0.22);
 }
 
 .btn-primary {
@@ -235,9 +235,6 @@ ul {
   aspect-ratio: 4 / 3;
   min-height: 280px;
 
-  background:
-    linear-gradient(0deg, rgba(31, 26, 20, 0.18), rgba(31, 26, 20, 0.10)),
-    url("./images/hero-media.png") center / cover no-repeat;
 }
 
 .hero-media .media-box::before {
