@@ -26,6 +26,15 @@
 - 
 - 
 
+2026/02/01　LP作成大枠マニュアル
+１ ChatGPTで
+day005構造に合わせたJSONコピー生成
+
+Copilotで
+既存デモLPの文言を丸ごと差し替え
+
+Hero画像だけAdobe Expressで1枚
+CTA・Offerを人力で最終調整
 
 ##毎日の詳細マニュアル
 1.昨日のdayXXXフォルダの、html,css,READMEをチャッピーに共有して、致命的な欠陥がないかを確認する
