@@ -799,4 +799,76 @@ ul {
     white-space: normal;
     word-break: break-word;
   }
+
+  /* =========================================================
+   Day008 (Theme A: Readability) — append only
+   - HTMLは変更しない
+   - Day007の設計（.container中心）を尊重
+   - 目的：可読性（行間/字間/行長）+ 見出し階層 + 余白リズム
+   ========================================================= */
+
+:root{
+  /* 文字サイズと行間（読み疲れ防止） */
+  --d8-body-size: clamp(15px, 1.55vw, 16.5px);
+  --d8-body-lh: 1.78;
+
+  /* “文章の行長”はpxではなくchで縛ると崩れにくい */
+  --d8-text-max: 68ch;
+
+  /* セクション余白（PCだけ少し整える。SPは元の64px尊重） */
+  --d8-section-y: clamp(72px, 6vw, 92px);
+}
+
+/* 1) ベース可読性 */
+body{
+  font-size: var(--d8-body-size);
+  line-height: var(--d8-body-lh);
+  letter-spacing: 0.02em;
+  text-rendering: optimizeLegibility;
+}
+
+/* 2) 段落とリストの“読みのリズム” */
+p{
+  margin: 0 0 14px;
+}
+
+ul, ol{
+  margin: 0 0 14px;
+}
+
+/* 3) 見出しの締まり（階層がキレイに見える） */
+.section-title{
+  line-height: 1.22;
+  letter-spacing: 0.01em;
+}
+
+.hero-title{
+  line-height: 1.16;
+  letter-spacing: -0.01em;
+}
+
+/* 4) 長文になりがちな箇所だけ、行長を制限して読みやすく */
+.section-lead,
+.hero-lead,
+.card-text,
+.flow-text,
+.faq-a,
+.cta-text,
+.quote-text{
+  max-width: var(--d8-text-max);
+  text-wrap: pretty; /* 対応ブラウザのみ効く。未対応でもOK */
+}
+
+/* 5) 余白リズム：PCだけセクション上下を微調整 */
+@media (min-width: 721px){
+  .section{
+    padding: var(--d8-section-y) 0;
+  }
+}
+
+/* 6) CTA内の注記が薄すぎる場合だけ救済（今の設計だと読みづらくなり得る） */
+.cta-notes{
+  color: var(--muted);
+}
+
 }
