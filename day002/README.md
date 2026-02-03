@@ -1,4 +1,21 @@
 # Day002 - COFFEE STAND　LP
+---
+lp_name: "COFFEE STAND"
+audience: "B2C"
+objective: "クーポン取得"
+industry: "飲食（カフェ）"
+offer: "初回100円OFFクーポン"
+kpi: "クーポン取得（CTAクリック/送信）"
+template_base: "legacy"
+notes: ""
+tags: ["b2c","cafe","coupon","lead"]
+---
+
+lp:audience=B2C
+lp:objective=クーポン取得
+lp:industry=飲食_カフェ
+lp:template=legacy
+
 
 ## 今日の成果
 - day001を骨子としてデザインを変更

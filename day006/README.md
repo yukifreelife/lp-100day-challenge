@@ -1,5 +1,22 @@
 # Day006 - BtoB SaaS（デモ予約LP） ReportFlow（デモ）
 
+---
+lp_name: "SLEEP BALANCE（デモ）"
+audience: "B2C"
+objective: "購入（デモ）"
+industry: "D2C（サプリ/睡眠）"
+offer: "今すぐ購入（デモ）"
+kpi: "購入クリック（デモ）"
+template_base: "day005"
+notes: "デモ（実購入なし）"
+tags: ["b2c","d2c","supplement","purchase","demo"]
+---
+
+lp:audience=B2C
+lp:objective=購入_デモ
+lp:industry=D2C_サプリ
+lp:template=day005
+
 ## 今日の成果
 - day005（物販LP）をコピーして、BtoB SaaS「レポート自動化ツール（デモ）」のLPに差し替え完了
 - CTA文言を全箇所で統一（PC/SP・ヘッダー/ヒーロー/Offer/CTA）

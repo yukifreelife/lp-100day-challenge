@@ -1,5 +1,22 @@
 # Day008 - SLEEP BALANCE（睡眠サポートサプリLP｜デモ）
 
+---
+lp_name: "LUNA WEB STUDIO（デモ）"
+audience: "B2E"
+objective: "採用応募（デモ）"
+industry: "Web制作（採用/協業募集）"
+offer: "カジュアル面談応募（デモ）"
+kpi: "応募送信（デモ）"
+template_base: "day006"
+notes: "デモ（実応募なし）"
+tags: ["b2e","recruiting","web","apply","demo"]
+---
+
+lp:audience=B2E
+lp:objective=採用応募_デモ
+lp:industry=Web制作_採用
+lp:template=day006
+
 ## 今日の成果
 - **Theme A（可読性）**として、Day007のCSSを土台に「読みやすさ（行間・字間・行長・余白リズム）」をCSS差分で改善
 - offerセクションは削除せず、LP全体の内容（面談/応募導線）に合わせて**offer内容を差し替え**し、整合性を向上

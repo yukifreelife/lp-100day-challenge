@@ -1,5 +1,22 @@
 # Day005 - Lumi Skin(物販/D2C（購入CV）)
 
+---
+lp_name: "Lumi Skin"
+audience: "B2C"
+objective: "購入"
+industry: "D2C（スキンケア/美容）"
+offer: "初回50%OFF"
+kpi: "購入クリック / 購入完了（想定）"
+template_base: "day005"
+notes: ""
+tags: ["b2c","d2c","beauty","purchase","discount"]
+---
+
+lp:audience=B2C
+lp:objective=購入
+lp:industry=D2C_美容
+lp:template=day005
+
 ## 今日の成果
 - ECサイト向けの内容にHTMLのパーツ（section　offer）を追加
 - ECサイト用のサイトテンプレートの作成

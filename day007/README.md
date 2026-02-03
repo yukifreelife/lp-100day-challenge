@@ -1,5 +1,22 @@
 # Day007 - SLEEP BALANCE（睡眠サポートサプリLP｜デモ）
 
+---
+lp_name: "ReportFlow（デモ）"
+audience: "B2B"
+objective: "デモ予約（デモ）"
+industry: "SaaS（業務効率化）"
+offer: "無料デモ予約（デモ）"
+kpi: "デモ予約送信（デモ）"
+template_base: "day006"
+notes: "デモ（実予約なし）"
+tags: ["b2b","saas","demo","lead","productivity"]
+---
+
+lp:audience=B2B
+lp:objective=デモ予約_デモ
+lp:industry=SaaS_業務効率化
+lp:template=day006
+
 ## 今日の成果
 - day005構造をベースに、睡眠サポート商材向けLPへ差し替え
 - Copilotを用いて、HTML構造を維持したまま文言を一括置換

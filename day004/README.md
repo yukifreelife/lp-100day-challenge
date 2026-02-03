@@ -1,4 +1,22 @@
 # Day004 - Kakei Lab
+
+---
+lp_name: "家計相談"
+audience: "B2C"
+objective: "無料面談予約"
+industry: "コンサル（家計/ライフプラン）"
+offer: "無料面談"
+kpi: "面談予約"
+template_base: "legacy"
+notes: ""
+tags: ["b2c","consulting","finance","reservation"]
+---
+
+lp:audience=B2C
+lp:objective=無料面談予約
+lp:industry=コンサル_家計
+lp:template=legacy
+
 ## 今日の成果
 - nav（drower）の表示崩れが修正できた
 - positionプロパティのrelative、fixed、absoluteの使い分けがわかった

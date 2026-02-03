@@ -1,4 +1,21 @@
 # Day003 - ONLINE ENGLISH
+---
+lp_name: "ONLINE ENGLISH"
+audience: "B2C"
+objective: "無料体験申込"
+industry: "教育（オンライン英会話）"
+offer: "無料体験"
+kpi: "無料体験申込"
+template_base: "legacy"
+notes: ""
+tags: ["b2c","education","trial","online"]
+---
+
+lp:audience=B2C
+lp:objective=無料体験申込
+lp:industry=教育_英会話
+lp:template=legacy
+
 ## 今日の成果
 - day002を骨子としてデザインを変更
 - ハンバーガーメニューの実装
