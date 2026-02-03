@@ -303,9 +303,9 @@ ul {
   mask-size: 24px 24px;
 }
 
-.card:nth-child(1) .card-icon { --icon: var(--icon-drop); }      /* うるおい */
-.card:nth-child(2) .card-icon { --icon: var(--icon-sparkle); }   /* トーン */
-.card:nth-child(3) .card-icon { --icon: var(--icon-check); }     /* 習慣 */
+.card:nth-child(1) .card-icon { --icon: var(--icon-drop); }     
+.card:nth-child(2) .card-icon { --icon: var(--icon-sparkle); }  
+.card:nth-child(3) .card-icon { --icon: var(--icon-check); } 
 
 .card-title {
   margin: 0 0 8px;
@@ -456,12 +456,9 @@ ul {
 }
 
 .form-input:focus {
+  box-shadow: 0 0 0 4px rgba(43, 58, 103, 0.10);
   outline: none;
-  border-color: #cbd5e1; /* slate-300 */
-  box-shadow: 0 0 0 4px rgba(15, 23, 42, 0.08);
 }
-
-
 
 .form-note {
   margin: 0;
@@ -871,4 +868,62 @@ ul, ol{
   color: var(--muted);
 }
 
+/* Day009 — append only */
+
+/* 1) Sticky header adjustment for anchor links */
+section[id] {
+  scroll-margin-top: 92px;
+}
+
+/* 2) FAQ readability improvements */
+.faq-item {
+  line-height: 1.75;
+}
+.faq-q {
+  letter-spacing: 0.01em;
+}
+
+/* 3) Offer list visual improvement */
+.offer-list {
+  list-style: none;
+  padding-left: 0;
+}
+.offer-list li {
+  position: relative;
+  padding-left: 28px;
+}
+.offer-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 18px;
+  height: 18px;
+
+  background: var(--primary);
+
+  -webkit-mask-image: var(--icon-check);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 18px 18px;
+
+  mask-image: var(--icon-check);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 18px 18px;
+}
+
+
+/* 4) Form input focus enhancement */
+.form-input:focus {
+  box-shadow: 0 0 0 4px rgba(43, 58, 103, 0.10);
+  outline: none;
+}
+
+/* 5) Disable transitions for reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
 }
