@@ -8,9 +8,9 @@
   --muted: #475569;    /* slate-600 */
   --border: #e5e7eb;   /* slate-200 */
 
-  --primary: #2b3a67;        /* pink-600 */
-  --primary-dark: #1f2a4d;   /* pink-800 */
-  --primary-soft: #e9edff;   /* rose-50 */
+  --primary: #0ea5a5;
+  --primary-dark: #0f766e;
+  --primary-soft: #ccfbf1;
 
   --shadow: 0 14px 34px rgba(17, 24, 39, 0.10);
 
