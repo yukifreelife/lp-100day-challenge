@@ -1027,3 +1027,34 @@ html {
     text-align: center;
     margin-top: 16px;
 }
+
+.header-social {
+  width: 44px;
+  height: 44px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--muted);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.header-social:hover,
+.header-social:focus-visible {
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.12);
+}
+
+.header-social:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(43, 58, 103, 0.1), 0 12px 26px rgba(15, 23, 42, 0.12);
+}
+
+.ig-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
