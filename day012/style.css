@@ -1170,3 +1170,88 @@ html {
   background: linear-gradient(180deg, rgba(11,18,32,0.92), rgba(11,18,32,0.70)); /* Same as Hero for consistency */
   color: var(--light);
 }
+
+/* ===== Day012 Hotfix: Hero title readability (append only) ===== */
+.hero-copy{
+  background: rgba(18,26,38,0.88) !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: 0 22px 60px rgba(0,0,0,0.45) !important;
+  backdrop-filter: blur(8px);
+}
+
+/* h1/lead colors (contrast) */
+.hero-title{ color: var(--text) !important; }
+.hero-lead{ color: var(--muted) !important; }
+
+/* badge / notes on dark card */
+.hero-copy .badge{
+  background: rgba(200,162,74,0.14) !important;
+  border-color: rgba(241,245,249,0.14) !important;
+  color: var(--primary) !important;
+}
+.hero-notes{
+  color: var(--muted) !important;
+}
+.hero-notes li{
+  background: rgba(12,17,26,0.55);
+  border: 1px solid rgba(241,245,249,0.12);
+  border-radius: 999px;
+  padding: 8px 10px;
+  list-style: none;
+}
+
+/* hero-facts is currently white-ish: unify to dark surface */
+.hero-facts{
+  background: rgba(18,26,38,0.92) !important;
+  border: 1px solid var(--border) !important;
+}
+.hero-facts-title{ color: var(--text) !important; }
+.hero-facts-list li{
+  background: rgba(12,17,26,0.55) !important;
+  border: 1px solid rgba(241,245,249,0.12) !important;
+}
+.hero-facts-list li span{ color: var(--muted) !important; }
+.hero-facts-list li strong{ color: var(--primary) !important; }
+
+/* ===== Day012: Header Instagram icon polish (append only) ===== */
+.header-social{
+  /* force circle */
+  inline-size: 44px !important;
+  block-size: 44px !important;
+  aspect-ratio: 1 / 1;
+  display: inline-grid;
+  place-items: center;
+
+  border-radius: 999px;
+  background: rgba(18,26,38,0.88);
+  border: 1px solid var(--border);
+  color: var(--muted);
+
+  /* avoid stretching caused by line-height/padding */
+  padding: 0 !important;
+  line-height: 1;
+}
+
+.header-social:hover,
+.header-social:focus-visible{
+  background: rgba(200,162,74,0.14);
+  border-color: rgba(241,245,249,0.18);
+  color: var(--primary);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.35);
+}
+
+.header-social:focus-visible{
+  outline: none;
+  box-shadow:
+    0 0 0 4px rgba(200,162,74,0.20),
+    0 14px 34px rgba(0,0,0,0.35);
+}
+
+/* make svg inherit the button color */
+.header-social .ig-icon{
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  display: block; /* prevents extra inline spacing */
+}
