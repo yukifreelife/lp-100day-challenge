@@ -1,18 +1,19 @@
 :root {
   color-scheme: light;
 
-  /* Minimal modern */
-  --bg: #f7f8fc;
-  --surface: #ffffff;
-  --text: #0b1220;     /* slate-900 */
-  --muted: #475569;    /* slate-600 */
-  --border: #e5e7eb;   /* slate-200 */
+  /* Bar mood palette */
+  --bg: #0c111a;          /* deep navy background */
+  --surface: #121a26;     /* cards/surfaces */
+  --text: #f1f5f9;        /* near-white text */
+  --muted: #a7b0bd;       /* muted text */
+  --border: rgba(241,245,249,0.14);
 
-  --primary: #0ea5a5;
-  --primary-dark: #0f766e;
-  --primary-soft: #ccfbf1;
+  /* Accent (brass/amber) */
+  --primary: #c8a24a;      /* amber */
+  --primary-dark: #a8832f; /* darker amber */
+  --primary-soft: rgba(200,162,74,0.14);
 
-  --shadow: 0 14px 34px rgba(17, 24, 39, 0.10);
+  --shadow: 0 18px 54px rgba(0,0,0,0.42);
 
   --radius: 18px;
   --radius-sm: 14px;
@@ -21,6 +22,77 @@
   --icon-drop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 2s6 7 6 12a6 6 0 0 1-12 0c0-5 6-12 6-12zm0 18a4 4 0 0 0 4-4c0-3-4-8.2-4-8.2S8 13 8 16a4 4 0 0 0 4 4z'/%3E%3C/svg%3E");
   --icon-sparkle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 2l1.2 4.3L17.5 8l-4.3 1.2L12 13.5l-1.2-4.3L6.5 8l4.3-1.2L12 2zm7 9l.8 2.9 2.2.6-2.2.6L19 18l-.6-2.9-2.2-.6 2.2-.6L19 11zm-14 1l.8 2.9 2.2.6-2.2.6L5 19l-.6-2.9-2.2-.6 2.2-.6L5 12z'/%3E%3C/svg%3E");
   --icon-check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M9 16.2l-3.5-3.5L4 14.2l5 5 12-12-1.5-1.5L9 16.2z'/%3E%3C/svg%3E");
+}
+
+/* ===== Unified background for sections below hero (append only) ===== */
+:root{
+  --page-bg: #0c111a;         /* deep navy */
+  --section-bg: #0c111a;      /* unified section background */
+  --surface-bg: rgba(18,26,38,0.92);
+  --surface-border: rgba(241,245,249,0.14);
+}
+
+/* Keep hero untouched */
+.hero{ /* no override here */ }
+
+/* Section backgrounds: explicitly target each section below hero */
+.section.menu,
+.section.flow,
+.section.features,
+.section.proof,
+.section.faq,
+.section.offer,
+.section.cta{
+  background: var(--section-bg) !important;
+}
+
+/* Optional: subtle separators for readability */
+.section.menu,
+.section.flow,
+.section.features,
+.section.proof,
+.section.faq,
+.section.offer,
+.section.cta{
+  border-top: 1px solid var(--surface-border);
+}
+.section.menu{ border-top: none; } /* first section after hero */
+
+/* Cards/blocks: unify to dark surface (avoid pure white) */
+.menu-card,
+.card,
+.quote,
+.faq-item,
+.metric,
+.offer-box,
+.offer-cta,
+.cta-form,
+.hero-facts{
+  background: var(--surface-bg) !important;
+  border: 1px solid var(--surface-border) !important;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.28);
+}
+
+/* Text colors on dark surfaces */
+.section-title{ color: #f1f5f9; }
+.section-lead,
+.card-text,
+.flow-text,
+.faq-a,
+.quote-meta,
+.form-note,
+.menu-note{
+  color: rgba(167,176,189,0.95);
+}
+
+/* Inputs on dark background */
+.form-input{
+  background: rgba(12,17,26,0.6);
+  border: 1px solid var(--surface-border);
+  color: #f1f5f9;
+}
+.form-input::placeholder{
+  color: rgba(167,176,189,0.7);
 }
 
 *,
@@ -79,13 +151,17 @@ ul {
   top: 0;
   z-index: 10;
 
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(10px);
-
+  background: rgba(12,17,26,0.78);
   border-bottom: 1px solid var(--border);
   box-shadow: none;
 }
 
+
+/* Header adjustments for dark background */
+.site-header {
+  background: rgba(12, 17, 26, 0.9);
+  border-bottom: 1px solid var(--border);
+}
 
 .header-inner {
   display: flex;
@@ -116,7 +192,7 @@ ul {
 
 .nav-link:hover,
 .nav-link:focus-visible {
-  color: var(--primary-dark);
+  color: var(--text);
   background: var(--primary-soft);
 }
 
@@ -143,24 +219,23 @@ ul {
 
 .btn-primary {
   background: var(--primary);
-  color: #fff;
+  color: #0c111a;
 }
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
   background: var(--primary-dark);
-  box-shadow: 0 14px 30px rgba(43, 58, 103, 0.28);
 }
 
 .btn-ghost {
+  background: transparent;
   border-color: var(--border);
-  color: var(--primary-dark);
-  background: #fff;
+  color: var(--text);
 }
 
 .btn-ghost:hover,
 .btn-ghost:focus-visible {
-  background: var(--primary-soft);
+  background: rgba(241,245,249,0.06);
   transform: translateY(-1px);
   box-shadow: 0 10px 22px rgba(15, 118, 110, 0.22);
 }
@@ -278,11 +353,11 @@ ul {
 }
 
 .card {
-  background: var(--surface);
-  border: 1px solid rgba(229, 231, 235, 0.9);
+  background: rgba(18,26,38,0.92);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
-  box-shadow: 0 10px 26px rgba(17, 24, 39, 0.06);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.28);
 }
 
 .card-icon {
@@ -340,8 +415,8 @@ ul {
   margin: 0;
   padding: 24px;
   border-radius: var(--radius);
-  background: var(--surface);
-  border: 1px solid rgba(229, 231, 235, 0.9);
+  background: rgba(18,26,38,0.92);
+  border: 1px solid var(--border);
   box-shadow: 0 10px 26px rgba(17, 24, 39, 0.06);
 }
 
@@ -393,7 +468,7 @@ ul {
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
   padding: 16px 20px;
-  background: #fff;
+  background: rgba(18,26,38,0.92);
   box-shadow: 0 10px 26px rgba(17, 24, 39, 0.06);
 }
 
@@ -462,8 +537,13 @@ ul {
   border-radius: 10px;
   border: 1px solid var(--border);
   font-size: 1rem;
-  background: #fff;
+  background: rgba(12,17,26,0.6);
+  color: var(--text);
   box-shadow: none;
+}
+
+.form-input::placeholder {
+  color: rgba(167,176,189,0.7);
 }
 
 .form-input:focus {
@@ -562,7 +642,7 @@ ul {
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.92), rgba(255,255,255,0.23)),
+
     url("./images/hero-media.png") center / cover no-repeat;
 }
 
@@ -1057,4 +1137,36 @@ html {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+/* Background styles for sections */
+
+/* Menu Section */
+.section.menu {
+  background: #1a1a1a; /* Dark tone for readability */
+  color: var(--light);
+}
+
+/* Features Section */
+.section.features {
+  background: #f9f9f9; /* Light tone with slight color */
+  color: var(--text);
+}
+
+/* Proof Section */
+.section.proof {
+  background: linear-gradient(180deg, rgba(11,18,32,0.92), rgba(11,18,32,0.70)); /* Night tone */
+  color: var(--light);
+}
+
+/* Offer Section */
+.section.offer {
+  background: var(--primary-soft); /* Bright tone for comfort */
+  color: var(--dark);
+}
+
+/* CTA Section */
+.section.cta {
+  background: linear-gradient(180deg, rgba(11,18,32,0.92), rgba(11,18,32,0.70)); /* Same as Hero for consistency */
+  color: var(--light);
 }
