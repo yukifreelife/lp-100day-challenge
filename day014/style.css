@@ -44,6 +44,12 @@ img {
   border-radius: var(--radius);
 }
 
+.hero-visual img,
+.menu-card img,
+.step-img {
+  object-fit: cover;
+}
+
 a {
   color: inherit;
 }
@@ -388,6 +394,15 @@ h2 {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: var(--space-4);
+}
+
+.step-img {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 3 / 2;
+  margin: 0 0 var(--space-2);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
 }
 
 .step-head {
