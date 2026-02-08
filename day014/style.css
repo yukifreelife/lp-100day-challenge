@@ -296,9 +296,24 @@ h2 {
 .trust-badges li {
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 0.35rem 0.8rem;
   font-size: 0.9rem;
   background: #fff;
+}
+
+.badge-link {
+  display: block;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.badge-link:hover,
+.badge-link:focus-visible {
+  background: var(--bg-alt);
+  box-shadow: 0 4px 10px rgba(47, 43, 40, 0.12);
+  transform: translateY(-1px);
 }
 
 .offer-badge {
