@@ -1,4 +1,4 @@
-:root {
+.lp {
   color-scheme: light;
   --bg: #f7f8f5;
   --surface: #ffffff;
@@ -9,58 +9,84 @@
   --accent-dark: #486255;
   --accent-soft: #eef3f0;
   --shadow: 0 12px 24px rgba(46, 60, 52, 0.08);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
   font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", Meiryo, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
   font-size: 16px;
+  text-size-adjust: 100%;
 }
 
-a {
+.lp,
+.lp * {
+  box-sizing: border-box;
+}
+
+.lp * {
+  margin: 0;
+  padding: 0;
+}
+
+.lp a {
   color: inherit;
   text-decoration: none;
 }
 
-a:focus-visible,
-button:focus-visible {
+.lp button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+.lp a:focus-visible,
+.lp button:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
 }
 
-img {
+.lp img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-.container {
+.lp ul,
+.lp ol {
+  list-style: none;
+}
+
+.lp [id] {
+  scroll-margin-top: 90px;
+}
+
+.lp .container {
   width: min(960px, 100% - 36px);
   margin: 0 auto;
 }
 
-.section {
+.lp .section {
   padding: 56px 0;
 }
 
-.section-muted {
+.lp .section-muted {
   background: var(--accent-soft);
 }
 
-.section-lead {
+.lp .section-lead {
   margin-top: 12px;
   color: var(--muted);
 }
 
-.site-header {
+.lp .section-sub {
+  margin-top: 18px;
+  font-size: 14px;
+  color: var(--accent-dark);
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.lp .site-header {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -69,7 +95,7 @@ img {
   backdrop-filter: blur(8px);
 }
 
-.site-header .container {
+.lp .site-header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,14 +103,14 @@ img {
   padding: 16px 0;
 }
 
-.brand {
+.lp .brand {
   display: flex;
   align-items: center;
   gap: 10px;
   font-weight: 600;
 }
 
-.brand-mark {
+.lp .brand-mark {
   display: grid;
   place-items: center;
   width: 32px;
@@ -95,16 +121,16 @@ img {
   font-size: 18px;
 }
 
-.hero {
+.lp .hero {
   background: linear-gradient(180deg, #ffffff 0%, #f0f4f1 100%);
 }
 
-.hero-grid {
+.lp .hero-grid {
   display: grid;
   gap: 32px;
 }
 
-.eyebrow {
+.lp .eyebrow {
   font-size: 14px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -112,24 +138,24 @@ img {
   margin-bottom: 12px;
 }
 
-h1 {
+.lp h1 {
   font-size: clamp(28px, 5vw, 40px);
   line-height: 1.3;
 }
 
-.lead {
+.lp .lead {
   margin-top: 18px;
   color: var(--muted);
 }
 
-.cta-row {
+.lp .cta-row {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 24px;
 }
 
-.btn {
+.lp .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -138,55 +164,62 @@ h1 {
   border-radius: 999px;
   border: 1px solid transparent;
   font-weight: 600;
+  cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
-.btn-primary {
+.lp .btn-primary {
   background: var(--accent);
   color: #ffffff;
   box-shadow: 0 8px 18px rgba(91, 124, 106, 0.25);
 }
 
-.btn-primary:hover {
+.lp .btn-primary:hover {
   background: var(--accent-dark);
 }
 
-.btn-outline {
+.lp .btn-outline {
   background: #ffffff;
   border-color: var(--accent);
   color: var(--accent-dark);
 }
 
-.btn-outline:hover {
+.lp .btn-outline:hover {
   background: var(--accent-soft);
 }
 
-.btn-ghost {
+.lp .btn-ghost {
   border-color: var(--line);
   background: #ffffff;
   color: var(--muted);
 }
 
-.btn-ghost:hover {
+.lp .btn-ghost:hover {
   background: var(--accent-soft);
 }
 
-.btn:active {
+.lp .btn:active {
   transform: translateY(1px);
 }
 
-.trust-note {
+.lp .trust-note {
   margin-top: 16px;
   font-size: 14px;
   color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--accent-soft);
 }
 
-.hero-visual {
+.lp .hero-visual {
   display: grid;
   gap: 16px;
 }
 
-.image-placeholder {
+.lp .image-placeholder {
   border-radius: 24px;
   background: #ffffff;
   border: 1px dashed var(--line);
@@ -196,8 +229,7 @@ h1 {
   color: var(--muted);
 }
 
-.hero-points {
-  list-style: none;
+.lp .hero-points {
   display: grid;
   gap: 10px;
   background: #ffffff;
@@ -206,13 +238,13 @@ h1 {
   border: 1px solid var(--line);
 }
 
-.hero-points li {
+.lp .hero-points li {
   padding-left: 20px;
   position: relative;
   color: var(--muted);
 }
 
-.hero-points li::before {
+.lp .hero-points li::before {
   content: "";
   width: 8px;
   height: 8px;
@@ -223,13 +255,13 @@ h1 {
   top: 0.5em;
 }
 
-.card-grid {
+.lp .card-grid {
   display: grid;
   gap: 16px;
   margin-top: 24px;
 }
 
-.card {
+.lp .card {
   background: var(--surface);
   border-radius: 18px;
   padding: 20px;
@@ -237,19 +269,18 @@ h1 {
   box-shadow: var(--shadow);
 }
 
-.card h3 {
+.lp .card h3 {
   font-size: 18px;
   margin-bottom: 8px;
 }
 
-.list {
-  list-style: none;
+.lp .list {
   display: grid;
   gap: 12px;
   margin-top: 20px;
 }
 
-.list li {
+.lp .list li {
   background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 16px;
@@ -257,7 +288,7 @@ h1 {
   position: relative;
 }
 
-.list li::before {
+.lp .list li::before {
   content: "";
   width: 10px;
   height: 10px;
@@ -268,11 +299,17 @@ h1 {
   top: 18px;
 }
 
-.list-compact li {
+.lp .list-compact li {
   padding-left: 32px;
 }
 
-.sub-cta {
+.lp .list-soft li {
+  background: var(--accent-soft);
+  border-color: #dfe6e1;
+  color: var(--muted);
+}
+
+.lp .sub-cta {
   margin-top: 24px;
   display: flex;
   flex-wrap: wrap;
@@ -285,20 +322,20 @@ h1 {
   border: 1px solid var(--line);
 }
 
-.steps {
+.lp .steps {
   display: grid;
   gap: 16px;
   margin-top: 24px;
 }
 
-.step {
+.lp .step {
   background: #ffffff;
   border-radius: 16px;
   border: 1px solid var(--line);
   padding: 18px;
 }
 
-.step-number {
+.lp .step-number {
   display: inline-block;
   font-size: 14px;
   font-weight: 700;
@@ -307,7 +344,7 @@ h1 {
   margin-bottom: 8px;
 }
 
-.cta-panel {
+.lp .cta-panel {
   margin-top: 28px;
   padding: 20px;
   border-radius: 20px;
@@ -320,39 +357,72 @@ h1 {
   gap: 16px;
 }
 
-.faq {
+.lp .faq {
   margin-top: 24px;
   display: grid;
   gap: 12px;
 }
 
-.faq-item {
+.lp .faq-item {
   background: #ffffff;
   border-radius: 14px;
   border: 1px solid var(--line);
   padding: 16px;
 }
 
-.cta-section {
+.lp .faq-item h3 {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.lp .faq-item p {
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.lp .cta-section {
   background: linear-gradient(180deg, #f0f4f1 0%, #ffffff 100%);
 }
 
-.cta-box {
+.lp .cta-box {
   background: #ffffff;
   border-radius: 24px;
   padding: 28px;
   border: 1px solid var(--line);
   display: grid;
-  gap: 16px;
+  gap: 20px;
   box-shadow: var(--shadow);
 }
 
-.site-footer {
+.lp .cta-intro {
+  display: grid;
+  gap: 12px;
+}
+
+.lp .cta-split {
+  display: grid;
+  gap: 16px;
+}
+
+.lp .cta-card {
+  background: var(--surface);
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  padding: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.lp .cta-card .btn {
+  justify-self: flex-start;
+}
+
+.lp .site-footer {
   padding: 28px 0 40px;
   color: var(--muted);
 }
 
-.site-footer .container {
+.lp .site-footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -360,55 +430,58 @@ h1 {
   flex-wrap: wrap;
 }
 
-.text-link {
+.lp .text-link {
   font-size: 14px;
 }
 
-h2 {
+.lp h2 {
   font-size: clamp(22px, 4vw, 30px);
   line-height: 1.4;
 }
 
-h3 {
+.lp h3 {
   font-size: 18px;
   line-height: 1.5;
 }
 
-p {
+.lp p {
   margin-top: 8px;
 }
 
+.lp p.section-sub {
+  margin-top: 18px;
+}
+
 @media (min-width: 768px) {
-  .section {
+  .lp .section {
     padding: 72px 0;
   }
 
-  .hero-grid {
+  .lp .hero-grid {
     grid-template-columns: 1.1fr 0.9fr;
     align-items: center;
   }
 
-  .card-grid {
+  .lp .card-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .steps {
+  .lp .steps {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .cta-box {
-    grid-template-columns: 1.2fr 0.8fr;
-    align-items: center;
+  .lp .cta-split {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
-  .container {
+  .lp .container {
     width: min(960px, 100% - 32px);
   }
 
-  .cta-panel,
-  .sub-cta {
+  .lp .cta-panel,
+  .lp .sub-cta {
     text-align: left;
   }
 }
