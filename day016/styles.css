@@ -148,6 +148,23 @@
   color: var(--muted);
 }
 
+.lp .scope-note {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.lp .choice-note {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .lp .cta-row {
   display: flex;
   flex-wrap: wrap;
@@ -378,6 +395,25 @@
 .lp .faq-item p {
   color: var(--muted);
   margin-top: 6px;
+}
+
+.lp .stance,
+.lp .fit {
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.lp .stance h3,
+.lp .fit h3 {
+  font-size: 16px;
+}
+
+.lp .fit h3 + .list,
+.lp .fit .list + h3 {
+  margin-top: 12px;
 }
 
 .lp .cta-section {
