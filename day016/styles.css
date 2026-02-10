@@ -236,6 +236,14 @@
   gap: 16px;
 }
 
+.lp .hero-visual-image {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
 .lp .image-placeholder {
   border-radius: 24px;
   background: #ffffff;
@@ -314,6 +322,24 @@
   position: absolute;
   left: 16px;
   top: 18px;
+}
+
+.lp .list-with-icons li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+}
+
+.lp .list-with-icons li::before {
+  display: none;
+}
+
+.lp .card-icon {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  color: var(--accent);
 }
 
 .lp .list-compact li {
@@ -395,6 +421,14 @@
 .lp .faq-item p {
   color: var(--muted);
   margin-top: 6px;
+}
+
+.lp .section-divider {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.6;
+  margin: 8px 0;
 }
 
 .lp .stance,
