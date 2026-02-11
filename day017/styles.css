@@ -4,11 +4,11 @@
   --surface: #ffffff;
   --text: #1f2623;
   --muted: #5a655f;
-  --line: #d8ded8;
+  --line: #bfc8bf;
   --brand: #2f3f37;
-  --accent: #4f6e5f;
+  --accent: #2b6f52;
   --accent-2: #e7eee8;
-  --focus: #2f7a5a;
+  --focus: #24624a;
   --radius-s: 12px;
   --radius-m: 18px;
   --radius-l: 26px;
@@ -222,8 +222,8 @@
 }
 
 .lp .btn-primary:hover {
-  background: var(--brand);
-  border-color: var(--brand);
+  background: var(--focus);
+  border-color: var(--focus);
   transform: translateY(-1px);
   box-shadow: var(--shadow-m);
 }
@@ -572,6 +572,8 @@
 
 .lp .text-link {
   font-size: var(--fs-note);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 2px;
 }
 
 .lp h2 {
