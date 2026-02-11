@@ -90,6 +90,26 @@
   padding: calc(var(--space-8) + var(--space-2)) 0;
 }
 
+.lp #reasons {
+  position: relative;
+  overflow: hidden;
+}
+
+.lp #reasons::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("Firefly_Gemini Flash_Soft abstract background,_subtle organic shapes,_muted sage green and warm gray tones 428681.png") center / cover no-repeat;
+  opacity: 0.07;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.lp #reasons > .container {
+  position: relative;
+  z-index: 1;
+}
+
 .lp .section-muted {
   background: var(--accent-2);
 }
@@ -290,10 +310,11 @@
 
 .lp .hero-visual-image {
   width: 100%;
-  height: auto;
+  height: clamp(240px, 34vw, 460px);
   border-radius: var(--radius-l);
   border: 1px solid var(--line);
   box-shadow: var(--shadow-m);
+  object-fit: cover;
 }
 
 .lp .image-placeholder {
@@ -414,6 +435,21 @@
   background: var(--accent-2);
   border-color: var(--line);
   color: var(--muted);
+}
+
+.lp .section-visual {
+  display: block;
+  width: 100%;
+  height: clamp(220px, 32vw, 420px);
+  object-fit: cover;
+  border-radius: var(--radius-l);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-s);
+  margin-bottom: var(--space-6);
+}
+
+.lp .cta-box .section-visual {
+  margin-bottom: 0;
 }
 
 .lp .sub-cta {
