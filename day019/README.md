@@ -1,101 +1,96 @@
-# Day018 - 税務・節税相談LP（仮案件 / クラウドワークス想定）
+# Day019 - 税務・節税相談LP（仮案件 / クラウドワークス想定）
 
 ## ラベル（検索用）
 **Labels:** `B2B` `B2C` `tax` `consulting` `lp` `wordpress` `design` `image-optimization` `webp` `performance` `ai-generated` `codex` `staging` `password-protected`
 
-lp:audience=会社員/個人事業主  
-lp:goal=問い合わせ（資料請求・初回相談）  
-lp:industry=税務/節税/コンサルティング  
-lp:objective=表示速度改善＋本番運用整備  
-lp:offer=節税・減価償却の整理サポート（仮）  
-lp:template=ai-first  
-lp:status=mock-project  
-lp:env=staging-on-wordpress  
+lp:audience=会社員/個人事業主
+lp:goal=問い合わせ（資料請求・初回相談）
+lp:industry=税務/節税/コンサルティング
+lp:objective=404解消＋本番運用整備
+lp:offer=節税・減価償却の整理サポート（仮）
+lp:template=ai-first
+lp:status=mock-project
+lp:env=staging-on-wordpress
 
 ---
 
 ## 今日の成果
-- imagesフォルダ内のファイル名をWordPress運用前提で整理（英小文字・kebab-case統一）
-- 不要なhero画像（wide / square）を削除し、使用素材を明確化
-- 使用画像をWebPへ統一
-- ローカル正本（day018）でWebP参照に完全切り替え
-- WordPressメディアへ5枚のWebP画像をアップロード
-- 固定ページ内の画像URLをWPのメディアURLへ差し替え
-- DevToolsでNetwork確認（WebPは200 OK）
-- SVGアイコン4点が404であることを特定（原因分析まで完了）
+- Day019の目的：SVGアイコン由来の404解消
+- 実施内容：SVGアイコン（WPが拒否）を、WPメディア上のWebP参照へ置換して404を解消
+- 使用したWPメディアURL（4つ）
+  - https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02/icon-compass.webp
+  - https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02/icon-checklist.webp
+  - https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02/icon-chat.webp
+  - https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02/icon-shield.webp
+- 検証結果：WordPress検証環境でDevTools Network確認 → 404ゼロ／画像は全て200／表示崩れなし（アイコン表示も良好）
+
+---
+## 作業時間（合計目標: 120分）
+| 作業 | 分 |
+|---|---:|
+| 置換対象の洗い出し/day019/index.htmlのSVGをPhotoshopでWebPへ変換/htmlのSVG参照をWebPへ変換/WP WebPを反映した内容へコード差し替え /DevTools検証（Network確認・表示崩れチェック） | 25 |
+| README更新 | 15 |
 
 ---
 
 ## 作業時間（合計目標: 120分）
 | 作業 | 分 |
 |---|---:|
-| day018作業準備（PMChatGPT立ち上げ、前提・昨日までの作業共有） | 25 |
-| 画像整理・命名統一 | 55 |
-| Photoshopで画像変換（40WebP変換） | 35 |
-| ローカルの画像をWebPへ変換/WordPressアップロード・URL反映/DevTools検証・原因特定 | 108 |
-| README作成 | 20 |
+| 前日からの引き継ぎ | 5 |
+| 404調査（SVGアイコン4点の特定）/PhotoshopでWebPアイコン作成（64×64 / 透過）/WPメディアへアップロード＋URL確定/day019/index.html の参照差し替え（SVG→WP WebP）/DevTools検証（404/200確認・表示崩れチェック） | 25 |
+| README更新 | 10 |
 
 ---
 
 ## 詰まり（1つ）
-- WordPressがSVGアップロードを拒否（セキュリティ制限）  
-  → PNG変換対応 or SVG許可設定の選択が必要
+- Photoshopでsvgの画像を歪ませずにWebPの64×64へ変換する方法がわからなかった。svgファイルをPhotoshopで開くときに画像のサイズを64×64にすれば歪まないことが分かった。
 
 ---
 
-## 学び（1行）
-- 画像最適化は“変換”よりも“参照管理”が本質。
+## 学び/注意（1行）
+- WordPressはSVGを拒否しやすいので、検証環境ではWebP/PNG運用に寄せると安定して404を潰せる
 
 ---
 
 ## 良かったこと（1つ）
-- DevToolsで404を即座に特定でき、原因切り分けができた。
+- 404の原因を「SVGアイコン」に絞り込めたことで、作業が最短ルートで完了した。
 
 ---
 
 ## 今日特に印象に残ったこと（思考メモ）
-- ローカルとWordPressで参照戦略を分ける設計の重要性
-- WebPは形式変更より「運用統一」が重要
-- SVGは便利だが、WP環境では扱いに注意が必要
-- 本番運用を想定すると、画像管理設計は早期に固めるべき
+- 32px表示でも元画像を64pxで作ると、環境差（Retina等）でのシャープさが安定しやすい
+- WP制約（SVG拒否）を前提に運用方針を決めると、実装・検証・修正がブレない
+- 参照先URLをWPメディアに統一すると、404検知と差し替えの負荷が一気に下がる
 
 ---
 
-## 今日整理できた「AI×LP制作×画像最適化」フロー（Day018版）
+## 今日整理できた「AI×LP制作×画像最適化」フロー（Day019版）
 1. **ChatGPT**
-   - 作業フロー整理
-   - Codex用プロンプト設計
-   - 運用判断の整理
-2. **Codex**
-   - 画像参照URL差し替え
-   - 命名統一
+   - 解決方針（SVG→WebP運用）と手順整理
+2. **Photoshop**
+   - SVGアイコンをWebP化（64×64 / 透過）
 3. **WordPress**
-   - メディアアップロード
-   - 検証環境での確認
-4. **DevTools**
-   - 404検知
-   - WebP読込確認
-5. **人間**
-   - 不要素材削除判断
-   - SVG対応方針決定
+   - メディアへアップロード、参照URL確定
+4. **Codex**
+   - HTML内の参照差し替え（SVG→WP WebP）
+5. **DevTools**
+   - 404検知 → 0確認、200 OK確認
+6. **人間**
+   - 表示崩れ最終チェック、README更新
 
 ---
 
-## パフォーマンス改善ポイント（Day018まとめ）
-- WebPへ統一済み
-- 不要画像削除で軽量化
-- 画像参照の一本化
-- 404検出によるエラー排除プロセス確立
+## パフォーマンス改善ポイント（Day019まとめ）
+- SVG参照による404を全て解消
+- 参照先をWPメディアのWebPへ統一し、環境依存リスクを低減
+- Network検証で「404ゼロ・画像200」を確認してクローズ
 
 ---
 
-## 次回やること（Day019）
-- SVGアイコン対応方針決定
-  - A：PNGへ変換してWP参照
-  - B：SVG許可設定
-- 404完全解消
-- 最終表示チェック
-- クライアント共有準備
+## 次回やること（Day020）
+- faviconの扱いを整理（サイトアイコン設定で404ゼロを維持できるか確認）
+- LP全体の最終表示チェック（SP/PC、主要ブラウザ）
+- 公開用チェックリストの叩き台作成（404/OGP/フォーム/速度/アクセシビリティ）
 
 ---
 
@@ -109,18 +104,18 @@ lp:env=staging-on-wordpress
 
 ## 素材出典 / 生成AI利用
 - AI利用：
-  - ChatGPT：設計整理・作業フロー設計
+  - ChatGPT：方針整理・手順化
   - Codex：HTML差分修正
-  - Adobe Firefly：画像生成（Day017）
 - 画像：
-  - Firefly生成素材をWebP化
+  - WPメディアにアップロード済みのWebP（アイコン4点）を参照
 - 最終判断・構成・運用整理は人間が実施
 
 ---
 
 ## AIチャット運用ルール
-- day017構造は維持（構成変更禁止）
+- day019構造は維持（構成変更禁止）
 - ローカル正本主義
 - 画像はWebP統一
 - 参照は必ずDevTools確認
 - 毎日chat_resume.mdで前提共有
+``` :contentReference[oaicite:0]{index=0}
