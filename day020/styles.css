@@ -707,6 +707,11 @@
     font-size: clamp(26px, 7vw, 34px);
   }
 
+  .lp .hero h1 {
+    line-height: 1.35;
+    letter-spacing: 0.02em;
+  }
+
   .lp .lead {
     font-size: 1em;
   }
