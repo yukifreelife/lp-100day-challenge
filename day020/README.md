@@ -1,96 +1,94 @@
-# Day019 - 税務・節税相談LP（仮案件 / クラウドワークス想定）
+# Day020 - 税務・節税相談LP（仮案件 / クラウドワークス想定）
 
 ## ラベル（検索用）
-**Labels:** `B2B` `B2C` `tax` `consulting` `lp` `wordpress` `design` `image-optimization` `webp` `performance` `ai-generated` `codex` `staging` `password-protected`
+**Labels:** `B2B` `B2C` `tax` `consulting` `lp` `wordpress` `quality-check` `pre-delivery` `staging` `font` `layout` `cwv` `seo` `a11y`
 
-lp:audience=会社員/個人事業主
-lp:goal=問い合わせ（資料請求・初回相談）
-lp:industry=税務/節税/コンサルティング
-lp:objective=404解消＋本番運用整備
-lp:offer=節税・減価償却の整理サポート（仮）
-lp:template=ai-first
-lp:status=mock-project
-lp:env=staging-on-wordpress
+lp:audience=会社員/個人事業主  
+lp:goal=問い合わせ（資料請求・初回相談）  
+lp:industry=税務/節税/コンサルティング  
+lp:objective=最終品質チェック＋提出/納品準備  
+lp:offer=節税・減価償却の整理サポート（仮）  
+lp:template=ai-first  
+lp:status=mock-project  
+lp:env=staging-on-wordpress  
 
 ---
 
 ## 今日の成果
-- Day019の目的：SVGアイコン由来の404解消
-- 実施内容：SVGアイコン（WPが拒否）を、WPメディア上のWebP参照へ置換して404を解消
-- 使用したWPメディアURL（4つ）
-  - https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02/icon-compass.webp
-  - https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02/icon-checklist.webp
-  - https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02/icon-chat.webp
-  - https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02/icon-shield.webp
-- 検証結果：WordPress検証環境でDevTools Network確認 → 404ゼロ／画像は全て200／表示崩れなし（アイコン表示も良好）
+- Day020の目的：最終品質チェック＆公開前チェックリスト整備（提出・完了へ進める状態にする）
+- 実施内容：
+  - WordPress（検証環境）とローカルの表示差分を解消（横幅制限/フォント差の是正）
+  - SP（iPhone12 Pro想定）でFV見出しの読みやすさを改善（文言とタイポ微調整）
+  - クライアント役の確認で「提出・完了OK」を取得（微調整案は次フェーズ検討として記録）
+- 検証結果（目視）：
+  - WP表示とローカル表示の見た目が一致（SP/PC確認）
+  - FVの見出し改行が読みやすい状態に改善
 
 ---
+
 ## 作業時間（合計目標: 120分）
 | 作業 | 分 |
 |---|---:|
-| 置換対象の洗い出し/day019/index.htmlのSVGをPhotoshopでWebPへ変換/htmlのSVG参照をWebPへ変換/WP WebPを反映した内容へコード差し替え /DevTools検証（Network確認・表示崩れチェック） | 25 |
+| 前日からの引き継ぎ（Day019確認） | 5 |
+| WPとローカルの表示差調査（フォント差/グローバル余白・幅制限）/WP検証環境の表示差対策（page-id限定で幅制限解除・フォント統一）/FV見出し（h1）文言の調整（減価償却を維持）＋SPタイポ微調整/スクショ共有→UI/UX観点の提案整理（今回は保留） | 97 |
+| 提出・完了（納品）方針の整理（URL＋ZIP納品を採用） | 47 |
 | README更新 | 15 |
 
 ---
 
-## 作業時間（合計目標: 120分）
-| 作業 | 分 |
-|---|---:|
-| 前日からの引き継ぎ | 5 |
-| 404調査（SVGアイコン4点の特定）/PhotoshopでWebPアイコン作成（64×64 / 透過）/WPメディアへアップロード＋URL確定/day019/index.html の参照差し替え（SVG→WP WebP）/DevTools検証（404/200確認・表示崩れチェック） | 25 |
-| README更新 | 10 |
-
----
-
 ## 詰まり（1つ）
-- Photoshopでsvgの画像を歪ませずにWebPの64×64へ変換する方法がわからなかった。svgファイルをPhotoshopで開くときに画像のサイズを64×64にすれば歪まないことが分かった。
+- WordPress（Twenty Twenty-Four）側で、テーマ由来の幅制限（constrained）とフォント（Cardo）が当たっており、
+  ローカルと改行位置/表示領域がズレた。
+  → DevToolsで影響箇所を特定し、page-id限定のCSSで打ち消して解決。
 
 ---
 
 ## 学び/注意（1行）
-- WordPressはSVGを拒否しやすいので、検証環境ではWebP/PNG運用に寄せると安定して404を潰せる
-
+- 「検証用WP固定ページ」はテーマCSSが混入しやすいので、**page-id限定の“環境パッチ”で表示差を吸収**すると確認作業が安定する。
+- LPの納品方法の判断軸は大きく３つあり、「公開するサイトの形式は何か」「誰が公開するのか」「更新頻度はどのくらいか」が肝心だと知った。
 ---
 
 ## 良かったこと（1つ）
-- 404の原因を「SVGアイコン」に絞り込めたことで、作業が最短ルートで完了した。
+- まず「CSSが当たっているか（赤枠テスト）」で切り分けたことで、原因特定（幅制限/フォント）→解決まで最短で進められた。
 
 ---
 
 ## 今日特に印象に残ったこと（思考メモ）
-- 32px表示でも元画像を64pxで作ると、環境差（Retina等）でのシャープさが安定しやすい
-- WP制約（SVG拒否）を前提に運用方針を決めると、実装・検証・修正がブレない
-- 参照先URLをWPメディアに統一すると、404検知と差し替えの負荷が一気に下がる
+- 同じiPhone幅に揃えても、フォント差と外側のpadding/max-widthで改行位置がズレる（SPの可読性に直撃）
+- WordPressテーマの制約は「全体に当てる」のではなく、**該当ページ（page-id）に限定**して打ち消すのが安全
+- UI/UX改善案は「提出・完了を優先」する判断も実務では重要（任意改善は次フェーズでまとめて反映）
 
 ---
 
-## 今日整理できた「AI×LP制作×画像最適化」フロー（Day019版）
+## 今日整理できた「AI×LP制作×最終品質チェック」フロー（Day020版）
 1. **ChatGPT**
-   - 解決方針（SVG→WebP運用）と手順整理
-2. **Photoshop**
-   - SVGアイコンをWebP化（64×64 / 透過）
-3. **WordPress**
-   - メディアへアップロード、参照URL確定
-4. **Codex**
-   - HTML内の参照差し替え（SVG→WP WebP）
-5. **DevTools**
-   - 404検知 → 0確認、200 OK確認
-6. **人間**
-   - 表示崩れ最終チェック、README更新
+   - 最終チェック観点（表示/DevTools/SEO/A11y/favic0n）整理
+   - WP表示差（幅制限/フォント差）の原因仮説→切り分け手順提示
+2. **DevTools**
+   - font-familyの実測（Cardo判定）
+   - テーマ由来クラス（has-global-padding / is-layout-constrained）の特定
+3. **WordPress（検証環境）**
+   - page-id限定の追加CSSで環境差を吸収（ローカルと見た目一致へ）
+4. **人間**
+   - SPでの可読性確認（FVの改行・押しやすさ）
+   - クライアント役への最終確認→提出OK取得
+   - README更新
 
 ---
 
-## パフォーマンス改善ポイント（Day019まとめ）
-- SVG参照による404を全て解消
-- 参照先をWPメディアのWebPへ統一し、環境依存リスクを低減
-- Network検証で「404ゼロ・画像200」を確認してクローズ
+## パフォーマンス改善ポイント（Day020まとめ）
+- 表示差分（テーマCSS/フォント差）を解消して、レビュー時のズレを削減
+- FV見出しの可読性を改善し、離脱要因（読みにくさ）を低減
 
 ---
 
-## 次回やること（Day020）
-- faviconの扱いを整理（サイトアイコン設定で404ゼロを維持できるか確認）
-- LP全体の最終表示チェック（SP/PC、主要ブラウザ）
-- 公開用チェックリストの叩き台作成（404/OGP/フォーム/速度/アクセシビリティ）
+## 次回やること（Day021）
+- 納品方法を確定（今回は「URL＋ZIP納品」を採用する方針）
+- 納品用の整理：
+  - 未使用ファイルの棚卸し→明確に不要なものを削除
+  - WPメディアURL参照があれば、納品用にローカル相対パスへ置換（不足画像の洗い出し）
+  - 納品ZIP作成（index.html / styles.css / assets/ + 手順メモ）
+- （任意・次フェーズ）CVR微改善案（FV成果物1行、CTA直下の安心材料）の反映検討
 
 ---
 
@@ -104,18 +102,18 @@ lp:env=staging-on-wordpress
 
 ## 素材出典 / 生成AI利用
 - AI利用：
-  - ChatGPT：方針整理・手順化
-  - Codex：HTML差分修正
+  - ChatGPT：方針整理・チェック観点整理・切り分け支援
+  - Codex：差分修正（想定）
 - 画像：
-  - WPメディアにアップロード済みのWebP（アイコン4点）を参照
+  - ローカルassetsのWebPを正本として運用
+  - WPは検証用に表示確認URLとして利用
 - 最終判断・構成・運用整理は人間が実施
 
 ---
 
 ## AIチャット運用ルール
-- day019構造は維持（構成変更禁止）
-- ローカル正本主義
-- 画像はWebP統一
-- 参照は必ずDevTools確認
+- 構造（セクション順・見出し・導線）は維持（構成変更禁止）
+- ローカル正本主義（差分はローカル基準で管理）
+- WPは検証環境（固定ページ＋追加CSS）
+- 参照切れ/表示崩れはDevToolsと実機幅で確認
 - 毎日chat_resume.mdで前提共有
-``` :contentReference[oaicite:0]{index=0}
