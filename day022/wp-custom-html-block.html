@@ -3,10 +3,11 @@
   WordPress カスタムHTMLブロック用ファイル（自動生成）
   ============================================================
   source: index.html + styles.css
-  regenerate: ./scripts/build-wp-custom-html.sh
+  regenerate: ./scripts/build-wp-custom-html.sh <WP_BASE_URL>
+             or WP_BASE_URL=<WP_BASE_URL> ./scripts/build-wp-custom-html.sh
 
   画像URLは WordPress メディアURL に置換済みです。
-  ドメインや年月が変わる場合は WP_BASE_URL を更新して再生成してください。
+  例: https://example.com/wp-content/uploads/2026/02
   ============================================================
 -->
 <style>

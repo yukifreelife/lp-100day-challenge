@@ -5,10 +5,18 @@ ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 INDEX_FILE="$ROOT_DIR/index.html"
 STYLES_FILE="$ROOT_DIR/styles.css"
 OUTPUT_FILE="$ROOT_DIR/wp-custom-html-block.html"
-WP_BASE_URL="https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02"
+WP_BASE_URL_DEFAULT="https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02"
+WP_BASE_URL_INPUT="${1:-${WP_BASE_URL:-$WP_BASE_URL_DEFAULT}}"
+WP_BASE_URL="${WP_BASE_URL_INPUT%/}"
 
 if [[ ! -f "$INDEX_FILE" || ! -f "$STYLES_FILE" ]]; then
   echo "Error: index.html or styles.css was not found." >&2
+  exit 1
+fi
+
+if [[ "$WP_BASE_URL" != https://* && "$WP_BASE_URL" != http://* ]]; then
+  echo "Error: WP_BASE_URL must start with http:// or https://" >&2
+  echo "Usage: ./scripts/build-wp-custom-html.sh https://example.com/wp-content/uploads/2026/02" >&2
   exit 1
 fi
 
@@ -41,10 +49,11 @@ cat > "$OUTPUT_FILE" <<'HEADER'
   WordPress カスタムHTMLブロック用ファイル（自動生成）
   ============================================================
   source: index.html + styles.css
-  regenerate: ./scripts/build-wp-custom-html.sh
+  regenerate: ./scripts/build-wp-custom-html.sh <WP_BASE_URL>
+             or WP_BASE_URL=<WP_BASE_URL> ./scripts/build-wp-custom-html.sh
 
   画像URLは WordPress メディアURL に置換済みです。
-  ドメインや年月が変わる場合は WP_BASE_URL を更新して再生成してください。
+  例: https://example.com/wp-content/uploads/2026/02
   ============================================================
 -->
 <style>
@@ -60,3 +69,4 @@ MIDDLE
 printf '%s\n' "$wp_body" >> "$OUTPUT_FILE"
 
 echo "Generated: $OUTPUT_FILE"
+echo "WP_BASE_URL: $WP_BASE_URL"
