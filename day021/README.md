@@ -119,6 +119,14 @@ lp:env=client-wordpress-lightning
 
 ---
 
+## 追記（2026-02-16）
+- ローカル正本に合わせて、`index.html` と `styles.css` の画像参照を `images/` 配下に統一
+- `scripts/build-wp-custom-html.sh` を追加し、`index.html` + `styles.css` から `wp-custom-html-block.html` を再生成できるようにした
+- WordPress用URL（`https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02`）への置換はスクリプト内で一元管理
+- 再生成コマンド：`./scripts/build-wp-custom-html.sh`
+
+---
+
 ## AIチャット運用ルール
 - 構造（セクション順・見出し・導線）は維持（構成変更禁止）
 - ローカル正本主義（差分はローカル基準で管理）
