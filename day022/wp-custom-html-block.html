@@ -11,6 +11,36 @@
   ============================================================
 -->
 <style>
+/* WordPress (Lightning) page-level interference reset */
+.page-header,
+.entry-header,
+#breadcrumb,
+.breadcrumb {
+  display: none !important;
+}
+
+#main .mainSection,
+#main .siteContent,
+#main .entry-body,
+#main .entry-content {
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#main .siteContent > .container,
+#main > .container,
+#main .entry-body > .container,
+#main .entry-content > .container {
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .lp {
   color-scheme: light;
   --bg: #f6f5f1;
@@ -675,6 +705,18 @@
   font-size: var(--fs-h2);
   line-height: 1.4;
   letter-spacing: 0.01em;
+  border: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  padding-top: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.lp h2::before,
+.lp h2::after {
+  content: none !important;
+  display: none !important;
 }
 
 .lp h3 {

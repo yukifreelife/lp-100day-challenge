@@ -5,6 +5,8 @@ ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 INDEX_FILE="$ROOT_DIR/index.html"
 STYLES_FILE="$ROOT_DIR/styles.css"
 OUTPUT_FILE="$ROOT_DIR/wp-custom-html-block.html"
+INLINE_OUTPUT_FILE="$ROOT_DIR/wp-custom-html-inline-style.html"
+GUTENBERG_OUTPUT_FILE="$ROOT_DIR/wp-custom-html-gutenberg-code-editor.html"
 WP_BASE_URL_DEFAULT="https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02"
 WP_BASE_URL_INPUT="${1:-${WP_BASE_URL:-$WP_BASE_URL_DEFAULT}}"
 WP_BASE_URL="${WP_BASE_URL_INPUT%/}"
@@ -43,6 +45,19 @@ replace_asset_urls() {
 wp_css="$(replace_asset_urls < "$STYLES_FILE")"
 wp_body="$(extract_body | replace_asset_urls)"
 
+cat > "$INLINE_OUTPUT_FILE" <<'INLINE_HEADER'
+<style>
+INLINE_HEADER
+
+printf '%s\n' "$wp_css" >> "$INLINE_OUTPUT_FILE"
+
+cat >> "$INLINE_OUTPUT_FILE" <<'INLINE_MIDDLE'
+</style>
+
+INLINE_MIDDLE
+
+printf '%s\n' "$wp_body" >> "$INLINE_OUTPUT_FILE"
+
 cat > "$OUTPUT_FILE" <<'HEADER'
 <!--
   ============================================================
@@ -56,17 +71,17 @@ cat > "$OUTPUT_FILE" <<'HEADER'
   例: https://example.com/wp-content/uploads/2026/02
   ============================================================
 -->
-<style>
 HEADER
 
-printf '%s\n' "$wp_css" >> "$OUTPUT_FILE"
+cat "$INLINE_OUTPUT_FILE" >> "$OUTPUT_FILE"
 
-cat >> "$OUTPUT_FILE" <<'MIDDLE'
-</style>
-
-MIDDLE
-
-printf '%s\n' "$wp_body" >> "$OUTPUT_FILE"
+{
+  printf '%s\n' '<!-- wp:html -->'
+  cat "$INLINE_OUTPUT_FILE"
+  printf '\n%s\n' '<!-- /wp:html -->'
+} > "$GUTENBERG_OUTPUT_FILE"
 
 echo "Generated: $OUTPUT_FILE"
+echo "Generated: $INLINE_OUTPUT_FILE"
+echo "Generated: $GUTENBERG_OUTPUT_FILE"
 echo "WP_BASE_URL: $WP_BASE_URL"
