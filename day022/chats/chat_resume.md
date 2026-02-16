@@ -1,52 +1,59 @@
-# day021 → day022 引き継ぎ（chat_resume.md）
+# day022 → day023 引き継ぎ（chat_resume.md）
 
 ## 0. 引き継ぎの前提（最重要）
 - 構造（セクション順・見出し・導線）は維持（構成変更禁止）
-- ローカル正本は `day021/index.html` と `day021/styles.css`
-- WordPress反映用は `day021/wp-custom-html-block.html`（自動生成物）
+- 追加CSSなし（`<style>` 同梱方式）で運用する
+- 貼り付け形式は Gutenberg コードエディター向けファイルを使う
 
 ---
 
-## 1. Day021時点の到達点（既存）
-- Lightningテーマ前提の固定ページ反映方針に切り替え済み
-- 編集者権限でも使える「カスタムHTMLブロック + `<style>` 同梱」方式で合意済み
-- `wp-custom-html-block.html` を納品用ベースとして運用
+## 1. Day022で解決したこと
+- 既存WordPress（Lightning）を再利用した際の表示崩れを解消
+  - 右側余白（実質2カラム化）
+  - 見出しの青線
+  - フッター下部の青線
+- `style`同梱が効く貼り付け方式を確定
+  - `wp:html` コメント付きデータをコードエディターに貼る
 
 ---
 
-## 2. 2026-02-16 追記（今回実施）
-- `index.html` の画像参照をローカル相対パスに統一
-  - 例: `images/hero-office-minimal.webp` / `images/section-office-consulting.webp`
-- `styles.css` の背景画像参照をローカル相対パスへ変更
-  - `#reasons::before` → `images/bg-abstract-sage.webp`
-- ヘッダーロゴマークを文字「○」からCSS描画（円形マーク）に変更
-- `scripts/build-wp-custom-html.sh` を新規追加
-  - `index.html` + `styles.css` から `wp-custom-html-block.html` を自動生成
-  - ローカル画像URLをWPメディアURLに一括置換
+## 2. 現在の正本ファイル（必ずここを使う）
+- 貼り付け用（最優先）
+  - `/Users/yuuki/Works/lp-100/day022/wp-custom-html-gutenberg-code-editor.html`
+- 生成スクリプト
+  - `/Users/yuuki/Works/lp-100/day022/scripts/build-wp-custom-html.sh`
+- ローカル編集元
+  - `/Users/yuuki/Works/lp-100/day022/index.html`
+  - `/Users/yuuki/Works/lp-100/day022/styles.css`
 
 ---
 
-## 3. 運用コマンド（次回これだけで再生成可）
+## 3. 再生成コマンド
 ```bash
-cd /Users/yuuki/Works/lp-100/day021
-./scripts/build-wp-custom-html.sh
+cd /Users/yuuki/Works/lp-100/day022
+./scripts/build-wp-custom-html.sh https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02
 ```
 
 ---
 
-## 4. 主要ファイル
-- ローカル表示確認用
-  - `day021/index.html`
-  - `day021/styles.css`
-- WordPress投入用（生成物）
-  - `day021/wp-custom-html-block.html`
-- 生成スクリプト
-  - `day021/scripts/build-wp-custom-html.sh`
+## 4. WordPress反映手順（確定版）
+1. 固定ページを「コードエディター」で開く
+2. 既存本文を全削除
+3. `wp-custom-html-gutenberg-code-editor.html` を丸ごと貼る
+4. 更新
+5. ハードリロード（Cmd + Shift + R）
 
 ---
 
-## 5. 次アクション（Day022）
-1. クライアントWP環境で `wp-custom-html-block.html` を反映
-2. SP/PCで表示最終確認（余白・改行・テーマ干渉）
-3. 必要ならページ限定CSSパッチを追加
-4. 確認完了後、完了報告テンプレート整備
+## 5. 注意点（再発防止）
+- ビジュアル編集や通常のカスタムHTML貼り付けだと、`style`が不安定になる場合がある
+- Lightningのページテンプレート設定だけでは崩れが残るケースがあるため、同梱CSSでテーマ外側レイアウトを抑える
+- 「表示崩れ修正」と「デザイン調整」は分けて進める（保全コミットを先に切る）
+
+---
+
+## 6. 次回やること（Day023）
+1. PC/SPで最終スクショを保存（納品控え）
+2. 404/Consoleエラーの最終点検
+3. Day022の報告文面テンプレート整備
+4. 必要なら不要ファイル（body-only系）の整理判断

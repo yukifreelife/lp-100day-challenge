@@ -8,6 +8,44 @@
   display: none !important;
 }
 
+/* Remove theme footer accent lines */
+#site-footer,
+#footer-section,
+footer#site-footer,
+footer#colophon,
+.site-footer-copyright,
+.copySection {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+#site-footer::before,
+#footer-section::before,
+.site-footer-copyright::before,
+.copySection::before {
+  content: none !important;
+  display: none !important;
+}
+
+#site-footer::after,
+#footer-section::after,
+.site-footer-copyright::after,
+.copySection::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Hide theme footer area under LP (keep .lp .site-footer visible) */
+#site-footer,
+#footer-section,
+footer#colophon,
+.site-footer-copyright,
+.copySection {
+  display: none !important;
+}
+
 .siteContent,
 .site-content,
 .siteContent.container,
@@ -711,6 +749,9 @@
 .lp .site-footer {
   padding: var(--space-6) 0 calc(var(--space-7) + var(--space-1));
   color: var(--muted);
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
 }
 
 .lp .site-footer .container {
@@ -731,16 +772,36 @@
   font-size: var(--fs-h2);
   line-height: 1.4;
   letter-spacing: 0.01em;
+}
+
+/* Remove Lightning heading accents (blue lines) inside LP only */
+.lp h1,
+.lp h2,
+.lp h3,
+.lp h4,
+.lp h5,
+.lp h6 {
   border: 0 !important;
   border-top: 0 !important;
   border-bottom: 0 !important;
-  padding-top: 0 !important;
   background: transparent !important;
+  background-image: none !important;
+  padding-top: 0 !important;
   box-shadow: none !important;
 }
 
+.lp h1::before,
 .lp h2::before,
-.lp h2::after {
+.lp h3::before,
+.lp h4::before,
+.lp h5::before,
+.lp h6::before,
+.lp h1::after,
+.lp h2::after,
+.lp h3::after,
+.lp h4::after,
+.lp h5::after,
+.lp h6::after {
   content: none !important;
   display: none !important;
 }
