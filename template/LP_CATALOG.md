@@ -34,6 +34,7 @@
 | 006 | ReportFlow｜週次レポート作成を、30分→3分へ。（デモ） | SaaS/広告運用・レポート自動化 | B2B | leadgen | 無料デモ予約（デモ） | day006（AI差分運用） | `B2B` `saas` `marketing` `demo` `leadgen` `automation` `productivity` | B2Bの「課題→デモ」型。差分運用と相性◎ |
 | 007 | SLEEP BALANCE｜寝つきにくい夜を、やさしく整える。（デモ） | 睡眠サポートサプリ/購入（デモ） | B2C | purchase | 今すぐ購入（デモ） | day005寄り（物販） | `B2C` `supplement` `health` `purchase` `routine` `review` | 物販×健康系。薬機法っぽい表現に注意メモ推奨 |
 | 008 | LUNA WEB STUDIO｜LPコーダー採用（デモ） | 採用LP/応募・カジュアル面談 | B2B | apply | カジュアル面談に応募（デモ） | day006（AI差分運用） | `B2B` `recruit` `apply` `interview` `leadgen` `studio` | 採用/応募導線。nav/FAQ補完など改善済み |
+| 023 | Agent Ops Studio｜AIエージェント導入を90日で実務化する伴走支援 | AI導入支援/業務改善コンサル | B2B | leadgen | 無料相談予約 | skill-first（ai-first運用） | `B2B` `ai-agent` `operations` `consulting` `leadgen` `automation` `skill-driven` | 納品〜報酬受取ログまでAIエージェント完結フローを実装 |
 
 ---
 
@@ -72,3 +73,4 @@
 
 ## 更新履歴
 - 2026-02-xx: 初版作成（Day001〜Day008を登録）
+- 2026-02-17: Day023を追加（AIエージェント導入支援LP）
