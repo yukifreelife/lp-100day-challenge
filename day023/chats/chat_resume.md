@@ -1,62 +1,59 @@
-# day023 → day024 引き継ぎ（chat_resume.md）
+# day022 → day023 引き継ぎ（chat_resume.md）
 
 ## 0. 引き継ぎの前提（最重要）
-- WordPress運用は **Gutenbergコードエディター貼り付け** を使う
-- 追加CSSなし、`<style>` 同梱方式を維持する
-- day023は新規テーマ（AIエージェント導入支援）へ差し替え済み
+- 構造（セクション順・見出し・導線）は維持（構成変更禁止）
+- 追加CSSなし（`<style>` 同梱方式）で運用する
+- 貼り付け形式は Gutenberg コードエディター向けファイルを使う
 
 ---
 
-## 1. Day023で完了したこと
-- `day022`読み込みと引き継ぎ整理
-- `day023`ディレクトリ作成
-- 新LP制作（`index.html` / `styles.css` 全面更新）
-- 納品用生成物再作成
-  - `wp-custom-html-block.html`
-  - `wp-custom-html-inline-style.html`
-  - `wp-custom-html-gutenberg-code-editor.html`
-- クライアント連絡ログ作成
-  - `chats/client_ops.md` に納品連絡・検収依頼・報酬受取完了を記録
-- skills活用基盤を作成
-  - `skills/lp-ai-agent-runbook/`
+## 1. Day022で解決したこと
+- 既存WordPress（Lightning）を再利用した際の表示崩れを解消
+  - 右側余白（実質2カラム化）
+  - 見出しの青線
+  - フッター下部の青線
+- `style`同梱が効く貼り付け方式を確定
+  - `wp:html` コメント付きデータをコードエディターに貼る
 
 ---
 
 ## 2. 現在の正本ファイル（必ずここを使う）
-- ローカル編集元
-  - `/Users/yuuki/Works/lp-100/day023/index.html`
-  - `/Users/yuuki/Works/lp-100/day023/styles.css`
+- 貼り付け用（最優先）
+  - `/Users/yuuki/Works/lp-100/day022/wp-custom-html-gutenberg-code-editor.html`
 - 生成スクリプト
-  - `/Users/yuuki/Works/lp-100/day023/scripts/build-wp-custom-html.sh`
-- WordPress貼り付け用（最優先）
-  - `/Users/yuuki/Works/lp-100/day023/wp-custom-html-gutenberg-code-editor.html`
-- クライアント連絡ログ
-  - `/Users/yuuki/Works/lp-100/day023/chats/client_ops.md`
+  - `/Users/yuuki/Works/lp-100/day022/scripts/build-wp-custom-html.sh`
+- ローカル編集元
+  - `/Users/yuuki/Works/lp-100/day022/index.html`
+  - `/Users/yuuki/Works/lp-100/day022/styles.css`
 
 ---
 
-## 3. 運用コマンド
+## 3. 再生成コマンド
 ```bash
-cd /Users/yuuki/Works/lp-100/day023
+cd /Users/yuuki/Works/lp-100/day022
 ./scripts/build-wp-custom-html.sh https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02
 ```
 
-```bash
-cd /Users/yuuki/Works/lp-100
-./skills/lp-ai-agent-runbook/scripts/write_client_ops.sh day023 "AIエージェント導入支援LP" "https://example.com/lp/ai-agent-ops" "50,000円"
-```
+---
+
+## 4. WordPress反映手順（確定版）
+1. 固定ページを「コードエディター」で開く
+2. 既存本文を全削除
+3. `wp-custom-html-gutenberg-code-editor.html` を丸ごと貼る
+4. 更新
+5. ハードリロード（Cmd + Shift + R）
 
 ---
 
-## 4. Day024でやること
-1. PC/SPスクショ保存（納品控え）
-2. 404/Consoleエラー最終点検
-3. `LP_CATALOG.md` へのday023追記
-4. `lp-ai-agent-runbook` の改良（スクショ作成・README更新チェックを追加）
+## 5. 注意点（再発防止）
+- ビジュアル編集や通常のカスタムHTML貼り付けだと、`style`が不安定になる場合がある
+- Lightningのページテンプレート設定だけでは崩れが残るケースがあるため、同梱CSSでテーマ外側レイアウトを抑える
+- 「表示崩れ修正」と「デザイン調整」は分けて進める（保全コミットを先に切る）
 
 ---
 
-## 5. 注意点
-- `skill-creator` の `init_skill.py` は環境に `PyYAML` がないと失敗する
-- day023のデザインは更新済みだが、最終の実機表示確認は未実施
-- 連絡ログは生成済み。送信先に合わせた語尾や署名の最終調整のみ必要
+## 6. 次回やること（Day023）
+1. PC/SPで最終スクショを保存（納品控え）
+2. 404/Consoleエラーの最終点検
+3. Day022の報告文面テンプレート整備
+4. 必要なら不要ファイル（body-only系）の整理判断

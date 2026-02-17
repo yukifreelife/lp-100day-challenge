@@ -1,101 +1,89 @@
-# Day023 - AIエージェント導入支援LP（仮案件 / クラウドワークス想定）
+# Day022 - 税務・節税相談LP（仮案件 / クラウドワークス想定）
 
 ## ラベル（検索用）
-**Labels:** `B2B` `ai-agent` `operations` `automation` `consulting` `lp` `wordpress` `lightning` `skill-first` `delivery` `payment` `handoff`
+**Labels:** `B2B` `B2C` `tax` `consulting` `lp` `wordpress` `lightning` `theme-interference` `custom-html` `inline-style` `gutenberg` `handoff`
 
-lp:audience=中小企業の経営者/事業責任者/業務改善担当  
-lp:goal=問い合わせ（資料請求・無料相談）  
-lp:industry=AI導入支援/業務改善コンサルティング  
-lp:objective=納品完了連絡〜報酬受取完了 + skills駆動で新LP作成  
-lp:offer=AIエージェント導入伴走プログラム（仮）  
-lp:template=ai-first-skill-driven  
+lp:audience=会社員/個人事業主  
+lp:goal=問い合わせ（資料請求・初回相談）  
+lp:industry=税務/節税/コンサルティング  
+lp:objective=既存WP（Lightning）での最終表示安定化  
+lp:offer=節税・減価償却の整理サポート（仮）  
+lp:template=ai-first  
 lp:status=mock-project  
-lp:env=existing-wordpress-lightning
+lp:env=existing-wordpress-lightning  
 
 ---
 
 ## 今日の成果
-- Day023の目的：
-  - クライアント役への納品完了連絡と報酬受取完了までを記録する
-  - skillsを使って、AIエージェントだけで新LP制作を完了する
+- Day022の目的：既存WordPress（Lightning）で、`<style>` 同梱方式のまま表示崩れを解消する
 - 実施内容：
-  - `day022` の主要ファイル（README/chat_resume/index/styles/script）を読み込み
-  - `day023` を `day022` から複製して作業開始
-  - `skill-creator` の指針で独自スキル `skills/lp-ai-agent-runbook` を新規作成
-    - `scripts/bootstrap_day.sh`（dayディレクトリ複製補助）
-    - `scripts/write_client_ops.sh`（納品/検収/報酬受取ログ自動生成）
-    - `references/` にテンプレートと完了条件を整備
-  - `day023/index.html` と `day023/styles.css` を新規テーマへ全面更新
-    - テーマ：AIエージェント導入支援
-    - モバイル/PC両対応のレスポンシブ維持
-    - WordPress Lightning干渉を抑制する同梱CSSを維持
-  - `day023/scripts/build-wp-custom-html.sh` 実行で納品用HTMLを再生成
-  - `day023/chats/client_ops.md` を生成し、納品連絡〜報酬受取完了文面を作成
+  - `day021` をコピーして `day022` を作成し、当日作業を分離
+  - `scripts/build-wp-custom-html.sh` を改修
+    - `WP_BASE_URL` を引数/環境変数で受け取れるように変更
+    - 出力ファイルを複数化（用途別）
+      - `wp-custom-html-block.html`（説明コメント付き）
+      - `wp-custom-html-inline-style.html`（貼り付け本体）
+      - `wp-custom-html-gutenberg-code-editor.html`（`<!-- wp:html -->` ラッパー付き）
+  - Lightningテーマ干渉（横幅・2カラム・見出し装飾・フッター線）を段階的に解消
+  - クライアント前提の「追加CSSなし」運用を維持したまま、表示安定化を達成
 - 検証結果：
-  - `wp-custom-html-block.html` / `wp-custom-html-inline-style.html` / `wp-custom-html-gutenberg-code-editor.html` の再生成成功
-  - `client_ops.md` 生成成功（送信文3種を保存）
+  - PC/SPで主要セクションの表示崩れは解消
+  - 右側余白問題を解消
+  - テーマ由来の青線（見出し/フッター）を抑制
 
 ---
 
 ## 作業時間（合計目標: 120分）
 | 作業 | 分 |
 |---|---:|
-| Day022読み込み・引き継ぎ確認 | 30 |
-| day023初期化 + skill作成（runbook/scripts/references） | 78 |
-| 新LPの文言・デザイン全面更新 + WP納品物再生成 | 106 |
-| README / chat_resume / 連絡ログ整備 | 34 |
+| Day021引き継ぎ確認 / day022作業ディレクトリ作成（コピー・命名変更）/既存WordPress（Lightning）再利用方針での反映手順整理 / SSL・固定ページ設定確認 / 貼り付け手順の再説明 | 63 |
+| `scripts/build-wp-custom-html.sh` 改修（引数化・出力分岐）と貼り付け用ファイル再生成フロー整備/テーマ干渉調査と修正（横幅・余白・1カラム設定・青線・フッター境界線）/ PC-SP実機確認の往復調整 | 358 |
+| README・chat_resumeの更新とDay023向け引き継ぎ整備 | 26 |
 
 ---
 
 ## 詰まり（重要）
-- `skill-creator/scripts/init_skill.py` 実行時に `ModuleNotFoundError: yaml` が発生し、自動初期化が使えなかった。
+- 同じHTMLでも「貼り付け経路（ビジュアル/カスタムHTML/コードエディター）」で解釈が変わり、`<style>` の効き方が不安定だった
+- Lightningの外側レイアウト（`siteContent > row > main/sub`）が強く、単純な`.lp`スコープだけでは横幅問題が残った
 
 解決策：
-- `skill-creator/SKILL.md` の手順を読み、要件に沿って手動でskill構造を作成。
-- スクリプトは実行テストし、`write_client_ops.sh` の変数展開バグを修正して再実行した。
+- 貼り付け用データを `wp:html` ラップ形式に統一
+- テーマ外側レイアウトを狙った最小上書きを同梱CSSの先頭に実装
 
 ---
 
 ## 学び/注意（1行）
-- スキル化は「再現性の高い作業」を先に自動化すると、LP制作本体に集中できる。
+- 「追加CSSなし」を成立させるには、**HTML本体だけでなく貼り付け形式（Gutenbergコメント含む）まで納品仕様に含める**のが重要。
 
 ---
 
-## 今日整理できた運用フロー（Day023版）
-1. 前日ディレクトリを読む（README + chat_resume + 正本ファイル）
-2. 新日ディレクトリを作る（今回は `day023`）
-3. skillを使って繰り返し作業（連絡ログやチェック）をテンプレ化
-4. 新LPの文言・デザインを更新し、`build-wp-custom-html.sh` で納品用データ生成
-5. 納品連絡/検収/報酬受取の文面を保存して作業証跡化
+## 今日整理できた運用フロー（Day022版）
+1. 既存WPのメディアURL基準を確定
+2. `./scripts/build-wp-custom-html.sh <WP_BASE_URL>` で貼り付けファイルを再生成
+3. `wp-custom-html-gutenberg-code-editor.html` を固定ページ本文へ丸ごと貼り付け
+4. PC/SPで表示確認し、テーマ干渉だけを同梱CSSで追加修正
 
 ---
 
 ## 最終運用ルール（現時点）
-- WordPress反映は `wp-custom-html-gutenberg-code-editor.html` を最優先
-- 追加CSSなし、`<style>` 同梱方式を維持
-- クライアント連絡ログは `chats/client_ops.md` に必ず残す
-- skillsで再利用可能な作業は都度 `skills/` 配下に集約する
+- 追加CSSは使わず、`<style>` 同梱方式で運用
+- WordPress貼り付け時は以下ファイルを優先
+  - `day022/wp-custom-html-gutenberg-code-editor.html`
+- 画像URLの再生成は以下
+  - `cd /Users/yuuki/Works/lp-100/day022`
+  - `./scripts/build-wp-custom-html.sh https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02`
 
 ---
 
-## 次回やること（Day024）
+## 次回やること（Day023）
 - 最終確認
-  - DevTools: Consoleエラー/Network 404 チェック
-  - PC/SPスクリーンショットを撮影して `day023` に保存
-- 運用強化
-  - `lp-ai-agent-runbook` にスクショ取得手順とREADME更新チェックを追加
-  - `bootstrap_day.sh` のday番号自動判定オプションを検討
+  - DevTools: Consoleエラー/Network 404 の最終チェック
+  - PC/SPで最終スクリーンショット保存（納品控え）
+- ドキュメント整理
+  - `day022` 内の不要ファイル（`body-only`系）の扱い決定（残す/削除）
+  - 作業報告テンプレートへ「貼り付け方式の注意点」を追記
 - 可能なら
-  - `build-wp-custom-html.sh` の `--mode` オプション化（block/inline/gutenberg）をday023へ反映
-
----
-
-## 納品・報酬受取ログ
-- ログファイル：`/Users/yuuki/Works/lp-100/day023/chats/client_ops.md`
-- 本ログに以下を記録済み
-  - 納品完了連絡
-  - 検収進行依頼
-  - 報酬受取完了連絡
+  - 生成スクリプトに `--mode`（block/inline/gutenberg）オプションを追加し運用ミスをさらに削減
 
 ---
 
@@ -107,7 +95,7 @@ lp:env=existing-wordpress-lightning
 ---
 
 ## AIチャット運用ルール
-- 構造（セクション順・見出し・導線）は維持（大幅変更禁止）
+- 構造（セクション順・見出し・導線）は維持（構成変更禁止）
 - ローカル正本主義（差分はローカル基準で管理）
-- WordPress反映は貼り付け方式まで含めて仕様化
+- WordPress反映は「貼り付け方式」まで含めて仕様化する
 - 毎日 `chat_resume.md` で前提共有

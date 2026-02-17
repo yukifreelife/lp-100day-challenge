@@ -34,6 +34,7 @@ replace_asset_urls() {
   sed \
     -e "s|images/hero-office-minimal\.webp|$WP_BASE_URL/hero-office-minimal.webp|g" \
     -e "s|images/section-office-consulting\.webp|$WP_BASE_URL/section-office-consulting.webp|g" \
+    -e "s|images/cta-office-support\.webp|$WP_BASE_URL/cta-office-support.webp|g" \
     -e "s|images/section-divider-wave\.webp|$WP_BASE_URL/section-divider-wave.webp|g" \
     -e "s|images/icon-compass\.webp|$WP_BASE_URL/icon-compass.webp|g" \
     -e "s|images/icon-checklist\.webp|$WP_BASE_URL/icon-checklist.webp|g" \
