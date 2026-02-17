@@ -1,101 +1,67 @@
-# Day022 - 税務・節税相談LP（仮案件 / クラウドワークス想定）
+# Day023 - 税務・節税相談LP（納品〜検収完了）
 
 ## ラベル（検索用）
-**Labels:** `B2B` `B2C` `tax` `consulting` `lp` `wordpress` `lightning` `theme-interference` `custom-html` `inline-style` `gutenberg` `handoff`
+**Labels:** `B2B` `B2C` `tax` `consulting` `lp` `wordpress` `lightning` `delivery` `client-communication` `handoff` `inspection` `close`
 
 lp:audience=会社員/個人事業主  
 lp:goal=問い合わせ（資料請求・初回相談）  
 lp:industry=税務/節税/コンサルティング  
-lp:objective=既存WP（Lightning）での最終表示安定化  
+lp:objective=クライアント役との実務往復（納品〜検収完了）  
 lp:offer=節税・減価償却の整理サポート（仮）  
 lp:template=ai-first  
-lp:status=mock-project  
-lp:env=existing-wordpress-lightning  
+lp:status=mock-project-closed  
+lp:env=existing-wordpress-lightning
 
 ---
 
 ## 今日の成果
-- Day022の目的：既存WordPress（Lightning）で、`<style>` 同梱方式のまま表示崩れを解消する
+- Day023の目的：
+  - Day022で完成した納品物を、クライアント役との実務コミュニケーションで納品完了まで進める
 - 実施内容：
-  - `day021` をコピーして `day022` を作成し、当日作業を分離
-  - `scripts/build-wp-custom-html.sh` を改修
-    - `WP_BASE_URL` を引数/環境変数で受け取れるように変更
-    - 出力ファイルを複数化（用途別）
-      - `wp-custom-html-block.html`（説明コメント付き）
-      - `wp-custom-html-inline-style.html`（貼り付け本体）
-      - `wp-custom-html-gutenberg-code-editor.html`（`<!-- wp:html -->` ラッパー付き）
-  - Lightningテーマ干渉（横幅・2カラム・見出し装飾・フッター線）を段階的に解消
-  - クライアント前提の「追加CSSなし」運用を維持したまま、表示安定化を達成
+  - `day023` を `day022` ベースで再生成
+  - クライアント役との往復を想定して、プレビュー共有→修正対応→公開→追加納品（ZIP）まで対応
+  - 任意修正2点を実装
+    - SPのFVテキスト行間調整
+    - 最下部CTA付近の余白調整
+  - 納品パッケージを作成・整理
+    - 不要ファイルを除外した最小構成へ整理
+    - 通常ZIPとパスワード付きZIPを作成
+    - マニフェスト、画像一覧、計測メモ、運用メモ、バックアップHTMLを同梱
+  - 送付誤り（初回ZIP）を再送で是正し、差し替え版（v2）で受領完了
 - 検証結果：
-  - PC/SPで主要セクションの表示崩れは解消
-  - 右側余白問題を解消
-  - テーマ由来の青線（見出し/フッター）を抑制
+  - 受領・確認完了連絡を受信
+  - プラットフォーム上の検収完了連絡を受信
+  - クローズ合意まで完了
 
 ---
 
-## 作業時間（合計目標: 120分）
-| 作業 | 分 |
-|---|---:|
-| Day021引き継ぎ確認 / day022作業ディレクトリ作成（コピー・命名変更）/既存WordPress（Lightning）再利用方針での反映手順整理 / SSL・固定ページ設定確認 / 貼り付け手順の再説明 | 63 |
-| `scripts/build-wp-custom-html.sh` 改修（引数化・出力分岐）と貼り付け用ファイル再生成フロー整備/テーマ干渉調査と修正（横幅・余白・1カラム設定・青線・フッター境界線）/ PC-SP実機確認の往復調整 | 358 |
-| README・chat_resumeの更新とDay023向け引き継ぎ整備 | 26 |
+## 主要成果物
+- 納品パッケージ（最終）
+  - `/Users/yuuki/Works/lp-100/day023/delivery/day023-tax-support-delivery-20260217-protected-v2.zip`
+- パスワード別送メモ
+  - `/Users/yuuki/Works/lp-100/day023/chats/delivery_zip_password_20260217.txt`
+- 送付ログ
+  - `/Users/yuuki/Works/lp-100/day023/chats/delivery_send_log_20260218.md`
+- 送付チェックリスト
+  - `/Users/yuuki/Works/lp-100/day023/chats/delivery_send_checklist_20260218.md`
 
 ---
 
-## 詰まり（重要）
-- 同じHTMLでも「貼り付け経路（ビジュアル/カスタムHTML/コードエディター）」で解釈が変わり、`<style>` の効き方が不安定だった
-- Lightningの外側レイアウト（`siteContent > row > main/sub`）が強く、単純な`.lp`スコープだけでは横幅問題が残った
-
-解決策：
-- 貼り付け用データを `wp:html` ラップ形式に統一
-- テーマ外側レイアウトを狙った最小上書きを同梱CSSの先頭に実装
+## 注意点
+- Google Drive（個人アカウント）では共有期限を自動設定できないため、手動停止運用にした。
+- 共有停止予定：**2026-02-25 23:59（JST）**
+- 停止実行後に、パスワードメモの削除または安全保管へ移行する。
 
 ---
 
-## 学び/注意（1行）
-- 「追加CSSなし」を成立させるには、**HTML本体だけでなく貼り付け形式（Gutenbergコメント含む）まで納品仕様に含める**のが重要。
-
----
-
-## 今日整理できた運用フロー（Day022版）
-1. 既存WPのメディアURL基準を確定
-2. `./scripts/build-wp-custom-html.sh <WP_BASE_URL>` で貼り付けファイルを再生成
-3. `wp-custom-html-gutenberg-code-editor.html` を固定ページ本文へ丸ごと貼り付け
-4. PC/SPで表示確認し、テーマ干渉だけを同梱CSSで追加修正
-
----
-
-## 最終運用ルール（現時点）
-- 追加CSSは使わず、`<style>` 同梱方式で運用
-- WordPress貼り付け時は以下ファイルを優先
-  - `day022/wp-custom-html-gutenberg-code-editor.html`
-- 画像URLの再生成は以下
-  - `cd /Users/yuuki/Works/lp-100/day022`
-  - `./scripts/build-wp-custom-html.sh https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02`
-
----
-
-## 次回やること（Day023）
-- 最終確認
-  - DevTools: Consoleエラー/Network 404 の最終チェック
-  - PC/SPで最終スクリーンショット保存（納品控え）
-- ドキュメント整理
-  - `day022` 内の不要ファイル（`body-only`系）の扱い決定（残す/削除）
-  - 作業報告テンプレートへ「貼り付け方式の注意点」を追記
-- 可能なら
-  - 生成スクリプトに `--mode`（block/inline/gutenberg）オプションを追加し運用ミスをさらに削減
+## 次回やること（Day024）
+1. 共有停止予定日時にリンク停止を実行
+2. パスワードメモの最終処理（削除 or 安全保管）
+3. Day023クローズ後の学びをテンプレート化（再送時の手順強化）
 
 ---
 
 ## 公開・法務メモ（最低限）
 - 本LPは **架空案件（デモ）**
 - 実在の企業・商品・人物とは無関係
-- 検証環境の情報は外部共有しない
-
----
-
-## AIチャット運用ルール
-- 構造（セクション順・見出し・導線）は維持（構成変更禁止）
-- ローカル正本主義（差分はローカル基準で管理）
-- WordPress反映は「貼り付け方式」まで含めて仕様化する
-- 毎日 `chat_resume.md` で前提共有
+- 検証環境情報や共有リンクは第三者へ公開しない
