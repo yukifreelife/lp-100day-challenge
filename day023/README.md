@@ -39,7 +39,7 @@ lp:env=existing-wordpress-lightning
 - 納品パッケージ（最終）
   - `/Users/yuuki/Works/lp-100/day023/delivery/day023-tax-support-delivery-20260217-protected-v2.zip`
 - パスワード別送メモ
-  - `/Users/yuuki/Works/lp-100/day023/chats/delivery_zip_password_20260217.txt`
+  - `/Users/yuuki/Works/lp-100/day023/secure/delivery_zip_password_20260217.txt`
 - 送付ログ
   - `/Users/yuuki/Works/lp-100/day023/chats/delivery_send_log_20260218.md`
 - 送付チェックリスト
@@ -50,7 +50,8 @@ lp:env=existing-wordpress-lightning
 ## 注意点
 - Google Drive（個人アカウント）では共有期限を自動設定できないため、手動停止運用にした。
 - 共有停止予定：**2026-02-25 23:59（JST）**
-- 停止実行後に、パスワードメモの削除または安全保管へ移行する。
+- 共有停止は実行済み（アクセス権削除）。
+- パスワードメモは `day023/secure` へ移動し、権限 `600` で保管中。
 
 ---
 

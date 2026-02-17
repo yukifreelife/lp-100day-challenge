@@ -25,7 +25,7 @@
 - 納品フォルダ（展開元）
   - `/Users/yuuki/Works/lp-100/day023/delivery/day023-tax-support-delivery-20260217`
 - パスワードメモ
-  - `/Users/yuuki/Works/lp-100/day023/chats/delivery_zip_password_20260217.txt`
+  - `/Users/yuuki/Works/lp-100/day023/secure/delivery_zip_password_20260217.txt`
 - 送付ログ
   - `/Users/yuuki/Works/lp-100/day023/chats/delivery_send_log_20260218.md`
 
@@ -33,8 +33,8 @@
 
 ## 3. Day024でやること
 1. 共有停止予定日時（2026-02-25 23:59 JST）にGoogle Drive共有を手動停止
-2. 停止後に`delivery_send_checklist_20260218.md`を完了更新
-3. パスワードメモを削除 or 安全保管へ移動
+2. 停止後に`delivery_send_checklist_20260218.md`を完了更新（実施済み）
+3. パスワードメモを安全保管へ移動（実施済み）
 4. Day023の再送対応知見をテンプレ化（誤送時の差し替え手順）
 
 ---
