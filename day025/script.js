@@ -147,16 +147,16 @@ const updateAxisStateLabel = (progress) => {
   }
 
   if (progress <= 0) {
-    axisState.textContent = "MODE: VERTICAL FEED / READY FOR HORIZONTAL";
+    axisState.textContent = "MODE: 縦スクロール待機 / Horizontal Ready";
     return;
   }
 
   if (progress >= 1) {
-    axisState.textContent = "MODE: HORIZONTAL COMPLETE / RETURN TO VERTICAL";
+    axisState.textContent = "MODE: 横展開完了 / Return to Vertical";
     return;
   }
 
-  axisState.textContent = "MODE: VERTICAL FEED / HORIZONTAL ACTIVE";
+  axisState.textContent = "MODE: 縦スクロール / Horizontal Active";
 };
 
 const updateAxisScroll = () => {
@@ -582,27 +582,27 @@ if (worldCanvas instanceof HTMLCanvasElement) {
 
 const phaseData = [
   {
-    heading: "PHASE 01 // ATTENTION LOCK",
-    copy: "最初の3秒は理解より空気を伝える。余計な選択肢を切り、視線を固定する。",
-    machine: "INIT // 余白と静寂で注意を一点に固定",
+    heading: "PHASE 01 // FIRST IMPRESSION",
+    copy: "最初の3秒で「読む理由」を作る。選択肢を絞り、視線と期待を固定する。",
+    machine: "INIT // 余白で視線を固定し、意図を立ち上げる",
     phaseLabel: "PHASE 01"
   },
   {
-    heading: "PHASE 02 // TENSION BUILD",
-    copy: "課題の連鎖を見せて、読者の記憶とページ体験を同期させる。",
-    machine: "FLOW // 課題を時系列で連結し、没入を継続",
+    heading: "PHASE 02 // PROBLEM MOMENTUM",
+    copy: "課題を時間軸で見せ、読者の記憶とページ体験を同期させる。",
+    machine: "FLOW // 課題の連鎖を見せ、読み進める必然をつくる",
     phaseLabel: "PHASE 02"
   },
   {
     heading: "PHASE 03 // INTERACTIVE PROOF",
-    copy: "提案は説明ではなく反応で提示。操作した瞬間に価値を返す。",
-    machine: "REACT // 入力と視覚が即応し、納得を加速",
+    copy: "提案は説明より反応で伝える。触れた瞬間に価値を返す。",
+    machine: "REACT // 操作への即時フィードバックで納得を加速",
     phaseLabel: "PHASE 03"
   },
   {
     heading: "PHASE 04 // CONVERSION BRIDGE",
-    copy: "CVを強要せず、ステップ分割で心理負荷を軽くして送信へつなぐ。",
-    machine: "EXEC // 意思決定を最短距離で送信完了へ",
+    copy: "押し切らず、ステップ分割で心理負荷を下げて送信へ導く。",
+    machine: "EXEC // 小さな完了感を積み重ね、送信完了へ",
     phaseLabel: "PHASE 04"
   }
 ];
@@ -640,8 +640,8 @@ const machineNodeData = [
 
 const machineGameEvents = [
   {
-    name: "TRIANGLE LOCK",
-    hint: "A/Cを上段左右、Bを下段中央へ配置",
+    name: "FOCUS TRIANGLE",
+    hint: "A/Cを上段左右、Bを下段中央へ / Place A/C high, B center-low",
     targets: [
       { x: 0.2, y: 0.24 },
       { x: 0.5, y: 0.74 },
@@ -649,8 +649,8 @@ const machineGameEvents = [
     ]
   },
   {
-    name: "VERTICAL GATE",
-    hint: "3ノードを縦一直線に揃える",
+    name: "INTENT COLUMN",
+    hint: "3ノードを中央縦ラインへ / Align all nodes vertically",
     targets: [
       { x: 0.5, y: 0.2 },
       { x: 0.5, y: 0.5 },
@@ -658,8 +658,8 @@ const machineGameEvents = [
     ]
   },
   {
-    name: "ORBIT SNAP",
-    hint: "A/Bを左右、Cを上段中央へ配置",
+    name: "DECISION ORBIT",
+    hint: "A/Bを左右下、Cを上中央へ / A/B low sides, C top center",
     targets: [
       { x: 0.26, y: 0.58 },
       { x: 0.74, y: 0.58 },
@@ -763,7 +763,7 @@ const renderMachineEventStates = () => {
       return;
     }
     if (clearedMachineEvents.has(index)) {
-      stateNode.textContent = "CLEAR";
+      stateNode.textContent = "LOCKED";
       return;
     }
     const distance = machineEventDistances[index];
@@ -834,7 +834,7 @@ const applyMachineNodeState = (messageOverride = "") => {
   const phaseLabel = phaseData[Math.max(0, activePhase)]?.phaseLabel || "PHASE 01";
 
   if (machineMode) {
-    machineMode.textContent = `${phaseLabel} / E0${activeMachineEvent + 1} / ${node.label}`;
+    machineMode.textContent = `${phaseLabel} / EVENT ${String(activeMachineEvent + 1).padStart(2, "0")} / ${node.label}`;
   }
   if (machineSubtext) {
     if (messageOverride) {
@@ -874,7 +874,7 @@ const announceMachineClear = (newlyCleared) => {
   }
 
   if (clearedMachineEvents.size >= machineGameEvents.length) {
-    applyMachineNodeState("ALL EVENTS CLEARED // 配置ゲーム完了");
+    applyMachineNodeState("ALL EVENTS LOCKED // 3配置を達成");
     return;
   }
 
@@ -882,10 +882,13 @@ const announceMachineClear = (newlyCleared) => {
   if (typeof currentCleared === "number") {
     const nextPending = machineGameEvents.findIndex((_, index) => !clearedMachineEvents.has(index));
     if (nextPending >= 0 && nextPending !== activeMachineEvent) {
-      setMachineEvent(nextPending, `EVENT ${String(currentCleared + 1).padStart(2, "0")} CLEAR // 次のイベントへ`);
+      setMachineEvent(
+        nextPending,
+        `EVENT ${String(currentCleared + 1).padStart(2, "0")} LOCKED // 次のイベントへ`
+      );
       return;
     }
-    applyMachineNodeState(`EVENT ${String(currentCleared + 1).padStart(2, "0")} CLEAR // 別イベントを選択`);
+    applyMachineNodeState(`EVENT ${String(currentCleared + 1).padStart(2, "0")} LOCKED // 他イベントも挑戦`);
   }
 };
 
@@ -1004,7 +1007,7 @@ if (phaseBlocks.length > 0) {
       }
       if (toggle instanceof HTMLButtonElement) {
         toggle.setAttribute("aria-expanded", String(shouldOpen));
-        toggle.textContent = shouldOpen ? "詳細を閉じる" : "30字要約から詳細へ";
+        toggle.textContent = shouldOpen ? "詳細を閉じる / Close" : "要点を開く / Expand";
       }
     });
   };
@@ -1047,7 +1050,7 @@ if (machineNodes.length > 0 && machineScope instanceof HTMLElement) {
       if (Number.isNaN(eventIndex)) {
         return;
       }
-      setMachineEvent(eventIndex, `EVENT ${String(eventIndex + 1).padStart(2, "0")} TRACKING`);
+      setMachineEvent(eventIndex, `EVENT ${String(eventIndex + 1).padStart(2, "0")} TRACKING / 配置中`);
     });
   });
 
@@ -1062,7 +1065,7 @@ if (machineNodes.length > 0 && machineScope instanceof HTMLElement) {
         return;
       }
       const nodeLabel = machineNodeData[nodeIndex]?.label || "NODE";
-      setMachineNode(nodeIndex, `${nodeLabel} // ACTIVE`);
+      setMachineNode(nodeIndex, `${nodeLabel} // ACTIVE / 操作中`);
     });
   });
 
@@ -1084,7 +1087,7 @@ if (machineNodes.length > 0 && machineScope instanceof HTMLElement) {
 
       node.classList.add("is-dragging");
       node.setPointerCapture(event.pointerId);
-      setMachineNode(nodeIndex, `${machineNodeData[nodeIndex]?.label || "NODE"} // DRAG START`);
+      setMachineNode(nodeIndex, `${machineNodeData[nodeIndex]?.label || "NODE"} // DRAG START / ドラッグ開始`);
     });
 
     node.addEventListener("pointermove", (event) => {
@@ -1118,7 +1121,7 @@ if (machineNodes.length > 0 && machineScope instanceof HTMLElement) {
       if (dragging.moved) {
         suppressNodeClickUntil = Date.now() + 180;
         const nodeLabel = machineNodeData[dragging.nodeIndex]?.label || "NODE";
-        applyMachineNodeState(`${nodeLabel} // DRAG EVENTを受信`);
+        applyMachineNodeState(`${nodeLabel} // DRAG UPDATE / 位置を更新`);
         pulseMachineScope();
       }
 
@@ -1132,20 +1135,20 @@ if (machineNodes.length > 0 && machineScope instanceof HTMLElement) {
 
 const orbitData = [
   {
-    label: "CV IMPACT",
-    copy: "入力障壁を減らし、送信完了率を優先して設計。"
+    label: "CV PRIORITY",
+    copy: "入力障壁を減らし、送信完了率の最大化に集中。"
   },
   {
-    label: "STAY DEPTH",
-    copy: "スクロールの緩急と視線誘導で滞在時間を引き上げる。"
+    label: "STAY PRIORITY",
+    copy: "リズム設計と視線誘導で、滞在時間と読了率を引き上げる。"
   },
   {
-    label: "TRUST ARC",
-    copy: "理解の順序を設計し、押し売り感なく信頼を醸成。"
+    label: "TRUST PRIORITY",
+    copy: "理解の順序を設計し、押し売り感なく信頼を形成。"
   },
   {
-    label: "SHARE SPARK",
-    copy: "記憶に残る体験要素を入れて、共有される理由を作る。"
+    label: "SHARE PRIORITY",
+    copy: "記憶に残る体験を設計し、共有したくなる理由を作る。"
   }
 ];
 
@@ -1267,7 +1270,7 @@ if (cardNodes.length > 0) {
       }
       if (toggle instanceof HTMLButtonElement) {
         toggle.setAttribute("aria-expanded", String(isOpen));
-        toggle.textContent = isOpen ? "詳細を閉じる" : "詳細を開く";
+        toggle.textContent = isOpen ? "詳細を閉じる / Close" : "詳細を見る / Details";
       }
     });
   };
@@ -1436,11 +1439,11 @@ const setStatus = (message, type) => {
 
 const updateSummary = () => {
   if (summaryKpi) {
-    summaryKpi.textContent = `KPI: ${state.kpi || "未選択"}`;
+    summaryKpi.textContent = `KPI: ${state.kpi || "未選択 / Not selected"}`;
   }
 
   if (summaryMotion) {
-    summaryMotion.textContent = `演出強度: ${state.motion || "未選択"}`;
+    summaryMotion.textContent = `演出強度: ${state.motion || "未選択 / Not selected"}`;
   }
 };
 
@@ -1461,12 +1464,12 @@ const updatePane = () => {
 
 const validatePane = () => {
   if (paneIndex === 0 && !state.kpi) {
-    setStatus("最優先KPIを選択してください。", "error");
+    setStatus("最優先KPIを選択してください。 / Please select a KPI.", "error");
     return false;
   }
 
   if (paneIndex === 1 && !state.motion) {
-    setStatus("演出強度を選択してください。", "error");
+    setStatus("演出強度を選択してください。 / Please select a motion level.", "error");
     return false;
   }
 
@@ -1521,7 +1524,7 @@ if (consoleForm) {
     event.preventDefault();
 
     if (!state.kpi || !state.motion) {
-      setStatus("未回答の項目があります。", "error");
+      setStatus("未回答の項目があります。 / Some required selections are missing.", "error");
       paneIndex = !state.kpi ? 0 : 1;
       updatePane();
       return;
@@ -1529,18 +1532,18 @@ if (consoleForm) {
 
     if (!consoleForm.checkValidity()) {
       consoleForm.reportValidity();
-      setStatus("入力内容を確認してください。", "error");
+      setStatus("入力内容を確認してください。 / Please check your input.", "error");
       return;
     }
 
     const submitButton = consoleForm.querySelector(".submit-btn");
     if (submitButton instanceof HTMLButtonElement) {
       submitButton.disabled = true;
-      submitButton.textContent = "SENDING...";
+      submitButton.textContent = "送信中... / Sending...";
     }
 
     window.setTimeout(() => {
-      setStatus("送信完了。24時間以内にご連絡します。", "success");
+      setStatus("送信完了。24時間以内にご連絡します。 / Sent successfully. We will reply within 24 hours.", "success");
       consoleForm.reset();
       state.kpi = "";
       state.motion = "";
@@ -1551,7 +1554,7 @@ if (consoleForm) {
 
       if (submitButton instanceof HTMLButtonElement) {
         submitButton.disabled = false;
-        submitButton.textContent = "無料提案を受け取る";
+        submitButton.textContent = "無料ブリーフを受け取る / Get Free Brief";
       }
     }, 680);
   });

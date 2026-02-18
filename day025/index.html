@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAY025 // FRACTURE LP EXPERIMENT</title>
+    <title>DAY025 // FRACTURE LAB INTERACTIVE LP</title>
     <meta
       name="description"
-      content="常識的なLPを破壊する。映像感、非線形スクロール、反応するUIでCV導線を設計する実験的ランディングページ。"
+      content="常識的なLPを再設計する。反応するUI、非線形スクロール、インタラクティブ導線でCV意志決定を加速する日英対応デモLP。"
     >
     <link rel="stylesheet" href="./styles.css">
     <script defer src="./script.js"></script>
   </head>
   <body id="top" class="mode-calm">
-    <a class="skip-link" href="#main-content">本文へスキップ</a>
+    <a class="skip-link" href="#main-content">本文へスキップ / Skip to content</a>
 
     <div class="progress-line" aria-hidden="true"><span></span></div>
 
@@ -30,7 +30,7 @@
       <div class="topbar-inner wrap">
         <a class="brand" href="#top">
           <span class="brand-id">DAY025 / FRACTURE LAB</span>
-          <span class="brand-sub">ANTI-TEMPLATE LP ENGINE</span>
+          <span class="brand-sub">INTERACTIVE CONVERSION DESIGN</span>
         </a>
 
         <button class="mode-toggle" id="mode-toggle" type="button" aria-pressed="false">
@@ -45,62 +45,62 @@
           <a href="#console">CONSOLE</a>
         </nav>
 
-        <a class="topbar-cta" href="#console" data-magnetic>FREE BRIEF</a>
+        <a class="topbar-cta" href="#console" data-magnetic>無料ブリーフ / Free Brief</a>
       </div>
     </header>
 
     <main id="main-content">
       <section class="hero wrap section" data-chapter="INTRO">
         <div class="hero-copy" data-reveal>
-          <p class="eyebrow">LP WITHOUT MANNERS</p>
+          <p class="eyebrow">BREAK THE DEFAULT LP</p>
           <h1 class="distort-title distort-hero" data-distort>
-            <span class="distort-line">常識の構図を、</span>
-            <span class="distort-line">分解して、</span>
-            <span class="distort-line">CV導線だけ残す。</span>
+            <span class="distort-line">常識の構図を壊し、</span>
+            <span class="distort-line">体験を設計し、</span>
+            <span class="distort-line">CVへの意志決定を前へ。</span>
           </h1>
           <p>
-            これは「読ませるLP」ではなく「巻き込むLP」。
-            視線、スクロール、選択操作の3軸でテンションを制御し、最終CTAまで体験として接続する。
+            これは「読むだけのLP」ではなく「触れて理解するLP」。
+            視線、スクロール、操作反応を連動させ、納得したまま最終CTAへ接続する。
           </p>
           <div class="hero-actions">
-            <a class="btn btn-solid" href="#console" data-magnetic>30秒で診断を開始</a>
-            <button class="btn btn-wire" type="button" data-scroll-target="#fracture">分解フェーズへ移動</button>
+            <a class="btn btn-solid" href="#console" data-magnetic>30秒診断をはじめる / Start in 30s</a>
+            <button class="btn btn-wire" type="button" data-scroll-target="#fracture">PHASEを見る / View Phases</button>
           </div>
         </div>
 
         <div class="hero-machine" id="hero-machine" data-reveal>
           <div class="machine-head">
-            <p class="machine-label">ADAPTIVE MISSION CORE</p>
-            <p class="machine-mode" id="machine-mode">PHASE 01 / NODE A</p>
+            <p class="machine-label">INTERACTION MISSION CORE</p>
+            <p class="machine-mode" id="machine-mode">PHASE 01 / EVENT 01 / NODE A</p>
           </div>
 
-          <div class="machine-scope" id="machine-scope" aria-label="インタラクションノード">
+          <div class="machine-scope" id="machine-scope" aria-label="ノード配置インタラクション / Node placement interaction">
             <span class="machine-scan" aria-hidden="true"></span>
             <span class="machine-target machine-target-a" data-machine-target="0" aria-hidden="true"></span>
             <span class="machine-target machine-target-b" data-machine-target="1" aria-hidden="true"></span>
             <span class="machine-target machine-target-c" data-machine-target="2" aria-hidden="true"></span>
-            <button class="machine-node machine-node-a is-active" type="button" data-machine-node="0" data-pos-x="0.2" data-pos-y="0.32" aria-label="Node A"></button>
-            <button class="machine-node machine-node-b" type="button" data-machine-node="1" data-pos-x="0.56" data-pos-y="0.62" aria-label="Node B"></button>
-            <button class="machine-node machine-node-c" type="button" data-machine-node="2" data-pos-x="0.78" data-pos-y="0.26" aria-label="Node C"></button>
+            <button class="machine-node machine-node-a is-active" type="button" data-machine-node="0" data-pos-x="0.2" data-pos-y="0.32" aria-label="Node A / ノードA"></button>
+            <button class="machine-node machine-node-b" type="button" data-machine-node="1" data-pos-x="0.56" data-pos-y="0.62" aria-label="Node B / ノードB"></button>
+            <button class="machine-node machine-node-c" type="button" data-machine-node="2" data-pos-x="0.78" data-pos-y="0.26" aria-label="Node C / ノードC"></button>
           </div>
 
           <div class="machine-core" id="machine-core">
-            <p class="machine-text" id="machine-text">INIT // 余白と静寂で注意を一点に固定</p>
-            <p class="machine-subtext" id="machine-subtext">NODE A // クリック or ドラッグで反応を切り替え</p>
+            <p class="machine-text" id="machine-text">INIT // 余白で視線を固定し、最初の意図をつくる</p>
+            <p class="machine-subtext" id="machine-subtext">NODE A // クリックまたはドラッグで配置を調整</p>
           </div>
 
-          <div class="machine-events" id="machine-events" aria-label="配置イベント">
+          <div class="machine-events" id="machine-events" aria-label="配置イベント / Placement events">
             <button class="machine-event is-active" type="button" data-machine-event="0">
-              <span>EVENT 01 / TRIANGLE LOCK</span>
-              <strong id="machine-event-state-0">PENDING</strong>
+              <span>EVENT 01 / FOCUS TRIANGLE</span>
+              <strong id="machine-event-state-0">d--</strong>
             </button>
             <button class="machine-event" type="button" data-machine-event="1">
-              <span>EVENT 02 / VERTICAL GATE</span>
-              <strong id="machine-event-state-1">PENDING</strong>
+              <span>EVENT 02 / INTENT COLUMN</span>
+              <strong id="machine-event-state-1">d--</strong>
             </button>
             <button class="machine-event" type="button" data-machine-event="2">
-              <span>EVENT 03 / ORBIT SNAP</span>
-              <strong id="machine-event-state-2">PENDING</strong>
+              <span>EVENT 03 / DECISION ORBIT</span>
+              <strong id="machine-event-state-2">d--</strong>
             </button>
           </div>
 
@@ -118,7 +118,7 @@
               <strong id="machine-metric-node-c">x78 y26 / d0.0</strong>
             </article>
             <article class="machine-stat">
-              <p>TARGET DIST</p>
+              <p>TOTAL DIST</p>
               <strong id="machine-metric-total-dist">0.0</strong>
             </article>
           </div>
@@ -127,14 +127,18 @@
 
       <section class="signal-strip" aria-label="キーワード">
         <div class="signal-track">
-          <p>SCROLL DRIVES NARRATIVE</p>
-          <p>UI THAT REACTS TO HUMAN INTENT</p>
-          <p>CONVERSION WITHOUT HARD SELL</p>
-          <p>LOW FRICTION STEP FLOW</p>
-          <p>SCROLL DRIVES NARRATIVE</p>
-          <p>UI THAT REACTS TO HUMAN INTENT</p>
-          <p>CONVERSION WITHOUT HARD SELL</p>
-          <p>LOW FRICTION STEP FLOW</p>
+          <div class="signal-group">
+            <p>SCROLL DRIVES NARRATIVE</p>
+            <p>INTERACTION EXPLAINS VALUE</p>
+            <p>CONVERSION WITHOUT PRESSURE</p>
+            <p>SMALL STEPS, LOWER FRICTION</p>
+          </div>
+          <div class="signal-group" aria-hidden="true">
+            <p>SCROLL DRIVES NARRATIVE</p>
+            <p>INTERACTION EXPLAINS VALUE</p>
+            <p>CONVERSION WITHOUT PRESSURE</p>
+            <p>SMALL STEPS, LOWER FRICTION</p>
+          </div>
         </div>
       </section>
 
@@ -142,8 +146,8 @@
         <div class="wrap fracture-layout">
           <aside class="phase-panel" data-reveal>
             <p class="eyebrow">LIVE PHASE TRACKER</p>
-            <h2 id="phase-heading" class="distort-title" data-distort>PHASE 01 // ATTENTION LOCK</h2>
-            <p id="phase-copy">最初の3秒は理解より空気を伝える。余計な選択肢を切り、視線を固定する。</p>
+            <h2 id="phase-heading" class="distort-title" data-distort>PHASE 01 // FIRST IMPRESSION</h2>
+            <p id="phase-copy">最初の3秒で「読む理由」を作る。選択肢を絞り、視線と期待を固定する。</p>
 
             <div class="phase-meter" aria-hidden="true"><span id="phase-meter-bar"></span></div>
 
@@ -158,41 +162,41 @@
           <div class="phase-scroll" id="phase-scroll">
             <article class="phase-block" data-phase="0" data-reveal>
               <p class="phase-tag">PHASE 01</p>
-              <h3>情報を足す前に、視線の重力を作る</h3>
-              <p class="phase-summary">冒頭は説明を削り、巨大タイポで「続きを見たい」を作る。</p>
-              <button class="phase-toggle" type="button" aria-expanded="false">30字要約から詳細へ</button>
+              <h3>説明より先に、視線の重力をつくる</h3>
+              <p class="phase-summary">冒頭は情報を削り、意味のある余白で「続きが気になる」を生む。</p>
+              <button class="phase-toggle" type="button" aria-expanded="false">要点を開く / Expand</button>
               <div class="phase-detail" hidden>
-                最初の視認範囲に選択肢を詰め込まず、視線の重力を先に作る。理解より没入を優先し、次のスクロール行動を誘発する。
+                ファーストビューで情報過多を避け、まず体験温度を合わせる。理解は次のスクロールで段階的に渡す。
               </div>
             </article>
 
             <article class="phase-block" data-phase="1" data-reveal>
               <p class="phase-tag">PHASE 02</p>
-              <h3>課題を箇条書きにしない。時間軸で見せる</h3>
-              <p class="phase-summary">課題を時系列で見せ、読者の体験記憶とページ体験を合わせる。</p>
-              <button class="phase-toggle" type="button" aria-expanded="false">30字要約から詳細へ</button>
+              <h3>課題は箇条書きではなく、流れで見せる</h3>
+              <p class="phase-summary">時間軸で痛みを見せると、読者の実感とページ体験が重なる。</p>
+              <button class="phase-toggle" type="button" aria-expanded="false">要点を開く / Expand</button>
               <div class="phase-detail" hidden>
-                「困りごと→悪化→手詰まり」の流れで課題を整理し、次の解決策セクションへの受け入れ準備を作る。離脱を減らす狙い。
+                困りごと→停滞→機会損失の順で整理し、解決策を受け入れる準備を整える。
               </div>
             </article>
 
             <article class="phase-block" data-phase="2" data-reveal>
               <p class="phase-tag">PHASE 03</p>
-              <h3>提案は読むものではなく、触って確かめるもの</h3>
-              <p class="phase-summary">反応するUIで、提案価値を受け身ではなく能動的に理解させる。</p>
-              <button class="phase-toggle" type="button" aria-expanded="false">30字要約から詳細へ</button>
+              <h3>提案は読むものから、触って確かめるものへ</h3>
+              <p class="phase-summary">反応するUIで価値を体感化し、納得までの距離を短くする。</p>
+              <button class="phase-toggle" type="button" aria-expanded="false">要点を開く / Expand</button>
               <div class="phase-detail" hidden>
-                ボタンやカードの状態変化を使って「効きそう」を疑似体験化。説明文の長文化を避け、短時間で納得を形成する。
+                ホバー・クリック・ドラッグの反応で「効きそう」を瞬時に伝え、長文依存を減らす。
               </div>
             </article>
 
             <article class="phase-block" data-phase="3" data-reveal>
               <p class="phase-tag">PHASE 04</p>
-              <h3>最後に押すのではなく、押したくなる負荷に分解する</h3>
-              <p class="phase-summary">入力負荷を分割し、送信完了までの心理的ハードルを下げる。</p>
-              <button class="phase-toggle" type="button" aria-expanded="false">30字要約から詳細へ</button>
+              <h3>押し切るCTAではなく、進みたくなるCTAへ</h3>
+              <p class="phase-summary">入力負荷を分割して、完了までの心理抵抗を小さくする。</p>
+              <button class="phase-toggle" type="button" aria-expanded="false">要点を開く / Expand</button>
               <div class="phase-detail" hidden>
-                1画面に項目を詰めず、段階的に回答させることで「もう少しだけ進む」を積み重ねる。結果としてCV完了率を上げる。
+                一度に詰め込まず、各ステップに小さな完了感を置くことで送信完了率を上げる。
               </div>
             </article>
           </div>
@@ -202,18 +206,18 @@
       <section class="orbit section" id="orbit" data-chapter="ORBIT">
         <div class="wrap orbit-layout">
           <div class="orbit-copy" data-reveal>
-            <p class="eyebrow">ORBIT SELECTOR</p>
-            <h2 class="distort-title" data-distort>何を伸ばすかを先に決める。演出はその後。</h2>
+            <p class="eyebrow">ORBIT PRIORITY SELECTOR</p>
+            <h2 class="distort-title" data-distort>先にKPIを選ぶ。演出は、その目的に合わせる。</h2>
             <p>
-              動きは目的のために使う。優先KPIを選ぶと、中央の戦略が切り替わる。
-              「なんとなく派手」を排除し、成果に効く演出だけ残す。
+              動きは飾りではなく機能。優先指標を選ぶと、中央の戦略が切り替わる。
+              成果に直結しない演出は切り落とし、効く演出だけを残す。
             </p>
           </div>
 
           <div class="orbit-shell" data-reveal>
             <div class="orbit-core" id="orbit-core">
-              <p class="orbit-core-label" id="orbit-core-label">CV IMPACT</p>
-              <p class="orbit-core-copy" id="orbit-core-copy">入力障壁を減らし、送信完了率を優先して設計。</p>
+              <p class="orbit-core-label" id="orbit-core-label">CV PRIORITY</p>
+              <p class="orbit-core-copy" id="orbit-core-copy">入力障壁を減らし、送信完了率の最大化に集中する。</p>
             </div>
 
             <button class="orbit-node is-active" type="button" data-orbit="0" style="--angle: 0deg;">
@@ -235,36 +239,36 @@
       <section class="cards section" id="cards" data-chapter="MODULES">
         <div class="wrap">
           <p class="eyebrow" data-reveal>REACTION MODULES</p>
-          <h2 class="distort-title" data-distort data-reveal>触れた瞬間に「理解」が返ってくるUI群</h2>
+          <h2 class="distort-title" data-distort data-reveal>触れた瞬間に、意図と価値が伝わるUI群</h2>
 
           <div class="cards-grid">
             <article class="react-card" data-reveal data-tilt>
               <p class="card-tag">MAGNETIC CTA</p>
-              <h3>カーソルに吸い付く行動ボタン</h3>
-              <p>押せる対象を直感で認識。迷い時間を短縮し、クリックを即断に変える。</p>
-              <button class="card-toggle" type="button" aria-expanded="false">詳細を開く</button>
+              <h3>迷いを減らす、吸着型CTA</h3>
+              <p>押せる対象を直感で認識させ、クリック直前の迷いを短縮する。</p>
+              <button class="card-toggle" type="button" aria-expanded="false">詳細を見る / Details</button>
               <div class="card-detail" hidden>
-                CTA周辺の要素を減らし、押下直前の迷いを削ることでCV率の安定化を狙います。
+                CTA付近のノイズを減らし、押下の意思決定を1アクションで完了させる。
               </div>
             </article>
 
             <article class="react-card" data-reveal data-tilt>
               <p class="card-tag">PHASE TRACK</p>
-              <h3>読むほど進む進捗可視化</h3>
-              <p>現在地がわかると離脱が減る。残り距離を見せて読了率を底上げ。</p>
-              <button class="card-toggle" type="button" aria-expanded="false">詳細を開く</button>
+              <h3>現在地を示す、読了アシスト</h3>
+              <p>進捗が見えると離脱は減る。残り距離を示し、読み切る動機を維持する。</p>
+              <button class="card-toggle" type="button" aria-expanded="false">詳細を見る / Details</button>
               <div class="card-detail" hidden>
-                長文説明の前に進捗を見せることで、完読見込みを持たせて途中離脱を抑制します。
+                先に完了見込みを提示し、長文に入る前の心理的ハードルを下げる。
               </div>
             </article>
 
             <article class="react-card" data-reveal data-tilt>
               <p class="card-tag">INPUT SPLIT</p>
-              <h3>入力は短く、連続的に</h3>
-              <p>大量項目を一気に見せず、ミニステップで完了体験を積み上げる。</p>
-              <button class="card-toggle" type="button" aria-expanded="false">詳細を開く</button>
+              <h3>入力は短く、連続的に進める</h3>
+              <p>項目を一気に見せず、ミニステップで完了体験を積み上げる。</p>
+              <button class="card-toggle" type="button" aria-expanded="false">詳細を見る / Details</button>
               <div class="card-detail" hidden>
-                ステップごとの完了感を作ることで、入力開始後の離脱率を段階的に下げます。
+                ステップ単位の達成感を作り、入力開始後の離脱率を段階的に下げる。
               </div>
             </article>
           </div>
@@ -274,26 +278,26 @@
       <section class="compare section" id="compare" data-chapter="COMPARE">
         <div class="wrap">
           <p class="eyebrow" data-reveal>COMPARISON SLIDER</p>
-          <h2 class="distort-title" data-distort data-reveal>通常導線と体験導線を、同じ視点で見比べる。</h2>
+          <h2 class="distort-title" data-distort data-reveal>同じ情報でも、体験設計で成果は変わる。</h2>
 
           <div class="compare-stage" id="compare-stage" data-reveal>
             <div class="compare-layer compare-base">
-              <p class="compare-tag">STANDARD LP FLOW</p>
-              <h3>読み順は明快だが、体験差は作りにくい</h3>
+              <p class="compare-tag">STANDARD FLOW</p>
+              <h3>読み順は明快。ただし、体験差は作りづらい</h3>
               <ul>
                 <li>説明→実績→CTAの直列導線</li>
-                <li>情報は整理しやすいが印象が均一</li>
-                <li>CVは訴求文言への依存が大きい</li>
+                <li>整理しやすいが、記憶に残りにくい</li>
+                <li>CVは文言の強さに依存しやすい</li>
               </ul>
             </div>
 
             <div class="compare-layer compare-alt" id="compare-alt-layer">
-              <p class="compare-tag">EXPERIENCE LP FLOW</p>
+              <p class="compare-tag">INTERACTIVE FLOW</p>
               <h3>同じ情報量でも、理解と没入の順序を設計できる</h3>
               <ul>
                 <li>空気感→課題→反応UI→段階CVの構造</li>
                 <li>読む前に「触って理解」が成立する</li>
-                <li>CTA前に心理抵抗を分割して軽減</li>
+                <li>CTA前に心理抵抗を分割して軽減できる</li>
               </ul>
             </div>
 
@@ -303,9 +307,9 @@
           </div>
 
           <div class="compare-controls" data-reveal>
-            <label for="compare-range">比較位置</label>
+            <label for="compare-range">比較位置 / Split</label>
             <input id="compare-range" type="range" min="0" max="100" value="54" step="1">
-            <p class="compare-hint">左右に動かして違いを確認</p>
+            <p class="compare-hint">左右に動かして、体験差を比較する</p>
           </div>
         </div>
       </section>
@@ -314,10 +318,10 @@
         <div class="axis-sticky">
           <div class="axis-head wrap" data-reveal>
             <p class="eyebrow">AXIS SHIFT SECTION</p>
-            <h2 class="distort-title" data-distort>ここだけ、縦スクロールが横展開に変わる。</h2>
+            <h2 class="distort-title" data-distort>この区間だけ、縦スクロールを横展開に変える。</h2>
             <p>
-              セクションごとに軸を変えることで、視線の惰性を断ち切る。
-              ただ派手にするのではなく、読むテンポを再起動して次のCV導線へ戻す。
+              軸の切替で視線の惰性を断ち、読みのリズムを再起動する。
+              派手さのためではなく、要点の知覚率を高めるための演出。
             </p>
           </div>
 
@@ -325,32 +329,32 @@
             <div class="axis-rail" id="axis-rail">
               <article class="axis-panel is-active" data-axis-panel="0">
                 <p class="axis-label">VERTICAL -> HORIZONTAL</p>
-                <h3>スクロールは縦のまま、情報だけを横へ流す</h3>
+                <h3>スクロール操作はそのまま。情報だけ横へ流す</h3>
                 <p>操作負荷を増やさず、文脈切替だけを強く体感させる。</p>
               </article>
 
               <article class="axis-panel" data-axis-panel="1">
                 <p class="axis-label">TIMING RESET</p>
                 <h3>同じリズムで読ませ続けない</h3>
-                <p>縦積みの惰性を切ることで、重要メッセージの知覚率を上げる。</p>
+                <p>縦積みの惰性を断ち、重要メッセージの知覚率を上げる。</p>
               </article>
 
               <article class="axis-panel" data-axis-panel="2">
                 <p class="axis-label">NARRATIVE EXTEND</p>
                 <h3>1画面を「連続フレーム」に変える</h3>
-                <p>映画のようにフレームを送り、理解を段階的に積み上げる。</p>
+                <p>フレーム送りの感覚で、理解を段階的に積み上げる。</p>
               </article>
 
               <article class="axis-panel" data-axis-panel="3">
                 <p class="axis-label">RETURN TO VERTICAL</p>
-                <h3>横演出の後に縦導線へ復帰</h3>
-                <p>変化の記憶を残したまま、コンソール型CV入力へ接続する。</p>
+                <h3>横演出の後に、縦導線へ自然に復帰</h3>
+                <p>変化の記憶を残したまま、CV入力コンソールへ接続する。</p>
               </article>
             </div>
           </div>
 
           <div class="axis-foot wrap">
-            <p class="axis-state" id="axis-state">MODE: VERTICAL FEED / HORIZONTAL ACTIVE</p>
+            <p class="axis-state" id="axis-state">MODE: 縦スクロール / Horizontal Active</p>
             <div class="axis-progress" aria-hidden="true"><span id="axis-progress-bar"></span></div>
           </div>
         </div>
@@ -360,15 +364,15 @@
         <div class="wrap console-layout">
           <div class="console-copy" data-reveal>
             <p class="eyebrow">MISSION CONSOLE</p>
-            <h2 class="distort-title" data-distort>30秒で、提案可能な要件レベルへ</h2>
+            <h2 class="distort-title" data-distort>30秒で、提案に必要な要件を整理</h2>
             <p>
-              実案件の初期ヒアリングで不足しがちな情報だけを抽出。
-              回答直後に要約を生成し、打ち合わせの初速を上げる。
+              初回ヒアリングで抜けやすい情報を先に収集。
+              送信後すぐに要約でき、打ち合わせの立ち上がりを速くする。
             </p>
             <ul>
-              <li>STEP 1: 優先KPIを決める</li>
-              <li>STEP 2: 演出強度を決める</li>
-              <li>STEP 3: 連絡先を入力して送信</li>
+              <li>STEP 1: 優先KPIを選択 / Select KPI</li>
+              <li>STEP 2: 演出強度を選択 / Select Motion</li>
+              <li>STEP 3: 連絡先を入力 / Contact &amp; Submit</li>
             </ul>
           </div>
 
@@ -378,54 +382,54 @@
 
             <form id="console-form" class="console-form" action="#" method="post">
               <section class="console-pane is-active" data-console-pane="0">
-                <h3>最優先KPIは？</h3>
-                <div class="chip-grid" role="radiogroup" aria-label="最優先KPI">
-                  <button type="button" class="chip" data-field="kpi" data-value="CV率">CV率</button>
-                  <button type="button" class="chip" data-field="kpi" data-value="滞在時間">滞在時間</button>
-                  <button type="button" class="chip" data-field="kpi" data-value="指名検索">指名検索</button>
+                <h3>最優先KPIは？ / Top KPI</h3>
+                <div class="chip-grid" role="radiogroup" aria-label="最優先KPI / Top KPI">
+                  <button type="button" class="chip" data-field="kpi" data-value="CV率 / Conversion">CV率 / Conversion</button>
+                  <button type="button" class="chip" data-field="kpi" data-value="滞在時間 / Time on Page">滞在時間 / Time on Page</button>
+                  <button type="button" class="chip" data-field="kpi" data-value="指名検索 / Branded Search">指名検索 / Branded Search</button>
                 </div>
-                <button type="button" class="pane-next">次へ</button>
+                <button type="button" class="pane-next">次へ / Next</button>
               </section>
 
               <section class="console-pane" data-console-pane="1">
-                <h3>演出の強度は？</h3>
-                <div class="chip-grid" role="radiogroup" aria-label="演出強度">
-                  <button type="button" class="chip" data-field="motion" data-value="抑制">抑制</button>
-                  <button type="button" class="chip" data-field="motion" data-value="標準">標準</button>
-                  <button type="button" class="chip" data-field="motion" data-value="攻める">攻める</button>
+                <h3>演出の強度は？ / Motion Level</h3>
+                <div class="chip-grid" role="radiogroup" aria-label="演出強度 / Motion Level">
+                  <button type="button" class="chip" data-field="motion" data-value="抑制 / Calm">抑制 / Calm</button>
+                  <button type="button" class="chip" data-field="motion" data-value="標準 / Balanced">標準 / Balanced</button>
+                  <button type="button" class="chip" data-field="motion" data-value="高演出 / Dynamic">高演出 / Dynamic</button>
                 </div>
                 <div class="pane-actions">
-                  <button type="button" class="pane-prev">戻る</button>
-                  <button type="button" class="pane-next">次へ</button>
+                  <button type="button" class="pane-prev">戻る / Back</button>
+                  <button type="button" class="pane-next">次へ / Next</button>
                 </div>
               </section>
 
               <section class="console-pane" data-console-pane="2">
-                <h3>連絡先を入力して送信</h3>
-                <label for="company">会社名</label>
-                <input id="company" name="company" type="text" placeholder="株式会社サンプル" required autocomplete="organization">
+                <h3>連絡先を入力して送信 / Contact &amp; Submit</h3>
+                <label for="company">会社名 / Company</label>
+                <input id="company" name="company" type="text" placeholder="株式会社サンプル / Sample Inc." required autocomplete="organization">
 
-                <label for="email">メールアドレス</label>
+                <label for="email">メールアドレス / Email</label>
                 <input id="email" name="email" type="email" placeholder="contact@example.com" required autocomplete="email">
 
                 <div class="summary" id="console-summary">
-                  <p>SUMMARY</p>
+                  <p>SUMMARY / 要約</p>
                   <ul>
-                    <li id="summary-kpi">KPI: 未選択</li>
-                    <li id="summary-motion">演出強度: 未選択</li>
+                    <li id="summary-kpi">KPI: 未選択 / Not selected</li>
+                    <li id="summary-motion">演出強度: 未選択 / Not selected</li>
                   </ul>
                 </div>
 
                 <label class="consent">
                   <input id="consent" name="consent" type="checkbox" required>
-                  <span>個人情報の取り扱いに同意します</span>
+                  <span>個人情報の取り扱いに同意します / I agree to the privacy policy.</span>
                 </label>
 
                 <p id="console-status" class="console-status" role="status" aria-live="polite"></p>
 
                 <div class="pane-actions">
-                  <button type="button" class="pane-prev">戻る</button>
-                  <button type="submit" class="submit-btn" data-magnetic>無料提案を受け取る</button>
+                  <button type="button" class="pane-prev">戻る / Back</button>
+                  <button type="submit" class="submit-btn" data-magnetic>無料ブリーフを受け取る / Get Free Brief</button>
                 </div>
               </section>
             </form>
@@ -435,18 +439,18 @@
     </main>
 
     <aside class="reading-hud" id="reading-hud" aria-live="polite">
-      <p class="reading-hud-label">READING GUIDE</p>
+      <p class="reading-hud-label">READING GUIDE / 読了ガイド</p>
       <p class="reading-hud-title" id="reading-hud-title">INTRO</p>
       <div class="reading-hud-progress" aria-hidden="true"><span id="reading-hud-progress-bar"></span></div>
     </aside>
 
-    <a class="floating-cta" href="#console" data-magnetic>FREE BRIEF</a>
-    <button class="back-top" type="button" aria-label="ページ上部へ戻る">TOP</button>
+    <a class="floating-cta" href="#console" data-magnetic>無料ブリーフ / Free Brief</a>
+    <button class="back-top" type="button" aria-label="ページ上部へ戻る / Back to top">TOP</button>
 
     <footer class="footer">
       <div class="wrap footer-inner">
-        <p class="footer-brand">DAY025 / FRACTURE LP EXPERIMENT</p>
-        <p>本ページはポートフォリオ用デモです。成果を保証するものではありません。</p>
+        <p class="footer-brand">DAY025 / FRACTURE LAB INTERACTIVE LP</p>
+        <p>本ページはポートフォリオ用デモです。成果を保証するものではありません。 / This is a portfolio demo and does not guarantee results.</p>
       </div>
     </footer>
   </body>

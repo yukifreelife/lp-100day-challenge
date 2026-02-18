@@ -853,13 +853,21 @@ p {
 
 .signal-track {
   width: max-content;
+  min-width: 100%;
   display: flex;
-  gap: 2.8rem;
   padding: 0.85rem 0;
   animation: marquee 24s linear infinite;
+  will-change: transform;
 }
 
-.signal-track p {
+.signal-group {
+  display: flex;
+  flex-shrink: 0;
+  gap: 2.8rem;
+  padding-right: 2.8rem;
+}
+
+.signal-group p {
   margin: 0;
   white-space: nowrap;
   font-family: var(--font-display);
@@ -1871,10 +1879,10 @@ body.mode-endgame .pointer-spark {
 
 @keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
