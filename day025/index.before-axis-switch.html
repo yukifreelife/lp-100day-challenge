@@ -17,7 +17,6 @@
     <div class="progress-line" aria-hidden="true"><span></span></div>
 
     <div class="world" aria-hidden="true">
-      <canvas class="world-canvas" id="world-canvas" aria-hidden="true"></canvas>
       <span class="world-grid" data-parallax="0.08"></span>
       <span class="world-aurora world-aurora-a" data-parallax="0.2"></span>
       <span class="world-aurora world-aurora-b" data-parallax="0.13"></span>
@@ -39,8 +38,6 @@
         <nav class="jump-nav" aria-label="ページ内ナビゲーション">
           <a href="#fracture">PHASE</a>
           <a href="#orbit">ORBIT</a>
-          <a href="#compare">COMPARE</a>
-          <a href="#axis-switch">AXIS</a>
           <a href="#console">CONSOLE</a>
         </nav>
 
@@ -49,13 +46,13 @@
     </header>
 
     <main id="main-content">
-      <section class="hero wrap section" data-chapter="INTRO">
+      <section class="hero wrap section">
         <div class="hero-copy" data-reveal>
           <p class="eyebrow">LP WITHOUT MANNERS</p>
-          <h1 class="distort-title distort-hero" data-distort>
-            <span class="distort-line">常識の構図を、</span>
-            <span class="distort-line">分解して、</span>
-            <span class="distort-line">CV導線だけ残す。</span>
+          <h1>
+            <span>常識の構図を、</span>
+            <span>分解して、</span>
+            <span>CV導線だけ残す。</span>
           </h1>
           <p>
             これは「読ませるLP」ではなく「巻き込むLP」。
@@ -100,11 +97,11 @@
         </div>
       </section>
 
-      <section class="fracture section" id="fracture" data-chapter="PHASE">
+      <section class="fracture section" id="fracture">
         <div class="wrap fracture-layout">
           <aside class="phase-panel" data-reveal>
             <p class="eyebrow">LIVE PHASE TRACKER</p>
-            <h2 id="phase-heading" class="distort-title" data-distort>PHASE 01 // ATTENTION LOCK</h2>
+            <h2 id="phase-heading">PHASE 01 // ATTENTION LOCK</h2>
             <p id="phase-copy">最初の3秒は理解より空気を伝える。余計な選択肢を切り、視線を固定する。</p>
 
             <div class="phase-meter" aria-hidden="true"><span id="phase-meter-bar"></span></div>
@@ -121,51 +118,35 @@
             <article class="phase-block" data-phase="0" data-reveal>
               <p class="phase-tag">PHASE 01</p>
               <h3>情報を足す前に、視線の重力を作る</h3>
-              <p class="phase-summary">冒頭は説明を削り、巨大タイポで「続きを見たい」を作る。</p>
-              <button class="phase-toggle" type="button" aria-expanded="false">30字要約から詳細へ</button>
-              <div class="phase-detail" hidden>
-                最初の視認範囲に選択肢を詰め込まず、視線の重力を先に作る。理解より没入を優先し、次のスクロール行動を誘発する。
-              </div>
+              <p>冒頭は説明を削り、巨大タイポと呼吸する背景で「続きを見たい」を発火させる。</p>
             </article>
 
             <article class="phase-block" data-phase="1" data-reveal>
               <p class="phase-tag">PHASE 02</p>
               <h3>課題を箇条書きにしない。時間軸で見せる</h3>
-              <p class="phase-summary">課題を時系列で見せ、読者の体験記憶とページ体験を合わせる。</p>
-              <button class="phase-toggle" type="button" aria-expanded="false">30字要約から詳細へ</button>
-              <div class="phase-detail" hidden>
-                「困りごと→悪化→手詰まり」の流れで課題を整理し、次の解決策セクションへの受け入れ準備を作る。離脱を減らす狙い。
-              </div>
+              <p>ユーザーのストレスは連続体。連続演出で再現し、次の解決情報へ自然に接続する。</p>
             </article>
 
             <article class="phase-block" data-phase="2" data-reveal>
               <p class="phase-tag">PHASE 03</p>
               <h3>提案は読むものではなく、触って確かめるもの</h3>
-              <p class="phase-summary">反応するUIで、提案価値を受け身ではなく能動的に理解させる。</p>
-              <button class="phase-toggle" type="button" aria-expanded="false">30字要約から詳細へ</button>
-              <div class="phase-detail" hidden>
-                ボタンやカードの状態変化を使って「効きそう」を疑似体験化。説明文の長文化を避け、短時間で納得を形成する。
-              </div>
+              <p>ホバーやタップで状態が変わるUIを使い、価値を受動から能動へ切り替える。</p>
             </article>
 
             <article class="phase-block" data-phase="3" data-reveal>
               <p class="phase-tag">PHASE 04</p>
               <h3>最後に押すのではなく、押したくなる負荷に分解する</h3>
-              <p class="phase-summary">入力負荷を分割し、送信完了までの心理的ハードルを下げる。</p>
-              <button class="phase-toggle" type="button" aria-expanded="false">30字要約から詳細へ</button>
-              <div class="phase-detail" hidden>
-                1画面に項目を詰めず、段階的に回答させることで「もう少しだけ進む」を積み重ねる。結果としてCV完了率を上げる。
-              </div>
+              <p>1フォーム完結をやめ、ステップ化して心理的抵抗を軽くしCVへ導く。</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="orbit section" id="orbit" data-chapter="ORBIT">
+      <section class="orbit section" id="orbit">
         <div class="wrap orbit-layout">
           <div class="orbit-copy" data-reveal>
             <p class="eyebrow">ORBIT SELECTOR</p>
-            <h2 class="distort-title" data-distort>何を伸ばすかを先に決める。演出はその後。</h2>
+            <h2>何を伸ばすかを先に決める。演出はその後。</h2>
             <p>
               動きは目的のために使う。優先KPIを選ぶと、中央の戦略が切り替わる。
               「なんとなく派手」を排除し、成果に効く演出だけ残す。
@@ -194,135 +175,38 @@
         </div>
       </section>
 
-      <section class="cards section" id="cards" data-chapter="MODULES">
+      <section class="cards section" id="cards">
         <div class="wrap">
           <p class="eyebrow" data-reveal>REACTION MODULES</p>
-          <h2 class="distort-title" data-distort data-reveal>触れた瞬間に「理解」が返ってくるUI群</h2>
+          <h2 data-reveal>触れた瞬間に「理解」が返ってくるUI群</h2>
 
           <div class="cards-grid">
             <article class="react-card" data-reveal data-tilt>
               <p class="card-tag">MAGNETIC CTA</p>
               <h3>カーソルに吸い付く行動ボタン</h3>
               <p>押せる対象を直感で認識。迷い時間を短縮し、クリックを即断に変える。</p>
-              <button class="card-toggle" type="button" aria-expanded="false">詳細を開く</button>
-              <div class="card-detail" hidden>
-                CTA周辺の要素を減らし、押下直前の迷いを削ることでCV率の安定化を狙います。
-              </div>
             </article>
 
             <article class="react-card" data-reveal data-tilt>
               <p class="card-tag">PHASE TRACK</p>
               <h3>読むほど進む進捗可視化</h3>
               <p>現在地がわかると離脱が減る。残り距離を見せて読了率を底上げ。</p>
-              <button class="card-toggle" type="button" aria-expanded="false">詳細を開く</button>
-              <div class="card-detail" hidden>
-                長文説明の前に進捗を見せることで、完読見込みを持たせて途中離脱を抑制します。
-              </div>
             </article>
 
             <article class="react-card" data-reveal data-tilt>
               <p class="card-tag">INPUT SPLIT</p>
               <h3>入力は短く、連続的に</h3>
               <p>大量項目を一気に見せず、ミニステップで完了体験を積み上げる。</p>
-              <button class="card-toggle" type="button" aria-expanded="false">詳細を開く</button>
-              <div class="card-detail" hidden>
-                ステップごとの完了感を作ることで、入力開始後の離脱率を段階的に下げます。
-              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="compare section" id="compare" data-chapter="COMPARE">
-        <div class="wrap">
-          <p class="eyebrow" data-reveal>COMPARISON SLIDER</p>
-          <h2 class="distort-title" data-distort data-reveal>通常導線と体験導線を、同じ視点で見比べる。</h2>
-
-          <div class="compare-stage" id="compare-stage" data-reveal>
-            <div class="compare-layer compare-base">
-              <p class="compare-tag">STANDARD LP FLOW</p>
-              <h3>読み順は明快だが、体験差は作りにくい</h3>
-              <ul>
-                <li>説明→実績→CTAの直列導線</li>
-                <li>情報は整理しやすいが印象が均一</li>
-                <li>CVは訴求文言への依存が大きい</li>
-              </ul>
-            </div>
-
-            <div class="compare-layer compare-alt" id="compare-alt-layer">
-              <p class="compare-tag">EXPERIENCE LP FLOW</p>
-              <h3>同じ情報量でも、理解と没入の順序を設計できる</h3>
-              <ul>
-                <li>空気感→課題→反応UI→段階CVの構造</li>
-                <li>読む前に「触って理解」が成立する</li>
-                <li>CTA前に心理抵抗を分割して軽減</li>
-              </ul>
-            </div>
-
-            <div class="compare-divider" id="compare-divider" aria-hidden="true">
-              <span></span>
-            </div>
-          </div>
-
-          <div class="compare-controls" data-reveal>
-            <label for="compare-range">比較位置</label>
-            <input id="compare-range" type="range" min="0" max="100" value="54" step="1">
-            <p class="compare-hint">左右に動かして違いを確認</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="axis-switch section" id="axis-switch" data-axis-section data-chapter="AXIS">
-        <div class="axis-sticky">
-          <div class="axis-head wrap" data-reveal>
-            <p class="eyebrow">AXIS SHIFT SECTION</p>
-            <h2 class="distort-title" data-distort>ここだけ、縦スクロールが横展開に変わる。</h2>
-            <p>
-              セクションごとに軸を変えることで、視線の惰性を断ち切る。
-              ただ派手にするのではなく、読むテンポを再起動して次のCV導線へ戻す。
-            </p>
-          </div>
-
-          <div class="axis-viewport" aria-live="polite">
-            <div class="axis-rail" id="axis-rail">
-              <article class="axis-panel is-active" data-axis-panel="0">
-                <p class="axis-label">VERTICAL -> HORIZONTAL</p>
-                <h3>スクロールは縦のまま、情報だけを横へ流す</h3>
-                <p>操作負荷を増やさず、文脈切替だけを強く体感させる。</p>
-              </article>
-
-              <article class="axis-panel" data-axis-panel="1">
-                <p class="axis-label">TIMING RESET</p>
-                <h3>同じリズムで読ませ続けない</h3>
-                <p>縦積みの惰性を切ることで、重要メッセージの知覚率を上げる。</p>
-              </article>
-
-              <article class="axis-panel" data-axis-panel="2">
-                <p class="axis-label">NARRATIVE EXTEND</p>
-                <h3>1画面を「連続フレーム」に変える</h3>
-                <p>映画のようにフレームを送り、理解を段階的に積み上げる。</p>
-              </article>
-
-              <article class="axis-panel" data-axis-panel="3">
-                <p class="axis-label">RETURN TO VERTICAL</p>
-                <h3>横演出の後に縦導線へ復帰</h3>
-                <p>変化の記憶を残したまま、コンソール型CV入力へ接続する。</p>
-              </article>
-            </div>
-          </div>
-
-          <div class="axis-foot wrap">
-            <p class="axis-state" id="axis-state">MODE: VERTICAL FEED / HORIZONTAL ACTIVE</p>
-            <div class="axis-progress" aria-hidden="true"><span id="axis-progress-bar"></span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="console section" id="console" data-chapter="CONSOLE">
+      <section class="console section" id="console">
         <div class="wrap console-layout">
           <div class="console-copy" data-reveal>
             <p class="eyebrow">MISSION CONSOLE</p>
-            <h2 class="distort-title" data-distort>30秒で、提案可能な要件レベルへ</h2>
+            <h2>30秒で、提案可能な要件レベルへ</h2>
             <p>
               実案件の初期ヒアリングで不足しがちな情報だけを抽出。
               回答直後に要約を生成し、打ち合わせの初速を上げる。
@@ -395,12 +279,6 @@
         </div>
       </section>
     </main>
-
-    <aside class="reading-hud" id="reading-hud" aria-live="polite">
-      <p class="reading-hud-label">READING GUIDE</p>
-      <p class="reading-hud-title" id="reading-hud-title">INTRO</p>
-      <div class="reading-hud-progress" aria-hidden="true"><span id="reading-hud-progress-bar"></span></div>
-    </aside>
 
     <a class="floating-cta" href="#console" data-magnetic>FREE BRIEF</a>
     <button class="back-top" type="button" aria-label="ページ上部へ戻る">TOP</button>
