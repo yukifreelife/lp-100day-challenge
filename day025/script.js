@@ -42,11 +42,16 @@ if (revealNodes.length > 0) {
 const topbar = document.querySelector(".topbar");
 const progressLine = document.querySelector(".progress-line span");
 const backTop = document.querySelector(".back-top");
+const footer = document.querySelector(".footer");
 
 const updateGlobalState = () => {
   const scrollTop = window.scrollY;
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
   const ratio = maxScroll > 0 ? (scrollTop / maxScroll) * 100 : 0;
+  const isFooterVisible = footer ? footer.getBoundingClientRect().top <= window.innerHeight * 1.08 : false;
+  const isEndgame = ratio >= 86 || isFooterVisible;
+
+  document.body.classList.toggle("mode-endgame", isEndgame);
 
   if (progressLine) {
     progressLine.style.width = `${Math.min(100, Math.max(0, ratio))}%`;
@@ -407,10 +412,17 @@ if (worldCanvas instanceof HTMLCanvasElement) {
 
     const drawStatic = () => {
       const overdrive = body.classList.contains("mode-overdrive");
+      const endgame = body.classList.contains("mode-endgame");
       ctx.clearRect(0, 0, width, height);
 
       const gradient = ctx.createLinearGradient(0, 0, width, height);
-      if (overdrive) {
+      if (endgame && overdrive) {
+        gradient.addColorStop(0, "rgba(88, 255, 236, 0.56)");
+        gradient.addColorStop(1, "rgba(102, 194, 255, 0.42)");
+      } else if (endgame) {
+        gradient.addColorStop(0, "rgba(62, 255, 228, 0.5)");
+        gradient.addColorStop(1, "rgba(94, 170, 255, 0.4)");
+      } else if (overdrive) {
         gradient.addColorStop(0, "rgba(255, 98, 154, 0.22)");
         gradient.addColorStop(1, "rgba(141, 159, 255, 0.18)");
       } else {
@@ -420,7 +432,11 @@ if (worldCanvas instanceof HTMLCanvasElement) {
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, width, height);
 
-      const lineColor = overdrive ? "rgba(255, 174, 236, 0.35)" : "rgba(160, 220, 255, 0.3)";
+      const lineColor = endgame
+        ? "rgba(148, 248, 255, 0.62)"
+        : overdrive
+          ? "rgba(255, 174, 236, 0.35)"
+          : "rgba(160, 220, 255, 0.3)";
       ctx.strokeStyle = lineColor;
       ctx.lineWidth = 1;
 
@@ -435,10 +451,15 @@ if (worldCanvas instanceof HTMLCanvasElement) {
 
     const renderFrame = (time) => {
       const overdrive = body.classList.contains("mode-overdrive");
+      const endgame = body.classList.contains("mode-endgame");
       const delta = Math.min(32, Math.max(0, time - lastTime));
       lastTime = time;
 
-      ctx.fillStyle = overdrive ? "rgba(12, 6, 22, 0.15)" : "rgba(4, 8, 18, 0.13)";
+      ctx.fillStyle = endgame
+        ? "rgba(5, 22, 34, 0.16)"
+        : overdrive
+          ? "rgba(12, 6, 22, 0.15)"
+          : "rgba(4, 8, 18, 0.13)";
       ctx.fillRect(0, 0, width, height);
 
       for (let i = 0; i < particles.length; i += 1) {
@@ -462,7 +483,7 @@ if (worldCanvas instanceof HTMLCanvasElement) {
           }
         }
 
-        const speed = particle.speed * (overdrive ? 1.32 : 1);
+        const speed = particle.speed * (overdrive ? 1.32 : endgame ? 1.18 : 1);
         particle.x += Math.cos(angle) * speed * delta * 0.06;
         particle.y += Math.sin(angle) * speed * delta * 0.06;
 
@@ -470,10 +491,10 @@ if (worldCanvas instanceof HTMLCanvasElement) {
           resetParticle(particle, true);
         }
 
-        const hueBase = overdrive ? 286 : 188;
-        const hueRange = overdrive ? 92 : 58;
+        const hueBase = overdrive ? 286 : endgame ? 186 : 188;
+        const hueRange = overdrive ? 92 : endgame ? 74 : 58;
         const hue = hueBase + ((Math.sin(particle.seed * 4 + time * 0.0009) + 1) / 2) * hueRange;
-        const alpha = overdrive ? 0.34 : 0.27;
+        const alpha = overdrive ? 0.34 : endgame ? 0.5 : 0.27;
 
         ctx.strokeStyle = `hsla(${hue.toFixed(0)}, 96%, 72%, ${alpha})`;
         ctx.lineWidth = particle.size;
@@ -563,22 +584,26 @@ const phaseData = [
   {
     heading: "PHASE 01 // ATTENTION LOCK",
     copy: "最初の3秒は理解より空気を伝える。余計な選択肢を切り、視線を固定する。",
-    machine: "INIT // 余白と静寂で注意を一点に固定"
+    machine: "INIT // 余白と静寂で注意を一点に固定",
+    phaseLabel: "PHASE 01"
   },
   {
     heading: "PHASE 02 // TENSION BUILD",
     copy: "課題の連鎖を見せて、読者の記憶とページ体験を同期させる。",
-    machine: "FLOW // 課題を時系列で連結し、没入を継続"
+    machine: "FLOW // 課題を時系列で連結し、没入を継続",
+    phaseLabel: "PHASE 02"
   },
   {
     heading: "PHASE 03 // INTERACTIVE PROOF",
     copy: "提案は説明ではなく反応で提示。操作した瞬間に価値を返す。",
-    machine: "REACT // 入力と視覚が即応し、納得を加速"
+    machine: "REACT // 入力と視覚が即応し、納得を加速",
+    phaseLabel: "PHASE 03"
   },
   {
     heading: "PHASE 04 // CONVERSION BRIDGE",
     copy: "CVを強要せず、ステップ分割で心理負荷を軽くして送信へつなぐ。",
-    machine: "EXEC // 意思決定を最短距離で送信完了へ"
+    machine: "EXEC // 意思決定を最短距離で送信完了へ",
+    phaseLabel: "PHASE 04"
   }
 ];
 
@@ -587,8 +612,282 @@ const phaseCopy = document.querySelector("#phase-copy");
 const phaseMeterBar = document.querySelector("#phase-meter-bar");
 const phaseBlocks = Array.from(document.querySelectorAll(".phase-block"));
 const phaseDots = Array.from(document.querySelectorAll(".phase-dot"));
+const machineMode = document.querySelector("#machine-mode");
 const machineText = document.querySelector("#machine-text");
+const machineSubtext = document.querySelector("#machine-subtext");
+const machineScope = document.querySelector("#machine-scope");
+const machineTargets = Array.from(document.querySelectorAll("[data-machine-target]"));
+const machineNodes = Array.from(document.querySelectorAll(".machine-node"));
+const machineEventButtons = Array.from(document.querySelectorAll("[data-machine-event]"));
+const machineEventStates = [
+  document.querySelector("#machine-event-state-0"),
+  document.querySelector("#machine-event-state-1"),
+  document.querySelector("#machine-event-state-2")
+];
+const machineMetricNodeA = document.querySelector("#machine-metric-node-a");
+const machineMetricNodeB = document.querySelector("#machine-metric-node-b");
+const machineMetricNodeC = document.querySelector("#machine-metric-node-c");
+const machineMetricTotalDist = document.querySelector("#machine-metric-total-dist");
 let activePhase = -1;
+let activeMachineNode = 0;
+let activeMachineEvent = 0;
+
+const machineNodeData = [
+  { label: "NODE A" },
+  { label: "NODE B" },
+  { label: "NODE C" }
+];
+
+const machineGameEvents = [
+  {
+    name: "TRIANGLE LOCK",
+    hint: "A/Cを上段左右、Bを下段中央へ配置",
+    targets: [
+      { x: 0.2, y: 0.24 },
+      { x: 0.5, y: 0.74 },
+      { x: 0.8, y: 0.24 }
+    ]
+  },
+  {
+    name: "VERTICAL GATE",
+    hint: "3ノードを縦一直線に揃える",
+    targets: [
+      { x: 0.5, y: 0.2 },
+      { x: 0.5, y: 0.5 },
+      { x: 0.5, y: 0.8 }
+    ]
+  },
+  {
+    name: "ORBIT SNAP",
+    hint: "A/Bを左右、Cを上段中央へ配置",
+    targets: [
+      { x: 0.26, y: 0.58 },
+      { x: 0.74, y: 0.58 },
+      { x: 0.5, y: 0.2 }
+    ]
+  }
+];
+
+const machineClearThreshold = 7;
+const machineEventDistances = new Array(machineGameEvents.length).fill(Number.POSITIVE_INFINITY);
+const clearedMachineEvents = new Set();
+
+const clampMachineValue = (value, min, max) => Math.min(max, Math.max(min, value));
+
+const readMachineNodePosition = (node, fallbackX, fallbackY) => {
+  const rawX = Number(node.getAttribute("data-pos-x"));
+  const rawY = Number(node.getAttribute("data-pos-y"));
+  const x = Number.isFinite(rawX) ? rawX : fallbackX;
+  const y = Number.isFinite(rawY) ? rawY : fallbackY;
+  return {
+    x: clampMachineValue(x, 0.02, 0.98),
+    y: clampMachineValue(y, 0.02, 0.98)
+  };
+};
+
+const machineNodePositions = machineNodes.map((node, index) => {
+  const fallbackX = [0.2, 0.56, 0.78][index] ?? 0.5;
+  const fallbackY = [0.32, 0.62, 0.26][index] ?? 0.5;
+  return readMachineNodePosition(node, fallbackX, fallbackY);
+});
+
+const getMachineDistance = (from, to) => {
+  const dx = (from.x - to.x) * 100;
+  const dy = (from.y - to.y) * 100;
+  return Math.hypot(dx, dy);
+};
+
+const applyMachineNodePositions = () => {
+  machineNodes.forEach((node, index) => {
+    const position = machineNodePositions[index];
+    if (!position) {
+      return;
+    }
+    node.style.left = `${position.x * 100}%`;
+    node.style.top = `${position.y * 100}%`;
+  });
+};
+
+const applyMachineTargetPositions = () => {
+  const currentEvent = machineGameEvents[activeMachineEvent];
+  if (!currentEvent) {
+    return;
+  }
+
+  machineTargets.forEach((target, index) => {
+    const targetPosition = currentEvent.targets[index];
+    if (!targetPosition) {
+      return;
+    }
+    target.style.left = `${targetPosition.x * 100}%`;
+    target.style.top = `${targetPosition.y * 100}%`;
+  });
+};
+
+const getMachineEventTotalDistance = (eventIndex) => {
+  const event = machineGameEvents[eventIndex];
+  if (!event) {
+    return Number.POSITIVE_INFINITY;
+  }
+  return machineNodePositions.reduce((total, position, index) => {
+    const target = event.targets[index];
+    if (!target) {
+      return total;
+    }
+    return total + getMachineDistance(position, target);
+  }, 0);
+};
+
+const isMachineEventCleared = (eventIndex) => {
+  const event = machineGameEvents[eventIndex];
+  if (!event) {
+    return false;
+  }
+  return machineNodePositions.every((position, index) => {
+    const target = event.targets[index];
+    if (!target) {
+      return false;
+    }
+    return getMachineDistance(position, target) <= machineClearThreshold;
+  });
+};
+
+const renderMachineEventStates = () => {
+  machineEventButtons.forEach((button, index) => {
+    button.classList.toggle("is-active", index === activeMachineEvent);
+    button.classList.toggle("is-cleared", clearedMachineEvents.has(index));
+  });
+
+  machineEventStates.forEach((stateNode, index) => {
+    if (!stateNode) {
+      return;
+    }
+    if (clearedMachineEvents.has(index)) {
+      stateNode.textContent = "CLEAR";
+      return;
+    }
+    const distance = machineEventDistances[index];
+    stateNode.textContent = Number.isFinite(distance) ? `d${distance.toFixed(1)}` : "d--";
+  });
+};
+
+const evaluateMachineEvents = () => {
+  const newlyCleared = [];
+
+  machineGameEvents.forEach((_, index) => {
+    const totalDistance = getMachineEventTotalDistance(index);
+    machineEventDistances[index] = totalDistance;
+
+    if (!clearedMachineEvents.has(index) && isMachineEventCleared(index)) {
+      clearedMachineEvents.add(index);
+      newlyCleared.push(index);
+    }
+  });
+
+  renderMachineEventStates();
+  return newlyCleared;
+};
+
+const renderMachineMetrics = () => {
+  const activeEvent = machineGameEvents[activeMachineEvent];
+  if (!activeEvent) {
+    return;
+  }
+
+  const nodeDistances = machineNodePositions.map((position, index) => {
+    const target = activeEvent.targets[index];
+    if (!target) {
+      return 0;
+    }
+    return getMachineDistance(position, target);
+  });
+
+  const nodeMetricNodes = [machineMetricNodeA, machineMetricNodeB, machineMetricNodeC];
+  nodeMetricNodes.forEach((metricNode, index) => {
+    if (!metricNode) {
+      return;
+    }
+    const position = machineNodePositions[index];
+    const dist = nodeDistances[index];
+    metricNode.textContent = `x${Math.round(position.x * 100)} y${Math.round(position.y * 100)} / d${dist.toFixed(1)}`;
+  });
+
+  const totalDistance = nodeDistances.reduce((sum, value) => sum + value, 0);
+  if (machineMetricTotalDist) {
+    machineMetricTotalDist.textContent = `d${totalDistance.toFixed(1)}`;
+  }
+};
+
+const pulseMachineScope = () => {
+  if (!machineScope) {
+    return;
+  }
+  machineScope.classList.add("is-pulse");
+  window.setTimeout(() => {
+    machineScope.classList.remove("is-pulse");
+  }, 220);
+};
+
+const applyMachineNodeState = (messageOverride = "") => {
+  const node = machineNodeData[activeMachineNode] || machineNodeData[0];
+  const currentEvent = machineGameEvents[activeMachineEvent];
+  const phaseLabel = phaseData[Math.max(0, activePhase)]?.phaseLabel || "PHASE 01";
+
+  if (machineMode) {
+    machineMode.textContent = `${phaseLabel} / E0${activeMachineEvent + 1} / ${node.label}`;
+  }
+  if (machineSubtext) {
+    if (messageOverride) {
+      machineSubtext.textContent = messageOverride;
+    } else if (currentEvent) {
+      machineSubtext.textContent = `EVENT ${String(activeMachineEvent + 1).padStart(2, "0")} // ${currentEvent.hint}`;
+    }
+  }
+
+  machineNodes.forEach((target, idx) => {
+    target.classList.toggle("is-active", idx === activeMachineNode);
+  });
+};
+
+const setMachineNode = (index, messageOverride = "") => {
+  const safeIndex = Math.max(0, Math.min(machineNodeData.length - 1, index));
+  activeMachineNode = safeIndex;
+  applyMachineNodeState(messageOverride);
+  renderMachineMetrics();
+  pulseMachineScope();
+};
+
+const setMachineEvent = (eventIndex, messageOverride = "") => {
+  const safeIndex = Math.max(0, Math.min(machineGameEvents.length - 1, eventIndex));
+  activeMachineEvent = safeIndex;
+  applyMachineTargetPositions();
+  applyMachineNodeState(messageOverride);
+  const newlyCleared = evaluateMachineEvents();
+  renderMachineMetrics();
+  announceMachineClear(newlyCleared);
+  pulseMachineScope();
+};
+
+const announceMachineClear = (newlyCleared) => {
+  if (newlyCleared.length === 0) {
+    return;
+  }
+
+  if (clearedMachineEvents.size >= machineGameEvents.length) {
+    applyMachineNodeState("ALL EVENTS CLEARED // 配置ゲーム完了");
+    return;
+  }
+
+  const currentCleared = newlyCleared.find((index) => index === activeMachineEvent);
+  if (typeof currentCleared === "number") {
+    const nextPending = machineGameEvents.findIndex((_, index) => !clearedMachineEvents.has(index));
+    if (nextPending >= 0 && nextPending !== activeMachineEvent) {
+      setMachineEvent(nextPending, `EVENT ${String(currentCleared + 1).padStart(2, "0")} CLEAR // 次のイベントへ`);
+      return;
+    }
+    applyMachineNodeState(`EVENT ${String(currentCleared + 1).padStart(2, "0")} CLEAR // 別イベントを選択`);
+  }
+};
 
 const getPhaseReferenceY = () => {
   const headerOffset = topbar ? topbar.getBoundingClientRect().height : 0;
@@ -637,6 +936,7 @@ const setActivePhase = (index) => {
   if (machineText) {
     machineText.textContent = selected.machine;
   }
+  applyMachineNodeState();
 
   phaseBlocks.forEach((block) => {
     const blockIndex = Number(block.getAttribute("data-phase"));
@@ -733,6 +1033,102 @@ phaseDots.forEach((dot) => {
     setActivePhase(targetIndex);
   });
 });
+
+if (machineNodes.length > 0 && machineScope instanceof HTMLElement) {
+  applyMachineNodePositions();
+  applyMachineTargetPositions();
+  evaluateMachineEvents();
+  applyMachineNodeState();
+  renderMachineMetrics();
+
+  machineEventButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const eventIndex = Number(button.getAttribute("data-machine-event"));
+      if (Number.isNaN(eventIndex)) {
+        return;
+      }
+      setMachineEvent(eventIndex, `EVENT ${String(eventIndex + 1).padStart(2, "0")} TRACKING`);
+    });
+  });
+
+  let suppressNodeClickUntil = 0;
+  machineNodes.forEach((node) => {
+    node.addEventListener("click", () => {
+      if (Date.now() < suppressNodeClickUntil) {
+        return;
+      }
+      const nodeIndex = Number(node.getAttribute("data-machine-node"));
+      if (Number.isNaN(nodeIndex)) {
+        return;
+      }
+      const nodeLabel = machineNodeData[nodeIndex]?.label || "NODE";
+      setMachineNode(nodeIndex, `${nodeLabel} // ACTIVE`);
+    });
+  });
+
+  let dragging = null;
+
+  machineNodes.forEach((node) => {
+    node.addEventListener("pointerdown", (event) => {
+      const nodeIndex = Number(node.getAttribute("data-machine-node"));
+      if (Number.isNaN(nodeIndex)) {
+        return;
+      }
+
+      dragging = {
+        pointerId: event.pointerId,
+        node,
+        nodeIndex,
+        moved: false
+      };
+
+      node.classList.add("is-dragging");
+      node.setPointerCapture(event.pointerId);
+      setMachineNode(nodeIndex, `${machineNodeData[nodeIndex]?.label || "NODE"} // DRAG START`);
+    });
+
+    node.addEventListener("pointermove", (event) => {
+      if (!dragging || dragging.node !== node || dragging.pointerId !== event.pointerId) {
+        return;
+      }
+
+      const scopeRect = machineScope.getBoundingClientRect();
+      const nextX = clampMachineValue((event.clientX - scopeRect.left) / scopeRect.width, 0.03, 0.97);
+      const nextY = clampMachineValue((event.clientY - scopeRect.top) / scopeRect.height, 0.03, 0.97);
+
+      machineNodePositions[dragging.nodeIndex] = { x: nextX, y: nextY };
+      applyMachineNodePositions();
+
+      const newlyCleared = evaluateMachineEvents();
+      renderMachineMetrics();
+      announceMachineClear(newlyCleared);
+      dragging.moved = true;
+    });
+
+    const finishDrag = (event) => {
+      if (!dragging || dragging.node !== node || dragging.pointerId !== event.pointerId) {
+        return;
+      }
+
+      if (node.hasPointerCapture(event.pointerId)) {
+        node.releasePointerCapture(event.pointerId);
+      }
+
+      node.classList.remove("is-dragging");
+      if (dragging.moved) {
+        suppressNodeClickUntil = Date.now() + 180;
+        const nodeLabel = machineNodeData[dragging.nodeIndex]?.label || "NODE";
+        applyMachineNodeState(`${nodeLabel} // DRAG EVENTを受信`);
+        pulseMachineScope();
+      }
+
+      dragging = null;
+    };
+
+    node.addEventListener("pointerup", finishDrag);
+    node.addEventListener("pointercancel", finishDrag);
+  });
+}
 
 const orbitData = [
   {

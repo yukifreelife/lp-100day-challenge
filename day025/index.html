@@ -19,6 +19,7 @@
     <div class="world" aria-hidden="true">
       <canvas class="world-canvas" id="world-canvas" aria-hidden="true"></canvas>
       <span class="world-grid" data-parallax="0.08"></span>
+      <span class="world-endgame-burst"></span>
       <span class="world-aurora world-aurora-a" data-parallax="0.2"></span>
       <span class="world-aurora world-aurora-b" data-parallax="0.13"></span>
       <span class="world-scanline"></span>
@@ -67,22 +68,59 @@
           </div>
         </div>
 
-        <div class="hero-machine" data-reveal>
+        <div class="hero-machine" id="hero-machine" data-reveal>
+          <div class="machine-head">
+            <p class="machine-label">ADAPTIVE MISSION CORE</p>
+            <p class="machine-mode" id="machine-mode">PHASE 01 / NODE A</p>
+          </div>
+
+          <div class="machine-scope" id="machine-scope" aria-label="インタラクションノード">
+            <span class="machine-scan" aria-hidden="true"></span>
+            <span class="machine-target machine-target-a" data-machine-target="0" aria-hidden="true"></span>
+            <span class="machine-target machine-target-b" data-machine-target="1" aria-hidden="true"></span>
+            <span class="machine-target machine-target-c" data-machine-target="2" aria-hidden="true"></span>
+            <button class="machine-node machine-node-a is-active" type="button" data-machine-node="0" data-pos-x="0.2" data-pos-y="0.32" aria-label="Node A"></button>
+            <button class="machine-node machine-node-b" type="button" data-machine-node="1" data-pos-x="0.56" data-pos-y="0.62" aria-label="Node B"></button>
+            <button class="machine-node machine-node-c" type="button" data-machine-node="2" data-pos-x="0.78" data-pos-y="0.26" aria-label="Node C"></button>
+          </div>
+
           <div class="machine-core" id="machine-core">
-            <p class="machine-label">SYSTEM FEED</p>
             <p class="machine-text" id="machine-text">INIT // 余白と静寂で注意を一点に固定</p>
+            <p class="machine-subtext" id="machine-subtext">NODE A // クリック or ドラッグで反応を切り替え</p>
           </div>
-          <div class="machine-rings" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
+
+          <div class="machine-events" id="machine-events" aria-label="配置イベント">
+            <button class="machine-event is-active" type="button" data-machine-event="0">
+              <span>EVENT 01 / TRIANGLE LOCK</span>
+              <strong id="machine-event-state-0">PENDING</strong>
+            </button>
+            <button class="machine-event" type="button" data-machine-event="1">
+              <span>EVENT 02 / VERTICAL GATE</span>
+              <strong id="machine-event-state-1">PENDING</strong>
+            </button>
+            <button class="machine-event" type="button" data-machine-event="2">
+              <span>EVENT 03 / ORBIT SNAP</span>
+              <strong id="machine-event-state-2">PENDING</strong>
+            </button>
           </div>
-          <div class="machine-bars" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+
+          <div class="machine-metrics" aria-live="polite">
+            <article class="machine-stat">
+              <p>NODE A</p>
+              <strong id="machine-metric-node-a">x20 y32 / d0.0</strong>
+            </article>
+            <article class="machine-stat">
+              <p>NODE B</p>
+              <strong id="machine-metric-node-b">x56 y62 / d0.0</strong>
+            </article>
+            <article class="machine-stat">
+              <p>NODE C</p>
+              <strong id="machine-metric-node-c">x78 y26 / d0.0</strong>
+            </article>
+            <article class="machine-stat">
+              <p>TARGET DIST</p>
+              <strong id="machine-metric-total-dist">0.0</strong>
+            </article>
           </div>
         </div>
       </section>
