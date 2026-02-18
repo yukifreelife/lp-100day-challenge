@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON ARC LP LAB | 動きで惹きつけるLP制作</title>
+    <meta
+      name="description"
+      content="映像表現・スクロール演出・マイクロインタラクションを統合した、体験重視のLP制作サービス。"
+    >
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main-content">本文へスキップ</a>
+
+    <div class="progress-line" aria-hidden="true"><span></span></div>
+    <div class="bg-stack" aria-hidden="true">
+      <span class="grid-layer" data-parallax="0.12"></span>
+      <span class="beam beam-a" data-parallax="0.22"></span>
+      <span class="beam beam-b" data-parallax="0.18"></span>
+      <span class="beam beam-c" data-parallax="0.09"></span>
+      <span class="grain"></span>
+    </div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#top">
+          <span class="brand-main">NEON ARC LP LAB</span>
+          <span class="brand-sub">SCROLL-CINEMA UX STUDIO</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">MENU</button>
+
+        <nav class="site-nav" id="site-nav" aria-label="ページ内ナビゲーション">
+          <a href="#concept">コンセプト</a>
+          <a href="#story">演出設計</a>
+          <a href="#interaction">体験要素</a>
+          <a href="#planner">診断フォーム</a>
+          <a href="#contact">CTA</a>
+        </nav>
+
+        <a class="header-cta" href="#planner">無料診断を開始</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section" id="concept">
+        <div class="wrap hero-layout">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">SCROLL CINEMA LP</p>
+            <h1>
+              読ませるLPから、<br>
+              体験させるLPへ。
+            </h1>
+            <p class="hero-lead">
+              実案件で要望される「映像感」「スクロール演出」「マイクロインタラクション」を一つの導線に統合。
+              最後まで離脱させず、CTAクリックまで自然につなげる体験型LPを設計します。
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#planner">無料で企画を診断する</a>
+              <button class="btn btn-ghost" type="button" data-scroll-target="#story">演出ストーリーを見る</button>
+            </div>
+            <ul class="hero-points">
+              <li><span>01</span> 映像的な世界観演出</li>
+              <li><span>02</span> スクロール連動の物語設計</li>
+              <li><span>03</span> SP最適化と高速表示</li>
+            </ul>
+          </div>
+
+          <aside class="hero-stage" data-reveal>
+            <div class="stage-screen scene-0" id="stage-screen">
+              <p class="stage-label">LIVE MOTION PREVIEW</p>
+              <p class="stage-copy" id="stage-copy">Opening: 緊張を生む静けさから、CTAに向けて熱量を上げる。</p>
+              <div class="stage-bars" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="stage-switch" role="tablist" aria-label="演出シーン切り替え">
+              <button type="button" class="scene-chip is-active" data-scene="0">Opening</button>
+              <button type="button" class="scene-chip" data-scene="1">Story</button>
+              <button type="button" class="scene-chip" data-scene="2">Proof</button>
+              <button type="button" class="scene-chip" data-scene="3">Action</button>
+            </div>
+            <dl class="stage-meta">
+              <div>
+                <dt>想定読了率</dt>
+                <dd>+28%</dd>
+              </div>
+              <div>
+                <dt>平均滞在時間</dt>
+                <dd>2.4x</dd>
+              </div>
+              <div>
+                <dt>CV導線評価</dt>
+                <dd>92 / 100</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="提供価値一覧">
+        <div class="ticker-track">
+          <p>SCROLL TRIGGERED STORY</p>
+          <p>MOTION LED CTA</p>
+          <p>MICRO INTERACTION LAYER</p>
+          <p>LIGHTHOUSE ORIENTED BUILD</p>
+          <p>SCROLL TRIGGERED STORY</p>
+          <p>MOTION LED CTA</p>
+          <p>MICRO INTERACTION LAYER</p>
+          <p>LIGHTHOUSE ORIENTED BUILD</p>
+        </div>
+      </section>
+
+      <section class="section requirements">
+        <div class="wrap">
+          <p class="eyebrow" data-reveal>Project Signal</p>
+          <h2 data-reveal>クラウドソーシング案件で求められる要件を、体験設計へ変換</h2>
+          <div class="req-grid">
+            <article data-reveal>
+              <h3>映像表現</h3>
+              <p>背景レイヤーと光のモーションで、冒頭3秒で空気感を決める。</p>
+            </article>
+            <article data-reveal>
+              <h3>スクロール演出</h3>
+              <p>情報の表示順を固定せず、読み進めるほど意味が接続される設計。</p>
+            </article>
+            <article data-reveal>
+              <h3>マイクロUI</h3>
+              <p>ボタン・カード・フォームに即時フィードバックを与え、操作不安を減らす。</p>
+            </article>
+            <article data-reveal>
+              <h3>SP最適化</h3>
+              <p>指操作を優先したレイアウトと軽量構成で、表示速度と没入感を両立。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section story" id="story">
+        <div class="wrap story-layout">
+          <div class="story-steps" data-reveal>
+            <button type="button" class="story-step is-active" data-step="0">
+              <span class="story-no">01</span>
+              <span class="story-title">導入で惹き込む</span>
+            </button>
+            <button type="button" class="story-step" data-step="1">
+              <span class="story-no">02</span>
+              <span class="story-title">課題を可視化する</span>
+            </button>
+            <button type="button" class="story-step" data-step="2">
+              <span class="story-no">03</span>
+              <span class="story-title">解決像を体感させる</span>
+            </button>
+            <button type="button" class="story-step" data-step="3">
+              <span class="story-no">04</span>
+              <span class="story-title">行動を後押しする</span>
+            </button>
+          </div>
+
+          <div class="story-stage" data-reveal>
+            <div class="story-progress" aria-hidden="true"><span></span></div>
+
+            <article class="story-panel is-active" data-panel="0">
+              <p class="panel-tag">OPENING</p>
+              <h3>静止から発光へ。冒頭で世界観を定義</h3>
+              <p>静かな背景から始め、スクロール量に応じて光量を増幅。ユーザーの視線を自然に主見出しへ誘導。</p>
+            </article>
+
+            <article class="story-panel" data-panel="1">
+              <p class="panel-tag">TENSION</p>
+              <h3>課題は箇条書きでなく、連続する体験として見せる</h3>
+              <p>読者が抱える違和感を時系列で提示。次に来る情報への期待を維持しながら離脱を防止。</p>
+            </article>
+
+            <article class="story-panel" data-panel="2">
+              <p class="panel-tag">RESPONSE</p>
+              <h3>解決策は文字説明より操作体験で伝える</h3>
+              <p>ホバーやタップで変化するカードを使い、提案価値を受け身ではなく能動的に認識させる。</p>
+            </article>
+
+            <article class="story-panel" data-panel="3">
+              <p class="panel-tag">ACTION</p>
+              <h3>最終CTA前に、入力負荷の低さを先に提示</h3>
+              <p>ステップフォームで心理障壁を分割し、最終送信前に「これならできる」を作る。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section interaction" id="interaction">
+        <div class="wrap">
+          <p class="eyebrow" data-reveal>Micro Interaction Lab</p>
+          <h2 data-reveal>触れた瞬間に価値が伝わる、反応するUIパーツ</h2>
+          <div class="lab-grid">
+            <article class="lab-card" data-reveal data-tilt>
+              <p class="lab-kicker">HOVER FEEDBACK</p>
+              <h3>意図が返ってくるCTA</h3>
+              <p>カーソル追従のグローで押下対象を強調。SPではタップ反応を短時間で返す。</p>
+            </article>
+            <article class="lab-card" data-reveal data-tilt>
+              <p class="lab-kicker">SCROLL RHYTHM</p>
+              <h3>情報の密度を緩急制御</h3>
+              <p>セクションの表示タイミングを調整し、読み疲れを抑えながら熱量を上げる。</p>
+            </article>
+            <article class="lab-card" data-reveal data-tilt>
+              <p class="lab-kicker">TRUST TRANSITION</p>
+              <h3>安心感の段階設計</h3>
+              <p>導入→理解→判断の順で視覚重心を移動。急な売り込み感を避けてCVへ接続。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section planner" id="planner">
+        <div class="wrap planner-layout">
+          <div class="planner-copy" data-reveal>
+            <p class="eyebrow">Step Diagnostic</p>
+            <h2>30秒の入力で、演出方針のたたき台を作成</h2>
+            <p>
+              実案件でも要望が曖昧なまま進行しがちです。先に要件の粒度をそろえることで、提案精度と実装速度を同時に引き上げます。
+            </p>
+            <ul>
+              <li>質問は3ステップのみ</li>
+              <li>入力内容はその場で要約表示</li>
+              <li>回答後すぐに相談導線へ接続</li>
+            </ul>
+          </div>
+
+          <div class="wizard" data-reveal>
+            <p class="wizard-count" id="wizard-count">STEP 1 / 3</p>
+            <div class="wizard-progress" aria-hidden="true"><span id="wizard-progress-bar"></span></div>
+
+            <form class="wizard-form" id="wizard-form" action="#" method="post">
+              <section class="wizard-pane is-active" data-pane="0">
+                <h3>どの成果を最優先にしたいですか？</h3>
+                <div class="choice-grid" role="radiogroup" aria-label="優先成果">
+                  <button type="button" class="choice" data-field="goal" data-value="CV改善">CV改善</button>
+                  <button type="button" class="choice" data-field="goal" data-value="滞在時間向上">滞在時間向上</button>
+                  <button type="button" class="choice" data-field="goal" data-value="ブランド印象強化">ブランド印象強化</button>
+                </div>
+                <button type="button" class="pane-next">次へ</button>
+              </section>
+
+              <section class="wizard-pane" data-pane="1">
+                <h3>演出の強さはどのレベルが好みですか？</h3>
+                <div class="choice-grid" role="radiogroup" aria-label="演出強度">
+                  <button type="button" class="choice" data-field="motion" data-value="控えめ">控えめ</button>
+                  <button type="button" class="choice" data-field="motion" data-value="中程度">中程度</button>
+                  <button type="button" class="choice" data-field="motion" data-value="強め">強め</button>
+                </div>
+                <div class="pane-actions">
+                  <button type="button" class="pane-prev">戻る</button>
+                  <button type="button" class="pane-next">次へ</button>
+                </div>
+              </section>
+
+              <section class="wizard-pane" data-pane="2">
+                <h3>最後に連絡先だけ入力してください</h3>
+                <label for="company">会社名</label>
+                <input id="company" name="company" type="text" placeholder="株式会社サンプル" required autocomplete="organization">
+
+                <label for="email">メールアドレス</label>
+                <input id="email" name="email" type="email" placeholder="contact@example.com" required autocomplete="email">
+
+                <div class="summary" id="wizard-summary">
+                  <p>要約</p>
+                  <ul>
+                    <li id="summary-goal">優先成果: 未選択</li>
+                    <li id="summary-motion">演出強度: 未選択</li>
+                  </ul>
+                </div>
+
+                <label class="consent">
+                  <input id="consent" name="consent" type="checkbox" required>
+                  <span>個人情報の取り扱いに同意します</span>
+                </label>
+
+                <p class="wizard-status" id="wizard-status" role="status" aria-live="polite"></p>
+
+                <div class="pane-actions">
+                  <button type="button" class="pane-prev">戻る</button>
+                  <button type="submit" class="submit-btn">無料提案を受け取る</button>
+                </div>
+              </section>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="wrap contact-box" data-reveal>
+          <p class="eyebrow">Final CTA</p>
+          <h2>動きで魅せるだけで終わらせない。CVする導線まで設計します。</h2>
+          <p>
+            企画、コピー、デザイン、実装、速度最適化まで一気通貫で対応。公開直後のABテスト観点も含め、改善の初速を作ります。
+          </p>
+          <a class="btn btn-primary" href="#planner">まずは無料診断を試す</a>
+        </div>
+      </section>
+    </main>
+
+    <a class="floating-cta" href="#planner">30秒無料診断</a>
+    <button type="button" class="back-top" aria-label="ページ上部へ戻る">TOP</button>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p class="footer-brand">NEON ARC LP LAB</p>
+        <p>このページはポートフォリオ用デモです。効果には個人差があり、成果を保証するものではありません。</p>
+      </div>
+    </footer>
+  </body>
+</html>
