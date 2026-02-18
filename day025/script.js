@@ -43,6 +43,73 @@ const topbar = document.querySelector(".topbar");
 const progressLine = document.querySelector(".progress-line span");
 const backTop = document.querySelector(".back-top");
 const footer = document.querySelector(".footer");
+const consoleSection = document.querySelector("#console");
+
+const createTelemetry = () => {
+  const events = [];
+  const onceKeys = new Set();
+
+  const mark = (type, detail = {}) => {
+    events.push({
+      type,
+      detail,
+      ts: Date.now(),
+      ms: Math.round(performance.now())
+    });
+
+    if (events.length > 320) {
+      events.shift();
+    }
+  };
+
+  const markOnce = (key, type, detail = {}) => {
+    if (onceKeys.has(key)) {
+      return;
+    }
+    onceKeys.add(key);
+    mark(type, detail);
+  };
+
+  const summary = () => {
+    const counter = {};
+    events.forEach((event) => {
+      counter[event.type] = (counter[event.type] || 0) + 1;
+    });
+    return {
+      totalEvents: events.length,
+      byType: counter,
+      lastEvent: events[events.length - 1] || null
+    };
+  };
+
+  return {
+    events,
+    mark,
+    markOnce,
+    summary
+  };
+};
+
+const telemetry = createTelemetry();
+window.lpCvTelemetry = telemetry;
+telemetry.mark("page_init", {
+  captureMode: isCaptureMode,
+  reducedMotion: prefersReducedMotion,
+  finePointer: hasFinePointer
+});
+
+let isConversionFocus = false;
+let wasEndgame = false;
+
+const setConversionFocus = (nextFocus) => {
+  if (nextFocus === isConversionFocus) {
+    return;
+  }
+
+  isConversionFocus = nextFocus;
+  document.body.classList.toggle("mode-convert-focus", nextFocus);
+  telemetry.mark(nextFocus ? "conversion_focus_enter" : "conversion_focus_exit");
+};
 
 const updateGlobalState = () => {
   const scrollTop = window.scrollY;
@@ -50,8 +117,30 @@ const updateGlobalState = () => {
   const ratio = maxScroll > 0 ? (scrollTop / maxScroll) * 100 : 0;
   const isFooterVisible = footer ? footer.getBoundingClientRect().top <= window.innerHeight * 1.08 : false;
   const isEndgame = ratio >= 86 || isFooterVisible;
+  const isConsoleInFocus = consoleSection
+    ? (() => {
+        const rect = consoleSection.getBoundingClientRect();
+        return rect.top <= window.innerHeight * 0.46 && rect.bottom >= window.innerHeight * 0.34;
+      })()
+    : false;
 
   document.body.classList.toggle("mode-endgame", isEndgame);
+  setConversionFocus(isConsoleInFocus);
+
+  if (isEndgame !== wasEndgame) {
+    wasEndgame = isEndgame;
+    telemetry.mark(isEndgame ? "endgame_enter" : "endgame_exit", {
+      scrollRatio: Number(ratio.toFixed(1))
+    });
+  }
+
+  [25, 50, 75, 90].forEach((milestone) => {
+    if (ratio >= milestone) {
+      telemetry.markOnce(`scroll_${milestone}`, "scroll_milestone", {
+        percent: milestone
+      });
+    }
+  });
 
   if (progressLine) {
     progressLine.style.width = `${Math.min(100, Math.max(0, ratio))}%`;
@@ -72,6 +161,7 @@ window.addEventListener("resize", updateGlobalState);
 
 if (backTop) {
   backTop.addEventListener("click", () => {
+    telemetry.mark("back_to_top_click");
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
@@ -89,6 +179,7 @@ smoothScrollButtons.forEach((button) => {
       return;
     }
 
+    telemetry.mark("jump_scroll_click", { target: selector });
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
@@ -230,7 +321,7 @@ const applyMode = (modeName) => {
 
   if (modeToggle) {
     modeToggle.setAttribute("aria-pressed", String(isOverdrive));
-    modeToggle.textContent = isOverdrive ? "OVERDRIVE: ON" : "OVERDRIVE: OFF";
+    modeToggle.textContent = isOverdrive ? "MOTION: DYNAMIC" : "MOTION: CALM";
   }
 };
 
@@ -240,12 +331,16 @@ if (initialMode === "overdrive") {
 } else {
   applyMode("calm");
 }
+telemetry.mark("motion_mode_init", {
+  mode: body.classList.contains("mode-overdrive") ? "overdrive" : "calm"
+});
 
 if (modeToggle) {
   modeToggle.addEventListener("click", () => {
     const nextMode = body.classList.contains("mode-overdrive") ? "calm" : "overdrive";
     applyMode(nextMode);
     window.localStorage.setItem(modeStorageKey, nextMode);
+    telemetry.mark("motion_mode_change", { mode: nextMode });
   });
 }
 
@@ -271,7 +366,11 @@ if (distortTitles.length > 0) {
 
   let distortRafId = 0;
   const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
-  const isDistortionEnabled = () => body.classList.contains("mode-overdrive") && !prefersReducedMotion && !isCaptureMode;
+  const isDistortionEnabled = () =>
+    body.classList.contains("mode-overdrive") &&
+    !body.classList.contains("mode-convert-focus") &&
+    !prefersReducedMotion &&
+    !isCaptureMode;
 
   const applyTitleDistortion = () => {
     distortRafId = 0;
@@ -860,6 +959,10 @@ const setMachineNode = (index, messageOverride = "") => {
 const setMachineEvent = (eventIndex, messageOverride = "") => {
   const safeIndex = Math.max(0, Math.min(machineGameEvents.length - 1, eventIndex));
   activeMachineEvent = safeIndex;
+  telemetry.mark("machine_event_select", {
+    event: safeIndex + 1,
+    name: machineGameEvents[safeIndex]?.name || ""
+  });
   applyMachineTargetPositions();
   applyMachineNodeState(messageOverride);
   const newlyCleared = evaluateMachineEvents();
@@ -874,12 +977,17 @@ const announceMachineClear = (newlyCleared) => {
   }
 
   if (clearedMachineEvents.size >= machineGameEvents.length) {
+    telemetry.mark("machine_all_events_locked");
     applyMachineNodeState("ALL EVENTS LOCKED // 3配置を達成");
     return;
   }
 
   const currentCleared = newlyCleared.find((index) => index === activeMachineEvent);
   if (typeof currentCleared === "number") {
+    telemetry.mark("machine_event_locked", {
+      event: currentCleared + 1,
+      name: machineGameEvents[currentCleared]?.name || ""
+    });
     const nextPending = machineGameEvents.findIndex((_, index) => !clearedMachineEvents.has(index));
     if (nextPending >= 0 && nextPending !== activeMachineEvent) {
       setMachineEvent(
@@ -939,6 +1047,10 @@ const setActivePhase = (index) => {
   if (machineText) {
     machineText.textContent = selected.machine;
   }
+  telemetry.mark("phase_change", {
+    phase: safeIndex + 1,
+    phaseLabel: selected.phaseLabel
+  });
   applyMachineNodeState();
 
   phaseBlocks.forEach((block) => {
@@ -1008,6 +1120,10 @@ if (phaseBlocks.length > 0) {
       if (toggle instanceof HTMLButtonElement) {
         toggle.setAttribute("aria-expanded", String(shouldOpen));
         toggle.textContent = shouldOpen ? "詳細を閉じる / Close" : "要点を開く / Expand";
+        if (shouldOpen) {
+          const phaseTag = block.querySelector(".phase-tag")?.textContent?.trim() || "";
+          telemetry.mark("phase_detail_open", { phaseTag });
+        }
       }
     });
   };
@@ -1032,6 +1148,7 @@ phaseDots.forEach((dot) => {
       return;
     }
 
+    telemetry.mark("phase_dot_click", { phase: targetIndex + 1 });
     scrollToPhaseIndex(targetIndex);
     setActivePhase(targetIndex);
   });
@@ -1155,9 +1272,14 @@ const orbitData = [
 const orbitLabel = document.querySelector("#orbit-core-label");
 const orbitCopy = document.querySelector("#orbit-core-copy");
 const orbitNodes = Array.from(document.querySelectorAll(".orbit-node"));
+let activeOrbitIndex = -1;
 
 const setOrbitState = (index) => {
   const safeIndex = Math.max(0, Math.min(orbitData.length - 1, index));
+  if (safeIndex === activeOrbitIndex) {
+    return;
+  }
+  activeOrbitIndex = safeIndex;
   const selected = orbitData[safeIndex];
 
   if (orbitLabel) {
@@ -1170,6 +1292,11 @@ const setOrbitState = (index) => {
   orbitNodes.forEach((node) => {
     const nodeIndex = Number(node.getAttribute("data-orbit"));
     node.classList.toggle("is-active", nodeIndex === safeIndex);
+  });
+
+  telemetry.mark("orbit_priority_change", {
+    index: safeIndex,
+    label: selected.label
   });
 };
 
@@ -1196,7 +1323,7 @@ if (tiltCards.length > 0 && hasFinePointer && !prefersReducedMotion && !isCaptur
 
   tiltCards.forEach((card) => {
     card.addEventListener("pointermove", (event) => {
-      if (!body.classList.contains("mode-overdrive")) {
+      if (!body.classList.contains("mode-overdrive") || body.classList.contains("mode-convert-focus")) {
         card.style.transform = "perspective(920px) rotateX(0deg) rotateY(0deg)";
         return;
       }
@@ -1227,7 +1354,7 @@ const magneticTargets = Array.from(document.querySelectorAll("[data-magnetic]"))
 if (magneticTargets.length > 0 && hasFinePointer && !prefersReducedMotion && !isCaptureMode) {
   magneticTargets.forEach((target) => {
     target.addEventListener("pointermove", (event) => {
-      if (!body.classList.contains("mode-overdrive")) {
+      if (!body.classList.contains("mode-overdrive") || body.classList.contains("mode-convert-focus")) {
         target.style.transform = "translate3d(0, 0, 0)";
         return;
       }
@@ -1271,6 +1398,10 @@ if (cardNodes.length > 0) {
       if (toggle instanceof HTMLButtonElement) {
         toggle.setAttribute("aria-expanded", String(isOpen));
         toggle.textContent = isOpen ? "詳細を閉じる / Close" : "詳細を見る / Details";
+        if (isOpen) {
+          const cardTag = card.querySelector(".card-tag")?.textContent?.trim() || "";
+          telemetry.mark("module_detail_open", { module: cardTag });
+        }
       }
     });
   };
@@ -1300,6 +1431,7 @@ if (
   compareDivider instanceof HTMLElement
 ) {
   let isCompareDragging = false;
+  let hasTrackedCompareInteraction = false;
 
   const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
@@ -1321,13 +1453,22 @@ if (
   setCompareSplit(compareRange.value);
 
   compareRange.addEventListener("input", () => {
+    if (!hasTrackedCompareInteraction) {
+      hasTrackedCompareInteraction = true;
+      telemetry.mark("compare_interaction_start");
+    }
     setCompareSplit(compareRange.value);
   });
 
   if (!prefersReducedMotion && !isCaptureMode) {
     compareStage.addEventListener("pointerdown", (event) => {
       isCompareDragging = true;
+      compareStage.classList.add("is-dragging");
       compareStage.setPointerCapture(event.pointerId);
+      if (!hasTrackedCompareInteraction) {
+        hasTrackedCompareInteraction = true;
+        telemetry.mark("compare_interaction_start");
+      }
       setCompareByPointer(event.clientX);
     });
 
@@ -1340,11 +1481,19 @@ if (
 
     compareStage.addEventListener("pointerup", (event) => {
       isCompareDragging = false;
+      compareStage.classList.remove("is-dragging");
       compareStage.releasePointerCapture(event.pointerId);
     });
 
     compareStage.addEventListener("pointercancel", () => {
       isCompareDragging = false;
+      compareStage.classList.remove("is-dragging");
+    });
+
+    compareStage.addEventListener("pointerleave", () => {
+      if (!isCompareDragging) {
+        compareStage.classList.remove("is-dragging");
+      }
     });
   }
 }
@@ -1412,6 +1561,7 @@ const state = {
 };
 
 let paneIndex = 0;
+let lastTrackedPane = -1;
 
 const clearStatus = () => {
   if (!consoleStatus) {
@@ -1460,15 +1610,22 @@ const updatePane = () => {
     const progress = ((paneIndex + 1) / consolePanes.length) * 100;
     consoleProgress.style.width = `${progress}%`;
   }
+
+  if (paneIndex !== lastTrackedPane) {
+    telemetry.mark("console_step_view", { step: paneIndex + 1 });
+    lastTrackedPane = paneIndex;
+  }
 };
 
 const validatePane = () => {
   if (paneIndex === 0 && !state.kpi) {
+    telemetry.mark("console_validation_error", { field: "kpi" });
     setStatus("最優先KPIを選択してください。 / Please select a KPI.", "error");
     return false;
   }
 
   if (paneIndex === 1 && !state.motion) {
+    telemetry.mark("console_validation_error", { field: "motion" });
     setStatus("演出強度を選択してください。 / Please select a motion level.", "error");
     return false;
   }
@@ -1487,6 +1644,7 @@ chips.forEach((chip) => {
     }
 
     state[field] = value;
+    telemetry.mark("console_chip_select", { field, value });
 
     chips.forEach((target) => {
       const targetField = target.getAttribute("data-field");
@@ -1524,6 +1682,7 @@ if (consoleForm) {
     event.preventDefault();
 
     if (!state.kpi || !state.motion) {
+      telemetry.mark("console_validation_error", { field: "step_completion" });
       setStatus("未回答の項目があります。 / Some required selections are missing.", "error");
       paneIndex = !state.kpi ? 0 : 1;
       updatePane();
@@ -1532,6 +1691,7 @@ if (consoleForm) {
 
     if (!consoleForm.checkValidity()) {
       consoleForm.reportValidity();
+      telemetry.mark("console_validation_error", { field: "form_inputs" });
       setStatus("入力内容を確認してください。 / Please check your input.", "error");
       return;
     }
@@ -1541,8 +1701,13 @@ if (consoleForm) {
       submitButton.disabled = true;
       submitButton.textContent = "送信中... / Sending...";
     }
+    telemetry.mark("console_submit_start");
 
     window.setTimeout(() => {
+      telemetry.mark("console_submit_success", {
+        kpi: state.kpi,
+        motion: state.motion
+      });
       setStatus("送信完了。24時間以内にご連絡します。 / Sent successfully. We will reply within 24 hours.", "success");
       consoleForm.reset();
       state.kpi = "";
@@ -1567,7 +1732,7 @@ if (hasFinePointer && !prefersReducedMotion && !isCaptureMode) {
   let trailCooldown = 0;
 
   window.addEventListener("pointermove", (event) => {
-    if (!body.classList.contains("mode-overdrive")) {
+    if (!body.classList.contains("mode-overdrive") || body.classList.contains("mode-convert-focus")) {
       return;
     }
 

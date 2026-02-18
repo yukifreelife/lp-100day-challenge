@@ -126,6 +126,54 @@ body.mode-overdrive.mode-endgame .footer {
   filter: saturate(1.46) brightness(1.08);
 }
 
+body.mode-convert-focus .world-canvas {
+  opacity: 0.34;
+  filter: saturate(0.72) brightness(0.88);
+}
+
+body.mode-convert-focus .world-grid,
+body.mode-convert-focus .world-aurora,
+body.mode-convert-focus .world-endgame-burst,
+body.mode-convert-focus .world-scanline,
+body.mode-convert-focus .world-noise {
+  opacity: 0.12;
+}
+
+body.mode-convert-focus .distort-title {
+  transform: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+body.mode-convert-focus .distort-title::after {
+  opacity: 0.12;
+  transform: scaleX(0.7);
+}
+
+body.mode-convert-focus .floating-cta {
+  animation: none;
+}
+
+body.mode-convert-focus .console-box {
+  border-color: rgba(136, 212, 255, 0.6);
+  box-shadow:
+    0 0 0 1px rgba(136, 212, 255, 0.22),
+    0 30px 58px rgba(3, 9, 22, 0.56);
+  background: linear-gradient(145deg, rgba(7, 14, 29, 0.95), rgba(14, 28, 53, 0.9));
+}
+
+body.mode-convert-focus .console-progress span {
+  box-shadow: 0 0 18px rgba(81, 240, 255, 0.45);
+}
+
+body.mode-convert-focus .submit-btn {
+  box-shadow: 0 14px 28px rgba(81, 240, 255, 0.28);
+}
+
+body.mode-convert-focus .pointer-spark {
+  display: none;
+}
+
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -1197,6 +1245,11 @@ p {
   overflow: hidden;
   box-shadow: var(--shadow-md);
   background: rgba(10, 17, 35, 0.68);
+  cursor: grab;
+}
+
+.compare-stage.is-dragging {
+  cursor: grabbing;
 }
 
 .compare-layer {
