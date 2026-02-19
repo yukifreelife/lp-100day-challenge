@@ -1,18 +1,184 @@
-  <!-- # 作品一覧（day001〜のリンク集） --><!DOCTYPE html>
-<html lang="ja"></html>
+<!DOCTYPE html>
+<html lang="ja">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/base.css">
-    <link rel="stylesheet" href="./style.css">
-
-    <script defer src="../assets/js/base.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LP Portfolio 100 | LP制作実績ポートフォリオ</title>
+    <meta
+      name="description"
+      content="LP作成100日チャレンジの制作実績を確認できるポートフォリオ。FVでLP実績を横スクロール表示し、カテゴリ検索から案件相談までつなげます。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="LP Portfolio 100 | LP制作実績ポートフォリオ" />
+    <meta
+      property="og:description"
+      content="どんなLPを作ってきたかを最初の10秒で伝える、案件獲得向けポートフォリオサイト。"
+    />
+    <meta property="og:url" content="https://example.com/lp-100" />
+    <meta property="og:image" content="https://example.com/lp-100/ogp.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Outfit:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQB0QSMF7F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-CQB0QSMF7F");
+    </script>
     <script defer src="./script.js"></script>
-    <title>作品一覧（day001〜のリンク集）</title>
-
-    
   </head>
   <body>
+    <a class="skip-link" href="#main-content">本文へスキップ</a>
 
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="LP Portfolio 100 トップへ">LP Portfolio 100</a>
+        <nav aria-label="グローバルナビゲーション">
+          <ul class="nav-list">
+            <li><a href="#cases">Case</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-copy-wrap">
+          <p class="hero-kicker">LP Creator Portfolio / 100 Days Challenge</p>
+          <h1 id="hero-title">どんなLPを作ってきたかを、最初の10秒で伝える</h1>
+          <p class="hero-lead">
+            LP風の紹介ページではなく、制作実績を主役にしたPortfolio First設計へ再構築。業種・目的・導線設計の幅がひと目でわかる構成にしています。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#works">全実績を見る</a>
+            <a class="btn btn-ghost" href="#contact">案件相談する</a>
+          </div>
+          <ul class="hero-metrics" aria-label="ポートフォリオの統計">
+            <li>
+              <span class="metric-value" id="total-works">0</span>
+              <span class="metric-label">公開LP</span>
+            </li>
+            <li>
+              <span class="metric-value" id="category-total">0</span>
+              <span class="metric-label">カテゴリ</span>
+            </li>
+            <li>
+              <span class="metric-value" id="goal-total">0</span>
+              <span class="metric-label">訴求目的</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-reel" aria-label="制作LPリール">
+          <div class="container">
+            <div class="reel-head">
+              <p>LP Reel</p>
+              <small>PCではホバーで一時停止 / スマホは自動再生</small>
+            </div>
+            <div class="reel-lane">
+              <div class="reel-track reel-left" id="reel-track-a" aria-live="off"></div>
+            </div>
+            <div class="reel-lane">
+              <div class="reel-track reel-right" id="reel-track-b" aria-live="off"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-approach" aria-labelledby="approach-title">
+        <div class="container">
+          <h2 id="approach-title">Portfolio First設計にした理由</h2>
+          <div class="approach-grid">
+            <article class="approach-card">
+              <h3>実績をFVで直接提示</h3>
+              <p>自己紹介より先に制作物を提示し、対応領域とアウトプット品質を即判断できるようにしました。</p>
+            </article>
+            <article class="approach-card">
+              <h3>目的別に探せる導線</h3>
+              <p>カテゴリと検索で、クライアントが自社課題に近いLP事例へ最短で到達できます。</p>
+            </article>
+            <article class="approach-card">
+              <h3>相談までの距離を短縮</h3>
+              <p>実績確認から問い合わせまで一画面で完結し、案件相談のハードルを下げています。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="cases" aria-labelledby="cases-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="cases-title">Featured Cases</h2>
+            <p>カテゴリ別に代表的なLPを3件ピックアップしています。</p>
+          </div>
+          <div class="case-grid" id="featured-cases"></div>
+        </div>
+      </section>
+
+      <section class="section" id="works" aria-labelledby="works-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="works-title">All Works</h2>
+            <p>目的と業種で探しやすいよう、カテゴリフィルタとキーワード検索に対応しています。</p>
+          </div>
+
+          <div class="works-toolbar" aria-label="成果物の絞り込み">
+            <div>
+              <p class="toolbar-label">カテゴリ</p>
+              <div class="filter-list" id="category-filters" role="group" aria-label="カテゴリフィルター"></div>
+            </div>
+            <div>
+              <label class="toolbar-label" for="works-search">キーワード検索</label>
+              <input
+                id="works-search"
+                type="search"
+                placeholder="例: 資料請求 / 採用 / EC / SaaS"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+
+          <p class="works-count" id="works-count" aria-live="polite"></p>
+          <div class="works-grid" id="works-grid"></div>
+          <p class="empty-note" id="works-empty" hidden>一致する成果物が見つかりませんでした。</p>
+        </div>
+      </section>
+
+      <section class="section section-contact" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-shell">
+          <h2 id="contact-title">Contact</h2>
+          <p>
+            新規LP制作、既存LPの改善、短納期案件のご相談に対応しています。目的・ターゲット・希望納期を添えてご連絡ください。
+          </p>
+          <div class="contact-actions">
+            <a
+              class="btn btn-primary"
+              href="mailto:hello@example.com?subject=LP%E5%88%B6%E4%BD%9C%E7%9B%B8%E8%AB%87"
+              >メールで相談する</a
+            >
+            <a class="btn btn-ghost" href="https://example.com/contact" target="_blank" rel="noreferrer"
+              >フォーム（ダミー）</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>LP Portfolio 100</p>
+        <small>&copy; <span id="current-year"></span> LP Portfolio 100</small>
+      </div>
+    </footer>
   </body>
 </html>
