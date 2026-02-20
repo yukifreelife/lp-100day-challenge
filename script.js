@@ -232,14 +232,16 @@ const colorByCategory = {
   RealEstate: "#7d6a4f",
 };
 
+const REEL_INTERVAL_MS = 3200;
+
 const state = {
   category: "All",
   query: "",
 };
 
 const elements = {
-  reelA: document.querySelector("#reel-track-a"),
-  reelB: document.querySelector("#reel-track-b"),
+  reelLaneA: document.querySelector('[data-reel-id="a"]'),
+  reelLaneB: document.querySelector('[data-reel-id="b"]'),
   featured: document.querySelector("#featured-cases"),
   filterRoot: document.querySelector("#category-filters"),
   search: document.querySelector("#works-search"),
@@ -265,12 +267,75 @@ function createNode(tag, className, textContent) {
   return node;
 }
 
+function getThumbnailPath(work) {
+  const dayDir = work.url.replace(/^\.\//, "").replace(/\/$/, "");
+  return `./${dayDir}/${dayDir}.png`;
+}
+
+function getThumbnailCandidates(work) {
+  const dayDir = work.url.replace(/^\.\//, "").replace(/\/$/, "");
+  const base = `./${dayDir}/`;
+  const names = [
+    `${dayDir}.png`,
+    `${dayDir}PC.png`,
+    `${dayDir}SP.png`,
+    `${dayDir}FV.png`,
+    `${dayDir}FVPC.png`,
+    `${dayDir}FVSP.png`,
+    `${dayDir}fvpc.png`,
+    `${dayDir}fvsp.png`,
+    `${dayDir}pc.png`,
+    `${dayDir}sp.png`,
+    `${dayDir}.html.png`,
+    `${dayDir}_index.html.png`,
+    `${dayDir}README.png`,
+  ];
+
+  return Array.from(new Set(names.map((name) => `${base}${name}`)));
+}
+
 function createReelCard(work) {
-  const card = createNode("article", "reel-card");
+  const card = createNode("a", "reel-card");
   const tone = colorByCategory[work.category] || "#0f7392";
   card.style.setProperty("--tone", tone);
+  card.href = work.url;
+  card.setAttribute("aria-label", `${work.day} ${work.title} の成果物を開く`);
 
   const visual = createNode("div", "reel-visual");
+
+  const image = document.createElement("img");
+  image.className = "reel-image";
+  image.alt = `${work.day} ${work.title} のサムネイル`;
+  image.loading = "eager";
+  image.decoding = "async";
+  image.draggable = false;
+  const thumbnailCandidates = Array.from(new Set([getThumbnailPath(work), ...getThumbnailCandidates(work)]));
+  let candidateIndex = 0;
+
+  function applyFallback() {
+    image.remove();
+    visual.classList.add("is-fallback");
+  }
+
+  function loadNextThumbnail() {
+    const nextPath = thumbnailCandidates[candidateIndex];
+    candidateIndex += 1;
+
+    if (!nextPath) {
+      applyFallback();
+      return;
+    }
+
+    image.src = nextPath;
+  }
+
+  image.addEventListener("error", () => {
+    loadNextThumbnail();
+  });
+
+  loadNextThumbnail();
+
+  visual.appendChild(image);
   visual.appendChild(createNode("span", "reel-chip", `${work.day} / ${work.category}`));
 
   const content = createNode("div", "reel-content");
@@ -281,19 +346,180 @@ function createReelCard(work) {
   return card;
 }
 
-function fillReelTrack(track, items) {
-  if (!track) {
+function renderReelTrack(track, items) {
+  if (!track || items.length === 0) {
     return;
   }
 
-  const doubled = [...items, ...items];
   const fragment = document.createDocumentFragment();
-
-  doubled.forEach((work) => {
+  items.forEach((work) => {
     fragment.appendChild(createReelCard(work));
   });
-
   track.replaceChildren(fragment);
+}
+
+function setupStepReel(lane, items, direction) {
+  if (!lane || items.length < 2) {
+    return;
+  }
+
+  const viewport = lane.querySelector(".reel-viewport");
+  const track = lane.querySelector(".reel-track");
+  const prevButton = lane.querySelector('[data-reel-action="prev"]');
+  const nextButton = lane.querySelector('[data-reel-action="next"]');
+
+  if (!viewport || !track) {
+    return;
+  }
+
+  renderReelTrack(track, items);
+
+  let currentIndex = 0;
+  let timer = null;
+  let scrollSyncTimer = null;
+  let isProgrammaticScroll = false;
+
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const prefersAutoBehavior = prefersReducedMotion ? "auto" : "smooth";
+
+  function getCardStep() {
+    const card = track.querySelector(".reel-card");
+    if (!card) {
+      return 0;
+    }
+
+    const trackStyle = window.getComputedStyle(track);
+    const gapValue = trackStyle.columnGap || trackStyle.gap || "0";
+    const gap = Number.parseFloat(gapValue) || 0;
+    return card.getBoundingClientRect().width + gap;
+  }
+
+  function normalizeIndex(index) {
+    const length = items.length;
+    return ((index % length) + length) % length;
+  }
+
+  function scrollToIndex(index, behavior = prefersAutoBehavior) {
+    const cardStep = getCardStep();
+    if (cardStep === 0) {
+      return;
+    }
+
+    currentIndex = normalizeIndex(index);
+    isProgrammaticScroll = true;
+    viewport.scrollTo({
+      left: currentIndex * cardStep,
+      behavior,
+    });
+
+    window.clearTimeout(scrollSyncTimer);
+    scrollSyncTimer = window.setTimeout(() => {
+      isProgrammaticScroll = false;
+    }, 480);
+  }
+
+  function syncIndexFromScroll() {
+    const cardStep = getCardStep();
+    if (cardStep === 0) {
+      return;
+    }
+
+    const next = Math.round(viewport.scrollLeft / cardStep);
+    currentIndex = normalizeIndex(next);
+  }
+
+  function stopAuto() {
+    if (timer !== null) {
+      window.clearInterval(timer);
+      timer = null;
+    }
+  }
+
+  function startAuto() {
+    if (prefersReducedMotion) {
+      return;
+    }
+
+    stopAuto();
+    timer = window.setInterval(() => {
+      slide(direction, false);
+    }, REEL_INTERVAL_MS);
+  }
+
+  function slide(delta, fromManual) {
+    if (fromManual) {
+      stopAuto();
+    }
+
+    scrollToIndex(currentIndex + delta, prefersAutoBehavior);
+
+    if (fromManual) {
+      startAuto();
+    }
+  }
+
+  prevButton?.addEventListener("click", () => {
+    slide(-1, true);
+  });
+
+  nextButton?.addEventListener("click", () => {
+    slide(1, true);
+  });
+
+  viewport.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      slide(-1, true);
+      return;
+    }
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      slide(1, true);
+      return;
+    }
+  });
+
+  viewport.tabIndex = 0;
+  viewport.addEventListener("pointerdown", stopAuto);
+  viewport.addEventListener("touchstart", stopAuto, { passive: true });
+  viewport.addEventListener("scroll", () => {
+    if (isProgrammaticScroll) {
+      return;
+    }
+
+    window.clearTimeout(scrollSyncTimer);
+    scrollSyncTimer = window.setTimeout(() => {
+      syncIndexFromScroll();
+      startAuto();
+    }, 120);
+  });
+
+  lane.addEventListener("mouseenter", stopAuto);
+  lane.addEventListener("mouseleave", startAuto);
+  lane.addEventListener("focusin", stopAuto);
+  lane.addEventListener("focusout", () => {
+    const active = document.activeElement;
+    if (!active || !lane.contains(active)) {
+      startAuto();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    window.requestAnimationFrame(() => {
+      scrollToIndex(currentIndex, "auto");
+    });
+  });
+
+  scrollToIndex(currentIndex, "auto");
+  startAuto();
+}
+
+function setupHeroReel() {
+  const laneAItems = worksData.slice(0, 12);
+  const laneBItems = worksData.slice(8).reverse();
+
+  setupStepReel(elements.reelLaneA, laneAItems, 1);
+  setupStepReel(elements.reelLaneB, laneBItems, -1);
 }
 
 function getFeaturedWorks(count = 3) {
@@ -470,8 +696,7 @@ function updateSummary() {
 }
 
 function init() {
-  fillReelTrack(elements.reelA, worksData.slice(0, 12));
-  fillReelTrack(elements.reelB, worksData.slice(8).reverse());
+  setupHeroReel();
   renderFeaturedCases();
   renderFilters();
   setupEvents();

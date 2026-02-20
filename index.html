@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Outfit:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260220-02" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQB0QSMF7F"></script>
     <script>
@@ -33,7 +33,7 @@
       gtag("js", new Date());
       gtag("config", "G-CQB0QSMF7F");
     </script>
-    <script defer src="./script.js"></script>
+    <script defer src="./script.js?v=20260220-02"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">本文へスキップ</a>
@@ -83,13 +83,41 @@
           <div class="container">
             <div class="reel-head">
               <p>LP Reel</p>
-              <small>PCではホバーで一時停止 / スマホは自動再生</small>
+              <small>一定時間ごとに自動スライド / ボタン・スワイプで手動操作可能</small>
             </div>
-            <div class="reel-lane">
-              <div class="reel-track reel-left" id="reel-track-a" aria-live="off"></div>
+
+            <div class="reel-lane" data-reel-id="a">
+              <div class="reel-lane-tools">
+                <p>Lane 01</p>
+                <div class="reel-controls" aria-label="Lane 01 操作">
+                  <button type="button" class="reel-control-btn" data-reel-action="prev" aria-label="前のカードへ">
+                    <span aria-hidden="true">&#x2039;</span>
+                  </button>
+                  <button type="button" class="reel-control-btn" data-reel-action="next" aria-label="次のカードへ">
+                    <span aria-hidden="true">&#x203A;</span>
+                  </button>
+                </div>
+              </div>
+              <div class="reel-viewport">
+                <div class="reel-track" id="reel-track-a" aria-live="off"></div>
+              </div>
             </div>
-            <div class="reel-lane">
-              <div class="reel-track reel-right" id="reel-track-b" aria-live="off"></div>
+
+            <div class="reel-lane" data-reel-id="b">
+              <div class="reel-lane-tools">
+                <p>Lane 02</p>
+                <div class="reel-controls" aria-label="Lane 02 操作">
+                  <button type="button" class="reel-control-btn" data-reel-action="prev" aria-label="前のカードへ">
+                    <span aria-hidden="true">&#x2039;</span>
+                  </button>
+                  <button type="button" class="reel-control-btn" data-reel-action="next" aria-label="次のカードへ">
+                    <span aria-hidden="true">&#x203A;</span>
+                  </button>
+                </div>
+              </div>
+              <div class="reel-viewport">
+                <div class="reel-track" id="reel-track-b" aria-live="off"></div>
+              </div>
             </div>
           </div>
         </div>

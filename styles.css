@@ -264,53 +264,142 @@ a {
   border: 1px solid rgba(216, 213, 207, 0.9);
   border-radius: var(--radius);
   background: rgba(255, 253, 249, 0.8);
-  overflow: hidden;
-  mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  padding: 0.5rem;
 }
 
 .reel-lane + .reel-lane {
   margin-top: 0.72rem;
 }
 
+.reel-lane-tools {
+  padding: 0.12rem 0.12rem 0.48rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.reel-lane-tools p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.03em;
+}
+
+.reel-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+}
+
+.reel-control-btn {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(166, 178, 193, 0.8);
+  background: rgba(255, 255, 255, 0.86);
+  color: #223549;
+  cursor: pointer;
+}
+
+.reel-control-btn:hover {
+  background: #ffffff;
+  border-color: rgba(125, 149, 170, 0.92);
+}
+
+.reel-control-btn span {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.reel-viewport {
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: var(--radius-sm);
+  padding: 0.1rem 0;
+  mask-image: linear-gradient(90deg, transparent 0%, #000 7%, #000 93%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 7%, #000 93%, transparent 100%);
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+}
+
+.reel-viewport::-webkit-scrollbar {
+  height: 8px;
+}
+
+.reel-viewport::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.reel-viewport::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(142, 160, 177, 0.55);
+}
+
 .reel-track {
   width: max-content;
   display: flex;
   gap: 0.85rem;
-  padding: 0.72rem;
-}
-
-.reel-left {
-  animation: reel-left 48s linear infinite;
-}
-
-.reel-right {
-  animation: reel-right 44s linear infinite;
-}
-
-.reel-lane:hover .reel-track {
-  animation-play-state: paused;
+  padding: 0.18rem;
 }
 
 .reel-card {
   --tone: #0f7392;
-  flex: 0 0 250px;
-  min-height: 144px;
+  flex: 0 0 min(76vw, 288px);
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
   border-radius: var(--radius-sm);
   border: 1px solid rgba(216, 213, 207, 0.9);
   background: #fffdf9;
   box-shadow: 0 12px 24px -22px rgba(25, 39, 58, 0.7);
   overflow: hidden;
+  text-decoration: none;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.reel-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 30px -24px rgba(22, 36, 54, 0.72);
 }
 
 .reel-visual {
-  min-height: 64px;
-  padding: 0.6rem;
+  position: relative;
+  min-height: 130px;
   background:
     linear-gradient(142deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2)),
     linear-gradient(120deg, var(--tone), rgba(255, 255, 255, 0.45));
 }
 
+.reel-image {
+  display: block;
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.reel-visual.is-fallback::before {
+  content: "No image";
+  position: absolute;
+  top: 0.7rem;
+  right: 0.8rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: rgba(18, 31, 46, 0.72);
+}
+
 .reel-chip {
+  position: absolute;
+  left: 0.58rem;
+  bottom: 0.52rem;
   display: inline-flex;
   align-items: center;
   min-height: 24px;
@@ -323,21 +412,22 @@ a {
 }
 
 .reel-content {
-  padding: 0.64rem 0.72rem 0.78rem;
+  padding: 0.66rem 0.76rem 0.78rem;
   display: grid;
   gap: 0.25rem;
+  flex: 1;
 }
 
 .reel-title {
   margin: 0;
-  font-size: 0.94rem;
+  font-size: 0.9rem;
   line-height: 1.35;
 }
 
 .reel-meta {
   margin: 0;
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
 }
 
 .section {
@@ -657,37 +747,21 @@ input:focus-visible {
   outline-offset: 2px;
 }
 
-@keyframes reel-left {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes reel-right {
-  from {
-    transform: translateX(-50%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   * {
     scroll-behavior: auto;
   }
 
   .reel-track {
-    animation: none;
+    transition: none !important;
   }
 }
 
 @media (min-width: 760px) {
+  .reel-card {
+    flex-basis: 310px;
+  }
+
   .works-toolbar {
     grid-template-columns: 1fr 330px;
     align-items: end;
