@@ -267,26 +267,27 @@ function createNode(tag, className, textContent) {
   return node;
 }
 
-function getThumbnailPath(work) {
-  const dayDir = work.url.replace(/^\.\//, "").replace(/\/$/, "");
-  return `./${dayDir}/${dayDir}.png`;
-}
-
 function getThumbnailCandidates(work) {
   const dayDir = work.url.replace(/^\.\//, "").replace(/\/$/, "");
   const base = `./${dayDir}/`;
   const names = [
-    `${dayDir}.png`,
-    `${dayDir}PC.png`,
-    `${dayDir}SP.png`,
     `${dayDir}FV.png`,
     `${dayDir}FVPC.png`,
     `${dayDir}FVSP.png`,
+    `${dayDir}PCFV.png`,
+    `${dayDir}SPFV.png`,
     `${dayDir}fvpc.png`,
     `${dayDir}fvsp.png`,
+    `${dayDir}fv.png`,
+    `${dayDir}.png`,
+    `${dayDir}PC.png`,
+    `${dayDir}SP.png`,
     `${dayDir}pc.png`,
     `${dayDir}sp.png`,
     `${dayDir}.html.png`,
+    `${dayDir}html.png`,
+    `${dayDir}.htmlPC.png`,
+    `${dayDir}.htmlSP.png`,
     `${dayDir}_index.html.png`,
     `${dayDir}README.png`,
   ];
@@ -309,7 +310,7 @@ function createReelCard(work) {
   image.loading = "eager";
   image.decoding = "async";
   image.draggable = false;
-  const thumbnailCandidates = Array.from(new Set([getThumbnailPath(work), ...getThumbnailCandidates(work)]));
+  const thumbnailCandidates = getThumbnailCandidates(work);
   let candidateIndex = 0;
 
   function applyFallback() {
