@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day026 | LP改善・CV導線設計サービス</title>
+    <meta
+      name="description"
+      content="LP改善・CV導線設計の実案件向けサービスページ。社会的証明・リスク逆転・GA4/Clarity計測設計を同時に実装。"
+    >
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CQB0QSMF7F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CQB0QSMF7F');
+</script>
+
+</head>
+  <body id="top" data-ga4-id="" data-clarity-id="">
+    <a class="skip-link" href="#main-content">本文へスキップ</a>
+
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <div class="backdrop" aria-hidden="true">
+      <span class="shape shape-a"></span>
+      <span class="shape shape-b"></span>
+      <span class="shape shape-c"></span>
+    </div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#top">
+          <span class="brand-day">DAY026</span>
+          <span class="brand-name">LP CONVERSION STUDIO</span>
+        </a>
+
+        <nav class="header-nav" aria-label="ページ内ナビゲーション">
+          <a href="#proof">Evidence</a>
+          <a href="#risk">Guarantee</a>
+          <a href="#measurement">Measurement</a>
+          <a href="#cta">CTA</a>
+        </nav>
+
+        <div class="variant-chip" aria-live="polite">
+          <span>AB Variant</span>
+          <strong id="ab-variant-label">-</strong>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="section hero" id="hero" data-section="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">LP PRODUCTION FOR CLIENT WORK</p>
+            <h1>設計・デザイン・実装・計測まで、成果につながるLPを一気通貫で制作。</h1>
+            <p class="lead">
+              ただ作るだけではなく、公開後に改善できるLPを前提に設計。
+              セクション設計、CTA導線、保証条件、GA4/Clarity計測、A/Bテスト運用まで実案件仕様で対応します。
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary js-cta" href="#cta" data-telemetry="hero_primary">
+                無料相談を予約する
+              </a>
+              <a class="btn btn-ghost js-cta" href="#measurement" data-telemetry="hero_secondary">
+                計測設計の進め方を見る
+              </a>
+            </div>
+
+            <p
+              class="hero-microcopy"
+              id="hero-microcopy"
+              data-copy-a="A案: 実績事例を先に提示し、30秒相談フォームへ誘導"
+              data-copy-b="B案: 保証条件を先に提示し、30秒相談フォームへ誘導"
+            >
+              A案: 実績事例を先に提示し、30秒相談フォームへ誘導
+            </p>
+          </div>
+
+          <aside class="hero-panel" data-reveal>
+            <p class="panel-title">Proof Snapshot</p>
+            <div class="panel-metrics">
+              <article>
+                <p class="metric-label">LP制作・改善案件</p>
+                <p class="metric-value">42<span>件</span></p>
+              </article>
+              <article>
+                <p class="metric-label">平均CVR改善幅</p>
+                <p class="metric-value">+27<span>%</span></p>
+              </article>
+              <article>
+                <p class="metric-label">最短初稿提出</p>
+                <p class="metric-value">3<span>営業日</span></p>
+              </article>
+            </div>
+            <p class="panel-note">※実績はポートフォリオ用サンプル値を含みます。個別結果を保証するものではありません。</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section proof" id="proof" data-section="proof">
+        <div class="wrap">
+          <p class="eyebrow" data-reveal>Social Proof</p>
+          <h2 data-reveal>「効きそう」ではなく「検証済み」を示す。</h2>
+
+          <div class="proof-filter" data-reveal>
+            <p>業種で絞り込み:</p>
+            <div class="proof-filter-buttons" role="group" aria-label="事例フィルタ">
+              <button class="proof-filter-btn is-active" type="button" data-proof-filter="all">全体</button>
+              <button class="proof-filter-btn" type="button" data-proof-filter="saas">SaaS</button>
+              <button class="proof-filter-btn" type="button" data-proof-filter="ec">EC</button>
+              <button class="proof-filter-btn" type="button" data-proof-filter="service">無形サービス</button>
+            </div>
+          </div>
+
+          <div class="case-grid">
+            <article class="case-card" data-segment="saas" data-reveal>
+              <p class="case-head">B2B SaaS / 6週間</p>
+              <h3>デモ予約CVR</h3>
+              <p class="case-score">1.7% → 3.9%</p>
+              <p>FVで導入業種を明示し、比較表の下に「導入前チェック」CTAを追加。</p>
+            </article>
+
+            <article class="case-card" data-segment="ec" data-reveal>
+              <p class="case-head">D2C EC / 4週間</p>
+              <h3>商品詳細LP CVR</h3>
+              <p class="case-score">2.4% → 3.6%</p>
+              <p>レビュー要約と返品保証を同一ブロック化し、購入直前の離脱を抑制。</p>
+            </article>
+
+            <article class="case-card" data-segment="service" data-reveal>
+              <p class="case-head">士業・コンサル / 5週間</p>
+              <h3>相談フォーム完了率</h3>
+              <p class="case-score">5.0% → 8.1%</p>
+              <p>料金表前に適合条件を追加し、CTA直前で「初回整理保証」を提示。</p>
+            </article>
+          </div>
+
+          <div class="voice-grid">
+            <blockquote data-reveal>
+              <p>
+                デザイン刷新だけでなく、問い合わせ内容の具体性が上がりました。
+                商談前の準備工数が減って助かっています。
+              </p>
+              <cite>IT企業 マーケ責任者</cite>
+            </blockquote>
+            <blockquote data-reveal>
+              <p>
+                納品形式をWPとHTML ZIPで選べるのが決め手でした。
+                社内実装チームとも連携しやすかったです。
+              </p>
+              <cite>ECブランド 運用担当</cite>
+            </blockquote>
+            <blockquote data-reveal>
+              <p>
+                GA4とClarityの設計が最初から入っていたので、
+                次の改善施策まで最短で回せました。
+              </p>
+              <cite>受託制作会社 ディレクター</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section risk" id="risk" data-section="risk">
+        <div class="wrap risk-layout">
+          <div data-reveal>
+            <p class="eyebrow eyebrow-light">Risk Reversal</p>
+            <h2>購入前の不安を、条件設計で先に処理する。</h2>
+            <p>
+              依頼前に止まりやすいポイントを保証条件で明文化します。
+              「依頼してから後悔するかも」という不安を先に解消します。
+            </p>
+
+            <ul class="risk-points">
+              <li>初稿提出目安: 3営業日以内（遅延時は代替案提示）</li>
+              <li>第1稿レビューまで方向性の大幅修正を無料対応</li>
+              <li>公開後30日以内の軽微修正を2回まで無償対応</li>
+            </ul>
+
+            <a class="btn btn-secondary js-cta" href="#cta" data-telemetry="risk_primary">
+              保証条件を確認して相談する
+            </a>
+          </div>
+
+          <div class="guarantee-grid" data-reveal>
+            <details class="guarantee-card" data-risk-item="delivery">
+              <summary>納品保証</summary>
+              <p>要件確定後、3営業日以内に初稿を提出。遅延が見込まれる場合は代替スケジュールを事前共有します。</p>
+            </details>
+            <details class="guarantee-card" data-risk-item="cancel">
+              <summary>方向性修正保証</summary>
+              <p>第1稿レビューまでの大幅修正は無料。方向性ズレを初期段階で解消します。</p>
+            </details>
+            <details class="guarantee-card" data-risk-item="review">
+              <summary>公開後フォロー保証</summary>
+              <p>公開後30日以内は軽微修正2回まで無償。計測値を見ながら改善優先順位を提案します。</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section measurement" id="measurement" data-section="measurement">
+        <div class="wrap">
+          <p class="eyebrow" data-reveal>Measurement Design</p>
+          <h2 data-reveal>計測は「納品後に追加」ではなく、制作時点で実装する。</h2>
+
+          <div class="measurement-grid">
+            <article class="kpi-tree" data-reveal>
+              <h3>KPIツリー</h3>
+              <div class="kpi-root">
+                <p class="kpi-label">最終KPI</p>
+                <strong>フォーム完了率</strong>
+              </div>
+              <div class="kpi-branches">
+                <div class="kpi-node">
+                  <p class="kpi-label">中間KPI</p>
+                  <strong>CTAクリック率</strong>
+                  <span>Hero / Proof / Risk</span>
+                </div>
+                <div class="kpi-node">
+                  <p class="kpi-label">中間KPI</p>
+                  <strong>保証閲覧率</strong>
+                  <span>details開封率</span>
+                </div>
+                <div class="kpi-node">
+                  <p class="kpi-label">中間KPI</p>
+                  <strong>証拠閲覧率</strong>
+                  <span>事例セクション到達</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="telemetry-panel" data-reveal>
+              <h3>ライブ計測ダッシュボード</h3>
+              <p class="telemetry-caption">ページ内の操作イベントをこの場で集計します。</p>
+              <p class="telemetry-caption">GA4/Clarity IDを設定すると、このイベントが外部分析にも送信されます。</p>
+
+              <dl class="telemetry-metrics">
+                <div>
+                  <dt>Variant</dt>
+                  <dd id="metric-variant">-</dd>
+                </div>
+                <div>
+                  <dt>Total Events</dt>
+                  <dd id="metric-event-total">0</dd>
+                </div>
+                <div>
+                  <dt>Section Views</dt>
+                  <dd id="metric-section-views">0</dd>
+                </div>
+                <div>
+                  <dt>CTA Clicks</dt>
+                  <dd id="metric-cta-clicks">0</dd>
+                </div>
+                <div>
+                  <dt>Form Success</dt>
+                  <dd id="metric-form-success">0</dd>
+                </div>
+                <div>
+                  <dt>FAQ Opens</dt>
+                  <dd id="metric-faq-opens">0</dd>
+                </div>
+              </dl>
+
+              <p class="metric-last">Last Event: <span id="metric-last-event">-</span></p>
+
+              <div class="telemetry-actions">
+                <button id="export-telemetry" type="button">JSONエクスポート</button>
+                <button id="reset-telemetry" type="button">ログをリセット</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="event-map" data-reveal>
+            <h3>イベント設計マップ</h3>
+            <div class="event-table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>イベント名</th>
+                    <th>発火条件</th>
+                    <th>見る指標</th>
+                    <th>改善に使う判断</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>section_view</td>
+                    <td>各セクション初回到達</td>
+                    <td>到達率</td>
+                    <td>離脱が多いセクションの順序変更</td>
+                  </tr>
+                  <tr>
+                    <td>proof_filter_change</td>
+                    <td>業種フィルタ切替</td>
+                    <td>関心セグメント</td>
+                    <td>流入別に事例の初期表示を最適化</td>
+                  </tr>
+                  <tr>
+                    <td>risk_detail_open</td>
+                    <td>保証カード開封</td>
+                    <td>保証閲覧率</td>
+                    <td>不安要因ごとの文言強化</td>
+                  </tr>
+                  <tr>
+                    <td>cta_click</td>
+                    <td>CTAクリック</td>
+                    <td>クリック率</td>
+                    <td>A/BでCTA文言・配置を比較</td>
+                  </tr>
+                  <tr>
+                  <td>form_submit_success</td>
+                  <td>フォーム送信成功</td>
+                  <td>完了率</td>
+                  <td>項目数やステップ分割の是非を判断</td>
+                </tr>
+                <tr>
+                  <td>analytics_dispatch</td>
+                  <td>GA4/Clarity送信の実行時</td>
+                  <td>計測送信成功率</td>
+                  <td>外部計測漏れや設定不備を検知</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta" id="cta" data-section="cta">
+        <div class="wrap cta-grid">
+          <div data-reveal>
+            <p class="eyebrow">Final CTA</p>
+            <h2>要件整理から納品形式の相談まで、30秒で予約。</h2>
+            <p>
+              最初の打ち合わせで「構成」「デザイン」「実装」「計測」「納品形式（WP or ZIP）」を整理し、
+              優先順位つきの改善プランを提示します。
+            </p>
+          </div>
+
+          <form class="brief-form" id="brief-form" data-reveal>
+            <label>
+              会社名 / 屋号
+              <input type="text" name="company" autocomplete="organization" required>
+            </label>
+            <label>
+              メールアドレス
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>
+              今いちばん改善したい点（任意で納品形式も記入）
+              <textarea id="challenge" name="challenge" rows="4" required></textarea>
+            </label>
+
+            <div class="chip-group" role="group" aria-label="クイック入力">
+              <button type="button" class="chip-btn" data-chip-target="challenge" data-chip-value="CVRが伸びない">CVRが伸びない</button>
+              <button type="button" class="chip-btn" data-chip-target="challenge" data-chip-value="フォーム離脱が多い">フォーム離脱が多い</button>
+              <button type="button" class="chip-btn" data-chip-target="challenge" data-chip-value="WP実装かZIP納品か迷っている">WP実装かZIP納品か迷っている</button>
+            </div>
+
+            <button class="submit-btn js-cta" type="submit" data-telemetry="form_submit">
+              30秒で無料相談を予約する
+            </button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq" data-section="faq">
+        <div class="wrap">
+          <p class="eyebrow" data-reveal>FAQ</p>
+          <h2 data-reveal>導入前によくある質問</h2>
+
+          <div class="faq-list">
+            <details data-reveal>
+              <summary>広告運用をしていなくても依頼できますか？</summary>
+              <p>可能です。自然流入LPでも、導線の可視化と改善優先順位の設計は有効です。</p>
+            </details>
+            <details data-reveal>
+              <summary>納品形式はどちらに対応していますか？</summary>
+              <p>WordPress実装、HTML/CSS/JSのZIP納品どちらにも対応可能です。運用体制に合わせて提案します。</p>
+            </details>
+            <details data-reveal>
+              <summary>GA4やClarityの設定もお願いできますか？</summary>
+              <p>可能です。計測設計、イベント名設計、検証観点まで含めて実装します。</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>
+          Day026 / LP改善・CV導線設計サービス（社会的証明・リスク逆転・計測設計）
+        </p>
+        <a href="#top">トップへ戻る</a>
+      </div>
+    </footer>
+  </body>
+</html>
