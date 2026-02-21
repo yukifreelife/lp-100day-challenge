@@ -12,6 +12,8 @@
   --warm: #b76478;
   --warm-strong: #9b5265;
   --warm-hover: #814152;
+  --mark-soft: rgba(58, 124, 100, 0.16);
+  --mark-warm-soft: rgba(183, 100, 120, 0.2);
   --shadow: 0 16px 40px rgba(34, 71, 57, 0.12);
   --radius-lg: 22px;
   --radius-md: 14px;
@@ -211,11 +213,24 @@ h1 {
 h2 {
   font-size: clamp(1.5rem, 2.4vw, 2.15rem);
   margin-bottom: 0.9rem;
+  position: relative;
+  padding-bottom: 0.18rem;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 3.4rem;
+  height: 0.24rem;
+  margin-top: 0.44rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--brand-strong), rgba(47, 103, 82, 0));
 }
 
 h3 {
   font-size: 1.03rem;
   margin-bottom: 0.4rem;
+  position: relative;
 }
 
 .lead,
@@ -232,11 +247,26 @@ h3 {
 
 .feature-list {
   margin: 1rem 0 0;
-  padding-left: 1.2rem;
+  padding-left: 0;
+  list-style: none;
 }
 
 .feature-list li {
   margin-bottom: 0.3rem;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.feature-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.56rem;
+  width: 0.56rem;
+  height: 0.56rem;
+  border-radius: 2px;
+  background: var(--brand-strong);
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .cta-row {
@@ -315,6 +345,8 @@ h3 {
   border-radius: var(--radius-lg);
   padding: 1.4rem 1.2rem;
   box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-card h2 {
@@ -326,6 +358,18 @@ h3 {
   margin: 0.8rem 0 0;
   color: var(--ink-soft);
   font-size: 0.9rem;
+}
+
+.hero-card::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: linear-gradient(135deg, var(--mark-soft), rgba(58, 124, 100, 0));
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  pointer-events: none;
 }
 
 .starter-list {
@@ -359,6 +403,8 @@ h3 {
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   padding: 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .panel p,
@@ -372,6 +418,8 @@ h3 {
   border: 1px solid rgba(143, 175, 158, 0.5);
   border-radius: var(--radius-md);
   padding: 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .fit-grid {
@@ -385,6 +433,8 @@ h3 {
   border: 1px solid rgba(143, 175, 158, 0.52);
   border-radius: var(--radius-md);
   padding: 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .fit-card.bad {
@@ -394,20 +444,54 @@ h3 {
 
 .fit-card ul {
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 0;
+  list-style: none;
 }
 
 .fit-card li {
   margin-bottom: 0.35rem;
+  padding-left: 1.3rem;
+  position: relative;
+}
+
+.fit-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.56rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--brand-strong);
+  transform: translateY(-50%);
+}
+
+.fit-card.bad li::before {
+  background: var(--warm-strong);
 }
 
 .policy-list {
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 0;
+  list-style: none;
 }
 
 .policy-list li {
   margin-bottom: 0.4rem;
+  padding-left: 1.35rem;
+  position: relative;
+}
+
+.policy-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.56rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 0.14rem;
+  background: var(--brand);
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .note-box {
@@ -479,6 +563,8 @@ h3 {
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   padding: 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .price-card.featured {
@@ -500,17 +586,50 @@ h3 {
 
 .price-card ul {
   margin: 0;
-  padding-left: 1.1rem;
+  padding-left: 0;
+  list-style: none;
 }
 
 .price-card li {
   margin-bottom: 0.3rem;
+  padding-left: 1.28rem;
+  position: relative;
+}
+
+.price-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.56rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 1px;
+  background: var(--brand);
+  transform: translateY(-50%);
 }
 
 .price-note {
   margin: 1rem 0 0;
-  padding-left: 1.2rem;
+  padding-left: 0;
+  list-style: none;
   color: var(--ink-soft);
+}
+
+.price-note li {
+  padding-left: 1.35rem;
+  position: relative;
+}
+
+.price-note li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.56rem;
+  width: 0.56rem;
+  height: 0.56rem;
+  border-radius: 50%;
+  border: 2px solid var(--warm-strong);
+  transform: translateY(-50%);
 }
 
 .faq-list {
@@ -523,6 +642,8 @@ h3 {
   border: 1px solid rgba(143, 175, 158, 0.48);
   border-radius: var(--radius-md);
   padding: 0.85rem 0.9rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .faq-list summary {
@@ -533,6 +654,26 @@ h3 {
 .faq-list p {
   margin: 0.6rem 0 0;
   color: var(--ink-soft);
+}
+
+.panel::after,
+.reason-grid article::after,
+.fit-card::after,
+.price-card::after,
+.faq-list details::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: linear-gradient(135deg, var(--mark-soft), rgba(58, 124, 100, 0));
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  pointer-events: none;
+}
+
+.fit-card.bad::after {
+  background: linear-gradient(135deg, var(--mark-warm-soft), rgba(183, 100, 120, 0));
 }
 
 .site-footer {
