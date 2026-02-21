@@ -213,9 +213,9 @@ body {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 1.4rem;
-  align-items: stretch;
+  grid-template-columns: minmax(0, 1.06fr) minmax(0, 0.94fr);
+  gap: 1.55rem;
+  align-items: start;
 }
 
 .eyebrow {
@@ -330,7 +330,7 @@ h3 {
   border: 1px solid var(--line);
   background: linear-gradient(160deg, rgba(255, 255, 255, 0.9), rgba(255, 244, 230, 0.82));
   border-radius: var(--radius-lg);
-  padding: 1.5rem;
+  padding: 1.35rem;
   box-shadow: var(--shadow);
 }
 
@@ -338,8 +338,45 @@ body[data-variant="B"] .hero-panel {
   background: linear-gradient(160deg, rgba(243, 255, 251, 0.88), rgba(232, 252, 245, 0.82));
 }
 
+.hero-visual {
+  margin: 0 0 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(36, 18, 5, 0.1);
+  background: #f8f2e8;
+}
+
+.hero-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.hero-visual-badges {
+  list-style: none;
+  margin: 0 0 0.8rem;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-visual-badges li {
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.84);
+  color: var(--ink);
+  padding: 0.34rem 0.76rem;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
 .panel-title {
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.7rem;
   font-size: 0.8rem;
   color: var(--ink-soft);
   text-transform: uppercase;
@@ -349,14 +386,15 @@ body[data-variant="B"] .hero-panel {
 
 .panel-metrics {
   display: grid;
-  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+  gap: 0.62rem;
 }
 
 .panel-metrics article {
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: var(--paper);
-  padding: 0.8rem 1rem;
+  padding: 0.72rem 0.8rem;
 }
 
 .metric-label {
@@ -368,16 +406,16 @@ body[data-variant="B"] .hero-panel {
 .metric-value {
   margin: 0.2rem 0 0;
   font-family: var(--font-display);
-  font-size: 1.7rem;
+  font-size: clamp(1.24rem, 2.1vw, 1.5rem);
 }
 
 .metric-value span {
-  font-size: 0.7em;
+  font-size: 0.66em;
   margin-left: 0.18rem;
 }
 
 .panel-note {
-  margin: 0.95rem 0 0;
+  margin: 0.78rem 0 0;
   font-size: 0.76rem;
   color: var(--ink-soft);
 }

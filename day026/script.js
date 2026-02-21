@@ -624,35 +624,6 @@ const updateDashboard = () => {
 telemetry.subscribe(updateDashboard);
 updateDashboard();
 
-const exportButton = document.querySelector("#export-telemetry");
-if (exportButton) {
-  exportButton.addEventListener("click", () => {
-    telemetry.mark("telemetry_export");
-
-    const payload = {
-      exportedAt: new Date().toISOString(),
-      variant,
-      analytics: analyticsBridge.status(),
-      summary: telemetry.summary(),
-      events: telemetry.snapshot()
-    };
-
-    const blob = new Blob([JSON.stringify(payload, null, 2)], {
-      type: "application/json"
-    });
-    const objectUrl = URL.createObjectURL(blob);
-
-    const tempLink = document.createElement("a");
-    tempLink.href = objectUrl;
-    tempLink.download = `day026-telemetry-${Date.now()}.json`;
-    document.body.append(tempLink);
-    tempLink.click();
-    tempLink.remove();
-
-    URL.revokeObjectURL(objectUrl);
-  });
-}
-
 const resetButton = document.querySelector("#reset-telemetry");
 if (resetButton) {
   resetButton.addEventListener("click", () => {

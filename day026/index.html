@@ -84,6 +84,21 @@
           </div>
 
           <aside class="hero-panel" data-reveal>
+            <figure class="hero-visual">
+              <img
+                src="./images/fv-hero-visual.svg"
+                width="1536"
+                height="1024"
+                loading="eager"
+                fetchpriority="high"
+                alt="LPの設計から計測改善までの流れを示したワークフロービジュアル"
+              >
+            </figure>
+            <ul class="hero-visual-badges" aria-label="制作条件">
+              <li>3営業日初稿</li>
+              <li>30日軽微修正</li>
+              <li>GA4/Clarity実装</li>
+            </ul>
             <p class="panel-title">Proof Snapshot</p>
             <div class="panel-metrics">
               <article>
@@ -272,7 +287,6 @@
               <p class="metric-last">Last Event: <span id="metric-last-event">-</span></p>
 
               <div class="telemetry-actions">
-                <button id="export-telemetry" type="button">JSONエクスポート</button>
                 <button id="reset-telemetry" type="button">ログをリセット</button>
               </div>
             </article>
