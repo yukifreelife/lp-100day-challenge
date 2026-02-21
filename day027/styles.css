@@ -20,6 +20,7 @@
   --radius-sm: 10px;
   --font-display: "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
   --font-body: "BIZ UDPGothic", "Hiragino Sans", "Yu Gothic", sans-serif;
+  --anchor-offset: 5.2rem;
 }
 
 *,
@@ -30,6 +31,11 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--anchor-offset);
+}
+
+section[id] {
+  scroll-margin-top: var(--anchor-offset);
 }
 
 body {
@@ -320,6 +326,17 @@ h3 {
   background: linear-gradient(160deg, var(--warm-strong), var(--warm-hover));
 }
 
+.btn-ghost {
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.88);
+  border-color: var(--line);
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus-visible {
+  background: #fff;
+}
+
 .trust-pills {
   margin: 0.9rem 0 0;
   padding: 0;
@@ -358,6 +375,8 @@ h3 {
   box-shadow: var(--shadow);
   position: relative;
   overflow: hidden;
+  align-self: center;
+  margin-top: 0;
 }
 
 .hero-card h2 {
@@ -583,6 +602,13 @@ h3 {
   color: var(--ink-soft);
 }
 
+.number-formula {
+  margin: 0 0 0.52rem !important;
+  font-size: 0.8rem;
+  color: var(--brand-strong) !important;
+  font-weight: 700;
+}
+
 .number-card ul {
   margin: 0;
   padding-left: 0;
@@ -634,6 +660,86 @@ h3 {
   background: rgba(58, 124, 100, 0.07);
   color: var(--ink-soft);
   font-size: 0.86rem;
+}
+
+.contact-form {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(58, 124, 100, 0.34);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.contact-field {
+  display: grid;
+  gap: 0.34rem;
+}
+
+.contact-field span {
+  font-size: 0.83rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+  border: 1px solid var(--line);
+  border-radius: 0.65rem;
+  padding: 0.62rem 0.7rem;
+  font: inherit;
+  color: var(--ink);
+  background: #fff;
+}
+
+.contact-field textarea {
+  resize: vertical;
+  min-height: 7rem;
+}
+
+.contact-field.full {
+  grid-column: 1 / -1;
+}
+
+.form-submit {
+  margin-top: 0.85rem;
+}
+
+.form-note {
+  margin: 0.66rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+}
+
+.contact-result {
+  margin-top: 0.9rem;
+  padding: 0.95rem;
+  border: 1px solid rgba(58, 124, 100, 0.34);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.contact-result-title {
+  margin: 0 0 0.52rem;
+  color: var(--brand-strong);
+  font-weight: 800;
+}
+
+.contact-summary {
+  width: 100%;
+  min-height: 10rem;
+  padding: 0.68rem;
+  border: 1px solid var(--line);
+  border-radius: 0.65rem;
+  font: inherit;
+  color: var(--ink);
+  background: #fff;
 }
 
 .pricing-grid {
@@ -826,13 +932,23 @@ h3 {
 }
 
 @media (max-width: 900px) {
+  :root {
+    --anchor-offset: 8.6rem;
+  }
+
   .hero-grid,
   .problem-grid,
   .reason-grid,
   .fit-grid,
   .pricing-grid,
-  .numbers-grid {
+  .numbers-grid,
+  .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    align-self: auto;
+    margin-top: 0;
   }
 
   .site-header {
@@ -945,6 +1061,10 @@ h3 {
 }
 
 @media (max-width: 760px) {
+  :root {
+    --anchor-offset: 9rem;
+  }
+
   .step-list {
     grid-template-columns: 1fr;
   }
