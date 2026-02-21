@@ -219,6 +219,18 @@ const worksData = [
     tech: ["HTML", "CSS", "JavaScript"],
     url: "./day020/",
   },
+  {
+    day: "Day27",
+    title: "相談しやすさ重視のLP制作ポートフォリオ",
+    category: "Corporate",
+    industry: "LP制作",
+    focus: "無料相談",
+    summary:
+      "実績未掲載段階でも不安を減らせるよう、進行ルールの透明性とCTA2導線で依頼判断を支える構成。",
+    metric: "安心訴求ファースト + 相談/見積の2導線",
+    tech: ["HTML", "CSS"],
+    url: "./day027/",
+  },
 ];
 
 const colorByCategory = {
