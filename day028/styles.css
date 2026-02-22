@@ -15,7 +15,7 @@
   --radius-lg: 20px;
   --radius-md: 14px;
   --radius-sm: 10px;
-  --container: min(1120px, 92vw);
+  --container: 1120px;
   --header-height: 78px;
 }
 
@@ -27,6 +27,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -72,8 +73,11 @@ section[id] {
 }
 
 .container {
-  width: var(--container);
+  width: 100%;
+  max-width: var(--container);
   margin-inline: auto;
+  padding-left: max(12px, env(safe-area-inset-left));
+  padding-right: max(12px, env(safe-area-inset-right));
 }
 
 .narrow {
@@ -95,6 +99,7 @@ section[id] {
   align-items: center;
   justify-content: space-between;
   gap: 18px;
+  min-width: 0;
 }
 
 .brand {
@@ -102,6 +107,7 @@ section[id] {
   flex-direction: column;
   text-decoration: none;
   white-space: nowrap;
+  flex: 0 0 auto;
 }
 
 .brand-day {
@@ -121,6 +127,18 @@ section[id] {
   display: flex;
   align-items: center;
   gap: 14px;
+  flex: 1 1 auto;
+  min-width: 0;
+  justify-content: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.site-nav::-webkit-scrollbar {
+  display: none;
 }
 
 .site-nav a {
@@ -130,6 +148,7 @@ section[id] {
   font-weight: 600;
   padding-block: 4px;
   border-bottom: 2px solid transparent;
+  white-space: nowrap;
 }
 
 .site-nav a:hover,
@@ -142,6 +161,7 @@ section[id] {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  flex: 0 0 auto;
 }
 
 .section {
@@ -797,25 +817,54 @@ dd {
   bottom: 0;
   z-index: 220;
   display: none;
-  gap: 8px;
-  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  padding:
+    10px
+    max(12px, env(safe-area-inset-right))
+    calc(10px + env(safe-area-inset-bottom))
+    max(12px, env(safe-area-inset-left));
   background: rgba(27, 39, 44, 0.92);
   backdrop-filter: blur(5px);
+  overflow-x: hidden;
 }
 
 .mobile-sticky-cta .btn {
-  flex: 1;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
   min-height: 42px;
 }
 
 @media (max-width: 1080px) {
+  .header-inner {
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 10px;
+    padding: 10px 0;
+  }
+
   .site-nav {
-    display: none;
+    width: 100%;
+    order: 3;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 4px;
+    gap: 12px;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-nav a {
+    font-size: 0.84rem;
   }
 
   .hero-grid,
   .cta-grid {
     grid-template-columns: 1fr;
+  }
+
+  .header-cta-wrap {
+    margin-left: auto;
   }
 }
 
@@ -824,11 +873,20 @@ dd {
     --header-height: 70px;
   }
 
+  body {
+    padding-bottom: calc(74px + env(safe-area-inset-bottom));
+  }
+
   .header-inner {
     min-height: var(--header-height);
+    padding: 0;
   }
 
   .header-cta-wrap {
+    display: none;
+  }
+
+  .site-nav {
     display: none;
   }
 
@@ -865,7 +923,78 @@ dd {
   }
 
   .mobile-sticky-cta {
-    display: flex;
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 62px 0;
+  }
+
+  h1 {
+    font-size: clamp(1.65rem, 7.2vw, 2rem);
+    line-height: 1.25;
+  }
+
+  h2 {
+    font-size: clamp(1.28rem, 5.6vw, 1.6rem);
+    margin-bottom: 16px;
+  }
+
+  .lead {
+    font-size: 0.98rem;
+  }
+
+  .hero-panel,
+  .compare-card,
+  .area-grid article,
+  .info-card,
+  .reason-grid article,
+  .stats-grid article,
+  .appraisal-form {
+    padding: 16px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .flow-list {
+    padding-left: 1rem;
+  }
+
+  .flow-list li {
+    padding: 14px 12px 14px 10px;
+  }
+
+  .appraisal-form fieldset {
+    padding: 12px;
+  }
+
+  .mobile-sticky-cta {
+    padding-left: max(10px, env(safe-area-inset-left));
+    padding-right: max(10px, env(safe-area-inset-right));
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding-left: max(10px, env(safe-area-inset-left));
+    padding-right: max(10px, env(safe-area-inset-right));
+  }
+
+  .brand-name {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    min-height: 42px;
+  }
+
+  .metric-value {
+    font-size: 1.28rem;
   }
 }
 
