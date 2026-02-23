@@ -14,6 +14,7 @@
   --radius-md: 16px;
   --radius-sm: 12px;
   --shadow-soft: 0 14px 34px rgba(16, 26, 45, 0.08);
+  --hero-image-ratio: 1200 / 1799;
 }
 
 *,
@@ -310,6 +311,7 @@ h3 {
 
 .hero-image {
   margin-top: 2.6rem;
+  aspect-ratio: var(--hero-image-ratio);
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid #dae2ee;
@@ -318,7 +320,7 @@ h3 {
 
 .hero-image img {
   width: 100%;
-  aspect-ratio: 3 / 2;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -442,6 +444,9 @@ h3 {
   border-radius: var(--radius-lg);
   padding: 1.45rem;
   box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .stars {
@@ -457,7 +462,8 @@ h3 {
 }
 
 .profile {
-  margin-top: 1.4rem;
+  margin-top: auto;
+  padding-top: 1.4rem;
   display: flex;
   align-items: center;
   gap: 0.8rem;
