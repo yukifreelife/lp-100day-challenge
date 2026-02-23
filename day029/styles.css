@@ -180,6 +180,7 @@ p {
   background: rgba(255, 255, 255, 0.98);
   transform: translateY(-8px);
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
   transition: opacity 0.2s ease, transform 0.24s ease;
 }
@@ -187,6 +188,7 @@ p {
 .site-nav.is-open {
   transform: translateY(0);
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 
@@ -680,6 +682,7 @@ h3 {
     position: static;
     transform: none;
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
     border: 0;
     background: transparent;
