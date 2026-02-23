@@ -1,0 +1,695 @@
+
+===== PDFPLUMBER PAGE 1 =====
+2026/02/23 16:52 about:blank
+http://127.0.0.1:5500/day029/index.html#
+100 96 100 100
+Performance Accessibility Best SEO
+Practices
+100
+Performance
+Values are estimated and may vary. The performance score is
+calculated directly from these metrics.See calculator.
+0–49 50–89 90–100
+METRICS Expand view
+First Contentful Paint Largest Contentful Paint
+0.3 s 0.5 s
+about:blank 1/24
+
+===== PDFPLUMBER PAGE 2 =====
+2026/02/23 16:52 about:blank
+Total Blocking Time Cumulative Layout Shift
+0 ms 0
+Speed Index
+0.3 s
+Show audits relevant to: All FCP LCP
+INSIGHTS
+Improve image delivery — Est savings of 159 KiB
+Reducing the download time of images can improve the perceived load time of the page and LCP. Learn more about
+optimising image size FCP LCP Unscored
+Resource Est
+URL
+size savings
+127.0.0.1 First Party 258.5 KiB 159.3 KiB
+…images/hero-desktop-original.jpg (127.0.0.1) 113.7 KiB 98.4 KiB
+img
+This image file is larger than it needs to be
+(1197x1799) for its displayed dimensions
+98.4 KiB
+(440x660). Use responsive images to reduce the
+image download size.
+…images/teamwork-collaboration.jpg (127.0.0.1) 122.3 KiB 40.0 KiB
+img
+Using a modern image format (WebP, AVIF) or
+increasing the image compression could improve 40.0 KiB
+this image's download size.
+about:blank 2/24
+
+===== PDFPLUMBER PAGE 3 =====
+2026/02/23 16:52 about:blank
+Resource Est
+URL
+size savings
+…images/voice-james.jpg (127.0.0.1) 8.5 KiB 8.1 KiB
+img
+Using a modern image format (WebP, AVIF) or
+increasing the image compression could improve 5.6 KiB
+this image's download size.
+This image file is larger than it needs to be
+(120x149) for its displayed dimensions (43x64).
+7.2 KiB
+Use responsive images to reduce the image
+download size.
+…images/voice-misaki.jpg (127.0.0.1) 7.9 KiB 7.5 KiB
+img
+Using a modern image format (WebP, AVIF) or
+increasing the image compression could improve 4.7 KiB
+this image's download size.
+This image file is larger than it needs to be
+(120x162) for its displayed dimensions (39x59).
+7.0 KiB
+Use responsive images to reduce the image
+download size.
+…images/voice-keiko.jpg (127.0.0.1) 6.1 KiB 5.4 KiB
+img
+Using a modern image format (WebP, AVIF) or
+increasing the image compression could improve 5.1 KiB
+this image's download size.
+LCP request discovery
+Optimise LCP by making the LCP image discoverable from the HTML immediately and avoiding lazy loading LCP
+Unscored
+fetchpriority=high should be applied
+Request is discoverable in initial document
+about:blank 3/24
+
+===== PDFPLUMBER PAGE 4 =====
+2026/02/23 16:52 about:blank
+lazy load not applied
+img
+Network dependency tree
+Avoid chaining critical requests by reducing the length of chains, reducing the download size of resources or
+deferring the download of unnecessary resources to improve page load. LCP Unscored
+Maximum critical path latency:79 ms
+Initial Navigation
+/day029/index.html (127.0.0.1) - 28 ms, 15.83 KiB
+/day029/styles.css (127.0.0.1) - 79 ms, 11.39 KiB
+Preconnected origins
+preconnect hints help the browser establish a connection earlier in the page load, saving time when the
+first request for that origin is made. The following are the origins that the page preconnected to.
+no origins were preconnected
+Preconnect candidates
+Add preconnect hints to your most important origins, but try to use no more than 4.
+No additional origins are good candidates for preconnecting
+Document request latency — Est savings of 10 KiB
+Your first network request is the most important. Reduce its latency by avoiding redirects, ensuring a fast server
+response and enabling text compression. FCP LCP Unscored
+Avoids redirects
+Server responds quickly (observed 7 ms)
+No compression applied
+Render blocking requests
+about:blank 4/24
+
+===== PDFPLUMBER PAGE 5 =====
+2026/02/23 16:52 about:blank
+Requests are blocking the page's initial render, which may delay LCP. Deferring or inlining can move these network
+requests out of the critical path. FCP LCP Unscored
+Transfer
+URL Duration
+size
+127.0.0.1 First Party 11.4 KiB 0 ms
+/day029/styles.css (127.0.0.1) 11.4 KiB
+Optimise DOM size
+A large DOM can increase the duration of style calculations and layout reflows, impacting page responsiveness. A
+large DOM will also increase memory usage. Learn how to avoid an excessive DOM size. Unscored
+Statistic Element Value
+Total elements 191
+path
+DOM depth 9
+nav#site-nav.site-nav
+Most children 5
+LCP breakdown
+Each sub-part has specific improvement strategies. Ideally, most of the LCP time should be spent on loading the
+resources, not within delays. LCP Unscored
+Sub-part Duration
+Time to First Byte 10 ms
+Resource load delay 10 ms
+Resource load duration 20 ms
+Element render delay 130 ms
+about:blank 5/24
+
+===== PDFPLUMBER PAGE 6 =====
+2026/02/23 16:52 about:blank
+img
+Third parties
+Third-party code can significantly impact load performance. Reduce and defer loading of third-party code to
+prioritise your page's content. Unscored
+Third party Transfer size Main thread time
+ffdaeeijbbijklfcpahbghahojgfgebo 0 KiB 4 ms
+chrome-extension://ffdaeeijbbijklfcpahbghahojgfgebo/content.js 0 KiB 4 ms
+aeblfdkhhhdcdjpifhhbdiojplfjncoa 0 KiB 3 ms
+chrome-extension://aeblfdkhhhdcdjpifhhbdiojplfjncoa/inline/inject-content-scripts.js 0 KiB 2 ms
+chrome-extension://aeblfdkhhhdcdjpifhhbdiojplfjncoa/inline/injected.js 0 KiB 1 ms
+These insights are also available in the Chrome DevTools performance panel – record a trace to view more detailed
+information.
+DIAGNOSTICS
+Page prevented back-forward cache restoration — 1 failure reason
+Many navigations are performed by going back to a previous page, or forwards again. The back-forward cache
+(bfcache) can speed up these return navigations. Learn more about the bfcache Unscored
+Reason for failure Failure type
+Pages with WebSocket cannot enter back-forward cache. Pending browser support
+/day029/index.html (127.0.0.1)
+Minify CSS — Est savings of 2 KiB
+Minifying CSS files can reduce network payload sizes. Learn how to minify CSS. FCP LCP Unscored
+Transfer Est
+URL
+size savings
+127.0.0.1 First Party 11.4 KiB 2.3 KiB
+about:blank 6/24
+
+===== PDFPLUMBER PAGE 7 =====
+2026/02/23 16:52 about:blank
+Transfer Est
+URL
+size savings
+/day029/styles.css (127.0.0.1) 11.4 KiB 2.3 KiB
+Reduce unused JavaScript — Est savings of 183 KiB
+Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network
+activity. Learn how to reduce unused JavaScript. FCP LCP Unscored
+Transfer Est
+URL
+size savings
+1Password – パスワード保管庫 Chrome Extension 359.6 KiB 182.5 KiB
+chrome-extension://aeblfdkhhhdcdjpifhhbdiojplfjncoa/inline/injected.js 359.6 KiB 182.5 KiB
+User Timing marks and measures — 4 user timings
+Consider instrumenting your app with the User Timing API to measure your app's real-world performance during key
+user experiences. Learn more about User Timing marks. Unscored
+Name Type Start Time Duration
+invoke-has-pre-registration-flag Measure 190.43 ms 4.99 ms
+invoke-page-ready Measure 195.00 ms 1.93 ms
+start-invoke-has-pre-registration-flag Mark 190.43 ms
+start-invoke-page-ready Mark 195.00 ms
+More information about the performance of your application. These numbers don't directly affect the performance score.
+PASSED AUDITS (17) Hide
+Use efficient cache lifetimes
+A long cache lifetime can speed up repeat visits to your page. Learn more. FCP LCP Unscored
+Layout shift culprits
+about:blank 7/24
+
+===== PDFPLUMBER PAGE 8 =====
+2026/02/23 16:52 about:blank
+Layout shifts occur when elements move absent any user interaction. Investigate the causes of layout shifts, such as
+elements being added, removed or their fonts changing as the page loads. CLS Unscored
+Duplicated JavaScript
+Remove large, duplicate JavaScript modules from bundles to reduce unnecessary bytes consumed by network
+activity. FCP LCP Unscored
+Font display
+Consider setting font-display to swap or optional to ensure that text is consistently visible. swap can be further
+optimised to mitigate layout shifts with font metric overrides. Unscored
+Forced reflow
+A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been
+invalidated by a change to the DOM state. This can result in poor performance. Learn more about forced reflows and
+possible mitigations. Unscored
+INP breakdown
+Start investigating with the longest sub-part. Delays can be minimised. To reduce processing duration, optimise the
+main-thread costs, often JS. Unscored
+Legacy JavaScript
+Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for
+modern browsers. Consider modifying your JavaScript build process to not transpile Baseline features, unless you
+know that you must support older browsers. Learn why most sites can deploy ES6+ code without transpiling FCP
+LCP Unscored
+Modern HTTP
+HTTP/2 and HTTP/3 offer many benefits over HTTP/1.1, such as multiplexing. Learn more about using modern HTTP.
+FCP LCP Unscored
+Optimise viewport for mobile
+Tap interactions may be delayed by up to 300 ms if the viewport is not optimised for mobile. Unscored
+meta
+Minify JavaScript
+about:blank 8/24
+
+===== PDFPLUMBER PAGE 9 =====
+2026/02/23 16:52 about:blank
+Minifying JavaScript files can reduce payload sizes and script parse time. Learn how to minify JavaScript. FCP
+LCP Unscored
+Reduce unused CSS
+Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes
+consumed by network activity. Learn how to reduce unused CSS. FCP LCP Unscored
+Avoids enormous network payloads — Total size was 289 KiB
+Large network payloads cost users real money and are highly correlated with long load times. Learn how to reduce
+payload sizes. Unscored
+Transfer
+URL
+size
+127.0.0.1 First Party 288.5 KiB
+…images/teamwork-collaboration.jpg (127.0.0.1) 122.6 KiB
+…images/hero-desktop-original.jpg (127.0.0.1) 114.0 KiB
+/day029/index.html (127.0.0.1) 15.8 KiB
+/day029/styles.css (127.0.0.1) 11.4 KiB
+…images/voice-james.jpg (127.0.0.1) 8.8 KiB
+…images/voice-misaki.jpg (127.0.0.1) 8.2 KiB
+…images/voice-keiko.jpg (127.0.0.1) 6.4 KiB
+/day029/script.js (127.0.0.1) 1.2 KiB
+JavaScript execution time — 0.0 s
+Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads
+helps with this. Learn how to reduce Javascript execution time. TBT Unscored
+Total
+URL CPU Script Evaluation Script Parse
+Time
+127.0.0.1 First Party 121 ms 10 ms 0 ms
+about:blank 9/24
+
+===== PDFPLUMBER PAGE 10 =====
+2026/02/23 16:52 about:blank
+Total
+URL CPU Script Evaluation Script Parse
+Time
+/day029/index.html (127.0.0.1) 121 ms 10 ms 0 ms
+Minimises main-thread work — 0.2 s
+Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads
+helps with this. Learn how to minimise main-thread work TBT Unscored
+Category Time Spent
+Style & Layout 89 ms
+Other 49 ms
+Script Evaluation 37 ms
+Rendering 4 ms
+Script Parsing & Compilation 3 ms
+Parse HTML & CSS 3 ms
+Avoid long main-thread tasks
+Lists the longest tasks on the main thread – useful for identifying worst contributors to input delay. Learn how to
+avoid long main-thread tasks TBT Unscored
+Avoid non-composited animations
+Animations that are not composited can be poor, slow and increase CLS. Learn how to avoid non-composited
+animations CLS Unscored
+Image elements have explicit width and height
+Set an explicit width and height on image elements to reduce layout shifts and improve CLS. Learn how to set image
+dimensions CLS Unscored
+96
+about:blank 10/24
+
+===== PDFPLUMBER PAGE 11 =====
+2026/02/23 16:52 about:blank
+Accessibility
+These checks highlight opportunities to improve the accessibility of
+your web app. Automatic detection can only detect a subset of issues
+and does not guarantee the accessibility of your web app, so manual
+testing is also encouraged.
+CONTRAST
+Background and foreground colours do not have a sufficient contrast ratio.
+Low-contrast text is difficult or impossible for many users to read. Learn how to provide sufficient colour contrast.
+Failing elements
+p
+section#start.section.cta
+p.cta-note
+section#start.section.cta
+These are opportunities to improve the legibility of your content.
+ADDITIONAL ITEMS TO MANUALLY CHECK (10) Hide
+Interactive controls are keyboard focusable
+Custom interactive controls are keyboard focusable and display a focus indicator. Learn how to make custom
+controls focusable. Unscored
+Interactive elements indicate their purpose and state
+Interactive elements, such as links and buttons, should indicate their state and be distinguishable from non-
+interactive elements. Learn how to decorate interactive elements with affordance hints. Unscored
+about:blank 11/24
+
+===== PDFPLUMBER PAGE 12 =====
+2026/02/23 16:52 about:blank
+The page has a logical tab order
+Tabbing through the page follows the visual layout. Users cannot focus elements that are offscreen. Learn more
+about logical tab ordering. Unscored
+Visual order on the page follows DOM order
+DOM order matches the visual order, improving navigation for assistive technology. Learn more about DOM and
+visual ordering. Unscored
+User focus is not accidentally trapped in a region
+A user can tab into and out of any control or region without accidentally trapping their focus. Learn how to avoid
+focus traps. Unscored
+The user's focus is directed to new content added to the page
+If new content, such as a dialog, is added to the page, the user's focus is directed to it. Learn how to direct focus to
+new content. Unscored
+HTML5 landmark elements are used to improve navigation
+Landmark elements (<main>, <nav>, etc.) are used to improve the keyboard navigation of the page for assistive
+technology. Learn more about landmark elements. Unscored
+Offscreen content is hidden from assistive technology
+Offscreen content is hidden with display: none or aria-hidden=true. Learn how to properly hide offscreen content.
+Unscored
+Custom controls have associated labels
+Custom interactive controls have associated labels, provided by aria-label or aria-labelledby. Learn more about
+custom controls and labels. Unscored
+Custom controls have ARIA roles
+Custom interactive controls have appropriate ARIA roles. Learn how to add roles to custom controls. Unscored
+These items address areas which an automated testing tool cannot cover. Learn more in our guide on conducting an
+accessibility review.
+PASSED AUDITS (22) Hide
+[aria-*] attributes match their roles
+about:blank 12/24
+
+===== PDFPLUMBER PAGE 13 =====
+2026/02/23 16:52 about:blank
+Each ARIA role supports a specific subset of aria-* attributes. Mismatching these invalidates the aria-* attributes.
+Learn how to match ARIA attributes to their roles.
+[aria-hidden="true"] is not present on the document <body>
+Assistive technologies, like screen readers, work inconsistently when aria-hidden="true" is set on the document
+<body>. Learn how aria-hidden affects the document body.
+[role]s have all required [aria-*] attributes
+Some ARIA roles have required attributes that describe the state of the element to screen readers. Learn more about
+roles and required attributes.
+[role] values are valid
+ARIA roles must have valid values in order to perform their intended accessibility functions. Learn more about valid
+ARIA roles.
+[aria-*] attributes have valid values
+Assistive technologies, such as screen readers, can't interpret ARIA attributes with invalid values. Learn more about
+valid values for ARIA attributes.
+[aria-*] attributes are valid and not misspelled
+Assistive technologies, such as screen readers, can't interpret ARIA attributes with invalid names. Learn more about
+valid ARIA attributes.
+Image elements have [alt] attributes
+Informative elements should aim for short, descriptive alternative text. Decorative elements can be ignored with an
+empty alt attribute. Learn more about the alt attribute.
+[user-scalable="no"] is not used in the <meta name="viewport"> element and the [maximum-scale] attribute is not less
+than 5.
+Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the
+contents of a web page. Learn more about the viewport meta tag.
+ARIA attributes are used as specified for the element's role
+Some ARIA attributes are only allowed on an element under certain conditions. Learn more about conditional ARIA
+attributes.
+about:blank 13/24
+
+===== PDFPLUMBER PAGE 14 =====
+2026/02/23 16:52 about:blank
+[aria-hidden="true"] elements do not contain focusable descendents
+Focusable descendants within an [aria-hidden="true"] element prevent those interactive elements from being
+available to users of assistive technologies like screen readers. Learn how aria-hidden affects focusable elements.
+Elements use only permitted ARIA attributes
+Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated
+to users of assistive technologies. Learn more about prohibited ARIA roles.
+Document has a <title> element
+The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine
+if a page is relevant to their search. Learn more about document titles.
+<html> element has a [lang] attribute
+If a page doesn't specify a lang attribute, a screen reader assumes that the page is in the default language that the
+user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen
+reader might not announce the page's text correctly. Learn more about the lang attribute.
+<html> element has a valid value for its [lang] attribute
+Specifying a valid BCP 47 language helps screen readers announce text properly. Learn how to use the lang
+attribute.
+Links have a discernible name
+Link text (and alternative text for images, when used as links) that is discernible, unique and focusable improves the
+navigation experience for screen reader users. Learn how to make links accessible.
+Lists contain only <li> elements and script supporting elements (<script> and <template>).
+Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output.
+Learn more about proper list structure.
+List items (<li>) are contained within <ul>, <ol> or <menu> parent elements
+Screen readers require list items (<li>) to be contained within a parent <ul>, <ol> or <menu> to be announced
+properly. Learn more about proper list structure.
+Touch targets have sufficient size and spacing.
+Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate
+the targets. Learn more about touch targets.
+about:blank 14/24
+
+===== PDFPLUMBER PAGE 15 =====
+2026/02/23 16:52 about:blank
+Heading elements appear in a sequentially-descending order
+Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to
+navigate and understand when using assistive technologies. Learn more about heading order.
+Skip links are focusable.
+Including a skip link can help users skip to the main content to save time. Learn more about skip links.
+Document has a main landmark.
+One main landmark helps screen reader users navigate a web page. Learn more about landmarks.
+Deprecated ARIA roles were not used
+Deprecated ARIA roles may not be processed correctly by assistive technology. Learn more about deprecated ARIA
+roles.
+NOT APPLICABLE (37) Hide
+[accesskey] values are unique
+Access keys let users quickly focus a part of the page. For proper navigation, each access key must be unique.
+Learn more about access keys. Unscored
+button, link and menuitem elements have accessible names
+When an element doesn't have an accessible name, screen readers announce it with a generic name, making it
+unusable for users who rely on screen readers. Learn how to make command elements more accessible. Unscored
+Elements with role="dialog" or role="alertdialog" have accessible names.
+ARIA dialogue elements without accessible names may prevent screen reader users from discerning the purpose of
+these elements. Learn how to make ARIA dialog elements more accessible. Unscored
+ARIA input fields have accessible names
+When an input field doesn't have an accessible name, screen readers announce it with a generic name, making it
+unusable for users who rely on screen readers. Learn more about input field labels. Unscored
+ARIA meter elements have accessible names
+When a meter element doesn't have an accessible name, screen readers announce it with a generic name, making it
+about:blank 15/24
+
+===== PDFPLUMBER PAGE 16 =====
+2026/02/23 16:52 about:blank
+unusable for users who rely on screen readers. Learn how to name meter elements. Unscored
+ARIA progressbar elements have accessible names
+When a progressbar element doesn't have an accessible name, screen readers announce it with a generic name,
+making it unusable for users who rely on screen readers. Learn how to label progressbar elements. Unscored
+Elements with an ARIA [role] that require children to contain a specific [role] have all required children.
+Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. Learn
+more about roles and required children elements. Unscored
+[role]s are contained by their required parent element
+Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility
+functions. Learn more about ARIA roles and required parent element. Unscored
+Elements with the role=text attribute do not have focusable descendents.
+Adding role=text around a text node split by markup enables VoiceOver to treat it as one phrase, but the element's
+focusable descendents will not be announced. Learn more about the role=text attribute. Unscored
+ARIA toggle fields have accessible names
+When a toggle field doesn't have an accessible name, screen readers announce it with a generic name, making it
+unusable for users who rely on screen readers. Learn more about toggle fields. Unscored
+ARIA tooltip elements have accessible names
+When a tooltip element doesn't have an accessible name, screen readers announce it with a generic name, making it
+unusable for users who rely on screen readers. Learn how to name tooltip elements. Unscored
+ARIA treeitem elements have accessible names
+When a treeitem element doesn't have an accessible name, screen readers announce it with a generic name, making
+it unusable for users who rely on screen readers. Learn more about labelling treeitem elements. Unscored
+Buttons have an accessible name
+When a button doesn't have an accessible name, screen readers announce it as 'button', making it unusable for
+users who rely on screen readers. Learn how to make buttons more accessible. Unscored
+The page contains a heading, skip link or landmark region
+about:blank 16/24
+
+===== PDFPLUMBER PAGE 17 =====
+2026/02/23 16:52 about:blank
+Adding ways to bypass repetitive content lets keyboard users navigate the page more efficiently. Learn more about
+bypass blocks. Unscored
+<dl>'s contain only properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements.
+When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output. Learn
+how to structure definition lists correctly. Unscored
+Definition list items are wrapped in <dl> elements
+Definition list items (<dt> and <dd>) must be wrapped in a parent <dl> element to ensure that screen readers can
+properly announce them. Learn how to structure definition lists correctly. Unscored
+ARIA IDs are unique
+The value of an ARIA ID must be unique to prevent other instances from being overlooked by assistive technologies.
+Learn how to fix duplicate ARIA IDs. Unscored
+No form fields have multiple labels
+Form fields with multiple labels can be confusingly announced by assistive technologies, like screen readers, which
+use either the first, the last or all of the labels. Learn how to use form labels. Unscored
+<frame> or <iframe> elements have a title
+Screen reader users rely on frame titles to describe the contents of frames. Learn more about frame titles.
+Unscored
+<html> element has an [xml:lang] attribute with the same base language as the [lang] attribute.
+If the webpage does not specify a consistent language, then the screen reader might not announce the page's text
+correctly. Learn more about the lang attribute. Unscored
+Input buttons have discernible text.
+Adding discernable and accessible text to input buttons may help screen reader users to understand the purpose of
+the input button. Learn more about input buttons. Unscored
+<input type="image"> elements have [alt] text
+When an image is being used as an <input> button, providing alternative text can help screen reader users
+understand the purpose of the button. Learn about input image alt text. Unscored
+Form elements have associated labels
+about:blank 17/24
+
+===== PDFPLUMBER PAGE 18 =====
+2026/02/23 16:52 about:blank
+Labels ensure that form controls are announced properly by assistive technologies, such as screen readers. Learn
+more about form element labels. Unscored
+Links are distinguishable without relying on colour.
+Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the
+experience for users with low vision. Learn how to make links distinguishable. Unscored
+The document does not use <meta http-equiv="refresh">
+Users do not expect a page to refresh automatically and doing so will move focus back to the top of the page. This
+may create a frustrating or confusing experience. Learn more about the refresh meta tag. Unscored
+<object> elements have alternative text
+Screen readers cannot translate non-text content. Adding alternative text to <object> elements helps screen readers
+convey meaning to users. Learn more about alt text for object elements. Unscored
+Select elements have associated label elements.
+Form elements without effective labels can create frustrating experiences for screen reader users. Learn more about
+the select element. Unscored
+No element has a [tabindex] value greater than 0
+A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates
+frustrating experiences for users who rely on assistive technologies. Learn more about the tabindex attribute.
+Unscored
+Cells in a <table> element that use the [headers] attribute refer to table cells within the same table.
+Screen readers have features to make navigating tables easier. Ensuring that<td> cells using the [headers] attribute
+only refer to other cells in the same table may improve the experience for screen reader users. Learn more about the
+headers attribute. Unscored
+<th> elements and elements with [role="columnheader"/"rowheader"] have data cells they describe.
+Screen readers have features to make navigating tables easier. Ensuring that table headers always refer to some set
+of cells may improve the experience for screen reader users. Learn more about table headers. Unscored
+[lang] attributes have a valid value
+Specifying a valid BCP 47 language on elements helps ensure that text is pronounced correctly by a screen reader.
+Learn how to use the lang attribute. Unscored
+about:blank 18/24
+
+===== PDFPLUMBER PAGE 19 =====
+2026/02/23 16:52 about:blank
+<video> elements contain a <track> element with [kind="captions"]
+When a video provides a caption it is easier for deaf and hearing-impaired users to access its information. Learn
+more about video captions. Unscored
+Tables have different content in the summary attribute and <caption>.
+The summary attribute should describe the table structure, while <caption> should have the onscreen title. Accurate
+table mark-up helps users of screen readers. Learn more about summary and caption. Unscored
+All heading elements contain content.
+A heading with no content or inaccessible text prevents screen reader users from accessing information on the
+page's structure. Learn more about headings. Unscored
+Uses ARIA roles only on compatible elements
+Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can
+interfere with the accessibility of the web page. Learn more about ARIA roles. Unscored
+Image elements do not have [alt] attributes that are redundant text.
+Informative elements should aim for short, descriptive alternative text. Alternative text that is exactly the same as
+the text adjacent to the link or image is potentially confusing for screen reader users, because the text will be read
+twice. Learn more about the alt attribute. Unscored
+Identical links have the same purpose.
+Links with the same destination should have the same description, to help users understand the link's purpose and
+decide whether to follow it. Learn more about identical links. Unscored
+100
+Best Practices
+TRUST AND SAFETY
+Ensure CSP is effective against XSS attacks
+A strong Content Security Policy (CSP) significantly reduces the risk of cross-site scripting (XSS) attacks. Learn
+how to use a CSP to prevent XSS Unscored
+about:blank 19/24
+
+===== PDFPLUMBER PAGE 20 =====
+2026/02/23 16:52 about:blank
+Description Directive Severity
+No CSP found in enforcement mode High
+Use a strong HSTS policy
+Deployment of the HSTS header significantly reduces the risk of downgrading HTTP connections and eavesdropping
+attacks. A rollout in stages, starting with a low max-age is recommended. Learn more about using a strong HSTS
+policy. Unscored
+Description Directive Severity
+No HSTS header found High
+Ensure proper origin isolation with COOP
+The Cross-Origin-Opener-Policy (COOP) can be used to isolate the top-level window from other documents such as
+pop-ups. Learn more about deploying the COOP header. Unscored
+Description Directive Severity
+No COOP header found High
+Mitigate clickjacking with XFO or CSP
+The X-Frame-Options (XFO) header or the frame-ancestors directive in the Content-Security-Policy (CSP) header
+control where a page can be embedded. These can mitigate clickjacking attacks by blocking some or all sites from
+embedding the page. Learn more about mitigating clickjacking. Unscored
+Description Severity
+No frame control policy found High
+Mitigate DOM-based XSS with trusted types
+The require-trusted-types-for directive in the Content-Security-Policy (CSP) header instructs user agents to
+control the data passed to DOM XSS sink functions. Learn more about mitigating DOM-based XSS with trusted
+types. Unscored
+about:blank 20/24
+
+===== PDFPLUMBER PAGE 21 =====
+2026/02/23 16:52 about:blank
+Description Severity
+No `Content-Security-Policy` header with trusted types directive found High
+PASSED AUDITS (13) Hide
+Uses HTTPS
+All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding mixed
+content, where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS
+prevents intruders from tampering with or passively listening in on the communications between your app and your
+users, and is a prerequisite for HTTP/2 and many new web platform APIs. Learn more about HTTPS.
+Avoids deprecated APIs
+Deprecated APIs will eventually be removed from the browser. Learn more about deprecated APIs.
+Avoids third-party cookies
+Third-party cookies may be blocked in some contexts. Learn more about preparing for third-party cookie
+restrictions.
+Allows users to paste into input fields
+Preventing input pasting is bad practice for the UX and weakens security by blocking password managers.Learn
+more about user-friendly input fields.
+Avoids requesting the geolocation permission on page load
+Users are mistrustful of or confused by sites that request their location without context. Consider tying the request
+to a user action instead. Learn more about the geolocation permission.
+Avoids requesting the notification permission on page load
+Users are mistrustful of or confused by sites that request to send notifications without context. Consider tying the
+request to user gestures instead. Learn more about responsibly getting permission for notifications.
+Displays images with correct aspect ratio
+Image display dimensions should match natural aspect ratio. Learn more about image aspect ratio.
+Serves images with appropriate resolution
+Image natural dimensions should be proportional to the display size and the pixel ratio to maximise image clarity.
+Learn how to provide responsive images.
+about:blank 21/24
+
+===== PDFPLUMBER PAGE 22 =====
+2026/02/23 16:52 about:blank
+Page has the HTML doctype
+Specifying a DOCTYPE prevents the browser from switching to quirks mode. Learn more about the doctype
+declaration.
+Properly defines charset
+A character encoding declaration is required. It can be done with a <meta> tag in the first 1,024 bytes of the HTML or
+in the Content-Type HTTP response header. Learn more about declaring the character encoding.
+No browser errors logged to the console
+Errors logged to the console indicate unresolved problems. They can come from network request failures and other
+browser concerns. Learn more about this errors in console diagnostic audit
+No issues in the Issues panel in Chrome DevTools
+Issues logged to the Issues panel in Chrome DevTools indicate unresolved problems. They can come from network
+request failures, insufficient security controls and other browser concerns. Open up the Issues panel in Chrome
+DevTools for more details on each issue.
+Page has valid source maps
+Source maps translate minified code to the original source code. This helps developers to debug in production. In
+addition, Lighthouse is able to provide further insights. Consider deploying source maps to take advantage of these
+benefits. Learn more about source maps. Unscored
+NOT APPLICABLE (2) Hide
+Redirects HTTP traffic to HTTPS
+Make sure that you redirect all HTTP traffic to HTTPS in order to enable secure web features for all your users. Learn
+more. Unscored
+Detected JavaScript libraries
+All front-end JavaScript libraries detected on the page. Learn more about this JavaScript library detection diagnostic
+audit. Unscored
+100
+about:blank 22/24
+
+===== PDFPLUMBER PAGE 23 =====
+2026/02/23 16:52 about:blank
+SEO
+These checks ensure that your page is following basic search engine
+optimisation advice. There are many additional factors that Lighthouse
+does not score here that may affect your search ranking, including
+performance on Core Web Vitals. Learn more about Google Search
+essentials.
+ADDITIONAL ITEMS TO MANUALLY CHECK (1) Hide
+Structured data is valid
+Run the Structured Data Testing Tool to validate structured data. Learn more about structured data. Unscored
+Run these additional validators on your site to check additional SEO best practices.
+PASSED AUDITS (8) Hide
+Page isnʼt blocked from indexing
+Search engines are unable to include your pages in search results if they don't have permission to crawl them. Learn
+more about crawler directives.
+Document has a <title> element
+The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine
+if a page is relevant to their search. Learn more about document titles.
+Document has a meta description
+Meta descriptions may be included in search results to concisely summarise page content. Learn more about the
+meta description.
+Page has successful HTTP status code
+Pages with unsuccessful HTTP status codes may not be indexed properly. Learn more about HTTP status codes.
+Links have descriptive text
+Descriptive link text helps search engines understand your content. Learn how to make links more accessible.
+Links are crawlable
+Search engines may use href attributes on links to crawl websites. Ensure that the href attribute of anchor elements
+links to an appropriate destination so that more pages of the site can be discovered. Learn how to make links
+crawlable
+about:blank 23/24
+
+===== PDFPLUMBER PAGE 24 =====
+2026/02/23 16:52 about:blank
+Image elements have [alt] attributes
+Informative elements should aim for short, descriptive alternative text. Decorative elements can be ignored with an
+empty alt attribute. Learn more about the alt attribute.
+Document has a valid hreflang
+hreflang links tell search engines what version of a page they should list in search results for a given language or
+region. Learn more about hreflang.
+NOT APPLICABLE (2) Hide
+robots.txt is valid
+If your robots.txt file is malformed, crawlers may not be able to understand how you want your website to be crawled
+or indexed. Learn more about robots.txt. Unscored
+Document has a valid rel=canonical
+Canonical links suggest which URL to show in search results. Learn more about canonical links. Unscored
+Captured at 23 Feb 2026, Emulated desktop with Single-page session
+16:50 GMT+9 Lighthouse 13.0.1
+Initial page load Custom throttling Using Chromium 145.0.0.0
+with devtools
+Generated by Lighthouse13.0.1 | File an issue
+about:blank 24/24
