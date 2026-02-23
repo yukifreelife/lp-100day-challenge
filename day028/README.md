@@ -59,6 +59,9 @@
 - レスポンシブ
   - PC/SPで2カラムを1カラムへ切替
   - SP固定CTA（フォーム）を常時表示
+  - SP固定CTAは1ボタン全幅表示 + safe-area考慮で横ズレを抑制
+  - ヘッダーナビは内部横スクロール化し、ページ全体の右余白発生を防止
+  - コンテナ幅は`max-width + padding`方式で統一し、`vw`由来のズレを回避
   - アンカー遷移時のヘッダー被りをJSで補正
 
 ## イベント計測（改善運用向け）
@@ -75,6 +78,16 @@
 - `/Users/yuuki/Works/lp-100/day028/favicon.icn`（16/32/48サイズ内包）
 - `/Users/yuuki/Works/lp-100/day028/favicon.ico`（ブラウザ互換用）
 - `/Users/yuuki/Works/lp-100/day028/favicon-source.png`（元デザイン）
+- `/Users/yuuki/Works/lp-100/day028/day028PC.png`
+- `/Users/yuuki/Works/lp-100/day028/day028SP.png`
+- `/Users/yuuki/Works/lp-100/day028/day028PCFV.png`
+- `/Users/yuuki/Works/lp-100/day028/day028SPFV.png`
+
+## スクリーンショット命名
+- `day028PC.png`: PC全体
+- `day028SP.png`: SP全体
+- `day028PCFV.png`: PCファーストビュー
+- `day028SPFV.png`: SPファーストビュー
 
 ## 無料素材（アクセント画像）
 - Heroカード（高層マンション外観）
