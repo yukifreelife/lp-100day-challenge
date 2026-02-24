@@ -1,0 +1,71 @@
+:root {
+  --lp-font-sans: 'Noto Sans JP', sans-serif;
+
+  --lp-color-bg: #f4f2f0;
+  --lp-color-surface: #f8f6f4;
+  --lp-color-surface-alt: #f3f0ee;
+  --lp-color-panel: #efebe8;
+  --lp-color-text: #4a4038;
+  --lp-color-muted: #6f6661;
+  --lp-color-border: #e3ddd8;
+  --lp-color-pink: #9f6770;
+  --lp-color-pink-soft: #e8d6d2;
+  --lp-color-sage: #6f876d;
+  --lp-color-sage-soft: #cedac6;
+  --lp-color-ivory: #f8f4ee;
+  --lp-color-brown: #4f443a;
+  --lp-color-white: #ffffff;
+  --lp-color-accent: #7f9680;
+
+  --lp-space-page-x: clamp(1rem, 3vw, 2rem);
+  --lp-space-header-y: 1rem;
+  --lp-space-section: clamp(3.5rem, 7vw, 6rem);
+  --lp-space-section-tight: clamp(2.5rem, 5vw, 4rem);
+  --lp-space-2xs: 0.375rem;
+  --lp-space-xs: 0.5rem;
+  --lp-space-sm: 0.75rem;
+  --lp-space-md: 1rem;
+  --lp-space-lg: 1.5rem;
+  --lp-space-xl: 2rem;
+  --lp-space-2xl: 2.75rem;
+  --lp-space-3xl: 3.5rem;
+  --lp-space-card: clamp(1.25rem, 2.5vw, 1.75rem);
+  --lp-space-btn-x: 1.5rem;
+  --lp-space-btn-y: 0.875rem;
+  --lp-space-logo: 2.25rem;
+  --lp-space-icon: 3.25rem;
+  --lp-space-icon-sm: 2.25rem;
+  --lp-space-step-icon: 5rem;
+  --lp-space-dot: 0.5rem;
+
+  --lp-radius-pill: 9999px;
+  --lp-radius-card: 1.25rem;
+  --lp-radius-panel: 1.75rem;
+  --lp-radius-soft: 0.95rem;
+
+  --lp-shadow-card: 0 8px 24px rgba(79, 68, 58, 0.08);
+  --lp-shadow-lift: 0 14px 30px rgba(79, 68, 58, 0.16);
+
+  --lp-text-display: clamp(2.375rem, 9vw, 4rem);
+  --lp-text-h2: clamp(2rem, 6vw, 3rem);
+  --lp-text-h3: clamp(1.35rem, 3.2vw, 2rem);
+  --lp-text-lead: clamp(1.05rem, 2.4vw, 1.2rem);
+  --lp-text-body: 1rem;
+  --lp-text-small: 0.9375rem;
+  --lp-text-caption: 0.875rem;
+  --lp-text-stat: clamp(2rem, 5vw, 2.75rem);
+  --lp-text-button: clamp(1.1rem, 2vw, 1.35rem);
+  --lp-text-nav: clamp(1.05rem, 2vw, 1.6rem);
+
+  --lp-leading-tight: 1.2;
+  --lp-leading-snug: 1.35;
+  --lp-leading-normal: 1.55;
+  --lp-leading-relaxed: 1.7;
+
+  --lp-tracking-tight: -0.02em;
+
+  --lp-duration: 220ms;
+
+  --lp-max-content: 68rem;
+  --lp-max-wide: 90rem;
+}

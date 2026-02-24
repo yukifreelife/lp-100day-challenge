@@ -1,0 +1,27 @@
+export type LpIconName =
+  | 'sparkles'
+  | 'gift'
+  | 'heart'
+  | 'bag'
+  | 'menu'
+  | 'sad'
+  | 'search'
+  | 'check'
+  | 'type'
+  | 'palette'
+  | 'feather'
+  | 'hand'
+  | 'shield'
+  | 'quote'
+  | 'plus'
+  | 'minus'
+  | 'pen'
+  | 'box'
+  | 'pin'
+  | 'truck'
+  | 'instagram'
+  | 'x'
+  | 'mail'
+  | 'arrow-right';
+
+export type LpAccentTone = 'pink' | 'sage' | 'text';

@@ -1,0 +1,40 @@
+@import './styles/lp-tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--lp-font-sans);
+    background: var(--lp-color-bg);
+    color: var(--lp-color-text);
+    font-size: var(--lp-text-body);
+    line-height: var(--lp-leading-relaxed);
+    text-rendering: optimizeLegibility;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@layer components {
+  .lp-shell {
+    @apply mx-auto w-full max-w-lp-wide px-lp-page-x;
+  }
+
+  .lp-focus {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lp-accent focus-visible:ring-offset-2 focus-visible:ring-offset-lp-bg;
+  }
+}

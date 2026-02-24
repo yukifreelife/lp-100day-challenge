@@ -1,0 +1,33 @@
+export const lpLinks = {
+  home: '#',
+  cart: '#',
+  menu: '#',
+  cta: {
+    heroPrimary: '#',
+    heroSecondary: '#',
+    solution: '#',
+    process: '#',
+    faqContact: '#',
+    finalPrimary: '#',
+    finalSecondary: '#',
+  },
+  socials: {
+    instagram: '#',
+    x: '#',
+    mail: '#',
+  },
+  footer: {
+    shopAll: '#',
+    shopNew: '#',
+    shopRanking: '#',
+    shopGiftSet: '#',
+    supportFaq: '#',
+    supportContact: '#',
+    supportShipping: '#',
+    supportReturn: '#',
+    companyAbout: '#',
+    companyStory: '#',
+    companyPolicy: '#',
+    companyLegal: '#',
+  },
+} as const;
