@@ -16,7 +16,7 @@ export function Footer() {
         <div className="grid gap-lp-2xl lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
           <div>
             <a href={lpLinks.home} className="lp-focus inline-flex items-center gap-lp-sm rounded-lp-pill">
-              <span className="flex h-lp-logo w-lp-logo items-center justify-center rounded-full bg-lp-sage-soft text-lp-small font-lp-bold text-lp-white">
+              <span className="flex h-lp-logo w-lp-logo items-center justify-center rounded-full bg-lp-sage-soft text-lp-small font-lp-bold text-lp-text">
                 {lpContent.brand.short}
               </span>
               <span className="text-lp-h3 font-lp-bold">{lpContent.brand.name}</span>
