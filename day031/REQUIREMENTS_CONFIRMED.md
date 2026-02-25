@@ -34,3 +34,10 @@
 ## 素材
 - 使用写真: 01_profile / 02_session / 03_stretch / 04_online
 - お問い合わせ表示メール: contact@bodymake-yuta.com
+
+## 初稿時に満たす確定条件（対応済み）
+- TimeRex導線URLを設定済み（`window.LP_CONFIG.reservationUrl`）
+- 予約CTAは全ボタン `.js-reservation-link` で統一済み
+- GA4 / Meta Pixel / UTM計測を実装済み（`window.LP_CONFIG` + `script.js`）
+- PDF導線はメール取得→送信→サンクス表示→DL導線まで実装済み（`leadEndpoint` 設定済み）
+- 予約確認/前日リマインドの運用設定を `TIMEREX_REMINDER_SETUP.md` に明文化済み

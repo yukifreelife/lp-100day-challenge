@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="./styles.css" />
     <script>
       window.LP_CONFIG = {
-        reservationUrl: "https://timerex.net",
+        reservationUrl: "https://timerex.net/s/bodymake_tokyo_yuta",
         pdfDownloadUrl: "./downloads/food-checklist.pdf",
-        leadEndpoint: "",
-        gaMeasurementId: "",
-        metaPixelId: ""
+        leadEndpoint: "https://formsubmit.co/ajax/contact@bodymake-yuta.com",
+        gaMeasurementId: "G-CQB0QSMF7F",
+        metaPixelId: "871190680965123"
       };
     </script>
   </head>
@@ -41,7 +41,7 @@
               無理な食事制限なし。日々のチャット伴走で、あなたのペースで続けられる。対面+オンラインで、3か月後の変化を実感。
             </p>
             <div class="hero-ctas">
-              <a class="btn btn-primary js-reservation-link" href="https://timerex.net" target="_blank" rel="noopener noreferrer">無料カウンセリングを予約する</a>
+              <a class="btn btn-primary js-reservation-link" href="https://timerex.net/s/bodymake_tokyo_yuta" target="_blank" rel="noopener noreferrer">無料カウンセリングを予約する</a>
               <a class="btn btn-secondary" href="#pdf">無料PDFを受け取る</a>
             </div>
             <ul class="hero-points" aria-label="プログラムの特徴">
@@ -391,7 +391,7 @@
           </article>
 
           <div class="center-block">
-            <a class="btn btn-primary large" href="https://timerex.net" target="_blank" rel="noopener noreferrer">無料カウンセリングを予約する</a>
+            <a class="btn btn-primary large js-reservation-link" href="https://timerex.net/s/bodymake_tokyo_yuta" target="_blank" rel="noopener noreferrer">無料カウンセリングを予約する</a>
             <p class="hint">※ TimeRexの予約ページに移動します</p>
           </div>
         </div>
@@ -498,7 +498,7 @@
             無理なく続けられる習慣で、見た目も気持ちも変わる。<br />
             その第一歩を、無料カウンセリングから始めませんか？
           </p>
-          <a class="btn btn-primary large js-reservation-link" href="https://timerex.net" target="_blank" rel="noopener noreferrer">無料カウンセリングを予約する</a>
+          <a class="btn btn-primary large js-reservation-link" href="https://timerex.net/s/bodymake_tokyo_yuta" target="_blank" rel="noopener noreferrer">無料カウンセリングを予約する</a>
           <p class="final-notes">※ 所要時間：約60分 / オンラインまたは対面<br />※ 強引な勧誘は一切ありません</p>
           <ul class="final-points">
             <li>完全個別対応</li>
@@ -529,6 +529,11 @@
 
               <label for="pdf-email">メールアドレス</label>
               <input id="pdf-email" name="email" type="email" placeholder="example@email.com" required />
+              <input type="hidden" name="_subject" value="【LP】無料PDFダウンロード申込" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_autoresponse" id="pdf-autoresponse" value="" />
+              <input type="hidden" name="source_page" value="day031_lp_pdf" />
               <input type="hidden" name="utm_source" id="utm-source" />
               <input type="hidden" name="utm_medium" id="utm-medium" />
               <input type="hidden" name="utm_campaign" id="utm-campaign" />

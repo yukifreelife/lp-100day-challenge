@@ -1,8 +1,9 @@
 (function () {
   const config = window.LP_CONFIG || {};
-  const reservationUrl = config.reservationUrl || 'https://timerex.net';
+  const reservationUrl = config.reservationUrl || 'https://timerex.net/s/bodymake_tokyo_yuta';
   const pdfDownloadUrl = config.pdfDownloadUrl || './downloads/food-checklist.pdf';
-  const leadEndpoint = config.leadEndpoint || '';
+  const leadEndpoint = config.leadEndpoint || 'https://formsubmit.co/ajax/contact@bodymake-yuta.com';
+  const siteUrl = config.siteUrl || window.location.origin;
 
   const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
 
@@ -91,6 +92,10 @@
     return url.toString();
   }
 
+  function buildAbsolutePdfUrl() {
+    return new URL(pdfDownloadUrl, siteUrl).toString();
+  }
+
   function bindReservationLinks(utm) {
     const links = document.querySelectorAll('.js-reservation-link');
     links.forEach((link) => {
@@ -165,10 +170,16 @@
     const pdfForm = document.querySelector('.pdf-form');
     const successBox = document.querySelector('.pdf-success');
     const downloadLink = document.querySelector('.pdf-download-link');
+    const autoresponseField = document.getElementById('pdf-autoresponse');
 
     if (!(pdfForm instanceof HTMLFormElement)) return;
+    const absolutePdfUrl = buildAbsolutePdfUrl();
+
     if (downloadLink instanceof HTMLAnchorElement) {
       downloadLink.setAttribute('href', pdfDownloadUrl);
+    }
+    if (autoresponseField instanceof HTMLInputElement) {
+      autoresponseField.value = `無料PDFのお受け取りありがとうございます。以下URLからダウンロードできます。${absolutePdfUrl}`;
     }
 
     pdfForm.addEventListener('submit', async (event) => {
@@ -186,17 +197,36 @@
       submitButton.textContent = '送信中...';
 
       const formData = new FormData(pdfForm);
+      formData.set('submitted_at', new Date().toISOString());
+      formData.set('page_url', window.location.href);
+      formData.set('pdf_download_url', absolutePdfUrl);
       const payload = Object.fromEntries(formData.entries());
 
       try {
-        if (leadEndpoint) {
-          await fetch(leadEndpoint, {
+        let response;
+        const isFormSubmit = /formsubmit\.co/i.test(leadEndpoint);
+
+        if (isFormSubmit) {
+          response = await fetch(leadEndpoint, {
+            method: 'POST',
+            headers: { Accept: 'application/json' },
+            body: formData
+          });
+        } else {
+          response = await fetch(leadEndpoint, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
           });
-        } else {
-          await new Promise((resolve) => setTimeout(resolve, 450));
+        }
+
+        if (!response.ok) {
+          throw new Error(`Lead endpoint error: ${response.status}`);
+        }
+
+        const responseJson = await response.json().catch(() => null);
+        if (responseJson && typeof responseJson.success !== 'undefined' && !responseJson.success) {
+          throw new Error('Lead endpoint returned unsuccessful response');
         }
 
         trackEvent('generate_lead', {
