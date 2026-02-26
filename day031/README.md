@@ -96,3 +96,20 @@ python3 -m http.server 8031
 1. クライアントFBを反映して文言・優先CTAの最終調整
 2. Lighthouse Best Practicesの改善対応
 3. 本番用のTimeRex/計測ID/送信先の最終確認と公開準備
+
+---
+
+## Day032 追加対応（2026-02-26）
+- 無料PDF差し替え
+  - `/Users/yuuki/Works/lp-100/day031/downloads/food-checklist.pdf` を新規作成PDFへ置換
+  - タイトルを「初心者でも続く 食事管理チェックリスト（3か月ボディメイク用）」に変更
+  - 参照元テキストとして `/Users/yuuki/Works/lp-100/day031/downloads/food-checklist-source.txt` を追加
+- 価格セクション再構成（価格据え置き）
+  - `index.html` の pricing を「価値/安心材料 → 料金提示 → 無料相談導線」に再設計
+  - `強引な勧誘なし / 合わなければ断ってOK / 開始前キャンセル全額返金 / 分割可` を価格文脈の近くへ配置
+  - 価格は `¥297,000`、分割は `月々 ¥99,000 × 3回` のまま維持
+- スタイル調整
+  - `styles.css` に pricing 用の新レイアウト（contextカード、安心訴求リスト、CTAエリア）を追加
+  - PC/SP両対応のため `@media (max-width: 900px)` と `@media (max-width: 640px)` を補正
+- 導線確認
+  - `window.LP_CONFIG.pdfDownloadUrl`、PDFダウンロードリンク、`script.js` の参照先はいずれも `./downloads/food-checklist.pdf` を維持

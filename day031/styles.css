@@ -502,8 +502,63 @@ main section {
   background: #eaedf0;
 }
 
+.pricing-context {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.pricing-context-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: #f8fbfc;
+  padding: 22px;
+}
+
+.pricing-context-card h3 {
+  margin: 0;
+  font-size: 1.52rem;
+  line-height: 1.45;
+}
+
+.pricing-context-card.reassurance {
+  background: #f3f8fb;
+}
+
+.pricing-context-list,
+.pricing-reassurance-list {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.pricing-context-list li,
+.pricing-reassurance-list li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--text-sub);
+}
+
+.pricing-context-list li::before,
+.pricing-reassurance-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.pricing-reassurance-list strong,
+.pricing-reassurance-list span {
+  color: var(--text-main);
+}
+
 .pricing-card {
-  margin: 42px auto 0;
+  margin: 28px auto 0;
   max-width: 860px;
   border-radius: 18px;
   overflow: hidden;
@@ -623,9 +678,20 @@ main section {
 }
 
 .pricing-footnote {
-  margin: 18px 0 0;
+  margin: 0;
   text-align: center;
   color: var(--text-sub);
+}
+
+.pricing-actions {
+  margin-top: 18px;
+  display: grid;
+  gap: 14px;
+  justify-items: center;
+}
+
+.pricing-actions .btn {
+  max-width: 440px;
 }
 
 .counseling {
@@ -1144,6 +1210,10 @@ main section {
     flex-direction: column;
   }
 
+  .pricing-context {
+    grid-template-columns: 1fr;
+  }
+
   .btn,
   .btn.large {
     width: 100%;
@@ -1246,6 +1316,10 @@ main section {
   .problem-card p,
   .faq-button {
     font-size: 1rem;
+  }
+
+  .pricing-context-card h3 {
+    font-size: 1.35rem;
   }
 
   .pricing-head h3 {
