@@ -4,6 +4,7 @@
 - `index.html`
 - `styles.css`
 - `script.js`
+- `CLIENT_README.txt`
 - `privacy.html`
 - `tokushoho.html`
 - `downloads/food-checklist.pdf`

@@ -178,6 +178,17 @@ main section {
   text-wrap: pretty;
 }
 
+.hero-audience {
+  margin: 16px 0 0;
+  max-width: 44ch;
+  border-radius: 12px;
+  border: 1px solid #bfd8ea;
+  background: #f2f8fd;
+  padding: 10px 12px;
+  color: #2a4a63;
+  font-size: 0.98rem;
+}
+
 .hero-ctas {
   margin-top: 30px;
   display: flex;
@@ -627,12 +638,27 @@ main section {
   color: var(--teal);
 }
 
+.pricing-tax-note {
+  margin: 12px 0 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
 .pricing-list-wrap {
   padding: 30px 24px;
+  background: #f2f8fa;
+  border-top: 1px solid var(--border);
+}
+
+.pricing-includes-lead {
+  margin: 0;
+  text-align: center;
+  color: var(--teal-dark);
+  font-weight: 700;
 }
 
 .pricing-list-wrap h4 {
-  margin: 0;
+  margin: 6px 0 0;
   text-align: center;
   font-size: 1.65rem;
 }
@@ -1004,6 +1030,14 @@ main section {
   font-size: 2rem;
 }
 
+.pdf-primary-action {
+  margin-top: 22px;
+}
+
+.pdf-primary-action .btn {
+  max-width: 460px;
+}
+
 .pdf-benefits {
   margin: 18px 0 0;
   padding: 0;
@@ -1073,7 +1107,16 @@ main section {
   color: var(--text-sub);
 }
 
+.pdf-success-cta-note {
+  margin: 14px 0 10px;
+  color: var(--text-sub);
+}
+
 .pdf-download-link {
+  width: 100%;
+}
+
+.pdf-counseling-link {
   width: 100%;
 }
 
