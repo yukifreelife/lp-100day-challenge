@@ -44,3 +44,28 @@
    python3 -m http.server 8032
 2. ブラウザで確認:
    http://localhost:8032/index.html
+
+【5】公開後運用チェックリスト
+
+■ TimeRex側設定
+- [ ] 予約URL（reservationUrl）が最新か確認
+- [ ] 予約枠（火・木 10:00-18:00 / 土 9:00-12:00）が運用どおりか確認
+- [ ] キャンセル文言を統一
+      前日18:00まで変更可。当日キャンセルは原則不可（やむを得ない事情はご相談ください）。
+- [ ] 自動リマインドメール（予約確定時 / 前日24時間前）が有効か確認
+- [ ] 予約完了計測を実施する場合、TimeRex側で完了ページ連携（リダイレクト or 外部連携）を設定
+
+■ GA4 / Meta ID確認
+- [ ] index.html の window.LP_CONFIG を確認
+      gaMeasurementId / metaPixelId / reservationUrl / leadEndpoint
+- [ ] GA4リアルタイムで以下イベント受信を確認
+      page_view, select_counseling_cta, generate_lead
+- [ ] Meta Pixel Helperで PageView / SelectCounselingCTA / Lead 発火を確認
+- [ ] テスト流入（UTM付きURL）で、予約ボタン押下とPDFフォーム送信を1回ずつ検証
+
+■ UTM運用
+- [ ] 広告・SNS出稿URLに以下パラメータを付与
+      utm_source / utm_medium / utm_campaign / utm_content / utm_term
+- [ ] LP流入後、予約リンクにUTMが引き継がれることを確認
+- [ ] PDFフォーム hidden項目（utm_*）にUTMが入ることを確認
+- [ ] 命名ルールを固定（例: source=meta, medium=cpc, campaign=2026spring_lp）
