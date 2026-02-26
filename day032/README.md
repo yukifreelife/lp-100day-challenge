@@ -113,3 +113,17 @@ python3 -m http.server 8031
   - PC/SP両対応のため `@media (max-width: 900px)` と `@media (max-width: 640px)` を補正
 - 導線確認
   - `window.LP_CONFIG.pdfDownloadUrl`、PDFダウンロードリンク、`script.js` の参照先はいずれも `./downloads/food-checklist.pdf` を維持
+
+---
+
+## Day032 PDFデザイン調整（2026-02-26）
+- 無料PDFの見た目を再調整
+  - 対象: `/Users/yuuki/Works/lp-100/day032/downloads/food-checklist.pdf`
+  - 参照元: `/Users/yuuki/Works/lp-100/day032/downloads/food-checklist-source.txt`
+- 変更内容
+  - 表紙風の装飾見出し（罫線ブロック）を追加
+  - 「Daily 10」「忙しい日のリカバリー」「週間レビュー」をカード風区切りで再構成
+  - 行間と余白を調整し、チェックしやすい記入欄に変更
+  - 文体をやや柔らかくし、継続を後押しするメッセージを追加
+- 再生成条件
+  - `cupsfilter` で `text/plain -> pdf` 変換（ページ余白・文字密度オプション付）

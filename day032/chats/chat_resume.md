@@ -86,3 +86,16 @@
   - pricing専用の新規クラスとレスポンシブ補正を追加（PC/SP崩れ回避）
 - 導線確認
   - `index.html` と `script.js` のPDF参照先は従来どおり `./downloads/food-checklist.pdf`
+
+---
+
+## 6. Day032 追加修正（PDF見た目調整）
+- 背景:
+  - 無料PDFが形式的すぎるため、最低限の温かみデザインを反映
+- 実施:
+  - `downloads/food-checklist-source.txt` を再編集し、装飾見出し・カード風区切り・週間シートの見せ方に変更
+  - `downloads/food-checklist.pdf` を再生成して置換
+  - 既存導線（`index.html` / `script.js` の `./downloads/food-checklist.pdf`）は変更なし
+- 補足:
+  - 実行環境制約のため、生成方式は `cupsfilter` ベース（text-to-pdf）
+  - その制約内で余白・構成・トーンを最適化し、読みやすさと親しみを向上
