@@ -1,0 +1,32 @@
+# Day032 初稿提出ファイル一覧
+
+## クライアント提出対象（必須）
+- `index.html`
+- `styles.css`
+- `script.js`
+- `privacy.html`
+- `tokushoho.html`
+- `downloads/food-checklist.pdf`
+- `images/`（配下すべて）
+
+## 仕様メモ（必要に応じて同梱）
+- `CLIENT_REQUESTS_AND_COMMITMENTS.md`
+- `REQUIREMENTS_CONFIRMED.md`
+- `TIMEREX_REMINDER_SETUP.md`
+- `README.md`
+- `chats/chat_resume.md`
+
+## 提出対象外（削除済み）
+- `download.pdf`（見た目不良の旧PDF）
+
+## ローカル確認
+```bash
+cd /Users/yuuki/Works/lp-100/day032
+python3 -m http.server 8032
+```
+
+確認URL:
+- `http://localhost:8032/index.html`
+- `http://localhost:8032/privacy.html`
+- `http://localhost:8032/tokushoho.html`
+- `http://localhost:8032/downloads/food-checklist.pdf`
