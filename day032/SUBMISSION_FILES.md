@@ -17,6 +17,12 @@
 - `README.md`
 - `chats/chat_resume.md`
 
+## 内部編集用（提出対象外）
+- `downloads/draft/food-checklist-draft.txt`
+- `downloads/draft/food-checklist-draft-preview.html`
+- `downloads/draft/README.txt`
+- `scripts/export_food_checklist_pdf.sh`
+
 ## 提出対象外（削除済み）
 - `download.pdf`（見た目不良の旧PDF）
 

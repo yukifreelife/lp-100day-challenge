@@ -57,6 +57,23 @@ lp:env=static-html-css-js
 
 ---
 
+## PDF運用（ドラフト先行）
+- 内容確定までは、PDFを直接編集しない。
+- 編集原本:
+  - `/Users/yuuki/Works/lp-100/day032/downloads/draft/food-checklist-draft.txt`
+- 仮デザイン確認:
+  - `/Users/yuuki/Works/lp-100/day032/downloads/draft/food-checklist-draft-preview.html`
+- 最終PDF変換（内容/デザイン確定後のみ実行）:
+```bash
+cd /Users/yuuki/Works/lp-100/day032
+./scripts/export_food_checklist_pdf.sh
+```
+- 変換時に `draft` から下記へ反映される:
+  - `downloads/food-checklist-source.txt`
+  - `downloads/food-checklist.pdf`
+
+---
+
 ## 次稿反映（2026-02-26）
 - FVに「忙しい社会人・運動初心者向け」要素を追記
 - 料金セクションに税込明記、分割方法、詳細案内文を追記

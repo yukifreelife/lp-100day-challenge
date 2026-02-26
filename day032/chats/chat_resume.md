@@ -60,3 +60,17 @@
   - 末尾連絡先を「LP内の無料カウンセリング導線」へ統一
 - 運用資料
   - `CLIENT_README.txt` を追加し、更新箇所一覧とTimeRex完了計測の現状を明記
+
+---
+
+## 5. PDF編集運用の再構成（2026-02-26）
+- 方針変更:
+  - 内容確定まではPDFを都度作らず、ドラフト原本を編集する運用へ切り替え
+- 追加ファイル:
+  - `/Users/yuuki/Works/lp-100/day032/downloads/draft/food-checklist-draft.txt`
+  - `/Users/yuuki/Works/lp-100/day032/downloads/draft/food-checklist-draft-preview.html`
+  - `/Users/yuuki/Works/lp-100/day032/downloads/draft/README.txt`
+  - `/Users/yuuki/Works/lp-100/day032/scripts/export_food_checklist_pdf.sh`
+- クライアントPDF修正依頼の反映先:
+  - セクション2の行間調整: `food-checklist-draft.txt`
+  - 末尾連絡先統一: `food-checklist-draft.txt`
