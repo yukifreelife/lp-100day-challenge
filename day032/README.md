@@ -60,17 +60,19 @@ lp:env=static-html-css-js
 ## PDF運用（ドラフト先行）
 - 内容確定までは、PDFを直接編集しない。
 - 編集原本:
-  - `/Users/yuuki/Works/lp-100/day032/downloads/draft/food-checklist-draft.txt`
+  - `/Users/yuuki/Works/lp-100/day032/downloads/draft/food-checklist-draft.html`
+  - `/Users/yuuki/Works/lp-100/day032/downloads/draft/food-checklist-draft.css`
 - 仮デザイン確認:
-  - `/Users/yuuki/Works/lp-100/day032/downloads/draft/food-checklist-draft-preview.html`
+  - `/Users/yuuki/Works/lp-100/day032/downloads/draft/food-checklist-draft.html`
 - 最終PDF変換（内容/デザイン確定後のみ実行）:
 ```bash
 cd /Users/yuuki/Works/lp-100/day032
 ./scripts/export_food_checklist_pdf.sh
 ```
-- 変換時に `draft` から下記へ反映される:
-  - `downloads/food-checklist-source.txt`
+- 変換結果:
   - `downloads/food-checklist.pdf`
+- 補足:
+  - `downloads/food-checklist-source.txt` はテキスト版の参考スナップショット
 
 ---
 

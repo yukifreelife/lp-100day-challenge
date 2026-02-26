@@ -67,10 +67,10 @@
 - 方針変更:
   - 内容確定まではPDFを都度作らず、ドラフト原本を編集する運用へ切り替え
 - 追加ファイル:
-  - `/Users/yuuki/Works/lp-100/day032/downloads/draft/food-checklist-draft.txt`
-  - `/Users/yuuki/Works/lp-100/day032/downloads/draft/food-checklist-draft-preview.html`
+  - `/Users/yuuki/Works/lp-100/day032/downloads/draft/food-checklist-draft.html`
+  - `/Users/yuuki/Works/lp-100/day032/downloads/draft/food-checklist-draft.css`
   - `/Users/yuuki/Works/lp-100/day032/downloads/draft/README.txt`
   - `/Users/yuuki/Works/lp-100/day032/scripts/export_food_checklist_pdf.sh`
 - クライアントPDF修正依頼の反映先:
-  - セクション2の行間調整: `food-checklist-draft.txt`
-  - 末尾連絡先統一: `food-checklist-draft.txt`
+  - セクション2の行間調整: `food-checklist-draft.html`
+  - 末尾連絡先統一: `food-checklist-draft.html`

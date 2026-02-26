@@ -18,8 +18,8 @@
 - `chats/chat_resume.md`
 
 ## 内部編集用（提出対象外）
-- `downloads/draft/food-checklist-draft.txt`
-- `downloads/draft/food-checklist-draft-preview.html`
+- `downloads/draft/food-checklist-draft.html`
+- `downloads/draft/food-checklist-draft.css`
 - `downloads/draft/README.txt`
 - `scripts/export_food_checklist_pdf.sh`
 
