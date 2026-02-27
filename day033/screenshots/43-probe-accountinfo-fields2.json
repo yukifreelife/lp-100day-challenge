@@ -1,0 +1,212 @@
+url=https://cp.conoha.jp/WING/Wizard/AccountInfo
+[
+  {
+    "tag": "input",
+    "type": "text",
+    "name": "",
+    "id": "",
+    "placeholder": "***@example.com\r\n",
+    "x": 340,
+    "y": 315,
+    "w": 420,
+    "h": 37
+  },
+  {
+    "tag": "input",
+    "type": "text",
+    "name": "",
+    "id": "",
+    "placeholder": "***@example.com",
+    "x": 340,
+    "y": 389,
+    "w": 420,
+    "h": 37
+  },
+  {
+    "tag": "input",
+    "type": "password",
+    "name": "",
+    "id": "",
+    "placeholder": "9～70文字、半角英数と記号を混在",
+    "x": 340,
+    "y": 461,
+    "w": 374,
+    "h": 37
+  },
+  {
+    "tag": "input",
+    "type": "radio",
+    "name": "role-radio-group",
+    "id": "I",
+    "placeholder": "",
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+  },
+  {
+    "tag": "input",
+    "type": "radio",
+    "name": "role-radio-group",
+    "id": "R",
+    "placeholder": "",
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+  },
+  {
+    "tag": "input",
+    "type": "text",
+    "name": "",
+    "id": "",
+    "placeholder": "姓",
+    "x": 340,
+    "y": 685,
+    "w": 201,
+    "h": 37
+  },
+  {
+    "tag": "input",
+    "type": "text",
+    "name": "",
+    "id": "",
+    "placeholder": "名",
+    "x": 559,
+    "y": 685,
+    "w": 201,
+    "h": 37
+  },
+  {
+    "tag": "input",
+    "type": "radio",
+    "name": "sex-radio-group",
+    "id": "M",
+    "placeholder": "",
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+  },
+  {
+    "tag": "input",
+    "type": "radio",
+    "name": "sex-radio-group",
+    "id": "F",
+    "placeholder": "",
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+  },
+  {
+    "tag": "select",
+    "type": "select-one",
+    "name": "",
+    "id": "",
+    "placeholder": "",
+    "x": 340,
+    "y": 816,
+    "w": 169,
+    "h": 37
+  },
+  {
+    "tag": "select",
+    "type": "select-one",
+    "name": "",
+    "id": "",
+    "placeholder": "",
+    "x": 559,
+    "y": 816,
+    "w": 169,
+    "h": 37
+  },
+  {
+    "tag": "select",
+    "type": "select-one",
+    "name": "",
+    "id": "",
+    "placeholder": "",
+    "x": 778,
+    "y": 816,
+    "w": 169,
+    "h": 37
+  },
+  {
+    "tag": "select",
+    "type": "select-one",
+    "name": "",
+    "id": "",
+    "placeholder": "",
+    "x": 340,
+    "y": 887,
+    "w": 201,
+    "h": 37
+  },
+  {
+    "tag": "input",
+    "type": "text",
+    "name": "",
+    "id": "",
+    "placeholder": "150-8512",
+    "x": 340,
+    "y": 959,
+    "w": 201,
+    "h": 37
+  },
+  {
+    "tag": "select",
+    "type": "select-one",
+    "name": "",
+    "id": "",
+    "placeholder": "",
+    "x": 340,
+    "y": 1031,
+    "w": 201,
+    "h": 37
+  },
+  {
+    "tag": "input",
+    "type": "text",
+    "name": "",
+    "id": "",
+    "placeholder": "渋谷区",
+    "x": 340,
+    "y": 1103,
+    "w": 420,
+    "h": 37
+  },
+  {
+    "tag": "input",
+    "type": "text",
+    "name": "",
+    "id": "",
+    "placeholder": "桜丘町26-1",
+    "x": 340,
+    "y": 1175,
+    "w": 420,
+    "h": 37
+  },
+  {
+    "tag": "input",
+    "type": "text",
+    "name": "",
+    "id": "",
+    "placeholder": "セルリアンタワー11F",
+    "x": 340,
+    "y": 1246,
+    "w": 420,
+    "h": 37
+  },
+  {
+    "tag": "input",
+    "type": "text",
+    "name": "",
+    "id": "",
+    "placeholder": "090-1234-5678",
+    "x": 340,
+    "y": 1318,
+    "w": 420,
+    "h": 37
+  }
+]
