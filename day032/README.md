@@ -108,6 +108,14 @@ cd /Users/yuuki/Works/lp-100/day032
   - クライアントの納品形態選択（ZIP / WordPress）確定
   - WordPress選択時は移行手順・必要情報（ドメイン/ホスティング）確定
 
+## Day033引き継ぎメモ（2026-02-27）
+- クライアントのrev3修正確認は完了
+- 最新提出ZIP（正本）は `day032/day032_client_submission_rev3_1_20260226.zip`
+- 旧版ZIP（rev1 / rev2 / rev3）は参照用として保持
+- ドキュメントの役割を分離
+  - `README.md`: 案件運用・提出判断用
+  - `PORTFOLIO_WORKLOG.md`: 制作実績/作業時間の記録用
+
 ---
 
 ## ローカル確認コマンド

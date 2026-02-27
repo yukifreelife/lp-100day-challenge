@@ -118,3 +118,22 @@
 - 次回着手ポイント
   - クライアントにA/Bの最終選択を確認
   - WordPress確定時は移行スコープと公開手順を具体化
+
+---
+
+## 9. Day033 引き継ぎ時点の最新状態（2026-02-27）
+- クライアント状況
+  - rev3の修正内容は承認済み
+  - 次段階は「納品形態の最終決定（ZIP継続 or WordPress移行）」の合意
+- 現在の提出ZIP
+  - 参照用: `day032_client_submission_rev1_20260226.zip`
+  - 参照用: `day032_client_submission_rev2_20260226.zip`
+  - 参照用: `day032_client_submission_rev3_20260226.zip`
+  - 最新版: `day032_client_submission_rev3_1_20260226.zip`（CLIENT_READMEチェックリスト追記版）
+- ドキュメント運用
+  - 案件向け説明は `README.md`
+  - ポートフォリオ向け作業ログは `PORTFOLIO_WORKLOG.md`
+- Day033開始時の優先順
+  1. クライアントへA/B案（ZIP or WordPress）の最終確認
+  2. WordPress選択時はドメイン/ホスティング情報の取得と移行スコープ確定
+  3. 公開確認手順を「URL確認優先」に統一して案内文を更新

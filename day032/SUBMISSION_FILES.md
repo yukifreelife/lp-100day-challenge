@@ -1,5 +1,12 @@
 # Day032 初稿提出ファイル一覧
 
+## 最新提出ZIP（Day033引き継ぎ時点）
+- 正本: `day032_client_submission_rev3_1_20260226.zip`
+- 旧版（参照用）:
+  - `day032_client_submission_rev1_20260226.zip`
+  - `day032_client_submission_rev2_20260226.zip`
+  - `day032_client_submission_rev3_20260226.zip`
+
 ## クライアント提出対象（必須）
 - `index.html`
 - `styles.css`
