@@ -1,7 +1,7 @@
 # day019 → day020 引き継ぎ（chat_resume.md 用）
 
 ## 0. 引き継ぎの前提（最重要）
-- 前提ソース：day019/README.md と day019/chat_resume.md のみ（過去ログ依存禁止）
+- 前提ソース：day019/PORTFOLIO_WORKLOG.md と day019/chat_resume.md のみ（過去ログ依存禁止）
 - 構造変更禁止（セクション順・見出し・導線は維持）
 - ローカル（day020フォルダ）が正本／WordPressは検証環境
 - 差分は必ずローカル基準で管理
