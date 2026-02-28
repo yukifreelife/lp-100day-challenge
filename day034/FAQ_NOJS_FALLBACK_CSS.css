@@ -1,0 +1,17 @@
+.faq-answer {
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.faq-button {
+  cursor: default;
+}
+
+.faq-button:hover,
+.faq-button:focus-visible {
+  background: transparent;
+}
+
+.faq-mark {
+  display: none;
+}
