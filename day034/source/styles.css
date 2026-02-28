@@ -939,10 +939,10 @@ main section {
 .final-cta {
   position: relative;
   background-color: #0f9d96;
-  background-image: url("./images/optimized/01_profile_bg-1280.webp");
+  background-image: url("https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02/01_profile_bg-1280.webp");
   background-image: image-set(
-    url("./images/optimized/01_profile_bg-1280.webp") 1x,
-    url("./images/optimized/01_profile_bg-1920.webp") 2x
+    url("https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02/01_profile_bg-1280.webp") 1x,
+    url("https://yuki-freelife.com/lp-review/wp-content/uploads/2026/02/01_profile_bg-1920.webp") 2x
   );
   background-position: center 28%;
   background-size: cover;
@@ -1411,4 +1411,35 @@ main section {
     transition: none !important;
     animation: none !important;
   }
+}
+
+.legal {
+  background: #fff;
+  border: 1px solid #d7dde6;
+  border-radius: 16px;
+  padding: 28px;
+  margin: 64px auto;
+}
+
+.legal h1 {
+  margin-top: 0;
+}
+
+.legal h2 {
+  margin-top: 24px;
+}
+
+.legal p,
+.legal li,
+.legal dd {
+  color: #4a566c;
+}
+
+.legal dt {
+  font-weight: 700;
+  color: #111a2d;
+}
+
+.legal dd {
+  margin: 4px 0 14px;
 }
