@@ -1,4 +1,66 @@
+# OS / editor
 .DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment / local-only config
 .env
-day023/secure/delivery_zip_password_*.txt
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.local
+.envrc
+.direnv/
+
+# Dependencies / build outputs
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.parcel-cache/
+.vite/
+.next/
+.nuxt/
+.svelte-kit/
+.turbo/
+.sass-cache/
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+
+# Test / deployment tool outputs
+playwright-report/
+test-results/
+.wrangler/
+.vercel/
+.netlify/
+
+# Logs / browser captures
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
 *.har
+
+# Temporary / patch leftovers
+*.tmp
+*.temp
+*.out
+*.err
+*.pid
+*.pid.lock
+*.orig
+*.rej
+
+# Sensitive project artifacts
+day023/secure/delivery_zip_password_*.txt
