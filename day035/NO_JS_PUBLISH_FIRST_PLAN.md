@@ -72,9 +72,13 @@
 6. 既存の `<div class="pdf-success" ...> ... </div>` は削除する
 7. `更新`
 
+仮案件で受信テストする場合:
+- `FormSubmit` の受信先は一時的に `yuki.freelife@gmail.com` を使う
+- クライアント運用へ戻す場合は、公開前に受信先をクライアントメールへ差し戻す
+
 差し替えるフォーム:
 ```html
-<form class="pdf-form" action="https://formsubmit.co/contact@bodymake-yuta.com" method="POST">
+<form class="pdf-form" action="https://formsubmit.co/yuki.freelife@gmail.com" method="POST">
   <label for="pdf-name">お名前</label>
   <input id="pdf-name" name="name" type="text" placeholder="山田太郎" required />
 
