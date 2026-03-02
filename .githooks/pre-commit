@@ -1,0 +1,118 @@
+#!/bin/sh
+
+set -eu
+
+repo_root="$(git rev-parse --show-toplevel)"
+cd "$repo_root"
+
+has_failure=0
+
+say() {
+  printf '%s\n' "$*" >&2
+}
+
+is_allowed_env_template() {
+  case "$1" in
+    .env.example|.env.sample|.env.template|*/.env.example|*/.env.sample|*/.env.template)
+      return 0
+      ;;
+    *)
+      return 1
+      ;;
+  esac
+}
+
+is_binary_like_path() {
+  case "$1" in
+    *.png|*.jpg|*.jpeg|*.gif|*.webp|*.pdf|*.zip|*.ico|*.svg|*.woff|*.woff2|*.ttf|*.otf|*.mp4|*.mov|*.webm|*.avi|*.mp3|*.wav)
+      return 0
+      ;;
+    node_modules/*|*/node_modules/*)
+      return 0
+      ;;
+    *)
+      return 1
+      ;;
+  esac
+}
+
+check_blocked_path() {
+  path="$1"
+
+  case "$path" in
+    .env|*/.env|.env.*|*/.env.*)
+      if ! is_allowed_env_template "$path"; then
+        say "Blocked staged file: $path"
+        say "  Live environment files must stay out of Git."
+        has_failure=1
+      fi
+      ;;
+  esac
+
+  case "$path" in
+    *.har|*.pem|*.key|*.p12|*.pfx|*id_rsa*|*id_ed25519*)
+      say "Blocked staged file: $path"
+      say "  High-risk capture or key material detected."
+      has_failure=1
+      ;;
+  esac
+
+  case "$path" in
+    */secure/*password*|*/secure/*secret*)
+      say "Blocked staged file: $path"
+      say "  Password or secret notes under a secure folder should not be committed."
+      has_failure=1
+      ;;
+  esac
+}
+
+check_staged_content() {
+  path="$1"
+
+  if is_binary_like_path "$path"; then
+    return
+  fi
+
+  if git show ":$path" 2>/dev/null | LC_ALL=C grep -En \
+    -e '-----BEGIN [A-Z ]*PRIVATE KEY-----' \
+    -e 'AKIA[0-9A-Z]{16}' \
+    -e 'ghp_[A-Za-z0-9]{20,}' \
+    -e 'github_pat_[A-Za-z0-9_]{20,}' \
+    -e 'glpat-[A-Za-z0-9_-]{20,}' \
+    -e 'xox[baprs]-[A-Za-z0-9-]{10,}' \
+    -e 'sk-[A-Za-z0-9]{20,}' \
+    -e 'Authorization:[[:space:]]*Bearer[[:space:]]+[A-Za-z0-9._-]+' \
+    >/dev/null; then
+    say "Blocked staged content in: $path"
+    say "  Possible secret or credential pattern detected."
+    has_failure=1
+  fi
+
+  if git show ":$path" 2>/dev/null | LC_ALL=C grep -En \
+    -e 'name="_captcha"[[:space:]]+value="false"' \
+    -e "name='_captcha'[[:space:]]+value='false'" \
+    >/dev/null; then
+    say "Blocked staged content in: $path"
+    say "  FormSubmit CAPTCHA is disabled. Re-enable bot protection before committing."
+    has_failure=1
+  fi
+}
+
+staged_file_list="$(mktemp)"
+trap 'rm -f "$staged_file_list"' EXIT INT TERM
+
+git diff --cached --name-only --diff-filter=ACMR -z > "$staged_file_list"
+
+while IFS= read -r -d '' path; do
+  check_blocked_path "$path"
+  check_staged_content "$path"
+done < "$staged_file_list"
+
+if [ "$has_failure" -ne 0 ]; then
+  say ""
+  say "Commit blocked by .githooks/pre-commit."
+  say "Review the file, remove the secret or risky pattern, then commit again."
+  exit 1
+fi
+
+exit 0
