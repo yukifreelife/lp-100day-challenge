@@ -1,0 +1,68 @@
+body.page-id-61,
+body.page-id-36,
+body.page-id-8 {
+  overflow-x: hidden;
+}
+
+body.page-id-61 main.wp-block-group.has-global-padding.is-layout-constrained,
+body.page-id-36 main.wp-block-group.has-global-padding.is-layout-constrained,
+body.page-id-8 main.wp-block-group.has-global-padding.is-layout-constrained,
+body.page-id-61 .wp-block-group.alignfull.has-global-padding.is-layout-constrained,
+body.page-id-36 .wp-block-group.alignfull.has-global-padding.is-layout-constrained,
+body.page-id-8 .wp-block-group.alignfull.has-global-padding.is-layout-constrained {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body.page-id-61 main.wp-block-group.is-layout-constrained > *,
+body.page-id-36 main.wp-block-group.is-layout-constrained > *,
+body.page-id-8 main.wp-block-group.is-layout-constrained > *,
+body.page-id-61 .wp-block-group.alignfull.has-global-padding.is-layout-constrained > *,
+body.page-id-36 .wp-block-group.alignfull.has-global-padding.is-layout-constrained > *,
+body.page-id-8 .wp-block-group.alignfull.has-global-padding.is-layout-constrained > * {
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+body.page-id-61 .entry-content.wp-block-post-content.has-global-padding,
+body.page-id-36 .entry-content.wp-block-post-content.has-global-padding,
+body.page-id-8 .entry-content.wp-block-post-content.has-global-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body.page-id-61 .entry-content.wp-block-post-content.is-layout-constrained > *,
+body.page-id-36 .entry-content.wp-block-post-content.is-layout-constrained > *,
+body.page-id-8 .entry-content.wp-block-post-content.is-layout-constrained > * {
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+body.page-id-61 .container,
+body.page-id-61 .container.narrow,
+body.page-id-36 .container,
+body.page-id-36 .container.narrow,
+body.page-id-8 .container,
+body.page-id-8 .container.narrow {
+  width: min(1160px, calc(100% - 48px));
+  max-width: 100%;
+}
+
+body.page-id-61 .btn.large,
+body.page-id-36 .btn.large,
+body.page-id-8 .btn.large {
+  max-width: 100%;
+}
+
+@media (max-width: 640px) {
+  body.page-id-61 .container,
+  body.page-id-61 .container.narrow,
+  body.page-id-36 .container,
+  body.page-id-36 .container.narrow,
+  body.page-id-8 .container,
+  body.page-id-8 .container.narrow {
+    width: min(600px, calc(100% - 24px));
+  }
+}

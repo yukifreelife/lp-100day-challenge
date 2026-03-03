@@ -51,17 +51,52 @@ h6,
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
 }
 
-/* Allow the LP to render full-width inside WordPress fixed-page wrappers. */
-.lp-root {
-  width: 100%;
+html,
+body {
+  max-width: 100%;
 }
 
+body:has(.hero),
+body.page-id-61,
+body.page-id-36,
+body.page-id-8 {
+  overflow-x: hidden;
+}
+
+body:has(.hero) .wp-site-blocks,
+body.page-id-61 .wp-site-blocks,
+body.page-id-36 .wp-site-blocks,
+body.page-id-8 .wp-site-blocks {
+  overflow-x: clip;
+}
+
+body:has(.hero) main.wp-block-group.has-global-padding.is-layout-constrained,
+body.page-id-61 main.wp-block-group.has-global-padding.is-layout-constrained,
+body.page-id-36 main.wp-block-group.has-global-padding.is-layout-constrained,
+body.page-id-8 main.wp-block-group.has-global-padding.is-layout-constrained,
+body:has(.hero) .wp-block-group.alignfull.has-global-padding.is-layout-constrained,
+body.page-id-61 .wp-block-group.alignfull.has-global-padding.is-layout-constrained,
+body.page-id-36 .wp-block-group.alignfull.has-global-padding.is-layout-constrained,
+body.page-id-8 .wp-block-group.alignfull.has-global-padding.is-layout-constrained,
+body:has(.hero) .entry-content.wp-block-post-content.has-global-padding,
+body.page-id-61 .entry-content.wp-block-post-content.has-global-padding,
 body.page-id-36 .entry-content.wp-block-post-content.has-global-padding,
 body.page-id-8 .entry-content.wp-block-post-content.has-global-padding {
-  padding-left: 0;
-  padding-right: 0;
+  max-width: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
+body:has(.hero) main.wp-block-group.is-layout-constrained > *,
+body.page-id-61 main.wp-block-group.is-layout-constrained > *,
+body.page-id-36 main.wp-block-group.is-layout-constrained > *,
+body.page-id-8 main.wp-block-group.is-layout-constrained > *,
+body:has(.hero) .wp-block-group.alignfull.has-global-padding.is-layout-constrained > *,
+body.page-id-61 .wp-block-group.alignfull.has-global-padding.is-layout-constrained > *,
+body.page-id-36 .wp-block-group.alignfull.has-global-padding.is-layout-constrained > *,
+body.page-id-8 .wp-block-group.alignfull.has-global-padding.is-layout-constrained > *,
+body:has(.hero) .entry-content.wp-block-post-content.is-layout-constrained > *,
+body.page-id-61 .entry-content.wp-block-post-content.is-layout-constrained > *,
 body.page-id-36 .entry-content.wp-block-post-content.is-layout-constrained > *,
 body.page-id-8 .entry-content.wp-block-post-content.is-layout-constrained > * {
   max-width: none !important;
@@ -84,11 +119,13 @@ main section {
 
 .container {
   width: min(1160px, calc(100% - 48px));
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .container.narrow {
   width: min(920px, calc(100% - 48px));
+  max-width: 100%;
 }
 
 .eyebrow {
@@ -173,6 +210,7 @@ main section {
 
 .btn.large {
   min-width: 360px;
+  max-width: 100%;
 }
 
 .hero {
@@ -1351,6 +1389,7 @@ main section {
   .container,
   .container.narrow {
     width: min(600px, calc(100% - 24px));
+    max-width: 100%;
   }
 
   .eyebrow {
@@ -1477,4 +1516,21 @@ main section {
 
 .legal dd {
   margin: 4px 0 14px;
+}
+.faq-answer {
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.faq-button {
+  cursor: default;
+}
+
+.faq-button:hover,
+.faq-button:focus-visible {
+  background: transparent;
+}
+
+.faq-mark {
+  display: none;
 }

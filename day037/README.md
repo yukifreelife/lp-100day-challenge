@@ -78,3 +78,64 @@
 - `/Users/yuuki/Works/lp-100/day034/META_PIXEL_LOADER_NO_INDENT.js`
 - `/Users/yuuki/Works/lp-100/day034/LP_BEHAVIOR_CORE_NO_INDENT.js`
 - `/Users/yuuki/Works/lp-100/day035/NO_JS_PUBLISH_FIRST_PLAN.md`
+- `/Users/yuuki/Works/lp-100/day037/CLIENT_CONFIRMATION_FIRST_RELEASE_SEND.md`
+- `/Users/yuuki/Works/lp-100/day037/FIRST_RELEASE_DECISION_MATRIX.md`
+- `/Users/yuuki/Works/lp-100/day037/CLIENT_APPROVAL_ACK_SEND.md`
+- `/Users/yuuki/Works/lp-100/day037/PDF_FORM_RECAPTCHA_NOTE_OWNER_EMAIL.html`
+- `/Users/yuuki/Works/lp-100/day037/WORDPRESS_PDF_FORM_UPDATE_STEPS.md`
+- `/Users/yuuki/Works/lp-100/day037/PUBLIC_RELEASE_BLOCKERS_20260303.md`
+- `/Users/yuuki/Works/lp-100/day037/WORDPRESS_RELEASE_EXECUTION_STEPS.md`
+- `/Users/yuuki/Works/lp-100/day037/WP_LAYOUT_SHIFT_FIX.css`
+- `/Users/yuuki/Works/lp-100/day037/WP_LAYOUT_SHIFT_FIX_STEPS.md`
+
+## Day037開始時に追加した補助ファイル
+- クライアントへそのまま送れる確認文面:
+  - `/Users/yuuki/Works/lp-100/day037/CLIENT_CONFIRMATION_FIRST_RELEASE_SEND.md`
+- クライアント承認後に返す確認返信:
+  - `/Users/yuuki/Works/lp-100/day037/CLIENT_APPROVAL_ACK_SEND.md`
+- 回答後の分岐と実作業をすぐ判断するための整理表:
+  - `/Users/yuuki/Works/lp-100/day037/FIRST_RELEASE_DECISION_MATRIX.md`
+- WordPressへ貼り戻すための最新フォーム:
+  - `/Users/yuuki/Works/lp-100/day037/PDF_FORM_RECAPTCHA_NOTE_OWNER_EMAIL.html`
+- WordPress反映手順:
+  - `/Users/yuuki/Works/lp-100/day037/WORDPRESS_PDF_FORM_UPDATE_STEPS.md`
+- 公開前に解消が必要なブロッカー整理:
+  - `/Users/yuuki/Works/lp-100/day037/PUBLIC_RELEASE_BLOCKERS_20260303.md`
+- WordPressでの公開実行手順:
+  - `/Users/yuuki/Works/lp-100/day037/WORDPRESS_RELEASE_EXECUTION_STEPS.md`
+- 表示ズレを先に直すための追加CSS:
+  - `/Users/yuuki/Works/lp-100/day037/WP_LAYOUT_SHIFT_FIX.css`
+- 表示ズレ修正手順:
+  - `/Users/yuuki/Works/lp-100/day037/WP_LAYOUT_SHIFT_FIX_STEPS.md`
+
+## クライアント回答で確定したこと（2026-03-03）
+- 初回公開は「公開優先」で進めてよい旨の承認を取得した。
+- FAQは常時表示のままで問題ない。
+- PDF導線は `FormSubmit` 維持で問題ない。
+- `reCAPTCHA` は許容されているが、フォーム付近に
+  `送信後に確認画面（ロボットチェック）が表示されます`
+  の注記追加が必要になった。
+- UTM引き継ぎと詳細イベントは初回公開では入れず、後続フェーズで戻す方針で合意した。
+- 公開後は確認用URLを送付し、スマホ確認を依頼する流れで確定した。
+
+## Day037時点の次アクション
+1. WordPress上のPDFフォーム文言を、注記入りの最新HTMLに差し替える。
+2. `FormSubmit` の受信先を公開用に戻すか最終判断する。
+3. 予約導線、PDF導線、FAQ、法務リンクの実URL確認を行う。
+4. 初回公開後、確認用URLをクライアントへ送る。
+
+## この環境で進めたところ
+- WordPressへ貼り付ける注記入りフォームHTMLを `day037` に複製した。
+- 手動反映用の差し替え手順を `day037` に追加した。
+- この端末からはリモートサイトへ直接接続できないため、WordPress本体への更新はまだ未実施。
+
+## 本日確認できた追加ブロッカー（2026-03-03）
+- トップURL `https://yuki-freelife.com/lp-review/` は LP 本体ではなく、テーマ初期のトップページが表示されている。
+- 公開候補の固定ページは以下の2件だが、どちらもパスワード保護のまま。
+  - `https://yuki-freelife.com/lp-review/wp固定ページ納品用/`（ID 36）
+  - `https://yuki-freelife.com/lp-review/LP初稿（確認用）/`（ID 8）
+- REST API 上でも `content.protected: true` が確認でき、本文は公開取得できない。
+- したがって、初回公開の前に
+  1. 対象固定ページのパスワード保護解除
+  2. 必要ならトップURLをその固定ページへ割り当て
+  の2点が追加で必要になった。
