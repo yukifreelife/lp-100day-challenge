@@ -43,7 +43,6 @@
 - 高優先修正の反映用ファイル:
   `/Users/yuuki/Works/lp-100/day038/TOP_PAGE_CUSTOM_HTML_TEMPLATE_HIGH_PRIORITY_FIX.html`
   `/Users/yuuki/Works/lp-100/day038/WP_LAYOUT_SHIFT_FIX_HIGH_PRIORITY.css`
-  `/Users/yuuki/Works/lp-100/day038/PDF_FORM_RECAPTCHA_NOTE_OWNER_EMAIL_HIGH_PRIORITY.html`
   `/Users/yuuki/Works/lp-100/day038/WORDPRESS_HIGH_PRIORITY_FIX_STEPS.md`
 
 ## Day038の推奨ワークフロー
