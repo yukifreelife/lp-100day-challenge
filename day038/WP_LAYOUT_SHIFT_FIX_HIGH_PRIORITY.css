@@ -1,0 +1,157 @@
+body.page-id-61,
+body.page-id-36,
+body.page-id-8 {
+  overflow-x: hidden;
+}
+
+body.page-id-61 main.wp-block-group.has-global-padding.is-layout-constrained,
+body.page-id-36 main.wp-block-group.has-global-padding.is-layout-constrained,
+body.page-id-8 main.wp-block-group.has-global-padding.is-layout-constrained,
+body.page-id-61 .wp-block-group.alignfull.has-global-padding.is-layout-constrained,
+body.page-id-36 .wp-block-group.alignfull.has-global-padding.is-layout-constrained,
+body.page-id-8 .wp-block-group.alignfull.has-global-padding.is-layout-constrained {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body.page-id-61 main.wp-block-group.is-layout-constrained > *,
+body.page-id-36 main.wp-block-group.is-layout-constrained > *,
+body.page-id-8 main.wp-block-group.is-layout-constrained > *,
+body.page-id-61 .wp-block-group.alignfull.has-global-padding.is-layout-constrained > *,
+body.page-id-36 .wp-block-group.alignfull.has-global-padding.is-layout-constrained > *,
+body.page-id-8 .wp-block-group.alignfull.has-global-padding.is-layout-constrained > * {
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+body.page-id-61 .entry-content.wp-block-post-content.has-global-padding,
+body.page-id-36 .entry-content.wp-block-post-content.has-global-padding,
+body.page-id-8 .entry-content.wp-block-post-content.has-global-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body.page-id-61 .entry-content.wp-block-post-content.is-layout-constrained > *,
+body.page-id-36 .entry-content.wp-block-post-content.is-layout-constrained > *,
+body.page-id-8 .entry-content.wp-block-post-content.is-layout-constrained > * {
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+body.page-id-61 .container,
+body.page-id-61 .container.narrow,
+body.page-id-36 .container,
+body.page-id-36 .container.narrow,
+body.page-id-8 .container,
+body.page-id-8 .container.narrow {
+  width: min(1160px, calc(100% - 48px));
+  max-width: 100%;
+}
+
+body.page-id-61 .btn.large,
+body.page-id-36 .btn.large,
+body.page-id-8 .btn.large {
+  max-width: 100%;
+}
+
+body.page-id-61 .cta-note,
+body.page-id-36 .cta-note,
+body.page-id-8 .cta-note {
+  margin: 12px 0 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: min(100%, 42rem);
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #bfd8ea;
+  background: #f2f8fd;
+  color: #2a4a63;
+  font-size: 0.94rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+body.page-id-61 .cta-note::before,
+body.page-id-36 .cta-note::before,
+body.page-id-8 .cta-note::before {
+  content: "↗";
+  color: #0a9f98;
+  font-size: 0.95rem;
+  flex: 0 0 auto;
+}
+
+body.page-id-61 .center-block .cta-note,
+body.page-id-61 .pdf-primary-action .cta-note,
+body.page-id-61 .final-inner .cta-note,
+body.page-id-36 .center-block .cta-note,
+body.page-id-36 .pdf-primary-action .cta-note,
+body.page-id-36 .final-inner .cta-note,
+body.page-id-8 .center-block .cta-note,
+body.page-id-8 .pdf-primary-action .cta-note,
+body.page-id-8 .final-inner .cta-note {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.page-id-61 .support-reservation-cta,
+body.page-id-36 .support-reservation-cta,
+body.page-id-8 .support-reservation-cta {
+  margin-top: 28px;
+}
+
+body.page-id-61 .final-inner .cta-note,
+body.page-id-36 .final-inner .cta-note,
+body.page-id-8 .final-inner .cta-note {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.14);
+  color: #eef3ff;
+}
+
+body.page-id-61 .final-inner .cta-note::before,
+body.page-id-36 .final-inner .cta-note::before,
+body.page-id-8 .final-inner .cta-note::before {
+  color: #ffffff;
+}
+
+body.page-id-61 .pdf-form-note,
+body.page-id-36 .pdf-form-note,
+body.page-id-8 .pdf-form-note {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #bfe4df;
+  background: #effbf8;
+  color: #1f5b55;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  body.page-id-61 .container,
+  body.page-id-61 .container.narrow,
+  body.page-id-36 .container,
+  body.page-id-36 .container.narrow,
+  body.page-id-8 .container,
+  body.page-id-8 .container.narrow {
+    width: min(600px, calc(100% - 24px));
+  }
+
+  body.page-id-61 .cta-note,
+  body.page-id-36 .cta-note,
+  body.page-id-8 .cta-note {
+    display: flex;
+    border-radius: 16px;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  body.page-id-61 .pdf-form-note,
+  body.page-id-36 .pdf-form-note,
+  body.page-id-8 .pdf-form-note {
+    font-size: 0.92rem;
+  }
+}

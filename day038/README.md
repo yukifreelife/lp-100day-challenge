@@ -1,4 +1,4 @@
-# Day038 - 初回公開後のクライアント確認待ちと次調整（次回着手用）
+# Day038 - 初回公開後のクライアント確認待ちと次調整（2026-03-04開始）
 
 ## 現在地
 - `https://yuki-freelife.com/lp-review/` は初回公開済み。
@@ -6,7 +6,7 @@
 - 予約導線、PDF導線、本文閲覧、法務リンク、PC / SP 表示は最終確認でOKを確認済み。
 - PDFフォームは最新差し替え済みで、`reCAPTCHA` を経由してPDFへ到達できる。
 - `FormSubmit` の受信先は、仮案件運用のため `yuki.freelife@gmail.com` のまま。
-- クライアントへの確認用URL送付文面は作成済みだが、2026-03-03時点では未送信。
+- クライアントへの確認用URL送付は完了し、2026-03-04に初回確認返信を受領した。
 
 ## Day037からの引き継ぎ
 ### 完了済み
@@ -16,15 +16,41 @@
 - 公開URLの最終導線確認は一通り完了済み。
 
 ### 未完了
-- クライアントへ確認用URLを送ること
-- クライアント返信後の軽微修正対応
+- クライアント返信を受けた高優先修正の反映
+- 中優先の見栄え・可読性調整
 - Phase2 / Phase3 の再開判断
 
-## Day038開始直後にやること
-1. `/Users/yuuki/Works/lp-100/day037/CLIENT_PUBLIC_URL_SEND_DRAFT.md` をそのままクライアントへ送る。
-2. クライアントからのスマホ確認結果を受け取り、修正要否を切り分ける。
-3. 修正があれば、WordPress 側で反映して再確認する。
-4. 修正が収束したら、Phase2 / Phase3 へ戻す機能の優先順位を確定する。
+## クライアント初回確認結果（2026-03-04）
+- 初回公開としては十分OKとの了承を受領した。
+- 「内容が読める・予約できる・PDFが受け取れる」状態は問題なしと確認された。
+- 優先度 `High` は、予約CTA注記、中間CTA追加、PDF注記の視認性改善。
+- 優先度 `Medium` は、FV文量、料金セクションの余白、FAQ区切りの見やすさ。
+- 優先度 `Low` は、写真の明るさ統一。
+
+## Day038の直近アクション
+1. `High` 3件を WordPress 側で反映する。
+2. スマホで再確認し、必要なら `Medium` 3件まで続けて調整する。
+3. 調整結果をクライアントへ返し、再確認依頼を行う。
+4. `High` が収束したら、Phase2 / Phase3 の再開順を確定する。
+
+## Day038開始時点で用意した補助ファイル
+- 公開URLをそのまま送るための実行用文面:
+  `/Users/yuuki/Works/lp-100/day038/CLIENT_PUBLIC_URL_SEND_READY.md`
+- クライアント返信を一覧化するトラッカー:
+  `/Users/yuuki/Works/lp-100/day038/CLIENT_FEEDBACK_TRACKER.md`
+- Phase2 / Phase3 の再開候補を即確認するためのバックログ:
+  `/Users/yuuki/Works/lp-100/day038/PHASE2_PHASE3_RESTART_BACKLOG.md`
+- 高優先修正の反映用ファイル:
+  `/Users/yuuki/Works/lp-100/day038/TOP_PAGE_CUSTOM_HTML_TEMPLATE_HIGH_PRIORITY_FIX.html`
+  `/Users/yuuki/Works/lp-100/day038/WP_LAYOUT_SHIFT_FIX_HIGH_PRIORITY.css`
+  `/Users/yuuki/Works/lp-100/day038/PDF_FORM_RECAPTCHA_NOTE_OWNER_EMAIL_HIGH_PRIORITY.html`
+  `/Users/yuuki/Works/lp-100/day038/WORDPRESS_HIGH_PRIORITY_FIX_STEPS.md`
+
+## Day038の推奨ワークフロー
+1. クライアント返信を `/Users/yuuki/Works/lp-100/day038/CLIENT_FEEDBACK_TRACKER.md` に集約する。
+2. `High` を先に直し、公開導線への影響がないことをスマホで再確認する。
+3. 必要に応じて `Medium` を続けて調整する。
+4. `High` がない状態になったら `/Users/yuuki/Works/lp-100/day038/PHASE2_PHASE3_RESTART_BACKLOG.md` をもとに再開順を決める。
 
 ## 修正依頼が来た場合の優先順
 1. 公開阻害になる不具合（リンク切れ、フォーム不達、表示崩れ）
