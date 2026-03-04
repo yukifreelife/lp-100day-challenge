@@ -1,0 +1,107 @@
+# Day038 - 初回公開後の高優先修正反映とSP表示調整（ポートフォリオ作業ログ）
+
+## ラベル（検索用）
+**Labels:** `lp` `wordpress` `post-launch` `client-feedback` `ui-fix` `spacing-fix` `handoff` `day038` `portfolio-worklog`
+
+lp:audience=非エンジニアのクライアント
+lp:goal=初回公開後の高優先修正を反映し、スマホ表示を安定化する
+lp:industry=パーソナルトレーニング
+lp:objective=クライアント初回確認の指摘を反映して次回確認へ進める
+lp:status=high-priority-fixes-completed
+lp:env=wordpress-manual-paste-update
+
+---
+
+## 記録について
+- 当日の実作業は、ローカルの正本更新と WordPress 手動反映を往復しながら進行した。
+- 分単位の実測ログは残していないため、このファイルは `README.md`、反映用ファイル、クライアント返信内容をもとに再構成している。
+
+---
+
+## 今日の成果
+- Day038の目的:
+  - 初回公開後に受領したクライアント初回確認コメントのうち、優先度 `High` を先に反映して公開状態を安定化する
+- 実施内容:
+  - クライアント初回確認の整理
+    - `CLIENT_FEEDBACK_TRACKER.md` に、`High / Medium / Low` の指摘を分類して記録
+    - 初回公開としては十分OKであることを確認しつつ、先行修正対象を `High` 3件に固定
+  - 高優先修正の反映用素材を `day038` に集約
+    - 過去 `dayXXX` を直接編集しない運用へ切り替え
+    - HTML正本を `TOP_PAGE_CUSTOM_HTML_TEMPLATE_HIGH_PRIORITY_FIX.html` に一本化
+    - CSS正本を `WP_LAYOUT_SHIFT_FIX_HIGH_PRIORITY.css` に一本化
+    - PDFフォーム単体ファイルは廃止し、HTML正本に統合
+  - クライアント要望の高優先3件を反映
+    - 予約CTA付近に「別タブで TimeRex が開く」注記を追加
+    - ページ途中に中間の予約CTAを追加
+    - PDF導線の注記を見やすく調整
+  - スマホ表示の余白崩れを追加調整
+    - `3ヶ月の流れ` の内側余白を調整
+    - PDFフォーム下部の過剰余白を調整
+    - SPフッターの余白を圧縮
+    - `section.flow-step` に誤って当たっていた全体 `padding` を除外
+  - WordPress 自動整形由来のズレを根本修正
+    - PDFフォームの `label` / `input` 間に自動挿入される `<br>` が余白の原因と特定
+    - `pdf-field` ブロックを追加して、フォーム構造を WordPress の自動段落化に強い形へ変更
+    - `.pdf-form br { display: none !important; }` を追加し、保険で改行も無効化
+  - 引き継ぎ状態の確定
+    - 2026-03-04 時点の確定差分をコミット
+    - コミット: `ea23b77` (`feat: finalize day038 high-priority wp fixes`)
+
+---
+
+## 作業時間（再構成メモ）
+- 当日の実測時間は未記録
+- 確認できる作業ブロック:
+  - クライアント返信の読み込みと優先度整理
+  - WordPress 反映用 HTML / CSS 正本の再編
+  - 高優先修正の反映
+  - スマホ余白崩れの原因切り分け
+  - `wpautop` による `<br>` 混入の調査と修正
+  - 次回返信文面の準備
+
+---
+
+## 主要成果物
+- 当日引き継ぎメモ
+  - `/Users/yuuki/Works/lp-100/day038/README.md`
+- ポートフォリオ作業ログ
+  - `/Users/yuuki/Works/lp-100/day038/PORTFOLIO_WORKLOG.md`
+- クライアント返信トラッカー
+  - `/Users/yuuki/Works/lp-100/day038/CLIENT_FEEDBACK_TRACKER.md`
+- 反映用HTML正本
+  - `/Users/yuuki/Works/lp-100/day038/TOP_PAGE_CUSTOM_HTML_TEMPLATE_HIGH_PRIORITY_FIX.html`
+- 反映用CSS正本
+  - `/Users/yuuki/Works/lp-100/day038/WP_LAYOUT_SHIFT_FIX_HIGH_PRIORITY.css`
+- WordPress反映手順
+  - `/Users/yuuki/Works/lp-100/day038/WORDPRESS_HIGH_PRIORITY_FIX_STEPS.md`
+- 補助文面 / バックログ
+  - `/Users/yuuki/Works/lp-100/day038/CLIENT_PUBLIC_URL_SEND_READY.md`
+  - `/Users/yuuki/Works/lp-100/day038/PHASE2_PHASE3_RESTART_BACKLOG.md`
+- 確認スクリーンショット
+  - `/Users/yuuki/Works/lp-100/day038/day038PC.png`
+  - `/Users/yuuki/Works/lp-100/day038/day038PCFV.png`
+  - `/Users/yuuki/Works/lp-100/day038/day038SP.png`
+  - `/Users/yuuki/Works/lp-100/day038/day038SPFV.png`
+
+---
+
+## 現在の正本
+- HTML は `TOP_PAGE_CUSTOM_HTML_TEMPLATE_HIGH_PRIORITY_FIX.html` のみを正本とする
+- CSS は `WP_LAYOUT_SHIFT_FIX_HIGH_PRIORITY.css` のみを正本とする
+- 過去 `dayXXX` 配下のファイルは参照専用とし、今後の差分は `day038` 側で持つ
+
+---
+
+## 現在の状態
+- 高優先修正は反映済み
+- スマホでの主要確認項目（予約注記位置、`3ヶ月の流れ`、PDFフォーム、SPフッター）は調整済み
+- PDFフォームの余白不具合は、`<br>` 混入原因まで特定して解消済み
+- 次回はクライアントへ修正完了連絡を送り、再確認待ちへ進める段階
+
+---
+
+## 次回やること（Day039）
+1. クライアントへ「高優先修正の反映完了」文面を送る
+2. スマホでの再確認結果を待ち、追加指摘があれば `CLIENT_FEEDBACK_TRACKER.md` に追記する
+3. 追加指摘がなければ、中優先の3件（FV文量、料金余白、FAQ区切り）へ進む
+4. その後、`PHASE2_PHASE3_RESTART_BACKLOG.md` をもとに計測・導線改善の再開順を決める
