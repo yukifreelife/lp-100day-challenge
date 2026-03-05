@@ -71,6 +71,14 @@
 - バリデーション: `form_validation_error`（`error_count` / `error_fields` / `error_codes`）, `form_field_error`
 - 送信: `form_submit_attempt`, `form_submit_success`, `form_submit_failed`（`duration_ms`含む）
 
+## 作業時間（再構成メモ）
+- 当日の分単位の実測ログは残っていないため、Codex チャットの進行と成果物更新順をもとにした参考時間を記載する。
+- 情報設計とセクション構成、CV導線の設計: 約70分
+- フォーム項目設計とバリデーション / Formspree導線の整理: 約75分
+- HTML / CSS / JS の実装とレスポンシブ調整: 約90分
+- 画像選定、favicon整備、スクリーンショット生成: 約55分
+- 参考合計: 約290分（4時間50分）
+
 ## ファイル
 - `/Users/yuuki/Works/lp-100/day028/index.html`
 - `/Users/yuuki/Works/lp-100/day028/styles.css`

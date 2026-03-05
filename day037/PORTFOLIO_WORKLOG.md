@@ -1,0 +1,103 @@
+# Day037 - 初回公開完了とクライアント確認待ちへの移行（ポートフォリオ作業ログ）
+
+## ラベル（検索用）
+**Labels:** `lp` `wordpress` `launch` `public-release` `client-approval` `formsubmit` `handoff` `day037` `portfolio-worklog`
+
+lp:audience=非エンジニアのクライアント
+lp:goal=初回公開を完了し、クライアント確認待ちの状態まで進める
+lp:industry=パーソナルトレーニング
+lp:objective=公開URLを成立させたうえで次日の修正対応へ引き継ぐ
+lp:status=initial-release-completed
+lp:env=wordpress-manual-publish
+
+---
+
+## 記録について
+- 当日の分単位の実測ログは残っていないため、このファイルは `README.md`、当日作成した手順書・文面ファイル、Codex チャットのタイムスタンプをもとに再構成している。
+- Day037 は「初回公開判断」から「公開実行」までを含むため、当日の判断メモと公開後状態の両方をまとめている。
+
+---
+
+## 今日の成果
+- Day037の目的:
+  - 初回公開前の最終判断を固め、公開URLをクライアント確認可能な状態まで持っていく
+- 実施内容:
+  - 公開方針の最終確認
+    - FAQ は常時表示のまま進める方針を維持
+    - PDF導線は `FormSubmit` 維持で進める方針を確定
+    - `reCAPTCHA` を挟む仕様は許容とし、フォーム付近に注記を入れる前提を整理
+  - クライアント確認用の文面と判断資料を整備
+    - 初回公開判断用の送信文面、承認後返信、分岐整理表を `day037` に追加
+    - 公開前のブロッカー、実行手順、表示ズレ修正手順を文書化
+  - WordPress反映用素材の更新
+    - 注記入りPDFフォームHTMLを用意
+    - 追加CSSを全文最適化版へ差し替える前提で整理
+    - 左余白、横スクロール、字体差分の解消手順を確定
+  - 公開前ブロッカーの切り分け
+    - トップURLがテーマ初期ページだった点を特定
+    - 固定ページ `61-2` を最終公開ページとして扱う判断へ移行
+    - トップページ表示先を `設定 > 表示設定` で固定ページへ切り替える必要を整理
+  - 初回公開の完了
+    - 最終公開ページを固定ページ `61-2` に確定
+    - PDFフォームを最新HTMLへ差し替え
+    - `追加CSS` を全文最適化版へ差し替え
+    - `https://yuki-freelife.com/lp-review/` を公開URLとして確認
+    - PC / SP の表示崩れ、予約CTA、FAQ、法務リンク、PDF導線、`reCAPTCHA` 経由のPDF到達を確認
+  - 次日への受け渡し準備
+    - クライアントへ送る確認用URL文面を `CLIENT_PUBLIC_URL_SEND_DRAFT.md` に保存
+    - 返信後の軽微修正は `day038` で扱う前提を明記
+
+---
+
+## 作業時間（再構成メモ）
+- 当日の実測時間は未記録。ただし、Codex チャットの開始/完了時刻と成果物更新順をもとに、以下を参考時間として再構成した。
+- 初回公開方針の最終判断: 約30分
+- クライアント向け文面と分岐資料の整備: 約40分
+- WordPress反映素材の更新: 約75分
+- 公開前ブロッカーの切り分け: 約55分
+- トップページ切り替えと公開URL確認、引き継ぎ整理: 約40分
+- 参考合計: 約240分（4時間00分）
+
+---
+
+## 主要成果物
+- 当日引き継ぎメモ
+  - `/Users/yuuki/Works/lp-100/day037/README.md`
+- ポートフォリオ作業ログ
+  - `/Users/yuuki/Works/lp-100/day037/PORTFOLIO_WORKLOG.md`
+- クライアント確認用文面
+  - `/Users/yuuki/Works/lp-100/day037/CLIENT_CONFIRMATION_FIRST_RELEASE_SEND.md`
+  - `/Users/yuuki/Works/lp-100/day037/CLIENT_APPROVAL_ACK_SEND.md`
+  - `/Users/yuuki/Works/lp-100/day037/CLIENT_PUBLIC_URL_SEND_DRAFT.md`
+- 判断整理とブロッカー管理
+  - `/Users/yuuki/Works/lp-100/day037/FIRST_RELEASE_DECISION_MATRIX.md`
+  - `/Users/yuuki/Works/lp-100/day037/PUBLIC_RELEASE_BLOCKERS_20260303.md`
+- WordPress反映用ファイル
+  - `/Users/yuuki/Works/lp-100/day037/PDF_FORM_RECAPTCHA_NOTE_OWNER_EMAIL.html`
+  - `/Users/yuuki/Works/lp-100/day037/WORDPRESS_PDF_FORM_UPDATE_STEPS.md`
+  - `/Users/yuuki/Works/lp-100/day037/WORDPRESS_RELEASE_EXECUTION_STEPS.md`
+  - `/Users/yuuki/Works/lp-100/day037/WP_LAYOUT_SHIFT_FIX.css`
+  - `/Users/yuuki/Works/lp-100/day037/WP_LAYOUT_SHIFT_FIX copy.css`
+  - `/Users/yuuki/Works/lp-100/day037/WP_LAYOUT_SHIFT_FIX_STEPS.md`
+- 確認スクリーンショット
+  - `/Users/yuuki/Works/lp-100/day037/day037PC.png`
+  - `/Users/yuuki/Works/lp-100/day037/day037PCFV.png`
+  - `/Users/yuuki/Works/lp-100/day037/day037SP.png`
+  - `/Users/yuuki/Works/lp-100/day037/day037SPFV.png`
+
+---
+
+## 現在の状態
+- 初回公開は完了している
+- 公開URLは `https://yuki-freelife.com/lp-review/` で確認できる状態
+- 予約導線、FAQ、法務リンク、PDF導線は初回公開時点で成立
+- `FormSubmit` の受信先は仮案件検証のため `yuki.freelife@gmail.com` のまま
+- 残作業は、クライアントへ確認用URLを送ることと、返信後の軽微修正のみ
+
+---
+
+## 次回やること（Day038）
+1. `/Users/yuuki/Works/lp-100/day037/CLIENT_PUBLIC_URL_SEND_DRAFT.md` の文面をクライアントへ送る
+2. クライアントのスマホ確認結果を待ち、指摘があれば一覧化する
+3. 指摘がある場合は WordPress 側で修正し、`day038` に記録する
+4. 指摘がなければ、Phase2 / Phase3 の優先順位確認へ進む
