@@ -1196,39 +1196,6 @@ a {
   outline: 3px solid rgba(10, 159, 152, 0.2);
 }
 
-.pdf-success {
-  margin: 20px auto 0;
-  max-width: 560px;
-  padding: 18px;
-  border: 1px solid #bfe4df;
-  border-radius: 14px;
-  background: #effbf8;
-  text-align: center;
-}
-
-.pdf-success h4 {
-  margin: 0;
-  font-size: 1.32rem;
-}
-
-.pdf-success p {
-  margin: 8px 0 14px;
-  color: var(--text-sub);
-}
-
-.pdf-success-cta-note {
-  margin: 14px 0 10px;
-  color: var(--text-sub);
-}
-
-.pdf-download-link {
-  width: 100%;
-}
-
-.pdf-counseling-link {
-  width: 100%;
-}
-
 .pdf-to-counseling {
   margin: 24px 0 0;
   text-align: center;
@@ -1778,12 +1745,6 @@ body.page-id-8 .pdf-field input:not([type="hidden"]) {
 body.page-id-61 .pdf-form br,
 body.page-id-36 .pdf-form br,
 body.page-id-8 .pdf-form br {
-  display: none !important;
-}
-
-body.page-id-61 .pdf-form-meta[hidden],
-body.page-id-36 .pdf-form-meta[hidden],
-body.page-id-8 .pdf-form-meta[hidden] {
   display: none !important;
 }
 

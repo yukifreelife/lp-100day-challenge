@@ -1,11 +1,20 @@
-# Day040 - Day039作業の翌日引き継ぎ（2026-03-07開始予定）
+# Day040 - 追加3点のWordPress反映着手（2026-03-06開始）
 
-## 現在地（2026-03-06終了時点）
+## 現在地（2026-03-06クライアント確認後）
 - 公開URL `https://yuki-freelife.com/lp-review/` は継続公開中。
 - 高優先3件はクライアント再確認まで完了済み（2026-03-05確認）。
-- 追加提案3点（Medium 1 / Low 2）は対応合意済み（2026-03-06）。
+- 追加提案3点（Medium 1 / Low 2）は反映完了し、クライアント確認OKを受領済み（2026-03-06）。
 - `day040` 正本のHTML/CSSには追加3点を反映済み。
-- ただし WordPress 本体への貼り替えは未実施。Day040の最優先はこの反映作業。
+- WordPress 本体への貼り替えとスマホ確認も完了済み。
+- クライアントからは「公開品質として問題なし」の判断を受領済み。
+- 待機中の内部点検で、PDFフォーム正本を no-JS の `FormSubmit` 運用へ再整合した。
+
+## 現在の正本
+- 全文貼り替え時に使う正本:
+  `/Users/yuuki/Works/lp-100/day040/TOP_PAGE_CUSTOM_HTML_TEMPLATE_HIGH_PRIORITY_FIX.html`
+  `/Users/yuuki/Works/lp-100/day040/WP_LAYOUT_SHIFT_FIX_HIGH_PRIORITY.css`
+- 上記HTMLには、追加3点の修正と PDFフォーム no-JS 修正がすでに含まれている。
+- `/Users/yuuki/Works/lp-100/day040/PDF_FORM_RECAPTCHA_NOTE_OWNER_EMAIL.html` は、PDFセクションだけ部分差し替えしたいときの補助ファイル。
 
 ## Day039で完了したこと
 - クライアント合意にもとづく追加3点の実装（ローカル正本）
@@ -17,30 +26,38 @@
 - PDF導線の役割整理をPhase2検討項目として確定
 
 ## Day040でやること（最優先）
-1. `TOP_PAGE_CUSTOM_HTML_TEMPLATE_HIGH_PRIORITY_FIX.html` と `WP_LAYOUT_SHIFT_FIX_HIGH_PRIORITY.css` を WordPress へ貼り替える。
-2. スマホ中心で反映確認する（FV CTA / 中間CTA余白 / PDF説明文 / 崩れ有無）。
-3. 問題なければ `CLIENT_MEDIUM_LOW_FIX_DONE_SEND.md` を送信し、公開URLで再確認依頼を出す。
-4. 返信内容を `CLIENT_FEEDBACK_TRACKER.md` に追記する。
+1. クライアント返信内容を `CLIENT_FEEDBACK_TRACKER.md` と `PORTFOLIO_WORKLOG.md` に記録する。
+2. 公開品質OK受領への返信が必要なら送る。
+3. PDFフォーム注記のホットフィックス要否を判断する。
+4. Phase2候補（計測タグ / PDF導線役割整理 / 微調整候補）を整理する。
 
-## 次回開始時の最短手順（2026-03-07）
-1. `/Users/yuuki/Works/lp-100/day040/WORDPRESS_MEDIUM_LOW_FIX_STEPS.md` を開く。
-2. 同ファイル記載のHTML/CSS正本を WordPress に貼り替える。
-3. スマホで確認後、`/Users/yuuki/Works/lp-100/day040/CLIENT_MEDIUM_LOW_FIX_DONE_SEND.md` を送る。
-4. 返信待ちの間に、Phase2候補（PDF導線の役割定義含む）を整理する。
+## このあと最短でやる手順
+1. `/Users/yuuki/Works/lp-100/day040/CLIENT_FEEDBACK_TRACKER.md` に今回の返信を記録する。
+2. 必要なら `/Users/yuuki/Works/lp-100/day040/CLIENT_PUBLIC_QUALITY_APPROVAL_ACK_SEND.md` を送る。
+3. PDFフォーム注記を反映する場合は `/Users/yuuki/Works/lp-100/day040/WORDPRESS_PDF_FORM_HOTFIX_STEPS.md` を使う。
+4. 次フェーズ着手前に `/Users/yuuki/Works/lp-100/day040/PHASE2_PHASE3_RESTART_BACKLOG.md` を整理する。
 
 ## Day040補助ファイル
 - 引き継ぎメモ:
   `/Users/yuuki/Works/lp-100/day040/README.md`
+- ポートフォリオ作業ログ:
+  `/Users/yuuki/Works/lp-100/day040/PORTFOLIO_WORKLOG.md`
 - クライアント返信トラッカー:
   `/Users/yuuki/Works/lp-100/day040/CLIENT_FEEDBACK_TRACKER.md`
 - 追加3点の反映手順:
   `/Users/yuuki/Works/lp-100/day040/WORDPRESS_MEDIUM_LOW_FIX_STEPS.md`
 - 追加3点の反映完了連絡文面（一括コピー用）:
   `/Users/yuuki/Works/lp-100/day040/CLIENT_MEDIUM_LOW_FIX_DONE_SEND.md`
+- 公開品質OK受領への返信文面（一括コピー用）:
+  `/Users/yuuki/Works/lp-100/day040/CLIENT_PUBLIC_QUALITY_APPROVAL_ACK_SEND.md`
+- PDFフォーム no-JS ホットフィックス用正本:
+  `/Users/yuuki/Works/lp-100/day040/PDF_FORM_RECAPTCHA_NOTE_OWNER_EMAIL.html`
 - WordPress反映用HTML正本:
   `/Users/yuuki/Works/lp-100/day040/TOP_PAGE_CUSTOM_HTML_TEMPLATE_HIGH_PRIORITY_FIX.html`
 - WordPress反映用CSS正本:
   `/Users/yuuki/Works/lp-100/day040/WP_LAYOUT_SHIFT_FIX_HIGH_PRIORITY.css`
+- PDFフォーム差し替え手順:
+  `/Users/yuuki/Works/lp-100/day040/WORDPRESS_PDF_FORM_HOTFIX_STEPS.md`
 - Phase2 / Phase3 再開バックログ:
   `/Users/yuuki/Works/lp-100/day040/PHASE2_PHASE3_RESTART_BACKLOG.md`
 

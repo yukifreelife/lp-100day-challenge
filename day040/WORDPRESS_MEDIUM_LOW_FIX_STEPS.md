@@ -1,5 +1,10 @@
 # Day040 - 追加3点（Medium/Low）の WordPress 反映手順
 
+## 注意
+- `/Users/yuuki/Works/lp-100/day040/TOP_PAGE_CUSTOM_HTML_TEMPLATE_HIGH_PRIORITY_FIX.html` の最新内容には、追加3点だけでなく PDFフォーム no-JS 修正も含まれている。
+- そのため、LP本文を全文差し替える場合は、このファイルだけ使えばよい。
+- `PDF_FORM_RECAPTCHA_NOTE_OWNER_EMAIL.html` は、PDFフォームだけを部分差し替えしたい場合の補助用。
+
 ## 使うファイル
 - LP本文差し替え用（HTML正本）:
   `/Users/yuuki/Works/lp-100/day040/TOP_PAGE_CUSTOM_HTML_TEMPLATE_HIGH_PRIORITY_FIX.html`
@@ -27,4 +32,5 @@
 
 ## 補足
 - High優先修正と同じ正本ファイルを更新しているため、過去 `dayXXX` の原本は変更しない。
+- 全文貼り替え時は、PDFフォーム用のホットフィックスファイルを別途使う必要はない。
 - 返信受領後は `/Users/yuuki/Works/lp-100/day040/CLIENT_FEEDBACK_TRACKER.md` に追記する。
