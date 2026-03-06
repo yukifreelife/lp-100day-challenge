@@ -37,6 +37,10 @@ lp:env=static-html-css-js
   - `/Users/yuuki/Works/lp-100/day032/CLIENT_REQUESTS_AND_COMMITMENTS.md`
   - `/Users/yuuki/Works/lp-100/day032/REQUIREMENTS_CONFIRMED.md`
   - `/Users/yuuki/Works/lp-100/day032/chats/chat_resume.md`
+- 新チャット引き継ぎ（クライアント視点）
+  - `/Users/yuuki/Works/lp-100/docs/README.md`
+  - `/Users/yuuki/Works/lp-100/docs/brief.md`
+  - `/Users/yuuki/Works/lp-100/docs/handoff_log.md`
 
 ---
 
