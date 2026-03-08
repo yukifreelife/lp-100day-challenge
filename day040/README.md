@@ -6,6 +6,7 @@
 - 追加提案3点（Medium 1 / Low 2）は反映完了し、クライアント確認OKを受領済み（2026-03-06）。
 - `day040` 正本のHTML/CSSには追加3点を反映済み。
 - WordPress 本体への貼り替えとスマホ確認も完了済み。
+- 予約CTA / PDFフォーム / PDF表示 / 案内メール / 法務リンクの主要導線動作も確認済み。
 - クライアントからは「公開品質として問題なし」の判断を受領済み。
 - 待機中の内部点検で、PDFフォーム正本を no-JS の `FormSubmit` 運用へ再整合した。
 
@@ -28,14 +29,14 @@
 ## Day040でやること（最優先）
 1. クライアント返信内容を `CLIENT_FEEDBACK_TRACKER.md` と `PORTFOLIO_WORKLOG.md` に記録する。
 2. 公開品質OK受領への返信が必要なら送る。
-3. PDFフォーム注記のホットフィックス要否を判断する。
-4. Phase2候補（計測タグ / PDF導線役割整理 / 微調整候補）を整理する。
+3. Phase2候補（計測タグ / PDF導線役割整理 / 微調整候補）を整理する。
+4. JS注入経路の再確認と、計測復旧の着手順を決める。
 
 ## このあと最短でやる手順
 1. `/Users/yuuki/Works/lp-100/day040/CLIENT_FEEDBACK_TRACKER.md` に今回の返信を記録する。
 2. 必要なら `/Users/yuuki/Works/lp-100/day040/CLIENT_PUBLIC_QUALITY_APPROVAL_ACK_SEND.md` を送る。
-3. PDFフォーム注記を反映する場合は `/Users/yuuki/Works/lp-100/day040/WORDPRESS_PDF_FORM_HOTFIX_STEPS.md` を使う。
-4. 次フェーズ着手前に `/Users/yuuki/Works/lp-100/day040/PHASE2_PHASE3_RESTART_BACKLOG.md` を整理する。
+3. `/Users/yuuki/Works/lp-100/day040/PHASE2_EXECUTION_PLAN.md` を確認する。
+4. `/Users/yuuki/Works/lp-100/day040/PHASE2_PHASE3_RESTART_BACKLOG.md` をもとに次フェーズへ入る。
 
 ## Day040補助ファイル
 - 引き継ぎメモ:
@@ -60,6 +61,8 @@
   `/Users/yuuki/Works/lp-100/day040/WORDPRESS_PDF_FORM_HOTFIX_STEPS.md`
 - Phase2 / Phase3 再開バックログ:
   `/Users/yuuki/Works/lp-100/day040/PHASE2_PHASE3_RESTART_BACKLOG.md`
+- Phase2 着手計画:
+  `/Users/yuuki/Works/lp-100/day040/PHASE2_EXECUTION_PLAN.md`
 
 ## 修正依頼が来た場合の優先順
 1. 公開阻害（リンク切れ、フォーム不達、表示崩れ）

@@ -1,4 +1,11 @@
-# Day040 - クライアント返信トラッカー
+# Day043 - クライアント返信トラッカー
+
+## Day043開始サマリ（2026-03-10）
+- 2026-03-06 の公開品質OK受領以降、クライアントから新しい返信は来ていない。
+- 2026-03-09 に4本のJSを WordPress へ配信し、公開表示とPDF導線復旧まで確認済み。
+- DevTools では `window.LP_CONFIG` / `window.gtag` / `window.fbq`、およびページ読み込み時の `gtag/js` / GA4 `collect` / `fbevents.js` を確認済み。
+- TimeRex 側URLへの UTM 引き継ぎも 2026-03-09 に確認済み。
+- 現時点の pending はクライアント返信待ちではなく、予約CTAクリック直後の GA4 / Meta 追加通信確認。
 
 ## 返信受領履歴
 - 2026-03-04（時刻未記録）: 初回公開後の指摘を受領（High 3 / Medium 3 / Low 1）
@@ -9,6 +16,9 @@
 - 2026-03-06（Day040作業）: No.8-10を WordPress へ反映し、スマホ確認で問題なし。クライアントへ再確認依頼を送る段階。
 - 2026-03-06（クライアント返信）: 3点の反映確認OKを受領。公開品質として問題なし。追加3点の微調整候補と、次フェーズでの計測タグ / PDF導線整理の相談希望あり。
 - 2026-03-06（動作確認）: 最新HTML/CSS反映後に、予約CTA / PDFフォーム送信 / 確認画面 / PDF表示 / 案内メール / 法務リンク到達を確認。主要導線はすべてOK。
+- 2026-03-08（Day042開始準備）: `Simple Custom CSS and JS` でのJS投入は確認済み。PDF導線のみ `LP_BEHAVIOR_CORE` の submit 横取り解消後の再テスト待ち。
+- 2026-03-09（Day042作業）: 4本のJSを WordPress へ配信。公開表示に問題なし。PDF導線は `reCAPTCHA` / 案内メール / PDF表示まで正常動作を確認。
+- 2026-03-09（DevTools確認）: `window.LP_CONFIG` / `window.gtag` / `window.fbq` を確認。ページ読み込み時の `gtag/js` / GA4 `collect` / `fbevents.js` を確認。TimeRex 側URLへ `utm_source=test&utm_medium=manual&utm_campaign=day042` が引き継がれることを確認。予約CTAクリック直後の追加 `collect` / `tr` は未確認のまま終了。
 - 返信チャネル: クライアントからのテキスト返信
 - 確認端末: iPhone
 
@@ -42,6 +52,12 @@
 - 再確認した内容:
 - スマホ中心で、FV CTA / 中間CTA余白 / PDF説明文 / 目立つ表示崩れなしを確認。
 - 予約CTA / PDFフォーム送信 / 確認画面 / PDF表示 / 案内メール / 法務リンク到達を確認。
+- 2026-03-09 時点で、4本のJS配信後も公開表示は問題なし。
+- PDF導線は `reCAPTCHA` / 案内メール / PDF表示まで復旧確認済み。
+- `window.LP_CONFIG` / `window.gtag` / `window.fbq` の初期化は確認済み。
+- ページ読み込み時の `gtag/js` / GA4 `collect` / `fbevents.js` は確認済み。
+- TimeRex 側URLへの UTM 引き継ぎは確認済み。
+- 現在の pending は、予約CTAクリック直後の追加 `collect` / `tr` 確認で、クライアントへの追加返信はまだ不要。
 - クライアントへ返した内容:
 - `CLIENT_MEDIUM_LOW_FIX_DONE_SEND.md` の文面で公開URL共有と再確認依頼を送る。
 - `CLIENT_PUBLIC_QUALITY_APPROVAL_ACK_SEND.md` で、公開品質OK受領への返信案を用意。

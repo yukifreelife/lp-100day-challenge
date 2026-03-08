@@ -46,8 +46,18 @@ lp:env=wordpress-reflected-client-confirmed
     - 3点の反映確認OKと、公開品質として問題なしの判断を受領
     - FV本文圧縮 / 中間CTA余白 / PDFフォーム注記を「改善候補」として整理
     - 計測タグ実装と PDF導線の役割整理を次フェーズ相談事項として固定
+  - 主要導線の実動作確認を完了
+    - 予約CTA -> TimeRex 到達を確認
+    - PDFフォーム送信 -> 確認画面 -> PDF表示を確認
+    - 案内メール到達を確認
+    - 法務リンク到達を確認
   - 返信文面を追加
     - `CLIENT_PUBLIC_QUALITY_APPROVAL_ACK_SEND.md` を作成
+  - 次フェーズ着手用の整理を追加
+    - `PHASE2_EXECUTION_PLAN.md` を作成
+  - Day041引き継ぎを作成
+    - `day041/README.md`
+    - `day041/PORTFOLIO_WORKLOG.md`
 
 ---
 
@@ -82,21 +92,27 @@ lp:env=wordpress-reflected-client-confirmed
   - `/Users/yuuki/Works/lp-100/day040/PDF_FORM_RECAPTCHA_NOTE_OWNER_EMAIL.html`
 - Phase2 / Phase3 再開バックログ
   - `/Users/yuuki/Works/lp-100/day040/PHASE2_PHASE3_RESTART_BACKLOG.md`
+- Phase2 着手計画
+  - `/Users/yuuki/Works/lp-100/day040/PHASE2_EXECUTION_PLAN.md`
+- Day041引き継ぎ
+  - `/Users/yuuki/Works/lp-100/day041/README.md`
+  - `/Users/yuuki/Works/lp-100/day041/PORTFOLIO_WORKLOG.md`
 
 ---
 
 ## 現在の状態
 - 追加3点は HTML / CSS 正本へ反映済み
 - WordPress 本体への貼り替えとスマホ確認は完了
+- 主要導線の実動作確認も完了
 - クライアントから公開品質OKの判断を受領済み
 - Day040 の開始資料、返信記録、次フェーズ候補整理は一式揃った
-- 未完了は PDFフォーム注記ホットフィックス要否の判断と、次フェーズ着手順の確定
+- 未完了は次フェーズ着手順の確定と、計測復旧の再開
 - Blocker / High は現時点で未検出
 
 ---
 
 ## 次にやること
 1. 必要なら `CLIENT_PUBLIC_QUALITY_APPROVAL_ACK_SEND.md` を送る
-2. PDFフォーム注記を反映するなら `WORDPRESS_PDF_FORM_HOTFIX_STEPS.md` に沿って差し替える
-3. `PHASE2_PHASE3_RESTART_BACKLOG.md` をもとに次フェーズ着手順を固める
+2. `PHASE2_EXECUTION_PLAN.md` を起点に次フェーズへ着手する
+3. `PHASE2_PHASE3_RESTART_BACKLOG.md` をもとに優先順を固定する
 4. 計測タグ実装と PDF導線役割整理の準備へ移る

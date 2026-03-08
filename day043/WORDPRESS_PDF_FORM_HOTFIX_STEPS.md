@@ -1,4 +1,4 @@
-# Day042 - PDFフォーム no-JS ホットフィックス手順
+# Day043 - PDFフォーム no-JS ホットフィックス手順
 
 ## 目的
 - `JSなし公開優先` の運用方針に合わせて、PDFフォームを `FormSubmit` の通常POST版へ戻す。
@@ -8,13 +8,13 @@
 ## 背景
 - 旧日の全体HTML正本を確認したところ、PDFフォームが `action="#"` のJS依存構造に戻っていた。
 - Day035-037 の運用判断では、`WPCode Lite` の `Forbidden access` 回避のため、PDFフォームは no-JS の `FormSubmit` 版を正本とする前提だった。
-- そのため、待機時間を使って Day042 側の正本を no-JS 運用へ整合させた。
+- そのため、待機時間を使って Day043 側の正本を no-JS 運用へ整合させた。
 
 ## 貼り付け元ファイル
 - PDFフォーム差し替え用:
-  `/Users/yuuki/Works/lp-100/day042/PDF_FORM_RECAPTCHA_NOTE_OWNER_EMAIL.html`
+  `/Users/yuuki/Works/lp-100/day043/PDF_FORM_RECAPTCHA_NOTE_OWNER_EMAIL.html`
 - 全体HTML正本:
-  `/Users/yuuki/Works/lp-100/day042/TOP_PAGE_CUSTOM_HTML_TEMPLATE_HIGH_PRIORITY_FIX.html`
+  `/Users/yuuki/Works/lp-100/day043/TOP_PAGE_CUSTOM_HTML_TEMPLATE_HIGH_PRIORITY_FIX.html`
 
 ## この手順を使う場面
 - すでに古いHTMLを WordPress に貼っていて、PDFフォーム部分だけ差し替えたいとき
@@ -24,7 +24,7 @@
 1. LP本体の固定ページを開く
 2. PDFセクションの現在の `<form class="pdf-form" ...>` から `</form>` までを選択する
 3. その範囲を削除する
-4. `/Users/yuuki/Works/lp-100/day042/PDF_FORM_RECAPTCHA_NOTE_OWNER_EMAIL.html` の内容を貼る
+4. `/Users/yuuki/Works/lp-100/day043/PDF_FORM_RECAPTCHA_NOTE_OWNER_EMAIL.html` の内容を貼る
 5. もし直下に `pdf-success` ブロックが残っていれば、その `<div class="pdf-success" ...>` から `</div>` まで削除する
 6. `更新` を押す
 
