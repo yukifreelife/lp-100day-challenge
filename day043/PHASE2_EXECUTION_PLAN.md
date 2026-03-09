@@ -13,7 +13,7 @@
 - DevTools の `Console` では `window.LP_CONFIG` / `window.gtag` / `window.fbq` を確認済み。
 - `Network` ではページ読み込み時の `gtag/js` / GA4 `collect` / `fbevents.js` を確認済み。
 - 予約CTAの TimeRex 側URLへの UTM 引き継ぎは、`utm_campaign=day042` のテストURLで確認済み。
-- 未確認なのは、予約CTAクリック直後に LP元タブの `Network` へ追加 `collect` / `tr` が出るかどうか。
+- 2026-03-09 の CTAクリック確認で、LP元タブの `Network` へ追加 `collect` / `tr` / `trigger` が出ることも確認済み。
 - 現行のPDFフォームは native `FormSubmit` + `reCAPTCHA` 構成のため、PDF送信時に JS 側 `generate_lead` や Meta `Lead` が出なくても現時点では異常と断定しない。
 
 ## Phase2 の目的
@@ -21,24 +21,27 @@
 - UTM / GA4 / Meta の最小復旧範囲を確定し、Phase3へ不要な持ち越しを減らす。
 - PDF導線の役割を明文化し、今後のコピー修正やイベント設計の基準を作る。
 
-## Day043 の着手順
-1. `?utm_source=test&utm_medium=manual&utm_campaign=day043` 付きURLで公開ページを開く。
-2. `Network` の `Preserve log` を ON にし、一覧をクリアしてからページを再読み込みする。
-3. `gtag/js` / GA4 `collect` / `fbevents.js` が出ることを確認する。
-4. 予約CTAを1回押し、TimeRex 側URLへ `utm_source=test&utm_medium=manual&utm_campaign=day043` が引き継がれることを確認する。
-5. LP元タブへ戻り、クリック直後の追加 `collect` / `tr` 通信が出るか確認する。
-6. クリック計測の確認結果をもとに、PDF導線の役割を1文で定義し、最小復旧範囲を確定する。
-7. その後に FV本文圧縮 / 中間CTA余白 / PDF注記の微調整優先度を再評価する。
+## Day043 で確定した定義
+- 予約CTAを主導線、PDF導線を補助導線として扱う。
+- PDF導線は、無料相談へすぐ進まないユーザーに先に価値提供し、後日の予約行動へつなぐ補助導線とする。
+
+## UTM / GA4 / Meta の最小復旧範囲
+1. ページ読み込み時の `gtag/js` / GA4 `collect` / `fbevents.js`
+2. 予約CTA押下時の TimeRex 側 UTM 引き継ぎ
+3. 予約CTA押下時の LP元タブ上 GA4 `collect` / Meta `tr` / `trigger`
+4. PDF導線の `reCAPTCHA` / 案内メール / PDF表示の成立
+
+## Day043 の残作業
+1. FV本文圧縮 / 中間CTA余白 / PDF注記の微調整優先度を再評価する。
+2. PDF詳細イベントや完了イベント最適化を Phase3 に送るか最終判断する。
 
 ## 着手前の判断ポイント
-- JS注入経路と PDF導線復旧は確認できたため、Day043の最大リスクは「クリック計測が本当に乗っているか」の一点に寄っている。
-- 予約CTAとPDF導線の正常性を維持したまま GA4 / Meta を確認する必要がある。
-- `Network` の下側ペインは詳細表示であり、新規通信そのものは上側の一覧に増える。
+- JS注入経路、PDF導線復旧、予約CTAクリック計測確認、役割定義までは完了した。
+- 現時点では、予約CTAとPDF導線の正常性を崩さずに、最小復旧範囲だけで止める方が安全。
 - PDF導線の役割を決める前に詳細イベントまで広げると、設計をやり直す可能性がある。
-- そのため、Day043は `予約CTAクリック計測確認` -> `役割定義` -> `詳細イベント判断` の順で進める。
+- そのため、Day043は `最小復旧範囲維持` -> `表示微調整判断` -> `詳細イベント判断` の順で進める。
 
 ## Day043 時点の推奨順
-1. 予約CTAクリック時の GA4 / Meta 追加通信確認
-2. PDF導線の役割定義
-3. 表示微調整の優先順見直し
-4. 詳細イベント計測の着手判断
+1. 表示微調整の優先順見直し
+2. 詳細イベント計測の着手判断
+3. Phase3送り項目の明文化

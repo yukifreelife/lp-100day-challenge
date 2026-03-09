@@ -7,7 +7,7 @@ lp:audience=非エンジニアのクライアント
 lp:goal=JS再導入後の最小計測確認を完了し、Phase2の判断を確定できる状態を作る
 lp:industry=パーソナルトレーニング
 lp:objective=公開中LPの安定性を維持しながら、予約CTAクリック計測と導線役割整理の残タスクを完了する
-lp:status=cta-click-measurement-verification-pending
+lp:status=scope-defined-ui-priority-review-pending
 lp:env=wordpress-live-phase2-click-measurement-check
 
 ---
@@ -52,12 +52,16 @@ lp:env=wordpress-live-phase2-click-measurement-check
 - TimeRex 側URLで `utm_source=test&utm_medium=manual&utm_campaign=day042` の引き継ぎを確認した
 - 予約CTAクリック直後の LP元タブ上 `collect` / `tr` の追加通信確認は、作業終了のため Day043へ持ち越し
 
+## Day043確認メモ（2026-03-09）
+- CTAクリック後の LP元タブ `Network` で、追加の GA4 `collect` を確認した
+- Meta `tr` と `trigger` も確認した
+- 予約CTAクリック時の最小計測確認は完了した
+- PDF導線は「無料相談へすぐ進まないユーザーに先に価値提供し、後日の予約行動へつなぐ補助導線」と整理した
+- 最小復旧範囲は、ページ読込計測、予約CTAの UTM 引き継ぎ、予約CTAクリック計測、PDF導線の実動作維持までとした
+
 ## Day043の次アクション
-- `?utm_source=test&utm_medium=manual&utm_campaign=day043` 付きURLで公開ページを開く
-- `Network` の `Preserve log` を ON にし、予約CTAクリック直後の追加 `collect` / `tr` 通信を確認する
-- クリック計測確認後に、PDF導線の役割を1文で定義する
-- その結果をもとに、UTM / GA4 / Meta の最小復旧範囲を確定する
-- 必要なら FV本文圧縮 / 中間CTA余白 / PDF注記の微調整優先度を見直す
+- FV本文圧縮 / 中間CTA余白 / PDF注記の微調整優先度を見直す
+- FAQ 開閉や詳細イベント計測を Phase3 へ送るか判断する
 
 ---
 
@@ -74,4 +78,4 @@ lp:env=wordpress-live-phase2-click-measurement-check
 - 現行の WordPress 正本は Day043 側に複製した HTML / CSS を参照する。
 - クライアントから 2026-03-09 時点で新しい返信は来ていない。
 - 現行の native `FormSubmit` 構成では、PDF送信時の JS 側 `generate_lead` / Meta `Lead` が出なくても即NGとはしない。
-- Day043 は、予約CTAクリック後の追加通信確認を最優先にする。
+- Day043 は、最小復旧範囲を維持したまま表示微調整の優先順整理を優先する。

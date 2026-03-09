@@ -1,6 +1,6 @@
-# Day043 - Day042作業の翌日引き継ぎ（2026-03-10開始予定）
+# Day043 - Day042作業の引き継ぎ（2026-03-09着手）
 
-## 現在地（2026-03-09終了時点）
+## 現在地（2026-03-09開始時点）
 - 公開URL `https://yuki-freelife.com/lp-review/` は継続公開中。
 - `LP_CONFIG_INLINE.js` / `LP_BEHAVIOR_CORE.js` / `GA4_LOADER.js` / `META_PIXEL_LOADER.js` の4本を 2026-03-09 に WordPress へ配信済み。
 - 公開表示に崩れや導線異常は出ていない。
@@ -13,8 +13,9 @@
 - 予約CTA押下後の TimeRex 側URLは、2026-03-09 に
   `https://timerex.net/s/bodymake_tokyo_yuta?utm_source=test&utm_medium=manual&utm_campaign=day042`
   となり、UTM引き継ぎは確認済み。
-- まだ未確認なのは、予約CTAクリック直後に LP元タブの `Network` 上で追加の GA4 `collect` / Meta `tr` 通信が出るかどうかだけ。
-- Day043 の最優先は、`?utm_source=test&utm_medium=manual&utm_campaign=day043` 付きURLで、予約CTAクリック時の最小計測確認を完了すること。
+- 2026-03-09 の CTAクリック確認で、LP元タブの `Network` 上に追加の GA4 `collect` / Meta `tr` / `trigger` 通信を確認済み。
+- Day043 では、PDF導線を「無料相談へすぐ進まないユーザーに先に価値提供し、後日の予約行動へつなぐ補助導線」と定義する。
+- その前提で、最小復旧範囲は「ページ読込計測」「予約CTAの UTM 引き継ぎ」「予約CTAクリック計測」「PDF導線の実動作維持」までとする。
 
 ## Day042で完了したこと
 - 4本のJSをインデントありの通常ファイル名へ整理し、WordPress へ配信した。
@@ -23,26 +24,30 @@
 - DevTools 上で、設定オブジェクトと GA4 / Meta ローダーの初期化を確認した。
 - 予約CTAの遷移先 TimeRex URL へ UTM が引き継がれることを確認した。
 
-## Day043でやること（最優先）
-1. シークレットウィンドウで  
-   `https://yuki-freelife.com/lp-review/?utm_source=test&utm_medium=manual&utm_campaign=day043`
-   を開く。
-2. DevTools の `Network` で `Preserve log` を ON にし、一覧をいったんクリアする。
-3. ページ再読み込み後、`gtag/js` / GA4 `collect` / `fbevents.js` が出ることを確認する。
-4. 予約CTAを1回押し、TimeRex 側URLに
-   `utm_source=test&utm_medium=manual&utm_campaign=day043`
-   が付いていることを確認する。
-5. LP元タブへ戻り、`Network` 一覧でクリック直後に追加の GA4 `collect` と Meta `tr` が出るか確認する。
-6. その確認が終わったら、PDF導線の役割を1文で定義し、UTM / GA4 / Meta の最小復旧範囲を確定する。
-7. その後に FV本文圧縮 / 中間CTA余白 / PDF注記の微調整優先度を見直す。
+## Day043で決めたこと
+1. 予約CTAを主導線、PDF導線を補助導線として扱う。
+2. PDF導線は、無料相談へすぐ進まないユーザー向けの先行価値提供とする。
+3. 最小復旧範囲は、予約CTA中心の計測と PDF導線の実動作維持までに留める。
 
-## 明日最初の最短手順（2026-03-10）
+## UTM / GA4 / Meta の最小復旧範囲
+1. ページ読み込み時に `gtag/js` / GA4 `collect` / `fbevents.js` が出ること。
+2. 予約CTA押下時に TimeRex 側へ UTM が引き継がれること。
+3. 予約CTA押下時に LP元タブで追加の GA4 `collect` / Meta `tr` / `trigger` が出ること。
+4. PDF導線は `reCAPTCHA` / 案内メール / PDF表示が成立していれば最低限OKとする。
+5. 現時点では、PDF送信時の JS 側 `generate_lead` / Meta `Lead` までは必須にしない。
+6. スクロール計測、FAQ計測、PDF詳細イベント、完了イベント最適化は Phase3 へ送る。
+
+## Day043で残っていること
+1. FV本文圧縮 / 中間CTA余白 / PDF注記の微調整優先度を見直す。
+2. 詳細イベント計測へ進むかどうかを Phase3 判断として切り分ける。
+
+## 今日最初の最短手順（2026-03-09）
 1. `/Users/yuuki/Works/lp-100/day043/README.md` を開く。
 2. `/Users/yuuki/Works/lp-100/day043/PHASE2_EXECUTION_PLAN.md` を開く。
 3. `/Users/yuuki/Works/lp-100/day043/PHASE2_PHASE3_RESTART_BACKLOG.md` を開く。
 4. `/Users/yuuki/Works/lp-100/day043/CLIENT_FEEDBACK_TRACKER.md` を開く。
-5. シークレットウィンドウで `?utm_source=test&utm_medium=manual&utm_campaign=day043` 付きURLを開く。
-6. `Network` の `Preserve log` を ON にし、予約CTAクリック後の追加 `collect` / `tr` 確認から着手する。
+5. PDF導線を補助導線として扱う前提で、最小復旧範囲を確認する。
+6. そのうえで、FV本文圧縮 / 中間CTA余白 / PDF注記の優先度を見直す。
 
 ## Day043の主な参照ファイル
 - クライアント返信トラッカー:
