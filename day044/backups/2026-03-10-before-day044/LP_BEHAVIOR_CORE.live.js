@@ -15,57 +15,11 @@
     "utm_content",
     "utm_term",
   ];
-  const trackedKeys = new Set();
-  const DEFAULT_PDF_ENTRY_POINT = "direct_visit";
 
   function trackEvent(eventName, params) {
     if (window.gtag) {
       window.gtag("event", eventName, params || {});
     }
-  }
-
-  function sanitizeToken(value) {
-    return String(value || "")
-      .trim()
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, "_")
-      .replace(/^_+|_+$/g, "")
-      .slice(0, 24);
-  }
-
-  function trackScopedEvent(baseEventName, scope, params) {
-    const suffix = sanitizeToken(scope);
-
-    if (!suffix) return;
-
-    trackEvent(`${baseEventName}_${suffix}`, params || {});
-  }
-
-  function trackOnce(key, callback) {
-    if (trackedKeys.has(key)) return;
-
-    trackedKeys.add(key);
-    callback();
-  }
-
-  function setHiddenFieldValue(fieldName, value) {
-    const fields = document.querySelectorAll(`input[name="${fieldName}"]`);
-
-    fields.forEach(function (field) {
-      if (field instanceof HTMLInputElement) {
-        field.value = value;
-      }
-    });
-  }
-
-  function getHiddenFieldValue(fieldName) {
-    const field = document.querySelector(`input[name="${fieldName}"]`);
-
-    if (field instanceof HTMLInputElement) {
-      return field.value || "";
-    }
-
-    return "";
   }
 
   function getStoredUtm() {
@@ -119,91 +73,24 @@
     return new URL(pdfDownloadUrl, siteUrl).toString();
   }
 
-  function bindObservedSections(utm) {
-    const sections = document.querySelectorAll("[data-lp-observe]");
-
-    if (!("IntersectionObserver" in window) || sections.length === 0) return;
-
-    const observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (!entry.isIntersecting || entry.intersectionRatio < 0.35) return;
-
-          const target = entry.target;
-          const eventName = target.getAttribute("data-lp-observe");
-
-          if (!eventName) return;
-
-          trackOnce(`section:${eventName}`, function () {
-            trackEvent(eventName, {
-              event_category: "engagement",
-              event_label: eventName,
-              section_name: eventName,
-              ...utm,
-            });
-          });
-
-          observer.unobserve(target);
-        });
-      },
-      { threshold: [0.35, 0.6] }
-    );
-
-    sections.forEach(function (section) {
-      observer.observe(section);
-    });
-  }
-
   function bindReservationLinks(utm) {
     const links = document.querySelectorAll(".js-reservation-link");
 
     links.forEach(function (link) {
       const tracked = buildTrackedUrl(reservationUrl, utm);
-      const ctaLocation =
-        sanitizeToken(link.getAttribute("data-cta-location")) || "unknown";
-
       link.setAttribute("href", tracked);
 
       link.addEventListener("click", function () {
-        const params = {
+        trackEvent("select_counseling_cta", {
           event_category: "engagement",
           event_label: "reservation_link",
-          cta_location: ctaLocation,
           destination: tracked,
           ...utm,
-        };
-
-        trackEvent("select_counseling_cta", params);
-        trackScopedEvent("select_counseling_cta", ctaLocation, params);
+        });
 
         if (window.fbq) {
-          window.fbq("trackCustom", "SelectCounselingCTA", params);
+          window.fbq("trackCustom", "SelectCounselingCTA", utm);
         }
-      });
-    });
-  }
-
-  function bindPdfEntryLinks(utm) {
-    const links = document.querySelectorAll(".js-pdf-entry-link");
-
-    setHiddenFieldValue("pdf_entry_point", DEFAULT_PDF_ENTRY_POINT);
-
-    links.forEach(function (link) {
-      link.addEventListener("click", function () {
-        const entryPoint =
-          sanitizeToken(link.getAttribute("data-pdf-entry-point")) ||
-          DEFAULT_PDF_ENTRY_POINT;
-        const params = {
-          event_category: "engagement",
-          event_label: "pdf_entry_link",
-          pdf_entry_point: entryPoint,
-          destination: "#pdf",
-          ...utm,
-        };
-
-        setHiddenFieldValue("pdf_entry_point", entryPoint);
-        trackEvent("select_pdf_cta", params);
-        trackScopedEvent("select_pdf_cta", entryPoint, params);
       });
     });
   }
@@ -274,43 +161,6 @@
     const usesNativeFormSubmit =
       formAction.indexOf("formsubmit.co") !== -1 &&
       !(successBox instanceof HTMLElement);
-    const sourcePage = getHiddenFieldValue("source_page") || "lp_review_pdf";
-    const formMode = usesNativeFormSubmit ? "native_formsubmit" : "async_fetch";
-
-    setHiddenFieldValue("source_page", sourcePage);
-
-    if (!getHiddenFieldValue("pdf_entry_point")) {
-      setHiddenFieldValue("pdf_entry_point", DEFAULT_PDF_ENTRY_POINT);
-    }
-
-    pdfForm.addEventListener("focusin", function () {
-      trackOnce("pdf_form_start", function () {
-        trackEvent("start_pdf_form", {
-          event_category: "engagement",
-          event_label: "pdf_form",
-          pdf_entry_point:
-            getHiddenFieldValue("pdf_entry_point") || DEFAULT_PDF_ENTRY_POINT,
-          source_page: sourcePage,
-          form_mode: formMode,
-          ...utm,
-        });
-      });
-    });
-
-    pdfForm.addEventListener("submit", function () {
-      if (!pdfForm.checkValidity()) return;
-
-      trackEvent("submit_pdf_form", {
-        event_category: "lead",
-        event_label: "pdf_form_submit",
-        pdf_entry_point:
-          getHiddenFieldValue("pdf_entry_point") || DEFAULT_PDF_ENTRY_POINT,
-        source_page: sourcePage,
-        form_mode: formMode,
-        transport_type: "beacon",
-        ...utm,
-      });
-    });
 
     // Current WordPress markup uses native FormSubmit + reCAPTCHA flow.
     // Do not intercept submit here, or the normal POST/reCAPTCHA/email flow will be broken.
@@ -388,10 +238,6 @@
         trackEvent("generate_lead", {
           event_category: "lead",
           event_label: "pdf_download",
-          pdf_entry_point:
-            getHiddenFieldValue("pdf_entry_point") || DEFAULT_PDF_ENTRY_POINT,
-          source_page: sourcePage,
-          form_mode: formMode,
           ...utm,
         });
 
@@ -415,9 +261,7 @@
   const utm = collectAndStoreUtm();
 
   fillUtmFields(utm);
-  bindObservedSections(utm);
   bindReservationLinks(utm);
-  bindPdfEntryLinks(utm);
   initFaq();
   initPdfForm(utm);
 })();

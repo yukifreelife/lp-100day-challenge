@@ -7,8 +7,8 @@ lp:audience=非エンジニアのクライアント
 lp:goal=クライアント合意済みの次フェーズ方針に沿って、予約導線の計測整理と共有フォーマット定義へ着手できる状態を作る
 lp:industry=パーソナルトレーニング
 lp:objective=公開中LPの安定性を維持しながら、予約導線の計測整理、CTA位置別分析要否判断、簡易共有フォーマット定義を進める
-lp:status=measurement-scope-and-reporting-pending
-lp:env=wordpress-live-phase2-click-measurement-check
+lp:status=measurement-verification-complete-reporting-pending
+lp:env=wordpress-live-phase2-measurement-verified
 
 ---
 
@@ -74,6 +74,21 @@ lp:env=wordpress-live-phase2-click-measurement-check
 - 無料カウンセリング予約までの離脱ポイント把握に、現行の予約CTA計測で足りるかを見て、CTA位置別計測を追加するか判断する
 - PDF導線がどう機能しているかを見る最低限指標を定義する
 - PDF詳細イベントと UI微調整を Phase3 送りにする範囲を明文化する
+
+## Day044開始実装メモ（2026-03-10）
+- `LP_BEHAVIOR_CORE.js` に、CTA位置別イベント、PDF入口イベント、PDFフォーム開始/送信イベント、セクション到達イベントを追加
+- `TOP_PAGE_CUSTOM_HTML_TEMPLATE_HIGH_PRIORITY_FIX.html` に、`data-cta-location` / `data-pdf-entry-point` / `data-lp-observe` と hidden `utm_*` / `pdf_entry_point` を追加
+- PDFフォームの `source_page` は `day040_lp_pdf` から `lp_review_pdf` へ補正
+- クライアント共有用の叩き台として `MEASUREMENT_SHARE_TEMPLATE.md` を追加
+
+## Day044公開確認メモ（2026-03-10）
+- `day044` の HTML / `LP_BEHAVIOR_CORE.js` を WordPress へ反映した
+- テストURL `?utm_source=test&utm_medium=manual&utm_campaign=day044` で公開確認した
+- 予約CTA5か所で `select_counseling_cta` と位置別イベントを確認した
+- Hero / Footer の PDF入口で `select_pdf_cta` と入口別イベントを確認した
+- PDFフォームで `start_pdf_form` / `submit_pdf_form` を確認した
+- PDF送信後の `reCAPTCHA`、案内メール、PDF表示まで確認した
+- 現在の残作業は、数値蓄積後の共有文面調整と Phase3送り項目の整理
 
 ---
 
