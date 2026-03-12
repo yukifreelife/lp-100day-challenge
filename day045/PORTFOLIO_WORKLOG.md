@@ -7,7 +7,7 @@ lp:audience=非エンジニアのクライアント
 lp:goal=初回計測レビューを完了し、請求確認後のクローズ状態へ整理する
 lp:industry=パーソナルトレーニング
 lp:objective=初回案件クローズ記録、レビュー完了記録、請求確認記録、次回相談への引き継ぎ整理を行う
-lp:status=measurement-review-closed-awaiting-payment
+lp:status=measurement-review-closed-complete
 
 ## Day045開始時点で確定していること
 - `day044` で予約CTA位置別計測と PDF導線の最小計測を公開URLで確認済み。
@@ -19,6 +19,7 @@ lp:status=measurement-review-closed-awaiting-payment
 - Day045 の主線は、`初回計測レビューの完了とクローズ整理` へ切り替わった。
 - `2026-03-12`・`2026-03-13`・`2026-03-15` の Instagram 告知予定が共有されており、観測時の外部要因として扱う。
 - 2週間レビュー最終整理と `70,000円（税込）` の請求内容について、クライアント確認済み。
+- 入金確認連絡と、今回完了で問題ない旨のクライアント返信まで受領済み。
 
 ## Day045で追加したもの
 - 次フェーズ整理案共有前の短い受領返信案:
@@ -46,8 +47,9 @@ lp:status=measurement-review-closed-awaiting-payment
   - 実行用ファイルとして `MEASUREMENT_REVIEW_EXECUTION_PLAN.md` と `MEASUREMENT_REVIEW_OBSERVATION_LOG.md` を追加
   - 初回共有テンプレを `数値の事実 / 仮説 / 次にやるとよさそうなこと` の3点構成へ更新
   - 2週間レビュー完了受領文面と、レビュー分請求書送付文面を追加
+  - 入金確認時の受領返信文面 `CLIENT_REVIEW_PAYMENT_ACK_SEND.md` を追加
   - クライアントからレビュー完了・請求内容確認済みの返信を受け、`クローズ / 支払待ち` 状態へ更新
+  - 入金確認返信へのクライアント受領まで完了し、`案件クローズ完了` 状態へ更新
 
 ## 次回やること
-1. 支払完了の連絡が来たら `CLIENT_FEEDBACK_TRACKER.md` へ追記する。
-2. 改善相談が来た場合は、今回のレビュー結果を起点に別フェーズとして切り出す。
+1. 改善相談が来た場合は、今回のレビュー結果を起点に別フェーズとして切り出す。
