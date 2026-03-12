@@ -237,7 +237,7 @@
   2. 月次レビュー + 改善提案
   3. 月次レビュー + 改善提案 + 実装
 - 成果物:
-  - `RETainer_SCOPE_MATRIX.md`
+  - `RETAINER_SCOPE_MATRIX.md`
 
 ## 標準で使うファイル構成
 - `current/`

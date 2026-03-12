@@ -33,7 +33,7 @@
 | 8. Measurement | 最小計測を入れる | GA4/Meta権限、フォーム仕様 | `MEASUREMENT_EXECUTION_PLAN.md` `MEASUREMENT_VALIDATION_LOG.md` | イベントが意図どおり動く | 完了未確認のまま計測完了扱い |
 | 9. Review | 証跡付きで中間/最終レビューする | GA4、TimeRex、FormSubmit、流入要因 | `REVIEW_EVIDENCE_ARCHIVE.md` `CLIENT_MEASUREMENT_REVIEW_FINAL.md` | 事実/仮説/次アクションが証跡付き | サンプル値だけで納品扱い |
 | 10. Close | 請求とクローズを終える | 受領、請求条件 | `CLIENT_INVOICE_SEND.md` `PROJECT_CLOSE_LOG.md` | 受領、請求、入金確認が完了 | 請求前に追加対応が流れ込む |
-| 11. Retainer | 継続化する | レビュー結果、改善優先度 | `RETainer_SCOPE_MATRIX.md` | 範囲・頻度・指標が固定 | 継続内容が曖昧 |
+| 11. Retainer | 継続化する | レビュー結果、改善優先度 | `RETAINER_SCOPE_MATRIX.md` | 範囲・頻度・指標が固定 | 継続内容が曖昧 |
 
 ## Phaseごとの実行ルール
 
@@ -207,7 +207,7 @@
 ### 条件付き
 - `VALUE_PROPOSITION_REVIEW.md`
 - `IMPROVEMENT_OPTIONS_MATRIX.md`
-- `RETainer_SCOPE_MATRIX.md`
+- `RETAINER_SCOPE_MATRIX.md`
 
 ## 見積の標準基準
 

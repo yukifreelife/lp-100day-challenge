@@ -21,7 +21,7 @@ lp:env=client-wordpress-lightning
   - クライアント役とのやり取りで実装条件を確定（Lightningテーマ、パスワード保護プレビュー、編集者権限）
   - 追加CSS権限がないケースに対応し、`<style>` 埋め込み方式（案A）で合意
   - `day021/wp-custom-html-block.html` を作成（`styles.css` + `<body>` 内HTML結合、WPカスタムHTMLブロック投入用）
-  - `template/wp-deployment-guide.md` を整備し、反映手順のテンプレート化
+  - `template/wordpress-guides/wp-deployment-guide.md` を整備し、反映手順のテンプレート化
   - `template/` 配下の不要物を整理（不要ファイル/不要ディレクトリ削除）
 - 検証結果（ローカル確認）：
   - `wp-custom-html-block.html` の構造は成立（style埋め込み＋LP本体）
@@ -33,7 +33,7 @@ lp:env=client-wordpress-lightning
 | 作業 | 分 |
 |---|---:|
 | Day020引き継ぎ確認・当初納品方針（URL＋ZIP）の再整理 | 45 |
-| クライアント依頼文の読解・返信文作成・要件確定（反映方式/権限/プレビュー/進行）/カスタムHTMLブロック用ファイル作成（HTML+CSS統合）と構造チェック/WP反映手順書テンプレート整備（`template/wp-deployment-guide.md`）/templateディレクトリ棚卸し（不要ファイル/不要ディレクトリの削除判断） | 149 |
+| クライアント依頼文の読解・返信文作成・要件確定（反映方式/権限/プレビュー/進行）/カスタムHTMLブロック用ファイル作成（HTML+CSS統合）と構造チェック/WP反映手順書テンプレート整備（`template/wordpress-guides/wp-deployment-guide.md`）/templateディレクトリ棚卸し（不要ファイル/不要ディレクトリの削除判断） | 149 |
 | README更新 | 15 |
 
 ---
@@ -68,7 +68,7 @@ lp:env=client-wordpress-lightning
    - 返信文ドラフトと確認項目の整理
 2. **Codex / Claude Code**
    - `index.html` + `styles.css` から `wp-custom-html-block.html` を生成
-   - テンプレート手順書（`template/wp-deployment-guide.md`）整備
+   - テンプレート手順書（`template/wordpress-guides/wp-deployment-guide.md`）整備
    - ディレクトリ棚卸し（不要ファイル削除）
 3. **WordPress運用想定**
    - カスタムHTMLブロック + `<style>` 同梱方式を採用
