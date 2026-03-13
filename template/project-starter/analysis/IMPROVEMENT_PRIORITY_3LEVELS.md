@@ -1,6 +1,6 @@
 # IMPROVEMENT_PRIORITY_3LEVELS
 
-> day045 の参照名に合わせた補助ファイル。実体は `IMPROVEMENT_OPTIONS_MATRIX.md` と同じ考え方で運用する。
+> 旧参照名との互換を意識した補助ファイル。実体は `IMPROVEMENT_OPTIONS_MATRIX.md` と同じ考え方で運用する。
 
 ## 3段階の返し方
 1. 軽微修正

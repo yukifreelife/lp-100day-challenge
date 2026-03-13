@@ -34,7 +34,7 @@
 15. `15_close_retainer_checklist.md`
 16. `16_handover_and_self_editing_checklist.md`
 
-## day045 から反映した原則
+## この運用で反映した原則
 - 公開方式を先に決める
 - 価格と境界を先に切る
 - 本番運用責任と所有権を先に固定する
