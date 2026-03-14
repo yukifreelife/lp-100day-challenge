@@ -34,7 +34,7 @@
   - `/Users/yuuki/Works/lp-100/day029/styles.css`
   - `/Users/yuuki/Works/lp-100/day029/script.js`
 - ドキュメント
-  - `/Users/yuuki/Works/lp-100/day029/PORTFOLIO_WORKLOG.md`
+  - `/Users/yuuki/Works/lp-100/lp100-progress/daily/day029.md`
   - `/Users/yuuki/Works/lp-100/day029/chats/chat_resume.md`
 - 画像（本番参照）
   - `/Users/yuuki/Works/lp-100/day029/images/hero-desktop-original.jpg`

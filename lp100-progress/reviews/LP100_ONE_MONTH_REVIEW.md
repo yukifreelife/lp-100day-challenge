@@ -3,7 +3,7 @@
 作成日: 2026-03-02
 対象期間: Day001 〜 Day036
 参照元:
-- Day001〜Day032の `PORTFOLIO_WORKLOG.md`
+- `lp100-progress/daily/day001.md` 〜 `lp100-progress/daily/day032.md`
 - Day033〜Day036の `README.md`
 
 ## 1. 採用する評価方法（初期記録ベース）

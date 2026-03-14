@@ -57,7 +57,7 @@ lp:env=wordpress-reflected-client-confirmed
     - `PHASE2_EXECUTION_PLAN.md` を作成
   - Day041引き継ぎを作成
     - `day041/README.md`
-    - `day041/PORTFOLIO_WORKLOG.md`
+    - `lp100-progress/daily/day041.md`
 
 ---
 
@@ -70,33 +70,33 @@ lp:env=wordpress-reflected-client-confirmed
 
 ## 主要成果物
 - 当日引き継ぎメモ
-  - `/Users/yuuki/Works/lp-100/day040/README.md`
+  - `/Users/yuuki/Works/lp-100/day041/PREVIOUS_README.md`
 - ポートフォリオ作業ログ
-  - `/Users/yuuki/Works/lp-100/day040/PORTFOLIO_WORKLOG.md`
+  - `/Users/yuuki/Works/lp-100/lp100-progress/archive/day041_previous_worklog.md`
 - クライアント返信トラッカー
-  - `/Users/yuuki/Works/lp-100/day040/CLIENT_FEEDBACK_TRACKER.md`
+  - `/Users/yuuki/Works/lp-100/day041/CLIENT_FEEDBACK_TRACKER.md`
 - 反映用HTML正本
-  - `/Users/yuuki/Works/lp-100/day040/TOP_PAGE_CUSTOM_HTML_TEMPLATE_HIGH_PRIORITY_FIX.html`
+  - `/Users/yuuki/Works/lp-100/day041/TOP_PAGE_CUSTOM_HTML_TEMPLATE_HIGH_PRIORITY_FIX.html`
 - 反映用CSS正本
-  - `/Users/yuuki/Works/lp-100/day040/WP_LAYOUT_SHIFT_FIX_HIGH_PRIORITY.css`
+  - `/Users/yuuki/Works/lp-100/day041/WP_LAYOUT_SHIFT_FIX_HIGH_PRIORITY.css`
 - WordPress反映手順
-  - `/Users/yuuki/Works/lp-100/day040/WORDPRESS_MEDIUM_LOW_FIX_STEPS.md`
+  - `/Users/yuuki/Works/lp-100/day041/WORDPRESS_MEDIUM_LOW_FIX_STEPS.md`
 - PDFフォーム差し替え手順
-  - `/Users/yuuki/Works/lp-100/day040/WORDPRESS_PDF_FORM_HOTFIX_STEPS.md`
+  - `/Users/yuuki/Works/lp-100/day041/WORDPRESS_PDF_FORM_HOTFIX_STEPS.md`
 - クライアント文面（一括コピー用）
-  - `/Users/yuuki/Works/lp-100/day040/CLIENT_MEDIUM_LOW_FIX_DONE_SEND.md`
-  - `/Users/yuuki/Works/lp-100/day040/CLIENT_PUBLIC_QUALITY_APPROVAL_ACK_SEND.md`
-  - `/Users/yuuki/Works/lp-100/day040/CLIENT_FIX_APPROVAL_ACK_SEND.md`
-  - `/Users/yuuki/Works/lp-100/day040/CLIENT_REPLY_ADDITIONAL_FEEDBACK_PROPOSAL_SEND.md`
+  - `/Users/yuuki/Works/lp-100/day041/CLIENT_MEDIUM_LOW_FIX_DONE_SEND.md`
+  - `/Users/yuuki/Works/lp-100/day041/CLIENT_PUBLIC_QUALITY_APPROVAL_ACK_SEND.md`
+  - `/Users/yuuki/Works/lp-100/day041/CLIENT_FIX_APPROVAL_ACK_SEND.md`
+  - `/Users/yuuki/Works/lp-100/day041/CLIENT_REPLY_ADDITIONAL_FEEDBACK_PROPOSAL_SEND.md`
 - PDFフォーム no-JS 正本
-  - `/Users/yuuki/Works/lp-100/day040/PDF_FORM_RECAPTCHA_NOTE_OWNER_EMAIL.html`
+  - `/Users/yuuki/Works/lp-100/day041/PDF_FORM_RECAPTCHA_NOTE_OWNER_EMAIL.html`
 - Phase2 / Phase3 再開バックログ
-  - `/Users/yuuki/Works/lp-100/day040/PHASE2_PHASE3_RESTART_BACKLOG.md`
+  - `/Users/yuuki/Works/lp-100/day041/PHASE2_PHASE3_RESTART_BACKLOG.md`
 - Phase2 着手計画
-  - `/Users/yuuki/Works/lp-100/day040/PHASE2_EXECUTION_PLAN.md`
+  - `/Users/yuuki/Works/lp-100/day041/PHASE2_EXECUTION_PLAN.md`
 - Day041引き継ぎ
   - `/Users/yuuki/Works/lp-100/day041/README.md`
-  - `/Users/yuuki/Works/lp-100/day041/PORTFOLIO_WORKLOG.md`
+  - `/Users/yuuki/Works/lp-100/lp100-progress/daily/day041.md`
 
 ---
 

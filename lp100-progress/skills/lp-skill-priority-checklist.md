@@ -1,7 +1,7 @@
 # LP Skill Priority Checklist (Small Start)
 
 Updated: 2026-02-25  
-Reference: `/Users/yuuki/Works/lp-100/lp-skill-priority-matrix.md`
+Reference: `/Users/yuuki/Works/lp-100/lp100-progress/skills/lp-skill-priority-matrix.md`
 
 ## 使い方
 

@@ -27,7 +27,7 @@
 - PDF導線の役割整理をPhase2検討項目として確定
 
 ## Day040でやること（最優先）
-1. クライアント返信内容を `CLIENT_FEEDBACK_TRACKER.md` と `PORTFOLIO_WORKLOG.md` に記録する。
+1. クライアント返信内容を `CLIENT_FEEDBACK_TRACKER.md` と `lp100-progress/archive/day041_previous_worklog.md` に記録する。
 2. 公開品質OK受領への返信が必要なら送る。
 3. Phase2候補（計測タグ / PDF導線役割整理 / 微調整候補）を整理する。
 4. JS注入経路の再確認と、計測復旧の着手順を決める。
@@ -42,7 +42,7 @@
 - 引き継ぎメモ:
   `/Users/yuuki/Works/lp-100/day041/PREVIOUS_README.md`
 - ポートフォリオ作業ログ:
-  `/Users/yuuki/Works/lp-100/day041/PREVIOUS_PORTFOLIO_WORKLOG.md`
+  `/Users/yuuki/Works/lp-100/lp100-progress/archive/day041_previous_worklog.md`
 - クライアント返信トラッカー:
   `/Users/yuuki/Works/lp-100/day041/CLIENT_FEEDBACK_TRACKER.md`
 - 追加3点の反映手順:

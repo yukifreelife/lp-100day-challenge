@@ -50,7 +50,7 @@
 - Day040引き継ぎメモ:
   `/Users/yuuki/Works/lp-100/day041/PREVIOUS_README.md`
 - Day040ポートフォリオ作業ログ:
-  `/Users/yuuki/Works/lp-100/day041/PREVIOUS_PORTFOLIO_WORKLOG.md`
+  `/Users/yuuki/Works/lp-100/lp100-progress/archive/day041_previous_worklog.md`
 - クライアント返信トラッカー:
   `/Users/yuuki/Works/lp-100/day041/CLIENT_FEEDBACK_TRACKER.md`
 - Phase2 / Phase3 再開バックログ:

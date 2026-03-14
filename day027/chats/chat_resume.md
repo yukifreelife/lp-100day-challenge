@@ -35,7 +35,7 @@
   - `/Users/yuuki/Works/lp-100/day027/index.html`
   - `/Users/yuuki/Works/lp-100/day027/styles.css`
 - 仕様サマリー
-  - `/Users/yuuki/Works/lp-100/day027/PORTFOLIO_WORKLOG.md`
+  - `/Users/yuuki/Works/lp-100/lp100-progress/daily/day027.md`
 - スクリーンショット（最新）
   - `/Users/yuuki/Works/lp-100/day027/day027PC.png`
   - `/Users/yuuki/Works/lp-100/day027/day027PCFV.png`

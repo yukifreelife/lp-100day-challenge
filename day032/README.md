@@ -118,7 +118,7 @@ cd /Users/yuuki/Works/lp-100/day032
 - 旧版ZIP（rev1 / rev2 / rev3）は参照用として保持
 - ドキュメントの役割を分離
   - `README.md`: 案件運用・提出判断用
-  - `PORTFOLIO_WORKLOG.md`: 制作実績/作業時間の記録用
+  - `/Users/yuuki/Works/lp-100/lp100-progress/daily/day032.md`: 制作実績/作業時間の記録用
 
 ---
 

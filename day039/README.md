@@ -38,7 +38,7 @@
 - 引き継ぎメモ:
   `/Users/yuuki/Works/lp-100/day039/README.md`
 - ポートフォリオ作業ログ:
-  `/Users/yuuki/Works/lp-100/day039/PORTFOLIO_WORKLOG.md`
+  `/Users/yuuki/Works/lp-100/lp100-progress/daily/day039.md`
 - クライアント返信トラッカー:
   `/Users/yuuki/Works/lp-100/day039/CLIENT_FEEDBACK_TRACKER.md`
 - 追加3点の対応着手連絡文面（一括コピー用）:
@@ -72,6 +72,6 @@
 
 ## 参照ファイル
 - `/Users/yuuki/Works/lp-100/day038/README.md`
-- `/Users/yuuki/Works/lp-100/day038/PORTFOLIO_WORKLOG.md`
+- `/Users/yuuki/Works/lp-100/lp100-progress/daily/day038.md`
 - `/Users/yuuki/Works/lp-100/day038/CLIENT_FEEDBACK_TRACKER.md`
 - `/Users/yuuki/Works/lp-100/day038/PHASE2_PHASE3_RESTART_BACKLOG.md`

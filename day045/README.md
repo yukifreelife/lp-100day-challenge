@@ -113,5 +113,5 @@
 - `/Users/yuuki/Works/lp-100/day045/MEASUREMENT_REVIEW_OBSERVATION_LOG.md`
 - `/Users/yuuki/Works/lp-100/day045/CLIENT_FEEDBACK_TRACKER.md`
 - `/Users/yuuki/Works/lp-100/day045/NEXT_PHASE_SCOPE_AND_PRICING.md`
-- `/Users/yuuki/Works/lp-100/day045/PORTFOLIO_WORKLOG.md`
+- `/Users/yuuki/Works/lp-100/lp100-progress/daily/day045.md`
 - `/Users/yuuki/Works/lp-100/estimate/2026-03-10_ESTIMATE_DRAFT.md`

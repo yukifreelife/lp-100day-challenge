@@ -132,7 +132,7 @@
   - 最新版: `day032_client_submission_rev3_1_20260226.zip`（CLIENT_READMEチェックリスト追記版）
 - ドキュメント運用
   - 案件向け説明は `README.md`
-  - ポートフォリオ向け作業ログは `PORTFOLIO_WORKLOG.md`
+  - ポートフォリオ向け作業ログは `/Users/yuuki/Works/lp-100/lp100-progress/daily/day032.md`
 - Day033開始時の優先順
   1. クライアントへA/B案（ZIP or WordPress）の最終確認
   2. WordPress選択時はドメイン/ホスティング情報の取得と移行スコープ確定
