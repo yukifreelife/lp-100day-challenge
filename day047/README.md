@@ -29,6 +29,7 @@
 - クライアント設定の正本は `CLIENT_ROLE_PROMPT.md`
 - 実装正本は `current/`
 - handoff と日次ログは `logs/`
+- クライアント受信文面は `client_messages/`
 - 送付文面は `client/`
 - 進行管理は `ops/`
 - 計測、レビュー、改善整理は `analysis/`
