@@ -28,7 +28,8 @@
 ## 正本ルール
 - クライアント設定の正本は `CLIENT_ROLE_PROMPT.md`
 - 実装正本は `current/`
-- handoff と日次ログは `logs/`
+- handoff / restart brief は `logs/`
+- LP-100チャレンジの日次進捗ログ正本は `/Users/yuuki/Works/lp-100/lp100-progress/daily/`
 - クライアント受信文面は `client_messages/`
 - 送付文面は `client/`
 - 進行管理は `ops/`
