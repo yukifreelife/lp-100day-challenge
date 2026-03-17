@@ -5,11 +5,13 @@
 - Reduce accidental deletion, overwrite, or template replacement of important project files.
 
 ## Protected Paths
-- `day*/CLIENT_ROLE_PROMPT.md`
-- `day*/logs/`
-- `lp100-progress/daily/`
+- `day046+/CLIENT_ROLE_PROMPT.md` (Standard structure for clientwork days)
+- `day046+/logs/` (Handoff / restart brief for clientwork days)
+- `lp100-progress/daily/` (All daily progress logs: day001.md〜)
 - `template/clientwork-checklists/`
 - `template/project-starter/`
+
+**Note**: Standard clientwork structure (CLIENT_ROLE_PROMPT.md, logs/) was introduced from day046. Earlier days (day001〜day045) use a simpler structure for LP learning/exploration.
 
 ## Protection Rules
 - Do not delete protected files or directories.
@@ -27,7 +29,7 @@
   - bulk renames affecting protected paths
 
 ## Client Role File Rule
-- `day*/CLIENT_ROLE_PROMPT.md` is a protected source file for client-role settings.
+- `day046+/CLIENT_ROLE_PROMPT.md` is a protected source file for client-role settings (standard structure for clientwork days).
 - If a day directory already has a detailed `CLIENT_ROLE_PROMPT.md`, do not simplify it to a template outline.
 - If a new day directory is created from a starter template, preserve or restore the detailed client-role file when one already exists for that active project.
 
@@ -37,5 +39,5 @@
 - Do not delete or reset prior daily logs.
 
 ## Handoff Rule
-- Use `day*/logs/HANDOFF_LOG.md` for decisions, risks, changes, and next actions.
+- Use `day046+/logs/HANDOFF_LOG.md` for decisions, risks, changes, and next actions (standard structure for clientwork days).
 - When work is paused and will resume in a later day directory, create or update a restart brief in the relevant `logs/` directory.
