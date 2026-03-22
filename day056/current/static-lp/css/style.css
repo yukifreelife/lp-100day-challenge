@@ -1,0 +1,350 @@
+/* ===================================
+   リセット・基本設定
+   =================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* カラー */
+    --color-primary: #2563eb;
+    --color-primary-dark: #1d4ed8;
+    --color-text: #1f2937;
+    --color-text-light: #6b7280;
+    --color-bg: #ffffff;
+    --color-bg-light: #f9fafb;
+    --color-border: #e5e7eb;
+
+    /* フォント */
+    --font-base: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+
+    /* スペース */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+
+    /* コンテナ幅 */
+    --container-width: 960px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-base);
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ===================================
+   レイアウト
+   =================================== */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.section {
+    padding: var(--space-xl) 0;
+}
+
+.section:nth-child(even) {
+    background-color: var(--color-bg-light);
+}
+
+/* ===================================
+   FV（ヒーローセクション）
+   =================================== */
+.fv {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: #ffffff;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.fv-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.fv-title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: var(--space-md);
+}
+
+.fv-subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 400;
+    margin-bottom: var(--space-xl);
+    opacity: 0.95;
+}
+
+.fv-cta {
+    margin-top: var(--space-lg);
+}
+
+/* ===================================
+   ボタン
+   =================================== */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: var(--color-primary);
+}
+
+.btn-primary:hover {
+    background-color: #f9fafb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-large {
+    padding: 1.25rem 3rem;
+    font-size: 1.125rem;
+}
+
+/* ===================================
+   セクションタイトル
+   =================================== */
+.section-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+/* ===================================
+   リスト
+   =================================== */
+.list-troubles,
+.list-services,
+.profile-list {
+    max-width: 700px;
+    margin: var(--space-md) auto;
+}
+
+.list-troubles li,
+.list-services li,
+.profile-list li,
+.case-list,
+.cta-list {
+    padding: 0.75rem 0 0.75rem 1.5rem;
+    position: relative;
+    line-height: 1.8;
+}
+
+.list-troubles li::before,
+.list-services li::before,
+.profile-list li::before,
+.case-list li::before,
+.cta-list li::before {
+    content: "・";
+    position: absolute;
+    left: 0;
+}
+
+/* ===================================
+   強調テキスト
+   =================================== */
+.emphasis {
+    background: linear-gradient(transparent 60%, #fef3c7 60%);
+    padding: 0 0.25rem;
+    font-weight: 500;
+}
+
+/* ===================================
+   事例セクション
+   =================================== */
+.case-item {
+    max-width: 800px;
+    margin: 0 auto var(--space-xl);
+    padding: var(--space-lg);
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.case-item:last-child {
+    margin-bottom: 0;
+}
+
+.case-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    color: var(--color-primary);
+}
+
+.case-content {
+    display: grid;
+    gap: var(--space-md);
+}
+
+.case-block {
+    padding: var(--space-md);
+    background-color: var(--color-bg-light);
+    border-radius: 8px;
+}
+
+.case-block-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+.case-list {
+    margin: 0;
+}
+
+.case-list li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+}
+
+/* ===================================
+   プロフィールセクション
+   =================================== */
+.profile-block {
+    max-width: 700px;
+    margin: var(--space-md) auto;
+    padding: var(--space-md);
+    background-color: var(--color-bg-light);
+    border-radius: 8px;
+}
+
+.profile-block-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+.profile-list {
+    margin: 0;
+}
+
+/* ===================================
+   CTAセクション
+   =================================== */
+.cta {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: #ffffff;
+    text-align: center;
+}
+
+.cta .section-title {
+    color: #ffffff;
+}
+
+.cta-block {
+    max-width: 500px;
+    margin: 0 auto var(--space-md);
+    padding: var(--space-md);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.cta-block-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+.cta-list {
+    margin: 0;
+}
+
+.cta-list li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+}
+
+.cta-button {
+    margin-top: var(--space-lg);
+}
+
+.cta .btn-primary {
+    background-color: #ffffff;
+    color: var(--color-primary);
+}
+
+/* ===================================
+   フッター
+   =================================== */
+.footer {
+    padding: var(--space-lg) 0;
+    background-color: #1f2937;
+    color: #9ca3af;
+    text-align: center;
+}
+
+.footer-copyright {
+    font-size: 0.875rem;
+}
+
+/* ===================================
+   レスポンシブ
+   =================================== */
+@media (max-width: 768px) {
+    :root {
+        --space-xs: 0.5rem;
+        --space-sm: 0.75rem;
+        --space-md: 1rem;
+        --space-lg: 1.5rem;
+        --space-xl: 2rem;
+    }
+
+    .section {
+        padding: var(--space-lg) 0;
+    }
+
+    .fv {
+        padding: 80px 0;
+    }
+
+    .case-item {
+        padding: var(--space-md);
+    }
+
+    .case-content {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
