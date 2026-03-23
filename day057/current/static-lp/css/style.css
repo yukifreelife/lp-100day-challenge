@@ -42,8 +42,8 @@ html {
 
 body {
     font-family: var(--font-base);
-    font-size: 16px;
-    line-height: 1.8;
+    font-size: 17px;
+    line-height: 1.75;
     color: var(--color-text);
     background-color: var(--color-bg);
     -webkit-font-smoothing: antialiased;
@@ -212,9 +212,9 @@ ul {
 }
 
 .fv-title {
-    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-size: clamp(1.875rem, 4vw, 2.875rem);
     font-weight: 700;
-    line-height: 1.4;
+    line-height: 1.35;
     margin-bottom: var(--space-md);
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
@@ -267,7 +267,7 @@ ul {
    セクションタイトル
    =================================== */
 .section-title {
-    font-size: clamp(1.5rem, 3vw, 2.125rem);
+    font-size: clamp(1.625rem, 3vw, 2.25rem);
     font-weight: 700;
     text-align: center;
     margin-bottom: var(--space-lg);
@@ -787,9 +787,71 @@ ul {
     }
 }
 
-.section > .container > * {
-    animation: fadeInUp 0.6s ease-out;
+/* セクション内の要素に段階的なアニメーションを適用 */
+.section > .container > *:nth-child(1) {
+    animation: fadeInUp 0.6s ease-out 0.1s backwards;
 }
+
+.section > .container > *:nth-child(2) {
+    animation: fadeInUp 0.6s ease-out 0.2s backwards;
+}
+
+.section > .container > *:nth-child(3) {
+    animation: fadeInUp 0.6s ease-out 0.3s backwards;
+}
+
+.section > .container > *:nth-child(4) {
+    animation: fadeInUp 0.6s ease-out 0.4s backwards;
+}
+
+.section > .container > *:nth-child(5) {
+    animation: fadeInUp 0.6s ease-out 0.5s backwards;
+}
+
+.section > .container > *:nth-child(n+6) {
+    animation: fadeInUp 0.6s ease-out 0.6s backwards;
+}
+
+/* FVセクションのアニメーション */
+.fv-title {
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+.fv-subtitle {
+    animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+.fv-cta {
+    animation: fadeInUp 0.8s ease-out 0.6s backwards;
+}
+
+/* リスト項目のアニメーション */
+.list-troubles li,
+.list-services li {
+    animation: fadeInUp 0.4s ease-out backwards;
+}
+
+.list-troubles li:nth-child(1) { animation-delay: 0.1s; }
+.list-troubles li:nth-child(2) { animation-delay: 0.15s; }
+.list-troubles li:nth-child(3) { animation-delay: 0.2s; }
+.list-troubles li:nth-child(4) { animation-delay: 0.25s; }
+.list-troubles li:nth-child(5) { animation-delay: 0.3s; }
+.list-troubles li:nth-child(6) { animation-delay: 0.35s; }
+
+.list-services li:nth-child(1) { animation-delay: 0.1s; }
+.list-services li:nth-child(2) { animation-delay: 0.15s; }
+.list-services li:nth-child(3) { animation-delay: 0.2s; }
+.list-services li:nth-child(4) { animation-delay: 0.25s; }
+.list-services li:nth-child(5) { animation-delay: 0.3s; }
+.list-services li:nth-child(6) { animation-delay: 0.35s; }
+
+/* 事例ブロックのアニメーション */
+.case-block {
+    animation: fadeInUp 0.5s ease-out backwards;
+}
+
+.case-block:nth-child(1) { animation-delay: 0.1s; }
+.case-block:nth-child(2) { animation-delay: 0.2s; }
 
 /* ===================================
    レスポンシブ
