@@ -14,24 +14,46 @@
 
 ## タスク
 
-- [x] 引き継ぎ文档作成
-- [ ] クライアント役へLP共有メッセージ送信
-- [ ] クライアントフィードバックの分析・整理
-- [ ] 改善内容の実装
-- [ ] （余裕があれば）OGP設定・お客様の声セクション追加
+- [x] 引き継ぎ文章作成
+- [x] クライアント役へLP共有メッセージ送信
+- [x] クライアントフィードバックの分析・整理
+- [x] 改善内容の実装
+- [x] OGP設定追加
+- [x] お客様の声セクション見送り
+
+---
+
+## 調整対応内容
+
+| 項目 | 内容 | 状態 |
+|------|------|------|
+| 事例の数値 | 強調しすぎない形に維持 | ✅ 完了 |
+| お客様の声 | 素材不足のため見送り | ✅ 完了 |
+| 本文中CTA | 2箇所に追加（自然な形） | ✅ 完了 |
+| アニメーション | 控えめに調整（10px、0.3-0.4s） | ✅ 完了 |
+| OGP設定 | SNSシェア対応として追加 | ✅ 完了 |
 
 ---
 
 ## 現在のLP状態
 
 - **URL**: http://localhost:8081
-- **状態**: 静的LP完成、デザイン改善済み
+- **状態**: 調整完了、クライアント最終確認待ち
 - **評価**: ★★★☆☆（3.4/5）
+
+---
+
+## スクリーンショット
+
+- PC版Fイストビュー: `day058PCFV.png`
+- PC版全体: `day058PC.png`
+- スマホ版Fイストビュー: `day058SPFV.png`
+- スマホ版全体: `day058SP.png`
 
 ---
 
 ## 関連ファイル
 
-- 引き継ぎ: `/Users/yuuki/Works/lp-100/day058/RESTART_BRIEF.md`
-- 共有メッセージ草案: `/Users/yuuki/Works/lp-100/day057/client/CLIENT_REPLY_025_PROGRESS_SHARE.md`
-- LP評価プロンプト: `/Users/yuuki/Works/lp-100/day057/ops/LP_EVALUATION_PROMPT.md`
+- 引き継ぎ: `/Users/yuuki/Works/lp-100/day058/logs/HANDOFF_LOG.md`
+- 調整完了メッセージ: `/Users/yuuki/Works/lp-100/day058/client/CLIENT_REPLY_026_FEEDBACK_ACK_AND_ADJUSTMENT.md`
+- 静的LP: `/Users/yuuki/Works/lp-100/day058/current/static-lp/`
