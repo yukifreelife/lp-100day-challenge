@@ -21,11 +21,17 @@ function lp_manufacturing_recruitment_setup() {
 
     // アイキャッチ画像を有効化
     add_theme_support( 'post-thumbnails' );
-
-    // OGP対応
-    add_theme_support( 'ogp' );
 }
 add_action( 'after_setup_theme', 'lp_manufacturing_recruitment_setup' );
+
+// LP用のタイトルを設定
+function lp_manufacturing_recruitment_document_title( $title ) {
+    if ( is_home() || is_front_page() ) {
+        $title['title'] = '製造業の採用で、何から見直せばいいか分からないとき | ミチル採用企画';
+    }
+    return $title;
+}
+add_filter( 'document_title_parts', 'lp_manufacturing_recruitment_document_title' );
 
 // スクリプトとスタイルの読み込み
 function lp_manufacturing_recruitment_scripts() {
