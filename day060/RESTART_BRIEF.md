@@ -13,10 +13,19 @@
 - すべての画像をローカル化（外部画像なし）
 - CSS修正：箇条書きの点の位置合わせ（top: 1.2rem）
 - 画像のWeb用最適化完了
+- **ファイルサイズ最適化完了（34MB → 4MB）**
 
 ### 最新テーマ
-- **ファイル**: `day060/current/lp-manufacturing-recruitment-v11.zip`
-- **サイズ**: 34MB
+- **ファイル**: `day060/current/lp-manufacturing-recruitment-v12.zip`
+- **サイズ**: 4MB（約88%削減）
+
+### ファイルサイズ最適化詳細
+- 未使用画像を削除（8枚、約26MB削減）
+- 使用画像をWeb用に圧縮（品質50-70%）
+  - 03_hands_desk_office.jpg: 4.7MB → 1.3MB
+  - 04_handshake.jpg: 2.5MB → 0.8MB
+  - case2_client.jpg: 2.0MB → 0.8MB
+- WordPressアップロード上限（通常2-10MB）に対応
 
 ---
 
@@ -27,10 +36,10 @@
 
 ファイルの場所: `day060/client/CLIENT_REPLY_038_IMAGE_FIX_COMPLETE.md`
 
-件名: `Re: WordPressテーマのご納品（最終版）`
+件名: `Re: WordPressテーマのご納品（ファイルサイズ最適化版）`
 
 ### 添付ファイル
-- `day060/current/lp-manufacturing-recruitment-v11.zip`
+- `day060/current/lp-manufacturing-recruitment-v12.zip`
 
 ---
 
@@ -57,7 +66,7 @@
 
 ### テーマファイル場所
 - `day060/current/wp-theme/`
-- `day060/current/lp-manufacturing-recruitment-v11.zip`
+- `day060/current/lp-manufacturing-recruitment-v12.zip`
 
 ---
 
@@ -93,7 +102,8 @@
 | v8 | CSS修正（点の色） |
 | v9 | 点の上下位置調整(0.55rem) |
 | v10 | 点の上下位置調整(0.55rem→確認) |
-| **v11** | 点の上下位置調整(1.2rem、最終版) |
+| v11 | 点の上下位置調整(1.2rem) |
+| **v12** | ファイルサイズ最適化版（34MB→4MB、最終版） |
 
 ---
 
@@ -111,8 +121,8 @@
 
 | ファイル | 内容 |
 |---|---|
-| `day060/client/CLIENT_REPLY_038_IMAGE_FIX_COMPLETE.md` | 送信するメッセージ |
-| `day060/current/lp-manufacturing-recruitment-v11.zip` | 添付テーマ |
+| `day060/client/CLIENT_REPLY_038_IMAGE_FIX_COMPLETE.md` | 送信するメッセージ（v12対応済） |
+| `day060/current/lp-manufacturing-recruitment-v12.zip` | 添付テーマ（4MB） |
 | `day060/current/wp-theme/` | テーマソース |
 | `day060/logs/HANDOFF_LOG.md` | 作業履歴 |
 
