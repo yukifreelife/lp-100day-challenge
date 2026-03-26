@@ -103,7 +103,7 @@ get_header();
             </div>
             <div class="case-content-wrapper">
                 <div class="case-image">
-                    <img src="https://images.unsplash.com/photo-1565042796608-18b86047b33d?w=600&q=80" alt="部品加工の現場" class="section-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/case1_parts_factory.jpg" alt="部品加工の現場" class="section-image">
                 </div>
                 <div class="case-content">
                     <div class="case-block case-block-before">
@@ -138,7 +138,7 @@ get_header();
                     </div>
                 </div>
                 <div class="case-image">
-                    <img src="https://images.unsplash.com/photo-1530899979064-83ef65537324?w=600&q=80" alt="製造業のチーム" class="section-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/case2_manufacturing_team.jpg" alt="製造業のチーム" class="section-image">
                 </div>
             </div>
         </div>
