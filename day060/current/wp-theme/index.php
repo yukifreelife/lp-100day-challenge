@@ -11,7 +11,7 @@ get_header();
 <!-- FV（ヒーローセクション） -->
 <section class="fv" id="top">
     <div class="fv-bg">
-        <img src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?w=1920&q=80" alt="製造業の現場" class="fv-bg-image">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/fv_client.jpg" alt="製造業の現場" class="fv-bg-image">
     </div>
     <div class="fv-container">
         <h1 class="fv-title">製造業の採用で、<br>まずやるべきことが見えてくる</h1>
@@ -40,7 +40,7 @@ get_header();
                 </ul>
             </div>
             <div class="troubles-image">
-                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80" alt="ビジネスパーソンが悩む様子" class="section-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/troubles_client.jpg" alt="よくある相談内容" class="section-image">
             </div>
         </div>
 
@@ -60,7 +60,7 @@ get_header();
         <h2 class="section-title">相談で整理できること</h2>
         <div class="services-grid">
             <div class="services-image">
-                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="相談の様子" class="section-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/03_hands_desk_office.jpg" alt="相談の様子" class="section-image">
             </div>
             <div class="services-content">
                 <p>製造業の採用課題は、会社ごとに状況が異なります。<br>
@@ -138,7 +138,7 @@ get_header();
                     </div>
                 </div>
                 <div class="case-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/case2_manufacturing_team.jpg" alt="製造業のチーム" class="section-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/case2_client.jpg" alt="発信内容の一貫性づくり" class="section-image">
                 </div>
             </div>
         </div>
@@ -157,7 +157,7 @@ get_header();
         <h2 class="section-title">ごあいさつ</h2>
         <div class="profile-grid">
             <div class="profile-image">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="プロフィール画像" class="profile-photo">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/profile_client.jpg" alt="プロフィール画像" class="profile-photo">
             </div>
             <div class="profile-content">
                 <p class="profile-intro">ミチル採用企画と申します。<br>
@@ -215,7 +215,7 @@ get_header();
                 まずは現状整理の時間としてご相談いただけます。</p>
             </div>
             <div class="flow-image">
-                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80" alt="オンライン相談の様子" class="section-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/09_paperless_desk.jpg" alt="オンライン相談の様子" class="section-image">
             </div>
         </div>
     </div>
@@ -224,7 +224,7 @@ get_header();
 <!-- CTAセクション -->
 <section class="section cta" id="contact">
     <div class="cta-bg">
-        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80" alt="パートナーシップ" class="cta-bg-image">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/04_handshake.jpg" alt="パートナーシップ" class="cta-bg-image">
     </div>
     <div class="container">
         <h2 class="section-title">採用課題の整理から、一緒に始められます</h2>
