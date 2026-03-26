@@ -967,6 +967,84 @@ ul {
     }
 }
 
+/* ===================================
+   お問い合わせフォーム（Contact Form 7）
+   =================================== */
+.wpcf7 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.wpcf7-form {
+    text-align: left;
+}
+
+.wpcf7 p {
+    margin-bottom: var(--space-sm);
+}
+
+.wpcf7 label {
+    display: block;
+    margin-bottom: var(--space-xs);
+    font-weight: 500;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"],
+.wpcf7 textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.wpcf7 input[type="submit"] {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+}
+
+.wpcf7 input[type="submit"]:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+/* ===================================
+   レスポンシブ
+   =================================== */
+@media (max-width: 768px) {
+    /* CTAセクションのモバイル対応 */
+    .cta-blocks {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .list-troubles li,
+    .list-services li {
+        padding: var(--space-xs) var(--space-sm) var(--space-xs) 2.25rem;
+    }
+
+    .profile-block {
+        padding: var(--space-md);
+    }
+}
+
 @media (max-width: 480px) {
     .fv-title {
         font-size: 1.5rem;
