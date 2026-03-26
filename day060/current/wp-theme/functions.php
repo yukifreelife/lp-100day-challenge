@@ -83,8 +83,8 @@ add_action( 'wp_head', 'lp_manufacturing_recruitment_ogp' );
 function lp_manufacturing_recruitment_contact_form() {
     // Contact Form 7 が有効な場合のみ
     if ( function_exists( 'wpcf7_contact_form' ) ) {
-        // 実際のフォームIDに合わせて変更してください
-        $form_id = 0; // ここにContact Form 7のフォームIDを指定
+        // Contact Form 7 のフォームID
+        $form_id = 125; // ミチル採用企画様フォームID
         $contact_form = wpcf7_contact_form( $form_id );
 
         if ( $contact_form ) {
