@@ -1,62 +1,119 @@
-# Day 060 Restart Brief
+# RESTART_BRIEF.md
 
-**Restarting?** Read this first.
-
----
-
-## Current Status
-
-Day 060 is in progress: WordPress theme client delivery phase.
+**日付**: 2026-03-26
+**次回開始**: 2026-03-27
 
 ---
 
-## What We're Doing
+## セッション終了時点
 
-Delivering the WordPress theme to the client (ミチル採用企画 秋山様) for the manufacturing recruitment LP.
+### 作業完了内容
+- WordPressテーマ「LP Manufacturing Recruitment」の調整完了
+- クライアント提供画像の反映済み（FV、よくある相談内容、事例2、ごあいさつ）
+- すべての画像をローカル化（外部画像なし）
+- CSS修正：箇条書きの点の位置合わせ（top: 1.2rem）
+- 画像のWeb用最適化完了
 
----
-
-## Key Context
-
-**Project**: 製造業向け採用支援サービス LP
-**Client**: ミチル採用企画 秋山様
-**Deliverable**: WordPress自作テーマ
-
-**From Day 059**:
-- WordPress theme completed: "LP Manufacturing Recruitment"
-- Code review completed (functions.php, header.php fixes)
-- Local testing passed
-- Installation guide created: `day059/ops/INSTALLATION_GUIDE.md`
-- Client delivery message: `day059/client/CLIENT_REPLY_028_THEME_DELIVERY.md`
-
-**Client Status**:
-- Approved draft design: "大きな違和感はない"
-- Requested final confirmation before production: "本番反映前の段階で、改めて最終確認をさせていただければ"
+### 最新テーマ
+- **ファイル**: `day060/current/lp-manufacturing-recruitment-v11.zip`
+- **サイズ**: 34MB
 
 ---
 
-## Current Files
+## 明日の作業開始地点
 
-**Theme**: `day059/current/wp-theme/` (or copied to `day060/current/`)
-**Package**: `day059/current/lp-manufacturing-recruitment.zip`
-**Install Guide**: `day059/ops/INSTALLATION_GUIDE.md`
-**Client Message**: `day059/client/CLIENT_REPLY_028_THEME_DELIVERY.md`
+### 最初のタスク
+**CLIENT_REPLY_038 の内容をクライアントに送信する**
 
----
+ファイルの場所: `day060/client/CLIENT_REPLY_038_IMAGE_FIX_COMPLETE.md`
 
-## Next Actions
+件名: `Re: WordPressテーマのご納品（最終版）`
 
-1. Review client delivery message
-2. Share theme package with client
-3. Coordinate preview environment testing
-4. Address any client feedback
-5. Production deployment
-6. Complete project documentation
+### 添付ファイル
+- `day060/current/lp-manufacturing-recruitment-v11.zip`
 
 ---
 
-## Handoff Log
+## クライアント情報
 
-See `day059/logs/HANDOFF_LOG.md` for full history.
+- **名前**: ミチル採用企画 秋山様
+- **案件**: 製造業向け採用支援サービス LP WordPressテーマ化
+
+---
+
+## テーマ構成
+
+### 画像一覧
+| セクション | 画像 | 状態 |
+|---|---|---|
+| FV背景 | クライアント提供画像(FV.jpg) | ローカル |
+| よくある相談内容 | クライアント提供画像 | ローカル |
+| 整理できること | デスク作業画像 | ローカル |
+| 支援事例1 | 部品加工の現場 | ローカル |
+| 支援事例2 | クライアント提供画像(事例２.jpg) | ローカル |
+| ごあいさつ | クライアント提供画像(ごあいさつ.jpg) | ローカル |
+| 相談の流れ | PCとデスク作業環境 | ローカル |
+| CTA背景 | 握手 | ローカル |
+
+### テーマファイル場所
+- `day060/current/wp-theme/`
+- `day060/current/lp-manufacturing-recruitment-v11.zip`
+
+---
+
+## CSS修正履歴
+
+### 箇条書きの点の位置合わせ
+**ファイル**: `day060/current/wp-theme/style.css`
+
+```css
+.profile-list li::before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    top: 1.2rem;  /* クライアントの検証で1.2remが最適と判明 */
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+}
+```
+
+---
+
+## リリース版の履歴
+
+| バージョン | 内容 |
+|---|---|
+| v3 | 事例画像差し替え版 |
+| v4 | 一部画像ローカル化 |
+| v5 | 全画像ローカル化 |
+| v6 | クライアント画像反映版 |
+| v7 | 画像最適化版 |
+| v8 | CSS修正（点の色） |
+| v9 | 点の上下位置調整(0.55rem) |
+| v10 | 点の上下位置調整(0.55rem→確認) |
+| **v11** | 点の上下位置調整(1.2rem、最終版) |
+
+---
+
+## 次回以降のタスク
+
+1. ✅ CLIENT_REPLY_038送信
+2. ⏳ クライアントからのフィードバック待ち
+3. ⏳ 必要に応じて追加修正対応
+4. ⏳ 本番反映調整
+5. ⏳ プロジェクト完了
+
+---
+
+## 重要ファイル
+
+| ファイル | 内容 |
+|---|---|
+| `day060/client/CLIENT_REPLY_038_IMAGE_FIX_COMPLETE.md` | 送信するメッセージ |
+| `day060/current/lp-manufacturing-recruitment-v11.zip` | 添付テーマ |
+| `day060/current/wp-theme/` | テーマソース |
+| `day060/logs/HANDOFF_LOG.md` | 作業履歴 |
 
 ---
