@@ -21,18 +21,19 @@
 2. `02_kickoff_meeting_checklist.md`
 3. `03_requirements_definition_checklist.md`
 4. `04_scope_estimate_contract_checklist.md`
-5. `05_delivery_architecture_checklist.md`
+5. `05_delivery_architecture_checklist.md` （WordPress案件用項目追加済み）
 6. `06_account_access_and_ownership_checklist.md`
 7. `07_copy_materials_legal_checklist.md`
-8. `08_build_internal_qa_checklist.md`
+8. `08_build_internal_qa_checklist.md` （WordPress案件用項目追加済み）
 9. `09_prelaunch_release_checklist.md`
 10. `10_backup_and_rollback_checklist.md`
-11. `11_post_release_stabilize_checklist.md`
+11. `11_post_release_stabilize_checklist.md` （WordPress案件用項目追加済み）
 12. `12_revision_request_intake_checklist.md`
 13. `13_measurement_setup_checklist.md`
 14. `14_review_reporting_checklist.md`
 15. `15_close_retainer_checklist.md`
 16. `16_handover_and_self_editing_checklist.md`
+17. `17_image_management_checklist.md` （新規）
 
 ## この運用で反映した原則
 - 公開方式を先に決める

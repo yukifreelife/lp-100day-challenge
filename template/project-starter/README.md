@@ -39,9 +39,17 @@
 - `current/`
 - `logs/`
 - `client_messages/`
-- `ops/`
-- `analysis/`
+- `ops/` - 進行管理用ファイル
+  - `INSTALLATION_GUIDE.md` - WordPressテーマインストール手順（新規）
+  - `BACKUP_ROLLBACK_GUIDE.md` - バックアップ・ロールバック手順（新規）
+  - `CONTACT_FORM_7_SETUP_GUIDE.md` - CF7連携手順（新規）
+- `analysis/` - 計測・レビュー・改善整理
+  - `LESSONS_LEARNED_TEMPLATE.md` - 振り返り用テンプレート（新規）
+  - `PROJECT_RISK_ASSESSMENT.md` - リスク管理テンプレート（新規）
 - `client/`
+- `client_messages/` - クライアントコミュニケーション管理
+  - `MESSAGE_TEMPLATE_COLLECTION.md` - メッセージテンプレート集（新規）
+  - `RESPONSE_PATTERN_GUIDE.md` - 回答パターン集（新規）
 
 ## 最初の30分で触る順
 1. `ops/PROJECT_INTAKE_CHECKLIST.md`
