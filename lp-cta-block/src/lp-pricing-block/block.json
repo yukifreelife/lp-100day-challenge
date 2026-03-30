@@ -1,0 +1,113 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "lp-blocks/pricing",
+	"version": "0.1.0",
+	"title": "LP Pricing",
+	"category": "layout",
+	"icon": "cart",
+	"description": "LP向けの料金プランセクションブロック。",
+	"attributes": {
+		"heading": {
+			"type": "string",
+			"default": "料金プラン"
+		},
+		"subheading": {
+			"type": "string",
+			"default": "お客様に合わせたプランをご用意しました"
+		},
+		"plans": {
+			"type": "array",
+			"default": [
+				{
+					"name": "ライト",
+					"price": "9,800",
+					"currency": "円",
+					"period": "/月",
+					"description": "個人事業主・小規模向け",
+					"features": [
+						"基本機能すべて",
+						"最大5ページ",
+						"メールサポート"
+					],
+					"featured": false,
+					"buttonText": "このプランを選ぶ",
+					"buttonUrl": "#contact"
+				},
+				{
+					"name": "スタンダード",
+					"price": "19,800",
+					"currency": "円",
+					"period": "/月",
+					"description": "中小企業向け",
+					"features": [
+						"ライトの機能すべて",
+						"最大20ページ",
+						"電話サポート",
+						"月次レポート"
+					],
+					"featured": true,
+					"buttonText": "このプランを選ぶ",
+					"buttonUrl": "#contact"
+				},
+				{
+					"name": "プレミアム",
+					"price": "49,800",
+					"currency": "円",
+					"period": "/月",
+					"description": "大企業・上位法人向け",
+					"features": [
+						"スタンダードの機能すべて",
+						"無制限ページ",
+						"専属担当者",
+						"24時間365日サポート",
+						"カスタマイズ開発"
+					],
+					"featured": false,
+					"buttonText": "お問い合わせ",
+					"buttonUrl": "#contact"
+				}
+			]
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"headingColor": {
+			"type": "string",
+			"default": "#333333"
+		},
+		"cardBackgroundColor": {
+			"type": "string",
+			"default": "#f8f9fa"
+		},
+		"featuredCardBackgroundColor": {
+			"type": "string",
+			"default": "#0066cc"
+		},
+		"featuredTextColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"buttonColor": {
+			"type": "string",
+			"default": "#0066cc"
+		},
+		"buttonTextColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"columns": {
+			"type": "number",
+			"default": 3
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false,
+		"align": true
+	},
+	"textdomain": "lp-cta-block",
+	"editorScript": "file:./lp-pricing-block.js",
+	"style": "file:./style-lp-pricing-block.css"
+}

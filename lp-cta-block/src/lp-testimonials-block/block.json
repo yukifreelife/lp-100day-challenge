@@ -1,0 +1,71 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "lp-blocks/testimonials",
+	"version": "0.1.0",
+	"title": "LP Testimonials",
+	"category": "layout",
+	"icon": "format-quote",
+	"description": "LP向けのお客様の声セクションブロック。",
+	"attributes": {
+		"heading": {
+			"type": "string",
+			"default": "お客様の声"
+		},
+		"subheading": {
+			"type": "string",
+			"default": "ご利用いただいたお客様からの感想"
+		},
+		"testimonials": {
+			"type": "array",
+			"default": [
+				{
+					"name": "山田太郎",
+					"role": "株式会社〇〇 代表取締役",
+					"content": "大変満足しています。プロフェッショナルな対応で安心して任せることができました。",
+					"rating": 5
+				},
+				{
+					"name": "佐藤花子",
+					"role": "有限会社△△ 経理部",
+					"content": "スピード対応が素晴らしいです。すぐに成果が現れました。",
+					"rating": 5
+				},
+				{
+					"name": "鈴木一郎",
+					"role": "個人事業主",
+					"content": "分かりやすい説明と丁寧な対応に感謝しています。",
+					"rating": 4
+				}
+			]
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"headingColor": {
+			"type": "string",
+			"default": "#333333"
+		},
+		"cardBackgroundColor": {
+			"type": "string",
+			"default": "#f8f9fa"
+		},
+		"starColor": {
+			"type": "string",
+			"default": "#ffc107"
+		},
+		"columns": {
+			"type": "number",
+			"default": 3
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false,
+		"align": true
+	},
+	"textdomain": "lp-cta-block",
+	"editorScript": "file:./lp-testimonials-block.js",
+	"style": "file:./style-lp-testimonials-block.css"
+}

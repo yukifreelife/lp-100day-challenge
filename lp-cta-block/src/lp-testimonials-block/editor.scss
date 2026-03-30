@@ -1,0 +1,13 @@
+.lp-testimonials-block {
+	&__remove-btn {
+		opacity: 0.7;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&__card {
+		position: relative;
+	}
+}

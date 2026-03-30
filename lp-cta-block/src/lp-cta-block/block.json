@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "lp-blocks/cta-section",
+	"version": "0.1.0",
+	"title": "LP CTA Section",
+	"category": "layout",
+	"icon": "megaphone",
+	"description": "LP向けのCTAセクションブロック。見出し、説明文、ボタンを編集可能。",
+	"attributes": {
+		"heading": {
+			"type": "string",
+			"default": "お問い合わせはこちらから"
+		},
+		"description": {
+			"type": "string",
+			"default": "ご相談・お見積もりは無料です。お気軽にお問い合わせください。"
+		},
+		"buttonText": {
+			"type": "string",
+			"default": "今すぐ相談する"
+		},
+		"buttonUrl": {
+			"type": "string",
+			"default": "#contact"
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "#f8f9fa"
+		},
+		"headingColor": {
+			"type": "string",
+			"default": "#333333"
+		},
+		"buttonColor": {
+			"type": "string",
+			"default": "#0066cc"
+		},
+		"buttonTextColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"alignment": {
+			"type": "string",
+			"default": "center"
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false,
+		"align": true
+	},
+	"textdomain": "lp-cta-block",
+	"editorScript": "file:./lp-cta-block.js",
+	"style": "file:./style-lp-cta-block.css"
+}

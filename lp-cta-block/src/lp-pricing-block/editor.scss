@@ -1,0 +1,19 @@
+.lp-pricing-block {
+	&__remove-btn {
+		opacity: 0.7;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&__card {
+		position: relative;
+	}
+
+	&__feature {
+		&:hover {
+			background: rgba(0, 0, 0, 0.02);
+		}
+	}
+}

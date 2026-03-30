@@ -1,0 +1,72 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "lp-blocks/features",
+	"version": "0.1.0",
+	"title": "LP Features",
+	"category": "layout",
+	"icon": "star-filled",
+	"description": "LP向けの特徴・強みセクションブロック。",
+	"attributes": {
+		"heading": {
+			"type": "string",
+			"default": "私たちの強み"
+		},
+		"subheading": {
+			"type": "string",
+			"default": "選ばれる理由"
+		},
+		"features": {
+			"type": "array",
+			"default": [
+				{
+					"icon": "award",
+					"title": "実績豊富",
+					"description": "これまで1000社以上の企業様を支援してきました。"
+				},
+				{
+					"icon": "clock",
+					"title": "スピード対応",
+					"description": "お問い合わせから24時間以内にご返信いたします。"
+				},
+				{
+					"icon": "shield",
+					"title": "安心保証",
+					"description": "満足いただけていない場合、全額返金いたします。"
+				}
+			]
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "#f8f9fa"
+		},
+		"headingColor": {
+			"type": "string",
+			"default": "#333333"
+		},
+		"iconColor": {
+			"type": "string",
+			"default": "#0066cc"
+		},
+		"cardBackgroundColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"columns": {
+			"type": "number",
+			"default": 3
+		},
+		"layout": {
+			"type": "string",
+			"default": "grid"
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false,
+		"align": true
+	},
+	"textdomain": "lp-cta-block",
+	"editorScript": "file:./lp-features-block.js",
+	"style": "file:./style-lp-features-block.css"
+}
