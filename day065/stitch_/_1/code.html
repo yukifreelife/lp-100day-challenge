@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#944931",
+              "on-background": "#1e1b13",
+              "tertiary-container": "#9e9382",
+              "on-secondary-fixed-variant": "#3e4c16",
+              "surface-tint": "#944931",
+              "outline-variant": "#dac1ba",
+              "primary-fixed": "#ffdbd0",
+              "on-tertiary-container": "#332c20",
+              "on-error-container": "#93000a",
+              "surface": "#fff8ef",
+              "tertiary": "#665d4e",
+              "surface-bright": "#fff8ef",
+              "outline": "#87736d",
+              "surface-variant": "#e9e2d3",
+              "on-surface-variant": "#54433e",
+              "surface-container-lowest": "#ffffff",
+              "on-primary": "#ffffff",
+              "on-primary-container": "#551905",
+              "on-primary-fixed": "#3a0b00",
+              "on-tertiary-fixed-variant": "#4e4638",
+              "surface-container-highest": "#e9e2d3",
+              "background": "#fff8ef",
+              "secondary": "#56642b",
+              "primary-fixed-dim": "#ffb59e",
+              "secondary-fixed-dim": "#bdce89",
+              "tertiary-fixed": "#eee1ce",
+              "on-secondary-container": "#5a682f",
+              "surface-container-high": "#efe7d9",
+              "on-error": "#ffffff",
+              "surface-container-low": "#fbf3e4",
+              "on-secondary-fixed": "#161f00",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#1e1b13",
+              "on-primary-fixed-variant": "#76321c",
+              "on-tertiary-fixed": "#211b0f",
+              "inverse-surface": "#343026",
+              "secondary-fixed": "#d9eaa3",
+              "surface-dim": "#e1d9cb",
+              "error-container": "#ffdad6",
+              "secondary-container": "#d6e7a1",
+              "inverse-primary": "#ffb59e",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed-dim": "#d1c5b2",
+              "surface-container": "#f5edde",
+              "inverse-on-surface": "#f8f0e1",
+              "primary-container": "#d67d61",
+              "error": "#ba1a1a"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans", "sans-serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .leaf-shape {
+            border-top-left-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 bg-[#fff8ef] dark:bg-stone-900">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto w-full">
+<div class="text-2xl font-bold text-[#944931] dark:text-[#d67d61] font-headline tracking-tight">
+                The Gentle Guardian
+            </div>
+<div class="hidden md:flex gap-8 items-center font-headline font-semibold tracking-tight">
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#944931] dark:hover:text-[#d67d61] transition-colors scale-105 duration-200" href="#">ホーム</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#944931] dark:hover:text-[#d67d61] transition-colors scale-105 duration-200" href="#">私たちについて</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#944931] dark:hover:text-[#d67d61] transition-colors scale-105 duration-200" href="#">猫たちを探す</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#944931] dark:hover:text-[#d67d61] transition-colors scale-105 duration-200" href="#">活動報告</a>
+</div>
+<div class="flex gap-4 items-center">
+<button class="hidden sm:block text-[#944931] font-semibold">ボランティア</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-semibold hover:bg-primary-fixed-dim transition-all scale-105 duration-200">寄付する</button>
+</div>
+</div>
+<div class="h-px w-full bg-[#fbf3e4] dark:bg-stone-800/50"></div>
+</nav>
+<main class="max-w-7xl mx-auto px-6 py-12 lg:py-20">
+<!-- Hero Section -->
+<header class="grid lg:grid-cols-2 gap-12 items-center mb-24">
+<div class="order-2 lg:order-1">
+<span class="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">支援の方法</span>
+<h1 class="text-5xl lg:text-6xl font-headline font-extrabold text-primary mb-6 leading-tight tracking-tight">
+                    あなたの優しさが、猫たちの<span class="italic font-normal">未来を照らします。</span>
+</h1>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-xl mb-8">
+                    皆様からのご支援は、保護猫たちの医療費、あたたかな寝床、そして栄養価の高い食事に充てられます。一匹でも多くの穏やかな魂が、運命の家族と出会えるよう力を貸してください。
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-fixed-dim transition-all flex items-center gap-2" href="#financial">
+                        今すぐ寄付する <span class="material-symbols-outlined">favorite</span>
+</a>
+<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-all" href="#wishlist">
+                        リストを見る
+                    </a>
+</div>
+</div>
+<div class="order-1 lg:order-2 relative">
+<div class="leaf-shape overflow-hidden shadow-2xl rotate-3 bg-surface-container-high p-4">
+<img class="leaf-shape w-full h-[500px] object-cover -rotate-3" data-alt="close-up portrait of a soft ginger cat with bright green eyes looking directly at camera in warm morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbbj4WFzHglIuC8moUubuBJX87AoxFiikJ3FD-JNKS5yJQ7L2XZkRke3OoYRYILG4oYzL6m9wH2eXouREjE3cAoY-zbPfYR9kPM3kpndmGkWSOnCecbnGPbyEBofGDdBnLK1J5szAMam6LyxzImY-k0kpeJrhCGVA04clnKj2MvTqD6dra4kPqE9wrWIm3nJjiomxVDF4cSjSTImJdGgRl0eYiUkMAFVhK__MkeNaMd0TnSQfS-8YsR6A8_DXwM_f1suR6sC7z-_s"/>
+</div>
+<!-- Impact Badge -->
+<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl max-w-[220px] border border-outline-variant/20">
+<p class="text-primary font-bold text-3xl mb-1">1,240+</p>
+<p class="text-sm font-medium text-on-surface-variant">今年だけでこれだけの命が救われました</p>
+</div>
+</div>
+</header>
+<!-- Financial Support Bento -->
+<section class="mb-24" id="financial">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="text-4xl font-headline font-bold text-on-surface mb-2">寄付で応援する</h2>
+<p class="text-on-surface-variant">猫たちの未来のために、支援方法をお選びいただけます。</p>
+</div>
+<div class="flex bg-surface-container p-1 rounded-full">
+<button class="px-6 py-2 rounded-full bg-white shadow-sm font-bold text-primary">毎月</button>
+<button class="px-6 py-2 rounded-full font-bold text-on-surface-variant">今回のみ</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Donation Tier 1 -->
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col items-center text-center hover:bg-white transition-all group border-b-4 border-transparent hover:border-primary cursor-pointer shadow-sm">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
+</div>
+<h3 class="text-3xl font-headline font-extrabold text-on-surface mb-2">¥1,500 / 月</h3>
+<p class="text-on-surface-variant mb-6 font-medium">子猫用の特別なミルク1週間分になります。</p>
+<button class="mt-auto w-full py-3 rounded-full border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-colors">選択する</button>
+</div>
+<!-- Donation Tier 2 (Featured) -->
+<div class="bg-primary p-8 rounded-xl flex flex-col items-center text-center text-on-primary scale-105 shadow-2xl relative overflow-hidden">
+<div class="absolute top-4 right-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">もっとも必要</div>
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-3xl">medical_services</span>
+</div>
+<h3 class="text-3xl font-headline font-extrabold mb-2">¥5,000 / 月</h3>
+<p class="opacity-90 mb-6 font-medium text-lg">定期的な予防接種と健康診断の費用をまかないます。</p>
+<button class="mt-auto w-full py-4 rounded-full bg-white text-primary font-bold hover:bg-primary-fixed-dim transition-colors">支援を始める</button>
+</div>
+<!-- Donation Tier 3 -->
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col items-center text-center hover:bg-white transition-all group border-b-4 border-transparent hover:border-primary cursor-pointer shadow-sm">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl">home</span>
+</div>
+<h3 class="text-3xl font-headline font-extrabold text-on-surface mb-2">¥10,000 / 月</h3>
+<p class="text-on-surface-variant mb-6 font-medium">シニア猫の救出から譲渡までのリハビリを支えます。</p>
+<button class="mt-auto w-full py-3 rounded-full border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-colors">選択する</button>
+</div>
+</div>
+</section>
+<!-- Other Ways to Give -->
+<section class="grid md:grid-cols-2 gap-8 mb-24">
+<!-- Wishlist Card -->
+<div class="bg-surface-container p-10 rounded-xl flex flex-col lg:flex-row gap-8 items-center border border-outline-variant/10" id="wishlist">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">shopping_bag</span>
+<h3 class="text-2xl font-headline font-bold">Amazon ほしい物リスト</h3>
+</div>
+<p class="text-on-surface-variant mb-6">形あるもので支援したい方はこちら。今すぐ必要なフード、おもちゃ、ベッドなどの情報を毎日更新しています。</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:underline" href="#">
+                        必需品を贈る 
+                        <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+<div class="w-full lg:w-48 h-48 rounded-xl overflow-hidden shadow-lg border-4 border-white rotate-2">
+<img class="w-full h-full object-cover" data-alt="stack of colorful cat toys and brand new scratching posts in a bright studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAyK-0juDdRsqTclr-s4E7cmaHgwyEX0SbP9PBObdSTBsyBzV6rhRIyTvNuPJxWez1LTFVkM2IhkGv_qvz0Y3_sS8S0MoptXcFWj_Yu6g491YhxpRfK4o9lFvPQISLW2yTTkwj6RNtUyfrs-JXrslgTCW_eAHaq_89xmpNx87zT0yNiw-m0nB-xbEEo41AxmXVWugybQVZoMapSoJi-axOP89zDXZWi7FGtYgJmQZ9a-GUDpmJADTwdKXGfsXhRM0IOw6BYzQYxhE"/>
+</div>
+</div>
+<!-- Supply Donation -->
+<div class="bg-surface-container p-10 rounded-xl flex flex-col lg:flex-row gap-8 items-center border border-outline-variant/10">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary">inventory_2</span>
+<h3 class="text-2xl font-headline font-bold">物資の寄付</h3>
+</div>
+<p class="text-on-surface-variant mb-6">未開封のフード、清潔な毛布、キャリーバッグなどの寄付を歓迎します。営業時間内に正面入口までお持ちください。</p>
+<div class="space-y-2">
+<p class="text-sm font-bold text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-xs">location_on</span>
+                            〒123-4567 猫市 守護町 1-2-3
+                        </p>
+<p class="text-sm font-medium text-on-surface-variant">月-金: 9:00 - 18:00</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Volunteer Section -->
+<section class="bg-secondary-container rounded-xl overflow-hidden p-0">
+<div class="grid lg:grid-cols-2 items-stretch">
+<div class="p-12 lg:p-16 flex flex-col justify-center">
+<h2 class="text-4xl font-headline font-bold text-on-secondary-container mb-6 leading-tight">あなたの時間は、猫たちへの最高の贈り物です。</h2>
+<p class="text-on-secondary-container opacity-80 mb-8 text-lg">怖がりの子猫との触れ合いから事務作業まで、ボランティアの皆様は私たちの活動の柱です。経験は問いません。猫を愛する心があれば十分です。</p>
+<ul class="grid sm:grid-cols-2 gap-4 mb-10">
+<li class="flex items-center gap-3 text-on-secondary-container font-semibold">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            子猫のお世話
+                        </li>
+<li class="flex items-center gap-3 text-on-secondary-container font-semibold">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            イベント運営補助
+                        </li>
+<li class="flex items-center gap-3 text-on-secondary-container font-semibold">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            フォスター（預かり）
+                        </li>
+<li class="flex items-center gap-3 text-on-secondary-container font-semibold">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            シェルターの清掃
+                        </li>
+</ul>
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-full font-bold text-lg self-start hover:opacity-90 transition-all">ボランティアに応募する</button>
+</div>
+<div class="hidden lg:block relative min-h-[500px]">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="volunteer smiling while gently holding a tiny gray kitten against their chest in a warm bright room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXER1-Gqlaz_lX4TeZyNf_-yYg1Le2RxXwOMUVixqaH1O5xsZyp1wUJ2h1vhB0kDSM4-ep7zKBjWsCZE38HZgyg6oLMm5tthlBU3kCEnLhWi5cx3fmO-AVxnVTNJbDNV2eEkos2hoKX7-wAySqMhhIt4dqGAMONFhfbbRX7X0ChjPGfQ8ZRL55uPM27xWV67fH_E7bMvAEMyspj0UEVPeUiISNUQ2UVIAH-Kbr6rYMZWzl_ON0lowKt-ojIMnesVqf6DJw88oaJxY"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t-0 rounded-t-[3rem] bg-[#f5edde] dark:bg-stone-950 mt-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-12 py-16 max-w-7xl mx-auto w-full font-['Manrope'] text-sm leading-relaxed">
+<div class="flex flex-col gap-4">
+<div class="text-lg font-bold text-[#944931]">The Gentle Guardian</div>
+<p class="text-stone-600 dark:text-stone-400">一匹ずつの「ゴロゴロ」のために。保護活動やフォスターペアレントの輪に加わりませんか。</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">social_leaderboard</span>
+<span class="material-symbols-outlined text-primary">camera</span>
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-bold text-on-surface uppercase tracking-widest text-xs mb-2">メニュー</h4>
+<a class="text-stone-600 dark:text-stone-400 hover:underline decoration-[#d67d61] opacity-80 hover:opacity-100 transition-opacity" href="#">お問い合わせ</a>
+<a class="text-stone-600 dark:text-stone-400 hover:underline decoration-[#d67d61] opacity-80 hover:opacity-100 transition-opacity" href="#">プライバシーポリシー</a>
+<a class="text-stone-600 dark:text-stone-400 hover:underline decoration-[#d67d61] opacity-80 hover:opacity-100 transition-opacity" href="#">利用規約</a>
+<a class="text-[#944931] font-bold" href="#">ニュースレター購読</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-on-surface uppercase tracking-widest text-xs mb-2">皆様の声</h4>
+<div class="bg-white/50 dark:bg-stone-900/50 p-4 rounded-xl">
+<p class="text-xs text-on-surface-variant italic leading-relaxed">「The Gentle Guardianのおかげで、私たちの猫は二度目のチャンスを得ることができました。活動を支える皆様に心から感謝しています。」</p>
+<p class="text-[10px] font-bold mt-2">— ミラー家一同</p>
+</div>
+</div>
+</div>
+<div class="text-center pb-8 px-12 text-stone-500 text-xs">
+            © 2024 The Gentle Guardian Rescue. All rights reserved.
+        </div>
+</footer>
+</body></html>

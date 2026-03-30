@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支援方法 - The Gentle Guardian | 保護猫団体</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-circle {
+            width: 4rem;
+            height: 4rem;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">The Gentle Guardian</a>
+            <div class="nav-links">
+                <a href="index.html">ホーム</a>
+                <a href="activity.html">私たちについて</a>
+                <a href="index.html#cats">猫たちを探す</a>
+                <a href="activity.html">活動報告</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#volunteer" class="text-secondary font-semibold">ボランティア</a>
+                <a href="#financial" class="btn btn-primary btn-sm">寄付する</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-12 lg:py-20">
+        <!-- Hero Section -->
+        <section class="container mb-24">
+            <div class="grid-2 gap-12 items-center">
+                <div>
+                    <span class="text-secondary font-bold uppercase tracking-wide text-sm mb-4 inline-block">支援の方法</span>
+                    <h1 class="mb-6">
+                        あなたの優しさが、<br>
+                        猫たちの<span class="italic font-normal">未来を照らします。</span>
+                    </h1>
+                    <p class="text-on-surface-variant leading-relaxed max-w-xl mb-8" style="font-size: 1.125rem;">
+                        皆様からのご支援は、保護猫たちの医療費、あたたかな寝床、そして栄養価の高い食事に充てられます。
+                        一匹でも多くの穏やかな魂が、運命の家族と出会えるよう力を貸してください。
+                    </p>
+                    <div class="flex gap-4 flex-wrap">
+                        <a href="#financial" class="btn btn-primary flex items-center gap-2">
+                            今すぐ寄付する
+                            <span class="material-symbols-outlined">favorite</span>
+                        </a>
+                        <a href="#goods" class="btn btn-secondary-container">リストを見る</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="leaf-shape overflow-hidden shadow-lg p-4" style="transform: rotate(3deg);">
+                        <div class="img-placeholder cat-1 w-full h-full leaf-shape" style="height: 500px; transform: rotate(-3deg);"></div>
+                    </div>
+                    <div class="card card-surface-lowest p-6 shadow-lg absolute" style="bottom: -1.5rem; left: -1.5rem; max-width: 14rem;">
+                        <p class="text-primary font-bold text-3xl mb-1">1,240+</p>
+                        <p class="text-sm text-on-surface-variant">今年だけでこれだけの命が救われました</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financial Support Section -->
+        <section id="financial" class="container mb-24">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <h2 class="mb-2">寄付で応援する</h2>
+                    <p class="text-on-surface-variant">猫たちの未来のために、支援方法をお選びいただけます。</p>
+                </div>
+                <div class="flex card-surface p-1 rounded-full">
+                    <button class="px-6 py-2 rounded-full card-surface-lowest shadow-sm font-bold text-primary">毎月</button>
+                    <button class="px-6 py-2 rounded-full font-bold text-on-surface-variant">今回のみ</button>
+                </div>
+            </div>
+
+            <div class="grid-3 gap-8">
+                <!-- Tier 1 -->
+                <div class="card card-surface-low pricing-card text-center">
+                    <div class="icon-circle icon-circle-primary-fixed mb-6">
+                        <span class="material-symbols-outlined text-primary" style="font-size: 2rem;">restaurant</span>
+                    </div>
+                    <h3 class="font-headline font-extrabold text-on-surface mb-2" style="font-size: 2rem;">¥1,500 / 月</h3>
+                    <p class="text-on-surface-variant mb-6 font-medium">子猫用の特別なミルク1週間分になります。</p>
+                    <button class="btn btn-outline w-full">選択する</button>
+                </div>
+
+                <!-- Tier 2 (Featured) -->
+                <div class="card card-primary pricing-card featured text-center relative">
+                    <span class="pricing-featured-badge">もっとも必要</span>
+                    <div class="icon-circle mb-6" style="background-color: var(--primary-container);">
+                        <span class="material-symbols-outlined" style="font-size: 2rem; color: white;">medical_services</span>
+                    </div>
+                    <h3 class="font-headline font-extrabold mb-2" style="font-size: 2rem;">¥5,000 / 月</h3>
+                    <p class="opacity-90 mb-6 font-medium text-lg">定期的な予防接種と健康診断の費用をまかないます。</p>
+                    <button class="btn btn-white w-full">支援を始める</button>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="card card-surface-low pricing-card text-center">
+                    <div class="icon-circle icon-circle-secondary-fixed mb-6">
+                        <span class="material-symbols-outlined text-secondary" style="font-size: 2rem;">home</span>
+                    </div>
+                    <h3 class="font-headline font-extrabold text-on-surface mb-2" style="font-size: 2rem;">¥10,000 / 月</h3>
+                    <p class="text-on-surface-variant mb-6 font-medium">シニア猫の救出から譲渡までのリハビリを支えます。</p>
+                    <button class="btn btn-outline w-full">選択する</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Ways to Give -->
+        <section class="grid-2 gap-8 container mb-24">
+            <!-- Wishlist Card -->
+            <div id="goods" class="card card-surface p-10 flex flex-col lg:flex-row gap-8 items-center">
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="material-symbols-outlined text-primary">shopping_bag</span>
+                        <h3 class="font-headline font-bold text-xl">Amazon ほしい物リスト</h3>
+                    </div>
+                    <p class="text-on-surface-variant mb-6">
+                        形あるもので支援したい方はこちら。今すぐ必要なフード、おもちゃ、ベッドなどの情報を毎日更新しています。
+                    </p>
+                    <a href="#" class="text-primary font-bold inline-flex items-center gap-2 hover:underline">
+                        必需品を贈る
+                        <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
+                </div>
+                <div class="w-full lg:w-48 h-48 rounded-xl overflow-hidden shadow-lg border-4 border-white" style="transform: rotate(2deg);">
+                    <div class="img-placeholder cat-2 w-full h-full"></div>
+                </div>
+            </div>
+
+            <!-- Supply Donation -->
+            <div class="card card-surface p-10 flex flex-col lg:flex-row gap-8 items-center">
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="material-symbols-outlined text-secondary">inventory_2</span>
+                        <h3 class="font-headline font-bold text-xl">物資の寄付</h3>
+                    </div>
+                    <p class="text-on-surface-variant mb-6">
+                        未開封のフード、清潔な毛布、キャリーバッグなどの寄付を歓迎します。
+                        営業時間内に正面入口までお持ちください。
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-sm font-bold text-secondary flex items-center gap-2">
+                            <span class="material-symbols-outlined text-xs">location_on</span>
+                            〒123-4567 猫市 守護町 1-2-3
+                        </p>
+                        <p class="text-sm text-on-surface-variant">月-金: 9:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteer Section -->
+        <section id="volunteer" class="card-secondary rounded-xl overflow-hidden">
+            <div class="grid-2 items-stretch">
+                <div class="p-12 lg:p-16 flex flex-col justify-center">
+                    <h2 class="font-headline font-bold text-on-secondary-container mb-6 leading-tight" style="font-size: 2.25rem;">
+                        あなたの時間は、猫たちへの最高の贈り物です。
+                    </h2>
+                    <p class="text-on-secondary-container opacity-80 mb-8 text-lg">
+                        怖がりの子猫との触れ合いから事務作業まで、ボランティアの皆様は私たちの活動の柱です。
+                        経験は問いません。猫を愛する心があれば十分です。
+                    </p>
+                    <ul class="grid grid-cols-2 gap-4 mb-10">
+                        <li class="flex items-center gap-3 text-on-secondary-container font-semibold">
+                            <span class="material-symbols-outlined text-secondary filled">check_circle</span>
+                            子猫のお世話
+                        </li>
+                        <li class="flex items-center gap-3 text-on-secondary-container font-semibold">
+                            <span class="material-symbols-outlined text-secondary filled">check_circle</span>
+                            イベント運営補助
+                        </li>
+                        <li class="flex items-center gap-3 text-on-secondary-container font-semibold">
+                            <span class="material-symbols-outlined text-secondary filled">check_circle</span>
+                            フォスター（預かり）
+                        </li>
+                        <li class="flex items-center gap-3 text-on-secondary-container font-semibold">
+                            <span class="material-symbols-outlined text-secondary filled">check_circle</span>
+                            シェルターの清掃
+                        </li>
+                    </ul>
+                    <button class="btn btn-secondary text-on-secondary font-bold text-lg">ボランティアに応募する</button>
+                </div>
+                <div class="hidden lg:block relative min-h-[500px]">
+                    <div class="img-placeholder cat-3 absolute inset-0 w-full h-full object-cover"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div>
+                <div class="footer-brand">The Gentle Guardian</div>
+                <p class="text-on-surface-variant mb-6">
+                    一匹ずつの「ゴロゴロ」のために。保護活動やフォスターペアレントの輪に加わりませんか。
+                </p>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-primary">groups</span>
+                    <span class="material-symbols-outlined text-primary">photo_camera</span>
+                    <span class="material-symbols-outlined text-primary">mail</span>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>メニュー</h4>
+                <a href="#">お問い合わせ</a>
+                <a href="#">プライバシーポリシー</a>
+                <a href="#">利用規約</a>
+                <a href="#" class="text-primary font-bold">ニュースレター購読</a>
+            </div>
+
+            <div>
+                <h4 class="text-on-surface text-sm uppercase tracking-wide mb-4" style="font-size: 0.625rem;">皆様の声</h4>
+                <div class="card card-surface-lowest p-4 rounded-xl" style="background-color: rgba(255,255,255,0.5);">
+                    <p class="text-xs text-on-surface-variant italic leading-relaxed">
+                        「The Gentle Guardianのおかげで、私たちの猫は二度目のチャンスを得ることができました。
+                        活動を支える皆様に心から感謝しています。」
+                    </p>
+                    <p class="text-xs font-bold mt-2">— ミラー家一同</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 The Gentle Guardian Rescue. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

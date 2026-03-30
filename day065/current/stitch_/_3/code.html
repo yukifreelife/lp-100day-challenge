@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#944931",
+              "on-background": "#1e1b13",
+              "tertiary-container": "#9e9382",
+              "on-secondary-fixed-variant": "#3e4c16",
+              "surface-tint": "#944931",
+              "outline-variant": "#dac1ba",
+              "primary-fixed": "#ffdbd0",
+              "on-tertiary-container": "#332c20",
+              "on-error-container": "#93000a",
+              "surface": "#fff8ef",
+              "tertiary": "#665d4e",
+              "surface-bright": "#fff8ef",
+              "outline": "#87736d",
+              "surface-variant": "#e9e2d3",
+              "on-surface-variant": "#54433e",
+              "surface-container-lowest": "#ffffff",
+              "on-primary": "#ffffff",
+              "on-primary-container": "#551905",
+              "on-primary-fixed": "#3a0b00",
+              "on-tertiary-fixed-variant": "#4e4638",
+              "surface-container-highest": "#e9e2d3",
+              "background": "#fff8ef",
+              "secondary": "#56642b",
+              "primary-fixed-dim": "#ffb59e",
+              "secondary-fixed-dim": "#bdce89",
+              "tertiary-fixed": "#eee1ce",
+              "on-secondary-container": "#5a682f",
+              "surface-container-high": "#efe7d9",
+              "on-error": "#ffffff",
+              "surface-container-low": "#fbf3e4",
+              "on-secondary-fixed": "#161f00",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#1e1b13",
+              "on-primary-fixed-variant": "#76321c",
+              "on-tertiary-fixed": "#211b0f",
+              "inverse-surface": "#343026",
+              "secondary-fixed": "#d9eaa3",
+              "surface-dim": "#e1d9cb",
+              "error-container": "#ffdad6",
+              "secondary-container": "#d6e7a1",
+              "inverse-primary": "#ffb59e",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed-dim": "#d1c5b2",
+              "surface-container": "#f5edde",
+              "inverse-on-surface": "#f8f0e1",
+              "primary-container": "#d67d61",
+              "error": "#ba1a1a"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans", "Noto Sans JP", "sans-serif"],
+              "body": ["Manrope", "Noto Sans JP", "sans-serif"],
+              "label": ["Manrope", "Noto Sans JP", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .leaf-shape {
+            border-top-left-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body">
+<!-- Top Navigation Bar -->
+<header class="w-full top-0 sticky z-50 bg-[#fbf3e4] dark:bg-stone-800/50">
+<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto w-full">
+<div class="text-2xl font-bold text-[#944931] dark:text-[#d67d61] font-headline tracking-tight">
+            The Gentle Guardian
+        </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-headline font-semibold tracking-tight text-[#944931] dark:text-[#d67d61] border-b-2 border-[#944931] pb-1 hover:text-[#944931] transition-colors scale-105 duration-200" href="#">ホーム</a>
+<a class="font-headline font-semibold tracking-tight text-stone-600 dark:text-stone-400 hover:text-[#944931] transition-colors scale-105 duration-200" href="#">私たちについて</a>
+<a class="font-headline font-semibold tracking-tight text-stone-600 dark:text-stone-400 hover:text-[#944931] transition-colors scale-105 duration-200" href="#">猫たちを探す</a>
+<a class="font-headline font-semibold tracking-tight text-stone-600 dark:text-stone-400 hover:text-[#944931] transition-colors scale-105 duration-200" href="#">活動報告</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden sm:block text-[#56642b] font-semibold hover:opacity-80 transition-opacity">ボランティア</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-semibold hover:bg-primary-fixed-dim transition-all scale-100 hover:scale-105">寄付する</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center px-8 py-12 overflow-hidden">
+<div class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
+<div class="z-10 order-2 md:order-1">
+<span class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label text-sm mb-6 font-semibold">
+                    すべての小さな肉球に安全な場所を
+                </span>
+<h1 class="font-headline text-5xl md:text-6xl font-extrabold text-on-surface leading-[1.1] mb-6 tracking-tight">
+                    勇気ある小さな命に、<br/><span class="text-primary italic">優しい</span>家族との出会いを。
+                </h1>
+<p class="text-on-surface-variant text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
+                    ジェントル・ガーディアンは、傷ついた猫たちを保護し、健康を取り戻すまで寄り添い、生涯愛してくれる家族との橋渡しをする地域密着型の保護団体です。
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-headline font-bold text-lg hover:bg-primary-fixed-dim transition-all hover:scale-105">
+                        家族に迎える
+                    </button>
+<button class="bg-surface-container-high text-primary px-10 py-4 rounded-full font-headline font-bold text-lg hover:bg-surface-variant transition-all">
+                        活動を支援する
+                    </button>
+</div>
+</div>
+<div class="relative order-1 md:order-2">
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-secondary-container opacity-30 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary-container opacity-20 rounded-full blur-2xl"></div>
+<img class="relative z-10 w-full h-[500px] object-cover leaf-shape shadow-2xl" data-alt="Close-up portrait of a ginger cat with bright amber eyes looking into the camera with soft morning sunlight filtering through whiskers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIrVT-45DV5vmL55HoA8YhrQ0V7e87AouZNolIEWH84uG_Os-LCAuZhgHqyxF4oiX8-UF-59x_bYYmhC3HvJmYpowrmeSPlaP4K7O13V7ywimGRXRjdAt3Wx80llLSYoJUp-Lzfq9sdeb9QrHoe8RGUb21_jIv3FhnoD8K8CZOzdHQxbZ_Ass7Q3g4VdgBJ6jbQejfil402bdL6dKh2QU6tAHHIwO3PLi_Uwhqq3FpKPfU_XCfxPHwa21O4RRAegFqNiwbu9ETqn8"/>
+</div>
+</div>
+</section>
+<!-- Our Mission: The Living Scrapbook Layout -->
+<section class="bg-surface-container-low py-24 px-8 rounded-xl mx-4 md:mx-8">
+<div class="max-w-7xl mx-auto">
+<div class="grid md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 relative">
+<img class="w-full h-[400px] object-cover rounded-xl shadow-lg rotate-[-2deg]" data-alt="A volunteer tenderly holding a small black and white kitten against their chest in a warm sunlit indoor room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxB5SSnyym6Ub0w6eLqWHx7hHCYodi2KCLt_wXoANN5sQzM7nFK0E6KMSSsBndX6gnygLKWtkFpJgNuqLFSQ2NnQDtN1tUMh74celHGHLiRXoxI-sP4h4jVN2p6IXMAsA0UOXVx7BgLiJpH2cUPGhBzj0qjht1uS2A6urbCbNhuLYNWPRW76iNVarUEAKCtELDYys0p04OXt69f61L_9nAUPQQAcfKfKZ7s33b_24eXvKTW3vgQvjcD4Mn_glqMEh8-_AQsbSJDOY"/>
+<div class="absolute -bottom-6 -right-6 bg-surface-container-lowest p-6 rounded-lg shadow-xl max-w-[240px] rotate-[3deg]">
+<p class="font-headline font-bold text-primary italic text-xl">"すべての猫には、幸せな結末を迎える権利があります。"</p>
+</div>
+</div>
+<div class="md:col-span-7">
+<h2 class="font-headline text-4xl font-extrabold text-on-surface mb-6">私たちの想い</h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+<p>私たちは単に猫を救うだけでなく、回復と絆の物語を紡いでいます。地域社会に根ざし、迷子や捨てられた猫たちに医療ケアと心のケアを提供し、安全な新しい生活への移行をサポートすることが私たちの使命です。</p>
+<div class="grid grid-cols-2 gap-6 pt-6">
+<div class="bg-surface-container-high p-6 rounded-lg">
+<span class="material-symbols-outlined text-secondary text-4xl mb-2" data-icon="medical_services">medical_services</span>
+<h4 class="font-headline font-bold text-on-surface">医療サポート</h4>
+<p class="text-sm">すべての保護猫に専門的な獣医療を。</p>
+</div>
+<div class="bg-surface-container-high p-6 rounded-lg">
+<span class="material-symbols-outlined text-primary text-4xl mb-2" data-icon="favorite">favorite</span>
+<h4 class="font-headline font-bold text-on-surface">心のケア</h4>
+<p class="text-sm">愛情深いリハビリと遊びの時間を。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Latest Rescues: Bento Grid -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline text-4xl font-extrabold text-on-surface">家族を待っている猫たち</h2>
+<p class="text-on-surface-variant mt-2">勇気ある猫たちが、永遠の家族を待っています。</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 hover:underline">
+                24匹の猫たちを見る <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Large Card -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm group">
+<div class="relative h-[400px]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Stunning long-haired calico cat sitting regally on a wooden chair with a soft bokeh background of a home library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS7EJQHqKkRRJO2B63-anO3MzUHQQ0KXzDD7gx4LkPEtDBTVbZceej6Z37eCCm3RRexkzfTjkfCMJ8TYyG4bEjbXV17Jw5bZsNlElWu_exQqe5PaKIASmeIfxrRYrA2-SGk64R6svGadr--F6wOeszeinpRIGpPnnu_8UOopCEp30N4Em7MFTKAXjzFhmqH5Ba6_Mw_W7g52De9Ut0ExeaoCRrBmD3FXMIuH59lWC2I_GWYNVD-V3RymjxCfOPQZYOyu4IS-DCd3A"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-secondary text-on-secondary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">募集中</span>
+<span class="bg-primary text-on-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">新着</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-3xl font-bold text-on-surface">ウィロウ</h3>
+<div class="flex gap-2 mt-4 mb-6">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-4 py-1 rounded-full text-sm">穏やかな性格</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-4 py-1 rounded-full text-sm">推定3歳</span>
+</div>
+<p class="text-on-surface-variant mb-6 line-clamp-2">ウィロウは、静かな午後となでなでが大好きな心優しい三毛猫です。現在、シェルターのみんなから愛されています。</p>
+<button class="w-full bg-primary text-on-primary py-3 rounded-full font-bold hover:bg-primary-fixed-dim transition-colors">里親に応募する</button>
+</div>
+</div>
+<!-- Small Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<img class="w-full h-48 object-cover" data-alt="Playful tabby kitten chasing a yarn ball on a cream colored rug in a sunny room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkeQSSHncHD_YM2sywRQutkTaREUdYwozNRcOHdJ4uIL-Lh-r9c3dJ3wjwHxeFgSuSKAP7BL9xWLZ6PHGqjginz_r8XTXS-MY221wnXDsx24SUxGgqXNzIaw984IpBCPMV8OJR6ks5yxKmNvXfrGpaq1-9T3fqQG9Fk_iYFh1451i4w_N_UnZO8SDp0sNl5B0X6yapvxJcxGLq4BQazJe31oDYicPfKckUXM-SylGIgy-TnfiI5o3WxiD0TcZlIR3dcpy0JnUv6-I"/>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline text-xl font-bold text-on-surface">ピップ</h3>
+<span class="text-secondary-fixed-dim material-symbols-outlined" data-icon="sparkles" style="font-variation-settings: 'FILL' 1;">colors_spark</span>
+</div>
+<p class="text-xs text-on-surface-variant mb-4">生後6ヶ月 • キジトラMIX</p>
+<button class="text-primary font-bold text-sm hover:underline">詳細を見る</button>
+</div>
+</div>
+<!-- Small Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<img class="w-full h-48 object-cover" data-alt="Elegant white cat with one blue and one yellow eye lounging on a plush emerald green velvet cushion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgqsVm4gRY2U_cgJY9_qbyryzLtt3xgmQ7hNbdjemzKnZU60N4P8ngvYvfDzORWMnmdaOq4JXalsZjfGBVqiwcZLnemqrCW5oWS41wZt2JT2wFG54n9tjwWiY6HD9jMosQIZDeeFVUqb3AcXH-tfHTaLnVF7rUwrbcdup2-7Da2BegjgGH-vbTv6xh-WJ3HBJnNVIjJ1dbO0ufqQ9p5zD71X9Tu6KYJhKvxmRv67FyLjmSjjJ1sFJ9QL_KIlyNrwHOotkAhPLVF4I"/>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline text-xl font-bold text-on-surface">ルナ</h3>
+<span class="text-secondary-fixed-dim material-symbols-outlined" data-icon="temp_preferences_custom" style="font-variation-settings: 'FILL' 1;">temp_preferences_custom</span>
+</div>
+<p class="text-xs text-on-surface-variant mb-4">1歳 • 白猫</p>
+<button class="text-primary font-bold text-sm hover:underline">詳細を見る</button>
+</div>
+</div>
+<!-- Horizontal Small Card -->
+<div class="md:col-span-2 bg-primary-fixed rounded-xl p-8 flex items-center gap-8 shadow-sm">
+<div class="w-32 h-32 flex-shrink-0 bg-white p-2 rounded-full rotate-[-5deg] shadow-lg">
+<img class="w-full h-full object-cover rounded-full" data-alt="Grumpy but cute grey scottish fold cat with large round eyes peering from a cardboard box" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQIdHYpQU2QrjgrRe4YH018k5Ap_lr-C7-sAV4xw4erVkcJjuLi45x3773kTHK-T3YqEO0_bSVloA7QKylwRSAfkzJUL3t6ROMDcGdpAcFauq-oOB0VPTt1c3AgA-QR5V3gO27ytu_XphovVDuYK0WX4erUVN3Ut92OSRhW0WUmwdJw4c7YIxaPogrIrnpdRoe9a3pW1Cy2xKQFubomLnXuyBzUaxEWkvjCREHloCQpxpBmBKByOAC4J0_TrPLSZ8DTqBSaiUlM_c"/>
+</div>
+<div>
+<h4 class="font-headline text-2xl font-bold text-on-primary-fixed">"不機嫌な" バーナビー</h4>
+<p class="text-on-primary-fixed-variant mt-2 mb-4">特別なケアが必要：バーナビーには、小さなお子様のいない静かな環境が必要です。</p>
+<button class="bg-on-primary-fixed text-primary-fixed px-6 py-2 rounded-full font-bold text-sm">預かりボランティア急募</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Activity Highlights -->
+<section class="bg-surface py-24 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl font-extrabold text-on-surface mb-4">活動報告</h2>
+<p class="text-on-surface-variant">コミュニティと保護チームからの最新の進捗状況をお届けします。</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Activity 1 -->
+<div class="bg-surface-container-high p-8 rounded-xl border-l-4 border-primary">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary bg-primary-fixed p-2 rounded-lg" data-icon="event_available">event_available</span>
+<span class="font-label text-sm text-on-surface-variant">2日前</span>
+</div>
+<h4 class="font-headline font-bold text-xl mb-3 text-on-surface">3匹の譲渡が決定</h4>
+<p class="text-on-surface-variant text-sm">今週末のガーデン交流会で、ベラ、マックス、クロエに新しい家族が決まりました。</p>
+</div>
+<!-- Activity 2 -->
+<div class="bg-surface-container-high p-8 rounded-xl border-l-4 border-secondary">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-secondary bg-secondary-fixed p-2 rounded-lg" data-icon="volunteer_activism">volunteer_activism</span>
+<span class="font-label text-sm text-on-surface-variant">昨日</span>
+</div>
+<h4 class="font-headline font-bold text-xl mb-3 text-on-surface">2,400ドルの寄付達成</h4>
+<p class="text-on-surface-variant text-sm">小さなバーナビーの緊急手術のために、多くの方々からご支援をいただきました。現在順調に回復中です！</p>
+</div>
+<!-- Activity 3 -->
+<div class="bg-surface-container-high p-8 rounded-xl border-l-4 border-tertiary">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-tertiary bg-tertiary-fixed p-2 rounded-lg" data-icon="medication">medication</span>
+<span class="font-label text-sm text-on-surface-variant">5時間前</span>
+</div>
+<h4 class="font-headline font-bold text-xl mb-3 text-on-surface">健康診断の実施</h4>
+<p class="text-on-surface-variant text-sm">新しく保護されたすべての猫たちが、アリス医師によるワクチン接種と健康診断を終えました。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact CTA -->
+<section class="relative py-24 px-8 mb-24">
+<div class="max-w-7xl mx-auto bg-[#944931] rounded-[3rem] p-12 md:p-24 overflow-hidden relative">
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+<div class="relative z-10 text-center max-w-2xl mx-auto">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-on-primary mb-8 leading-tight">あなたの支援が、一匹の猫の運命を変えます。</h2>
+<p class="text-primary-fixed text-lg mb-10">里親になること、預かりボランティア、または毎月の寄付。どのような形でも、あなたの支援が猫たちの聖域を守ります。</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-white text-primary px-12 py-4 rounded-full font-headline font-bold text-lg hover:bg-primary-fixed transition-colors">寄付を始める</button>
+<button class="border-2 border-primary-fixed-dim text-on-primary px-12 py-4 rounded-full font-headline font-bold text-lg hover:bg-white/10 transition-colors">預かりボランティアに応募する</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-[#f5edde] dark:bg-stone-950 rounded-t-[3rem]">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-12 py-16 max-w-7xl mx-auto w-full font-['Manrope'] text-sm leading-relaxed">
+<div>
+<div class="text-lg font-bold text-[#944931] mb-6">The Gentle Guardian</div>
+<p class="text-stone-600 dark:text-stone-400 max-w-xs mb-6">
+                地域の猫たちの健康と幸せな譲渡のために活動している非営利の保護団体です。
+            </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform" data-icon="facebook">social_leaderboard</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform" data-icon="camera">camera</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform" data-icon="alternate_email">alternate_email</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<h4 class="font-bold text-on-surface uppercase tracking-widest text-xs">保護活動</h4>
+<ul class="space-y-2 text-stone-600 dark:text-stone-400">
+<li><a class="hover:underline decoration-[#d67d61] transition-opacity" href="#">猫たちを探す</a></li>
+<li><a class="hover:underline decoration-[#d67d61] transition-opacity" href="#">譲渡の流れ</a></li>
+<li><a class="hover:underline decoration-[#d67d61] transition-opacity" href="#">幸せな卒業生</a></li>
+<li><a class="hover:underline decoration-[#d67d61] transition-opacity" href="#">預かりボランティア</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-on-surface uppercase tracking-widest text-xs">支援する</h4>
+<ul class="space-y-2 text-stone-600 dark:text-stone-400">
+<li><a class="hover:underline decoration-[#d67d61] transition-opacity" href="#">寄付する</a></li>
+<li><a class="hover:underline decoration-[#d67d61] transition-opacity" href="#">ボランティア</a></li>
+<li><a class="hover:underline decoration-[#d67d61] transition-opacity" href="#">支援物資リスト</a></li>
+<li><a class="hover:underline decoration-[#d67d61] transition-opacity" href="#">パートナー企業</a></li>
+</ul>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-on-surface uppercase tracking-widest text-xs">最新情報を受け取る</h4>
+<p class="text-stone-600 dark:text-stone-400">ニュースレターに登録して、保護活動の状況や心温まる物語をチェックしましょう。</p>
+<div class="flex gap-2">
+<input class="bg-surface-container-highest border-none rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-primary/40" placeholder="メールアドレス" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-lg material-symbols-outlined" data-icon="send">send</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 pb-12 flex flex-col md:flex-row justify-between items-center text-xs text-stone-500 border-t border-outline-variant/10 pt-8">
+<p>© 2024 ジェントル・ガーディアン レスキュー. All rights reserved.</p>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a class="hover:text-primary transition-colors" href="#">プライバシーポリシー</a>
+<a class="hover:text-primary transition-colors" href="#">利用規約</a>
+<a class="hover:text-primary transition-colors" href="#">お問い合わせ</a>
+</div>
+</div>
+</footer>
+</body></html>

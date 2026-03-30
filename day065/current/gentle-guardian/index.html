@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホーム - The Gentle Guardian | 保護猫団体</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">The Gentle Guardian</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">ホーム</a>
+                <a href="activity.html">私たちについて</a>
+                <a href="#cats">猫たちを探す</a>
+                <a href="activity.html">活動報告</a>
+            </div>
+            <div class="nav-actions">
+                <a href="support.html#volunteer" class="text-secondary font-semibold">ボランティア</a>
+                <a href="support.html" class="btn btn-primary btn-sm">寄付する</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg-blob" style="top: -10%; right: -10%; width: 300px; height: 300px; background-color: var(--secondary-container);"></div>
+            <div class="hero-bg-blob" style="bottom: -10%; left: -10%; width: 200px; height: 200px; background-color: var(--primary-container);"></div>
+
+            <div class="container hero-content">
+                <div class="relative">
+                    <span class="chip chip-secondary-container hero-eyebrow">
+                        すべての小さな肉球に安全な場所を
+                    </span>
+                    <h1>
+                        勇気ある小さな命に、<br>
+                        <span class="text-primary italic">優しい</span>家族との出会いを。
+                    </h1>
+                    <p class="text-on-surface-variant max-w-xl mb-8" style="font-size: 1.125rem; line-height: 1.7;">
+                        ジェントル・ガーディアンは、傷ついた猫たちを保護し、健康を取り戻すまで寄り添い、
+                        生涯愛してくれる家族との橋渡しをする地域密着型の保護団体です。
+                    </p>
+                    <div class="flex gap-4 flex-wrap">
+                        <a href="#cats" class="btn btn-primary btn-lg">家族に迎える</a>
+                        <a href="support.html" class="btn btn-secondary btn-lg">活動を支援する</a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="leaf-shape overflow-hidden shadow-lg relative" style="transform: rotate(-2deg);">
+                        <div class="img-placeholder cat-1 h-full" style="height: 500px;"></div>
+                    </div>
+                    <div class="hero-badge">
+                        <p class="text-primary font-headline font-bold italic text-lg mb-2">
+                            「すべての猫には、幸せな結末を迎える権利があります。」
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="section" style="background-color: var(--surface-container-low);">
+            <div class="container">
+                <div class="grid-2 items-center gap-8" style="grid-template-columns: 5fr 7fr;">
+                    <div class="relative">
+                        <div class="img-placeholder cat-2 rounded-lg shadow-lg mb-0" style="height: 400px; transform: rotate(-2deg);"></div>
+                        <div class="absolute" style="bottom: -1.5rem; right: -1.5rem; background-color: var(--surface-container-low); padding: 1.5rem; border-radius: var(--radius-md); box-shadow: 0 8px 32px rgba(0,0,0,0.1); max-width: 15rem; transform: rotate(3deg);">
+                            <p class="text-primary font-headline font-bold italic text-xl">
+                                愛される権利
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="mb-6">私たちの想い</h2>
+                        <div class="text-on-surface-variant" style="font-size: 1.125rem; line-height: 1.7;">
+                            <p class="mb-6">
+                                私たちは単に猫を救うだけでなく、回復と絆の物語を紡いでいます。
+                                地域社会に根ざし、迷子や捨てられた猫たちに医療ケアと心のケアを提供し、
+                                安全な新しい生活への移行をサポートすることが私たちの使命です。
+                            </p>
+
+                            <div class="grid-2 gap-6 mt-8">
+                                <div class="card card-surface-high p-6">
+                                    <span class="material-symbols-outlined text-secondary" style="font-size: 2.5rem;">medical_services</span>
+                                    <h4 class="font-headline font-bold mt-2 mb-1">医療サポート</h4>
+                                    <p class="text-sm text-on-surface-variant">すべての保護猫に専門的な獣医療を。</p>
+                                </div>
+                                <div class="card card-surface-high p-6">
+                                    <span class="material-symbols-outlined text-primary" style="font-size: 2.5rem;">favorite</span>
+                                    <h4 class="font-headline font-bold mt-2 mb-1">心のケア</h4>
+                                    <p class="text-sm text-on-surface-variant">愛情深いリハビリと遊びの時間を。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cats Section -->
+        <section id="cats" class="section">
+            <div class="container">
+                <div class="flex justify-between items-end mb-12">
+                    <div>
+                        <h2>家族を待っている猫たち</h2>
+                        <p class="text-on-surface-variant mt-2">勇気ある猫たちが、永遠の家族を待っています。</p>
+                    </div>
+                    <a href="#" class="text-primary font-bold flex items-center gap-2">
+                        24匹の猫たちを見る
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- Large Featured Card -->
+                    <div class="card card-surface-lowest bento-col-2 bento-row-2">
+                        <div class="relative" style="height: 400px;">
+                            <div class="img-placeholder cat-1 h-full w-full"></div>
+                            <div class="absolute top-4 left-4 flex gap-2">
+                                <span class="chip chip-secondary">募集中</span>
+                                <span class="chip chip-primary">新着</span>
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-headline text-3xl font-bold">ウィロウ</h3>
+                            <div class="flex gap-2 mt-4 mb-6">
+                                <span class="chip chip-secondary-fixed">穏やかな性格</span>
+                                <span class="chip chip-secondary-fixed">推定3歳</span>
+                            </div>
+                            <p class="text-on-surface-variant mb-6">
+                                ウィロウは、静かな午後となでなでが大好きな心優しい三毛猫です。
+                                現在、シェルターのみんなから愛されています。
+                            </p>
+                            <button class="btn btn-primary w-full">里親に応募する</button>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 1 -->
+                    <div class="card card-surface-lowest">
+                        <div class="img-placeholder cat-2" style="height: 192px;"></div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-headline font-bold">ピップ</h4>
+                                <span class="material-symbols-outlined text-secondary-filled-dim filled">auto_awesome</span>
+                            </div>
+                            <p class="text-xs text-on-surface-variant mb-4">生後6ヶ月 • キジトラMIX</p>
+                            <a href="#" class="text-primary font-bold text-sm hover:underline">詳細を見る</a>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 2 -->
+                    <div class="card card-surface-lowest">
+                        <div class="img-placeholder cat-3" style="height: 192px;"></div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-headline font-bold">ルナ</h4>
+                                <span class="material-symbols-outlined text-secondary-filled-dim filled">thermostat</span>
+                            </div>
+                            <p class="text-xs text-on-surface-variant mb-4">1歳 • 白猫</p>
+                            <a href="#" class="text-primary font-bold text-sm hover:underline">詳細を見る</a>
+                        </div>
+                    </div>
+
+                    <!-- Horizontal Card -->
+                    <div class="card card-primary-fixed bento-col-2 flex items-center gap-8 p-8">
+                        <div class="flex-shrink-0" style="width: 8rem; height: 8rem;">
+                            <div class="img-placeholder cat-4 w-full h-full rounded-full" style="transform: rotate(-5deg);"></div>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-headline text-2xl font-bold">"不機嫌な" バーナビー</h4>
+                            <p class="text-on-primary-fixed-variant mt-2 mb-4">
+                                特別なケアが必要：バーナビーには、小さなお子様のいない静かな環境が必要です。
+                            </p>
+                            <button class="btn" style="background-color: var(--on-primary-fixed); color: var(--primary-fixed);">
+                                預かりボランティア急募
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activity Section -->
+        <section class="section" style="background-color: var(--surface);">
+            <div class="container">
+                <div class="text-center mb-16">
+                    <h2 class="mb-4">活動報告</h2>
+                    <p class="text-on-surface-variant">コミュニティと保護チームからの最新の進捗状況をお届けします。</p>
+                </div>
+
+                <div class="grid-3 gap-8">
+                    <div class="card card-surface-high activity-card primary">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="material-symbols-outlined text-primary icon-circle icon-circle-primary-fixed">event_available</span>
+                            <span class="text-on-surface-variant text-sm">2日前</span>
+                        </div>
+                        <h4 class="font-headline font-bold text-xl mb-3">3匹の譲渡が決定</h4>
+                        <p class="text-on-surface-variant text-sm">
+                            今週末のガーデン交流会で、ベラ、マックス、クロエに新しい家族が決まりました。
+                        </p>
+                    </div>
+
+                    <div class="card card-surface-high activity-card secondary">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="material-symbols-outlined text-secondary icon-circle icon-circle-secondary-fixed">volunteer_activism</span>
+                            <span class="text-on-surface-variant text-sm">昨日</span>
+                        </div>
+                        <h4 class="font-headline font-bold text-xl mb-3">24万円の寄付達成</h4>
+                        <p class="text-on-surface-variant text-sm">
+                            小さなバーナビーの緊急手術のために、多くの方々からご支援をいただきました。
+                            現在順調に回復中です！
+                        </p>
+                    </div>
+
+                    <div class="card card-surface-high activity-card tertiary">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="material-symbols-outlined text-tertiary icon-circle icon-circle-secondary-fixed">medication</span>
+                            <span class="text-on-surface-variant text-sm">5時間前</span>
+                        </div>
+                        <h4 class="font-headline font-bold text-xl mb-3">健康診断の実施</h4>
+                        <p class="text-on-surface-variant text-sm">
+                            新しく保護されたすべての猫たちが、アリス医師によるワクチン接種と
+                            健康診断を終えました。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section">
+            <div class="container">
+                <div class="card-primary rounded-xl p-12 py-16 relative overflow-hidden" style="border-radius: 3rem;">
+                    <div class="absolute inset-0" style="opacity: 0.1; background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+                    <div class="relative z-10 text-center max-w-2xl mx-auto">
+                        <h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-8 leading-tight">
+                            あなたの支援が、一匹の猫の運命を変えます。
+                        </h2>
+                        <p class="text-primary-fixed text-lg mb-10">
+                            里親になること、預かりボランティア、または毎月の寄付。
+                            どのような形でも、あなたの支援が猫たちの聖域を守ります。
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="support.html" class="btn btn-white btn-lg">寄付を始める</a>
+                            <a href="support.html#volunteer" class="btn btn-outline btn-lg">預かりボランティアに応募する</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">The Gentle Guardian</div>
+                <p class="text-on-surface-variant mb-6" style="max-width: 16rem;">
+                    地域の猫たちの健康と幸せな譲渡のために活動している非営利の保護団体です。
+                </p>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-primary" style="cursor: pointer;">groups</span>
+                    <span class="material-symbols-outlined text-primary" style="cursor: pointer;">photo_camera</span>
+                    <span class="material-symbols-outlined text-primary" style="cursor: pointer;">alternate_email</span>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>保護活動</h4>
+                <a href="#cats">猫たちを探す</a>
+                <a href="#">譲渡の流れ</a>
+                <a href="#">幸せな卒業生</a>
+                <a href="support.html#volunteer">預かりボランティア</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>支援する</h4>
+                <a href="support.html">寄付する</a>
+                <a href="support.html#volunteer">ボランティア</a>
+                <a href="support.html#goods">支援物資リスト</a>
+                <a href="#">パートナー企業</a>
+            </div>
+
+            <div>
+                <h4 class="text-on-surface text-sm uppercase tracking-wide mb-4" style="font-size: 0.625rem;">最新情報を受け取る</h4>
+                <p class="text-on-surface-variant text-sm mb-4">
+                    ニュースレターに登録して、保護活動の状況や心温まる物語をチェックしましょう。
+                </p>
+                <div class="flex gap-2">
+                    <input type="email" placeholder="メールアドレス" class="form-input">
+                    <button class="btn btn-primary">
+                        <span class="material-symbols-outlined">send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 ジェントル・ガーディアン レスキュー. All rights reserved.</p>
+            <div>
+                <a href="#">プライバシーポリシー</a>
+                <a href="#">利用規約</a>
+                <a href="#">お問い合わせ</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

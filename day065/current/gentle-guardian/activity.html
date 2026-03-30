@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活動報告 - The Gentle Guardian | 保護猫団体</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-circle {
+            width: 3rem;
+            height: 3rem;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .icon-circle-primary-fixed {
+            background-color: var(--primary-fixed);
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">The Gentle Guardian</a>
+            <div class="nav-links">
+                <a href="index.html">ホーム</a>
+                <a href="activity.html" class="active">私たちについて</a>
+                <a href="index.html#cats">猫たちを探す</a>
+                <a href="activity.html" class="active">活動報告</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#volunteer" class="text-primary font-semibold">ボランティア</a>
+                <a href="support.html" class="btn btn-primary btn-sm">寄付する</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-2 gap-12 items-center">
+                    <div>
+                        <span class="text-secondary font-headline font-bold uppercase tracking-wide text-sm mb-4 inline-block">私たちの日常</span>
+                        <h1 class="mb-6 leading-tight">
+                            すべての肉球が紡ぐ、<br>
+                            <span class="text-primary italic">希望の物語。</span>
+                        </h1>
+                        <p class="text-on-surface-variant leading-relaxed max-w-xl mb-8" style="font-size: 1.125rem;">
+                            喉を鳴らす音や愛らしい仕草の裏側には、献身的なケアのサイクルがあります。
+                            救護の瞬間から、新しい家族と出会う喜びまで。
+                            私たちは透明性と愛情を持って、そのすべての歩みを記録しています。
+                        </p>
+                        <div class="flex gap-4 flex-wrap">
+                            <div class="card card-surface p-6">
+                                <span class="font-headline font-bold text-primary" style="font-size: 2rem;">1,240+</span>
+                                <span class="text-sm text-on-surface-variant">今年の救護実績</span>
+                            </div>
+                            <div class="card card-surface p-6">
+                                <span class="font-headline font-bold text-secondary" style="font-size: 2rem;">856</span>
+                                <span class="text-sm text-on-surface-variant">新しい家族との出会い</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="organic-shape overflow-hidden shadow-xl w-full" style="height: 500px;">
+                            <div class="img-placeholder cat-1 h-full w-full"></div>
+                        </div>
+                        <div class="card card-secondary absolute shadow-lg" style="bottom: -1.5rem; left: -1.5rem; max-width: 15rem;">
+                            <p class="text-on-secondary-container font-headline font-bold italic text-lg">
+                                「最初のごはんは、自分が安全だと気づく瞬間です。」
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rescue & Care Section -->
+        <section class="section" style="background-color: var(--surface-container-low);">
+            <div class="container">
+                <div class="mb-16">
+                    <h2 class="mb-2">救護とケアの取り組み</h2>
+                    <p class="text-on-surface-variant">過酷な環境から、安心できる聖域への変化の軌跡をご覧ください。</p>
+                </div>
+
+                <div class="bento-grid" style="grid-template-columns: repeat(3, 1fr);">
+                    <!-- Step 1 -->
+                    <div class="card card-surface p-8 flex flex-col md:flex-row gap-8 items-center bento-col-2" style="grid-column: span 2;">
+                        <div class="img-placeholder cat-2 rounded-lg w-full md:w-1/2" style="height: 256px;"></div>
+                        <div class="flex-1">
+                            <span class="chip chip-primary-fixed mb-4 inline-block">受け入れ</span>
+                            <h3 class="font-headline font-bold text-xl mb-3">保護活動</h3>
+                            <p class="text-on-surface-variant leading-relaxed">
+                                専門のレスキューチームが24時間体制で待機。
+                                最も弱い立場にある猫たちを、人道的な方法と粘り強い忍耐で保護します。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="card card-primary p-8 flex flex-col justify-between">
+                        <div>
+                            <span class="material-symbols-outlined mb-4" style="font-size: 2.5rem;">home_health</span>
+                            <h3 class="font-headline font-bold text-xl mb-3">適切な検疫とケア</h3>
+                            <p class="opacity-90 leading-relaxed text-sm">
+                                新しく保護された猫は、一般フロアに合流する前に、
+                                安定と休息のための高度観察エリアで心身を整えます。
+                            </p>
+                        </div>
+                        <div class="mt-8 pt-4 flex justify-between items-center" style="border-top: 1px solid rgba(255,255,255,0.2);">
+                            <span class="text-sm">24時間モニタリング</span>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="card card-surface p-8">
+                        <div class="img-placeholder cat-3 rounded-lg mb-6 w-full" style="height: 192px;"></div>
+                        <h3 class="font-headline font-bold text-lg mb-2">社会化トレーニング</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            保護直後は怯えていることも。ボランティアによるタッチセラピーや
+                            遊びを通じて、人への信頼をゆっくりと築き直します。
+                        </p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="card card-secondary p-8 flex flex-col md:flex-row-reverse gap-8 items-center bento-col-2" style="grid-column: span 2;">
+                        <div class="img-placeholder cat-4 rounded-lg w-full md:w-1/2" style="height: 256px;"></div>
+                        <div class="flex-1">
+                            <span class="chip chip-secondary mb-4 inline-block">シェルター生活</span>
+                            <h3 class="font-headline font-bold text-xl mb-3 text-on-secondary-container">共同生活での成長</h3>
+                            <p class="text-on-secondary-container opacity-80 leading-relaxed">
+                                施設内は「フリーローム（自由回遊）」の原則に基づいて設計されています。
+                                猫たちは社会的なコミュニティの中で過ごし、自然な振る舞いを保ちながら譲渡の日を待ちます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Medical Support Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-2 gap-16 items-start">
+                    <div class="order-2 lg:order-1">
+                        <div class="card card-surface rounded-xl overflow-hidden">
+                            <div class="p-8" style="border-bottom: 1px solid var(--outline-variant); opacity: 0.15;">
+                                <h3 class="font-headline font-bold text-xl flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">medical_services</span>
+                                    高度な医療体制
+                                </h3>
+                            </div>
+                            <div class="p-8 space-y-6">
+                                <div class="flex gap-4">
+                                    <div class="icon-circle icon-circle-primary-fixed">
+                                        <span class="material-symbols-outlined text-on-primary-fixed">vaccines</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-1">予防医療</h4>
+                                        <p class="text-on-surface-variant text-sm">
+                                            全頭へのワクチン接種、マイクロチップ装着、寄生虫予防を徹底しています。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="icon-circle icon-circle-primary-fixed">
+                                        <span class="material-symbols-outlined text-on-primary-fixed">biotech</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-1">精密検査</h4>
+                                        <p class="text-on-surface-variant text-sm">
+                                            血液検査や超音波診断設備を完備。複雑な症例に対しても迅速な診断が可能です。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="icon-circle icon-circle-primary-fixed">
+                                        <span class="material-symbols-outlined text-on-primary-fixed">healing</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-1">専門外科</h4>
+                                        <p class="text-on-surface-variant text-sm">
+                                            提携するトップクラスの整形外科医と共に、外傷の回復や先天的な疾患の治療に取り組んでいます。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-1 lg:order-2" style="padding-top: 3rem;">
+                        <h2 class="mb-6 leading-tight">
+                            健やかな明日を、<span class="text-primary">いち早く。</span>
+                        </h2>
+                        <p class="text-lg text-on-surface-variant leading-relaxed mb-8">
+                            私たちはただ家を見つけるだけでなく、健康を取り戻すことを使命としています。
+                            受け入れるすべての猫が包括的な医学的評価を受けます。
+                            持病や身体的なトラウマを抱えた、他のシェルターでは見過ごされがちな「困難な症例」にも、
+                            私たちは全力で向き合います。
+                        </p>
+                        <div class="card card-surface-high p-6 italic text-on-surface-variant rounded-lg">
+                            「すべての命には、健やかに生きるチャンスが等しく与えられるべきだから。
+                            私たちは治療コストを理由に諦めることはありません。」
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories Section -->
+        <section class="section" style="background-color: rgba(214, 125, 97, 0.1);">
+            <div class="container">
+                <div class="text-center mb-16">
+                    <h2 class="mb-4">幸せになった猫たちの声</h2>
+                    <p class="text-on-surface-variant max-w-2xl mx-auto">
+                        私たちの活動の究極のゴールは、最高のパートナーシップを築くこと。
+                        新しい生活を始めた仲間たちをご紹介します。
+                    </p>
+                </div>
+
+                <div class="grid-3 gap-8">
+                    <!-- Story 1 -->
+                    <div class="card card-surface overflow-hidden group">
+                        <div class="relative h-72 overflow-hidden">
+                            <div class="img-placeholder cat-1 w-full h-full transition group-hover:scale-105" style="transition-duration: 500ms;"></div>
+                            <div class="badge chip-secondary">卒業</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-headline font-bold text-xl mb-2">シャドウとアトリエ</h3>
+                            <p class="text-on-surface-variant text-sm leading-relaxed mb-4">
+                                建設現場から救助されたシャドウ。今は日当たりの良いアトリエで、
+                                アーティストの制作活動を見守る毎日を過ごしています。
+                            </p>
+                            <div class="flex items-center gap-2 text-primary font-bold text-sm">
+                                <span class="material-symbols-outlined text-lg">favorite</span>
+                                卒業から3ヶ月
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story 2 -->
+                    <div class="card card-surface overflow-hidden group">
+                        <div class="relative h-72 overflow-hidden">
+                            <div class="img-placeholder cat-2 w-full h-full transition group-hover:scale-105" style="transition-duration: 500ms;"></div>
+                            <div class="badge chip-secondary">卒業</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-headline font-bold text-xl mb-2">ガスとメイベル</h3>
+                            <p class="text-on-surface-variant text-sm leading-relaxed mb-4">
+                                深い絆で結ばれた二人。引き離すことは考えられませんでした。
+                                今では3人のお子さんがいる家庭で、たっぷりの愛情を受けています。
+                            </p>
+                            <div class="flex items-center gap-2 text-primary font-bold text-sm">
+                                <span class="material-symbols-outlined text-lg">favorite</span>
+                                卒業から1年
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story 3 -->
+                    <div class="card card-surface overflow-hidden group">
+                        <div class="relative h-72 overflow-hidden">
+                            <div class="img-placeholder cat-3 w-full h-full transition group-hover:scale-105" style="transition-duration: 500ms;"></div>
+                            <div class="badge chip-secondary">卒業</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-headline font-bold text-xl mb-2">プロフェッサー・パウズ</h3>
+                            <h4 class="text-xs text-secondary font-bold uppercase mb-2">シニア猫の譲渡</h4>
+                            <p class="text-on-surface-variant text-sm leading-relaxed mb-4">
+                                最年長だった彼は、引退した司書の方と巡り会いました。
+                                静かな午後と、たくさんの本に囲まれた穏やかな余生を楽しんでいます。
+                            </p>
+                            <div class="flex items-center gap-2 text-primary font-bold text-sm">
+                                <span class="material-symbols-outlined text-lg">favorite</span>
+                                卒業から6ヶ月
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16 text-center">
+                    <button class="btn btn-primary btn-lg">あなたも物語の仲間に</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="grid-2 gap-8" style="grid-template-columns: repeat(3, 1fr); max-width: 1280px; margin: 0 auto;">
+            <div>
+                <div class="footer-brand">The Gentle Guardian</div>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                    すべての猫の尊厳と幸福のために活動する非営利団体です。
+                    透明性のある運営と、慈しみの心を持ったケアを。
+                </p>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-primary" style="cursor: pointer; opacity: 0.8;">groups</span>
+                    <span class="material-symbols-outlined text-primary" style="cursor: pointer; opacity: 0.8;">photo_camera</span>
+                    <span class="material-symbols-outlined text-primary" style="cursor: pointer; opacity: 0.8;">mail</span>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-headline font-bold mb-4">クイックリンク</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="text-on-surface-variant hover:underline">お問い合わせ</a></li>
+                    <li><a href="#" class="text-on-surface-variant hover:underline">プライバシーポリシー</a></li>
+                    <li><a href="#" class="text-on-surface-variant hover:underline">利用規約</a></li>
+                    <li><a href="#" class="text-on-surface-variant hover:underline">ニュースレター登録</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-headline font-bold mb-4">最新情報を受け取る</h4>
+                <p class="text-on-surface-variant text-sm mb-4">
+                    毎月の救護状況や幸せな卒業報告をお届けします。
+                </p>
+                <div class="flex flex-col gap-2">
+                    <input type="email" placeholder="メールアドレス" class="form-input">
+                    <button class="btn btn-primary text-sm font-headline font-bold">登録する</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center py-8 text-on-surface-variant text-xs" style="max-width: 1280px; margin: 0 auto; border-top: 1px solid var(--outline-variant);">
+            © 2024 The Gentle Guardian Rescue. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
