@@ -1,0 +1,23 @@
+/**
+ * LP CTA Block - Editor Only Styles
+ */
+
+.wp-block-lp-blocks-cta-section {
+	border: 1px dashed #ccc;
+	padding: 2px;
+}
+
+.wp-block-lp-blocks-cta-section .lp-cta-block__inner {
+	min-height: 100px;
+}
+
+.wp-block-lp-blocks-cta-section .lp-cta-block__button {
+	cursor: pointer;
+}
+
+/* Placeholder styling for empty content */
+.wp-block-lp-blocks-cta-section .lp-cta-block__heading:empty::before,
+.wp-block-lp-blocks-cta-section .lp-cta-block__description:empty::before {
+	content: attr(data-placeholder);
+	color: #888;
+}
