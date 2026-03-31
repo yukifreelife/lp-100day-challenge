@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>にゃんこ保護団体 | 保護猫の里親募集・支援のお願い</title>
+    <meta name="description" content="にゃんこ保護団体は、保護された猫たちに新しい家族との出会いを届けています。里親募集、寄付、ボランティア受付中。">
+    <meta property="og:title" content="にゃんこ保護団体 | 保護猫の里親募集・支援のお願い">
+    <meta property="og:description" content="保護された猫たちに温かい家族と永遠の家を届けます。里親募集、寄付、ボランティア受付中。">
+    <meta property="og:image" content="images/cat-calico.png">
+    <meta property="og:url" content="https://nyanko-rescue.example.com/">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,7 +20,12 @@
                 <span class="logo-icon">🐱</span>
                 <span class="logo-text">にゃんこ保護団体</span>
             </div>
-            <nav class="nav">
+            <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" id="nav">
                 <a href="#activities">活動内容</a>
                 <a href="#support">支援方法</a>
                 <a href="#contact" class="btn-nav">お問い合わせ</a>
@@ -29,11 +40,12 @@
             <div class="hero-content">
                 <span class="badge">NPO法人</span>
                 <h1 class="hero-title">
-                    命を守る。<br>
-                    優しい未来を創る。
+                    保護猫に新しい家族を。<br>
+                    <span class="text-primary">里親を探すあなたへ。</span>
                 </h1>
                 <p class="hero-subtitle">
-                    保護された猫たちに、<br class="sp">温かい家族と永遠の家を。
+                    10年で550匹以上の猫たちに、温かい家を届けてきました。<br class="sp">
+                    あなたの「家族になりたい」が、猫たちの未来を変えます。
                 </p>
                 <div class="hero-buttons">
                     <a href="#support" class="btn btn-primary">寄付をする</a>
@@ -42,15 +54,15 @@
             </div>
             <div class="hero-cats">
                 <div class="cat-card cat-card-1">
-                    <div class="cat-placeholder cat-1"></div>
+                    <img src="images/cat-calico.png" alt="むぎ（3歳）" class="cat-image">
                     <span class="cat-name">むぎ（3歳）</span>
                 </div>
                 <div class="cat-card cat-card-2">
-                    <div class="cat-placeholder cat-2"></div>
+                    <img src="images/cat-tabby.png" alt="まる（2歳）" class="cat-image">
                     <span class="cat-name">まる（2歳）</span>
                 </div>
                 <div class="cat-card cat-card-3">
-                    <div class="cat-placeholder cat-3"></div>
+                    <img src="images/cat-white.png" alt="れお（1歳）" class="cat-image">
                     <span class="cat-name">れお（1歳）</span>
                 </div>
             </div>
@@ -73,27 +85,27 @@
                     </p>
                     <p>
                         私たちは2015年から保護猫活動を行っています。
-                        路上で暮らす猫たち、飼育放棄された猫たちに
+                        路頭で暮らす猫たち、飼育放棄された猫たちに
                         医療支援と一時的な居場所を提供し、
                         新しい家族との出会いをサポートしています。
                     </p>
                     <div class="mission-stats">
                         <div class="stat">
-                            <span class="stat-number">500+</span>
+                            <span class="stat-number">550+</span>
                             <span class="stat-label">保護した猫</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">380+</span>
+                            <span class="stat-number">420+</span>
                             <span class="stat-label">里親紹介</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">9年</span>
+                            <span class="stat-number">10年</span>
                             <span class="stat-label">活動歴</span>
                         </div>
                     </div>
                 </div>
                 <div class="mission-image">
-                    <div class="image-placeholder main-cat"></div>
+                    <img src="images/cat-shelter.png" alt="保護猫の様子" class="mission-img">
                 </div>
             </div>
         </div>
@@ -119,7 +131,7 @@
                     </div>
                     <h3 class="activity-title">保護・一時預かり</h3>
                     <p>
-                        虐待や飼育放棄された猫、路上で暮らす猫たちを保護し、
+                        虐待や飼育放棄された猫、路頭で暮らす猫たちを保護し、
                         健康的な体と心になるまで一時的に預かります。
                     </p>
                 </div>
@@ -134,7 +146,7 @@
                     <h3 class="activity-title">医療支援</h3>
                     <p>
                         不妊去勢手術、ワクチン接種、治療が必要な猫の
-                        医療費を支援し、健康な状態で里親へ引き渡します。
+                        医療費を支援し、健康な状態で里親に引き渡します。
                     </p>
                 </div>
 
@@ -175,23 +187,27 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Cats</span>
-                <h2 class="section-title">里親を待つ猫たち</h2>
-                <p class="section-desc">出会いを待っている仲間たちをご紹介</p>
+                <h2 class="section-title">家族を待つ保護猫たち</h2>
+                <p class="section-desc">
+                    「里親になりたい」あなたへ。<br>
+                    「まずは支援したい」あなたへ。<br>
+                    命にかけた猫たちとの新しい生活をサポートします。
+                </p>
             </div>
 
             <div class="cat-grid">
                 <div class="cat-profile">
-                    <div class="cat-image cat-img-1"></div>
+                    <img src="images/cat-calico.png" alt="むぎ" class="cat-image">
                     <div class="cat-info">
                         <span class="cat-tag">里親募集中</span>
                         <h3 class="cat-profile-name">むぎ</h3>
                         <p class="cat-detail">オス・3歳・去勢済み</p>
-                        <p class="cat-desc">人懐っこく、膝の上が大好き。穏やかな性格です。</p>
+                        <p class="cat-desc">人懐っこく、膝の上が大好きで、穏やかな性格です。</p>
                     </div>
                 </div>
 
                 <div class="cat-profile">
-                    <div class="cat-image cat-img-2"></div>
+                    <img src="images/cat-tabby.png" alt="まる" class="cat-image">
                     <div class="cat-info">
                         <span class="cat-tag">里親募集中</span>
                         <h3 class="cat-profile-name">まる</h3>
@@ -201,17 +217,17 @@
                 </div>
 
                 <div class="cat-profile">
-                    <div class="cat-image cat-img-3"></div>
+                    <img src="images/cat-white.png" alt="れお" class="cat-image">
                     <div class="cat-info">
                         <span class="cat-tag">里親募集中</span>
                         <h3 class="cat-profile-name">れお</h3>
                         <p class="cat-detail">オス・1歳・去勢済み</p>
-                        <p class="cat-desc">元気いっぱい！遊ぶことが大好きな男の子です。</p>
+                        <p class="cat-desc">元気いっぱい、遊ぶことが大好きな男の子です。</p>
                     </div>
                 </div>
 
                 <div class="cat-profile">
-                    <div class="cat-image cat-img-4"></div>
+                    <img src="images/cat-shelter.png" alt="そら" class="cat-image">
                     <div class="cat-info">
                         <span class="cat-tag">里親募集中</span>
                         <h3 class="cat-profile-name">そら</h3>
@@ -245,15 +261,16 @@
                     </div>
                     <h3 class="support-title">寄付</h3>
                     <p class="support-desc">
-                        1回からOK。毎月のサポーターも募集中。<br>
-                        食費、医療費、シェルター維持費として活用します。
+                        毎月1,000円から、保護猫のごはん1週間分に。<br>
+                        継続的な支援で、何度も救える猫が増えます。
                     </p>
                     <ul class="support-list">
-                        <li>月1,000円から</li>
-                        <li>領収書発行可能</li>
-                        <li>税控除の対象</li>
+                        <li>🍽️ 月1,000円 → ごはん1週間分</li>
+                        <li>💉 月3,000円 → ワクチン1回分</li>
+                        <li>🏥 月5,000円 → 治療費1ヶ月分</li>
+                        <li>領収書発行可能・税控除対象</li>
                     </ul>
-                    <a href="#donate" class="btn btn-primary">寄付をする</a>
+                    <a href="#support" class="btn btn-primary">寄付をする</a>
                 </div>
 
                 <div class="support-card">
@@ -267,10 +284,10 @@
                     </p>
                     <ul class="support-list">
                         <li>事前面談あり</li>
-                        <li>お試し預かり可能</li>
-                        <li>生涯サポート</li>
+                        <li>2週間のお試し預かりで相性確認</li>
+                        <li>生涯サポート付き</li>
                     </ul>
-                    <a href="#foster" class="btn btn-secondary">里_parent申し込み</a>
+                    <a href="#contact" class="btn btn-secondary">里親申し込み</a>
                 </div>
 
                 <div class="support-card">
@@ -283,11 +300,11 @@
                         イベント手伝い、一時預かりなど。
                     </p>
                     <ul class="support-list">
-                        <li>猫の世話</li>
+                        <li>猫のお世話</li>
                         <li>清掃・洗濯</li>
                         <li>イベント手伝い</li>
                     </ul>
-                    <a href="#volunteer" class="btn btn-secondary">参加する</a>
+                    <a href="#contact" class="btn btn-secondary">参加する</a>
                 </div>
 
                 <div class="support-card">
@@ -304,7 +321,7 @@
                         <li>猫砂</li>
                         <li>タオル・毛布</li>
                     </ul>
-                    <a href="#goods" class="btn btn-secondary">詳細を見る</a>
+                    <a href="#support" class="btn btn-secondary">詳細を見る</a>
                 </div>
             </div>
         </div>
@@ -315,7 +332,7 @@
         <div class="container">
             <div class="report-content">
                 <div class="report-image">
-                    <div class="report-placeholder"></div>
+                    <img src="images/cat-volunteer.png" alt="活動報告" class="report-img">
                 </div>
                 <div class="report-text">
                     <span class="section-tag">Activity Report</span>
@@ -326,16 +343,16 @@
                     </p>
                     <div class="report-list">
                         <div class="report-item">
-                            <span class="report-date">2024.03</span>
+                            <span class="report-date">2025.03</span>
                             <span class="report-text">15匹の猫が新しい家族のもとへ</span>
                         </div>
                         <div class="report-item">
-                            <span class="report-date">2024.02</span>
+                            <span class="report-date">2025.02</span>
                             <span class="report-text">シェルター拡張工事完了</span>
                         </div>
                         <div class="report-item">
-                            <span class="report-date">2024.01</span>
-                            <span class="report-text">新年イベントで50名以上来場</span>
+                            <span class="report-date">2025.01</span>
+                            <span class="report-text">新年イベントで50名以上が来場</span>
                         </div>
                     </div>
                     <a href="#" class="btn-link">すべての活動報告を見る →</a>
@@ -355,24 +372,24 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <h3 class="faq-question">里親になるにはどのような条件がありますか？</h3>
-                    <p class="faq-answer">
-                        20歳以上で、猫を終身飼育できる環境と経済力があること。
-                        説明会への参加と事前面談を実施しています。
-                    </p>
+                    <div class="faq-answer">
+                        <p>20歳以上で、猫を終身飼育できる環境と経済力があること。
+                        説明会への参加と事前面談を実施しています。</p>
+                    </div>
                 </div>
                 <div class="faq-item">
                     <h3 class="faq-question">寄付はどのように使われますか？</h3>
-                    <p class="faq-answer">
-                        主にキャットフード、医療費、シェルターの家賃・光熱費として活用しています。
-                        活動報告で使途を公開しています。
-                    </p>
+                    <div class="faq-answer">
+                        <p>主にキャットフード、医療費、シェルターの家賃・光熱費として活用しています。
+                        活動報告で使途を公開しています。</p>
+                    </div>
                 </div>
                 <div class="faq-item">
                     <h3 class="faq-question">ボランティアはどのような人が参加できますか？</h3>
-                    <p class="faq-answer">
-                        保護猫活動にご理解のある方であれば、年齢・経験不問です。
-                        説明会への参加をお願いしています。
-                    </p>
+                    <div class="faq-answer">
+                        <p>保護猫活動にご理解のある方であれば、年齢・経験不問です。
+                        説明会への参加をお願いしています。</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -386,7 +403,7 @@
                     <span class="section-tag">Contact</span>
                     <h2 class="section-title">お問い合わせ</h2>
                     <p>
-                        里 parent申し込み、ボランティア、<br class="sp">
+                        里親申し込み、ボランティア、<br class="sp">
                         その他お問い合わせはこちらから。
                     </p>
 
@@ -416,7 +433,7 @@
                 </div>
 
                 <div class="contact-form-wrapper">
-                    <form class="contact-form">
+                    <form class="contact-form" action="mailto:info@nyanko-rescue.example.com" method="POST" enctype="text/plain">
                         <div class="form-group">
                             <label>お名前 *</label>
                             <input type="text" placeholder="山田 太郎" required>
@@ -461,7 +478,7 @@
                 </div>
                 <div class="footer-links">
                     <div class="footer-link-group">
-                        <h4>关于我们</h4>
+                        <h4>私たちについて</h4>
                         <a href="#">団体概要</a>
                         <a href="#">活動報告</a>
                         <a href="#">スタッフ紹介</a>
@@ -469,7 +486,7 @@
                     <div class="footer-link-group">
                         <h4>参加する</h4>
                         <a href="#support">寄付</a>
-                        <a href="#support">里_parentになる</a>
+                        <a href="#support">里親になる</a>
                         <a href="#support">ボランティア</a>
                     </div>
                     <div class="footer-link-group">
@@ -481,14 +498,42 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 にゃんこ保護団体. All rights reserved.</p>
+                <p>&copy; 2025 にゃんこ保護団体. All rights reserved.</p>
                 <div class="footer-sns">
-                    <a href="#" class="sns-link">X</a>
-                    <a href="#" class="sns-link">Instagram</a>
-                    <a href="#" class="sns-link">Facebook</a>
+                    <a href="https://twitter.com/nyanko_rescue" class="sns-link">X</a>
+                    <a href="https://instagram.com/nyanko_rescue" class="sns-link">Instagram</a>
+                    <a href="https://facebook.com/nyanko.rescue" class="sns-link">Facebook</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.getElementById('nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = nav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

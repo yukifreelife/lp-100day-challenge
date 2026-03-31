@@ -134,9 +134,80 @@ ul {
     color: var(--color-white);
 }
 
+/* === Hamburger Menu === */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 24px;
+    height: 2px;
+    background: var(--color-text);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
 @media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
     .nav {
-        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background: var(--color-white);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        padding: 40px;
+        box-shadow: -4px 0 16px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+    }
+
+    .nav.active {
+        right: 0;
+    }
+
+    .nav a {
+        font-size: 1.125rem;
+    }
+
+    /* Overlay when menu is open */
+    .nav.active::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
     }
 }
 
@@ -289,6 +360,14 @@ ul {
     margin-bottom: 12px;
     background-size: cover;
     background-position: center;
+}
+
+.cat-image {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: var(--radius-md);
+    margin-bottom: 12px;
+    object-fit: cover;
 }
 
 .cat-1 {
@@ -454,6 +533,14 @@ section {
     aspect-ratio: 4/3;
     border-radius: var(--radius-lg);
     background: linear-gradient(135deg, #FFE8D6 0%, #E89B6E 100%);
+}
+
+.mission-img {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 4/3;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
 }
 
 .main-cat {
@@ -654,12 +741,17 @@ section {
 
 .support-badge {
     position: absolute;
-    top: 16px;
-    right: 16px;
-    padding: 6px 12px;
+    top: -12px;
+    right: 24px;
+    padding: 8px 20px;
     background: var(--color-accent);
     color: var(--color-text);
-    font-size: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-sm);
+    z-index: 1;
+}
     font-weight: 600;
     border-radius: var(--radius-full);
 }
@@ -734,6 +826,13 @@ section {
     background: linear-gradient(135deg, #E8F0D6 0%, #B8C896 100%);
 }
 
+.report-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+}
+
 .report-text h2 {
     font-size: 2rem;
     font-weight: 700;
@@ -802,20 +901,51 @@ section {
 .faq-item {
     background: var(--color-white);
     border-radius: var(--radius-md);
-    padding: 32px;
     margin-bottom: 16px;
     box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .faq-question {
     font-size: 1.125rem;
     font-weight: 700;
-    margin-bottom: 16px;
+    padding: 24px 32px;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question::after {
+    transform: rotate(45deg);
 }
 
 .faq-answer {
     color: var(--color-text-light);
     line-height: 1.8;
+    padding: 0 32px 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding-bottom: 24px;
+}
+
+.faq-item.active {
+    box-shadow: var(--shadow-md);
 }
 
 @media (max-width: 768px) {
