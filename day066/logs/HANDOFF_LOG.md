@@ -2,7 +2,7 @@
 
 **Date**: 2026-04-01
 **Phase**: LP制作（新規デザイン）
-**Status**: In Progress
+**Status**: Completed
 
 ---
 
@@ -27,7 +27,7 @@
 - [x] レスポンシブ対応
 - [x] 動作確認
 - [x] スクリーンショット撮影
-- [ ] Gitコミット
+- [x] Gitコミット
 
 ---
 
@@ -86,13 +86,44 @@ wheat-bean-cafe/
 
 ## 学び
 
+### カフェLPのポイント
+- 温かみのあるアーストーンカラーで信頼感を演出
+- 「焼きたて」「こだわり」などのワードで新鮮さを強調
+- メニュー価格を明記で来店ハードルを下げる
+- 設備情報（Wi-Fi、電源）でカフェ利用用途を拡張
+
+### レスポンシブ対応
+- Gridレイアウトで柔軟なカード配置
+- モバイルメニューはtransformでスライド
+- インラインスタイルではなくCSSクラスで管理
+
 ---
 
 ## 次回やること
 
+### Day067: 新テーマLP制作
+- テーマ決定（カフェ以外の架空案件）
+- HTML/CSS実装
+- レビューと改善
+
 ---
 
 ## 完成物
+
+**LP**: `/Users/yuuki/Works/lp-100/day066/current/wheat-bean-cafe/`
+- http://localhost:8080/day066/current/wheat-bean-cafe/ で確認可能
+
+**スクリーンショット**:
+- screenshot-hero.png (398KB)
+- screenshot-concept.png (398KB)
+- screenshot-menu.png (398KB)
+- screenshot-interior.png (398KB)
+- screenshot-access.png (398KB)
+- screenshot-mobile.png (145KB)
+
+**Git**: コミット完了 (17cf291)
+
+**引き継ぎ**: `day066/logs/HANDOFF_LOG.md`
 
 ---
 
