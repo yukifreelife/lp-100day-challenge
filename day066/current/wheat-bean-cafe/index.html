@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wheat & Bean - こだわりの小麦とコーヒー豆で焼き上げるパンと、厳選された豆で淹れるスペシャルティコーヒーを提供する職人カフェ">
+    <meta name="keywords" content="カフェ,ベーカリー,パン,コーヒー,スペシャルティ,朝食,ランチ">
+    <title>Wheat & Bean | 小麦と豆の職人カフェ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="#" class="header__logo">
+                <span class="header__logo-icon">🌾</span>
+                <span class="header__logo-text">Wheat & Bean</span>
+            </a>
+            <nav class="header__nav" id="nav">
+                <a href="#concept" class="header__nav-link">Concept</a>
+                <a href="#menu" class="header__nav-link">Menu</a>
+                <a href="#interior" class="header__nav-link">Interior</a>
+                <a href="#access" class="header__nav-link">Access</a>
+            </nav>
+            <button class="header__hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__bg">
+            <div class="hero__gradient"></div>
+        </div>
+        <div class="hero__content">
+            <p class="hero__subtitle">Bakery & Coffee</p>
+            <h1 class="hero__title">
+                <span class="hero__title-line">Wheat & Bean</span>
+                <span class="hero__title-line">小麦と豆の</span>
+                <span class="hero__title-line">職人カフェ</span>
+            </h1>
+            <p class="hero__desc">毎朝、焼きたての香りと共に始まる<br>特別なひとときをお届けします</p>
+            <div class="hero__actions">
+                <a href="#menu" class="btn btn--primary">メニューを見る</a>
+                <a href="#access" class="btn btn--outline">アクセス</a>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <span class="hero__scroll-text">Scroll</span>
+            <span class="hero__scroll-line"></span>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section class="concept" id="concept">
+        <div class="concept__inner">
+            <div class="concept__badge">Our Story</div>
+            <h2 class="concept__title">素材へのこだわり<br><span class="concept__title-accent">それが、私たちのすべて</span></h2>
+            <div class="concept__grid">
+                <div class="concept__card">
+                    <div class="concept__icon">
+                        <span class="material-symbols-rounded">grain</span>
+                    </div>
+                    <h3 class="concept__card-title">こだわりの小麦</h3>
+                    <p class="concept__card-desc">国内産の有機栽培小麦を中心に、季節や特徴に合わせて世界各地から厳選。小麦本来の風味を大切にしています。</p>
+                </div>
+                <div class="concept__card">
+                    <div class="concept__icon">
+                        <span class="material-symbols-rounded">coffee</span>
+                    </div>
+                    <h3 class="concept__card-title">スペシャルティコーヒー</h3>
+                    <p class="concept__card-desc">農園直取引で納入された豆を、自店で焙煎。産地の特徴を最大限に引き出す、一杯ずつ丁寧に淹れます。</p>
+                </div>
+                <div class="concept__card">
+                    <div class="concept__icon">
+                        <span class="material-symbols-rounded">bakery_dining</span>
+                    </div>
+                    <h3 class="concept__card-title">毎朝焼きたて</h3>
+                    <p class="concept__card-desc">朝5時から職人が立ち上がり、窯に入れる。その日の気温や湿度に合わせて生地を調整する、手作りの味わい。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="menu__inner">
+            <div class="section-header">
+                <span class="section-header__en">Menu</span>
+                <h2 class="section-header__title">季節のメニュー</h2>
+                <p class="section-header__desc">毎日の朝食から、優雅なカフェタイムまで</p>
+            </div>
+
+            <!-- Bread Menu -->
+            <div class="menu__category">
+                <div class="menu__category-header">
+                    <h3 class="menu__category-title">Bakery</h3>
+                    <span class="menu__category-line"></span>
+                </div>
+                <div class="menu__items">
+                    <div class="menu__item">
+                        <div class="menu__item-image">
+                            <img src="images/baguette.jpg" alt="バゲット" loading="lazy">
+                        </div>
+                        <div class="menu__item-content">
+                            <h4 class="menu__item-name">石窯バゲット</h4>
+                            <p class="menu__item-desc">外はパリッと、中はもっちり。発酵バターの風味が香る</p>
+                            <p class="menu__item-price">¥280</p>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__item-image">
+                            <img src="images/croissant.jpg" alt="クロワッサン" loading="lazy">
+                        </div>
+                        <div class="menu__item-content">
+                            <h4 class="menu__item-name">発酵バタークロワッサン</h4>
+                            <p class="menu__item-desc">フランス産発酵バターを72時間かけて層に折り込む</p>
+                            <p class="menu__item-price">¥320</p>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__item-image">
+                            <img src="images/pancake.jpg" alt="パンケーキ" loading="lazy">
+                        </div>
+                        <div class="menu__item-content">
+                            <h4 class="menu__item-name">朝食パンケーキ</h4>
+                            <p class="menu__item-desc">自家製サワークリームと季節のフルーツを添えて</p>
+                            <p class="menu__item-price">¥680</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coffee Menu -->
+            <div class="menu__category menu__category--reverse">
+                <div class="menu__category-header">
+                    <h3 class="menu__category-title">Coffee</h3>
+                    <span class="menu__category-line"></span>
+                </div>
+                <div class="menu__items">
+                    <div class="menu__item">
+                        <div class="menu__item-image">
+                            <img src="images/latte.jpg" alt="カフェラテ" loading="lazy">
+                        </div>
+                        <div class="menu__item-content">
+                            <h4 class="menu__item-name">スペシャルティラテ</h4>
+                            <p class="menu__item-desc">エチオピア・ヤガチェフェのフルーティーな香り</p>
+                            <p class="menu__item-price">¥550</p>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__item-image">
+                            <img src="images/drip.jpg" alt="ハンドドリップ" loading="lazy">
+                        </div>
+                        <div class="menu__item-content">
+                            <h4 class="menu__item-name">ハンドドリップ</h4>
+                            <p class="menu__item-desc">その日の豆を選べる3種類のラインナップ</p>
+                            <p class="menu__item-price">¥480</p>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__item-image">
+                            <img src="images/espresso.jpg" alt="エスプレッソ" loading="lazy">
+                        </div>
+                        <div class="menu__item-content">
+                            <h4 class="menu__item-name">エスプレッソ</h4>
+                            <p class="menu__item-desc">深煎りブレンドの濃厚な味わい</p>
+                            <p class="menu__item-price">¥380</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interior Section -->
+    <section class="interior" id="interior">
+        <div class="interior__inner">
+            <div class="section-header section-header--white">
+                <span class="section-header__en">Interior</span>
+                <h2 class="section-header__title">空間デザイン</h2>
+                <p class="section-header__desc">心地よい時間を過ごせる、あなただけの場所</p>
+            </div>
+            <div class="interior__gallery">
+                <div class="interior__item interior__item--large">
+                    <img src="images/interior-main.jpg" alt="店内メイン" loading="lazy">
+                </div>
+                <div class="interior__item">
+                    <img src="images/interior-window.jpg" alt="窓際シート" loading="lazy">
+                </div>
+                <div class="interior__item">
+                    <img src="images/interior-counter.jpg" alt="カウンター" loading="lazy">
+                </div>
+                <div class="interior__item">
+                    <img src="images/interior-detail.jpg" alt="ディテール" loading="lazy">
+                </div>
+                <div class="interior__item interior__item--wide">
+                    <img src="images/interior-terrace.jpg" alt="テラス席" loading="lazy">
+                </div>
+            </div>
+            <div class="interior__features">
+                <div class="interior__feature">
+                    <span class="material-symbols-rounded">wifi</span>
+                    <p>Free Wi-Fi</p>
+                </div>
+                <div class="interior__feature">
+                    <span class="material-symbols-rounded">power</span>
+                    <p>電源席あり</p>
+                </div>
+                <div class="interior__feature">
+                    <span class="material-symbols-rounded">pets</span>
+                    <p>テラスはペット同伴OK</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access Section -->
+    <section class="access" id="access">
+        <div class="access__inner">
+            <div class="section-header">
+                <span class="section-header__en">Access</span>
+                <h2 class="section-header__title">店舗情報</h2>
+            </div>
+            <div class="access__grid">
+                <div class="access__info">
+                    <dl class="access__list">
+                        <div class="access__item">
+                            <dt>住所</dt>
+                            <dd>〒150-0000<br>東京都渋谷区神宮前3-1-1 1F</dd>
+                        </div>
+                        <div class="access__item">
+                            <dt>電話</dt>
+                            <dd><a href="tel:03-1234-5678">03-1234-5678</a></dd>
+                        </div>
+                        <div class="access__item">
+                            <dt>最寄り駅</dt>
+                            <dd>JR原宿駅 徒歩3分<br>東京メトロ明治神宮前駅 徒歩5分</dd>
+                        </div>
+                    </dl>
+                    <div class="access__hours">
+                        <h4 class="access__hours-title">営業時間</h4>
+                        <dl class="access__hours-list">
+                            <div class="access__hours-item">
+                                <dt>平日</dt>
+                                <dd>7:00 - 20:00</dd>
+                            </div>
+                            <div class="access__hours-item">
+                                <dt>土日祝</dt>
+                                <dd>8:00 - 19:00</dd>
+                            </div>
+                            <div class="access__hours-item">
+                                <dt>定休日</dt>
+                                <dd>毎週水曜日・第3木曜日</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+                <div class="access__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.047072554395!2d139.702688!3d35.669859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca3c5fa5bb5%3A0x8a9a5e0c0c0c0c0c!2z6YqA5bqn6aeF!5e0!3m2!1sja!2sjp!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact__inner">
+            <div class="section-header">
+                <span class="section-header__en">Contact</span>
+                <h2 class="section-header__title">お問い合わせ</h2>
+                <p class="section-header__desc">ご質問・ご予約はお気軽に</p>
+            </div>
+            <form class="contact__form">
+                <div class="contact__row">
+                    <div class="contact__field">
+                        <label class="contact__label">お名前 <span class="contact__required">必須</span></label>
+                        <input type="text" class="contact__input" placeholder="山田 太郎" required>
+                    </div>
+                    <div class="contact__field">
+                        <label class="contact__label">メールアドレス <span class="contact__required">必須</span></label>
+                        <input type="email" class="contact__input" placeholder="example@email.com" required>
+                    </div>
+                </div>
+                <div class="contact__field">
+                    <label class="contact__label">お問い合わせ種別</label>
+                    <select class="contact__select">
+                        <option value="">選択してください</option>
+                        <option value="reservation">ご予約</option>
+                        <option value="question">お問い合わせ</option>
+                        <option value="other">その他</option>
+                    </select>
+                </div>
+                <div class="contact__field">
+                    <label class="contact__label">メッセージ <span class="contact__required">必須</span></label>
+                    <textarea class="contact__textarea" rows="5" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full">送信する</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__main">
+                <div class="footer__logo">
+                    <span class="footer__logo-icon">🌾</span>
+                    <span class="footer__logo-text">Wheat & Bean</span>
+                </div>
+                <p class="footer__desc">こだわりの小麦とコーヒー豆で焼き上げる<br>毎日を少し豊かにする味わい</p>
+            </div>
+            <div class="footer__sns">
+                <a href="#" class="footer__sns-link" aria-label="Instagram">
+                    <span class="material-symbols-rounded">photo_camera</span>
+                </a>
+                <a href="#" class="footer__sns-link" aria-label="Twitter">
+                    <span class="material-symbols-rounded">alternate_email</span>
+                </a>
+                <a href="#" class="footer__sns-link" aria-label="LINE">
+                    <span class="material-symbols-rounded">chat</span>
+                </a>
+            </div>
+            <p class="footer__copyright">&copy; 2024 Wheat & Bean. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

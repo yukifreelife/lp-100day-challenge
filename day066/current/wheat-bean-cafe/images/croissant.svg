@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect fill="#f5e6d3" width="400" height="300"/>
+  <text x="200" y="140" font-size="80" text-anchor="middle">🥐</text>
+  <text x="200" y="170" font-size="14" fill="#8b5a3c" text-anchor="middle">Croissant</text>
+</svg>
