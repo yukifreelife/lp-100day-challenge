@@ -2329,16 +2329,6 @@ body.page-loaded .hero-content {
   .md-block { display: block; }
 }
 
-/* Position Utilities */
-.position-relative { position: relative; }
-.position-absolute { position: absolute; }
-.position-overlay {
-  position: absolute;
-  bottom: 2.5rem;
-  right: -2.5rem;
-}
-.z-negative { z-index: -1; }
-
 /* Padding Utilities */
 .padding-left-lg { padding-left: var(--spacing-12); }
 .padding-left-12 { padding-left: var(--spacing-12); }
@@ -2350,56 +2340,9 @@ body.page-loaded .hero-content {
 .margin-bottom-xl { margin-bottom: var(--spacing-16); }
 .margin-bottom-12 { margin-bottom: var(--spacing-12); }
 
-/* Grid Utilities */
-.grid-cols-2-md {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-cols-12-md {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-.col-span-4-md { grid-column: span 4; }
-.col-span-8-md { grid-column: span 8; }
-.col-span-12-md { grid-column: span 12; }
-
-@media (min-width: 768px) {
-  .grid-cols-2-md { grid-template-columns: repeat(2, 1fr); }
-  .grid-cols-12-md { grid-template-columns: repeat(12, 1fr); }
-  .col-span-4-md { grid-column: span 4 / span 4; }
-  .col-span-8-md { grid-column: span 8 / span 8; }
-  .col-span-12-md { grid-column: span 12 / span 12; }
-}
-
-@media (min-width: 1024px) {
-  .grid-cols-2-lg {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Aspect Ratio */
-.aspect-16-9 {
-  aspect-ratio: 16 / 9;
-}
-
 /* Width Utilities */
-.w-full { width: 100%; }
 .w-12 { width: 3rem; }
 .h-px { height: 1px; }
-
-/* Transition Utilities */
-.transition-colors {
-  transition-property: color, background-color, border-color;
-  transition-duration: var(--transition-base);
-}
-
-/* Background Utilities */
-.bg-surface {
-  background-color: var(--color-surface);
-}
 
 /* Responsive Layout Adjustments */
 @media (max-width: 767px) {
@@ -2447,4 +2390,9 @@ body.page-loaded .hero-content {
 
 .link-with-icon:hover {
   color: var(--color-primary);
+}
+
+/* Items Start (for article items) */
+.article-item {
+  align-items: flex-start;
 }
