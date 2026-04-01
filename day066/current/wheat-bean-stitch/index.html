@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- TopNavBar -->
-    <nav class="glass-nav">
+    <nav class="glass-nav" role="navigation" aria-label="Main navigation">
         <div class="nav-container container">
             <div class="nav-logo">Artisan Coffee & Grain</div>
             <div class="nav-links">
@@ -30,17 +30,37 @@
                 <a href="#news" class="nav-link">News</a>
                 <a href="#access" class="nav-link">Access</a>
             </div>
-            <div class="flex items-center gap-4">
-                <button class="btn btn-primary md-block">Online Shop</button>
+            <div class="nav-actions">
+                <button class="btn btn-primary desktop-only">Online Shop</button>
                 <button class="btn btn-secondary">Reserve</button>
             </div>
+            <button class="nav-mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="nav-mobile-menu" aria-label="Mobile menu">
+        <div class="mobile-menu-inner">
+            <nav class="mobile-menu-links">
+                <a href="#story" class="mobile-nav-link">Story</a>
+                <a href="#products" class="mobile-nav-link">Products</a>
+                <a href="#news" class="mobile-nav-link">News</a>
+                <a href="#access" class="mobile-nav-link">Access</a>
+            </nav>
+            <div class="mobile-menu-buttons">
+                <button class="btn btn-primary" style="width: 100%;">Online Shop</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-bg">
-            <img src="images/hero-bg.jpg" alt="Artisan coffee beans" class="brightness-70">
+            <img src="images/hero-bg.jpg" alt="Artisan coffee beans" class="hero-bg-image">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
@@ -49,15 +69,15 @@
                 朝の光に、<br>小麦と豆の香りを。
             </h1>
             <p class="hero-description">
-                素材の声を聞き、時間を慈しみ、<br class="md-hidden">
+                素材の声を聞き、時間を慈しみ、<br class="mobile-only">
                 ひとつずつ丁寧に。本物の香りが、あなたの一日を豊かにする。
             </p>
             <div class="hero-cta">
-                <a href="#story" class="flex items-center gap-2">
+                <a href="#story" class="hero-cta-link">
                     <span class="hero-cta-icon">
-                        <span class="material-symbols-outlined text-sm">arrow_downward</span>
+                        <span class="material-symbols-outlined icon-sm">arrow_downward</span>
                     </span>
-                    <span class="hero-cta-text">Discover Our Story</span>
+                    <span class="hero-cta-text">私たちのストーリーを見る</span>
                 </a>
             </div>
         </div>
@@ -66,32 +86,32 @@
     <!-- Story Section -->
     <section class="section story-section" id="story">
         <div class="container">
-            <div class="story-grid grid md-grid-cols-2">
-                <div class="story-image-wrapper relative">
-                    <div class="story-deco asymmetric-card -z-10"></div>
-                    <img src="images/story-baker.jpg" alt="Baker's hands" class="w-full h-[600px] object-cover asymmetric-card editorial-shadow">
-                    <div class="story-quote asymmetric-card editorial-shadow absolute bottom-10 -right-10">
+            <div class="story-grid grid grid-cols-2-md">
+                <div class="story-image-wrapper position-relative">
+                    <div class="story-deco asymmetric-card z-negative"></div>
+                    <img src="images/story-baker.jpg" alt="Baker's hands" class="story-image asymmetric-card editorial-shadow">
+                    <div class="story-quote asymmetric-card editorial-shadow position-overlay">
                         <p class="story-quote-title">「本物」であることの誇り。</p>
                         <p class="story-quote-text">厳選されたオーガニック小麦と、世界中から届く希少なスペシャリティコーヒー豆。私たちは素材本来の個性を引き出す手法にこだわります。</p>
                     </div>
                 </div>
-                <div class="story-content flex flex-col gap-8 lg:pl-12">
-                    <div class="flex items-center gap-4 text-secondary">
-                        <span class="w-12 h-px bg-secondary"></span>
-                        <span class="label-sm">Our Philosophy</span>
+                <div class="story-content flex flex-col gap-lg padding-left-lg">
+                    <div class="story-header">
+                        <span class="deco-line"></span>
+                        <span class="label-sm text-secondary">Our Philosophy</span>
                     </div>
                     <h2 class="headline-lg text-primary leading-tight">
                         時は、最高のエッセンス。<br>
                         熟成が生む、深い味わい。
                     </h2>
                     <p class="body-lg text-on-surface-variant leading-loose">
-                        パンが膨らむのを待つ時間。豆が静かに蒸らされる数秒。Origin & Grainが大切にしているのは、効率ではなく「対話」です。
+                        パンが膨らむのを待つ時間。豆が静かに蒸らされる数秒。Artisan Coffee & Grainが大切にしているのは、効率ではなく「対話」です。
                     </p>
                     <p class="body-lg text-on-surface-variant leading-loose">
                         日々変わる気温や湿度に合わせて微調整を繰り返す。職人の感覚が、デジタルには決して再現できない「究極の日常」を作り上げます。
                     </p>
-                    <div class="pt-6">
-                        <button class="btn btn-primary btn-accent">詳しく見る</button>
+                    <div class="story-cta">
+                        <button class="btn btn-primary btn-accent">哲学を知る</button>
                     </div>
                 </div>
             </div>
@@ -101,29 +121,29 @@
     <!-- Products Section -->
     <section class="section products-section" id="products">
         <div class="container">
-            <div class="section-header flex flex-col md:flex-row md:items-end justify-between gap-8">
+            <div class="section-header flex flex-col flex-row-md items-end-md justify-between gap-lg">
                 <div>
                     <span class="section-overline">Selected Menu</span>
                     <h2 class="section-title">職人の自信作</h2>
                 </div>
-                <p class="max-w-md text-on-surface-variant">
+                <p class="section-description text-on-surface-variant">
                     毎朝店内で焼き上げる天然酵母パンと、その一杯のために焙煎されるコーヒー。私たちの自信作をご紹介します。
                 </p>
             </div>
-            <div class="products-grid grid md-grid-cols-12">
+            <div class="products-grid grid grid-cols-12-md">
                 <!-- Main Product -->
-                <div class="card md-col-span-8 asymmetric-card editorial-shadow aspect-16-9 group">
+                <div class="card col-span-8-md asymmetric-card editorial-shadow aspect-16-9 group">
                     <img src="images/product-sourdough.jpg" alt="Sourdough Bread" class="card-image">
                     <div class="card-overlay">
                         <div class="card-content">
-                            <span class="card-badge">Limited Fresh</span>
+                            <span class="card-badge">毎朝焼きたて</span>
                             <h3 class="card-title">極みのサワードウ</h3>
                             <p class="card-description">36時間低温熟成させた生地を使用。パリッとした外皮と、もっちりとした中のコントラスト。</p>
                         </div>
                     </div>
                 </div>
                 <!-- Sub Product 1 -->
-                <div class="product-card md-col-span-4 asymmetric-card editorial-shadow">
+                <div class="product-card col-span-4-md asymmetric-card editorial-shadow">
                     <div class="product-card-image">
                         <img src="images/product-ethiopia.jpg" alt="Specialty Coffee" class="card-image">
                     </div>
@@ -133,7 +153,7 @@
                     </div>
                 </div>
                 <!-- Sub Product 2 -->
-                <div class="product-card md-col-span-4 asymmetric-card editorial-shadow">
+                <div class="product-card col-span-4-md asymmetric-card editorial-shadow">
                     <div class="product-card-image">
                         <img src="images/product-croissant.jpg" alt="Artisan Pastries" class="card-image">
                     </div>
@@ -149,17 +169,17 @@
     <!-- News Section -->
     <section class="section bg-surface" id="news">
         <div class="container">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-6">
+            <div class="news-header flex flex-col flex-row-md justify-between items-start items-center-md margin-bottom-xl gap-md">
                 <h2 class="headline-lg text-primary">ジャーナル</h2>
-                <a href="#" class="label-lg text-secondary hover:text-primary flex items-center gap-2 transition-colors">
-                    VIEW ALL ARTICLES <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                <a href="#" class="news-view-all label-lg text-secondary hover-text-primary link-with-icon">
+                    VIEW ALL ARTICLES <span class="material-symbols-outlined icon-sm">arrow_forward</span>
                 </a>
             </div>
             <div class="article-list">
                 <!-- News Item 1 -->
                 <article class="article-item flex items-start group">
                     <div class="article-meta">
-                        <time class="article-date">2024.05.15</time>
+                        <time class="article-date">2025.04.15</time>
                         <span class="article-category">Event</span>
                     </div>
                     <div class="article-content">
@@ -175,7 +195,7 @@
                 <!-- News Item 2 -->
                 <article class="article-item flex items-start group">
                     <div class="article-meta">
-                        <time class="article-date">2024.05.02</time>
+                        <time class="article-date">2025.04.02</time>
                         <span class="article-category">Workshop</span>
                     </div>
                     <div class="article-content">
@@ -195,22 +215,22 @@
     <!-- Access Section -->
     <section class="section access-section" id="access">
         <div class="container">
-            <div class="access-grid lg-grid-cols-2">
-                <div class="access-info flex flex-col gap-10">
+            <div class="access-grid grid grid-cols-2-lg">
+                <div class="access-info flex flex-col gap-xl">
                     <div>
                         <span class="section-overline">Visit Us</span>
-                        <h2 class="headline-lg text-primary mb-6">アクセス</h2>
-                        <p class="text-on-surface-variant leading-relaxed mb-8">
+                        <h2 class="headline-lg text-primary margin-bottom-md">アクセス</h2>
+                        <p class="text-on-surface-variant leading-relaxed margin-bottom-lg">
                             閑静な住宅街の一角に、香りに包まれた空間をご用意してお待ちしております。<br>
                             お一人でも、大切な方とでも、どうぞゆったりとした時間をお過ごしください。
                         </p>
                     </div>
-                    <div class="flex flex-col gap-6">
+                    <div class="access-info-list flex flex-col gap-md">
                         <div class="access-info-item">
                             <span class="material-symbols-outlined access-icon">location_on</span>
                             <div>
                                 <p class="access-label">所在地</p>
-                                <p class="access-value">〒150-0000 東京都渋谷区神宮前 0-0-0</p>
+                                <p class="access-value">〒150-0001 東京都渋谷区神宮前 X-XX-XX</p>
                             </div>
                         </div>
                         <div class="access-info-item">
@@ -223,13 +243,13 @@
                     </div>
                 </div>
                 <div class="map-container asymmetric-card editorial-shadow">
-                    <img src="images/access-map.jpg" alt="Map location" class="grayscale opacity-60">
+                    <img src="images/access-map.jpg" alt="Map location" class="map-image">
                     <div class="map-marker">
                         <div class="map-marker-card asymmetric-card shadow-2xl">
                             <div class="map-marker-icon">
                                 <span class="material-symbols-outlined text-on-primary">location_on</span>
                             </div>
-                            <span class="map-marker-name">Origin & Grain</span>
+                            <span class="map-marker-name">Artisan Coffee & Grain</span>
                             <button class="map-marker-btn">Google Mapsで開く</button>
                         </div>
                     </div>
@@ -239,7 +259,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-container container">
             <div class="footer-logo">Artisan Coffee & Grain</div>
             <div class="footer-links">
