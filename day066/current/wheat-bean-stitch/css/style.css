@@ -227,14 +227,33 @@ input, textarea, select {
   color: inherit;
 }
 
-/* Prevent iOS tap highlight */
-*:focus {
+/* Prevent iOS tap highlight but keep keyboard focus visible */
+*:focus:not(:focus-visible) {
   outline: none;
 }
 
 *:focus-visible {
   outline: 2px solid var(--color-outline);
   outline-offset: 2px;
+}
+
+/* Skip to Content Link (Accessibility) */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: var(--spacing-8);
+  padding: var(--spacing-4) var(--spacing-8);
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  z-index: var(--z-tooltip);
+  transition: top var(--transition-fast);
+  font-weight: 600;
+}
+
+.skip-to-content:focus {
+  top: var(--spacing-8);
 }
 
 /* ============================================
@@ -1679,7 +1698,11 @@ button:focus-visible {
 .gap-x-8 { column-gap: var(--spacing-8); }
 
 /* Grid template areas */
-.md\:flex-row { @media (min-width: 768px) { flex-direction: row; } }
+.md\:flex-row { flex-direction: column; }
+
+@media (min-width: 768px) {
+  .md\:flex-row { flex-direction: row; }
+}
 
 /* Custom hover states */
 .hover\:opacity-90:hover { opacity: 0.9; }
@@ -2309,7 +2332,6 @@ body.page-loaded .hero-content {
 /* Text Color Utilities */
 .text-primary { color: var(--color-primary); }
 .text-secondary { color: var(--color-secondary); }
-.text-on-surface-variant { color: var(--color-on-surface-variant); }
 .text-on-primary { color: var(--color-on-primary); }
 .hover-text-primary:hover { color: var(--color-primary); }
 
@@ -2317,17 +2339,6 @@ body.page-loaded .hero-content {
 .text-sm { font-size: var(--font-size-body-sm); }
 .icon-sm { font-size: 1rem; }
 .label-lg { font-size: var(--font-size-label-lg); }
-
-/* Visibility Utilities */
-.desktop-only { display: none; }
-.mobile-only { display: block; }
-
-@media (min-width: 768px) {
-  .desktop-only { display: block; }
-  .mobile-only { display: none; }
-  .md-hidden { display: none; }
-  .md-block { display: block; }
-}
 
 /* Padding Utilities */
 .padding-left-lg { padding-left: var(--spacing-12); }

@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Skip to Content Link (Accessibility) -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
     <!-- TopNavBar -->
     <nav class="glass-nav" role="navigation" aria-label="Main navigation">
         <div class="nav-container container">
@@ -31,10 +34,10 @@
                 <a href="#access" class="nav-link">Access</a>
             </div>
             <div class="nav-actions">
-                <button class="btn btn-primary desktop-only">Online Shop</button>
-                <button class="btn btn-secondary">Reserve</button>
+                <button type="button" class="btn btn-primary desktop-only">Online Shop</button>
+                <button type="button" class="btn btn-secondary">Reserve</button>
             </div>
-            <button class="nav-mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <button type="button" class="nav-mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
@@ -43,7 +46,7 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div class="nav-mobile-menu" aria-label="Mobile menu">
+    <div class="nav-mobile-menu" aria-label="Mobile menu" aria-hidden="true">
         <div class="mobile-menu-inner">
             <nav class="mobile-menu-links">
                 <a href="#story" class="mobile-nav-link">Story</a>
@@ -52,7 +55,7 @@
                 <a href="#access" class="mobile-nav-link">Access</a>
             </nav>
             <div class="mobile-menu-buttons">
-                <button class="btn btn-primary" style="width: 100%;">Online Shop</button>
+                <button type="button" class="btn btn-primary w-full">Online Shop</button>
             </div>
         </div>
     </div>
@@ -60,7 +63,7 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-bg">
-            <img src="images/hero-bg.jpg" alt="Artisan coffee beans" class="hero-bg-image">
+            <img src="images/hero-bg.jpg" alt="Artisan roasted coffee beans scattered on wooden surface" class="hero-bg-image">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
@@ -83,13 +86,15 @@
         </div>
     </header>
 
+    <!-- Main Content -->
+    <main id="main-content" role="main">
     <!-- Story Section -->
     <section class="section story-section" id="story">
         <div class="container">
             <div class="story-grid grid grid-cols-2-md">
                 <div class="story-image-wrapper position-relative">
                     <div class="story-deco asymmetric-card z-negative"></div>
-                    <img src="images/story-baker.jpg" alt="Baker's hands" class="story-image asymmetric-card editorial-shadow">
+                    <img src="images/story-baker.jpg" alt="Artisan baker shaping sourdough bread by hand" class="story-image asymmetric-card editorial-shadow">
                     <div class="story-quote asymmetric-card editorial-shadow position-overlay">
                         <p class="story-quote-title">「本物」であることの誇り。</p>
                         <p class="story-quote-text">厳選されたオーガニック小麦と、世界中から届く希少なスペシャリティコーヒー豆。私たちは素材本来の個性を引き出す手法にこだわります。</p>
@@ -111,7 +116,7 @@
                         日々変わる気温や湿度に合わせて微調整を繰り返す。職人の感覚が、デジタルには決して再現できない「究極の日常」を作り上げます。
                     </p>
                     <div class="story-cta">
-                        <button class="btn btn-primary btn-accent">哲学を知る</button>
+                        <button type="button" class="btn btn-primary btn-accent">哲学を知る</button>
                     </div>
                 </div>
             </div>
@@ -133,7 +138,7 @@
             <div class="products-grid grid grid-cols-12-md">
                 <!-- Main Product -->
                 <div class="card col-span-8-md asymmetric-card editorial-shadow aspect-16-9 group">
-                    <img src="images/product-sourdough.jpg" alt="Sourdough Bread" class="card-image">
+                    <img src="images/product-sourdough.jpg" alt="Freshly baked artisan sourdough bread with crispy crust" class="card-image">
                     <div class="card-overlay">
                         <div class="card-content">
                             <span class="card-badge">毎朝焼きたて</span>
@@ -145,7 +150,7 @@
                 <!-- Sub Product 1 -->
                 <div class="product-card col-span-4-md asymmetric-card editorial-shadow">
                     <div class="product-card-image">
-                        <img src="images/product-ethiopia.jpg" alt="Specialty Coffee" class="card-image">
+                        <img src="images/product-ethiopia.jpg" alt="Ethiopia Yirgacheffe specialty coffee beans" class="card-image">
                     </div>
                     <div class="product-card-content">
                         <h3 class="product-card-title">エチオピア・イリガチェフェ</h3>
@@ -155,7 +160,7 @@
                 <!-- Sub Product 2 -->
                 <div class="product-card col-span-4-md asymmetric-card editorial-shadow">
                     <div class="product-card-image">
-                        <img src="images/product-croissant.jpg" alt="Artisan Pastries" class="card-image">
+                        <img src="images/product-croissant.jpg" alt="Butter croissant with flaky golden layers" class="card-image">
                     </div>
                     <div class="product-card-content">
                         <h3 class="product-card-title">発酵バターのクロワッサン</h3>
@@ -171,7 +176,7 @@
         <div class="container">
             <div class="news-header flex flex-col flex-row-md justify-between items-start items-center-md margin-bottom-xl gap-md">
                 <h2 class="headline-lg text-primary">ジャーナル</h2>
-                <a href="#" class="news-view-all label-lg text-secondary hover-text-primary link-with-icon">
+                <a href="#news" class="news-view-all label-lg text-secondary hover-text-primary link-with-icon" aria-label="View all journal articles">
                     VIEW ALL ARTICLES <span class="material-symbols-outlined icon-sm">arrow_forward</span>
                 </a>
             </div>
@@ -188,7 +193,7 @@
                             <p class="article-excerpt">今シーズンのエチオピア、グアテマラの新作豆が入荷しました。一般販売に先駆け、会員様向けのプライベートテイスティングを実施します。</p>
                         </div>
                         <div class="article-thumbnail asymmetric-card">
-                            <img src="images/news-pourover.jpg" alt="Barista pour-over">
+                            <img src="images/news-pourover.jpg" alt="Barista carefully pouring hot water over coffee grounds in pour-over preparation">
                         </div>
                     </div>
                 </article>
@@ -204,7 +209,7 @@
                             <p class="article-excerpt">家庭でも本格的なライ麦パンを焼くコツを伝授します。自家製酵母の育て方から、焼き上がりの見極めまで丁寧に解説。</p>
                         </div>
                         <div class="article-thumbnail asymmetric-card">
-                            <img src="images/news-workshop.jpg" alt="Bakery workshop">
+                            <img src="images/news-workshop.jpg" alt="Hands-on bakery workshop teaching bread making techniques">
                         </div>
                     </div>
                 </article>
@@ -243,30 +248,31 @@
                     </div>
                 </div>
                 <div class="map-container asymmetric-card editorial-shadow">
-                    <img src="images/access-map.jpg" alt="Map location" class="map-image">
+                    <img src="images/access-map.jpg" alt="Map showing Artisan Coffee & Grain location in Jingumae, Shibuya, Tokyo" class="map-image">
                     <div class="map-marker">
                         <div class="map-marker-card asymmetric-card shadow-2xl">
                             <div class="map-marker-icon">
                                 <span class="material-symbols-outlined text-on-primary">location_on</span>
                             </div>
                             <span class="map-marker-name">Artisan Coffee & Grain</span>
-                            <button class="map-marker-btn">Google Mapsで開く</button>
+                            <button type="button" class="map-marker-btn">Google Mapsで開く</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
         <div class="footer-container container">
             <div class="footer-logo">Artisan Coffee & Grain</div>
             <div class="footer-links">
-                <a href="#" class="footer-link">Privacy Policy</a>
-                <a href="#" class="footer-link">Terms of Service</a>
-                <a href="#" class="footer-link underline">Contact</a>
-                <a href="#" class="footer-link">Instagram</a>
+                <a href="#" class="footer-link" aria-label="Privacy Policy (page not implemented)">Privacy Policy</a>
+                <a href="#" class="footer-link" aria-label="Terms of Service (page not implemented)">Terms of Service</a>
+                <a href="#access" class="footer-link underline" aria-label="Contact information">Contact</a>
+                <a href="#" class="footer-link" aria-label="Visit our Instagram page (external link)">Instagram</a>
             </div>
             <div class="footer-copyright">
                 © 2024 Artisan Coffee & Grain. Crafted with precision.
