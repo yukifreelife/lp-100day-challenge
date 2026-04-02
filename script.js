@@ -231,6 +231,18 @@ const worksData = [
     tech: ["HTML", "CSS"],
     url: "./day027/",
   },
+  {
+    day: "Day67",
+    title: "ホテルウェディングLP",
+    category: "Wedding",
+    industry: "ブライダル",
+    focus: "フェア予約",
+    summary:
+      "ラグジュアリーな空間・料理・おもてなしの3軸でブランド訴求。ブライダルフェア予約へ自然に導く構成。",
+    metric: "高級感と信頼感の両立を重視",
+    tech: ["HTML", "CSS", "JavaScript"],
+    url: "./day067/current/hotel-wedding-lp/",
+  },
 ];
 
 const colorByCategory = {
@@ -242,6 +254,7 @@ const colorByCategory = {
   Event: "#1a8ea0",
   Healthcare: "#4f78a9",
   RealEstate: "#7d6a4f",
+  Wedding: "#8b6f4e",
 };
 
 const REEL_INTERVAL_MS = 3200;
