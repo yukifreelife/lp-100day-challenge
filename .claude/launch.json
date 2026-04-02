@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "day067-wedding",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8067", "--directory", "day067/current/hotel-wedding-lp"],
+      "port": 8067
+    },
+    {
+      "name": "portfolio",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8090"],
+      "port": 8090
+    }
+  ]
+}
