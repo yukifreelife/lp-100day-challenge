@@ -243,6 +243,18 @@ const worksData = [
     tech: ["HTML", "CSS", "JavaScript"],
     url: "./day067/current/hotel-wedding-lp/",
   },
+  {
+    day: "Day68",
+    title: "フィットネスジムLP",
+    category: "Fitness",
+    industry: "フィットネス",
+    focus: "体験レッスン予約",
+    summary:
+      "24時間営業・最新マシン・トレーナー常駐の3つの特徴を訴求。3つの料金プランで会員獲得を促進する構成。",
+    metric: "エネルギッシュさと信頼感の両立を重視",
+    tech: ["HTML", "CSS", "JavaScript"],
+    url: "./day068/current/gym-lp/",
+  },
 ];
 
 const colorByCategory = {
@@ -255,6 +267,7 @@ const colorByCategory = {
   Healthcare: "#4f78a9",
   RealEstate: "#7d6a4f",
   Wedding: "#8b6f4e",
+  Fitness: "#ff6b35",
 };
 
 const REEL_INTERVAL_MS = 3200;
