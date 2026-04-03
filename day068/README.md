@@ -77,13 +77,6 @@ day068/current/gym-lp/
 
 ---
 
-## Screenshots
-
-- `screenshot-hero.png` - Hero section
-- `screenshot-full.png` - Full page
-
----
-
 ## Notes
 
 - 初期費用0円（入会金・事務手数料無料）を強調

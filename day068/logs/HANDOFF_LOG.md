@@ -35,7 +35,6 @@
 
 ## Next Steps
 
-- スクリーンショット撮影
 - script.jsにworksData追加
 - daily progress log作成
 - Git commit & push
