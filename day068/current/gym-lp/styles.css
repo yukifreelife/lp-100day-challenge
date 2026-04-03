@@ -98,8 +98,10 @@ button {
   letter-spacing: 2px;
 }
 
-.logo-icon {
-  font-size: 32px;
+.feature-icon svg {
+  width: 32px;
+  height: 32px;
+  color: var(--primary);
 }
 
 /* === Nav === */
@@ -595,8 +597,10 @@ button {
   justify-content: center;
 }
 
-.facility-placeholder {
-  font-size: 64px;
+.facility-image svg {
+  width: 64px;
+  height: 64px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .facility-content {
@@ -633,7 +637,6 @@ button {
   font-size: 16px;
   line-height: 1.8;
   margin-bottom: 20px;
-  font-style: italic;
 }
 
 .voice-meta {
@@ -750,7 +753,10 @@ button {
 }
 
 .contact-icon {
-  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--primary);
 }
 
 .contact-label {
