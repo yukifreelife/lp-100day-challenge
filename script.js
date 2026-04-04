@@ -255,6 +255,18 @@ const worksData = [
     tech: ["HTML", "CSS", "JavaScript"],
     url: "./day068/current/gym-lp/",
   },
+  {
+    day: "Day69",
+    title: "カメラマン個人紹介LP",
+    category: "Photographer",
+    industry: "クリエイティブ",
+    focus: "撮影依頼",
+    summary:
+      "個人事業主のフォトグラファーが自身のサービス（ウェディング・プロフィール・ビジネス撮影）を紹介・集客するLP。",
+    metric: "ナチュラルな雰囲気と信頼感の両立を重視",
+    tech: ["HTML", "CSS", "JavaScript"],
+    url: "./day069/",
+  },
 ];
 
 const colorByCategory = {
@@ -268,6 +280,7 @@ const colorByCategory = {
   RealEstate: "#7d6a4f",
   Wedding: "#8b6f4e",
   Fitness: "#ff6b35",
+  Photographer: "#8b7355",
 };
 
 const REEL_INTERVAL_MS = 3200;
