@@ -260,12 +260,12 @@ h1, h2, h3, h4, p {
 
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(var(--scroll-end, -33.333%)); }
 }
 
 .fv-gallery-item {
   flex-shrink: 0;
-  width: 33.333%;
+  width: 25%;
   height: 100%;
 }
 
@@ -721,6 +721,28 @@ section {
   color: var(--color-text-light);
 }
 
+.cancel-policy-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 12px;
+}
+
+.cancel-policy-list dt {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cancel-policy-list dd {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.cancel-note {
+  font-size: 13px;
+}
+
 @media (max-width: 767px) {
   .flow-steps {
     grid-template-columns: repeat(2, 1fr);
@@ -854,7 +876,8 @@ section {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  outline: none;
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
   border-color: var(--color-secondary);
 }
 

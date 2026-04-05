@@ -26,6 +26,29 @@ const elements = {
 };
 
 // ========================================
+// FV Gallery infinite scroll setup
+// ========================================
+const setupFVGallery = () => {
+  const fvTrack = document.getElementById('fvTrack');
+  if (!fvTrack) return;
+
+  const originalItems = [...fvTrack.children];
+  // 無限スクロール用に画像を3セット複製（合計4セット＝32枚）
+  // 1セット（8枚）が見えなくなった時点でループ
+  for (let i = 0; i < 3; i++) {
+    originalItems.forEach(item => {
+      const clone = item.cloneNode(true);
+      fvTrack.appendChild(clone);
+    });
+  }
+
+  // 合計32枚、1セット8枚(25%)なので全体で800%
+  // -25%で1セット分（200%）ループ
+  fvTrack.style.setProperty('--scroll-end', '-25%');
+};
+setupFVGallery();
+
+// ========================================
 // Header scroll effect
 // ========================================
 let lastScroll = 0;
