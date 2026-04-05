@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nail Studio Bloom | あなたの指先に、季節の魔法を</title>
+  <meta name="description" content="2〜3週間、美しく持つジェルネイル。季節のトレンドを取り入れたネイルデザインで、あなたの指先を彩ります。">
+  <meta property="og:title" content="Nail Studio Bloom | あなたの指先に、季節の魔法を">
+  <meta property="og:description" content="2〜3週間、美しく持つジェルネイル。季節のトレンドを取り入れたネイルデザインで、あなたの指先を彩ります。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nailstudiobloom.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#top" class="header-logo">Nail Studio Bloom</a>
+      <nav class="header-nav" id="nav">
+        <a href="#gallery" class="header-nav-link">Gallery</a>
+        <a href="#menu" class="header-nav-link">Menu</a>
+        <a href="#about" class="header-nav-link">About</a>
+        <a href="#flow" class="header-nav-link">Flow</a>
+        <a href="#contact" class="header-nav-link">Contact</a>
+      </nav>
+      <button class="header-menu-btn" id="menuBtn" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- FV -->
+  <section class="fv" id="top">
+    <div class="fv-gallery">
+      <div class="fv-gallery-track" id="fvTrack">
+        <div class="fv-gallery-item">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80" alt="ネイルデザイン1">
+        </div>
+        <div class="fv-gallery-item">
+          <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=800&q=80" alt="ネイルデザイン2">
+        </div>
+        <div class="fv-gallery-item">
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&q=80" alt="ネイルデザイン3">
+        </div>
+        <div class="fv-gallery-item">
+          <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059e98b?w=800&q=80" alt="ネイルデザイン4">
+        </div>
+        <div class="fv-gallery-item">
+          <img src="https://images.unsplash.com/photo-1594103180604-c8b5b5e9a679?w=800&q=80" alt="ネイルデザイン5">
+        </div>
+      </div>
+    </div>
+    <div class="fv-content">
+      <p class="fv-label">Nail Salon</p>
+      <h1 class="fv-title">あなたの指先に<br class="sp">季節の魔法を</h1>
+      <p class="fv-subtitle">2〜3週間、美しく持つジェルネイル</p>
+      <div class="fv-buttons">
+        <a href="#contact" class="btn btn-primary">予約空きを確認する</a>
+        <a href="#gallery" class="btn btn-outline">作品をもっと見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Gallery</p>
+        <h2 class="section-title">Nail Design Collection</h2>
+      </div>
+
+      <div class="gallery-tabs">
+        <button class="gallery-tab active" data-filter="all">すべて</button>
+        <button class="gallery-tab" data-filter="spring">春</button>
+        <button class="gallery-tab" data-filter="summer">夏</button>
+        <button class="gallery-tab" data-filter="autumn">秋</button>
+        <button class="gallery-tab" data-filter="winter">冬</button>
+        <button class="gallery-tab" data-filter="short">ショート</button>
+        <button class="gallery-tab" data-filter="long">ロング</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-category="spring short">
+          <div class="gallery-thumb">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80" alt="桜ピンクのフレンチ">
+            <div class="gallery-overlay">
+              <p class="gallery-name">桜ピンクのフレンチ</p>
+              <p class="gallery-price">¥7,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="spring long">
+          <div class="gallery-thumb">
+            <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=600&q=80" alt="春の花柄アート">
+            <div class="gallery-overlay">
+              <p class="gallery-name">春の花柄アート</p>
+              <p class="gallery-price">¥9,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="summer short">
+          <div class="gallery-thumb">
+            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=600&q=80" alt="マリンブルー">
+            <div class="gallery-overlay">
+              <p class="gallery-name">マリンブルー</p>
+              <p class="gallery-price">¥7,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="summer long">
+          <div class="gallery-thumb">
+            <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059e98b?w=600&q=80" alt="トロピカル柄">
+            <div class="gallery-overlay">
+              <p class="gallery-name">トロピカル柄</p>
+              <p class="gallery-price">¥8,500</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="autumn short">
+          <div class="gallery-thumb">
+            <img src="https://images.unsplash.com/photo-1594103180604-c8b5b5e9a679?w=600&q=80" alt="落葉系グラデ">
+            <div class="gallery-overlay">
+              <p class="gallery-name">落葉系グラデ</p>
+              <p class="gallery-price">¥7,500</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="autumn long">
+          <div class="gallery-thumb">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80" alt="ベージュ×ブラウン">
+            <div class="gallery-overlay">
+              <p class="gallery-name">ベージュ×ブラウン</p>
+              <p class="gallery-price">¥8,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="winter short">
+          <div class="gallery-thumb">
+            <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=600&q=80" alt="ウィンター-red">
+            <div class="gallery-overlay">
+              <p class="gallery-name">ウィンターRED</p>
+              <p class="gallery-price">¥7,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="winter long">
+          <div class="gallery-thumb">
+            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=600&q=80" alt="ラメ×シルバー">
+            <div class="gallery-overlay">
+              <p class="gallery-name">ラメ×シルバー</p>
+              <p class="gallery-price">¥9,500</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="spring short">
+          <div class="gallery-thumb">
+            <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059e98b?w=600&q=80" alt="パステルミックス">
+            <div class="gallery-overlay">
+              <p class="gallery-name">パステルミックス</p>
+              <p class="gallery-price">¥8,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="summer long">
+          <div class="gallery-thumb">
+            <img src="https://images.unsplash.com/photo-1594103180604-c8b5b5e9a679?w=600&q=80" alt="オーシャンブルー">
+            <div class="gallery-overlay">
+              <p class="gallery-name">オーシャンブルー</p>
+              <p class="gallery-price">¥8,500</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="autumn long">
+          <div class="gallery-thumb">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80" alt="キャメルベージュ">
+            <div class="gallery-overlay">
+              <p class="gallery-name">キャメルベージュ</p>
+              <p class="gallery-price">¥7,500</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="winter short">
+          <div class="gallery-thumb">
+            <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=600&q=80" alt="ホログラム">
+            <div class="gallery-overlay">
+              <p class="gallery-name">ホログラム</p>
+              <p class="gallery-price">¥9,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="spring long">
+          <div class="gallery-thumb">
+            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=600&q=80" alt="桜グラデーション">
+            <div class="gallery-overlay">
+              <p class="gallery-name">桜グラデーション</p>
+              <p class="gallery-price">¥8,500</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Menu</p>
+        <h2 class="section-title">料金プラン</h2>
+      </div>
+
+      <div class="menu-list">
+        <div class="menu-item">
+          <div class="menu-header">
+            <h3 class="menu-name">シングル / 片手</h3>
+            <p class="menu-price">¥6,000〜</p>
+          </div>
+          <div class="menu-details">
+            <p class="menu-time">施術時間: 60〜75分</p>
+            <p class="menu-desc">カラージェルベース＋トップコート。オフ込み。</p>
+          </div>
+        </div>
+
+        <div class="menu-item menu-featured">
+          <span class="menu-badge">Popular</span>
+          <div class="menu-header">
+            <h3 class="menu-name">両手</h3>
+            <p class="menu-price">¥10,000〜</p>
+          </div>
+          <div class="menu-details">
+            <p class="menu-time">施術時間: 90〜120分</p>
+            <p class="menu-desc">カラージェルベース＋トップコート。オフ込み。お得なセットプラン。</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-header">
+            <h3 class="menu-name">ペディケア</h3>
+            <p class="menu-price">¥8,000〜</p>
+          </div>
+          <div class="menu-details">
+            <p class="menu-time">施術時間: 75〜90分</p>
+            <p class="menu-desc">フットケア＋カラージェル。リラックスしながら美しく。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-options">
+        <h3 class="options-title">オプション</h3>
+        <div class="options-list">
+          <div class="option-item">
+            <p class="option-name">フレンチアート</p>
+            <p class="option-price">+¥1,000</p>
+          </div>
+          <div class="option-item">
+            <p class="option-name">スワロフスキー</p>
+            <p class="option-price">+¥500/個</p>
+          </div>
+          <div class="option-item">
+            <p class="option-name">長さ出し（チップ）</p>
+            <p class="option-price">+¥2,000</p>
+          </div>
+          <div class="option-item">
+            <p class="option-name">アート（1〜3本）</p>
+            <p class="option-price">+¥1,500</p>
+          </div>
+          <div class="option-item">
+            <p class="option-name">付け替え</p>
+            <p class="option-price">+¥1,500</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">About</p>
+        <h2 class="section-title">Nailist Profile</h2>
+      </div>
+
+      <div class="about-content">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80" alt="ナビスト">
+        </div>
+        <div class="about-text">
+          <h3 class="about-name">Sakura Bloom</h3>
+          <p class="about-greeting">お客様の指先から、自信と笑顔を届けます。</p>
+          <p>2015年よりネイルサロン業界で経験を積み、2020年に独立。JNEA（日本ネイリスト協会）認定ネイリストとして、健康的で美しい爪を育むことを大切にしています。</p>
+          <p>「自分に似合うネイルが見つからない」というお悩みを、カウンセリングを通じて解決。お一人おひとりのライフスタイルに合わせたデザインをご提案します。</p>
+
+          <div class="about-points">
+            <h4 class="points-title">こだわり</h4>
+            <ul class="points-list">
+              <li>健康爪への配慮 - 自爪を傷めない施術</li>
+              <li>衛生管理 - ファイル・バッファは使い捨て</li>
+              <li>カウンセリング重視 - 15分のしっかりヒアリング</li>
+              <li>选用品 - 定評のあるジェル・ポリッシュを使用</li>
+            </ul>
+          </div>
+
+          <div class="about-products">
+            <h4 class="products-title">使用製品</h4>
+            <p> presto（プレスト）、VETRO（ヴェトロ）、_CHKILI（チキリ）</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flow -->
+  <section class="flow" id="flow">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Flow</p>
+        <h2 class="section-title">ご予約〜施術の流れ</h2>
+      </div>
+
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="flow-number">1</div>
+          <h3 class="flow-title">ご予約</h3>
+            <p class="flow-desc">予約フォーム、LINE、またはお電話にてご予約をお願いします。初回の方はカウンセリング時間を含めご予約ください。</p>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-number">2</div>
+          <h3 class="flow-title">カウンセリング</h3>
+          <p class="flow-desc">ご希望のデザイン、ネイルの悩み、ライフスタイルをお聞きします。画像を見せながら一緒にデザインを決めていきます。</p>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-number">3</div>
+          <h3 class="flow-title">施術</h3>
+          <p class="flow-desc">リラックスした空間で、丁寧な施術を。ご希望であればお好きなドリンクや音楽もご用意します。</p>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-number">4</div>
+          <h3 class="flow-title">お支払い・次回予約</h3>
+          <p class="flow-desc">仕上がりをご確認いただき、お支払い完了。次回のご予約も承ります。</p>
+        </div>
+      </div>
+
+      <div class="flow-cancel">
+        <h4 class="cancel-title">キャンセルポリシー</h4>
+        <p>前日まで: 無料 / 当日: 50%</p>
+        <p>※ 無断キャンセルは次回のご予約をお断りする場合がございます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">ご予約・お問い合わせ</h2>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3 class="contact-info-title">Salon Info</h3>
+          <dl class="contact-info-list">
+            <dt>住所</dt>
+            <dd>〒150-0001<br>東京都渋谷区神宮前1-2-3 ビル名101</dd>
+            <dt>アクセス</dt>
+            <dd>JR原宿駅 竹下口より徒歩5分<br>東京メトロ 明治神宮前駅より徒歩3分</dd>
+            <dt>営業時間</dt>
+            <dd>10:00 〜 20:00（最終受付 18:00）<br>定休日: 毎週火曜・第3水曜</dd>
+          </dl>
+
+          <h3 class="contact-info-title">Reservation</h3>
+          <div class="contact-methods">
+            <a href="https://beauty.hotpepper.jp/" target="_blank" class="contact-method">
+              <span class="contact-method-label">HP予約</span>
+              <span class="contact-method-arrow">→</span>
+            </a>
+            <a href="https://line.me" target="_blank" class="contact-method">
+              <span class="contact-method-label">LINE予約</span>
+              <span class="contact-method-arrow">→</span>
+            </a>
+            <a href="tel:03-1234-5678" class="contact-method">
+              <span class="contact-method-label">03-1234-5678</span>
+              <span class="contact-method-arrow">→</span>
+            </a>
+          </div>
+
+          <h3 class="contact-info-title">SNS</h3>
+          <div class="contact-sns">
+            <a href="https://instagram.com" target="_blank" class="contact-sns-link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span>@nailstudiobloom</span>
+            </a>
+            <a href="https://tiktok.com" target="_blank" class="contact-sns-link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+              </svg>
+              <span>@nailstudiobloom</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3 class="contact-form-title">お問い合わせフォーム</h3>
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="form-group">
+              <label for="name">お名前 <span class="required">必須</span></label>
+              <input type="text" id="name" name="name" required placeholder="山田 花子">
+            </div>
+            <div class="form-group">
+              <label for="email">メールアドレス <span class="required">必須</span></label>
+              <input type="email" id="email" name="email" required placeholder="example@email.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">電話番号</label>
+              <input type="tel" id="phone" name="phone" placeholder="090-1234-5678">
+            </div>
+            <div class="form-group">
+              <label for="subject">お問い合わせ内容</label>
+              <select id="subject" name="subject">
+                <option value="">選択してください</option>
+                <option value="reservation">ご予約について</option>
+                <option value="price">料金について</option>
+                <option value="design">デザインについて</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">メッセージ <span class="required">必須</span></label>
+              <textarea id="message" name="message" rows="5" required placeholder="ご質問やご要望をお聞かせください"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">送信する</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">Nail Studio Bloom</p>
+      <p class="footer-copy">&copy; 2026 Nail Studio Bloom. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="閉じる">×</button>
+      <img src="" alt="" class="modal-image" id="modalImage">
+      <div class="modal-info">
+        <p class="modal-title" id="modalTitle"></p>
+        <p class="modal-price" id="modalPrice"></p>
+      </div>
+      <a href="#contact" class="btn btn-primary modal-cta">このデザインで予約する</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

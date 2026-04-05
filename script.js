@@ -267,6 +267,18 @@ const worksData = [
     tech: ["HTML", "CSS", "JavaScript"],
     url: "./day069/",
   },
+  {
+    day: "Day70",
+    title: "ネイルサロンLP",
+    category: "Beauty",
+    industry: "ビューティー",
+    focus: "予約獲得",
+    summary:
+      "個人事業主が運営するネイルサロンのLP。ギャラリー重視型で、ネイルデザイン作品をメインコンテンツとして配置し、視覚的魅力で予約獲得を促進する。",
+    metric: "ギャラリー閲覧と予約導線の最短化を重視",
+    tech: ["HTML", "CSS", "JavaScript"],
+    url: "./day070/",
+  },
 ];
 
 const colorByCategory = {
