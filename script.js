@@ -279,6 +279,17 @@ const worksData = [
     tech: ["HTML", "CSS", "JavaScript"],
     url: "./day070/",
   },
+  {
+    day: "Day72",
+    title: "Piano Garden - ピアノ教室LP",
+    category: "Education",
+    industry: "教育",
+    focus: "体験予約",
+    summary: "幼児から小学生を対象とした小規模ピアノ教室のLP。保護者向けに安心感と成長を実感させる情報を提供し、体験予約への誘導を最適化。",
+    metric: "コース別タブ切り替え・学年連動フォーム・FAQアコーディオン",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    url: "./day072/"
+  },
 ];
 
 const colorByCategory = {
