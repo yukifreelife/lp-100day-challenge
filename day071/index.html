@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ROAST LAB - 産地から焙煎まで、こだわり抜いた一杯のコーヒーを提供する街角のスペシャルティカフェ">
+    <meta property="og:title" content="ROAST LAB - 一杯のコーヒーが、あなたの日常を特別に">
+    <meta property="og:description" content="産地から焙煎まで、こだわり抜いた一杯のコーヒー">
+    <meta property="og:type" content="website">
+    <title>ROAST LAB | スペシャルティカフェ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">ROAST LAB</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">こだわり</a></li>
+                <li><a href="#menu" class="nav-link">メニュー</a></li>
+                <li><a href="#gallery" class="nav-link">ギャラリー</a></li>
+                <li><a href="#reviews" class="nav-link">お客様の声</a></li>
+                <li><a href="#faq" class="nav-link">よくある質問</a></li>
+                <li><a href="#access" class="nav-link">アクセス</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <!-- 信任バッジ -->
+            <div class="hero-badges">
+                <span class="hero-badge">🏆 Googleレビュー4.8</span>
+                <span class="hero-badge">☕ 10,000杯以上提供</span>
+                <span class="hero-badge">📸 Instagram 15,000フォロワー</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-title-main">毎朝店内で焙煎する</span>
+                <span class="hero-title-main">フレッシュな一杯を、あなたに</span>
+            </h1>
+            <p class="hero-subtitle">焙煎から48時間以内の「ピークフレーバー」のみ提供。スペシャルティコーヒーの本当の美味しさを体験してください。</p>
+            <div class="hero-cta">
+                <a href="#access" class="btn btn-primary">今すぐ空席を確認</a>
+                <a href="#reviews" class="btn btn-secondary">お客様の声を見る</a>
+            </div>
+            <!-- 初回特典 -->
+            <div class="hero-offer">
+                <span class="hero-offer-badge">🎁 初回特典</span>
+                <span class="hero-offer-text">Instagramで「#ROASTLAB」付き投稿でドリンク1杯無料</span>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="hero-scroll-text">スクロール</span>
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">私たちの想い</span>
+                <h2 class="section-title">こだわりの焙煎</h2>
+                <p class="section-desc">私たちはコーヒーの可能性を追求し続けています</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image fade-in">
+                    <div class="about-image-wrapper">
+                        <!-- 焙煎機画像 -->
+                        <div class="placeholder-image placeholder-roaster"></div>
+                    </div>
+                </div>
+                <div class="about-content fade-in">
+                    <h3 class="about-title">自家焙煎へのこだわり</h3>
+                    <p class="about-text">
+                        私たちは毎朝、店内の焙煎機で丁寧に豆を焙煎しています。
+                        産地ごとの特性を活かすため、最適な焙煎度合いを見つけ出し、
+                        豆本来の風味を最大限に引き出します。
+                    </p>
+                    <p class="about-text">
+                        ライトローストの華やかな酸味から、ダークローストの深いコクまで。
+                        お客様の好みをお聞きし、その日だけの一杯をお届けします。
+                    </p>
+                    <ul class="about-features">
+                        <li class="about-feature">
+                            <span class="about-feature-icon">01</span>
+                            <div class="about-feature-content">
+                                <h4>厳選豆</h4>
+                                <p>世界中のファームから厳選した豆のみを使用</p>
+                            </div>
+                        </li>
+                        <li class="about-feature">
+                            <span class="about-feature-icon">02</span>
+                            <div class="about-feature-content">
+                                <h4>自家焙煎</h4>
+                                <p>店内で毎日新鮮に焙煎</p>
+                            </div>
+                        </li>
+                        <li class="about-feature">
+                            <span class="about-feature-icon">03</span>
+                            <div class="about-feature-content">
+                                <h4>ピークフレーバー</h4>
+                                <p>焙煎から48時間以内の「最も美味しい状態」のみ提供</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 産地紹介 -->
+            <div class="origins fade-in">
+                <h3 class="origins-title">取り扱い産地</h3>
+                <div class="origins-grid">
+                    <div class="origin-card">
+                        <div class="origin-image">
+                            <div class="placeholder-image placeholder-origin-1"></div>
+                        </div>
+                        <div class="origin-info">
+                            <span class="origin-country">Ethiopia</span>
+                            <h4 class="origin-name">エチオピア イェガシェフェ</h4>
+                            <p class="origin-desc">華やかな香りと、明るい酸味が特徴。フローラルなアロマが楽しめます。</p>
+                        </div>
+                    </div>
+                    <div class="origin-card">
+                        <div class="origin-image">
+                            <div class="placeholder-image placeholder-origin-2"></div>
+                        </div>
+                        <div class="origin-info">
+                            <span class="origin-country">Colombia</span>
+                            <h4 class="origin-name">ナリーニョ</h4>
+                            <p class="origin-desc">バランスの良い味わい。チョコレートのような甘みとナッツの香り。</p>
+                        </div>
+                    </div>
+                    <div class="origin-card">
+                        <div class="origin-image">
+                            <div class="placeholder-image placeholder-origin-3"></div>
+                        </div>
+                        <div class="origin-info">
+                            <span class="origin-country">Guatemala</span>
+                            <h4 class="origin-name">アンティグア</h4>
+                            <p class="origin-desc">深みのあるコクとスパイシーな後味。ミルクとの相性も抜群です。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- バリスタ紹介 -->
+            <div class="barista fade-in">
+                <div class="barista-content">
+                    <div class="barista-image">
+                        <div class="barista-avatar">
+                            <span class="barista-avatar-emoji">👨‍🍳</span>
+                        </div>
+                    </div>
+                    <div class="barista-info">
+                        <h3 class="barista-name">山田 太郎 (Yamada Taro)</h3>
+                        <p class="barista-title">Owner & Roaster</p>
+                        <div class="barista-credentials">
+                            <span class="credential">SCA ロースター認定</span>
+                            <span class="credential">Q-Grader ロースト認定</span>
+                            <span class="credential">2018年 日本ローストチャンピオンシップ 優勝</span>
+                        </div>
+                        <p class="barista-text">
+                            10年以上のスペシャルティコーヒー経験を持つバリスタ。エチオピアのファーム直接取引を含め、
+                            年間50以上の産地を訪問し、豆の選定から焙煎まで携わる。
+                            「コーヒーの可能性を追求し続ける」をモットに、お客様ひとりひとりの好みに合わせた、
+                            その日だけの一杯を淹れています。
+                        </p>
+                        <div class="barista-unique">
+                            <h4 class="barista-unique-title">ROAST LABならでは</h4>
+                            <ul class="barista-unique-list">
+                                <li>✓ 産地直取引によるトレーサビリティの可視化</li>
+                                <li>✓ 焙煎機の温度管理を±1℃に制御</li>
+                                <li>✓ オーダーを受けてから焙煎する「リーフロースト」</li>
+                                <li>✓ 週替わりの「限定シングルオリジン」</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">メニュー</span>
+                <h2 class="section-title">メニュー</h2>
+                <p class="section-desc">こだわりのドリンクとフードメニュー</p>
+            </div>
+
+            <!-- タブ -->
+            <div class="menu-tabs fade-in">
+                <button class="menu-tab active" data-tab="drink">ドリンク</button>
+                <button class="menu-tab" data-tab="food">フード</button>
+                <button class="menu-tab" data-tab="beans">豆販売</button>
+            </div>
+
+            <!-- ドリンクメニュー -->
+            <div class="menu-content active" id="drink">
+                <div class="menu-category fade-in">
+                    <h3 class="menu-category-title">Espresso</h3>
+                    <div class="menu-list-with-images">
+                        <div class="menu-item-with-image">
+                            <div class="menu-item-image">
+                                <img src="images/menu/espresso.jpg" alt="Espresso">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">Espresso</span>
+                                    <span class="menu-item-price">¥400</span>
+                                </div>
+                                <p class="menu-item-desc">濃厚なエスプレッソの味わい</p>
+                            </div>
+                        </div>
+                        <div class="menu-item-with-image">
+                            <div class="menu-item-image">
+                                <img src="images/menu/cappuccino.jpg" alt="Cappuccino">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">Cappuccino</span>
+                                    <span class="menu-item-price">¥600</span>
+                                </div>
+                                <p class="menu-item-desc">ミルクの泡とエスプレッソの黄金比</p>
+                            </div>
+                        </div>
+                        <div class="menu-item-with-image">
+                            <div class="menu-item-image">
+                                <img src="images/menu/latte.jpg" alt="Latte">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">Latte</span>
+                                    <span class="menu-item-price">¥600</span>
+                                </div>
+                                <p class="menu-item-desc">ミルクの優しさを活かしたラテ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category fade-in">
+                    <h3 class="menu-category-title">Hand Drip & Others</h3>
+                    <div class="menu-list-with-images">
+                        <div class="menu-item-with-image">
+                            <div class="menu-item-image">
+                                <img src="images/menu/espresso.jpg" alt="ブレンドコーヒー">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">Blend Coffee</span>
+                                    <span class="menu-item-price">¥550</span>
+                                </div>
+                                <p class="menu-item-desc">店内の人気ブレンド</p>
+                            </div>
+                        </div>
+                        <div class="menu-item-with-image">
+                            <div class="menu-item-image">
+                                <img src="images/menu/cold-brew.jpg" alt="コールドブリュー">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">Cold Brew</span>
+                                    <span class="menu-item-price">¥600</span>
+                                </div>
+                                <p class="menu-item-desc">12時間かけて抽出</p>
+                            </div>
+                        </div>
+                        <div class="menu-item-with-image">
+                            <div class="menu-item-image">
+                                <img src="images/menu/matcha-latte.jpg" alt="抹茶ラテ">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">Matcha Latte</span>
+                                    <span class="menu-item-price">¥650</span>
+                                </div>
+                                <p class="menu-item-desc">京都産宇治抹茶使用</p>
+                            </div>
+                        </div>
+                        <div class="menu-item-with-image">
+                            <div class="menu-item-image">
+                                <img src="images/menu/mocha.jpg" alt="カフェモカ">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">Cafe Mocha</span>
+                                    <span class="menu-item-price">¥680</span>
+                                </div>
+                                <p class="menu-item-desc">ベルギーチョコレート使用</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- フードメニュー -->
+            <div class="menu-content" id="food">
+                <div class="menu-category fade-in">
+                    <h3 class="menu-category-title">フード</h3>
+                    <div class="menu-list-with-images">
+                        <div class="menu-item-with-image">
+                            <div class="menu-item-image">
+                                <img src="images/menu/sandwich.jpg" alt="BLTサンドイッチ">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">BLTサンドイッチ</span>
+                                    <span class="menu-item-price">¥850</span>
+                                </div>
+                                <p class="menu-item-desc">自家製パン使用</p>
+                            </div>
+                        </div>
+                        <div class="menu-item-with-image">
+                            <div class="menu-item-image">
+                                <img src="images/menu/quiche.jpg" alt="キッシュ">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">キッシュ Lサイズ</span>
+                                    <span class="menu-item-price">¥950</span>
+                                </div>
+                                <p class="menu-item-desc">その日の旬の食材を使用</p>
+                            </div>
+                        </div>
+                        <div class="menu-item-with-image">
+                            <div class="menu-item-image">
+                                <img src="images/menu/cheesecake.jpg" alt="チーズケーキ">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">チーズケーキ</span>
+                                    <span class="menu-item-price">¥650</span>
+                                </div>
+                                <p class="menu-item-desc">濃厚ベイクドチーズケーキ</p>
+                            </div>
+                        </div>
+                        <div class="menu-item-with-image">
+                            <div class="menu-item-image">
+                                <img src="images/menu/croissant.jpg" alt="クロワッサン">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">バタークロワッサン</span>
+                                    <span class="menu-item-price">¥380</span>
+                                </div>
+                                <p class="menu-item-desc">発酵バターたっぷり</p>
+                            </div>
+                        </div>
+                        <div class="menu-item-with-image">
+                            <div class="menu-item-image">
+                                <img src="images/menu/scone.jpg" alt="スコーン">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">スコーン</span>
+                                    <span class="menu-item-price">¥420</span>
+                                </div>
+                                <p class="menu-item-desc">クリーム＆ジャム付き</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 豆販売 -->
+            <div class="menu-content" id="beans">
+                <div class="menu-category fade-in">
+                    <h3 class="menu-category-title">コーヒー豆</h3>
+                    <p class="menu-note">100g / 自家焙煎 / 焙煎日お伝えします</p>
+                    <div class="beans-grid">
+                        <div class="bean-card">
+                            <div class="bean-image">
+                                <div class="placeholder-image placeholder-bean-1"></div>
+                            </div>
+                            <div class="bean-info">
+                                <h4 class="bean-name">House Blend</h4>
+                                <p class="bean-desc">バランスの良い日常使いのブレンド。ミルクとも相性抜群。</p>
+                                <p class="bean-brew">おすすめ: ハンドドリップ、カフェオレ</p>
+                                <span class="bean-price">¥800</span>
+                            </div>
+                        </div>
+                        <div class="bean-card">
+                            <div class="bean-image">
+                                <div class="placeholder-image placeholder-bean-2"></div>
+                            </div>
+                            <div class="bean-info">
+                                <h4 class="bean-name">エチオピア</h4>
+                                <p class="bean-desc">フルーティーな酸味と華やかな香り。ストレートで楽しめる。</p>
+                                <p class="bean-brew">おすすめ: ハンドドリップ（浅煎り）</p>
+                                <span class="bean-price">¥1,200</span>
+                            </div>
+                        </div>
+                        <div class="bean-card">
+                            <div class="bean-image">
+                                <div class="placeholder-image placeholder-bean-3"></div>
+                            </div>
+                            <div class="bean-info">
+                                <h4 class="bean-name">ブラジル</h4>
+                                <p class="bean-desc">ナッティーな香りとまろやかな味わい。エスプレッソにも最適。</p>
+                                <p class="bean-brew">おすすめ: エスプレッソ、フレンチプレス</p>
+                                <span class="bean-price">¥900</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 豆の保存・淹れ方アドバイス -->
+                <div class="beans-advice fade-in">
+                    <h4 class="beans-advice-title">おすすめの淹れ方・保存方法</h4>
+                    <div class="beans-advice-grid">
+                        <div class="advice-item">
+                            <span class="advice-icon">💧</span>
+                            <h5>お湯の温度</h5>
+                            <p>浅煎り: 90〜92℃ / 深煎り: 85〜88℃</p>
+                        </div>
+                        <div class="advice-item">
+                            <span class="advice-icon">⏱</span>
+                            <h5>挽きたて</h5>
+                            <p>淹れる直前に挽くと香りが格段にアップ</p>
+                        </div>
+                        <div class="advice-item">
+                            <span class="advice-icon">🏠</span>
+                            <h5>保存方法</h5>
+                            <p>高温多湿を避け、密閉容器で冷暗所へ</p>
+                        </div>
+                        <div class="advice-item">
+                            <span class="advice-icon">⏰</span>
+                            <h5>おすすめ時期</h5>
+                            <p>焙煎から3〜14日がベストコンディション</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">ギャラリー</span>
+                <h2 class="section-title">ギャラリー</h2>
+                <p class="section-desc">店内の様子とコーヒーの瞬間</p>
+            </div>
+
+            <div class="gallery-scroll fade-in">
+                <div class="gallery-track">
+                    <div class="gallery-item">
+                        <img src="images/gallery/interior-01.jpg" alt="店内の様子" loading="lazy">
+                        <div class="gallery-caption">店内の様子</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery/latte-art.jpg" alt="ラテアート" loading="lazy">
+                        <div class="gallery-caption">ラテアート</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery/pour-over.jpg" alt="ハンドドリップ" loading="lazy">
+                        <div class="gallery-caption">ハンドドリップ</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery/sweets-01.jpg" alt="スイーツ" loading="lazy">
+                        <div class="gallery-caption">スイーツ</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery/coffee-beans.jpg" alt="コーヒー豆" loading="lazy">
+                        <div class="gallery-caption">コーヒー豆</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery/roasting.jpg" alt="焙煎の様子" loading="lazy">
+                        <div class="gallery-caption">焙煎の様子</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery/barista-01.jpg" alt="バリスタ" loading="lazy">
+                        <div class="gallery-caption">バリスタ</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery/coffee-cup-01.jpg" alt="コーヒーカップ" loading="lazy">
+                        <div class="gallery-caption">コーヒーカップ</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery/cafe-sign.jpg" alt="カフェサイン" loading="lazy">
+                        <div class="gallery-caption">カフェサイン</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery/pastry-case.jpg" alt="ペストリー" loading="lazy">
+                        <div class="gallery-caption">ペストリー</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery/coffee-bag.jpg" alt="コーヒーパッケージ" loading="lazy">
+                        <div class="gallery-caption">コーヒーパッケージ</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery/morning-light.jpg" alt="朝の光" loading="lazy">
+                        <div class="gallery-caption">朝の光</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">お客様の声</span>
+                <h2 class="section-title">お客様の声</h2>
+                <p class="section-desc">実際にご来店いただいたお客様のリアルな評価</p>
+            </div>
+
+            <!-- レビュー統計 -->
+            <div class="reviews-stats fade-in">
+                <div class="review-stat">
+                    <span class="review-stat-value">4.8</span>
+                    <div class="review-stat-stars">★★★★★</div>
+                    <span class="review-stat-label">Google評価</span>
+                </div>
+                <div class="review-stat">
+                    <span class="review-stat-value">523件</span>
+                    <span class="review-stat-label">総レビュー数</span>
+                </div>
+                <div class="review-stat">
+                    <span class="review-stat-value">98%</span>
+                    <span class="review-stat-label">満足度</span>
+                </div>
+            </div>
+
+            <!-- レビューカード -->
+            <div class="reviews-grid fade-in">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">👩</div>
+                        <div class="review-meta">
+                            <span class="review-name">Yuki S.</span>
+                            <span class="review-date">2026年3月</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">「毎朝通っています。焙煎したての豆の香りが店内に漂っていて、行くだけで幸せな気分になります。エチオピアのシングルオリジンは最高！」</p>
+                    <div class="review-footer">
+                        <span class="review-badge">リピーター</span>
+                        <span class="review-badge">朝コーヒー派</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">👨</div>
+                        <div class="review-meta">
+                            <span class="review-name">Takeshi M.</span>
+                            <span class="review-date">2026年3月</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">「テイクアウト専門店としても使えるのが便利。スタッフが豆の特徴を詳しく教えてくれるので、自分好みの一杯を見つけられました。」</p>
+                    <div class="review-footer">
+                        <span class="review-badge">テイクアウト利用</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">👩</div>
+                        <div class="review-meta">
+                            <span class="review-name">Miho K.</span>
+                            <span class="review-date">2026年2月</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">「ラテアートが美しい！インスタ映えするので、女子会にもおすすめ。ドリンクだけでなくフードも美味しくて、ゆっくり過ごせます。」</p>
+                    <div class="review-footer">
+                        <span class="review-badge">女子会</span>
+                        <span class="review-badge">SNS投稿</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">👨</div>
+                        <div class="review-meta">
+                            <span class="review-name">Kenji T.</span>
+                            <span class="review-date">2026年2月</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">「コーヒー豆を買って自宅で楽しんでいます。店の方が焙煎の日を教えてくれるので、いつも新鮮な豆が手に入ります。」</p>
+                    <div class="review-footer">
+                        <span class="review-badge">豆購入リピーター</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">👩</div>
+                        <div class="review-meta">
+                            <span class="review-name">Anna L.</span>
+                            <span class="review-date">2026年2月</span>
+                        </div>
+                        <div class="review-stars">★★★★☆</div>
+                    </div>
+                    <p class="review-text">「遠方からでも価値あり。焙煎の丁寧さと、酸味とのバランスが絶妙。オススメです！」</p>
+                    <div class="review-footer">
+                        <span class="review-badge">遠方から来店</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">👨</div>
+                        <div class="review-meta">
+                            <span class="review-name">Daigo H.</span>
+                            <span class="review-date">2026年1月</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">「働きながらコーヒーを探していましたが、ここはWi-Fiも充実していて集中できます。朝8時開店なのも助かります。」</p>
+                    <div class="review-footer">
+                        <span class="review-badge">ワーク利用</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SNSへのCTA -->
+            <div class="reviews-cta fade-in">
+                <p class="reviews-cta-text">SNSで最新情報をお届けしています</p>
+                <div class="sns-links-large">
+                    <a href="#" class="sns-link-large sns-instagram">
+                        <span class="sns-icon-large">📸</span>
+                        <span class="sns-name">@roastlab_coffee</span>
+                        <span class="sns-followers">15,000フォロワー</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">よくある質問</span>
+                <h2 class="section-title">よくある質問</h2>
+                <p class="section-desc">お客様からいただく質問にお答えします</p>
+            </div>
+
+            <div class="faq-list fade-in">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">駐車場はありますか？</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>近くのコインパーキング2箇所と提携しており、お会計¥1,000以上で2時間無料になります。詳しくはスタッフまでお気軽にお問い合わせください。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">Wi-Fiは利用できますか？</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>はい、高速Wi-Fiを無料でご利用いただけます。電源コンセントも完備しておりますので、ノートPCをお持ち込みのお仕事も安心です。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">子供連れでも大丈夫ですか？</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>はい、お子様連れもご安心ください。キッズメニューはございませんが、お座りいただけます。ベビーカーのご利用も可能です。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">カード決済はできますか？</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>はい、主要なクレジットカード（VISA、Mastercard、JCB、AMEX）、電子マネー（PayPay、楽天ペイ、QUICPay）、交通系ICカードがご利用可能です。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">予約は必要ですか？</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>通常は予約不要でご来店いただけます。ただし、週末のお席はご予約をおすすめしております。電話またはInstagram DMでご予約承っています。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">テイクアウトできますか？</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>はい、全メニューテイクアウト可能です。マイタンブラ持参の方は¥20引き、ご自身のタンブラ持参で¥50引きのサービスも実施中です。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access Section -->
+    <section class="access" id="access">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">アクセス</span>
+                <h2 class="section-title">アクセス</h2>
+            </div>
+
+            <div class="access-content fade-in">
+                <div class="access-info">
+                    <div class="access-card">
+                        <h3 class="access-card-title">店舗情報</h3>
+                        <dl class="access-list">
+                            <div class="access-item">
+                                <dt>📍 住所</dt>
+                                <dd>〒150-0000<br>東京都渋谷区〇〇1-2-3</dd>
+                            </div>
+                            <div class="access-item">
+                                <dt>🚃 アクセス</dt>
+                                <dd>JR山手線 渋谷駅 徒歩5分<br>東京メトロ〇〇駅 A1出口より徒歩3分</dd>
+                            </div>
+                            <div class="access-item">
+                                <dt>📞 電話番号</dt>
+                                <dd>03-1234-5678</dd>
+                            </div>
+                            <div class="access-item">
+                                <dt>🕐 営業時間</dt>
+                                <dd>
+                                    平日 8:00 - 19:00<br>
+                                    土日祝 9:00 - 18:00
+                                </dd>
+                            </div>
+                            <div class="access-item">
+                                <dt>📅 定休日</dt>
+                                <dd>毎週水曜日</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <!-- サービス情報を追加 -->
+                    <div class="access-card">
+                        <h3 class="access-card-title">サービス</h3>
+                        <dl class="access-list">
+                            <div class="access-item">
+                                <dt>📶 Wi-Fi</dt>
+                                <dd>高速Wi-Fi無料<br>電源コンセント完備</dd>
+                            </div>
+                            <div class="access-item">
+                                <dt>💳 カード決済</dt>
+                                <dd>VISA, Master, JCB, AMEX<br>PayPay, 楽天ペイ, QUICPay等</dd>
+                            </div>
+                            <div class="access-item">
+                                <dt>🅿️ 駐車場</dt>
+                                <dd>提携駐車場2箇所<br>¥1,000以上で2時間無料</dd>
+                            </div>
+                            <div class="access-item">
+                                <dt>🪑 テイクアウト</dt>
+                                <dd>全メニュー対応可<br>マイタンブラ持参¥20引</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <div class="access-sns">
+                        <h3 class="access-sns-title">SNS</h3>
+                        <div class="sns-links">
+                            <a href="#" class="sns-link sns-instagram" target="_blank" rel="noopener noreferrer">
+                                <span class="sns-icon">Instagram</span>
+                            </a>
+                            <a href="#" class="sns-link sns-twitter" target="_blank" rel="noopener noreferrer">
+                                <span class="sns-icon">Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="access-map">
+                    <div class="map-placeholder">
+                        <p>📍 Google Maps</p>
+                        <!-- 実際にはGoogle Mapsを埋め込み -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="final-cta-content fade-in">
+                <h2 class="final-cta-title">焙煎したての香りで、日常を特別に。</h2>
+                <p class="final-cta-subtitle">焙煎から48時間以内の「ピークフレーバー」のみ。スペシャルティコーヒーの本当の美味しさを、ぜひ体験してください。</p>
+                <div class="final-cta-features">
+                    <span class="final-cta-feature">✓ 朝8時から営業</span>
+                    <span class="final-cta-feature">✓ ワークスペース完備</span>
+                    <span class="final-cta-feature">✓ テイクアウトOK</span>
+                </div>
+                <div class="final-cta-buttons">
+                    <a href="tel:03-1234-5678" class="btn btn-large btn-primary">📞 お電話で予約</a>
+                    <a href="#" class="btn btn-large btn-secondary">📍 Google Mapsで見る</a>
+                </div>
+                <p class="final-cta-note">※ 予約は不要ですが、週末・祝日はご予約をおすすめしております</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">ROAST LAB</div>
+            <p class="footer-copy">&copy; 2026 ROAST LAB. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
