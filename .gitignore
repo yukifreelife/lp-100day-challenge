@@ -55,6 +55,7 @@ pnpm-debug.log*
 # Temporary / patch leftovers
 *.tmp
 *.temp
+*.bak
 *.out
 *.err
 *.pid
