@@ -3,11 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Piano Garden - 幼児から小学生まで、無理なく続くピアノ教室。心を育てるピアノレッスン。">
+    <meta name="description" content="Piano Garden（ピアノガーデン）は、渋谷区の幼児〜小学生向けピアノ教室。無理なく続くレッスンで、お子様の自信を育てます。体験レッスン無料、グランドピアノ使用。生徒数50名以上、指導実績10年。">
     <meta property="og:title" content="Piano Garden | 心を育てる、ピアノ">
     <meta property="og:description" content="幼児から小学生まで、無理なく続くピアノ教室">
     <meta property="og:type" content="website">
     <title>Piano Garden | 心を育てる、ピアノ</title>
+
+    <!-- 構造化データ (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicSchool",
+      "name": "Piano Garden",
+      "alternateName": "ピアノガーデン",
+      "description": "幼児から小学生まで、無理なく続くピアノ教室。心を育てるピアノレッスン。",
+      "url": "https://pianogarden.example.com",
+      "telephone": "03-XXXX-XXXX",
+      "email": "info@pianogarden.example.com",
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "150-0000",
+        "addressRegion": "東京都",
+        "addressLocality": "渋谷区",
+        "streetAddress": "○○1-2-3 ○○ビル2F",
+        "addressCountry": "JP"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "35.681236",
+        "longitude": "139.767125"
+      },
+      "priceRange": "¥8,000 - ¥15,000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "20",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "14:00",
+        "closes": "19:00"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ピアノレッスンコース",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "幼児コース",
+              "description": "3歳〜年長。週1回・30分レッスン。"
+            },
+            "price": "8000",
+            "priceCurrency": "JPY"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "小学生コース",
+              "description": "小学1年生〜6年生。週1回・45分レッスン。"
+            },
+            "price": "10000",
+            "priceCurrency": "JPY"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "グレードコース",
+              "description": "検定・コンペ対策。週1回・60分レッスン。"
+            },
+            "price": "15000",
+            "priceCurrency": "JPY"
+          }
+        ]
+      }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -40,17 +124,17 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="hero-badges">
-                <span class="hero-badge">👨‍👩‍👧‍👦 生徒数50名以上</span>
-                <span class="hero-badge">🎵 指導実績10年</span>
-                <span class="hero-badge">⭐ Googleレビュー4.8</span>
+                <span class="hero-badge">👨‍👩‍👧‍👦 生徒数<span class="number">50</span>名以上</span>
+                <span class="hero-badge">🎵 指導実績<span class="number">10</span>年</span>
+                <span class="hero-badge">⭐ Googleレビュー<span class="number">4.8</span></span>
             </div>
             <h1 class="hero-title">
-                <span class="hero-title-main">心を育てる、ピアノ</span>
-                <span class="hero-title-main">幼児から小学生まで、無理なく続く</span>
+                <span class="hero-title-main">心を育てる、ピアノ〜幼児から小学生まで、無理なく続く〜</span>
             </h1>
-            <p class="hero-subtitle">一人一人のペースに合わせた指導で、音楽の楽しさを大切にしています。楽しみながら基礎を身につけ、定期的な発表会で達成感を体験。</p>
+            <p class="hero-subtitle">お子様の自信が、音楽を通じて花開きます。無理のないペースで、ピアノが一生の友達に。楽しみながら基礎を身につけ、発表会で輝く瞬間をご家族で見守れます。</p>
             <div class="hero-cta">
                 <a href="#contact" class="btn btn-primary">体験レッスンを予約する（無料）</a>
+                <p class="hero-scarcity">※ 今月残り3枠 / 定員になり次第締め切り</p>
             </div>
         </div>
         <div class="hero-scroll">
@@ -71,7 +155,7 @@
             <div class="about-grid">
                 <div class="about-image fade-in">
                     <div class="about-image-wrapper">
-                        <div class="placeholder-image placeholder-teacher"></div>
+                        <img src="./images/about/teacher.jpg" alt="ピアノのレッスン風景" class="about-photo">
                     </div>
                 </div>
                 <div class="about-content fade-in">
@@ -85,22 +169,22 @@
                         <li class="about-feature">
                             <span class="about-feature-icon">🎹</span>
                             <div class="about-feature-content">
-                                <h4>基礎からしっかり</h4>
-                                <p>正しい姿勢、指使いから、音楽的な表現まで</p>
+                                <h4>正しい姿勢で、一生の財産に</h4>
+                                <p>美しい音色と、体に染み付く基礎技術</p>
                             </div>
                         </li>
                         <li class="about-feature">
                             <span class="about-feature-icon">🎼</span>
                             <div class="about-feature-content">
-                                <h4>ソルフェージー併用</h4>
-                                <p>耳を育て、読譜力を高める</p>
+                                <h4>耳を育て、楽譜が読めるように</h4>
+                                <p>将来の音楽学習につながるソルフェージュー</p>
                             </div>
                         </li>
                         <li class="about-feature">
                             <span class="about-feature-icon">🎤</span>
                             <div class="about-feature-content">
-                                <h4>発表会の実施</h4>
-                                <p>年に2回、達成感を味わう機会</p>
+                                <h4>お子様の輝く瞬間を、家族で見守る</h4>
+                                <p>年に2回、成長を祝う発表会</p>
                             </div>
                         </li>
                     </ul>
@@ -121,53 +205,56 @@
             <div class="course-grid">
                 <div class="course-card fade-in">
                     <div class="course-image">
-                        <div class="placeholder-image placeholder-course-1"></div>
+                        <img src="./images/course/course-toddler.jpg" alt="幼児コース" class="course-photo">
                     </div>
                     <div class="course-content">
                         <span class="course-badge">幼児コース</span>
                         <h3 class="course-title">3歳〜年長</h3>
-                        <p class="course-desc">リズム感を養い、音楽遊びからピアノへ。30分レッスンで集中力を育てます。</p>
+                        <p class="course-desc">音楽が遊びになるレッスン。30分で集中力を育てながら、リズム感とピアノへの興味を引き出します。</p>
                         <ul class="course-features">
                             <li>歌とリズム遊び</li>
                             <li>ピアノに触れる導入</li>
                             <li>音符と鍵盤の親しみ</li>
                         </ul>
-                        <p class="course-price">¥8,000 / 月（週1回・30分）</p>
+                        <p class="course-price"><span class="amount">¥8,000</span> / 月（週1回・30分）</p>
+                        <p class="course-note">※ 入会金¥20,000（教材費込、初回のみ）</p>
                     </div>
                 </div>
 
                 <div class="course-card course-popular fade-in">
-                    <div class="course-popular-badge">人気</div>
+                    <div class="course-popular-badge">人気 | 予約殺到</div>
                     <div class="course-image">
-                        <div class="placeholder-image placeholder-course-2"></div>
+                        <img src="./images/course/course-elementary.jpg" alt="小学生コース" class="course-photo">
                     </div>
                     <div class="course-content">
                         <span class="course-badge">小学生コース</span>
                         <h3 class="course-title">小学1年生〜6年生</h3>
-                        <p class="course-desc">基礎技術の定着と、曲を仕上げる達成感。45分レッスンで充実の内容。</p>
+                        <p class="course-desc">「一曲を完成させる」達成感でやる気が継続。45分レッスンで、基礎技術と音楽表現の両方をバランスよく学べます。</p>
                         <ul class="course-features">
                             <li>正しい基礎技術</li>
                             <li>ソルフェージー併用</li>
                             <li>発表会への挑戦</li>
                         </ul>
-                        <p class="course-price">¥10,000 / 月（週1回・45分）</p>
+                        <p class="course-price"><span class="amount">¥10,000</span> / 月（週1回・45分）</p>
+                        <p class="course-note">※ 入会金¥20,000（教材費込、初回のみ）</p>
                     </div>
                 </div>
 
                 <div class="course-card fade-in">
                     <div class="course-image">
-                        <div class="placeholder-image placeholder-course-3"></div>
+                        <img src="./images/course/course-grade.jpg" alt="グレードコース" class="course-photo">
                     </div>
                     <div class="course-content">
                         <span class="course-badge">グレードコース</span>
                         <h3 class="course-title">検定・コンペ対策</h3>
-                        <p class="course-desc">ピティナ・ステップ検定やコンペティションを目指す生徒への専門指導。</p>
+                        <p class="course-desc">目標達成に向けた的確な指導。過去の実績多数、合格率の高さが自信につながります。</p>
                         <ul class="course-features">
                             <li>ピティナ・ステップ対策</li>
                             <li>コンペティション支援</li>
                             <li>60分レッスン</li>
                         </ul>
-                        <p class="course-price">¥15,000 / 月（週1回・60分）</p>
+                        <p class="course-price"><span class="amount">¥15,000</span> / 月（週1回・60分）</p>
+                        <p class="course-note">※ 入会金¥20,000（教材費込、初回のみ）</p>
                     </div>
                 </div>
             </div>
@@ -186,10 +273,11 @@
             <div class="voice-grid">
                 <div class="voice-card fade-in">
                     <div class="voice-header">
-                        <div class="voice-icon">👩</div>
+                        <div class="voice-avatar-1">👩</div>
                         <div class="voice-info">
                             <p class="voice-name">A.S様</p>
                             <p class="voice-child">小学1年生のお子様</p>
+                            <p class="voice-date">2026年3月入会</p>
                         </div>
                     </div>
                     <p class="voice-text">「最初はピアノに興味がなかったのですが、先生の楽しいレッスンのおかげで、今では自分から練習するように。発表会での姿を見て、成長を感じました。」</p>
@@ -197,10 +285,11 @@
 
                 <div class="voice-card fade-in">
                     <div class="voice-header">
-                        <div class="voice-icon">👨</div>
+                        <div class="voice-avatar-2">👨</div>
                         <div class="voice-info">
                             <p class="voice-name">M.K様</p>
                             <p class="voice-child">年長のお子様</p>
+                            <p class="voice-date">2026年1月入会</p>
                         </div>
                     </div>
                     <p class="voice-text">「先生が優しく、子供も安心して通っています。保護者にもレッスンの様子を報告してくださるので、家庭での練習もしやすいです。」</p>
@@ -208,10 +297,11 @@
 
                 <div class="voice-card fade-in">
                     <div class="voice-header">
-                        <div class="voice-icon">👩</div>
+                        <div class="voice-avatar-3">👩</div>
                         <div class="voice-info">
                             <p class="voice-name">T.H様</p>
                             <p class="voice-child">小学3年生のお子様</p>
+                            <p class="voice-date">2025年9月入会</p>
                         </div>
                     </div>
                     <p class="voice-text">「グレードコースで検定対策をお願いしています。先生が的確なアドバイスをしてくれるので、子供も迷いなく練習できています。」</p>
@@ -232,7 +322,7 @@
             <div class="facility-grid">
                 <div class="facility-item fade-in">
                     <div class="facility-image">
-                        <div class="placeholder-image placeholder-facility-1"></div>
+                        <img src="./images/facility/piano.jpg" alt="グランドピアノ" class="facility-photo">
                     </div>
                     <div class="facility-content">
                         <h3 class="facility-title">グランドピアノ</h3>
@@ -242,7 +332,7 @@
 
                 <div class="facility-item fade-in">
                     <div class="facility-image">
-                        <div class="placeholder-image placeholder-facility-2"></div>
+                        <img src="./images/facility/room.jpg" alt="防音レッスン室" class="facility-photo">
                     </div>
                     <div class="facility-content">
                         <h3 class="facility-title">防音レッスン室</h3>
@@ -252,7 +342,7 @@
 
                 <div class="facility-item fade-in">
                     <div class="facility-image">
-                        <div class="placeholder-image placeholder-facility-3"></div>
+                        <img src="./images/facility/waiting.jpg" alt="保護者待機スペース" class="facility-photo">
                     </div>
                     <div class="facility-content">
                         <h3 class="facility-title">保護者待機スペース</h3>
@@ -262,7 +352,7 @@
 
                 <div class="facility-item fade-in">
                     <div class="facility-image">
-                        <div class="placeholder-image placeholder-facility-4"></div>
+                        <img src="./images/facility/parking.jpg" alt="駐車場" class="facility-photo">
                     </div>
                     <div class="facility-content">
                         <h3 class="facility-title">駐車場完備</h3>
@@ -303,13 +393,13 @@
                 </div>
 
                 <div class="pricing-tabs fade-in">
-                    <div class="tab-buttons">
-                        <button class="tab-button active" data-tab="toddler">幼児コース</button>
-                        <button class="tab-button" data-tab="elementary">小学生コース</button>
-                        <button class="tab-button" data-tab="grade">グレードコース</button>
+                    <div class="tab-buttons" role="tablist">
+                        <button class="tab-button active" data-tab="toddler" role="tab" aria-selected="true" aria-controls="toddler" id="tab-toddler">幼児コース</button>
+                        <button class="tab-button" data-tab="elementary" role="tab" aria-selected="false" aria-controls="elementary" id="tab-elementary">小学生コース</button>
+                        <button class="tab-button" data-tab="grade" role="tab" aria-selected="false" aria-controls="grade" id="tab-grade">グレードコース</button>
                     </div>
 
-                    <div class="tab-content active" id="toddler">
+                    <div class="tab-content active" id="toddler" role="tabpanel" aria-labelledby="tab-toddler" tabindex="0">
                         <div class="pricing-header">
                             <span class="pricing-course">幼児コース</span>
                             <span class="pricing-age">3歳〜年長</span>
@@ -328,7 +418,7 @@
                         </div>
                     </div>
 
-                    <div class="tab-content" id="elementary">
+                    <div class="tab-content" id="elementary" role="tabpanel" aria-labelledby="tab-elementary" tabindex="0">
                         <div class="pricing-header">
                             <span class="pricing-course">小学生コース</span>
                             <span class="pricing-age">小学1年生〜6年生</span>
@@ -347,7 +437,7 @@
                         </div>
                     </div>
 
-                    <div class="tab-content" id="grade">
+                    <div class="tab-content" id="grade" role="tabpanel" aria-labelledby="tab-grade" tabindex="0">
                         <div class="pricing-header">
                             <span class="pricing-course">グレードコース</span>
                             <span class="pricing-age">検定・コンペ対策</span>
@@ -367,6 +457,7 @@
                     </div>
 
                     <div class="pricing-note">
+                        <p><strong>初月のみのお費用</strong>: 入会金¥20,000 + 月謝（教材費込）</p>
                         <p>入会金: ¥20,000（教材費込）</p>
                         <p>兄弟割引: 2人目から¥1,000割引</p>
                     </div>
@@ -386,51 +477,51 @@
 
             <div class="faq-list">
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
                         <span>ピアノは持っていないとダメですか？</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
-                    <div class="faq-answer">
+                    <div id="faq-answer-1" class="faq-answer" role="region">
                         <p>ご自宅にピアノがなくても大丈夫です。レッスンで使用するグランドピアノで練習できます。ただし、宿題としての練習時間をご用意いただくと、上達が早まります。電子ピアノでも構いませんので、練習環境の準備をご検討ください。</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
                         <span>体験レッスンには何を持っていけばいいですか？</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
-                    <div class="faq-answer">
+                    <div id="faq-answer-2" class="faq-answer" role="region">
                         <p>特に持参していただくものはありません。手ぶらでお越しください。お子様が飲み物を欲しがる場合もありますので、水筒などを持っていただいても構いません。</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
                         <span>欠席した場合はどうなりますか？</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
-                    <div class="faq-answer">
+                    <div id="faq-answer-3" class="faq-answer" role="region">
                         <p>当日の欠席の場合、振替レッスンはできません。事前にご連絡いただければ、別日程への振替が可能です（月1回まで）。</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
                         <span>兄弟一緒に通えますか？</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
-                    <div class="faq-answer">
+                    <div id="faq-answer-4" class="faq-answer" role="region">
                         <p>はい、可能です。兄弟で同時にレッスンを受けることも、時間をずらして受けることもできます。兄弟割引（2人目から¥1,000割引）もご用意しています。</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
                         <span>大人の再開も受け付けていますか？</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
-                    <div class="faq-answer">
+                    <div id="faq-answer-5" class="faq-answer" role="region">
                         <p>はい、大人のピアノレッスンも承っています。初心者の方、久しぶりに再開されたい方も、お気軽にご相談ください。大人向けのカリキュラムでご案内します。</p>
                     </div>
                 </div>
