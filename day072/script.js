@@ -1,23 +1,4 @@
 // ============================================
-// Utility Functions - Smooth Scroll
-// ============================================
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            const navHeight = document.querySelector('.nav').offsetHeight;
-            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-
-// ============================================
 // Navigation Toggle
 // ============================================
 
@@ -77,11 +58,15 @@ const tabContents = document.querySelectorAll('.tab-content');
 tabButtons.forEach(button => {
     button.addEventListener('click', () => {
         // Remove active class from all buttons and contents
-        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabButtons.forEach(btn => {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-selected', 'false');
+        });
         tabContents.forEach(content => content.classList.remove('active'));
 
         // Add active class to clicked button and corresponding content
         button.classList.add('active');
+        button.setAttribute('aria-selected', 'true');
         const tabId = button.getAttribute('data-tab');
         const targetContent = document.getElementById(tabId);
         if (targetContent) {
@@ -96,19 +81,34 @@ tabButtons.forEach(button => {
 
 const faqQuestions = document.querySelectorAll('.faq-question');
 
-faqQuestions.forEach(question => {
+faqQuestions.forEach((question, index) => {
+    // Set unique ID for accessibility
+    const faqItem = question.parentElement;
+    const answerId = `faq-answer-${index + 1}`;
+    const answerElement = faqItem.querySelector('.faq-answer');
+
+    if (answerElement && !answerElement.id) {
+        answerElement.id = answerId;
+    }
+
+    question.setAttribute('aria-controls', answerId);
+
     question.addEventListener('click', () => {
-        const faqItem = question.parentElement;
         const isActive = faqItem.classList.contains('active');
 
         // Close all FAQ items
         document.querySelectorAll('.faq-item').forEach(item => {
             item.classList.remove('active');
+            const btn = item.querySelector('.faq-question');
+            if (btn) {
+                btn.setAttribute('aria-expanded', 'false');
+            }
         });
 
         // Toggle clicked item
         if (!isActive) {
             faqItem.classList.add('active');
+            question.setAttribute('aria-expanded', 'true');
         }
     });
 });
@@ -177,9 +177,20 @@ if (contactForm) {
             }
         }
 
+        // Phone validation (Japanese phone numbers)
+        const phoneField = document.getElementById('phone');
+        if (phoneField && phoneField.value.trim()) {
+            // 日本の電話番号パターン: 0XX-XXXX-XXXX, 0XXXXXXXXX, 0XX-XXX-XXXX
+            const phonePattern = /^(0\d{1,4}[-\s]?\d{1,4}[-\s]?\d{4}|0\d{9,10})$/;
+            if (!phonePattern.test(phoneField.value.trim())) {
+                isValid = false;
+                phoneField.style.borderColor = '#e74c3c';
+            }
+        }
+
         if (isValid) {
-            // Show success message (in production, send to server)
-            alert('体験レッスンの予約を受け付けました！\n担当者より折り返しご連絡いたします。');
+            // Show success modal
+            showSuccessModal();
             contactForm.reset();
         }
     });
@@ -190,4 +201,79 @@ if (contactForm) {
             field.style.borderColor = '';
         });
     });
+}
+
+// ============================================
+// Success Modal (XSS-safe implementation)
+// ============================================
+
+function showSuccessModal() {
+    // Create modal elements
+    const modal = document.createElement('div');
+    modal.className = 'success-modal';
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.setAttribute('aria-labelledby', 'modal-title');
+
+    // Create overlay
+    const overlay = document.createElement('div');
+    overlay.className = 'success-modal-overlay';
+    overlay.addEventListener('click', closeSuccessModal);
+
+    // Create content container
+    const content = document.createElement('div');
+    content.className = 'success-modal-content';
+
+    // Create icon
+    const icon = document.createElement('div');
+    icon.className = 'success-modal-icon';
+    icon.textContent = '✓';
+
+    // Create title
+    const title = document.createElement('h2');
+    title.id = 'modal-title';
+    title.className = 'success-modal-title';
+    title.textContent = 'ご予約ありがとうございます！';
+
+    // Create message
+    const message = document.createElement('p');
+    message.className = 'success-modal-message';
+    message.textContent = '体験レッスンの予約を受け付けました。担当者より折り返しご連絡いたします。';
+
+    // Create close button
+    const closeBtn = document.createElement('button');
+    closeBtn.type = 'button';
+    closeBtn.className = 'btn btn-primary btn-full';
+    closeBtn.textContent = '閉じる';
+    closeBtn.addEventListener('click', closeSuccessModal);
+
+    // Assemble modal
+    content.append(icon, title, message, closeBtn);
+    modal.append(overlay, content);
+
+    // Add to DOM
+    document.body.appendChild(modal);
+
+    // Prevent body scroll
+    document.body.style.overflow = 'hidden';
+
+    // Focus trap
+    closeBtn.focus();
+
+    // ESC key to close
+    const handleEscape = (e) => {
+        if (e.key === 'Escape') {
+            closeSuccessModal();
+            document.removeEventListener('keydown', handleEscape);
+        }
+    };
+    document.addEventListener('keydown', handleEscape);
+}
+
+function closeSuccessModal() {
+    const modal = document.querySelector('.success-modal');
+    if (modal) {
+        modal.remove();
+        document.body.style.overflow = '';
+    }
 }
