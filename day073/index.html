@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Table Harmony（テーブルハーモニー）は、3名〜50名までのケータリングサービス。記念日、法人イベント、家庭聚まで、ご予算に合わせたお料理をお届けします。東京都23区および近郊対応。">
+    <meta property="og:title" content="Table Harmony | あの日を、美味しく。">
+    <meta property="og:description" content="3名〜50名までのケータリングサービス。記念日、法人イベント、家庭聚まで。">
+    <meta property="og:type" content="website">
+    <title>Table Harmony | あの日を、美味しく。</title>
+
+    <!-- 構造化データ (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FoodEstablishment",
+      "name": "Table Harmony",
+      "alternateName": "テーブルハーモニー",
+      "description": "3名〜50名までのケータリングサービス。記念日、法人イベント、家庭聚まで、ご予算に合わせたお料理をお届け。",
+      "url": "https://tableharmony.example.com",
+      "telephone": "03-XXXX-XXXX",
+      "email": "info@tableharmony.example.com",
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "150-0000",
+        "addressRegion": "東京都",
+        "addressLocality": "渋谷区",
+        "addressCountry": "JP"
+      },
+      "priceRange": "¥3,000 - ¥8,000",
+      "servesCuisine": ["Japanese", "Western", "Party"]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Table Harmony</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#concept" class="nav-link">こだわり</a></li>
+                <li><a href="#menu" class="nav-link">メニュー</a></li>
+                <li><a href="#gallery" class="nav-link">ギャラリー</a></li>
+                <li><a href="#flow" class="nav-link">ご利用の流れ</a></li>
+                <li><a href="#voice" class="nav-link">お客様の声</a></li>
+                <li><a href="#faq" class="nav-link">よくある質問</a></li>
+                <li><a href="#contact" class="nav-link cta-link">見積もり</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-scarcity-banner">
+                🎉 今月ご予約で割引特典！先着10様限定
+            </div>
+            <div class="hero-free-badge">
+                💬 相談は無料！お気軽にお問い合わせください
+            </div>
+            <div class="hero-badges">
+                <span class="hero-badge">🍽️ ご対応<span class="number">3</span>名〜<span class="number">50</span>名</span>
+                <span class="hero-badge">📍 東京<span class="number">23</span>区＋近郊</span>
+                <span class="hero-badge">⭐ お客様満足<span class="number">98</span>%</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-title-main">あの日を、美味しく。</span>
+                <span class="hero-title-sub">大切な日を、最高の味で彩るケータリング</span>
+            </h1>
+            <p class="hero-subtitle">結婚記念日、法人イベント、お家でのホームパーティーまで。3名から50名までのお集まりに、心を込めた手料理をお届けします。ご予算やお好みに合わせて、オーダーメイドのメニューをご提案。</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">無料見積もりを依頼する</a>
+                <p class="hero-scarcity">※ ご予約状況により、お日にちをご相談いただく場合がございます</p>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="hero-scroll-text">スクロール</span>
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section class="concept" id="concept">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Concept</span>
+                <h2 class="section-title">料理でつなぐ、<br class="sp-only">大切な瞬間</h2>
+                <p class="section-description">「食」があれば、どんな集まりも楽しくなる。そんな想いで、一皿一皿心を込めてお作りしています。</p>
+            </div>
+
+            <div class="concept-grid">
+                <div class="concept-card fade-in">
+                    <div class="concept-icon">
+                        <img src="images/concept-1.jpg" alt="オーナーシェフが料理を作っている様子" class="concept-img">
+                    </div>
+                    <h3 class="concept-title">オーナーシェフ<br>直送</h3>
+                    <p class="concept-description">自宅キッチンで丁寧に仕上げた手料理を、お届け当日に調理。出来立ての美味しさをお楽しみください。</p>
+                </div>
+                <div class="concept-card fade-in">
+                    <div class="concept-icon">
+                        <img src="images/concept-2.jpg" alt="丁寧に盛り付けられたカスタマイズ料理" class="concept-img">
+                    </div>
+                    <h3 class="concept-title">ご要望に<br>合わせる</h3>
+                    <p class="concept-description">アレルギー対応、お好みの味付け、テーマカラー合わせ。細かいご要望にも柔軟に対応いたします。</p>
+                </div>
+                <div class="concept-card fade-in">
+                    <div class="concept-icon">
+                        <img src="images/concept-3.jpg" alt="お皿やカトラリーのテーブルセット" class="concept-img">
+                    </div>
+                    <h3 class="concept-title">器具・片付け<br>付き</h3>
+                    <p class="concept-description">お皿、カトラリー、テーブルクロスをご用意。お開き後は片付けまでお任せください。</p>
+                </div>
+                <div class="concept-card fade-in">
+                    <div class="concept-icon">
+                        <img src="images/concept-4.jpg" alt="お試しメニューの3品サンプル" class="concept-img">
+                    </div>
+                    <h3 class="concept-title">お試し<br>メニュー</h3>
+                    <p class="concept-description">3品サンプルでお味を試せます。初めてのお客様に人気。まずはお気軽にお試しください。</p>
+                </div>
+            </div>
+
+            <div class="chef-profile fade-in">
+                <div class="chef-image">
+                    <img src="images/chef.jpg" alt="オーナーシェフ 山田翔太" class="chef-photo">
+                </div>
+                <div class="chef-content">
+                    <span class="chef-label">CHEF</span>
+                    <h3 class="chef-name">山田 翔太（Yamada Shota）</h3>
+                    <p class="chef-description">大手ホテルで10年経験後、独立。「おもてなしの心を、家庭の食卓へ」をモットーに、ケータリングサービスを開始。和食をベースに、洋食やエスニックも幅広く対応。</p>
+                    <div class="chef-story">
+                        <h4>創業の想い</h4>
+                        <p>「大切な人との食卓に、温かい手料理を届けたい」。そんな想いから、Table Harmonyは始まりました。大手ホテルで培った技術と、家庭的な温かさを両立させたケータリングで、皆様の大切な日をお手伝いします。</p>
+                    </div>
+                    <ul class="chef-achievements">
+                        <li>🏆 ホテル料理コンクール 金賞受賞</li>
+                        <li>📺 テレビ料理番組 レギュラー出演</li>
+                        <li>👥 累500組以上のイベント実績</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Menu</span>
+                <h2 class="section-title">シーン別メニュー</h2>
+                <p class="section-description">お集まりの目的に合わせて、最適なコースをご提案します。</p>
+            </div>
+
+            <div class="menu-tabs" role="tablist">
+                <button class="menu-tab active" data-tab="anniversary"
+                        role="tab" aria-selected="true" aria-controls="pane-anniversary" id="tab-anniversary">
+                    記念日
+                </button>
+                <button class="menu-tab" data-tab="corporate"
+                        role="tab" aria-selected="false" aria-controls="pane-corporate" id="tab-corporate">
+                    法人イベント
+                </button>
+                <button class="menu-tab" data-tab="home"
+                        role="tab" aria-selected="false" aria-controls="pane-home" id="tab-home">
+                    ホームパーティー
+                </button>
+            </div>
+
+            <div class="menu-content">
+                <!-- 記念日コース -->
+                <div class="menu-pane active" id="pane-anniversary"
+                     role="tabpanel" aria-labelledby="tab-anniversary">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Anniversary Course</h3>
+                        <p class="menu-subtitle">特別な日を、華やかに</p>
+                        <p class="menu-price"><span class="price-number">¥6,500</span>〜 / 1名様</p>
+                    </div>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="menu-dish">前菜</span>
+                            <span class="menu-description">季節の彩り盛り合わせ（5品）</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-dish">スープ</span>
+                            <span class="menu-description">コンソメまたは澄まし汁</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-dish">メイン</span>
+                            <span class="menu-description">ローストビーフ または 鯛のムニエル</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-dish">付け合わせ</span>
+                            <span class="menu-description">季節の野菜のソテー</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-dish">デザート</span>
+                            <span class="menu-description">記念日メッセージ入りケーキ</span>
+                        </div>
+                    </div>
+                    <p class="menu-note">※ 写真はイメージです。季節によって内容が変わります。</p>
+                </div>
+
+                <!-- 法人コース -->
+                <div class="menu-pane" id="pane-corporate"
+                     role="tabpanel" aria-labelledby="tab-corporate">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Corporate Course</h3>
+                        <p class="menu-subtitle">ビジネスシーンにふさわしく</p>
+                        <p class="menu-price"><span class="price-number">¥4,000</span>〜 / 1名様</p>
+                    </div>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="menu-dish">前菜</span>
+                            <span class="menu-description">和え物とピクルス（3品）</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-dish">メイン</span>
+                            <span class="menu-description">おにぎり3種 または サンドイッチ</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-dish">温菜</span>
+                            <span class="menu-description">煮物または焼き魚</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-dish">デザート</span>
+                            <span class="menu-description">季節のフルーツ</span>
+                        </div>
+                    </div>
+                    <p class="menu-note">※ 立食スタイルにも対応可能です。</p>
+                </div>
+
+                <!-- ホームパーティーコース -->
+                <div class="menu-pane" id="pane-home"
+                     role="tabpanel" aria-labelledby="tab-home">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Home Party Course</h3>
+                        <p class="menu-subtitle">お家で気軽にパーティー</p>
+                        <p class="menu-price"><span class="price-number">¥3,000</span>〜 / 1名様</p>
+                    </div>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="menu-dish">メイン</span>
+                            <span class="menu-description">パエリア または チキングリル</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-dish">サラダ</span>
+                            <span class="menu-description">シーザーサラダ</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-dish">付け合わせ</span>
+                            <span class="menu-description">パン または ご飯</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-dish">デザート</span>
+                            <span class="menu-description">簡単スイーツ</span>
+                        </div>
+                    </div>
+                    <p class="menu-note">※ お子様向けメニューもご用意できます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Gallery</span>
+                <h2 class="section-title">お料理ギャラリー</h2>
+                <p class="section-description">過去のイベントでご提供したお料理をご紹介します。</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="gallery/appetizer.jpg" alt="前菜盛り合わせ" class="gallery-photo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+                    <div class="gallery-placeholder">🍽️</div>
+                    <span class="gallery-label">前菜盛り合わせ</span>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="gallery/roastbeef.jpg" alt="ローストビーフ" class="gallery-photo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+                    <div class="gallery-placeholder">🥩</div>
+                    <span class="gallery-label">ローストビーフ</span>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="gallery/cake.jpg" alt="記念日ケーキ" class="gallery-photo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+                    <div class="gallery-placeholder">🍰</div>
+                    <span class="gallery-label">記念日ケーキ</span>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="gallery/onigiri.jpg" alt="おにぎりセット" class="gallery-photo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+                    <div class="gallery-placeholder">🍱</div>
+                    <span class="gallery-label">おにぎりセット</span>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="gallery/salad.jpg" alt="季節のサラダ" class="gallery-photo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+                    <div class="gallery-placeholder">🥗</div>
+                    <span class="gallery-label">季節のサラダ</span>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="gallery/paella.jpg" alt="パエリア" class="gallery-photo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+                    <div class="gallery-placeholder">🍲</div>
+                    <span class="gallery-label">パエリア</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flow Section -->
+    <section class="flow" id="flow">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Flow</span>
+                <h2 class="section-title">ご利用の流れ</h2>
+                <p class="section-description">お問い合わせから当日まで、スムーズにサポートします。</p>
+            </div>
+
+            <div class="flow-steps">
+                <div class="flow-step fade-in">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">お問い合わせ</h3>
+                    <p class="step-description">フォームまたはお電話にて、日時・人数・ご予算をお聞かせください。</p>
+                </div>
+                <div class="flow-step fade-in">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">メニュー提案</h3>
+                    <p class="step-description">要望に合わせて、メニュー案とお見積もりをご提案します。</p>
+                </div>
+                <div class="flow-step fade-in">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">ご予約・お支払い</h3>
+                    <p class="step-description">内容をご確認いただき、ご予約確定となります。前払い制です。</p>
+                </div>
+                <div class="flow-step fade-in">
+                    <div class="step-number">04</div>
+                    <h3 class="step-title">当日・片付け</h3>
+                    <p class="step-description">お料理をお届けし、お開き後は片付けまで承ります。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voice Section -->
+    <section class="voice" id="voice">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Voice</span>
+                <h2 class="section-title">お客様の声</h2>
+                <p class="section-description">ご利用いただいたお客様からの感想をご紹介します。</p>
+            </div>
+
+            <div class="voice-list">
+                <div class="voice-card fade-in">
+                    <div class="voice-header">
+                        <span class="voice-category">記念日</span>
+                        <div class="voice-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="voice-text">「結構記念日を祝ってくれて、感動しました。料理も見た目も華やかで、味も絶品。写真を撮るのに夢中になりました！」</p>
+                    <p class="voice-client">— 30代女性 / 結婚記念日</p>
+                </div>
+                <div class="voice-card fade-in">
+                    <div class="voice-header">
+                        <span class="voice-category">法人</span>
+                        <div class="voice-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="voice-text">「社員総会のケータリングでお願いしました。事前のヒアリングが丁寧で、当日もスムーズ。従業員からも大好評でした。」</p>
+                    <p class="voice-client">— 40代男性 / 企業役員</p>
+                </div>
+                <div class="voice-card fade-in">
+                    <div class="voice-header">
+                        <span class="voice-category">ホームパーティー</span>
+                        <div class="voice-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="voice-text">「自宅で気軽にパーティーができて大助かり。片付けまでお任せできて、主人も私もゆっくり楽しめました。」</p>
+                    <p class="voice-client">— 20代女性 / 誕生日パーティー</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">よくある質問</h2>
+                <p class="section-description">ご予約前に多いご質問にお答えします。</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>最低人数は何名からですか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>3名から承ります。少人数でも、ぜひお気軽にご相談ください。</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>アレルギー対応はできますか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>はい、可能です。お問い合わせフォームにて、アレルギー物質と回避したい食材をお知らせください。</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>キャンセル・変更は可能ですか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>ご予約日の7日前までであれば、無料で変更・キャンセルを受け付けます。それ以降はキャンセル料が発生する場合がございます。</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>支払い方法はありますか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>銀行振込（前払い）が基本となりますが、Amazon PayやPayPayにも対応可能です。</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>都内全域対応していますか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>東京23区は完全対応。近郊（埼玉・千葉・神奈川）の場合、別途交通費が発生します。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">無料見積もり・ご相談</h2>
+                <p class="section-description">お気軽にお問い合わせください。24時間以内にご返信いたします。</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>メール</h4>
+                            <p>info@tableharmony.example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>電話</h4>
+                            <p>03-XXXX-XXXX（平日 10:00-18:00）</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>対応エリア</h4>
+                            <p>東京23区＋近郊</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-details">
+                            <h4>営業時間</h4>
+                            <p>月〜金 10:00-18:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form fade-in" id="contactForm">
+                    <!-- 将来的にはフォームAPI連携予定 -->
+                    <!-- FormResly / Formspree / Google Forms 等の利用を検討 -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="山田 花子">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="example@email.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">電話番号</label>
+                            <input type="tel" id="phone" name="phone" placeholder="090-XXXX-XXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">ご希望日</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="people">人数</label>
+                        <select id="people" name="people">
+                            <option value="">選択してください</option>
+                            <option value="3-5">3名〜5名</option>
+                            <option value="6-10">6名〜10名</option>
+                            <option value="11-20">11名〜20名</option>
+                            <option value="21-50">21名〜50名</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">イベント種別</label>
+                        <select id="type" name="type">
+                            <option value="">選択してください</option>
+                            <option value="anniversary">記念日（結婚記念日・誕生日など）</option>
+                            <option value="corporate">法人イベント</option>
+                            <option value="home">ホームパーティー</option>
+                            <option value="other">その他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">ご予算（目安）</label>
+                        <select id="budget" name="budget">
+                            <option value="">選択してください</option>
+                            <option value="10k">1万円以下</option>
+                            <option value="10k-30k">1万円〜3万円</option>
+                            <option value="30k-50k">3万円〜5万円</option>
+                            <option value="50k">5万円以上</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">ご要望・メッセージ <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="4" required placeholder="日時、人数、アレルギーの有無など、ご要望をお聞かせください。"></textarea>
+                    </div>
+                    <div class="cost-notice">
+                        <p>📍 東京23区内は交通費無料。近郊（埼玉・千葉・神奈川）は別途交通費が発生します。</p>
+                    </div>
+                    <div class="form-privacy">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <span><a href="#privacy">プライバシーポリシー</a>に同意する</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">送信する</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section class="privacy" id="privacy">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">プライバシーポリシー</h2>
+            </div>
+            <div class="privacy-content">
+                <h3>個人情報の取り扱いについて</h3>
+                <p>Table Harmony（以下、「当サービス」）は、お客様の個人情報を適切に取り扱うことを大切にしています。</p>
+
+                <h4>1. 収集する情報</h4>
+                <p>お問い合わせフォームにて提供いただく以下の情報を収集します：</p>
+                <ul>
+                    <li>お名前</li>
+                    <li>メールアドレス</li>
+                    <li>電話番号</li>
+                    <li>ご希望日</li>
+                    <li>人数、イベント種別、ご予算</li>
+                    <li>ご要望・メッセージ</li>
+                </ul>
+
+                <h4>2. 利用目的</h4>
+                <p>収集した情報は以下の目的のみに使用します：</p>
+                <ul>
+                    <li>お問い合わせへの回答</li>
+                    <li>見積もりの作成</li>
+                    <li>サービスのご案内</li>
+                </ul>
+
+                <h4>3. 第三者提供</h4>
+                <p>お客様の同意を得ずに第三者に個人情報を提供することはありません。</p>
+
+                <h4>4. データの保管</h4>
+                <p>収集した情報は、業務上必要な期間のみ保管し、その後適切に削除します。</p>
+
+                <h4>5. お問い合わせ</h4>
+                <p>個人情報の取り扱いに関するお問い合わせは、メールにてご連絡ください。</p>
+
+                <h4>6. データ送信について</h4>
+                <p>現在、お問い合わせフォームはメールアプリ起動方式（mailto）を採用しており、入力されたデータは直接お客様のメールアプリから送信されます。インターネット上のサーバーを経由しないため、データ漏洩リスクが低くなっています。将来的にはフォームAPI連携を検討しており、その際はSSL暗号化通信と適切なデータ保護措置を講じる予定です。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Table Harmony</h3>
+                    <p>あの日を、美味しく。</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#concept">こだわり</a>
+                    <a href="#menu">メニュー</a>
+                    <a href="#flow">ご利用の流れ</a>
+                    <a href="#faq">よくある質問</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span class="current-year"></span> Table Harmony. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
