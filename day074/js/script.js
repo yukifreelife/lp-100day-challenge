@@ -255,3 +255,37 @@ window.addEventListener('DOMContentLoaded', () => {
 // === Console Message ===
 console.log('%cスマイル歯科 | Day074', 'color: #4A90A4; font-size: 20px; font-weight: bold;');
 console.log('%cThis is a demo LP. Not for production use.', 'color: #999; font-size: 12px;');
+
+// === Hero Slideshow ===
+document.addEventListener('DOMContentLoaded', function() {
+  const slideshow = document.getElementById('heroSlideshow');
+  const slides = slideshow?.querySelectorAll('.hero-slide');
+
+  if (slides && slides.length > 0) {
+    let currentIndex = 0;
+    const intervalTime = 5000; // 5 seconds
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    // Start slideshow
+    setInterval(nextSlide, intervalTime);
+
+    // Optional: Pause on hover
+    slideshow.addEventListener('mouseenter', () => {
+      // Pause logic here if needed
+    });
+
+    slideshow.addEventListener('mouseleave', () => {
+      // Resume logic here if needed
+    });
+  }
+});

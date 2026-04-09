@@ -321,20 +321,44 @@ p {
   overflow: hidden;
 }
 
-.hero-bg {
+/* === Hero Slideshow === */
+.hero-slideshow {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--gradient-hero);
-  background-image: url('../images/hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-.hero-bg::before {
+/* Individual Slides */
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 1.5s ease-in-out, transform 6s ease-out;
+  pointer-events: none;
+}
+
+.hero-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Active Slide */
+.hero-slide.active {
+  opacity: 1;
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+/* Slideshow overlay for color gradient */
+.hero-slideshow::before {
   content: '';
   position: absolute;
   top: 0;
@@ -345,6 +369,20 @@ p {
     rgba(44, 95, 125, 0.85) 0%,
     rgba(74, 144, 164, 0.75) 50%,
     rgba(124, 185, 232, 0.7) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Legacy .hero-bg kept for fallback */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-hero);
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-overlay {
@@ -669,6 +707,13 @@ p {
   margin-bottom: var(--spacing-md);
 }
 
+.feature-icon img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 .feature-card h3 {
   color: var(--color-primary);
   margin-bottom: var(--spacing-sm);
@@ -746,6 +791,19 @@ p {
 .menu-item-icon {
   font-size: 2rem;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+}
+
+.menu-item-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .menu-item-content h4 {
