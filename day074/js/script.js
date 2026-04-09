@@ -82,6 +82,20 @@ document.querySelectorAll('.fade-in').forEach(el => {
   fadeObserver.observe(el);
 });
 
+// Observe scale-up elements
+const scaleObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('scale-up-visible');
+      scaleObserver.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.scale-up').forEach(el => {
+  scaleObserver.observe(el);
+});
+
 // === Menu Tabs ===
 const menuTabs = document.querySelectorAll('.menu-tab');
 const menuPanels = document.querySelectorAll('.menu-panel');
