@@ -290,6 +290,18 @@ const worksData = [
     tech: ["HTML5", "CSS3", "JavaScript"],
     url: "./day072/"
   },
+
+  {
+    day: "Day73",
+    title: "Table Harmony - ケータリングサービスLP",
+    category: "Food",
+    industry: "飲食",
+    focus: "見積もり依頼",
+    summary: "3名〜50名までのケータリングサービスLP。記念日、法人イベント、ホームパーティー3シーンに対応。シーン別メニュータブ、料理ギャラリー、お客様の声で訴求。",
+    metric: "シーン別メニュータブ切り替え・FAQアコーディオン・ギャラリーグリッド",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    url: "./day073/"
+  },
 ];
 
 const colorByCategory = {
