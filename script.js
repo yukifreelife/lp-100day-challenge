@@ -302,6 +302,17 @@ const worksData = [
     tech: ["HTML5", "CSS3", "JavaScript"],
     url: "./day073/"
   },
+  {
+    day: "Day74",
+    title: "スマイル歯科 | 歯科医院LP",
+    category: "Medical",
+    industry: "医療",
+    focus: "診療予約",
+    summary: "地域で信頼の歯科医院LP。痛くない・怖くない最新治療を3つの約束として提示。診療メニュータブ、FAQアコーディオン、院長プロフィール、Google Mapsで安心感を醸成。",
+    metric: "痛み・恐怖への不安解消を最優先・診療時間・アクセス情報の視認性",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    url: "./day074/"
+  },
 ];
 
 const colorByCategory = {
@@ -316,6 +327,8 @@ const colorByCategory = {
   Wedding: "#8b6f4e",
   Fitness: "#ff6b35",
   Photographer: "#8b7355",
+  Food: "#E85D4C",
+  Medical: "#4A90A4",
 };
 
 const REEL_INTERVAL_MS = 3200;
