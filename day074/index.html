@@ -11,38 +11,152 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!-- OGP -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smile-dental.example.com/">
+    <meta property="og:title" content="スマイル歯科 | あなたの笑顔、一生守ります。">
+    <meta property="og:description" content="地域で信頼の歯科医院。痛くない・怖くない最新治療。保険診療OK、駐車場あり。初診の方もお気軽に。">
+    <meta property="og:image" content="https://smile-dental.example.com/ogp.jpg">
+    <meta property="og:site_name" content="スマイル歯科">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="スマイル歯科 | あなたの笑顔、一生守ります。">
+    <meta name="twitter:description" content="地域で信頼の歯科医院。痛くない・怖くない最新治療。保険診療OK、駐車場あり。">
+    <meta name="twitter:image" content="https://smile-dental.example.com/ogp.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://smile-dental.example.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- 構造化データ（JSON-LD） -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "スマイル歯科",
+      "alternateName": "Smile Dental Clinic",
+      "description": "地域で信頼の歯科医院。痛くない・怖くない最新治療であなたの笑顔を一生守ります。保険診療OK、駐車場あり。",
+      "url": "https://smile-dental.example.com/",
+      "logo": "https://smile-dental.example.com/logo.png",
+      "image": "https://smile-dental.example.com/ogp.jpg",
+      "telephone": "03-XXXX-XXXX",
+      "email": "hello@smile-dental.example.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "XX町1-2-3 スマイルビル1F",
+        "addressLocality": "XX市",
+        "addressRegion": "XX県",
+        "postalCode": "XXX-XXXX",
+        "addressCountry": "JP"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "35.XXXX",
+        "longitude": "139.XXXX"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:30",
+          "closes": "18:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Wednesday",
+          "opens": "09:30",
+          "closes": "13:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:30",
+          "closes": "13:00"
+        }
+      ],
+      "priceRange": "¥¥",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "48"
+      },
+      "medicalSpecialty": "歯科",
+      "department": [
+        {
+          "@type": "MedicalSpecialty",
+          "name": "一般歯科"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "小児歯科"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "口腔外科"
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "田中 太郎",
+        "jobTitle": "院長",
+        "description": "日本歯科保存学会専門医、日本歯周病学会認定医"
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "35.XXXX",
+          "longitude": "139.XXXX"
+        },
+        "geoRadius": "5000"
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="nav" id="nav">
+    <nav class="nav" id="nav" role="navigation" aria-label="メインナビゲーション">
         <div class="container">
             <div class="nav-inner">
-                <a href="#" class="nav-logo">
+                <a href="#" class="nav-logo" aria-label="スマイル歯科 ホームへ">
                     <span class="nav-logo-icon">?��</span>
                     <span class="nav-logo-text">スマイル歯科</span>
                 </a>
 
-                <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
+                <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="navMenu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
 
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#about">医院について</a></li>
-                    <li><a href="#features">3つの約束</a></li>
-                    <li><a href="#menu">診療メニュー</a></li>
-                    <li><a href="#flow">初診の流れ</a></li>
-                    <li><a href="#voice">患者様の声</a></li>
-                    <li><a href="#faq">よくある質問</a></li>
-                    <li><a href="#access">アクセス</a></li>
-                    <li><a href="#contact" class="nav-cta">Web予約</a></li>
+                <ul class="nav-menu" id="navMenu" role="menubar">
+                    <li role="none"><a href="#about" role="menuitem">医院について</a></li>
+                    <li role="none"><a href="#features" role="menuitem">3つの約束</a></li>
+                    <li role="none"><a href="#menu" role="menuitem">診療メニュー</a></li>
+                    <li role="none"><a href="#flow" role="menuitem">初診の流れ</a></li>
+                    <li role="none"><a href="#voice" role="menuitem">患者様の声</a></li>
+                    <li role="none"><a href="#faq" role="menuitem">よくある質問</a></li>
+                    <li role="none"><a href="#access" role="menuitem">アクセス</a></li>
+                    <li role="none"><a href="#contact" class="nav-cta" role="menuitem">Web予約</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Main Content -->
+    <main role="main">
 
     <!-- Hero Section -->
     <section class="hero">
@@ -81,6 +195,8 @@
                             <span class="btn-sub">24時間受付中</span>
                         </div>
                     </a>
+
+                    <p class="hero-urgency">※ 初診の方限定：初回カウンセリング無料</p>
                 </div>
 
                 <div class="hero-trust">
@@ -100,13 +216,13 @@
         <div class="container">
             <div class="section-header fade-in">
                 <span class="section-label">ABOUT</span>
-                <h2 class="section-title">医院について</h2>
+                <h2 class="section-title">スマイル歯科について</h2>
             </div>
 
             <div class="about-content">
                 <div class="about-image fade-in">
                     <div class="about-image-wrapper">
-                        <img src="images/dentist.jpg" alt="院長" id="directorImage">
+                        <img src="images/dentist.jpg" alt="院長 - 田中太郎" id="directorImage" loading="lazy" width="600" height="600">
                     </div>
                 </div>
 
@@ -306,7 +422,7 @@
             <div class="tech-grid">
                 <div class="tech-card fade-in">
                     <div class="tech-image">
-                        <img src="images/microscope.jpg" alt="歯科用顕微鏡" id="tech1">
+                        <img src="images/microscope.jpg" alt="歯科用顕微鏡" id="tech1" loading="lazy" width="400" height="300">
                     </div>
                     <h4>歯科用顕微鏡</h4>
                     <p>拡大視野で精密な治療を実現。肉眼では見えない細部まで確認できます。</p>
@@ -314,7 +430,7 @@
 
                 <div class="tech-card fade-in">
                     <div class="tech-image">
-                        <img src="images/ct.jpg" alt="3D CT" id="tech2">
+                        <img src="images/ct.jpg" alt="3D CT" id="tech2" loading="lazy" width="400" height="300">
                     </div>
                     <h4>3D CT</h4>
                     <p>3D画像で正確な診断。抜歯やインプラントの事前評価に役立ちます。</p>
@@ -322,7 +438,7 @@
 
                 <div class="tech-card fade-in">
                     <div class="tech-image">
-                        <img src="images/camera.jpg" alt="口腔内カメラ" id="tech3">
+                        <img src="images/camera.jpg" alt="口腔内カメラ" id="tech3" loading="lazy" width="400" height="300">
                     </div>
                     <h4>口腔内カメラ</h4>
                     <p>自分のお口の中を見ながら説明。納得して治療を受けられます。</p>
@@ -330,7 +446,7 @@
 
                 <div class="tech-card fade-in">
                     <div class="tech-image">
-                        <img src="images/laser.jpg" alt="レーザー治療" id="tech4">
+                        <img src="images/laser.jpg" alt="レーザー治療" id="tech4" loading="lazy" width="400" height="300">
                     </div>
                     <h4>レーザー治療</h4>
                     <p>痛みの少ない治療が可能。歯周病治療や、知覚過敏の改善に使います。</p>
@@ -644,8 +760,10 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
