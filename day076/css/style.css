@@ -135,6 +135,18 @@ button {
 /* ===================================
    Section
    =================================== */
+
+/* Section Backgrounds */
+.problem { background-color: var(--color-bg); color: var(--color-text); }
+.solution { background-color: var(--color-bg); color: var(--color-text); }
+.service { background-color: var(--color-bg-alt); color: var(--color-text-alt); }
+.beforeafter { background-color: var(--color-bg-alt); color: var(--color-text-alt); }
+.voice { background-color: var(--color-bg); color: var(--color-text); }
+.flow { background-color: var(--color-bg-alt); color: var(--color-text-alt); }
+.profile { background-color: var(--color-bg); color: var(--color-text); }
+.faq { background-color: var(--color-bg); color: var(--color-text); }
+.contact { background-color: var(--color-bg-alt); color: var(--color-text-alt); }
+
 section {
   padding: var(--spacing-2xl) 0;
 }
