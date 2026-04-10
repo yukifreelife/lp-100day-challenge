@@ -313,6 +313,17 @@ const worksData = [
     tech: ["HTML5", "CSS3", "JavaScript"],
     url: "./day074/"
   },
+  {
+    day: "Day75",
+    title: "PAW PARADISE | ドッググルーミングサロンLP",
+    category: "Pet",
+    industry: "ペットサービス",
+    focus: "グルーミング予約",
+    summary: "個人事業主が運営するプライベートドッグサロンLP。1組完全貸切の空間とトリマーの経験を強調。サイズ別メニュータブ、施術後ギャラリー、FAQアコーディオンで予約を獲得。",
+    metric: "プライベート空間の安心感・サイズ別価格タブ・ギャラリーフィルター",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    url: "./day075/"
+  },
 ];
 
 const colorByCategory = {
@@ -329,6 +340,7 @@ const colorByCategory = {
   Photographer: "#8b7355",
   Food: "#E85D4C",
   Medical: "#4A90A4",
+  Pet: "#E87D6E",
 };
 
 const REEL_INTERVAL_MS = 3200;

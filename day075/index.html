@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>PAW PARADISE | ドッググルーミングサロン</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-paw"></span>
+                <span class="logo-text">PAW PARADISE</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#flow">Flow</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Reservation</a>
+            <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-pattern"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-paw" aria-label="肉球">🐾</span>
+                <span>ワンちゃんが笑顔になる場所</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line title-ja">愛犬との</span>
+                <span class="title-line title-ja">幸せな時間を</span>
+                <span class="title-line title-en">Paw Paradise</span>
+            </h1>
+            <p class="hero-subtitle">
+                優しいトリマーが、愛犬一人ひとりに寄り添った<br>
+                プライベートサロンでのグルーミングサービス
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <span>ご予約はこちら</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#menu" class="btn btn-secondary">
+                    <span>メニューを見る</span>
+                </a>
+            </div>
+            <div class="hero-features">
+                <div class="feature-tag">
+                    <span class="tag-icon">✨</span>
+                    <span>完全予約制</span>
+                </div>
+                <div class="feature-tag">
+                    <span class="tag-icon">🏠</span>
+                    <span>プライベート空間</span>
+                </div>
+                <div class="feature-tag">
+                    <span class="tag-icon">💝</span>
+                    <span>1組限定</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-dog">
+            <img src="images/hero-dog.jpg" alt="幸せなトイプードル" class="hero-dog-img">
+        </div>
+        <div class="hero-scroll">
+            <span class="scroll-text">Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <div class="image-frame frame-1">
+                    <img src="images/salon-interior.jpg" alt="ドッググルーミングサロンの内観" class="about-image-img img-1">
+                </div>
+                <div class="image-frame frame-2">
+                    <img src="images/groomer-dog.jpg" alt="トリマーがワンちゃんをグルーミングしている様子" class="about-image-img img-2">
+                </div>
+                <div class="about-badge">
+                    <span class="badge-number">8</span>
+                    <span class="badge-text">年の経験</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Us</h2>
+                <p class="section-subtitle">ワンちゃんの心と体に寄り添う</p>
+
+                <div class="about-text">
+                    <p>
+                        ペットのいる暮らしがより快適に。そんな想いから始まった<br class="sp-hide">
+                        「Paw Paradise」は、完全個室のプライベートサロンです。
+                    </p>
+                    <p>
+                        大型サロン特有の騒音や他のワンちゃんのストレスとは<br class="sp-hide">
+                        無縁の空間で、愛犬とのリラックスした時間をお過ごしいただけます。
+                    </p>
+                </div>
+
+                <div class="about-points">
+                    <div class="point-item">
+                        <span class="point-icon">🐕</span>
+                        <span class="point-text">1組完全貸切</span>
+                    </div>
+                    <div class="point-item">
+                        <span class="point-icon">🛁</span>
+                        <span class="point-text">オーガニックシャンプー</span>
+                    </div>
+                    <div class="point-item">
+                        <span class="point-icon">💕</span>
+                        <span class="point-text">丁寧なカウンセリング</span>
+                    </div>
+                    <div class="point-item">
+                        <span class="point-icon">📸</span>
+                        <span class="point-text">施術後写真プレゼント</span>
+                    </div>
+                </div>
+
+                <div class="groomer-profile">
+                    <img src="images/groomer-avatar.jpg" alt="オーナーグルーマー 佐藤花子" class="groomer-avatar">
+                    <div class="groomer-info">
+                        <span class="groomer-name">佐藤 花子</span>
+                        <span class="groomer-title">Owner / Groomer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="menu-container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Menu & Price</h2>
+                <p class="section-subtitle">ワンちゃんのサイズに合わせたプラン</p>
+            </div>
+
+            <div class="size-tabs">
+                <button class="size-tab active" data-size="toy">トイサイズ<br><span>〜4kg</span></button>
+                <button class="size-tab" data-size="small">スモール<br><span>4〜10kg</span></button>
+                <button class="size-tab" data-size="medium">ミディアム<br><span>10〜20kg</span></button>
+                <button class="size-tab" data-size="large">ラージ<br><span>20kg〜</span></button>
+            </div>
+
+            <div class="menu-cards">
+                <div class="menu-card featured">
+                    <div class="card-badge">Popular</div>
+                    <div class="card-icon">✨</div>
+                    <h3 class="card-title">Full Course</h3>
+                    <p class="card-desc">シャンプー・カット・爪切り・耳掃除・肛門腺・ブラッシングのフルコース</p>
+                    <div class="card-price">
+                        <span class="price-symbol">¥</span>
+                        <span class="price-amount toy-price">6,500</span>
+                        <span class="price-unit">〜</span>
+                    </div>
+                    <ul class="card-features">
+                        <li>シャンプー・ Rinse</li>
+                        <li>フルカット</li>
+                        <li>爪切り</li>
+                        <li>耳掃除</li>
+                        <li>肛門腺しぼり</li>
+                        <li>ブラッシング</li>
+                    </ul>
+                    <button class="btn btn-primary card-btn">このプランで予約</button>
+                </div>
+
+                <div class="menu-card">
+                    <div class="card-icon">🛁</div>
+                    <h3 class="card-title">Shampoo Only</h3>
+                    <p class="card-desc">シャンプー・ブラッシング・爪切り・耳掃除の軽いコース</p>
+                    <div class="card-price">
+                        <span class="price-symbol">¥</span>
+                        <span class="price-amount toy-price">4,000</span>
+                        <span class="price-unit">〜</span>
+                    </div>
+                    <ul class="card-features">
+                        <li>シャンプー・ Rinse</li>
+                        <li>ブラッシング</li>
+                        <li>爪切り</li>
+                        <li>耳掃除</li>
+                    </ul>
+                    <button class="btn btn-outline card-btn">このプランで予約</button>
+                </div>
+
+                <div class="menu-card">
+                    <div class="card-icon">✂️</div>
+                    <h3 class="card-title">Cut Only</h3>
+                    <p class="card-desc">カットメイン。お持ち込みのシャンプー済みにも対応</p>
+                    <div class="card-price">
+                        <span class="price-symbol">¥</span>
+                        <span class="price-amount toy-price">4,500</span>
+                        <span class="price-unit">〜</span>
+                    </div>
+                    <ul class="card-features">
+                        <li>フルカット</li>
+                        <li>仕上げブラッシング</li>
+                        <li>爪切り</li>
+                    </ul>
+                    <button class="btn btn-outline card-btn">このプランで予約</button>
+                </div>
+            </div>
+
+            <div class="options-section">
+                <h3 class="options-title">オプションメニュー</h3>
+                <div class="options-list">
+                    <div class="option-item">
+                        <span class="option-name">トリミングサロン用シャンプー変更</span>
+                        <span class="option-price">+¥500</span>
+                    </div>
+                    <div class="option-item">
+                        <span class="option-name">ムダ毛処理</span>
+                        <span class="option-price">+¥1,000</span>
+                    </div>
+                    <div class="option-item">
+                        <span class="option-name">お腹・足裏のみカット</span>
+                        <span class="option-price">+¥1,500</span>
+                    </div>
+                    <div class="option-item">
+                        <span class="option-name">楊マキ・脱色</span>
+                        <span class="option-price">+¥2,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="gallery-container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">施術後の笑顔の写真たち</p>
+            </div>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="toy">トイサイズ</button>
+                <button class="filter-btn" data-filter="small">スモール</button>
+                <button class="filter-btn" data-filter="medium">ミディアム</button>
+                <button class="filter-btn" data-filter="large">ラージ</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="toy">
+                    <img src="images/gallery-toy-1.jpg" alt="トイプードルの施術後写真" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-breed">トイプードル</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="small">
+                    <img src="images/gallery-small-1.jpg" alt="ミニチュアダックスの施術後写真" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-breed">ミニチュアダックス</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="toy">
+                    <img src="images/gallery-toy-2.jpg" alt="ヨークシャーテリアの施術後写真" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-breed">ヨークシャーテリア</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="medium">
+                    <img src="images/gallery-medium-1.jpg" alt="柴犬の施術後写真" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-breed">柴犬</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="small">
+                    <img src="images/gallery-small-2.jpg" alt="豆柴の施術後写真" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-breed">柴犬（豆柴）</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="toy">
+                    <img src="images/gallery-toy-3.jpg" alt="マルチーズの施術後写真" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-breed">マルチーズ</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="large">
+                    <img src="images/gallery-large-1.jpg" alt="ゴールデンレトリバーの施術後写真" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-breed">ゴールデンレトリバー</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="medium">
+                    <img src="images/gallery-medium-2.jpg" alt="フレンチブルドッグの施術後写真" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-breed">フレンチブルドッグ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flow Section -->
+    <section class="flow" id="flow">
+        <div class="flow-container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Flow</h2>
+                <p class="section-subtitle">ご予約から施術までの流れ</p>
+            </div>
+
+            <div class="flow-steps">
+                <div class="flow-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">ご予約</h3>
+                        <p class="step-desc">電話またはフォームからご予約をお願いします。初回の方はワンちゃんの情報をお聞かせください。</p>
+                        <div class="step-contact">
+                            <a href="tel:09000000000" class="contact-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                                </svg>
+                                090-0000-0000
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">カウンセリング</h3>
+                        <p class="step-desc">到着後、ワンちゃんの状態やご希望のスタイルをお聞きします。不安な点は何でもご相談ください。</p>
+                    </div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">施術開始</h3>
+                        <p class="step-desc">プライベート空間で、落ち着いた環境下にて施術を行います。所要時間は約2〜3時間です。</p>
+                    </div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3 class="step-title">お渡し</h3>
+                        <p class="step-desc">施術後の写真をお見せしながらご確認いただき、お支払い完了となります。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="faq-container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">FAQ</h2>
+                <p class="section-subtitle">よくあるご質問</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                        <span>どのくらいの時間がかかりますか？</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-1" role="region">
+                        <p>ワンちゃんのサイズ、状態、ご希望のスタイルによりますが、通常2〜3時間程度です。初回や状態によっては少し時間がかかる場合がございます。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                        <span>どんなワンちゃんでも大丈夫ですか？</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-2" role="region">
+                        <p>性格や状態を事前にお聞かせいただければ対応可能です。ただし、怪我や病気のある場合は事前に獣医師への相談をお願いします。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                        <span>ノミ・ダニ予防はできますか？</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-3" role="region">
+                        <p>はい、フロントラインなどのフィルミタイプのお薬をお持ちいただければ施術時に投薬できます（無料）。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                        <span>駐車場はありますか？</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-4" role="region">
+                        <p>はい、専用駐車場を2台分ご用意しております。予約時にお申し付けください。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                        <span>子供同伴での来店はOKですか？</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-5" role="region">
+                        <p>はい、ご家族お連れでのご来店も大歓迎です。ただし、施術中は静かにお願いする場合がございます。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                        <span>キャンセル料はかかりますか？</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-6" role="region">
+                        <p>前日までのキャンセルは無料です。当日キャンセルは料金の50%を申し受けます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-logo">
+                    <span class="logo-paw large"></span>
+                    <span class="logo-text large">PAW PARADISE</span>
+                </div>
+                <p class="contact-desc">
+                    愛犬との時間を大切に。<br>
+                    プライベートサロンで、極上のグルーミングを。
+                </p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <span class="contact-label">住所</span>
+                            <span class="contact-value">〒000-0000<br>東京都〇〇区〇〇1-2-3</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <span class="contact-label">電話</span>
+                            <a href="tel:09000000000" class="contact-value">090-0000-0000</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕐</span>
+                        <div>
+                            <span class="contact-label">営業時間</span>
+                            <span class="contact-value">10:00 〜 19:00<br>（定休日：水曜日・第3火曜日）</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                        <span>@pawparadise</span>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LINE">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.5 10.5c0-3.6-3.6-6.5-8-6.5s-8 2.9-8 6.5c0 2.9 2.1 5.4 5.1 6.3v2.2l2.2-1.2c.5.1 1 .1 1.6.1h.1c4.4 0 8-2.9 8-6.5z"/>
+                        </svg>
+                        <span>LINE</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <h3>ご予約・お問い合わせ</h3>
+                    <div class="form-group">
+                        <label for="ownerName">飼い主様のお名前</label>
+                        <input type="text" id="ownerName" name="ownerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dogName">ワンちゃんの名前</label>
+                        <input type="text" id="dogName" name="dogName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dogBreed">犬種</label>
+                        <input type="text" id="dogBreed" name="dogBreed" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dogSize">サイズ</label>
+                            <select id="dogSize" name="dogSize" required>
+                                <option value="">選択してください</option>
+                                <option value="toy">トイサイズ（〜4kg）</option>
+                                <option value="small">スモール（4〜10kg）</option>
+                                <option value="medium">ミディアム（10〜20kg）</option>
+                                <option value="large">ラージ（20kg〜）</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="menu">ご希望メニュー</label>
+                            <select id="menu" name="menu" required>
+                                <option value="">選択してください</option>
+                                <option value="full">Full Course</option>
+                                <option value="shampoo">Shampoo Only</option>
+                                <option value="cut">Cut Only</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferredDate">ご希望日</label>
+                        <input type="date" id="preferredDate" name="preferredDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">電話番号</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">備考・ご質問</label>
+                        <textarea id="message" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>送信する</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-paw"></span>
+                <span class="logo-text">PAW PARADISE</span>
+            </div>
+            <p class="footer-copyright">&copy; <span id="currentYear"></span> Paw Paradise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
