@@ -198,6 +198,84 @@ window.addEventListener('scroll', () => {
 });
 
 // ===================================
+// Before/After Slider
+// ===================================
+document.addEventListener('DOMContentLoaded', function() {
+  const sliderContent = document.querySelector('.ba-slider-content');
+  const beforeElement = document.querySelector('.ba-before');
+  const handle = document.querySelector('.ba-handle');
+  const navButtons = document.querySelectorAll('.ba-nav-btn');
+
+  let isDragging = false;
+  let startX = 0;
+  let currentX = 0;
+  let sliderPosition = 50; // Starting position (50%)
+
+  if (!sliderContent || !beforeElement) return;
+
+  // Initialize slider
+  updateSlider(sliderPosition);
+
+  // Navigation buttons
+  navButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      // Update active button
+      navButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      // Switch images based on index
+      updateSliderImages(index);
+    });
+  });
+
+  // Handle dragging
+  if (handle) {
+    handle.addEventListener('mousedown', startDragging);
+    document.addEventListener('mousemove', drag);
+    document.addEventListener('mouseup', stopDragging);
+
+    // Touch events
+    handle.addEventListener('touchstart', startDragging);
+    document.addEventListener('touchmove', drag);
+    document.addEventListener('touchend', stopDragging);
+  }
+
+  function startDragging(e) {
+    isDragging = true;
+    startX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+    sliderContent.style.cursor = 'grabbing';
+  }
+
+  function drag(e) {
+    if (!isDragging) return;
+
+    e.preventDefault();
+    currentX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+    const diffX = currentX - startX;
+
+    // Calculate new position (0-100)
+    sliderPosition = Math.max(0, Math.min(100, 50 + (diffX / sliderContent.offsetWidth) * 100));
+
+    updateSlider(sliderPosition);
+  }
+
+  function stopDragging() {
+    isDragging = false;
+    sliderContent.style.cursor = 'ew-resize';
+  }
+
+  function updateSlider(position) {
+    beforeElement.style.clipPath = `polygon(${position}% 0%, 100% 0%, 100% 100%, ${position}% 100%)`;
+    handle.style.left = position + '%';
+  }
+
+  function updateSliderImages(index) {
+    // This would switch between different before/after image pairs
+    // For now, we'll just update the navigation active state
+    console.log(`Switching to image set ${index}`);
+  }
+});
+
+// ===================================
 // Initialize
 // ===================================
 console.log('Simple Space LP loaded');
