@@ -133,6 +133,44 @@ button {
 }
 
 /* ===================================
+   Animations
+   =================================== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes underlineExtend {
+  from { width: 0; }
+  to { width: 100px; }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.section-title {
+  opacity: 0;
+  animation: slideInLeft 0.6s ease forwards;
+}
+
+.section-title::after {
+  animation: underlineExtend 0.8s ease 0.3s forwards;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(255, 215, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+/* ===================================
    Section
    =================================== */
 
