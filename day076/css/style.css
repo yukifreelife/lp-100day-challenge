@@ -477,11 +477,28 @@ section {
   background-color: var(--color-white);
 }
 
-.service-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--spacing-lg);
-  margin-top: var(--spacing-xl);
+.service-scroll {
+  display: flex;
+  gap: var(--spacing-xl);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: var(--spacing-lg) 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.service-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.service-card {
+  flex: 0 0 350px;
+  scroll-snap-align: start;
+  padding: var(--spacing-lg);
+  background-color: var(--color-bg);
+  border-radius: var(--radius-lg);
+  position: relative;
+  transition: var(--transition);
 }
 
 .service-card {
