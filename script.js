@@ -324,6 +324,17 @@ const worksData = [
     tech: ["HTML5", "CSS3", "JavaScript"],
     url: "./day075/"
   },
+  {
+    day: "Day76",
+    title: "Simple Space | 整理収納アドバイザーLP",
+    category: "Home Services",
+    industry: "家事代行",
+    focus: "無料相談予約",
+    summary: "散らかった部屋が1日で変わるを強調。Before/AfterスプリットHero、3パターン比較スライダー（ドラッグ操作）、ミントグリーン系デザインでテンプレ感脱却。",
+    metric: "Before/Afterスライダー・非対称レイアウト・ミントグリーンカラーシステム",
+    tech: ["HTML5", "CSS3", "JavaScript", "Clip-path", "Intersection Observer"],
+    url: "./day076/"
+  },
 ];
 
 const colorByCategory = {
