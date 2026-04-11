@@ -1236,12 +1236,45 @@ section {
   }
 }
 
-@media (max-width: 480px) {
-  section {
-    padding: var(--spacing-xl) 0;
+@media (max-width: 768px) {
+  .hero-split {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
-  .service-cards {
-    grid-template-columns: 1fr;
+  .hero-title {
+    font-size: clamp(2rem, 15vw, 6rem);
+  }
+
+  .service-scroll {
+    flex-direction: column;
+    overflow-x: visible;
+  }
+
+  .service-card {
+    flex: 1;
+  }
+
+  .ba-slider-content {
+    height: 300px;
+  }
+
+  .ba-nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: clamp(2rem, 20vw, 5rem);
+  }
+
+  .hero-proof {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .service-card {
+    flex: 0 0 280px;
   }
 }
