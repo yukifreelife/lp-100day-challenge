@@ -28,9 +28,17 @@ const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
 
 if (navToggle) {
+  // Initialize aria-expanded
+  navToggle.setAttribute('aria-expanded', 'false');
+
   navToggle.addEventListener('click', () => {
+    const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+    const newState = !isExpanded;
+
     navToggle.classList.toggle('active');
     navMenu.classList.toggle('active');
+    navToggle.setAttribute('aria-expanded', newState.toString());
+    navToggle.setAttribute('aria-label', newState ? 'メニューを閉じる' : 'メニューを開く');
   });
 
   // Close menu when clicking on a link
@@ -38,6 +46,8 @@ if (navToggle) {
     link.addEventListener('click', () => {
       navToggle.classList.remove('active');
       navMenu.classList.remove('active');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'メニューを開く');
     });
   });
 }
@@ -72,12 +82,17 @@ faqItems.forEach(item => {
     question.addEventListener('click', () => {
       const isActive = item.classList.contains('active');
 
-      // Close all items
-      faqItems.forEach(i => i.classList.remove('active'));
+      // Close all items and reset aria-expanded
+      faqItems.forEach(i => {
+        i.classList.remove('active');
+        const q = i.querySelector('.faq-question');
+        if (q) q.setAttribute('aria-expanded', 'false');
+      });
 
       // Open clicked item if it wasn't active
       if (!isActive) {
         item.classList.add('active');
+        question.setAttribute('aria-expanded', 'true');
       }
     });
   }
@@ -269,9 +284,25 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function updateSliderImages(index) {
-    // This would switch between different before/after image pairs
-    // For now, we'll just update the navigation active state
-    console.log(`Switching to image set ${index}`);
+    // Image sets: 0=Closet, 1=Kitchen, 2=Room
+    const imageSets = [
+      { before: 'images/before1.jpg', after: 'images/after1.jpg' },
+      { before: 'images/before2.jpg', after: 'images/after2.jpg' },
+      { before: 'images/before3.jpg', after: 'images/after3.jpg' }
+    ];
+
+    const beforeImg = document.querySelector('.ba-before img');
+    const afterImg = document.querySelector('.ba-after img');
+
+    if (beforeImg && afterImg && imageSets[index]) {
+      beforeImg.src = imageSets[index].before;
+      afterImg.src = imageSets[index].after;
+
+      // Update alt text based on image set
+      const altLabels = ['クローゼット', 'キッチン', '部屋'];
+      beforeImg.alt = `Before - ${altLabels[index]}`;
+      afterImg.alt = `After - ${altLabels[index]}`;
+    }
   }
 });
 

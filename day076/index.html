@@ -40,7 +40,7 @@
                 <span class="logo-icon">□</span>
                 <span class="logo-text">Simple Space</span>
             </div>
-            <button class="nav-toggle" aria-label="メニューを開く">
+            <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -65,6 +65,7 @@
       <div class="hero-label hero-label-before">BEFORE</div>
     </div>
     <div class="hero-side hero-after">
+      <link rel="preload" as="image" href="images/hero-after.jpg">
       <div class="hero-bg hero-bg-after" style="background-image: url('images/hero-after.jpg')">
         <div class="hero-overlay hero-overlay-after"></div>
       </div>
@@ -94,17 +95,35 @@
 
             <div class="problem-grid">
                 <div class="problem-card fade-in">
-                    <div class="problem-icon">🕐</div>
+                    <div class="problem-icon" aria-label="時計アイコン">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7FB099" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
                     <h3>片ける時間がない</h3>
                     <p>仕事や育児で忙しく、ゆっくり片付ける時間が取れない。平日はもちろん、週末も予定が詰まっている。</p>
                 </div>
                 <div class="problem-card fade-in">
-                    <div class="problem-icon">🤔</div>
+                    <div class="problem-icon" aria-label="クエスチョンマークアイコン">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7FB099" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                        </svg>
+                    </div>
                     <h3>どこから手をつけていいか<br>わからない</h3>
                     <p>部屋中散らかっていて、どこから始めればいいのか見当がつかない。どう片付ければいいのか迷う。</p>
                 </div>
                 <div class="problem-card fade-in">
-                    <div class="problem-icon">🔄</div>
+                    <div class="problem-icon" aria-label="リバウンド（循環）アイコン">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7FB099" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                            <path d="M3 3v5h5"></path>
+                            <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path>
+                            <path d="M16 21h5v-5"></path>
+                        </svg>
+                    </div>
                     <h3>リバウンドが不安</h3>
                     <p>一度片けても、またすぐ散らかってしまうのでは？長く続く片付け方が知りたい。</p>
                 </div>
@@ -200,40 +219,36 @@
                     </ul>
                     <a href="#contact" class="btn btn-outline">予約する</a>
                 </div>
+                <p class="service-scroll-hint">← スワイプして確認 →</p>
             </div>
         </div>
     </section>
 
     <!-- Before/After Section -->
-    <section class="beforeafter">
+    <section class="beforeafter" id="beforeafter">
         <div class="container">
             <span class="section-label">Before / After</span>
             <h2 class="section-title">お部屋の変化をご紹介</h2>
+            <p class="section-desc">ドラッグしてビフォーアフターを比較できます</p>
 
-            <div class="ba-slider">
-                <div class="ba-container">
-                    <div class="ba-before-content">
-                        <img src="images/before1.jpg" alt="Before" width="400" height="300">
-                        <div class="ba-label">Before</div>
-                    </div>
-                    <div class="ba-slider-container">
-                        <div class="ba-slider-content">
-                            <div class="ba-before">
-                                <img src="images/before1.jpg" alt="Before" width="400" height="300">
-                            </div>
-                            <div class="ba-after">
-                                <img src="images/after1.jpg" alt="After" width="400" height="300">
-                            </div>
-                            <div class="ba-handle">
-                                <span></span>
-                            </div>
+            <div class="ba-container">
+                <div class="ba-slider-container">
+                    <div class="ba-slider-content">
+                        <div class="ba-before">
+                            <img src="images/before1.jpg" alt="Before - クローゼット" width="800" height="600" loading="lazy" decoding="async">
+                            <span class="ba-label">Before</span>
                         </div>
-                        <div class="ba-nav">
-                            <button class="ba-nav-btn" data-index="0">クローゼット</button>
-                            <button class="ba-nav-btn" data-index="1">キッチン</button>
-                            <button class="ba-nav-btn" data-index="2">部屋</button>
+                        <div class="ba-after">
+                            <img src="images/after1.jpg" alt="After - クローゼット" width="800" height="600" loading="lazy" decoding="async">
+                            <span class="ba-label">After</span>
                         </div>
+                        <div class="ba-handle" aria-label="スライダー操作"></div>
                     </div>
+                </div>
+                <div class="ba-nav">
+                    <button class="ba-nav-btn active" data-index="0">クローゼット</button>
+                    <button class="ba-nav-btn" data-index="1">キッチン</button>
+                    <button class="ba-nav-btn" data-index="2">部屋</button>
                 </div>
             </div>
         </div>
@@ -324,7 +339,7 @@
 
             <div class="profile-card fade-in">
                 <div class="profile-photo">
-                    <img src="images/advisor.jpg" alt="アドバイザー写真" width="200" height="200">
+                    <img src="images/advisor.jpg" alt="アドバイザー写真" width="200" height="200" loading="lazy" decoding="async">
                 </div>
                 <div class="profile-info">
                     <h3>山田 花子</h3>
@@ -477,7 +492,7 @@
                     <div class="form-privacy">
                         <label class="checkbox-label">
                             <input type="checkbox" id="privacy" name="privacy" required>
-                            <span><a href="#">プライバシーポリシー</a>に同意する</span>
+                            <span><a href="#privacy" id="privacy-link">プライバシーポリシー</a>に同意する</span>
                         </label>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">送信する</button>
