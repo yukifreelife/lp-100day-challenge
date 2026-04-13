@@ -11,7 +11,7 @@ lp:industry=家事代行サービス（整理収納アドバイザー）
 lp:objective=「散らかった部屋が1日で変わる」を伝え、無料相談予約を獲得する
 lp:offer=整理収納コンサルティング（1部屋から、半日・1日コース）
 lp:template=organizing-service-standard
-lp:status=in-progress（改善中）
+lp:status=completed
 lp:env=static-html-css
 lp:based_on=day076
 

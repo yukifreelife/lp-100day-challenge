@@ -11,7 +11,7 @@ lp:industry=健康管理サービス（管理栄養士・食育指導）
 lp:objective=「自宅にいながらプロの栄養指導を受けられる」を伝え、無料相談予約を獲得する
 lp:offer=訪問型栄養コンサルティング（食事記録チェック・冷蔵庫診断・家族別食事プラン）
 lp:template=nutrition-service-standard
-lp:status=in-progress
+lp:status=completed
 lp:env=static-html-css
 
 ## Day078の目的
