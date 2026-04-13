@@ -8,7 +8,7 @@ lp:goal=無料カウンセリング予約 + 無料PDFリード獲得
 lp:industry=パーソナルトレーニング
 lp:objective=初稿提出可能な静的LP一式
 lp:offer=3か月ボディメイク伴走プログラム
-lp:status=submission-ready
+lp:status=completed
 lp:env=static-html-css-js
 
 ---

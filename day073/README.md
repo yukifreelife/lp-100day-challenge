@@ -11,7 +11,7 @@ lp:industry=ケータリングサービス
 lp:objective=3名〜50名までのケータリングサービスを認知させ、見積もり依頼を獲得する
 lp:offer=ケータリングサービス（記念日/法人/ホームパーティー）
 lp:template=original-day073
-lp:status=prototype-ready
+lp:status=completed
 lp:env=static-html-css
 
 ## セクション構成

@@ -11,7 +11,7 @@ lp:industry=歯科医院
 lp:objective=地域の患者様に安心して通える歯科医院を認知させ、診療予約を獲得する
 lp:offer=歯科診療（一般/小児/口腔外科）
 lp:template=medical-standard
-lp:status=prototype-ready
+lp:status=completed
 lp:env=static-html-css
 
 ## セクション構成

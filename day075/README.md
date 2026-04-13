@@ -11,7 +11,7 @@ lp:industry=ペットサービス（ドッググルーミングサロン）
 lp:objective=プライベート空間での1組完全貸切グルーミングサービスを認知させ、予約を獲得する
 lp:offer=ドッググルーミング（Full Course・Shampoo Only・Cut Only）
 lp:template=pet-salon-standard
-lp:status=prototype-ready
+lp:status=completed
 lp:env=static-html-css
 
 ## セクション構成
