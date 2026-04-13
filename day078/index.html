@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ご自宅に訪問する管理栄養士による栄養相談・食育指導。食事記録チェック、冷蔵庫診断、家族別食事プラン作成。東京都内対応。">
+  <title>訪問型管理栄養士 | 食育指導・栄養相談【無料相談あり】</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- 改善: favicon追加（SVG優先、PNGフォールバック） -->
+  <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- 改善: 構造化データ（JSON-LD）実装 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://nutrivisit.example.com/#organization",
+        "name": "Nutri Visit",
+        "alternateName": "訪問型管理栄養士 Nutri Visit",
+        "url": "https://nutrivisit.example.com",
+        "logo": "https://nutrivisit.example.com/images/favicon.png",
+        "description": "ご自宅に訪問する管理栄養士による栄養相談・食育指導。食事記録チェック、冷蔵庫診断、家族別食事プラン作成。東京都内対応。",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "東京都",
+          "addressCountry": "JP"
+        },
+        "geo": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": 35.6762,
+            "longitude": 139.6503
+          },
+          "geoRadius": "25000"
+        },
+        "areaServed": ["東京都23区", "武蔵野市", "三鷹市", "調布市"],
+        "telephone": "+81-80-0000-0000",
+        "email": "info@nutrivisit.example.com",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "priceRange": "¥5,500 - ¥16,500",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "3",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "初回の無料相談にはどのような内容を含みますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "初回60分の無料相談では、現在の食事習慣や悩みをお聞きし、解決の方向性をご提案します。無理にプラン契約を促すことはありません。まずはお気軽にご相談ください。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "どのエリアまで訪問対応していますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "現在は東京都23区、武蔵野市、三鷹市、調布市まで訪問対応しています。それ以外のエリアの場合は、オンライン相談も承っておりますので、お気軽にお問い合わせください。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "家族のアレルギーにも対応できますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "はい、可能です。管理栄養士としてアレルギー対応食の提案も行っております。事前ヒアリングでアレルギーの有無や程度をお聞かせください。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "プランは変更できますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "はい、もちろんご変更可能です。まずはお試しいただいているプランで様子を見て、必要に応じてアップグレードや変更をご相談ください。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "男性の相談も受け付けていますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "はい、性別問わずご相談をお受けしています。ダイエット、筋トレのための食事、健康維持など、幅広い目的に対応可能です。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "子供の食事相談もできますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "はい、幼児食、学童期、思春期まで幅広く対応しています。偏食対策、成長期の栄養、スポーツをしているお子様の食事などご相談ください。"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "AggregateRating",
+        "@id": "https://nutrivisit.example.com/#aggregate-rating",
+        "ratingValue": "4.9",
+        "reviewCount": "3",
+        "bestRating": "5",
+        "worstRating": "1",
+        "itemReviewed": {
+          "@type": "LocalBusiness",
+          "name": "Nutri Visit"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- 改善: スキップリンク追加 -->
+  <a href="#main" class="skip-link">コンテンツへスキップ</a>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header-container">
+      <div class="header-logo">
+        <!-- 改善: 装飾用絵文字にaria-hidden追加 -->
+        <span class="logo-icon" aria-hidden="true">🥗</span>
+        <span class="logo-text">Nutri Visit</span>
+      </div>
+      <nav class="header-nav">
+        <a href="#service" class="nav-link">サービス</a>
+        <a href="#feature" class="nav-link">メリット</a>
+        <a href="#flow" class="nav-link">流れ</a>
+        <a href="#profile" class="nav-link">プロフィール</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+      <a href="#contact" class="header-cta">無料相談</a>
+      <!-- 改善: モバイルメニュートグルにARIA属性追加 -->
+      <button class="mobile-menu-toggle" aria-label="メニュー" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 改善: モバイルメニューにIDとARIA属性追加 -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-nav">
+      <!-- 改善: 最初のリンクにdata-js-focus-first属性を追加（フォーカストラップ用） -->
+      <a href="#service" class="mobile-nav-link" data-js-focus-first>サービス</a>
+      <a href="#feature" class="mobile-nav-link">メリット</a>
+      <a href="#flow" class="mobile-nav-link">流れ</a>
+      <a href="#profile" class="mobile-nav-link">プロフィール</a>
+      <a href="#faq" class="mobile-nav-link">FAQ</a>
+      <!-- 改善: 最後のリンクにdata-js-focus-last属性を追加（フォーカストラップ用） -->
+      <a href="#contact" class="mobile-nav-cta" data-js-focus-last>無料相談予約</a>
+    </nav>
+  </div>
+
+  <!-- 改善: main要素にidを追加（スキップリンク用） -->
+  <main id="main">
+    <!-- Heroセクション -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <!-- 改善: 緊急性・希少性バッジ追加 -->
+          <div class="hero-badges">
+            <span class="badge badge-urgent">🔥 先着10名様限定</span>
+            <span class="badge badge-limited">今月限定キャンペーン</span>
+            <span class="badge">訪問型栄養コンサル</span>
+            <span class="badge badge-accent">東京都内対応</span>
+          </div>
+          <h1 class="hero-title">
+            ご自宅にプロの栄養士が<br class="sp-only">
+            お伺いします
+          </h1>
+          <p class="hero-subtitle">
+            食事記録のチェックから冷蔵庫診断、<br class="sp-only">
+            家族一人ひとりに合わせた食事プランまで
+          </p>
+          <div class="hero-trust">
+            <div class="trust-item">
+              <span class="trust-icon">✓</span>
+              <span>管理栄養士資格保有</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">✓</span>
+              <span>実績300家族以上</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">✓</span>
+              <span>継続率94%</span>
+            </div>
+            <!-- 改善: 口コミ評価バッジ追加 -->
+            <div class="trust-item trust-rating">
+              <span class="trust-icon">★</span>
+              <span>口コミ評価 4.9</span>
+            </div>
+          </div>
+          <div class="hero-cta">
+            <!-- 改善: CTAボタンに残席表示を追加 -->
+            <div class="cta-wrapper">
+              <a href="#contact" class="btn btn-primary btn-large">
+                無料相談を予約する
+              </a>
+              <span class="seats-remaining">残席わずか3枠</span>
+            </div>
+            <p class="hero-cta-note">最短翌日訪問可能 / 初回60分無料</p>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <!-- 改善: WebP形式を使用（JPEGフォールバック付き） -->
+            <picture>
+              <source srcset="./images/hero-nutrition.webp" type="image/webp">
+              <img src="./images/hero-nutrition.jpg" alt="管理栄養士が食事相談をする様子" class="hero-image">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 問題セクション -->
+    <section class="section section-problem">
+      <div class="container">
+        <h2 class="section-title">こんなお悩みありませんか？</h2>
+        <div class="problem-grid">
+          <div class="problem-card">
+            <!-- 改善: 装飾用絵文字にaria-hidden追加 -->
+            <div class="problem-icon" aria-hidden="true">🤔</div>
+            <h3 class="problem-title">何を食べればいいか<br>わからない</h3>
+            <p class="problem-text">ネットには情報が溢れているけれど、自分に合う食事がわからない</p>
+          </div>
+          <div class="problem-card">
+            <!-- 改善: タイトルを「三日坊主で終わってしまう」に変更 -->
+            <div class="problem-icon" aria-hidden="true">😓</div>
+            <h3 class="problem-title">三日坊主で終わってしまう</h3>
+            <p class="problem-text">ダイエットや食事制限を始めても、必ず三日坊主で終わってしまう</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon" aria-hidden="true">👨‍👩‍👧‍👦</div>
+            <h3 class="problem-title">家族全員違う<br>メニューを作るのが大変</h3>
+            <p class="problem-text">旦那さんは減量、子どもは成長期、自分は...と毎食悩み続けている</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon" aria-hidden="true">🍽️</div>
+            <h3 class="problem-title">冷蔵庫の中身で<br>献立を考えたい</h3>
+            <p class="problem-text">在庫がある食材を無駄にせず、バランスの良い食事にしたい</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- サービスセクション -->
+    <section class="section section-service" id="service">
+      <div class="container">
+        <h2 class="section-title">訪問栄養相談プラン</h2>
+        <p class="section-subtitle">ご家庭の悩みに合わせて選べる3つのプラン</p>
+
+        <!-- 改善: サービスタブにWAI-ARIA属性追加 -->
+        <div class="service-tabs" role="tablist">
+          <button class="service-tab active" data-tab="basic" role="tab" aria-selected="true" aria-controls="basic-panel">食事記録チェック</button>
+          <button class="service-tab" data-tab="standard" role="tab" aria-selected="false" aria-controls="standard-panel">冷蔵庫診断</button>
+          <button class="service-tab" data-tab="premium" role="tab" aria-selected="false" aria-controls="premium-panel">家族別プラン</button>
+        </div>
+
+        <div class="service-contents">
+          <!-- ベーシックプラン -->
+          <!-- 改善: service-contentにrole="tabpanel"とidを追加 -->
+          <div class="service-content active" id="basic" role="tabpanel" aria-labelledby="basic-tab">
+            <div class="service-detail">
+              <div class="service-detail-left">
+                <div class="service-badge">人気No.1</div>
+                <h3 class="service-title">食事記録チェックプラン</h3>
+                <p class="service-desc">今の食事習慣をプロの目でチェックします</p>
+                <ul class="service-features">
+                  <li><span class="check">✓</span>食事記録1週間分徹底分析</li>
+                  <li><span class="check">✓</span>栄養バランスの可視化レポート</li>
+                  <li><span class="check">✓</span>改善ポイント3つの提案</li>
+                  <li><span class="check">✓</span>簡単に実践できるレシピ3品</li>
+                  <li><span class="check">✓</span>1ヶ月間のチャットサポート付き</li>
+                </ul>
+              </div>
+              <div class="service-detail-right">
+                <!-- 改善: 限定プラン表現を追加 -->
+                <div class="service-price">
+                  <span class="price-label price-limited">🎁 初回無料＋限定特典</span>
+                  <div class="price-value">
+                    <span class="price-yen">¥5,500</span>
+                    <span class="price-unit">/回</span>
+                  </div>
+                  <p class="price-note">※60分 訪問型</p>
+                </div>
+                <a href="#contact" class="btn btn-secondary">このプランで相談</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- スタンダードプラン -->
+          <!-- 改善: service-contentにrole="tabpanel"とidを追加 -->
+          <div class="service-content" id="standard" role="tabpanel" aria-labelledby="standard-tab">
+            <div class="service-detail">
+              <div class="service-detail-left">
+                <div class="service-badge">おすすめ</div>
+                <h3 class="service-title">冷蔵庫診断プラン</h3>
+                <p class="service-desc">ご自宅の冷蔵庫を診断して、在庫活用レシピを提案</p>
+                <ul class="service-features">
+                  <li><span class="check">✓</span>冷蔵庫・パントリー内の食材診断</li>
+                  <li><span class="check">✓</span>在庫活用レシピ5品提案</li>
+                  <li><span class="check">✓</span>買い物リストの最適化</li>
+                  <li><span class="check">✓</span>食品ロス削減アドバイス</li>
+                  <li><span class="check">✓</span>1ヶ月間のチャットサポート付き</li>
+                </ul>
+              </div>
+              <div class="service-detail-right">
+                <div class="service-price">
+                  <!-- 改善: 限定プラン表現を追加 -->
+                  <span class="price-label price-limited">🔥 今月限定キャンペーン</span>
+                  <div class="price-value">
+                    <span class="price-yen">¥8,800</span>
+                    <span class="price-unit">/回</span>
+                  </div>
+                  <p class="price-note">※90分 訪問型</p>
+                </div>
+                <a href="#contact" class="btn btn-secondary">このプランで相談</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- プレミアムプラン -->
+          <!-- 改善: service-contentにrole="tabpanel"とidを追加 -->
+          <div class="service-content" id="premium" role="tabpanel" aria-labelledby="premium-tab">
+            <div class="service-detail">
+              <div class="service-detail-left">
+                <div class="service-badge badge-gold">本格的</div>
+                <h3 class="service-title">家族別プラン</h3>
+                <p class="service-desc">家族一人ひとりのライフスタイルに合わせたプラン作成</p>
+                <ul class="service-features">
+                  <li><span class="check">✓</span>家族全員の健康状態・目的ヒアリング</li>
+                  <li><span class="check">✓</span>個人別食事プラン作成（最大4名）</li>
+                  <li><span class="check">✓</span>共有おかず＋個人別副菜の献立提案</li>
+                  <li><span class="check">✓</span>まとめて作れる時短レシピ</li>
+                  <li><span class="check">✓</span>3ヶ月間のチャットサポート付き</li>
+                </ul>
+              </div>
+              <div class="service-detail-right">
+                <div class="service-price">
+                  <!-- 改善: 限定プラン表現を追加 -->
+                  <span class="price-label price-exclusive">✨ プレミアム限定特典</span>
+                  <div class="price-value">
+                    <span class="price-yen">¥16,500</span>
+                    <span class="price-unit">/回</span>
+                  </div>
+                  <p class="price-note">※120分 訪問型</p>
+                </div>
+                <a href="#contact" class="btn btn-secondary">このプランで相談</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- メリットセクション -->
+    <section class="section section-feature" id="feature">
+      <div class="container">
+        <h2 class="section-title">訪問型ならではの3つのメリット</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <!-- 改善: 装飾用絵文字にaria-hidden追加 -->
+              <span class="feature-icon" aria-hidden="true">❄️</span>
+            </div>
+            <h3 class="feature-title">冷蔵庫チェック</h3>
+            <p class="feature-text">
+              実際の冷蔵庫の中身を見るから、在庫を無駄にせず、今すぐ作れるレシピが提案できます。買い物リストの最適化で食品ロスも削減。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <span class="feature-icon" aria-hidden="true">👩‍🍳</span>
+            </div>
+            <h3 class="feature-title">一緒に料理</h3>
+            <p class="feature-text">
+              訪問時に提案レシピを1品一緒に作ります。コツやポイントをその場で学べるので、次回から一人でも安心。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <span class="feature-icon" aria-hidden="true">👨‍👩‍👧‍👦</span>
+            </div>
+            <h3 class="feature-title">家族全員対応</h3>
+            <p class="feature-text">
+              減量したい旦那さん、成長期の子ども、アレルギーのあるお母さん...。家族全員違う要望にも柔軟に対応します。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 流れセクション -->
+    <section class="section section-flow" id="flow">
+      <div class="container">
+        <h2 class="section-title">ご利用の流れ</h2>
+        <div class="flow-steps">
+          <div class="flow-step">
+            <div class="flow-number">01</div>
+            <h3 class="flow-title">無料相談予約</h3>
+            <p class="flow-text">フォームまたはお電話でご予約</p>
+            <span class="flow-time">所要時間：5分</span>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-number">02</div>
+            <h3 class="flow-title">事前ヒアリング</h3>
+            <p class="flow-text">オンラインで悩みや目的をお聞きします</p>
+            <span class="flow-time">所要時間：15分</span>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-number">03</div>
+            <h3 class="flow-title">訪問相談</h3>
+            <p class="flow-text">ご自宅にお伺いして栄養相談を実施</p>
+            <span class="flow-time">所要時間：60〜120分</span>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-number">04</div>
+            <h3 class="flow-title">レポートお届け</h3>
+            <p class="flow-text">相談内容をまとめたレポートをお届け</p>
+            <span class="flow-time">訪問後3日以内</span>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-number">05</div>
+            <h3 class="flow-title">フォロー中</h3>
+            <p class="flow-text">チャットで質問を受け付けます</p>
+            <span class="flow-time">1〜3ヶ月間</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- プロフィールセクション -->
+    <section class="section section-profile" id="profile">
+      <div class="container">
+        <div class="profile-wrapper">
+          <div class="profile-image">
+            <!-- 改善: WebP形式を使用（JPEGフォールバック付き） -->
+            <picture>
+              <source srcset="./images/profile.webp" type="image/webp">
+              <img src="./images/profile.jpg" alt="管理栄養士 田中美咲" class="profile-photo">
+            </picture>
+          </div>
+          <div class="profile-content">
+            <div class="profile-badge">管理栄養士</div>
+            <h2 class="profile-name">田中 美咲</h2>
+            <p class="profile-title">たなか みさき / Misaki Tanaka</p>
+            <div class="profile-career">
+              <h3 class="profile-career-title">経歴・資格</h3>
+              <ul class="profile-career-list">
+                <li>管理栄養士免許取得（2017年）</li>
+                <li>大手病院栄養科勤務（3年間）</li>
+                <li>企業健康管理室勤務（2年間）</li>
+                <li>独立開業（2022年〜）</li>
+                <li>健康食育インストラクター</li>
+              </ul>
+            </div>
+            <div class="profile-message">
+              <h3 class="profile-message-title">想い</h3>
+              <!-- 改善: 「だけの食事」を「あなただけの」に変更 -->
+              <p class="profile-message-text">
+                「正しい食事」は人それぞれです。年齢、体質、生活習慣、ライフステージ...。<br>
+                私はご家庭に訪問し、その人に合わせた「あなただけの」食事を提案します。<br>
+                無理なく続けられる、あなただけの食事習慣を一緒に見つけましょう。
+              </p>
+            </div>
+            <div class="profile-stats">
+              <div class="profile-stat">
+                <span class="stat-number">300</span>
+                <span class="stat-label">家族以上の相談実績</span>
+              </div>
+              <div class="profile-stat">
+                <span class="stat-number">94%</span>
+                <span class="stat-label">継続率</span>
+              </div>
+              <div class="profile-stat">
+                <span class="stat-number">4.9</span>
+                <span class="stat-label">口コミ評価</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- お客様の声セクション -->
+    <section class="section section-voice">
+      <div class="container">
+        <h2 class="section-title">お客様の声</h2>
+        <div class="voice-grid">
+          <div class="voice-card">
+            <div class="voice-header">
+              <span class="voice-icon">👩</span>
+              <div class="voice-info">
+                <span class="voice-name">M.Kさん</span>
+                <span class="voice-plan">家族別プラン</span>
+              </div>
+            </div>
+            <p class="voice-text">
+              「旦那は減量、子供は成長期、私はアレルギー...と毎食悩んでいましたが、家族全員が満足できる献立を提案してもらいました。共有のおかず1品で全員対応できるのが驚きでした！」
+            </p>
+            <div class="voice-footer">
+              <span class="voice-result">食材ロスが半分に減少</span>
+            </div>
+          </div>
+          <div class="voice-card">
+            <div class="voice-header">
+              <span class="voice-icon">👨</span>
+              <div class="voice-info">
+                <span class="voice-name">S.Tさん</span>
+                <span class="voice-plan">冷蔵庫診断プラン</span>
+              </div>
+            </div>
+            <p class="voice-text">
+              「冷蔵庫の中身を見てレシピを提案してもらえるのが嬉しい。買い物に行く前に『今日はこれで作れる』とわかるので、夕食の支度が楽になりました。」
+            </p>
+            <div class="voice-footer">
+              <span class="voice-result">夕食準備時間が30分短縮</span>
+            </div>
+          </div>
+          <div class="voice-card">
+            <div class="voice-header">
+              <span class="voice-icon">👩‍🦳</span>
+              <div class="voice-info">
+                <span class="voice-name">Y.Hさん</span>
+                <span class="voice-plan">食事記録チェック</span>
+              </div>
+            </div>
+            <p class="voice-text">
+              「一人暮らしで食事が適当になっていましたが、記録をつけるだけで意識が変わりました。チャットサポートで質問しやすいのも良いです。」
+            </p>
+            <div class="voice-footer">
+              <span class="voice-result">3ヶ月で-3kg達成</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQセクション -->
+    <section class="section section-faq" id="faq">
+      <div class="container">
+        <h2 class="section-title">よくある質問</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <!-- 改善: FAQの質問ボタンにARIA属性追加 -->
+            <button class="faq-question" aria-expanded="false">
+              <span>初回の無料相談にはどのような内容を含みますか？</span>
+              <!-- 改善: FAQアイコンにaria-hidden追加 -->
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>初回60分の無料相談では、現在の食事習慣や悩みをお聞きし、解決の方向性をご提案します。無理にプラン契約を促すことはありません。まずはお気軽にご相談ください。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <!-- 改善: FAQの質問ボタンにARIA属性追加 -->
+            <button class="faq-question" aria-expanded="false">
+              <span>どのエリアまで訪問対応していますか？</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>現在は東京都23区、武蔵野市、三鷹市、調布市まで訪問対応しています。それ以外のエリアの場合は、オンライン相談も承っておりますので、お気軽にお問い合わせください。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <!-- 改善: FAQの質問ボタンにARIA属性追加 -->
+            <button class="faq-question" aria-expanded="false">
+              <span>家族のアレルギーにも対応できますか？</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>はい、可能です。管理栄養士としてアレルギー対応食の提案も行っております。事前ヒアリングでアレルギーの有無や程度をお聞かせください。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <!-- 改善: FAQの質問ボタンにARIA属性追加 -->
+            <button class="faq-question" aria-expanded="false">
+              <span>プランは変更できますか？</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>はい、もちろんご変更可能です。まずはお試しいただいているプランで様子を見て、必要に応じてアップグレードや変更をご相談ください。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <!-- 改善: FAQの質問ボタンにARIA属性追加 -->
+            <button class="faq-question" aria-expanded="false">
+              <span>男性の相談も受け付けていますか？</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>はい、性別問わずご相談をお受けしています。ダイエット、筋トレのための食事、健康維持など、幅広い目的に対応可能です。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <!-- 改善: FAQの質問ボタンにARIA属性追加 -->
+            <button class="faq-question" aria-expanded="false">
+              <span>子供の食事相談もできますか？</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>はい、幼児食、学童期、思春期まで幅広く対応しています。偏食対策、成長期の栄養、スポーツをしているお子様の食事などご相談ください。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTAセクション -->
+    <section class="section section-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-title">まずは無料相談から</h2>
+          <p class="cta-subtitle">
+            あなたの食事のお悩み、プロの目で解決しませんか？<br class="sp-only">
+            最短翌日のご自宅訪問も可能です。
+          </p>
+          <div class="cta-features">
+            <div class="cta-feature">
+              <span class="cta-feature-icon">✓</span>
+              <span>初回60分無料</span>
+            </div>
+            <div class="cta-feature">
+              <span class="cta-feature-icon">✓</span>
+              <span>最短翌日訪問</span>
+            </div>
+            <div class="cta-feature">
+              <span class="cta-feature-icon">✓</span>
+              <span>東京都内対応</span>
+            </div>
+            <div class="cta-feature">
+              <span class="cta-feature-icon">✓</span>
+              <span>無理な勧誘なし</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-large btn-pulse">
+            無料相談を予約する
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- コンタクトセクション -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">無料相談予約</h2>
+        <p class="section-subtitle">フォームまたはお電話からご予約いただけます</p>
+
+        <div class="contact-wrapper">
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-label">お名前 <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" class="form-input" required placeholder="山田 太郎">
+                </div>
+                <div class="form-group">
+                  <label for="kana" class="form-label">フリガナ <span class="required">*</span></label>
+                  <input type="text" id="kana" name="kana" class="form-input" required placeholder="ヤマダ タロウ">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">メールアドレス <span class="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" required placeholder="example@email.com">
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">電話番号 <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-input" required placeholder="080-0000-0000">
+              </div>
+
+              <div class="form-group">
+                <label for="plan" class="form-label">興味のあるプラン</label>
+                <select id="plan" name="plan" class="form-select">
+                  <option value="">選択してください</option>
+                  <option value="basic">食事記録チェックプラン</option>
+                  <option value="standard">冷蔵庫診断プラン</option>
+                  <option value="premium">家族別プラン</option>
+                  <option value="undecided">迷っている</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="concern" class="form-label">お悩み・ご質問 <span class="required">*</span></label>
+                <textarea id="concern" name="concern" class="form-textarea" required rows="5" placeholder="現在の食事に関する悩みや、相談したい内容をご記入ください"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-checkbox-label">
+                  <input type="checkbox" name="privacy" class="form-checkbox" required>
+                  <span><a href="#privacy" class="privacy-link">プライバシーポリシー</a>に同意する</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">送信する</button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📞</div>
+              <div class="contact-info-content">
+                <h3 class="contact-info-title">お電話でのご予約</h3>
+                <p class="contact-info-text">080-0000-0000</p>
+                <p class="contact-info-note">受付時間：9:00〜18:00（土日祝除く）</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">✉️</div>
+              <div class="contact-info-content">
+                <h3 class="contact-info-title">メールでのご相談</h3>
+                <p class="contact-info-text">info@nutrivisit.example.com</p>
+                <p class="contact-info-note">24時間受付中</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div class="contact-info-content">
+                <h3 class="contact-info-title">対応エリア</h3>
+                <p class="contact-info-text">東京都23区、武蔵野市、三鷹市、調布市</p>
+                <p class="contact-info-note">その他エリアはオンライン対応</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 改善: プライバシーポリシーモーダル実装 -->
+  <div class="privacy-modal" id="privacyModal" role="dialog" aria-modal="true" aria-labelledby="privacyModalTitle" aria-hidden="true">
+    <div class="privacy-modal-overlay" data-js-modal-close aria-hidden="true"></div>
+    <div class="privacy-modal-content">
+      <div class="privacy-modal-header">
+        <h2 id="privacyModalTitle" class="privacy-modal-title">プライバシーポリシー</h2>
+        <!-- 改善: 閉じるボタンにARIA属性追加 -->
+        <button class="privacy-modal-close" data-js-modal-close aria-label="モーダルを閉じる">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="privacy-modal-body">
+        <div class="privacy-modal-section">
+          <h3 class="privacy-modal-section-title">1. 個人情報の取り扱い</h3>
+          <p>Nutri Visit（以下、「当サービス」）は、お客様の個人情報を適切に取り扱うことを重要な責務と認識し、以下の通り個人情報保護方針を定めます。</p>
+          <p>当サービスでは、サービス提供に必要な範囲でのみお客様の個人情報（お名前、連絡先、健康に関する情報等）を収集いたします。</p>
+        </div>
+        <div class="privacy-modal-section">
+          <h3 class="privacy-modal-section-title">2. 個人情報の利用目的</h3>
+          <p>収集した個人情報は、以下の目的で使用いたします。</p>
+          <ul>
+            <li>栄養相談サービスの提供および運営</li>
+            <li>お客様への連絡・問い合わせ対応</li>
+            <li>サービスの改善・開発のための分析</li>
+            <li>法律で要求される場合</li>
+          </ul>
+        </div>
+        <div class="privacy-modal-section">
+          <h3 class="privacy-modal-section-title">3. 個人情報の第三者提供</h3>
+          <p>当サービスは、お客様の同意を得ずに第三者に個人情報を提供することはありません。ただし、以下の場合を除きます。</p>
+          <ul>
+            <li>法律に基づく要求がある場合</li>
+            <li>人の生命・身体・財産の保護に必要な場合</li>
+            <li>業務委託先に必要な範囲で開示する場合（秘密保持契約締結済み）</li>
+          </ul>
+        </div>
+        <div class="privacy-modal-section">
+          <h3 class="privacy-modal-section-title">4. 個人情報の開示・訂正・利用停止</h3>
+          <p>お客様ご本人からの個人情報の開示・訂正・追加・削除・利用停止のご希望があった場合、速やかに対応いたします。</p>
+          <p>ご請求は、お問い合わせフォームまたはお電話にて承ります。</p>
+        </div>
+        <div class="privacy-modal-section">
+          <h3 class="privacy-modal-section-title">5. セキュリティ</h3>
+          <p>当サービスは、個人情報の漏えい・改ざん・不正アクセス等を防止するため、適切なセキュリティ対策を講じます。</p>
+        </div>
+        <div class="privacy-modal-section">
+          <h3 class="privacy-modal-section-title">6. プライバシーポリシーの変更</h3>
+          <p>当サービスは、本ポリシーの内容を適宜見直し、改善を行います。変更後のポリシーは、本サイトに掲載された時から効力を生じるものとします。</p>
+        </div>
+        <div class="privacy-modal-section">
+          <h3 class="privacy-modal-section-title">7. お問い合わせ</h3>
+          <p>本ポリシーに関するお問い合わせは、下記までお願いいたします。</p>
+          <p>メール：info@nutrivisit.example.com</p>
+          <p>電話：080-0000-0000（受付時間：9:00〜18:00、土日祝除く）</p>
+        </div>
+        <div class="privacy-modal-footer">
+          <p class="privacy-modal-update">最終更新日：2024年4月</p>
+          <p>© 2024 Nutri Visit. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <!-- 改善: 装飾用絵文字にaria-hidden追加 -->
+          <span class="logo-icon" aria-hidden="true">🥗</span>
+          <span class="logo-text">Nutri Visit</span>
+        </div>
+        <p class="footer-desc">ご自宅に訪問する管理栄養士による栄養相談・食育指導</p>
+        <div class="footer-contact">
+          <p class="footer-phone">080-0000-0000</p>
+          <p class="footer-hours">受付時間：9:00〜18:00（土日祝除く）</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2024 Nutri Visit. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

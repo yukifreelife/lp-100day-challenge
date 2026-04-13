@@ -335,6 +335,28 @@ const worksData = [
     tech: ["HTML5", "CSS3", "JavaScript", "Clip-path", "Intersection Observer"],
     url: "./day076/"
   },
+  {
+    day: "Day77",
+    title: "Simple Space | 整理収納アドバイザーLP（改善版）",
+    category: "Home Services",
+    industry: "家事代行",
+    focus: "無料相談予約",
+    summary: "Day076の改善版。コンバージョン率向上（CTA改善・緊急性バナー・フォーム簡素化）、ターゲット明確化（「こんなあなたに」セクション）、属人性強化（プロフィールストーリー化）を実施。",
+    metric: "ターゲットセクション追加・緊急性バナー・Simple Space Method™️ ブランディング",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    url: "./day077/"
+  },
+  {
+    day: "Day78",
+    title: "Nutri Visit | 訪問型管理栄養士LP",
+    category: "Healthcare",
+    industry: "健康管理",
+    focus: "無料相談予約",
+    summary: "ご自宅に訪問する管理栄養士による栄養相談・食育指導LP。食事記録チェック、冷蔵庫診断、家族別食事プランの3プランをタブ切り替えで提示。訪問型ならではのメリット（冷蔵庫チェック・一緒に料理・家族対応）を訴求。",
+    metric: "プラン料金タブ切り替え・訪問型メリット・管理栄養士プロフィール・FAQアコーディオン",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    url: "./day078/"
+  },
 ];
 
 const colorByCategory = {
@@ -352,6 +374,7 @@ const colorByCategory = {
   Food: "#E85D4C",
   Medical: "#4A90A4",
   Pet: "#E87D6E",
+  "Home Services": "#7FB099",
 };
 
 const REEL_INTERVAL_MS = 3200;
