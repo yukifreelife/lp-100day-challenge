@@ -357,6 +357,17 @@ const worksData = [
     tech: ["HTML5", "CSS3", "JavaScript"],
     url: "./day078/"
   },
+  {
+    day: "Day79",
+    title: "CodeKids | 子ども向けプログラミング教室LP",
+    category: "Education",
+    industry: "教育",
+    focus: "体験レッスン予約",
+    summary: "小学生を対象としたプログラミング教室LP。保護者の悩み（スマホ依存・将来への不安）に訴求し、カリキュラムの可視化（初級/中級/上級）と学習効果（論理的思考・創造力・問題解決力）を提示。講師プロフィール・保護者/子供の声・FAQアコーディオンで信頼性構築。",
+    metric: "カリキュラムタブ切り替え・講師プロフィール・保護者/子供の声タブ切り替え・FAQアコーディオン",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    url: "./day079/"
+  },
 ];
 
 const colorByCategory = {
