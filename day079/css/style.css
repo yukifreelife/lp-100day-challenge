@@ -672,116 +672,6 @@ button {
 }
 
 /* ============================================
-   Before/After Section
-   ============================================ */
-.before-after {
-  padding: var(--spacing-3xl) 0;
-  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
-}
-
-.before-after-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-2xl);
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.before-after-item {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-lg);
-}
-
-.before-after-card {
-  padding: var(--spacing-xl);
-  border-radius: var(--border-radius-lg);
-  position: relative;
-}
-
-.before-card {
-  background: var(--color-white);
-  border-left: 4px solid var(--color-danger);
-}
-
-.after-card {
-  background: var(--color-success);
-  color: var(--color-white);
-  border-left: 4px solid var(--color-success-dark);
-}
-
-.before-after-label {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-  margin-bottom: var(--spacing-md);
-  font-weight: 600;
-}
-
-.label-icon {
-  font-size: 24px;
-}
-
-.before-label {
-  color: var(--color-danger);
-}
-
-.after-label {
-  color: var(--color-white);
-}
-
-.label-text {
-  font-size: var(--font-size-sm);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.before-after-text {
-  line-height: 1.8;
-  font-size: var(--font-size-body);
-}
-
-.before-card .before-after-text {
-  color: var(--color-neutral);
-}
-
-.after-card .before-after-text {
-  color: var(--color-white);
-}
-
-.before-after-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--spacing-sm);
-  padding: var(--spacing-md);
-  background: var(--color-white);
-  border-radius: var(--border-radius-full);
-  box-shadow: var(--shadow-sm);
-}
-
-.arrow-icon {
-  font-size: 24px;
-  color: var(--color-primary);
-}
-
-.arrow-text {
-  font-weight: 600;
-  color: var(--color-primary);
-  font-size: var(--font-size-sm);
-}
-
-.before-after-note {
-  text-align: center;
-  margin-top: var(--spacing-xl);
-}
-
-.before-after-note .note-text {
-  color: var(--color-neutral);
-  font-size: var(--font-size-sm);
-}
-
-/* ============================================
    Brand Story Section
    ============================================ */
 .brand-story {
@@ -1984,32 +1874,6 @@ button {
 }
 
 /* ============================================
-   Floating CTA (Mobile Only)
-   ============================================ */
-.floating-cta {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: var(--spacing-md) var(--spacing-lg);
-  background: var(--color-white);
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
-  z-index: var(--z-mobile-nav);
-  transform: translateY(100%);
-  transition: transform var(--transition-normal);
-}
-
-.floating-cta.visible {
-  transform: translateY(0);
-}
-
-@media (min-width: 769px) {
-  .floating-cta {
-    display: none;
-  }
-}
-
-/* ============================================
    Campaign Countdown Timer
    ============================================ */
 .campaign-timer {
@@ -2131,6 +1995,41 @@ button {
   }
 }
 
+@media (max-width: 768px) {
+  .before-after-item {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .before-after-arrow {
+    transform: rotate(90deg);
+  }
+
+  .brand-story-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-cta {
+    padding: var(--spacing-sm);
+  }
+
+  .timer-value {
+    font-size: 14px;
+  }
+
+  .before-after-card {
+    padding: var(--spacing-md);
+  }
+
+  .before-after-text {
+    font-size: var(--font-size-sm);
+  }
+
+  .label-icon {
+    font-size: 20px;
+  }
+}
+
 /* ============================================
    Before/After Section
    ============================================ */
@@ -2166,6 +2065,8 @@ button {
 
 .after-card {
   border-left: 4px solid var(--color-success);
+  background: var(--color-success);
+  color: var(--color-white);
 }
 
 .before-after-label {
@@ -2181,11 +2082,29 @@ button {
 }
 
 .after-label {
-  color: var(--color-success);
+  color: var(--color-white);
+}
+
+.label-icon {
+  font-size: 24px;
+}
+
+.label-text {
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .before-after-text {
   line-height: 1.8;
+}
+
+.before-card .before-after-text {
+  color: var(--color-neutral);
+}
+
+.after-card .before-after-text {
+  color: var(--color-white);
 }
 
 .before-after-arrow {
@@ -2210,225 +2129,6 @@ button {
 }
 
 .note-text {
-  font-size: var(--font-size-sm);
   color: var(--color-neutral);
-}
-
-/* ============================================
-   Brand Story Section
-   ============================================ */
-.brand-story {
-  padding: var(--spacing-3xl) 0;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-  color: var(--color-white);
-}
-
-.brand-story .section-title,
-.brand-story .section-title-accent {
-  color: var(--color-white);
-}
-
-.brand-story .section-subtitle {
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.brand-story-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-3xl);
-  align-items: center;
-  margin-top: var(--spacing-2xl);
-}
-
-.brand-story-content {
-  color: var(--color-white);
-}
-
-.story-timeline {
-  position: relative;
-}
-
-.story-item {
-  position: relative;
-  padding-left: var(--spacing-2xl);
-  margin-bottom: var(--spacing-2xl);
-}
-
-.story-item::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 12px;
-  height: 12px;
-  background: var(--color-secondary);
-  border-radius: 50%;
-}
-
-.story-item::after {
-  content: '';
-  position: absolute;
-  left: 5px;
-  top: 12px;
-  width: 2px;
-  height: calc(100% - 12px);
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.story-item:last-child::after {
-  display: none;
-}
-
-.story-year {
   font-size: var(--font-size-sm);
-  font-weight: 700;
-  color: var(--color-secondary);
-  margin-bottom: var(--spacing-xs);
-}
-
-.story-content h3 {
-  font-size: var(--font-size-h3);
-  margin-bottom: var(--spacing-sm);
-}
-
-.story-content p {
-  opacity: 0.9;
-  line-height: 1.8;
-}
-
-.brand-story-visual {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: var(--border-radius-xl);
-  padding: var(--spacing-2xl);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.brand-story-quote {
-  font-size: var(--font-size-h3);
-  line-height: 1.6;
-  font-style: italic;
-}
-
-/* ============================================
-   Section CTA
-   ============================================ */
-.section-cta {
-  text-align: center;
-  margin-top: var(--spacing-2xl);
-}
-
-.cta-note {
-  margin-top: var(--spacing-md);
-  font-size: var(--font-size-sm);
-  color: var(--color-neutral);
-}
-
-/* ============================================
-   Floating CTA (Mobile)
-   ============================================ */
-.floating-cta {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: var(--spacing-md);
-  background: var(--color-white);
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
-  z-index: var(--z-header);
-  transform: translateY(100%);
-  opacity: 0;
-  transition: all var(--transition-normal);
-}
-
-.floating-cta.visible {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-/* ============================================
-   Campaign Timer
-   ============================================ */
-.campaign-timer {
-  position: fixed;
-  top: 44px;
-  left: 0;
-  right: 0;
-  background: linear-gradient(90deg, var(--color-danger), #DC2626);
-  color: var(--color-white);
-  padding: var(--spacing-sm);
-  text-align: center;
-  z-index: var(--z-header);
-  transform: translateY(-100%);
-  opacity: 0;
-  transition: all var(--transition-normal);
-}
-
-.campaign-timer.visible {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.timer-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--spacing-md);
-  flex-wrap: wrap;
-}
-
-.timer-badge {
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.timer-countdown {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-xs);
-}
-
-.timer-item {
-  display: flex;
-  align-items: baseline;
-  gap: 2px;
-}
-
-.timer-value {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.timer-label {
-  font-size: 9px;
-  opacity: 0.9;
-}
-
-.timer-separator {
-  margin: 0 var(--spacing-xs);
-}
-
-@media (max-width: 768px) {
-  .before-after-item {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-sm);
-  }
-
-  .before-after-arrow {
-    transform: rotate(90deg);
-  }
-
-  .brand-story-wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .floating-cta {
-    padding: var(--spacing-sm);
-  }
-
-  .timer-value {
-    font-size: 14px;
-  }
 }
