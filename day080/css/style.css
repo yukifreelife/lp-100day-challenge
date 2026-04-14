@@ -229,6 +229,18 @@ body {
     transition: var(--transition);
     cursor: pointer;
     border: 2px solid transparent;
+    gap: var(--spacing-xs);
+}
+
+.btn-subtext {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.btn-lg .btn-subtext {
+    display: block;
 }
 
 .btn-primary {
@@ -312,6 +324,21 @@ body {
     font-size: 0.875rem;
     font-weight: 600;
     border-radius: 50px;
+}
+
+.hero-badge.scarcity-badge {
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--color-secondary);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 .hero-title {

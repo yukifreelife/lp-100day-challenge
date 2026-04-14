@@ -17,6 +17,57 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- 構造化データ (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "まなびPLUS",
+      "description": "まなびPLUSは、小中学生を対象とした個人家庭教師サービスです。担任制で親身に指導し、毎週の指導報告書と面談で学習習慣を定着させます。無料体験授業あり。",
+      "url": "https://manabi-plus.example",
+      "telephone": "080-XXXX-XXXX",
+      "email": "info@manabi-plus.example",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "東京都",
+        "addressLocality": "渋谷区",
+        "streetAddress": "〇〇1-2-3",
+        "addressCountry": "JP"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "35.6894",
+        "longitude": "139.6917"
+      },
+      "areaServed": ["東京都渋谷区", "東京都目黒区", "東京都世田谷区"],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "15:00",
+        "closes": "21:00"
+      },
+      "priceRange": "¥8,000〜",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "98"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "山田太郎",
+        "jobTitle": "代表講師"
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -47,6 +98,7 @@
                 <div class="hero-badges">
                     <span class="hero-badge">🎓 指導実績500時間以上</span>
                     <span class="hero-badge">⭐ 満足度98%</span>
+                    <span class="hero-badge scarcity-badge">⚡ 今月残り2枠</span>
                 </div>
                 <h1 class="hero-title">
                     お子様に合わせた指導で、<br>
@@ -57,7 +109,10 @@
                     お子様の成長を一緒に見届けます。
                 </p>
                 <div class="hero-cta-group">
-                    <a href="#contact" class="btn btn-primary btn-lg">無料体験を予約する</a>
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        無料体験を予約する
+                        <span class="btn-subtext">最短翌日から開始可能</span>
+                    </a>
                     <a href="#solution" class="btn btn-outline">詳しく見る</a>
                 </div>
                 <div class="hero-trust">
@@ -315,7 +370,7 @@
                         <li class="price-feature">✓ 指導報告書</li>
                         <li class="price-feature">✓ 月1回の面談</li>
                     </ul>
-                    <a href="#contact" class="btn btn-outline price-cta">このプランで予約</a>
+                    <a href="#contact" class="btn btn-outline price-cta">今すぐ予約する</a>
                 </div>
                 <div class="price-card price-popular fade-in">
                     <div class="popular-badge">人気No.1</div>
@@ -335,7 +390,7 @@
                         <li class="price-feature">✓ 月1回の面談</li>
                         <li class="price-feature">✓ LINE相談付き</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary price-cta">このプランで予約</a>
+                    <a href="#contact" class="btn btn-primary price-cta">今すぐ予約する</a>
                 </div>
                 <div class="price-card fade-in">
                     <div class="price-header">
@@ -353,7 +408,7 @@
                         <li class="price-feature">✓ 即日対応</li>
                         <li class="price-feature">✓ LINE相談付き</li>
                     </ul>
-                    <a href="#contact" class="btn btn-outline price-cta">このプランで予約</a>
+                    <a href="#contact" class="btn btn-outline price-cta">今すぐ予約する</a>
                 </div>
             </div>
             <p class="price-note">※ 入会金・教材費はかかりません。※ 最低指導期間は3ヶ月となります。</p>
@@ -641,7 +696,10 @@
                                 <span>プライバシーポリシーに同意する <span class="required">*</span></span>
                             </label>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">無料体験を予約する</button>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                    今すぐ無料体験を予約する
+                    <span class="btn-subtext">24時間以内にご連絡いたします</span>
+                </button>
                     </form>
                 </div>
             </div>
