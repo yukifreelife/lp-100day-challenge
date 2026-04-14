@@ -292,19 +292,29 @@ function isValidPhone(phone) {
 function showSuccessMessage() {
   const successDiv = document.createElement('div');
   successDiv.className = 'success-message';
-  successDiv.innerHTML = `
-    <div style="
-      background: var(--color-success);
-      color: white;
-      padding: var(--spacing-lg);
-      border-radius: var(--border-radius-md);
-      text-align: center;
-      margin-bottom: var(--spacing-lg);
-    ">
-      <strong>送信完了しました！</strong><br>
-      2営業日以内にご連絡いたします。
-    </div>
-  `;
+
+  const successInner = document.createElement('div');
+  Object.assign(successInner.style, {
+    background: 'var(--color-success)',
+    color: 'white',
+    padding: 'var(--spacing-lg)',
+    borderRadius: 'var(--border-radius-md)',
+    textAlign: 'center',
+    marginBottom: 'var(--spacing-lg)'
+  });
+
+  const strongText = document.createElement('strong');
+  strongText.textContent = '送信完了しました！';
+
+  const break1 = document.createElement('br');
+  const break2 = document.createElement('br');
+  const subText = document.createTextNode('2営業日以内にご連絡いたします。');
+
+  successInner.appendChild(strongText);
+  successInner.appendChild(break1);
+  successInner.appendChild(break2);
+  successInner.appendChild(subText);
+  successDiv.appendChild(successInner);
 
   contactForm.parentNode.insertBefore(successDiv, contactForm);
 
