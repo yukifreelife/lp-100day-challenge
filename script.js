@@ -367,6 +367,17 @@ const worksData = [
     metric: "カリキュラムタブ切り替え・講師プロフィール・保護者/子供の声タブ切り替え・FAQアコーディオン",
     tech: ["HTML5", "CSS3", "JavaScript"],
     url: "./day079/"
+  {
+    day: "Day80",
+    title: "まなびPLUS | 個人家庭教師LP",
+    category: "Education",
+    industry: "教育",
+    focus: "無料体験予約",
+    summary: "小中学生を対象とした個人家庭教師LP。担任制・毎週の指導報告書・定期的な面談の3つの特徴を強調し、保護者に安心感を提供。講師プロフィール・指導メソッド・導入フロー・料金プラン・保護者/生徒の声タブ切り替え・FAQアコーディオンで信頼性構築。",
+    metric: "担任制訴求・指導報告書・講師プロフィール・保護者/生徒の声タブ切り替え・FAQアコーディオン",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    url: "./day080/"
+  },
   },
 ];
 
