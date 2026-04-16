@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="鮨 さかだは、東京渋谷の隠れ家的寿司店。築地市場で厳選したネタと、30年の経験を持つ職人が握る、究極の江戸前寿司をお楽しみください。完全予約制の少人数席で、特別なひとときを。">
+    <meta name="keywords" content="寿司,江戸前寿司,渋谷寿司,予約制寿司,カウンター席,お任せコース,日本酒,築地市場">
+    <meta property="og:title" content="鮨 さかだ | 職人の技が光る、究極の江戸前寿司">
+    <meta property="og:description" content="築地厳選ネタと30年職人の技。完全予約制の隠れ家的空間で、特別な寿司体験を。">
+    <meta property="og:type" content="website">
+    <title>鮨 さかだ | 職人の技が光る、究極の江戸前寿司</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 構造化データ (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "鮨 さかだ",
+      "image": "https://sakada-sushi.example/ogp.jpg",
+      "description": "築地市場で厳選したネタと、30年の経験を持つ職人が握る、究極の江戸前寿司。完全予約制の少人数席。",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "東京都",
+        "addressLocality": "渋谷区",
+        "streetAddress": "〇〇1-2-3",
+        "addressCountry": "JP"
+      },
+      "telephone": "03-XXXX-XXXX",
+      "servesCuisine": "江戸前寿司",
+      "priceRange": "¥15,000〜",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "156"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "18:00",
+          "closes": "23:00"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">鮨 さかだ</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#concept" class="nav-link">コンセプト</a></li>
+                <li><a href="#features" class="nav-link">こだわり</a></li>
+                <li><a href="#course" class="nav-link">コース</a></li>
+                <li><a href="#chef" class="nav-link">職人</a></li>
+                <li><a href="#gallery" class="nav-link">ギャラリー</a></li>
+                <li><a href="#voice" class="nav-link">お客様の声</a></li>
+                <li><a href="#access" class="nav-link">アクセス</a></li>
+                <li><a href="#reservation" class="nav-cta">残席確認</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Sushi Sakada</p>
+                <h1 class="hero-title">
+                    築地朝採れ×30年職人<br>
+                    <span class="hero-title-accent">8席限定の隠れ家</span>
+                </h1>
+                <p class="hero-description">
+                    東京・渋谷の完全予約制。<br class="sp-hidden">
+                    その日一番美味しいネタを、<br class="sp-hidden">
+                    朝5時に競り落としたままの鮮度でお届けします。
+                </p>
+                <div class="hero-badges">
+                    <span class="hero-badge scarcity-badge">今月残り3名様のみ</span>
+                    <span class="hero-badge">築地朝採れ</span>
+                    <span class="hero-badge">30年職人</span>
+                    <span class="hero-badge">8席限定</span>
+                </div>
+                <div class="hero-cta-group">
+                    <a href="#reservation" class="btn btn-primary">
+                        今月残り3名様のみ
+                        <span class="btn-subtext">完全予約制・先月156件をお断り</span>
+                    </a>
+                    <a href="#concept" class="btn btn-outline">
+                        お店について
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="hero-scroll-text">SCROLL</span>
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section class="concept" id="concept">
+        <div class="container">
+            <div class="concept-wrapper">
+                <div class="concept-image fade-in">
+                    <div class="concept-photo">
+                        <div class="concept-photo-placeholder">
+                            <span class="placeholder-icon">🍣</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="concept-content fade-in">
+                    <span class="section-number">01</span>
+                    <span class="section-badge">CONCEPT</span>
+                    <h2 class="section-title">壺という名の</h2>
+                    <h2 class="section-title section-title-accent">小さな世界</h2>
+                    <p class="concept-text">
+                        鮨 さかだは、東京・渋谷の隠れ家にある<br class="sp-hidden">
+                        完全予約制の寿司店です。
+                    </p>
+                    <p class="concept-text">
+                        カウンター8席のみのこじんまりとした空間で、<br class="sp-hidden">
+                        お一人おひとりに寄り添った真心の<br class="sp-hidden">
+                        おもてなしをお届けします。
+                    </p>
+                    <p class="concept-text">
+                        匠の技と旬の味わいを、<br class="sp-hidden">
+                        特別なひとときとしてご堪能ください。
+                    </p>
+                    <div class="concept-highlights">
+                        <div class="concept-highlight">
+                            <span class="highlight-number">8</span>
+                            <span class="highlight-label">席数のみ</span>
+                        </div>
+                        <div class="concept-highlight">
+                            <span class="highlight-number">30</span>
+                            <span class="highlight-label">年の経験</span>
+                        </div>
+                        <div class="concept-highlight">
+                            <span class="highlight-number">4.9</span>
+                            <span class="highlight-label">評価平均</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-number">02</span>
+                <span class="section-badge">FEATURES</span>
+                <h2 class="section-title">こだわり</h2>
+                <p class="section-subtitle">最高の寿司をお届けするための、私たちのこだわり</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🐟</div>
+                    <h3 class="feature-title">築地市場で厳選</h3>
+                    <p class="feature-text">
+                        毎朝、築地市場に足を運び、その日の最高級ネタを厳選。
+                        鮮度へのこだわりは妥協しません。
+                    </p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">👨‍🍳</div>
+                    <h3 class="feature-title">職人の技</h3>
+                    <p class="feature-text">
+                        30年の経験を持つ職人が、お一人おひとりの好みに合わせて
+                        最適な握り方・温度で提供します。
+                    </p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🍚</div>
+                    <h3 class="feature-title">シャリへのこだわり</h3>
+                    <p class="feature-text">
+                        産地・ブランドにこだわった天然米を、
+                        職人が毎朝炊き上げます。
+                        酸飯の配合は気温・湿度で調整。
+                    </p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🍶</div>
+                    <h3 class="feature-title">日本酒とのペアリング</h3>
+                    <p class="feature-text">
+                        ネタに合わせた日本酒をご提案。
+                        全国から厳選した銘酒が、
+                        寿司の味をより一層引き立てます。
+                    </p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🏺</div>
+                    <h3 class="feature-title">空間へのこだわり</h3>
+                    <p class="feature-text">
+                        落ち着いた和モダンの空間。
+                        カウンター一枚を挟んだ、職人との距離近い
+                        特別な時間をお過ごしいただけます。
+                    </p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">✨</div>
+                    <h3 class="feature-title">おもてなしの心</h3>
+                    <p class="feature-text">
+                        お客様をお迎えする瞬間から、お帰りになるまで、
+                        細部まで心を配った真心のおもてなし。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Section -->
+    <section class="course" id="course">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-number">03</span>
+                <span class="section-badge">COURSE</span>
+                <h2 class="section-title">コース</h2>
+                <p class="section-subtitle">その時期の旬を味わう、お任せのコース</p>
+            </div>
+            <div class="course-grid">
+                <div class="course-card fade-in">
+                    <div class="course-header">
+                        <h3 class="course-title">お任せコース</h3>
+                        <p class="course-subtitle">Chef's Omakase</p>
+                    </div>
+                    <div class="course-price">
+                        <span class="course-amount">¥15,000</span>
+                        <span class="course-unit">〜</span>
+                    </div>
+                    <p class="course-description">
+                        その日一番美味しいネタを、<br class="sp-hidden">
+                        職人の裁量でご提供する<br class="sp-hidden">
+                        スタンダードコース。
+                    </p>
+                    <ul class="course-features">
+                        <li class="course-feature">・約20貫</li>
+                        <li class="course-feature">・進物（あがり）付き</li>
+                        <li class="course-feature">・90分コース</li>
+                    </ul>
+                    <p class="course-note">
+                        ※ 金額はその日の仕入れ状況により変動します。
+                    </p>
+                </div>
+                <div class="course-card course-popular fade-in">
+                    <div class="popular-badge">人気No.1</div>
+                    <div class="course-header">
+                        <h3 class="course-title">プレミアムコース</h3>
+                        <p class="course-subtitle">Premium Omakase</p>
+                    </div>
+                    <div class="course-price">
+                        <span class="course-amount">¥25,000</span>
+                        <span class="course-unit">〜</span>
+                    </div>
+                    <p class="course-description">
+                        最高級ネタを中心に、<br class="sp-hidden">
+                        職人の技を余すところなく<br class="sp-hidden">
+                        ご堪能できる特別コース。
+                    </p>
+                    <ul class="course-features">
+                        <li class="course-feature">・約25貫</li>
+                        <li class="course-feature">・進物（あがり）付き</li>
+                        <li class="course-feature">・120分コース</li>
+                        <li class="course-feature">・日本酒ペアリング1杯付き</li>
+                    </ul>
+                    <p class="course-note">
+                        ※ 金額はその日の仕入れ状況により変動します。
+                    </p>
+                </div>
+                <div class="course-card fade-in">
+                    <div class="course-header">
+                        <h3 class="course-title">特別コース</h3>
+                        <p class="course-subtitle">Special Omakase</p>
+                    </div>
+                    <div class="course-price">
+                        <span class="course-amount">¥40,000</span>
+                        <span class="course-unit">〜</span>
+                    </div>
+                    <p class="course-description">
+                        大トロ・ウニ・イクラなどの<br class="sp-hidden">
+                        贅沢ネタをふんだんに使った、<br class="sp-hidden">
+                        一生の記念に。
+                    </p>
+                    <ul class="course-features">
+                        <li class="course-feature">・約30貫</li>
+                        <li class="course-feature">・進物（あがり）付き</li>
+                        <li class="course-feature">・120分コース</li>
+                        <li class="course-feature">・日本酒ペアリング3杯付き</li>
+                    </ul>
+                    <p class="course-note">
+                        ※ 金額はその日の仕入れ状況により変動します。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+    <section class="chef" id="chef">
+        <div class="container">
+            <div class="chef-wrapper">
+                <div class="chef-image fade-in">
+                    <div class="chef-photo">
+                        <div class="chef-photo-placeholder">
+                            <span class="placeholder-icon">👨‍🍳</span>
+                        </div>
+                    </div>
+                    <div class="chef-credentials">
+                        <span class="chef-badge">30年の経験</span>
+                        <span class="chef-badge">築地仕入れ</span>
+                    </div>
+                </div>
+                <div class="chef-content fade-in">
+                    <span class="section-number">04</span>
+                    <span class="section-badge">CHEF</span>
+                    <h2 class="section-title">職人：坂田 太郎</h2>
+                    <p class="chef-subtitle">「寿司は、一期一会の出会い」</p>
+                    <div class="chef-profile">
+                        <div class="chef-profile-item">
+                            <span class="chef-profile-label">出身</span>
+                            <span class="chef-profile-value">東京・築地</span>
+                        </div>
+                        <div class="chef-profile-item">
+                            <span class="chef-profile-label">経験</span>
+                            <span class="chef-profile-value">30年（銀座・六本木での経験）</span>
+                        </div>
+                        <div class="chef-profile-item">
+                            <span class="chef-profile-label">師匠</span>
+                            <span class="chef-profile-value">江戸前寿司協会・元会長</span>
+                        </div>
+                        <div class="chef-profile-item">
+                            <span class="chef-profile-label">信条</span>
+                            <span class="chef-profile-value">「お客様に感動を」</span>
+                        </div>
+                    </div>
+                    <p class="chef-message">
+                        築地で育ち、幼い頃から寿司の世界に身を置いてきました。
+                        30年間、一心に寿司と向き合ってきたからこそ伝えられる
+                        味わいがあると信じています。
+                        <br><br>
+                        鮨 さかだでは、お一人おひとりに「あ、これだ」という
+                        一貫を必ずお届けします。最高のネタ、最高の技術、
+                        そして最高の空間で、特別な寿司体験を。
+                        <br><br>
+                        職人として、そしてホストとして、心を込めてお迎えします。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-number">05</span>
+                <span class="section-badge">GALLERY</span>
+                <h2 class="section-title">ギャラリー</h2>
+                <p class="section-subtitle">お店の雰囲気と、職人の技をお楽しみください</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-large fade-in">
+                    <div class="gallery-placeholder">
+                        <span class="placeholder-icon">🍣</span>
+                        <span class="gallery-label">おまかせ</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-placeholder">
+                        <span class="placeholder-icon">🍤</span>
+                        <span class="gallery-label">えび</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-placeholder">
+                        <span class="placeholder-icon">🐟</span>
+                        <span class="gallery-label">まぐろ</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-placeholder">
+                        <span class="placeholder-icon">🥚</span>
+                        <span class="gallery-label">玉子焼き</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-wide fade-in">
+                    <div class="gallery-placeholder">
+                        <span class="placeholder-icon">🏠</span>
+                        <span class="gallery-label">店内</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-placeholder">
+                        <span class="placeholder-icon">🍶</span>
+                        <span class="gallery-label">日本酒</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voice Section -->
+    <section class="voice" id="voice">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-number">06</span>
+                <span class="section-badge">VOICE</span>
+                <h2 class="section-title">お客様の声</h2>
+                <p class="section-subtitle">ご来店いただいたお客様からの感想</p>
+            </div>
+            <div class="voice-grid">
+                <div class="voice-card fade-in">
+                    <div class="voice-header">
+                        <span class="voice-name">M.K様 / 会食利用</span>
+                        <div class="voice-rating">
+                            <span class="voice-star">★</span>
+                            <span class="voice-star">★</span>
+                            <span class="voice-star">★</span>
+                            <span class="voice-star">★</span>
+                            <span class="voice-star">★</span>
+                        </div>
+                    </div>
+                    <p class="voice-text">
+                        接待で利用しましたが、お客様も大変満足されていました。<br>
+                        お任せコースのネタはどれも新鮮で、職人さんの対応も素晴らしく、<br>
+                        再来店したいとおっしゃっていました。
+                    </p>
+                </div>
+                <div class="voice-card fade-in">
+                    <div class="voice-header">
+                        <span class="voice-name">T.S様 / 記念日</span>
+                        <div class="voice-rating">
+                            <span class="voice-star">★</span>
+                            <span class="voice-star">★</span>
+                            <span class="voice-star">★</span>
+                            <span class="voice-star">★</span>
+                            <span class="voice-star">★</span>
+                        </div>
+                    </div>
+                    <p class="voice-text">
+                        結婚記念日に利用。特別コースを予約しましたが、<br>
+                        大トロ・ウニの品質は最高でした。<br>
+                        一生の思い出になりました。ありがとうございます。
+                    </p>
+                </div>
+                <div class="voice-card fade-in">
+                    <div class="voice-header">
+                        <span class="voice-name">Y.H様 / デート</span>
+                        <div class="voice-rating">
+                            <span class="voice-star">★</span>
+                            <span class="voice-star">★</span>
+                            <span class="voice-star">★</span>
+                            <span class="voice-star">★</span>
+                            <span class="voice-star">★</span>
+                        </div>
+                    </div>
+                    <p class="voice-text">
+                        初めての寿司屋デートで利用。<br>
+                        女性でも入りやすく、職人さんが優しくネタの説明をしてくれたので<br>
+                        勉強になりました。リピート決定です！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access Section -->
+    <section class="access" id="access">
+        <div class="container">
+            <div class="access-wrapper">
+                <div class="access-info fade-in">
+                    <span class="section-number">07</span>
+                    <span class="section-badge">ACCESS</span>
+                    <h2 class="section-title">アクセス・営業時間</h2>
+
+                    <div class="access-item">
+                        <h3 class="access-item-title">住所</h3>
+                        <p class="access-item-text">
+                            〒150-XXXX<br>
+                            東京都渋谷区〇〇1-2-3<br>
+                            ビル1F
+                        </p>
+                    </div>
+
+                    <div class="access-item">
+                        <h3 class="access-item-title">最寄り駅</h3>
+                        <p class="access-item-text">
+                            JR渋谷駅 徒歩5分<br>
+                            東京メトロ恵比寿駅 徒歩7分
+                        </p>
+                    </div>
+
+                    <div class="access-item">
+                        <h3 class="access-item-title">電話番号</h3>
+                        <p class="access-item-text">
+                            03-XXXX-XXXX
+                        </p>
+                    </div>
+
+                    <div class="access-item">
+                        <h3 class="access-item-title">営業時間</h3>
+                        <p class="access-item-text">
+                            18:00〜23:00（L.O. 22:00）<br>
+                            <span class="access-note">※ 完全予約制</span>
+                        </p>
+                    </div>
+
+                    <div class="access-item">
+                        <h3 class="access-item-title">定休日</h3>
+                        <p class="access-item-text">
+                            日曜日・月曜日・祝日
+                        </p>
+                    </div>
+                </div>
+                <div class="access-map fade-in">
+                    <div class="map-placeholder">
+                        <span class="placeholder-icon">📍</span>
+                        <span class="map-label">渋谷駅から徒歩5分</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <div class="reservation-wrapper">
+                <div class="reservation-content fade-in">
+                    <span class="section-number">08</span>
+                    <span class="section-badge">RESERVATION</span>
+                    <h2 class="section-title">ご予約</h2>
+                    <p class="reservation-text">
+                        8席×20日＝月160席の希少性。<br class="sp-hidden">
+                        お電話またはフォームからご予約ください。
+                    </p>
+                    <div class="reservation-info">
+                        <div class="reservation-item">
+                            <span class="reservation-icon">📞</span>
+                            <div>
+                                <span class="reservation-label">お電話</span>
+                                <span class="reservation-value">03-XXXX-XXXX</span>
+                            </div>
+                        </div>
+                        <div class="reservation-item">
+                            <span class="reservation-icon">⏰</span>
+                            <div>
+                                <span class="reservation-label">受付時間</span>
+                                <span class="reservation-value">12:00〜20:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="reservation-note">
+                        ※ 3名以上のご予約はお早めにご連絡ください。<br>
+                        ※ 当日キャンセルは全額請求となります。
+                    </p>
+                </div>
+                <div class="reservation-form-wrapper fade-in">
+                    <form class="reservation-form" id="reservationForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">お名前 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" class="form-input" required placeholder="例：山田 太郎">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">電話番号 <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" class="form-input" required placeholder="例：090-XXXX-XXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" class="form-input" required placeholder="例：example@email.com">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date" class="form-label">ご希望日 <span class="required">*</span></label>
+                                <input type="date" id="date" name="date" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time" class="form-label">ご希望時間 <span class="required">*</span></label>
+                                <select id="time" name="time" class="form-select" required>
+                                    <option value="">選択してください</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="18:30">18:30</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="people" class="form-label">人数 <span class="required">*</span></label>
+                            <select id="people" name="people" class="form-select" required>
+                                <option value="">選択してください</option>
+                                <option value="1">1名</option>
+                                <option value="2">2名</option>
+                                <option value="3">3名</option>
+                                <option value="4">4名</option>
+                                <option value="5">5名〜（要相談）</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="course" class="form-label">コース</label>
+                            <select id="course" name="course" class="form-select">
+                                <option value="">選択してください</option>
+                                <option value="omakase">お任せコース（¥15,000〜）</option>
+                                <option value="premium">プレミアムコース（¥25,000〜）</option>
+                                <option value="special">特別コース（¥40,000〜）</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">ご要望・ご質問</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="3" placeholder="アレルギー食品の有無など、ご要望がございましたらご記入ください"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span>プライバシーポリシーに同意する <span class="required">*</span></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            予約を送信する
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">鮨 さかだ</h3>
+                    <p class="footer-description">
+                        職人の技が光る、究極の江戸前寿司。<br>
+                        築地厳選のネタと、真心のおもてなし。
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h4 class="footer-link-title">メニュー</h4>
+                        <ul class="footer-nav">
+                            <li><a href="#concept">コンセプト</a></li>
+                            <li><a href="#features">こだわり</a></li>
+                            <li><a href="#course">コース</a></li>
+                            <li><a href="#chef">職人</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-group">
+                        <h4 class="footer-link-title">ご予約</h4>
+                        <ul class="footer-nav">
+                            <li><a href="#access">アクセス</a></li>
+                            <li><a href="#reservation">ご予約</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 鮨 さかだ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
