@@ -208,15 +208,21 @@ if (dateInput) {
 }
 
 // ===================================
-// Parallax Effect for Hero
+// Subtle Parallax Effect for Hero
 // ===================================
+let parallaxRaf = null;
 window.addEventListener('scroll', () => {
-    const hero = document.querySelector('.hero-background');
-    if (hero) {
-        const scrolled = window.pageYOffset;
-        const parallaxOffset = Math.min(scrolled * 0.3, 200);
-        hero.style.transform = `translateY(${parallaxOffset}px)`;
-    }
+    if (parallaxRaf) return;
+
+    parallaxRaf = requestAnimationFrame(() => {
+        const hero = document.querySelector('.hero-background');
+        if (hero) {
+            const scrolled = window.pageYOffset;
+            const parallaxOffset = Math.min(scrolled * 0.1, 50);
+            hero.style.transform = `translateY(${parallaxOffset}px)`;
+        }
+        parallaxRaf = null;
+    });
 });
 
 // ===================================
