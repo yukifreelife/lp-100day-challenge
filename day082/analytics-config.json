@@ -1,0 +1,55 @@
+{
+  "lp_name": "FocusFlow",
+  "lp_theme": "productivity-saas",
+  "lp_category": "b2c",
+  "lp_version": "v2.0",
+  "ga4": {
+    "measurement_id": "G-PLACEHOLDER",
+    "anonymize_ip": true,
+    "custom_dimensions": {
+      "lp_theme": "productivity-saas",
+      "lp_category": "b2c",
+      "lp_version": "v2.0"
+    }
+  },
+  "cv_tracking": {
+    "contact_submit": {
+      "enabled": true,
+      "selector": "form[data-tracking=\"contact\"]",
+      "event_name": "contact_submit"
+    },
+    "phone_click": {
+      "enabled": true,
+      "selector": "a[href^=\"tel:\"]",
+      "event_name": "phone_click"
+    },
+    "cta_click": {
+      "enabled": true,
+      "selector": "[data-tracking=\"cta\"]",
+      "event_name": "cta_click",
+      "track_attributes": ["cta_text", "cta_position", "cta_type"]
+    },
+    "file_download": {
+      "enabled": true,
+      "selector": "a[href$=\".pdf\"], a[href$=\".zip\"]",
+      "event_name": "file_download"
+    }
+  },
+  "scroll_tracking": {
+    "enabled": true,
+    "depths": [25, 50, 75, 90, 100],
+    "throttle_ms": 100
+  },
+  "performance": {
+    "lazy_loading": {
+      "enabled": true,
+      "root_margin": "50px",
+      "threshold": 0.01
+    },
+    "native_lazy_loading": {
+      "enabled": true,
+      "fallback": true
+    }
+  },
+  "last_updated": "2026-04-17"
+}

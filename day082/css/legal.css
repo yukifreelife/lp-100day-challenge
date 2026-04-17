@@ -1,0 +1,301 @@
+/* Legal Pages Styles for FocusFlow LP
+ * For: legal-act.html, privacy.html
+ */
+
+:root {
+  --color-primary: #2563EB;
+  --color-secondary: #10B981;
+  --color-bg: #F8FAFC;
+  --color-white: #FFFFFF;
+  --color-text: #1E293B;
+  --color-text-secondary: #64748B;
+  --color-border: #E2E8F0;
+  --color-light-gray: #F1F5F9;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans JP', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: var(--font-size-base);
+  line-height: 1.8;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header */
+.page-header {
+  background: linear-gradient(135deg, #1E40AF 0%, #2563EB 100%);
+  color: var(--color-white);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+}
+
+.page-header p {
+  margin-top: var(--spacing-sm);
+  opacity: 0.9;
+}
+
+/* Navigation */
+.page-nav {
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--spacing-sm) 0;
+}
+
+.page-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.page-nav-back {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.page-nav-back:hover {
+  color: var(--color-primary);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Legal Content Sections */
+.legal-act, .privacy-policy {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-white);
+  min-height: calc(100vh - 200px);
+}
+
+/* Legal List (Definition List Style) */
+.legal-list {
+  margin-top: var(--spacing-lg);
+}
+
+.legal-list dt {
+  font-weight: 600;
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-sm);
+  background-color: var(--color-light-gray);
+  border-left: 4px solid var(--color-primary);
+  font-size: var(--font-size-lg);
+}
+
+.legal-list dd {
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+}
+
+/* Privacy Policy Sections */
+.policy-section {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.policy-section h2 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--color-primary);
+  color: var(--color-text);
+}
+
+.policy-section p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.policy-section ul {
+  padding-left: var(--spacing-lg);
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.policy-section ul li {
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-secondary);
+}
+
+.contact-info {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.contact-info li {
+  padding: var(--spacing-sm);
+  background-color: var(--color-light-gray);
+  border-radius: var(--border-radius-sm);
+  border-left: 3px solid var(--color-secondary);
+}
+
+.update-date {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xl);
+  font-size: var(--font-size-sm);
+}
+
+/* Table of Contents (for long legal pages) */
+.toc {
+  background-color: var(--color-light-gray);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.toc h3 {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.toc ul {
+  padding-left: var(--spacing-lg);
+}
+
+.toc ul li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.toc a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+/* Highlight Boxes for Important Information */
+.highlight-box {
+  background-color: #FEF3C7;
+  border-left: 4px solid #F59E0B;
+  padding: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+  border-radius: var(--border-radius-sm);
+}
+
+.highlight-box.info {
+  background-color: #DBEAFE;
+  border-left-color: var(--color-primary);
+}
+
+.highlight-box.success {
+  background-color: #D1FAE5;
+  border-left-color: var(--color-secondary);
+}
+
+/* Footer */
+.page-footer {
+  background-color: #0F172A;
+  color: var(--color-white);
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+}
+
+.page-footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.page-footer a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s ease;
+}
+
+.page-footer a:hover {
+  color: var(--color-white);
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--font-size-sm);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-header {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .policy-section {
+    padding: var(--spacing-md);
+  }
+
+  .legal-list dt {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .page-header,
+  .page-nav,
+  .page-footer {
+    display: none;
+  }
+
+  body {
+    background-color: var(--color-white);
+  }
+
+  .policy-section {
+    box-shadow: none;
+    page-break-inside: avoid;
+  }
+}

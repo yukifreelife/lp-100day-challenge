@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="ogp-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563EB"/>
+      <stop offset="100%" style="stop-color:#10B981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#ogp-grad)"/>
+
+  <!-- 装飾円 -->
+  <circle cx="100" cy="100" r="150" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="1100" cy="530" r="200" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="600" cy="315" r="250" fill="rgba(255,255,255,0.05)"/>
+
+  <!-- ロゴアイコン -->
+  <g transform="translate(600, 200)">
+    <circle cx="0" cy="0" r="60" fill="rgba(255,255,255,0.2)"/>
+    <circle cx="-20" cy="0" r="8" fill="white"/>
+    <circle cx="20" cy="0" r="8" fill="white"/>
+    <circle cx="-20" cy="0" r="4" fill="#2563EB"/>
+    <circle cx="20" cy="0" r="4" fill="#2563EB"/>
+    <path d="M-30 15 Q0 25 30 15" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M-30 -15 Q0 -25 30 -15" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="20" stroke="white" stroke-width="3" fill="none"/>
+    <circle cx="0" cy="0" r="4" fill="white"/>
+  </g>
+
+  <!-- タイトル -->
+  <text x="600" y="320" font-family="'Noto Sans JP', sans-serif" font-size="72" font-weight="700" fill="white" text-anchor="middle">FocusFlow</text>
+
+  <!-- サブタイトル -->
+  <text x="600" y="390" font-family="'Noto Sans JP', sans-serif" font-size="36" font-weight="400" fill="white" text-anchor="middle" opacity="0.95">集中力を高めるタスク管理アプリ</text>
+
+  <!-- CTA -->
+  <rect x="480" y="440" width="240" height="60" rx="30" fill="white"/>
+  <text x="600" y="480" font-family="'Noto Sans JP', sans-serif" font-size="24" font-weight="700" fill="#2563EB" text-anchor="middle">無料で始める</text>
+</svg>
