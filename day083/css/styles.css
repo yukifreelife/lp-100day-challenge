@@ -1,0 +1,104 @@
+/* Trattoria Sole - Main Stylesheet */
+
+/* Base Styles */
+body {
+    background-color: #fff9f0;
+    color: #1d1b16;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .font-headline {
+    font-family: 'Noto Serif JP', serif;
+}
+
+/* Typography */
+.text-display-lg {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.text-headline-md {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.text-body-lg {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.text-body-md {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.text-label-md {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+/* Components */
+.glass-panel {
+    background-color: rgb(243 237 228 / 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.hero-gradient {
+    background: radial-gradient(circle at center, rgba(159, 64, 45, 0.8) 0%, rgba(255, 160, 140, 0.4) 100%);
+}
+
+/* Page Sections */
+.page-section {
+    display: none;
+}
+
+.page-section.active {
+    display: block;
+}
+
+/* Navigation */
+.nav-link.active {
+    color: #9f402d;
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #9f402d;
+}
+
+.mobile-nav-item.active {
+    background: #f3ede4;
+    color: #9f402d;
+}
+
+/* Form Elements */
+.ghost-border-bottom {
+    border-bottom: 1px solid rgba(215, 195, 174, 0.5);
+}
+
+.ghost-border-bottom:focus {
+    border-bottom-color: #9f402d;
+    outline: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .text-display-lg {
+        font-size: 2.5rem;
+    }
+
+    .text-headline-md {
+        font-size: 1.5rem;
+    }
+}

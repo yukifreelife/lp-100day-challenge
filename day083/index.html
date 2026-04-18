@@ -1,207 +1,165 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Trattoria Sole（トラットリア・ソーレ）</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Trattoria Sole（トラットリア・ソーレ）- 本場イタリアの味を、ご家族と一緒に。トスカーナの温かな中庭のようなひとときを。">
+    <meta name="keywords" content="イタリアン,トラットリア,家族連れ,パスタ,ピザ,渋谷,原宿">
+    <meta property="og:title" content="Trattoria Sole - 家族で楽しむ本場イタリアの味">
+    <meta property="og:description" content="本場の味を、ご家族と一緒に。トスカーナの温かな中庭のようなひとときを。">
+    <meta property="og:type" content="restaurant">
+    <title>Trattoria Sole（トラットリア・ソーレ）| 家族で楽しむ本場イタリアの味</title>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"/>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
     <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "outline": "#857462",
-                        "surface": "#fff9f0",
-                        "on-primary-fixed": "#3e0500",
-                        "surface-container-highest": "#e7e2d9",
-                        "outline-variant": "#d7c3ae",
-                        "error": "#ba1a1a",
-                        "on-background": "#1d1b16",
-                        "secondary-container": "#caedb4",
-                        "secondary-fixed": "#caedb4",
-                        "on-secondary-fixed": "#062100",
-                        "on-secondary-container": "#4e6c3f",
-                        "primary-fixed-dim": "#ffb4a5",
-                        "inverse-surface": "#32302a",
-                        "on-surface": "#1d1b16",
-                        "on-primary-container": "#832b1a",
-                        "error-container": "#ffdad6",
-                        "secondary": "#48663a",
-                        "on-secondary-fixed-variant": "#314e24",
-                        "surface-tint": "#9f402d",
-                        "surface-bright": "#fff9f0",
-                        "tertiary-container": "#f9a825",
-                        "on-secondary": "#ffffff",
-                        "on-error-container": "#93000a",
-                        "surface-dim": "#dfd9d1",
-                        "primary-fixed": "#ffdad3",
-                        "on-primary-fixed-variant": "#802918",
-                        "surface-variant": "#e7e2d9",
-                        "surface-container-low": "#f9f3ea",
-                        "on-tertiary-fixed": "#2a1800",
-                        "primary": "#9f402d",
-                        "surface-container-high": "#ede7df",
-                        "on-tertiary": "#ffffff",
-                        "on-error": "#ffffff",
-                        "tertiary-fixed": "#ffddb5",
-                        "surface-container-lowest": "#ffffff",
-                        "secondary-fixed-dim": "#aed09a",
-                        "on-primary": "#ffffff",
-                        "on-tertiary-container": "#674100",
-                        "background": "#fff9f0",
-                        "primary-container": "#ffa08c",
-                        "tertiary-fixed-dim": "#ffb957",
-                        "on-surface-variant": "#524434",
-                        "inverse-on-surface": "#f6f0e7",
-                        "inverse-primary": "#ffb4a5",
-                        "surface-container": "#f3ede4",
-                        "on-tertiary-fixed-variant": "#643f00",
-                        "tertiary": "#835400"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {},
-                    "fontFamily": {
-                        "headline": ["Noto Serif JP", "serif"],
-                        "body": ["Plus Jakarta Sans", "sans-serif"],
-                        "label": ["Plus Jakarta Sans", "sans-serif"]
-                    }
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "outline": "#857462",
+                    "surface": "#fff9f0",
+                    "on-primary-fixed": "#3e0500",
+                    "surface-container-highest": "#e7e2d9",
+                    "outline-variant": "#d7c3ae",
+                    "error": "#ba1a1a",
+                    "on-background": "#1d1b16",
+                    "secondary-container": "#caedb4",
+                    "secondary-fixed": "#caedb4",
+                    "on-secondary-fixed": "#062100",
+                    "on-secondary-container": "#4e6c3f",
+                    "primary-fixed-dim": "#ffb4a5",
+                    "inverse-surface": "#32302a",
+                    "on-surface": "#1d1b16",
+                    "on-primary-container": "#832b1a",
+                    "error-container": "#ffdad6",
+                    "secondary": "#48663a",
+                    "on-secondary-fixed-variant": "#314e24",
+                    "surface-tint": "#9f402d",
+                    "surface-bright": "#fff9f0",
+                    "tertiary-container": "#f9a825",
+                    "on-secondary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#dfd9d1",
+                    "primary-fixed": "#ffdad3",
+                    "on-primary-fixed-variant": "#802918",
+                    "surface-variant": "#e7e2d9",
+                    "surface-container-low": "#f9f3ea",
+                    "on-tertiary-fixed": "#2a1800",
+                    "primary": "#9f402d",
+                    "surface-container-high": "#ede7df",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed": "#ffddb5",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed-dim": "#aed09a",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-container": "#674100",
+                    "background": "#fff9f0",
+                    "primary-container": "#ffa08c",
+                    "tertiary-fixed-dim": "#ffb957",
+                    "on-surface-variant": "#524434",
+                    "inverse-on-surface": "#f6f0e7",
+                    "inverse-primary": "#ffb4a5",
+                    "surface-container": "#f3ede4",
+                    "on-tertiary-fixed-variant": "#643f00",
+                    "tertiary": "#835400"
                 },
+                "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+                },
+                "fontFamily": {
+                    "headline": ["Noto Serif JP", "serif"],
+                    "body": ["Plus Jakarta Sans", "sans-serif"],
+                    "label": ["Plus Jakarta Sans", "sans-serif"]
+                }
             },
-        }
+        },
+    }
     </script>
-    <style>
-        body {
-            background-color: theme('colors.surface');
-            color: theme('colors.on-surface');
-            font-family: theme('fontFamily.body');
-        }
-        h1, h2, h3, h4, h5, h6, .font-headline {
-            font-family: theme('fontFamily.headline');
-        }
-        .text-display-lg { font-size: 3.5rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em; }
-        .text-headline-md { font-size: 2rem; line-height: 1.2; font-weight: 600; }
-        .text-body-lg { font-size: 1.125rem; line-height: 1.6; }
-        .text-body-md { font-size: 1rem; line-height: 1.5; }
-        .text-label-md { font-size: 0.875rem; line-height: 1.4; font-weight: 500; }
-
-        .glass-panel {
-            background-color: rgb(243 237 228 / 0.7);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-        }
-
-        .hero-gradient {
-            background: radial-gradient(circle at center, rgba(159, 64, 45, 0.8) 0%, rgba(255, 160, 140, 0.4) 100%);
-        }
-
-        .page-section {
-            display: none;
-        }
-        .page-section.active {
-            display: block;
-        }
-
-        .nav-link.active {
-            color: #9f402d;
-            font-weight: 600;
-        }
-        .nav-link.active::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: #9f402d;
-        }
-
-        .mobile-nav-item.active {
-            background: #f3ede4;
-            color: #9f402d;
-        }
-
-        .ghost-border-bottom { border-bottom: 1px solid rgba(215, 195, 174, 0.5); }
-    </style>
 </head>
 <body class="antialiased selection:bg-primary-container selection:text-on-primary-container pb-20 md:pb-0">
 
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 bg-[#fff9f0]/70 backdrop-blur-md shadow-sm shadow-[#524434]/5">
     <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
-        <div class="flex items-center gap-2 text-[#9f402d] cursor-pointer" onclick="showPage('home')">
+        <a href="index.html" class="flex items-center gap-2 text-[#9f402d]">
             <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">restaurant</span>
             <span class="font-headline font-black text-2xl">Trattoria Sole</span>
-        </div>
+        </a>
         <nav class="hidden md:flex gap-8">
-            <a class="nav-link font-headline text-lg uppercase tracking-widest text-[#1d1b16] opacity-80 hover:text-[#48663a] transition-colors relative cursor-pointer" onclick="showPage('home')" data-page="home">ホーム</a>
-            <a class="nav-link font-headline text-lg uppercase tracking-widest text-[#1d1b16] opacity-80 hover:text-[#48663a] transition-colors relative cursor-pointer" onclick="showPage('menu')" data-page="menu">メニュー</a>
-            <a class="nav-link font-headline text-lg uppercase tracking-widest text-[#1d1b16] opacity-80 hover:text-[#48663a] transition-colors relative cursor-pointer" onclick="showPage('access')" data-page="access">アクセス</a>
-            <a class="nav-link font-headline text-lg uppercase tracking-widest text-[#1d1b16] opacity-80 hover:text-[#48663a] transition-colors relative cursor-pointer" onclick="showPage('privacy')" data-page="privacy">プライバシー</a>
+            <a class="nav-link font-headline text-lg uppercase tracking-widest text-[#9f402d] font-semibold relative" href="index.html">ホーム</a>
+            <a class="nav-link font-headline text-lg uppercase tracking-widest text-[#1d1b16] opacity-80 hover:text-[#48663a] transition-colors relative" href="menu.html">メニュー</a>
+            <a class="nav-link font-headline text-lg uppercase tracking-widest text-[#1d1b16] opacity-80 hover:text-[#48663a] transition-colors relative" href="access.html">アクセス</a>
+            <a class="nav-link font-headline text-lg uppercase tracking-widest text-[#1d1b16] opacity-80 hover:text-[#48663a] transition-colors relative" href="privacy.html">プライバシー</a>
         </nav>
-        <button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label text-label-md hover:bg-[#802918] transition-colors duration-300 flex items-center gap-2" onclick="showPage('contact')">
+        <a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label text-label-md hover:bg-[#802918] transition-colors duration-300 flex items-center gap-2" href="contact.html">
             <span>ご予約</span>
-        </button>
+        </a>
     </div>
 </header>
 
-<!-- HOME PAGE -->
-<main id="page-home" class="page-section active">
+<main>
     <!-- Hero Section -->
-    <section class="relative min-h-[751px] flex items-center justify-center px-4 py-20 overflow-hidden mt-16">
+    <section class="relative min-h-[60vh] md:min-h-[751px] flex items-center justify-center px-4 py-16 md:py-20 overflow-hidden mt-16">
         <div class="absolute inset-0 z-0">
-            <img alt="High-quality, appetizing hero shot of authentic Italian pasta" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUmGSQ4KJbtiUqyElov_SyTz2g6RK24oLmmiqs_LHpHxDLqnnh4IXdIIm4_lost6AFF_-iyHEFIjs4dZs-IHXVvYd5_QusVFVmGg-nYpyQ5Z9wC6sni6RcYlzLTTIlCBHKT9FdeVujcbHPHoj6nK9YlBlxyzPlFspitoH2Qmlbej9-xu23OZyYUOXa4Kw9HYnsqsfT2RRlcuMxkxfv7aCXSAnqbMaZeWSGkyr19jeTWK7iKT7Ii6IJvjKkWCx9B4cotZtmNUcOXPQ"/>
+            <img alt="イタリアンの本場、太陽を感じるアルフレッコの食卓" class="w-full h-full object-cover object-center" src="images/hero-bg.jpg">
             <div class="absolute inset-0 bg-black/30"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
         </div>
-        <div class="relative z-10 max-w-4xl mx-auto text-center mt-12">
-            <h1 class="font-headline text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg tracking-tight leading-tight">
-                イタリアの陽だまりを<br class="md:hidden"/>食卓に。
+        <div class="relative z-10 max-w-4xl mx-auto text-center px-4">
+            <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6 drop-shadow-lg tracking-tight leading-tight">
+                イタリアの陽だまりを<br class="md:hidden">食卓に。
             </h1>
-            <p class="font-body text-lg md:text-xl text-white max-w-2xl mx-auto mb-10 drop-shadow-md font-medium">
-                本場の味を、ご家族と一緒に。トスカーナの温かな中庭のようなひとときを。
+            <p class="font-body text-base md:text-lg lg:text-xl text-white max-w-2xl mx-auto mb-8 md:mb-10 drop-shadow-md font-medium">
+                本場の味を、ご家族と一緒に。<br class="sm:hidden">トスカーナの温かな中庭のようなひとときを。
             </p>
-            <button class="bg-primary text-on-primary px-10 py-5 rounded-full font-label text-xl font-bold hover:bg-[#802918] transition-all duration-300 shadow-[0_8px_30px_-4px_rgba(159,64,45,0.6)] hover:shadow-[0_12px_40px_-4px_rgba(159,64,45,0.8)] hover:-translate-y-1 transform" onclick="showPage('contact')">
+            <a class="inline-block bg-primary text-on-primary px-8 md:px-10 py-4 md:py-5 rounded-full font-label text-lg md:text-xl font-bold hover:bg-[#802918] transition-all duration-300 shadow-[0_8px_30px_-4px_rgba(159,64,45,0.6)] hover:shadow-[0_12px_40px_-4px_rgba(159,64,45,0.8)] hover:-translate-y-1 transform" href="contact.html">
                 お席を予約する
-            </button>
+            </a>
         </div>
     </section>
 
     <!-- About Us -->
-    <section class="py-24 px-6 bg-surface-container-low relative">
+    <section class="py-16 md:py-24 px-4 md:px-6 bg-surface-container-low relative">
         <div class="max-w-7xl mx-auto">
-            <div class="mb-16 text-center">
+            <div class="mb-10 md:mb-16 text-center">
                 <span class="text-secondary font-label text-label-md uppercase tracking-wider mb-2 block">私たちのこだわり</span>
-                <h2 class="font-headline text-headline-md text-primary">伝統が息づく一皿</h2>
+                <h2 class="font-headline text-2xl md:text-headline-md text-primary">伝統が息づく一皿</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-surface-container-highest rounded-xl p-8 flex flex-col items-center text-center shadow-[0_8px_32px_-16px_rgba(82,68,52,0.1)] relative overflow-hidden group">
-                    <div class="w-20 h-20 rounded-full bg-secondary-container flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-surface-container-highest rounded-xl p-6 md:p-8 flex flex-col items-center text-center shadow-[0_8px_32px_-16px_rgba(82,68,52,0.1)] relative overflow-hidden group">
+                    <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-secondary-container flex items-center justify-center mb-4 md:mb-6">
+                        <span class="material-symbols-outlined text-secondary text-3xl md:text-4xl" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
                     </div>
-                    <h3 class="font-headline text-xl text-on-surface mb-4 z-10">イタリア人シェフ監修</h3>
-                    <p class="font-body text-body-md text-on-surface-variant z-10">
+                    <h3 class="font-headline text-lg md:text-xl text-on-surface mb-3 md:mb-4 z-10">イタリア人シェフ監修</h3>
+                    <p class="font-body text-sm md:text-body-md text-on-surface-variant z-10">
                         イタリアの心で磨かれたシェフが、本場そのままの味をお届けします。
                     </p>
                     <div class="absolute inset-0 border border-outline-variant/15 rounded-xl pointer-events-none"></div>
                 </div>
                 <div class="md:col-span-2 bg-surface-container-highest rounded-xl overflow-hidden flex flex-col md:flex-row shadow-[0_8px_32px_-16px_rgba(82,68,52,0.1)]">
-                    <div class="md:w-1/2 p-8 flex flex-col justify-center">
-                        <h3 class="font-headline text-2xl text-primary mb-4">厳選された新鮮食材</h3>
-                        <p class="font-body text-body-md text-on-surface-variant mb-6">
+                    <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-center">
+                        <h3 class="font-headline text-xl md:text-2xl text-primary mb-3 md:mb-4">厳選された新鮮食材</h3>
+                        <p class="font-body text-sm md:text-body-md text-on-surface-variant mb-4 md:mb-6">
                             サン・マルツァーノ産のトマトやトスカーナのオリーブオイルなど、現地から直送された食材を使用しています。
                         </p>
-                        <span class="text-tertiary font-label text-label-md underline decoration-dotted cursor-pointer">私たちの物語を読む →</span>
+                        <a class="text-tertiary font-label text-label-md underline decoration-dotted cursor-pointer hover:text-tertiary-fixed-dim" href="menu.html">メニューを見る →</a>
                     </div>
-                    <div class="md:w-1/2 h-64 md:h-auto relative">
-                        <img alt="Fresh Ingredients" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ25H20OzpMl-HvDDuLEDP5C-qAIZe4dMwup-4DAoUQGJLjzzoMfQtksHapDzmwxTVoSJJ4RjVXt-B9ICMIjEi95GDy1avyRY3QhKBfuUA1iTtBQQXuDcQ4emANXndO8YgwjX3-ODHT8Fr_HKO7L9inqaEa3tcPA9wmLlYpyC5lj9t_MlOWYs3LkSi52DZ7jj_8j1p4tSzgKZ6Td7Sq2jXhwSQWYa1tvW2hcp_h8V7DSZq9Pu4ZqCX0W0U3HJDU6xOfq39ElKJ2nI"/>
+                    <div class="md:w-1/2 h-48 md:h-64 md:h-auto relative">
+                        <img alt="厳選された新鮮食材" class="w-full h-full object-cover" src="images/ingredients.jpg" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -209,91 +167,91 @@
     </section>
 
     <!-- Signature Dish -->
-    <section class="py-24 px-6 bg-surface">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
-            <div class="lg:w-5/12 space-y-8 lg:pl-12 order-2 lg:order-1">
+    <section class="py-16 md:py-24 px-4 md:px-6 bg-surface">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 md:gap-16">
+            <div class="lg:w-5/12 space-y-6 md:space-y-8 lg:pl-12 order-2 lg:order-1">
                 <div>
-                    <span class="inline-flex items-center px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-sm font-label mb-4">
+                    <span class="inline-flex items-center px-3 md:px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-xs md:text-sm font-label mb-4">
                         <span class="material-symbols-outlined text-sm mr-2" style="font-variation-settings: 'FILL' 1;">star</span>
                         自慢の
                     </span>
-                    <h2 class="font-headline text-display-lg text-on-surface mb-6 leading-tight">手打ち <br/><span class="text-primary">パスタ</span></h2>
-                    <p class="font-body text-body-lg text-on-surface-variant">
+                    <h2 class="font-headline text-3xl md:text-display-lg text-on-surface mb-4 md:mb-6 leading-tight">手打ち <br><span class="text-primary">パスタ</span></h2>
+                    <p class="font-body text-base md:text-body-lg text-on-surface-variant">
                         毎朝お店で打ち上げる黄金色のパスタ。伝統のレシピを守り抜いた、濃厚なラグーソースとともに。
                     </p>
                 </div>
-                <div class="pt-8 border-t border-outline-variant/15 flex items-center gap-6">
-                    <div class="flex -space-x-4">
-                        <img alt="Reviewer" class="w-12 h-12 rounded-full border-2 border-surface object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYXeStMTlxObTO-alcFpphL8wFLHTKvnpi62GLlqKqNolWFcgY2l18SynoCZFwvpAeVrsBnnCs38X0OLx4FcC5oC1mW8KUGfprdTk_wcFehdfl74Y8SrzqRGyq6cR6w5rx4QXyPYTQw_dP1hr8mNunzP2abiu4LlXV4wt6LFCS4QIkBehf7vpuIJFS8c7m8MaED2LQJxtgfD_Rqdb8I9tqhvJ30KV9R5-ih6NWb2smpIeWx2mvT084Ksv-ImiQqCzUlHifpmTHs-o"/>
-                        <img alt="Reviewer" class="w-12 h-12 rounded-full border-2 border-surface object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtGTcD394lKtKhup7M2PPmtDFum-isDHmPfmbNTC1euzkSiz6Ue-L6Fe_5mrX8cNuBRRGT_wAT4k5F0gBBdW139aneXmFSwQDkufUMsq4kCOiPZ1GG2BW2YiMxPt4foKQxdzhmUMNFmrkMcN59qEX2_yEAyAxG-mmCZfIykhmtP7Mw6Wg_aINAztWU2X9Rm8CSSPtnNN5HEy0fI7YvAeOJXAbnVYnW3tCFFaSdPhjYpEFFWRWUEjdYRimXCc-O1VaBC-yVN2fxIsM"/>
-                        <div class="w-12 h-12 rounded-full border-2 border-surface bg-tertiary-container flex items-center justify-center text-on-tertiary-container font-label text-xs">
+                <div class="pt-6 md:pt-8 border-t border-outline-variant/15 flex items-center gap-4 md:gap-6">
+                    <div class="flex -space-x-3 md:-space-x-4">
+                        <img alt="お客様" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-surface object-cover" src="images/customer1.jpg" loading="lazy">
+                        <img alt="お客様" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-surface object-cover" src="images/customer2.png" loading="lazy">
+                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-surface bg-tertiary-container flex items-center justify-center text-on-tertiary-container font-label text-[10px] md:text-xs">
                             +2k
                         </div>
                     </div>
-                    <p class="font-body text-sm text-on-surface-variant italic">「フィレンツェ以外で最高のパスタ。」</p>
+                    <p class="font-body text-xs md:text-sm text-on-surface-variant italic">「フィレンツェ以外で最高のパスタ。」</p>
                 </div>
             </div>
-            <div class="lg:w-7/12 relative order-1 lg:order-2">
-                <div class="absolute inset-0 bg-surface-container-high rounded-[2rem] transform translate-x-8 translate-y-8 -z-10"></div>
-                <img alt="Signature Pasta" class="w-full h-auto rounded-[2rem] shadow-[0_16px_48px_-12px_rgba(82,68,52,0.2)] object-cover aspect-[4/3] relative z-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQJS95jdJcSkx-WJH9s6xjKie1j5SX7uASR1MwraF_CM6BrdUMSVkMCRSMUyKsVm3Z3vM_rmEEbpGgKMQhLTMXDdREKzjID-s_TVinxDJSxDCPMgo6IhHfOPXExedQAxn6e5N5bFFWx7j9U9aKiZmz9d2Cz3FXrBdwtC9qu8z3JHvsRtivhJ6Q0_yfsN2dQB8CfKKG0mw8V0ECwtOlw8gN5BmlJXqAfrgqq-xdCA-pHMMn4mD6doTRBphXK9Fu4"/>
+            <div class="lg:w-7/12 relative order-1 lg:order-2 w-full">
+                <div class="absolute inset-0 bg-surface-container-high rounded-[1.5rem] md:rounded-[2rem] transform translate-x-4 md:translate-x-8 translate-y-4 md:translate-y-8 -z-10"></div>
+                <img alt="手打ちパスタ" class="w-full h-auto rounded-[1.5rem] md:rounded-[2rem] shadow-[0_16px_48px_-12px_rgba(82,68,52,0.2)] object-cover aspect-[4/3] relative z-0" src="images/pasta-signature.png" loading="lazy">
             </div>
         </div>
     </section>
 
     <!-- Family Friendly -->
-    <section class="py-24 px-6 bg-surface-container">
+    <section class="py-16 md:py-24 px-4 md:px-6 bg-surface-container">
         <div class="max-w-5xl mx-auto text-center">
-            <div class="w-24 h-24 mx-auto mb-8 bg-surface rounded-full flex items-center justify-center shadow-[0_4px_20px_-4px_rgba(82,68,52,0.1)]">
-                <span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings: 'FILL' 1;">family_restroom</span>
+            <div class="w-20 h-20 md:w-24 md:h-24 mx-auto mb-6 md:mb-8 bg-surface rounded-full flex items-center justify-center shadow-[0_4px_20px_-4px_rgba(82,68,52,0.1)]">
+                <span class="material-symbols-outlined text-primary text-4xl md:text-5xl" style="font-variation-settings: 'FILL' 1;">family_restroom</span>
             </div>
-            <h2 class="font-headline text-headline-md text-primary mb-6">ご家族みなさまで楽しめる空間</h2>
-            <p class="font-body text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-16">
+            <h2 class="font-headline text-2xl md:text-headline-md text-primary mb-4 md:mb-6">ご家族みなさまで楽しめる空間</h2>
+            <p class="font-body text-base md:text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10 md:mb-16">
                 お子様連れでも安心して過ごせるよう、キッズメニューやベビーチェアも完備しています。
             </p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
-                <div class="flex flex-col items-center p-6 bg-surface-container-highest rounded-xl">
-                    <span class="material-symbols-outlined text-outline text-3xl mb-3">child_care</span>
-                    <span class="font-label text-on-surface text-sm">お子様メニュー</span>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
+                <div class="flex flex-col items-center p-4 md:p-6 bg-surface-container-highest rounded-xl">
+                    <span class="material-symbols-outlined text-outline text-2xl md:text-3xl mb-2 md:mb-3">child_care</span>
+                    <span class="font-label text-on-surface text-xs md:text-sm">お子様メニュー</span>
                 </div>
-                <div class="flex flex-col items-center p-6 bg-surface-container-highest rounded-xl">
-                    <span class="material-symbols-outlined text-outline text-3xl mb-3">chair_alt</span>
-                    <span class="font-label text-on-surface text-sm">ベビーチェア</span>
+                <div class="flex flex-col items-center p-4 md:p-6 bg-surface-container-highest rounded-xl">
+                    <span class="material-symbols-outlined text-outline text-2xl md:text-3xl mb-2 md:mb-3">chair_alt</span>
+                    <span class="font-label text-on-surface text-xs md:text-sm">ベビーチェア</span>
                 </div>
-                <div class="flex flex-col items-center p-6 bg-surface-container-highest rounded-xl">
-                    <span class="material-symbols-outlined text-outline text-3xl mb-3">celebration</span>
-                    <span class="font-label text-on-surface text-sm">バースデー特典</span>
+                <div class="flex flex-col items-center p-4 md:p-6 bg-surface-container-highest rounded-xl">
+                    <span class="material-symbols-outlined text-outline text-2xl md:text-3xl mb-2 md:mb-3">celebration</span>
+                    <span class="font-label text-on-surface text-xs md:text-sm">バースデー特典</span>
                 </div>
-                <div class="flex flex-col items-center p-6 bg-surface-container-highest rounded-xl">
-                    <span class="material-symbols-outlined text-outline text-3xl mb-3">stroller</span>
-                    <span class="font-label text-on-surface text-sm">ベビーカー置き場</span>
+                <div class="flex flex-col items-center p-4 md:p-6 bg-surface-container-highest rounded-xl">
+                    <span class="material-symbols-outlined text-outline text-2xl md:text-3xl mb-2 md:mb-3">stroller</span>
+                    <span class="font-label text-on-surface text-xs md:text-sm">ベビーカー置き場</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Location & Hours -->
-    <section class="py-24 px-6 bg-surface relative overflow-hidden">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
-            <div class="lg:w-1/3 space-y-12 bg-surface-container-lowest p-10 rounded-2xl shadow-[0_8px_40px_-12px_rgba(82,68,52,0.08)]">
+    <section class="py-16 md:py-24 px-4 md:px-6 bg-surface relative overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6 md:gap-12">
+            <div class="lg:w-1/3 space-y-8 md:space-y-12 bg-surface-container-lowest p-6 md:p-10 rounded-2xl shadow-[0_8px_40px_-12px_rgba(82,68,52,0.08)]">
                 <div>
-                    <h3 class="font-headline text-2xl text-on-surface mb-6 flex items-center gap-3">
+                    <h3 class="font-headline text-xl md:text-2xl text-on-surface mb-4 md:mb-6 flex items-center gap-3">
                         <span class="material-symbols-outlined text-primary">location_on</span>
                         アクセス
                     </h3>
-                    <p class="font-body text-body-md text-on-surface-variant">
-                        〒150-0001<br/>
-                        東京都渋谷区神宮前X-X-X<br/>
+                    <p class="font-body text-sm md:text-body-md text-on-surface-variant">
+                        〒150-0001<br>
+                        東京都渋谷区神宮前X-X-X<br>
                         Sole Building 1F
                     </p>
-                    <span class="text-tertiary font-label text-sm underline decoration-dotted cursor-pointer mt-4 inline-block" onclick="showPage('access')">道順を表示</span>
+                    <a class="text-tertiary font-label text-sm underline decoration-dotted cursor-pointer mt-3 md:mt-4 inline-block hover:text-tertiary-fixed-dim" href="access.html">道順を表示 →</a>
                 </div>
                 <div class="h-px w-full bg-outline-variant/30"></div>
                 <div>
-                    <h3 class="font-headline text-2xl text-on-surface mb-6 flex items-center gap-3">
+                    <h3 class="font-headline text-xl md:text-2xl text-on-surface mb-4 md:mb-6 flex items-center gap-3">
                         <span class="material-symbols-outlined text-primary">schedule</span>
                         営業時間
                     </h3>
-                    <ul class="font-body text-body-md text-on-surface-variant space-y-3">
+                    <ul class="font-body text-sm md:text-body-md text-on-surface-variant space-y-2 md:space-y-3">
                         <li class="flex justify-between"><span>火 - 木</span> <span>16:00 - 22:00</span></li>
                         <li class="flex justify-between"><span>金 - 土</span> <span>12:00 - 23:00</span></li>
                         <li class="flex justify-between"><span>日</span> <span>12:00 - 21:00</span></li>
@@ -301,561 +259,80 @@
                     </ul>
                 </div>
             </div>
-            <div class="lg:w-2/3 h-[400px] lg:h-auto rounded-2xl overflow-hidden relative shadow-[0_8px_40px_-12px_rgba(82,68,52,0.08)]">
-                <img alt="Location Area" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpxf_2Cdd9yso1lae81mbMe8XFbakQPxx1UlBdDnpvlxcM_V213PTHh2mPKxxLu68HN3cenXbXIu4xTqMZzGlXAa_aFsDjTJ-E2G-0PvFJVzYCPMg8PXfoRZh-Aw-Rchw9_cK6SMxXayPWIyOUPM4nCHl6ZnAhEraZ9ZCvXuuKOyzeCr1dpCHcg6inLNEDLRqHHRWJWb_lnWkSginGISPUMViro0wfKrN_s2FJGNBWFoMlq8DlRX8rkPTxGEGfeJnwkfm1G9bpNMM"/>
+            <div class="lg:w-2/3 h-[250px] md:h-[350px] lg:h-auto rounded-2xl overflow-hidden relative shadow-[0_8px_40px_-12px_rgba(82,68,52,0.08)]">
+                <img alt="店舗周辺の様子" class="w-full h-full object-cover" src="images/location.jpg" loading="lazy">
                 <div class="absolute inset-0 flex items-center justify-center">
-                    <div class="bg-surface p-4 rounded-full shadow-lg flex items-center justify-center animate-bounce">
-                        <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">restaurant</span>
-                    </div>
+                    <a href="access.html" class="bg-surface p-3 md:p-4 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-primary text-2xl md:text-3xl" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-</main>
 
-<!-- MENU PAGE -->
-<main id="page-menu" class="page-section">
-    <div class="max-w-7xl mx-auto px-4 md:px-12 py-8 pt-28">
-        <!-- Hero Section -->
-        <section class="mb-24 relative rounded-xl overflow-hidden shadow-[0_8px_40px_-12px_rgba(82,68,52,0.06)] bg-surface-container-low min-h-[530px] flex items-center group">
-            <div class="absolute inset-0 z-0">
-                <img alt="Hero" class="w-full h-full object-cover opacity-90 transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDInp1FgDOQt0nrTr6uZV0VNYyhWTNgEoLU1x6aL1usi_PaOLfY1Y0fkpoPyGmmfD0LDT9uWjsIh5IozvDGqKqOs3HSJLpQMJhag125GJz1dqpABtHXYkEe_MJ_KCDnrJHre_nC8FfvuJPpZxYnCBdjf1xwem1JF9srrCUPCNNn05xa12R3DC0WdFameLEdvFhPK143HZfmMjhchcPV1FhFKpc7DsPOXLq_LlWSf7SPTZn7HPEA1sn9olHgTZBJaPn9fczn6LfMaEU"/>
-                <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
-            </div>
-            <div class="relative z-10 p-8 md:p-16 max-w-2xl">
-                <span class="inline-block bg-secondary-fixed text-on-secondary-fixed px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-6 shadow-sm">
-                    Specialità della Casa
-                </span>
-                <h1 class="text-5xl md:text-7xl font-headline text-primary mb-6 leading-tight">手打ちパパルデッレ</h1>
-                <p class="text-lg md:text-xl text-on-surface-variant mb-8 leading-relaxed font-body">
-                    トスカーナ地方の伝統的な幅広パスタ。毎朝、職人が手作業で丁寧に伸ばし、小麦の豊かな風味と独特のモチモチとした食感を生み出しています。
-                </p>
-                <span class="text-3xl font-headline text-tertiary">¥2,400</span>
-            </div>
-        </section>
-
-        <!-- Menu Categories -->
-        <div class="space-y-32">
-            <!-- Antipasto -->
-            <section>
-                <div class="mb-12 border-b border-outline-variant/30 pb-4">
-                    <h2 class="text-4xl font-headline text-on-surface">前菜 <span class="text-xl text-outline italic ml-2">Antipasto</span></h2>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div class="flex flex-col md:flex-row gap-6 bg-surface-container rounded-xl p-4 md:p-0 overflow-hidden shadow-sm hover:shadow-[0_8px_40px_-12px_rgba(82,68,52,0.06)] transition-shadow">
-                        <div class="w-full md:w-2/5 aspect-square md:aspect-auto">
-                            <img class="w-full h-full object-cover rounded-lg md:rounded-l-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAChIyMLVpug-o8pu1c4H5hCmdmR5CVRYiUSfuJ806rJBJ0kM8RxwLw8pfK-ECGXdUVrcKBdT2h-P1BdVuCxOeZSx34IAl_rAnzzgNNaZg4leR4RhGaN1Y4n-f1qtuNqNvdjRdxKz0oTIa2YjXO6A92DmVBbguFcTy946j4aQMDjw8_MnUvAtMAcndx-pFjqAVO4CUyrSFkIdqfsLvXuGXR0zP6fRDORW0IfLFItM_uUK_3yqrnnbIxc5KSHxvOB3KLhm0uGsNeOK4"/>
-                        </div>
-                        <div class="w-full md:w-3/5 py-4 md:py-8 pr-4 md:pr-8 flex flex-col justify-center">
-                            <h3 class="text-2xl font-headline text-primary mb-2">水牛モッツァレラと完熟トマトのカプレーゼ</h3>
-                            <p class="text-on-surface-variant text-sm mb-4 leading-relaxed">
-                                イタリア産水牛のモッツァレラチーズと、太陽の恵みをたっぷり浴びた完熟トマト。フレッシュなバジルと最高級オリーブオイルでシンプルに。
-                            </p>
-                            <span class="text-xl font-headline text-tertiary mt-auto">¥1,800</span>
-                        </div>
-                    </div>
-                    <div class="flex flex-col md:flex-row gap-6 bg-surface-container rounded-xl p-4 md:p-0 overflow-hidden shadow-sm hover:shadow-[0_8px_40px_-12px_rgba(82,68,52,0.06)] transition-shadow">
-                        <div class="w-full md:w-2/5 aspect-square md:aspect-auto">
-                            <img class="w-full h-full object-cover rounded-lg md:rounded-l-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB7NcnIuw6PuM0o8sJ2jX2M2BtzEEy2tE6vjWfbpDXU55mKOeugdjZspOATO2FOPavtgR2fY9NtQgOpk0NuenU7QiYFnkgNfQm2n45pNQUYqlTONFxz2OuakwjDpSVvyXjJ2pZfo5wo7IkEQ005GELCYuVaWVNn6ymjXKoZRxn5JajH-4zkxcZc98IMjyc-ImFAI-VAoZfN1Wrq3nLnDkXjZ2_rIftKxcUlq7pqQ6r-fhp3cV0tFEcrXH9xYxksfFQ1NMtsIYU"/>
-                        </div>
-                        <div class="w-full md:w-3/5 py-4 md:py-8 pr-4 md:pr-8 flex flex-col justify-center">
-                            <h3 class="text-2xl font-headline text-primary mb-2">厳選生ハムとサラミの盛り合わせ</h3>
-                            <p class="text-on-surface-variant text-sm mb-4 leading-relaxed">
-                                パルマ産プロシュート、ミラノサラミなど、熟成された旨味が凝縮された肉の盛り合わせ。ワインのお供に最適です。
-                            </p>
-                            <span class="text-xl font-headline text-tertiary mt-auto">¥2,200</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Primo Piatto -->
-            <section>
-                <div class="mb-12 border-b border-outline-variant/30 pb-4">
-                    <h2 class="text-4xl font-headline text-on-surface">パスタ <span class="text-xl text-outline italic ml-2">Primo Piatto</span></h2>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-surface-container-highest rounded-xl overflow-hidden flex flex-col group">
-                        <div class="h-64 overflow-hidden">
-                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyhmEhj2ePm3TMFHpDgmpagQlqGx4qA8GsUOQ4GowZaxFg591GIL96I4prHKPoOMx9DZFO6peiJyFripNykmkJL1Y8fYQxm3BZurnZ5Q81SI-dcnAS8CyT0baawFqNlrmyKFAhuagfdqraRPVq5oadhunAQrNyaJor6W6OpAiANuIrOOcGT_ZorI6PKAyx7h8jaUPWPw33z3hesY-7n5549pE8fGf0_Bej-mgj5iJvsMg9l3Eruu5tSI1oMDrJGd1kF6jiqFg4PQk"/>
-                        </div>
-                        <div class="p-6 flex-grow flex flex-col">
-                            <div class="flex justify-between items-start mb-4">
-                                <h3 class="text-xl font-headline text-primary">本場ローマのカルボナーラ</h3>
-                                <span class="text-lg font-headline text-tertiary ml-4">¥1,900</span>
-                            </div>
-                            <p class="text-on-surface-variant text-sm leading-relaxed">
-                                生クリームを一切使わず、卵黄とペコリーノ・ロマーノチーズ、グアンチャーレのみで作る濃厚な一皿。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bg-surface-container-highest rounded-xl overflow-hidden flex flex-col group">
-                        <div class="h-64 overflow-hidden relative">
-                            <div class="absolute top-4 left-4 z-10">
-                                <span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold shadow-sm">
-                                    おすすめ
-                                </span>
-                            </div>
-                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4-usxtyIxQZO3WG1CNprhf1q_T4WP-mmopRde6ZAcf3OG8kRfzlx17nZqItToIDeOnNEk-qz7TXR9tz8M-6SeNfNuv-2wc44Afrt3-4Jb92kiZwXD9vW_LZOTCdOeC8SooN1SevjG1S9-zSuCD4hVqbjAu8jOKt5hTyDV5IFcxaawDJvALmdtgt27BSywvAc_Ll2XECoV1tfQ_5Dblu37c4K1rccxHZip8xJKKWNRIWnhesBYBxIG5w2gXp83WJ4hmLXiZ7Bnm0w"/>
-                        </div>
-                        <div class="p-6 flex-grow flex flex-col">
-                            <div class="flex justify-between items-start mb-4">
-                                <h3 class="text-xl font-headline text-primary">新鮮な海の幸のペスカトーレ</h3>
-                                <span class="text-lg font-headline text-tertiary ml-4">¥2,600</span>
-                            </div>
-                            <p class="text-on-surface-variant text-sm leading-relaxed">
-                                ムール貝、アサリ、エビ、イカなど、たっぷりの魚介の旨味が溶け込んだトマトソース。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bg-surface-container-highest rounded-xl overflow-hidden flex flex-col group">
-                        <div class="h-64 overflow-hidden">
-                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm0-1aObmpJ3CBQTXTjpdZkcBzquOXX0lta3tLxrqnDwfDqB8TqPRGxLMJNVm5CeiBc2MRTIbEcTnwyLxhNzbQqdYy1BrI2e7bd096hYMKCfiTfEyW5eiFXi-KH4SDM7G-PpV9XtXhcaITZaLFFtiYErYK-9kEnrMCE-2u0jGY9U3M4I7eqSLfKmLPmiURDQPyafMrNckYgYWKzbjsUhx6tddpLqtPGlZmhmbir7iBZQjCcT0-d7-cINtjJfoET-6Sehgh_RppxnM"/>
-                        </div>
-                        <div class="p-6 flex-grow flex flex-col">
-                            <div class="flex justify-between items-start mb-4">
-                                <h3 class="text-xl font-headline text-primary">手打ちパパルデッレ イノシシのラグー</h3>
-                                <span class="text-lg font-headline text-tertiary ml-4">¥2,400</span>
-                            </div>
-                            <p class="text-on-surface-variant text-sm leading-relaxed">
-                                トスカーナの森の恵み。赤ワインと香味野菜でじっくり煮込んだイノシシ肉の力強いラグーソースを、自慢の手打ちパスタで。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Secondo Piatto -->
-            <section>
-                <div class="mb-12 border-b border-outline-variant/30 pb-4">
-                    <h2 class="text-4xl font-headline text-on-surface">メイン <span class="text-xl text-outline italic ml-2">Secondo Piatto</span></h                </div>
-                <div class="bg-surface-container-low rounded-xl p-8 relative overflow-hidden">
-                    <div class="relative z-10 flex flex-col lg:flex-row gap-12 items-center">
-                        <div class="w-full lg:w-1/2">
-                            <div class="aspect-[4/3] rounded-lg overflow-hidden shadow-[0_8px_40px_-12px_rgba(82,68,52,0.15)]">
-                                <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtdEtIRnKfxXl6M4MYqRtjB1hgHrR96HXGlwL1scBupB0LanCS8_yUasmXNYB4lA_cpLDSD6PoRc0MV6YguvTL0LmAk2njyKCsBsAqtBOlKf5dDVYUw-M-yurWOpIFTQq35JaSz8lGa1WtU1WMDFHqXYHdVlsz0AAWa24nvtiC8wRVZRSnhnZX9ChhXCYtveV-PW_bMFtd2LQ_ATZi8PU7VlKTMZIMJD_qMFdI1ydDvkycEq9VIFxubCCynNEMxYAv0caVVDB_yi0"/>
-                            </div>
-                        </div>
-                        <div class="w-full lg:w-1/2 space-y-6">
-                            <span class="text-tertiary-fixed-dim tracking-widest text-sm font-bold uppercase">Signature Dish</span>
-                            <h3 class="text-4xl font-headline text-primary">ビステッカ・アッラ・フィオレンティーナ</h3>
-                            <div class="h-1 w-20 bg-primary/30 rounded-full"></div>
-                            <p class="text-lg text-on-surface-variant leading-relaxed">
-                                フィレンツェ名物のTボーンステーキ。最高級の骨付き肉を、外はカリッと、中はレアに炭火で豪快に焼き上げます。
-                            </p>
-                            <p class="text-sm text-outline italic mt-4">
-                                ※焼き上がりに40分ほどお時間をいただきます。
-                            </p>
-                            <div class="pt-6">
-                                <span class="text-3xl font-headline text-tertiary">¥8,800 <span class="text-base text-outline font-body">(約800g / 2〜3名様用)</span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Dolce -->
-            <section>
-                <div class="mb-12 border-b border-outline-variant/30 pb-4">
-                    <h2 class="text-4xl font-headline text-on-surface">デザート <span class="text-xl text-outline italic ml-2">Dolce</span></h2>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="bg-surface-container rounded-xl p-6 text-center shadow-sm hover:bg-surface-container-highest transition-colors">
-                        <h3 class="text-xl font-headline text-primary mb-3">クラシック・ティラミス</h3>
-                        <p class="text-on-surface-variant text-sm mb-6 h-16">エスプレッソをたっぷり染み込ませたサヴォイアルディと濃厚マスカルポーネ。</p>
-                        <span class="text-lg font-headline text-tertiary">¥900</span>
-                    </div>
-                    <div class="bg-surface-container rounded-xl p-6 text-center shadow-sm hover:bg-surface-container-highest transition-colors">
-                        <h3 class="text-xl font-headline text-primary mb-3">パンナコッタ</h3>
-                        <p class="text-on-surface-variant text-sm mb-6 h-16">滑らかな口溶けのミルクプリン。季節のフルーツソースを添えて。</p>
-                        <span class="text-lg font-headline text-tertiary">¥800</span>
-                    </div>
-                    <div class="bg-surface-container rounded-xl p-6 text-center shadow-sm hover:bg-surface-container-highest transition-colors">
-                        <h3 class="text-xl font-headline text-primary mb-3">アフォガート</h3>
-                        <p class="text-on-surface-variant text-sm mb-6 h-16">冷たいバニラジェラートに、熱々の濃厚エスプレッソをかけて。</p>
-                        <span class="text-lg font-headline text-tertiary">¥850</span>
-                    </div>
-                    <div class="bg-surface-container rounded-xl p-6 text-center shadow-sm hover:bg-surface-container-highest transition-colors border border-outline-variant/15">
-                        <h3 class="text-xl font-headline text-primary mb-3">本日のジェラート</h3>
-                        <p class="text-on-surface-variant text-sm mb-6 h-16">旬の素材を使った自家製ジェラート。スタッフにお尋ねください。</p>
-                        <span class="text-lg font-headline text-tertiary">¥700</span>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-</main>
-
-<!-- ACCESS PAGE -->
-<main id="page-access" class="page-section">
-    <div class="pt-28 pb-32 px-6 max-w-7xl mx-auto">
-        <div class="mb-12 text-center">
-            <h2 class="font-headline text-4xl md:text-5xl lg:text-6xl text-primary mb-4">店舗・アクセス</h2>
-            <p class="font-body text-on-surface-variant text-lg">お越しをお待ちしております。</p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-            <div class="lg:col-span-5 flex flex-col gap-8">
-                <div class="bg-surface-container-highest p-8 rounded-xl shadow-[0_8px_40px_-12px_rgba(82,68,52,0.06)] relative overflow-hidden">
-                    <h3 class="font-headline text-2xl text-primary mb-6 flex items-center gap-3">
-                        <span class="material-symbols-outlined text-outline">storefront</span>
-                        店舗情報
-                    </h3>
-                    <div class="space-y-6">
-                        <div>
-                            <p class="font-label text-sm text-on-surface-variant mb-1 uppercase tracking-wider">住所</p>
-                            <p class="font-body text-on-surface text-lg">〒150-0001<br/>東京都渋谷区神宮前X-X-X<br/>Sole Building 1F</p>
-                        </div>
-                        <div>
-                            <p class="font-label text-sm text-on-surface-variant mb-1 uppercase tracking-wider">電話番号</p>
-                            <p class="font-body text-primary text-xl font-medium">03-XXXX-XXXX</p>
-                        </div>
-                        <div>
-                            <p class="font-label text-sm text-on-surface-variant mb-1 uppercase tracking-wider">営業時間</p>
-                            <ul class="font-body text-on-surface space-y-2">
-                                <li class="flex justify-between items-center border-b border-outline-variant/30 pb-2">
-                                    <span>ランチ</span> <span class="font-medium">11:30 - 15:00 (L.O. 14:00)</span>
-                                </li>
-                                <li class="flex justify-between items-center pb-2">
-                                    <span>ディナー</span> <span class="font-medium">18:00 - 23:00 (L.O. 22:00)</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="font-label text-sm text-on-surface-variant mb-1 uppercase tracking-wider">定休日</p>
-                            <p class="font-body text-on-surface">毎週月曜日・第2火曜日</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-surface-container p-8 rounded-xl relative">
-                    <h3 class="font-headline text-xl text-primary mb-6 flex items-center gap-3">
-                        <span class="material-symbols-outlined text-outline">directions_walk</span>
-                        アクセス案内
-                    </h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-4">
-                            <span class="material-symbols-outlined text-secondary mt-1" style="font-variation-settings: 'FILL' 1;">train</span>
-                            <div>
-                                <p class="font-body text-on-surface font-medium">電車でお越しの場合</p>
-                                <p class="font-body text-on-surface-variant text-sm mt-1">表参道駅A2出口より徒歩5分</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <span class="material-symbols-outlined text-outline mt-1" style="font-variation-settings: 'FILL' 1;">local_parking</span>
-                            <div>
-                                <p class="font-body text-on-surface font-medium">お車でお越しの場合</p>
-                                <p class="font-body text-on-surface-variant text-sm mt-1">専用駐車場はございません。近隣のコインパーキングをご利用ください。</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <span class="material-symbols-outlined text-tertiary mt-1" style="font-variation-settings: 'FILL' 1;">info</span>
-                            <div>
-                                <p class="font-body text-on-surface font-medium">目印</p>
-                                <p class="font-body text-on-surface-variant text-sm mt-1">大きな楠の木の隣、地元のギャラリーの向かい側です。</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="lg:col-span-7 h-full min-h-[400px] lg:min-h-full rounded-xl overflow-hidden shadow-[0_8px_40px_-12px_rgba(82,68,52,0.06)] relative group">
-                <img alt="Map showing location" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB0pTLqRTSuh79DelgHr1EcVcuGyTyBYE00ap2H4Y4PNo6azq7ljENqMNs4a1v9GeWbM4V5EJ8BtSgPr4ygSRFYRcEhkm7BYh3TgcyxL0xqf7j5hnC1aIiyKeUd1LW3Arfg61JbTUV2oGYhA1sDWER9cGJkW1xW-TJzJgYkzhUIUxvimZXiwkyo9fzdFSYz49b7LisLmFwVZePNXuN_se7MC3FHm4blJJcKG6CtzTCsNBmTFN2FhNmoEgFUrfKz-hw0mzkFdbdxms"/>
-                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest/90 via-transparent to-transparent flex flex-col justify-end p-8 pointer-events-none">
-                    <button class="pointer-events-auto bg-primary text-on-primary font-label font-medium px-6 py-3 rounded-lg shadow-lg hover:bg-tertiary-fixed-dim transition-colors self-start flex items-center gap-2">
-                        <span class="material-symbols-outlined">map</span>
-                        Google Mapsで開く
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-
-<!-- CONTACT PAGE -->
-<main id="page-contact" class="page-section">
-    <div class="pt-28 px-6 max-w-7xl mx-auto min-h-screen">
-        <div class="mb-16 text-center max-w-2xl mx-auto">
-            <h1 class="font-headline text-4xl md:text-5xl text-primary mb-4 tracking-tight">お問い合わせ・ご予約</h1>
-            <p class="mt-6 font-body text-on-surface-variant leading-relaxed">
-                太陽の光が降り注ぐ中庭のような温かな空間で、皆様のお越しをお待ちしております。<br/>
-                ご予約、または何かご不明な点がございましたらお気軽にご連絡ください。
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 px-4 md:px-6 bg-gradient-to-br from-primary to-primary-fixed">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="font-headline text-3xl md:text-4xl lg:text-5xl text-on-primary mb-4 md:mb-6">ご予約をお待ちしております</h2>
+            <p class="font-body text-base md:text-body-lg text-on-primary/90 mb-8 md:mb-10">
+                ご家族、お友達とご一緒に、イタリアの陽だまりのようなひとときをお過ごしください。
             </p>
+            <a class="inline-block bg-on-primary text-primary px-8 md:px-10 py-4 md:py-5 rounded-full font-label text-lg md:text-xl font-bold hover:bg-surface transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 transform" href="contact.html">
+                ご予約はこちら
+            </a>
         </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-            <div class="lg:col-span-7 bg-surface-container-highest rounded-xl p-8 md:p-12 shadow-[0_8px_40px_-12px_rgba(82,68,52,0.06)] relative overflow-hidden">
-                <div class="absolute -top-10 -right-10 w-32 h-32 bg-primary-container/20 rounded-full blur-3xl"></div>
-                <div class="flex items-center gap-3 mb-8">
-                    <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
-                    <h2 class="font-headline text-2xl text-on-surface">ご予約</h2>
-                </div>
-                <form class="space-y-6 relative z-10">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="space-y-2">
-                            <label class="block font-label text-sm text-on-surface-variant">ご来店日</label>
-                            <input class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-primary text-on-surface py-2 px-1" type="date"/>
-                        </div>
-                        <div class="space-y-2">
-                            <label class="block font-label text-sm text-on-surface-variant">お時間</label>
-                            <select class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-primary text-on-surface py-2 px-1">
-                                <option>11:30</option>
-                                <option>12:00</option>
-                                <option>12:30</option>
-                                <option>13:00</option>
-                                <option>18:00</option>
-                                <option>18:30</option>
-                                <option>19:00</option>
-                                <option>19:30</option>
-                                <option>20:00</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="space-y-2">
-                        <label class="block font-label text-sm text-on-surface-variant">人数</label>
-                        <select class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-primary text-on-surface py-2 px-1">
-                            <option>1名様</option>
-                            <option selected>2名様</option>
-                            <option>3名様</option>
-                            <option>4名様</option>
-                            <option>5名様</option>
-                            <option>6名様以上（お電話にてご相談）</option>
-                        </select>
-                    </div>
-                    <div class="space-y-2">
-                        <label class="block font-label text-sm text-on-surface-variant">お名前</label>
-                        <input class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-primary text-on-surface py-2 px-1" placeholder="Trattoria 太郎" type="text"/>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="space-y-2">
-                            <label class="block font-label text-sm text-on-surface-variant">電話番号</label>
-                            <input class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-primary text-on-surface py-2 px-1" placeholder="090-XXXX-XXXX" type="tel"/>
-                        </div>
-                        <div class="space-y-2">
-                            <label class="block font-label text-sm text-on-surface-variant">メールアドレス</label>
-                            <input class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-primary text-on-surface py-2 px-1" placeholder="mail@example.com" type="email"/>
-                        </div>
-                    </div>
-                    <div class="space-y-2 pt-4">
-                        <label class="block font-label text-sm text-on-surface-variant">ご要望・アレルギー等</label>
-                        <textarea class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-primary text-on-surface py-2 px-1 resize-none" placeholder="アレルギーや記念日等のご要望がございましたらご記入ください。" rows="3"></textarea>
-                    </div>
-                    <div class="pt-6">
-                        <button class="w-full bg-primary text-on-primary py-4 rounded-lg font-headline text-lg hover:bg-tertiary-fixed-dim transition-colors shadow-[0_8px_40px_-12px_rgba(82,68,52,0.2)]" type="button">
-                            予約を申し込む
-                        </button>
-                        <p class="text-xs text-on-surface-variant text-center mt-3 font-body">※ご予約の確定は店舗からのご連絡をお待ちください。</p>
-                    </div>
-                </form>
-            </div>
-
-            <div class="lg:col-span-5 flex flex-col gap-8">
-                <div class="bg-surface-container-low rounded-xl p-8 relative overflow-visible">
-                    <h3 class="font-headline text-xl text-primary mb-6">連絡先情報</h3>
-                    <ul class="space-y-4 font-body text-on-surface">
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-outline">call</span>
-                            <div>
-                                <p class="font-medium">03-XXXX-XXXX</p>
-                                <p class="text-sm text-on-surface-variant">営業時間内にお願いいたします</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-outline">location_on</span>
-                            <div>
-                                <p class="font-medium">東京都渋谷区神宮前X-X-X</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-outline">schedule</span>
-                            <div>
-                                <p class="font-medium">Lunch: 11:30 - 14:30 (L.O. 14:00)</p>
-                                <p class="font-medium">Dinner: 18:00 - 22:00 (L.O. 21:00)</p>
-                                <p class="text-sm text-on-surface-variant">定休日: 毎週月曜日・第2火曜日</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="absolute -bottom-6 -right-6 w-32 h-32 rounded-lg overflow-hidden shadow-lg border-4 border-surface z-10">
-                        <img alt="Fresh lemons and herbs" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDCfSUsq_a-vVe5VUBx_B3H8Vt0QMkHutKfunU6DeZkmvOQlJ9KG0ksvfWZpeQF7uyknfwblD34b-VgZyw3EUusIEkFPY-bh79tTRSVn1xp7NTha1ulV-XFG2mw95b2EeLiBi6-_43VGMEN_k3Z7g3axvxg1LxatJsY68Y0cFrX8mRbAeBTRs2XDR8gnwQeSTUBe5z9RVd-cTwmpc7j3_g1cmfXffvhSw-WUl2HZhoToK11aGn8tjF_N2uvytpmLI0Dr_ve0FSI8A"/>
-                    </div>
-                </div>
-
-                <div class="bg-surface-container rounded-xl p-8 mt-4">
-                    <div class="flex items-center gap-3 mb-6">
-                        <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">mail</span>
-                        <h2 class="font-headline text-xl text-on-surface">一般のお問い合わせ</h2>
-                    </div>
-                    <form class="space-y-4">
-                        <div class="space-y-1">
-                            <label class="block font-label text-xs text-on-surface-variant">お名前</label>
-                            <input class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-secondary text-on-surface py-2 px-1 text-sm" type="text"/>
-                        </div>
-                        <div class="space-y-1">
-                            <label class="block font-label text-xs text-on-surface-variant">メールアドレス</label>
-                            <input class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-secondary text-on-surface py-2 px-1 text-sm" type="email"/>
-                        </div>
-                        <div class="space-y-1 pt-2">
-                            <label class="block font-label text-xs text-on-surface-variant">お問い合わせ内容</label>
-                            <textarea class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-secondary text-on-surface py-2 px-1 resize-none text-sm" rows="4"></textarea>
-                        </div>
-                        <div class="pt-4">
-                            <button class="px-6 py-3 bg-secondary-container text-on-secondary-container rounded-lg font-label text-sm hover:bg-secondary-fixed-dim transition-colors w-full md:w-auto" type="button">
-                                送信する
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-
-<!-- PRIVACY PAGE -->
-<main id="page-privacy" class="page-section">
-    <div class="pt-28 pb-32 px-6 max-w-3xl mx-auto">
-        <div class="mb-12">
-            <h1 class="font-headline text-4xl md:text-5xl text-primary mb-4">プライバシーポリシー</h1>
-            <p class="font-body text-on-surface-variant">最終更新日: 2024年4月18日</p>
-        </div>
-
-        <div class="space-y-8 font-body text-on-surface">
-            <section>
-                <h2 class="font-headline text-2xl text-primary mb-4">1. 個人情報の取り扱いについて</h2>
-                <p class="text-on-surface-variant leading-relaxed">
-                    Trattoria Sole（以下、「当店」）は、お客様の個人情報を重要な資産として認識し、その適切な取り扱いに努めます。
-                </p>
-            </section>
-
-            <section>
-                <h2 class="font-headline text-2xl text-primary mb-4">2. 個人情報の利用目的</h2>
-                <ul class="list-disc list-inside space-y-2 text-on-surface-variant">
-                    <li>ご予約の確認・連絡</li>
-                    <li>サービス向上のためのアンケート実施</li>
-                    <li>キャンペーン情報などのご案内</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2 class="font-headline text-2xl text-primary mb-4">3. 個人情報の第三者提供について</h2>
-                <p class="text-on-surface-variant leading-relaxed">
-                    当店は、お客様の個人情報を適切に管理し、次の場合を除いて第三者に開示することはありません。
-                </p>
-                <ul class="list-disc list-inside space-y-2 text-on-surface-variant mt-4">
-                    <li>お客様の同意がある場合</li>
-                    <li>法令等への協力のため、開示が必要となる場合</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2 class="font-headline text-2xl text-primary mb-4">4. 個人情報の開示・訂正・削除等</h2>
-                <p class="text-on-surface-variant leading-relaxed">
-                    お客様ご本人からの個人情報の開示・訂正・追加・削除・利用停止のご請求がある場合は、ご本人であることを確認の上、速やかに対応いたします。
-                </p>
-            </section>
-
-            <section>
-                <h2 class="font-headline text-2xl text-primary mb-4">5. お問い合わせ</h2>
-                <p class="text-on-surface-variant leading-relaxed">
-                    個人情報の取り扱いに関するお問い合わせは、下記までご連絡ください。<br/>
-                    電話: 03-XXXX-XXXX<br/>
-                    メール: privacy@trattoria-sole.example.com
-                </p>
-            </section>
-        </div>
-    </div>
+    </section>
 </main>
 
 <!-- Footer -->
-<footer class="bg-[#f3ede4] rounded-t-[2rem] w-full mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 px-8 py-12 text-center md:text-left">
-    <div class="flex flex-col items-center md:items-start">
-        <span class="font-headline italic text-xl text-[#9f402d] mb-4">Trattoria Sole</span>
-        <p class="font-body text-sm tracking-tight text-[#524434] opacity-80">
-            © 2024 Trattoria Sole. 愛を込めて。
-        </p>
-    </div>
-    <div class="flex flex-col items-center md:items-start gap-3">
-        <h4 class="font-headline text-on-surface mb-2">メニュー</h4>
-        <a class="font-body text-sm tracking-tight text-[#524434] hover:text-[#835400] underline decoration-dotted opacity-80 hover:opacity-100 transition-opacity cursor-pointer" onclick="showPage('menu')">メニュー</a>
-        <a class="font-body text-sm tracking-tight text-[#524434] hover:text-[#835400] underline decoration-dotted opacity-80 hover:opacity-100 transition-opacity cursor-pointer" onclick="showPage('access')">アクセス</a>
-        <a class="font-body text-sm tracking-tight text-[#524434] hover:text-[#835400] underline decoration-dotted opacity-80 hover:opacity-100 transition-opacity cursor-pointer" onclick="showPage('contact')">ご予約</a>
-    </div>
-    <div class="flex flex-col items-center md:items-start gap-4">
-        <h4 class="font-headline text-on-surface mb-2">フォローする</h4>
-        <div class="flex gap-4">
-            <a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-outline hover:text-primary transition-colors" href="#">
-                <span class="material-symbols-outlined text-xl">photo_camera</span>
-            </a>
-            <a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-outline hover:text-primary transition-colors" href="#">
-                <span class="material-symbols-outlined text-xl">share</span>
-            </a>
+<footer class="bg-[#f3ede4] rounded-t-[2rem] w-full mt-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 py-12 text-center md:text-left max-w-7xl mx-auto">
+        <div class="flex flex-col items-center md:items-start">
+            <span class="font-headline italic text-xl text-[#9f402d] mb-4">Trattoria Sole</span>
+            <p class="font-body text-sm tracking-tight text-[#524434] opacity-80">
+                © 2024 Trattoria Sole. 愛を込めて。
+            </p>
+        </div>
+        <div class="flex flex-col items-center md:items-start gap-3">
+            <h4 class="font-headline text-on-surface mb-2">メニュー</h4>
+            <a class="font-body text-sm tracking-tight text-[#524434] hover:text-[#835400] underline decoration-dotted opacity-80 hover:opacity-100 transition-opacity" href="menu.html">メニュー</a>
+            <a class="font-body text-sm tracking-tight text-[#524434] hover:text-[#835400] underline decoration-dotted opacity-80 hover:opacity-100 transition-opacity" href="access.html">アクセス</a>
+            <a class="font-body text-sm tracking-tight text-[#524434] hover:text-[#835400] underline decoration-dotted opacity-80 hover:opacity-100 transition-opacity" href="contact.html">ご予約</a>
+        </div>
+        <div class="flex flex-col items-center md:items-start gap-4">
+            <h4 class="font-headline text-on-surface mb-2">フォローする</h4>
+            <div class="flex gap-4">
+                <a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-outline hover:text-primary transition-colors" href="#" aria-label="Instagram">
+                    <span class="material-symbols-outlined text-xl">photo_camera</span>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-outline hover:text-primary transition-colors" href="#" aria-label="Facebook">
+                    <span class="material-symbols-outlined text-xl">share</span>
+                </a>
+            </div>
         </div>
     </div>
 </footer>
 
 <!-- Mobile Bottom Navigation -->
 <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center pt-2 pb-2 px-4 bg-[#fff9f0]/90 backdrop-blur-lg rounded-t-3xl shadow-[0_-10px_40px_rgba(82,68,52,0.1)]">
-    <button class="mobile-nav-item flex flex-col items-center justify-center text-[#857462] hover:bg-[#e7e2d9] p-2 rounded-xl transition-colors" onclick="showPage('home')" data-page="home">
+    <a class="mobile-nav-item flex flex-col items-center justify-center text-[#857462] hover:bg-[#e7e2d9] p-2 rounded-xl transition-colors" href="index.html">
         <span class="material-symbols-outlined mb-1">home</span>
         <span class="text-[11px] font-sans uppercase tracking-widest">Home</span>
-    </button>
-    <button class="mobile-nav-item flex flex-col items-center justify-center text-[#857462] hover:bg-[#e7e2d9] p-2 rounded-xl transition-colors" onclick="showPage('menu')" data-page="menu">
+    </a>
+    <a class="mobile-nav-item flex flex-col items-center justify-center text-[#857462] hover:bg-[#e7e2d9] p-2 rounded-xl transition-colors" href="menu.html">
         <span class="material-symbols-outlined mb-1">restaurant_menu</span>
         <span class="text-[11px] font-sans uppercase tracking-widest">Menu</span>
-    </button>
-    <button class="mobile-nav-item flex flex-col items-center justify-center text-[#857462] hover:bg-[#e7e2d9] p-2 rounded-xl transition-colors" onclick="showPage('contact')" data-page="contact">
+    </a>
+    <a class="mobile-nav-item flex flex-col items-center justify-center text-[#857462] hover:bg-[#e7e2d9] p-2 rounded-xl transition-colors" href="contact.html">
         <span class="material-symbols-outlined mb-1">event</span>
         <span class="text-[11px] font-sans uppercase tracking-widest">Reserve</span>
-    </button>
-    <button class="mobile-nav-item flex flex-col items-center justify-center text-[#857462] hover:bg-[#e7e2d9] p-2 rounded-xl transition-colors" onclick="showPage('access')" data-page="access">
+    </a>
+    <a class="mobile-nav-item flex flex-col items-center justify-center text-[#857462] hover:bg-[#e7e2d9] p-2 rounded-xl transition-colors" href="access.html">
         <span class="material-symbols-outlined mb-1">location_on</span>
         <span class="text-[11px] font-sans uppercase tracking-widest">Access</span>
-    </button>
-    <button class="mobile-nav-item flex flex-col items-center justify-center text-[#857462] hover:bg-[#e7e2d9] p-2 rounded-xl transition-colors" onclick="showPage('privacy')" data-page="privacy">
-        <span class="material-symbols-outlined mb-1">policy</span>
-        <span class="text-[11px] font-sans uppercase tracking-widest">Privacy</span>
-    </button>
+    </a>
 </nav>
 
-<script>
-    function showPage(pageName) {
-        // Hide all pages
-        document.querySelectorAll('.page-section').forEach(section => {
-            section.classList.remove('active');
-        });
-
-        // Show selected page
-        const targetPage = document.getElementById('page-' + pageName);
-        if (targetPage) {
-            targetPage.classList.add('active');
-        }
-
-        // Update desktop nav
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.classList.remove('active');
-            if (link.dataset.page === pageName) {
-                link.classList.add('active');
-            }
-        });
-
-        // Update mobile nav
-        document.querySelectorAll('.mobile-nav-item').forEach(item => {
-            item.classList.remove('active');
-            if (item.dataset.page === pageName) {
-                item.classList.add('active');
-            }
-        });
-
-        // Scroll to top
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-
-        return false;
-    }
-
-    // Initialize home page as active
-    document.addEventListener('DOMContentLoaded', function() {
-        showPage('home');
-    });
-</script>
-
+<script src="js/main.js"></script>
 </body>
 </html>

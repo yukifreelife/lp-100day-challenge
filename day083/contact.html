@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Trattoria Soleのご予約・お問い合わせ。ご予約、お問い合わせはお電話またはフォームからどうぞ。">
+    <title>ご予約・お問い合わせ | Trattoria Sole（トラットリア・ソーレ）</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "outline": "#857462", "surface": "#fff9f0", "on-primary-fixed": "#3e0500",
+                    "surface-container-highest": "#e7e2d9", "outline-variant": "#d7c3ae", "error": "#ba1a1a",
+                    "on-background": "#1d1b16", "secondary-container": "#caedb4", "secondary-fixed": "#caedb4",
+                    "on-secondary-fixed": "#062100", "on-secondary-container": "#4e6c3f", "primary-fixed-dim": "#ffb4a5",
+                    "inverse-surface": "#32302a", "on-surface": "#1d1b16", "on-primary-container": "#832b1a",
+                    "error-container": "#ffdad6", "secondary": "#48663a", "on-secondary-fixed-variant": "#314e24",
+                    "surface-tint": "#9f402d", "surface-bright": "#fff9f0", "tertiary-container": "#f9a825",
+                    "on-secondary": "#ffffff", "on-error-container": "#93000a", "surface-dim": "#dfd9d1",
+                    "primary-fixed": "#ffdad3", "on-primary-fixed-variant": "#802918", "surface-variant": "#e7e2d9",
+                    "surface-container-low": "#f9f3ea", "on-tertiary-fixed": "#2a1800", "primary": "#9f402d",
+                    "surface-container-high": "#ede7df", "on-tertiary": "#ffffff", "on-error": "#ffffff",
+                    "tertiary-fixed": "#ffddb5", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#aed09a",
+                    "on-primary": "#ffffff", "on-tertiary-container": "#674100", "background": "#fff9f0",
+                    "primary-container": "#ffa08c", "tertiary-fixed-dim": "#ffb957", "on-surface-variant": "#524434",
+                    "inverse-on-surface": "#f6f0e7", "inverse-primary": "#ffb4a5", "surface-container": "#f3ede4",
+                    "on-tertiary-fixed-variant": "#643f00", "tertiary": "#835400"
+                },
+                "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                "fontFamily": { "headline": ["Noto Serif JP", "serif"], "body": ["Plus Jakarta Sans", "sans-serif"], "label": ["Plus Jakarta Sans", "sans-serif"] }
+            },
+        },
+    }
+    </script>
+</head>
+<body class="antialiased selection:bg-primary-container selection:text-on-primary-container pb-20 md:pb-0">
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fff9f0]/70 backdrop-blur-md shadow-sm shadow-[#524434]/5">
+    <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+        <a href="index.html" class="flex items-center gap-2 text-[#9f402d]">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+            <span class="font-headline font-black text-2xl">Trattoria Sole</span>
+        </a>
+        <nav class="hidden md:flex gap-8">
+            <a class="nav-link font-headline text-lg uppercase tracking-widest text-[#1d1b16] opacity-80 hover:text-[#48663a] transition-colors relative" href="index.html">ホーム</a>
+            <a class="nav-link font-headline text-lg uppercase tracking-widest text-[#1d1b16] opacity-80 hover:text-[#48663a] transition-colors relative" href="menu.html">メニュー</a>
+            <a class="nav-link font-headline text-lg uppercase tracking-widest text-[#1d1b16] opacity-80 hover:text-[#48663a] transition-colors relative" href="access.html">アクセス</a>
+            <a class="nav-link font-headline text-lg uppercase tracking-widest text-[#1d1b16] opacity-80 hover:text-[#48663a] transition-colors relative" href="privacy.html">プライバシー</a>
+        </nav>
+        <a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label text-label-md hover:bg-[#802918] transition-colors duration-300 flex items-center gap-2" href="contact.html">
+            <span>ご予約</span>
+        </a>
+    </div>
+</header>
+
+<main class="pt-28 px-6 max-w-7xl mx-auto min-h-screen">
+    <div class="mb-16 text-center max-w-2xl mx-auto">
+        <h1 class="font-headline text-4xl md:text-5xl text-primary mb-4 tracking-tight">お問い合わせ・ご予約</h1>
+        <p class="mt-6 font-body text-on-surface-variant leading-relaxed">
+            太陽の光が降り注ぐ中庭のような温かな空間で、皆様のお越しをお待ちしております。<br>
+            ご予約、または何かご不明な点がございましたらお気軽にご連絡ください。
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-12 items-start">
+        <div class="lg:col-span-7 bg-surface-container-highest rounded-xl p-5 md:p-8 lg:p-12 shadow-[0_8px_40px_-12px_rgba(82,68,52,0.06)] relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-24 h-24 md:w-32 md:h-32 bg-primary-container/20 rounded-full blur-3xl"></div>
+            <div class="flex items-center gap-2 md:gap-3 mb-6 md:mb-8">
+                <span class="material-symbols-outlined text-primary text-2xl md:text-3xl" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+                <h2 class="font-headline text-xl md:text-2xl text-on-surface">ご予約</h2>
+            </div>
+            <form id="reservation-form" class="space-y-4 md:space-y-6 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <div class="space-y-2">
+                        <label class="block font-label text-xs md:text-sm text-on-surface-variant" for="reservation-date">ご来店日</label>
+                        <input id="reservation-date" class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-primary text-on-surface py-2 px-1 text-sm md:text-base" type="date" required>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block font-label text-xs md:text-sm text-on-surface-variant" for="reservation-time">お時間</label>
+                        <select id="reservation-time" class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-primary text-on-surface py-2 px-1 text-sm md:text-base" required>
+                            <option>11:30</option>
+                            <option>12:00</option>
+                            <option>12:30</option>
+                            <option>13:00</option>
+                            <option>18:00</option>
+                            <option>18:30</option>
+                            <option>19:00</option>
+                            <option>19:30</option>
+                            <option>20:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label class="block font-label text-xs md:text-sm text-on-surface-variant" for="reservation-guests">人数</label>
+                    <select id="reservation-guests" class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-primary text-on-surface py-2 px-1 text-sm md:text-base" required>
+                        <option>1名様</option>
+                        <option selected>2名様</option>
+                        <option>3名様</option>
+                        <option>4名様</option>
+                        <option>5名様</option>
+                        <option>6名様以上（お電話にてご相談）</option>
+                    </select>
+                </div>
+                <div class="space-y-2">
+                    <label class="block font-label text-xs md:text-sm text-on-surface-variant" for="reservation-name">お名前</label>
+                    <input id="reservation-name" class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-primary text-on-surface py-2 px-1 text-sm md:text-base" placeholder="Trattoria 太郎" type="text" required>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <div class="space-y-2">
+                        <label class="block font-label text-xs md:text-sm text-on-surface-variant" for="reservation-phone">電話番号</label>
+                        <input id="reservation-phone" class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-primary text-on-surface py-2 px-1 text-sm md:text-base" placeholder="090-XXXX-XXXX" type="tel" required>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block font-label text-xs md:text-sm text-on-surface-variant" for="reservation-email">メールアドレス</label>
+                        <input id="reservation-email" class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-primary text-on-surface py-2 px-1 text-sm md:text-base" placeholder="mail@example.com" type="email">
+                    </div>
+                </div>
+                <div class="space-y-2 pt-2 md:pt-4">
+                    <label class="block font-label text-xs md:text-sm text-on-surface-variant" for="reservation-requests">ご要望・アレルギー等</label>
+                    <textarea id="reservation-requests" class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-primary text-on-surface py-2 px-1 resize-none text-sm md:text-base" placeholder="アレルギーや記念日等のご要望がございましたらご記入ください。" rows="3"></textarea>
+                </div>
+                <div class="pt-4 md:pt-6">
+                    <button class="w-full bg-primary text-on-primary py-3 md:py-4 rounded-lg font-headline text-base md:text-lg hover:bg-tertiary-fixed-dim transition-colors shadow-[0_8px_40px_-12px_rgba(82,68,52,0.2)]" type="submit">
+                        予約を申し込む
+                    </button>
+                    <p class="text-[10px] md:text-xs text-on-surface-variant text-center mt-2 md:mt-3 font-body">※ご予約の確定は店舗からのご連絡をお待ちください。</p>
+                </div>
+            </form>
+        </div>
+
+        <div class="lg:col-span-5 flex flex-col gap-6 md:gap-8">
+            <div class="bg-surface-container-low rounded-xl p-5 md:p-8 relative overflow-visible">
+                <h3 class="font-headline text-lg md:text-xl text-primary mb-4 md:mb-6">連絡先情報</h3>
+                <ul class="space-y-3 md:space-y-4 font-body text-on-surface text-sm md:text-base">
+                    <li class="flex items-start gap-2 md:gap-3">
+                        <span class="material-symbols-outlined text-outline">call</span>
+                        <div>
+                            <p class="font-medium">03-XXXX-XXXX</p>
+                            <p class="text-xs md:text-sm text-on-surface-variant">営業時間内にお願いいたします</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2 md:gap-3">
+                        <span class="material-symbols-outlined text-outline">location_on</span>
+                        <div>
+                            <p class="font-medium">東京都渋谷区神宮前X-X-X</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2 md:gap-3">
+                        <span class="material-symbols-outlined text-outline">schedule</span>
+                        <div>
+                            <p class="font-medium">Lunch: 11:30 - 14:30 (L.O. 14:00)</p>
+                            <p class="font-medium">Dinner: 18:00 - 22:00 (L.O. 21:00)</p>
+                            <p class="text-xs md:text-sm text-on-surface-variant">定休日: 毎週月曜日・第2火曜日</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="absolute -bottom-4 md:-bottom-6 -right-4 md:-right-6 w-24 h-24 md:w-32 md:h-32 rounded-lg overflow-hidden shadow-lg border-4 border-surface z-10">
+                    <img alt="新鮮な食材" class="w-full h-full object-cover" src="images/ingredients.jpg" loading="lazy">
+                </div>
+            </div>
+
+            <div class="bg-surface-container rounded-xl p-5 md:p-8 mt-2 md:mt-4">
+                <div class="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
+                    <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">mail</span>
+                    <h2 class="font-headline text-lg md:text-xl text-on-surface">一般のお問い合わせ</h2>
+                </div>
+                <form id="contact-form" class="space-y-3 md:space-y-4">
+                    <div class="space-y-1">
+                        <label class="block font-label text-[10px] md:text-xs text-on-surface-variant">お名前</label>
+                        <input class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-secondary text-on-surface py-2 px-1 text-xs md:text-sm" type="text" required>
+                    </div>
+                    <div class="space-y-1">
+                        <label class="block font-label text-[10px] md:text-xs text-on-surface-variant">メールアドレス</label>
+                        <input class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-secondary text-on-surface py-2 px-1 text-xs md:text-sm" type="email" required>
+                    </div>
+                    <div class="space-y-1 pt-1 md:pt-2">
+                        <label class="block font-label text-[10px] md:text-xs text-on-surface-variant">お問い合わせ内容</label>
+                        <textarea class="w-full bg-surface-variant border-none rounded-none ghost-border-bottom focus:ring-0 focus:border-secondary text-on-surface py-2 px-1 resize-none text-xs md:text-sm" rows="4" required></textarea>
+                    </div>
+                    <div class="pt-3 md:pt-4">
+                        <button class="w-full md:w-auto px-4 md:px-6 py-2 md:py-3 bg-secondary-container text-on-secondary-container rounded-lg font-label text-xs md:text-sm hover:bg-secondary-fixed-dim transition-colors" type="submit">
+                            送信する
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#f3ede4] rounded-t-[2rem] w-full mt-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 py-12 text-center md:text-left max-w-7xl mx-auto">
+        <div class="flex flex-col items-center md:items-start">
+            <span class="font-headline italic text-xl text-[#9f402d] mb-4">Trattoria Sole</span>
+            <p class="font-body text-sm tracking-tight text-[#524434] opacity-80">
+                © 2024 Trattoria Sole. 愛を込めて。
+            </p>
+        </div>
+        <div class="flex flex-col items-center md:items-start gap-3">
+            <h4 class="font-headline text-on-surface mb-2">メニュー</h4>
+            <a class="font-body text-sm tracking-tight text-[#524434] hover:text-[#835400] underline decoration-dotted opacity-80 hover:opacity-100 transition-opacity" href="menu.html">メニュー</a>
+            <a class="font-body text-sm tracking-tight text-[#524434] hover:text-[#835400] underline decoration-dotted opacity-80 hover:opacity-100 transition-opacity" href="access.html">アクセス</a>
+            <a class="font-body text-sm tracking-tight text-[#524434] hover:text-[#835400] underline decoration-dotted opacity-80 hover:opacity-100 transition-opacity" href="contact.html">ご予約</a>
+        </div>
+        <div class="flex flex-col items-center md:items-start gap-4">
+            <h4 class="font-headline text-on-surface mb-2">フォローする</h4>
+            <div class="flex gap-4">
+                <a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-outline hover:text-primary transition-colors" href="#">
+                    <span class="material-symbols-outlined text-xl">photo_camera</span>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-outline hover:text-primary transition-colors" href="#">
+                    <span class="material-symbols-outlined text-xl">share</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center pt-2 pb-2 px-4 bg-[#fff9f0]/90 backdrop-blur-lg rounded-t-3xl shadow-[0_-10px_40px_rgba(82,68,52,0.1)]">
+    <a class="mobile-nav-item flex flex-col items-center justify-center text-[#857462] hover:bg-[#e7e2d9] p-2 rounded-xl transition-colors" href="index.html">
+        <span class="material-symbols-outlined mb-1">home</span>
+        <span class="text-[11px] font-sans uppercase tracking-widest">Home</span>
+    </a>
+    <a class="mobile-nav-item flex flex-col items-center justify-center text-[#857462] hover:bg-[#e7e2d9] p-2 rounded-xl transition-colors" href="menu.html">
+        <span class="material-symbols-outlined mb-1">restaurant_menu</span>
+        <span class="text-[11px] font-sans uppercase tracking-widest">Menu</span>
+    </a>
+    <a class="mobile-nav-item flex flex-col items-center justify-center text-[#857462] hover:bg-[#e7e2d9] p-2 rounded-xl transition-colors" href="contact.html">
+        <span class="material-symbols-outlined mb-1">event</span>
+        <span class="text-[11px] font-sans uppercase tracking-widest">Reserve</span>
+    </a>
+    <a class="mobile-nav-item flex flex-col items-center justify-center text-[#857462] hover:bg-[#e7e2d9] p-2 rounded-xl transition-colors" href="access.html">
+        <span class="material-symbols-outlined mb-1">location_on</span>
+        <span class="text-[11px] font-sans uppercase tracking-widest">Access</span>
+    </a>
+</nav>
+
+<script src="js/main.js"></script>
+</body>
+</html>
