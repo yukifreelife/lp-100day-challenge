@@ -401,6 +401,28 @@ const worksData = [
     tech: ["HTML5", "CSS3", "JavaScript"],
     url: "./day082/",
   },
+  {
+    day: "Day83",
+    title: "Trattoria Sole | 家族で楽しむ本場イタリアの味",
+    category: "Restaurant",
+    industry: "飲食",
+    focus: "来店予約",
+    summary: "トスカーナの温かな中庭のようなひとときを提供するイタリアンレストランLP。家族連れ・カップル向けに本場の味と空間を訴求し、予約導線を最適化。",
+    metric: "多ページ構成・メニュー紹介・アクセス・お問い合わせフォーム",
+    tech: ["HTML5", "Tailwind CSS", "JavaScript"],
+    url: "./day083/",
+  },
+  {
+    day: "Day84",
+    title: "からだ工房 そら | その痛み、空のように晴れやかに",
+    category: "Medical",
+    industry: "整体院",
+    focus: "来店予約",
+    summary: "国家資格を持つ院長が根本原因を見極め、心身を「空」のように軽くする整体院LP。完全個室・完全予約制・初心者歓迎の特徴を伝え、不安を解消する構成。",
+    metric: "施術プログラム紹介・料金表・院長プロフィール・アクセス情報",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    url: "./day084/",
+  },
 ];
 
 const colorByCategory = {

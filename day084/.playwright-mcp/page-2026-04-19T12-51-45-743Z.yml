@@ -1,0 +1,200 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]: からだ工房 そら
+    - generic [ref=e4]:
+      - link "Services" [ref=e5] [cursor=pointer]:
+        - /url: "#services"
+      - link "Pricing" [ref=e6] [cursor=pointer]:
+        - /url: "#pricing"
+      - link "Practitioners" [ref=e7] [cursor=pointer]:
+        - /url: "#practitioner"
+      - link "FAQ" [ref=e8] [cursor=pointer]:
+        - /url: "#faq"
+    - link "Book Appointment" [ref=e10] [cursor=pointer]:
+      - /url: "#booking"
+      - generic [ref=e11]: Book Appointment
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - img "Modern Japanese chiropractic clinic interior with professional treatment bed and natural wood accents" [ref=e15]
+      - generic [ref=e17]:
+        - heading "重い肩・腰の悩み、 今日で終わりに。" [level=1] [ref=e18]:
+          - text: 重い肩・腰の悩み、
+          - text: 今日で終わりに。
+        - paragraph [ref=e19]: どこへ行っても変わらなかったその痛み。国家資格を持つ院長が、根本原因を見極め、あなたの心と体を「空」のように軽くします。
+        - generic [ref=e20]:
+          - link "calendar_today Web予約はこちら" [ref=e21] [cursor=pointer]:
+            - /url: "#booking"
+            - generic [ref=e22]: calendar_today
+            - text: Web予約はこちら
+          - link "当院について" [ref=e23] [cursor=pointer]:
+            - /url: "#concept"
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - generic [ref=e28]: Concept
+        - heading "心地よい空間で、 心身ともにリラックス" [level=2] [ref=e29]:
+          - text: 心地よい空間で、
+          - text: 心身ともにリラックス
+        - paragraph [ref=e30]: 当院は、従来の整骨院のイメージを覆す、まるでサロンのような落ち着いた空間をご用意しています。日々のストレスや緊張から解放され、心からリラックスして施術を受けていただけるよう、照明から香りまで細部にこだわりました。
+        - paragraph [ref=e31]: 完全個室のプライベート空間で、周りの目を気にすることなく、あなただけのリトリートタイムをお過ごしください。
+      - img "Reception Area" [ref=e33]
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]: Why Choose Us
+        - heading "当院が選ばれる4つの理由" [level=2] [ref=e38]
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - generic [ref=e42]: spa
+          - heading "完全個室" [level=3] [ref=e43]
+          - paragraph [ref=e44]: プライバシーに配慮した完全個室。リラックスして施術に集中できる環境を整えています。
+        - generic [ref=e45]:
+          - generic [ref=e47]: schedule
+          - heading "完全予約制" [level=3] [ref=e48]
+          - paragraph [ref=e49]: お待たせすることなく、あなただけの大切な時間を確保いたします。当日予約も可能です。
+        - generic [ref=e50]:
+          - generic [ref=e52]: favorite
+          - heading "初心者歓迎" [level=3] [ref=e53]
+          - paragraph [ref=e54]: 丁寧なカウンセリングで、痛みの原因を分かりやすく説明。初めての方も安心です。
+        - generic [ref=e55]:
+          - generic [ref=e57]: verified_user
+          - heading "各種保険対応" [level=3] [ref=e58]
+          - paragraph [ref=e59]: 交通事故治療や労災など、各種保険適用のご相談も承っております。
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]: Services
+          - heading "一人ひとりに合わせた 施術プログラム" [level=2] [ref=e66]:
+            - text: 一人ひとりに合わせた
+            - text: 施術プログラム
+          - paragraph [ref=e67]: 症状や目的に合わせて、最適なコースをご提案します。
+        - img "丁寧な手技による施術" [ref=e69]
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - generic [ref=e73]: accessibility_new
+          - generic [ref=e74]:
+            - heading "基本整体コース" [level=3] [ref=e75]
+            - paragraph [ref=e76]: 骨盤や背骨の歪みを整え、慢性的な肩こりや腰痛の根本改善を目指します。ボキボキしないソフトな施術です。
+            - generic [ref=e77]:
+              - generic [ref=e78]: 肩こり
+              - generic [ref=e79]: 腰痛
+              - generic [ref=e80]: 骨盤矯正
+        - generic [ref=e81]:
+          - generic [ref=e83]: person_apron
+          - generic [ref=e84]:
+            - heading "オーダーメイド施術" [level=3] [ref=e85]
+            - paragraph [ref=e86]: その日の体調や特に辛い部分に合わせて、手技・鍼灸・物理療法を組み合わせた最適なアプローチを行います。
+            - generic [ref=e87]:
+              - generic [ref=e88]: 疲労回復
+              - generic [ref=e89]: 自律神経ケア
+        - generic [ref=e90]:
+          - generic [ref=e92]: pregnant_woman
+          - generic [ref=e93]:
+            - heading "マタニティ・産後ケア" [level=3] [ref=e94]
+            - paragraph [ref=e95]: 妊娠中の腰痛やむくみ、産後の骨盤の開きなど、デリケートな時期の女性の体を優しくサポートします。
+            - generic [ref=e96]:
+              - generic [ref=e97]: マタニティ
+              - generic [ref=e98]: 産後骨盤矯正
+    - generic [ref=e100]:
+      - generic [ref=e101]:
+        - generic [ref=e102]: Pricing
+        - heading "料金案内" [level=2] [ref=e103]
+        - paragraph [ref=e104]: 明朗会計を心がけております。初回は初見料が含まれます。
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - heading "初見料" [level=4] [ref=e108]
+            - paragraph [ref=e109]: 初回カウンセリング・検査
+          - generic [ref=e110]: ¥2,200 (税込)
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - heading "基本整体コース (約45分)" [level=4] [ref=e113]
+            - paragraph [ref=e114]: 全身調整・骨盤矯正
+          - generic [ref=e115]: ¥6,600 (税込)
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - heading "オーダーメイド施術 (約60分)" [level=4] [ref=e118]
+            - paragraph [ref=e119]: 症状に合わせた特別プログラム
+          - generic [ref=e120]: ¥8,800 (税込)
+      - paragraph [ref=e121]: ※ 各種クレジットカード、電子マネーがご利用いただけます。
+    - generic [ref=e126]:
+      - img "院長 佐藤 健一" [ref=e128]
+      - generic [ref=e129]:
+        - generic [ref=e130]: 院長プロフィール
+        - heading "佐藤 健一 Kenichi Sato" [level=2] [ref=e131]
+        - paragraph [ref=e132]: 「からだ工房 そら」院長の佐藤です。業界歴15年、のべ3万人以上の施術実績に基づく確かな技術で、皆様の健康をサポートいたします。
+        - paragraph [ref=e133]: 痛みを取り除くだけでなく、なぜ痛みが起きたのか根本原因を追求し、再発しない体づくりを目指します。お一人おひとりの生活背景や体質に合わせた「オーダーメイドのケア」を大切にしています。どんな些細な不調でも、どうぞお気軽にご相談ください。
+        - generic [ref=e134]:
+          - generic [ref=e135]: 柔道整復師
+          - generic [ref=e136]: 鍼灸師
+          - generic [ref=e137]: 業界歴15年
+    - generic [ref=e140]:
+      - generic [ref=e141]:
+        - generic [ref=e142]: Access
+        - heading "アクセス・店舗情報" [level=2] [ref=e143]
+        - generic [ref=e144]:
+          - generic [ref=e145]:
+            - generic [ref=e146]: location_on
+            - generic [ref=e147]:
+              - heading "所在地" [level=4] [ref=e148]
+              - paragraph [ref=e149]:
+                - text: 〒220-0004
+                - text: 神奈川県横浜市西区北幸x-x-x
+                - text: そらビル 3F
+          - generic [ref=e150]:
+            - generic [ref=e151]: directions_subway
+            - generic [ref=e152]:
+              - heading "最寄り駅" [level=4] [ref=e153]
+              - paragraph [ref=e154]: 横浜駅 西口より徒歩5分
+          - generic [ref=e155]:
+            - generic [ref=e156]: local_parking
+            - generic [ref=e157]:
+              - heading "駐車場" [level=4] [ref=e158]
+              - paragraph [ref=e159]:
+                - text: 近隣のコインパーキングをご利用ください。
+                - text: （駐車券提示で一部補助あり）
+          - generic [ref=e160]:
+            - generic [ref=e161]: schedule
+            - generic [ref=e162]:
+              - heading "営業時間" [level=4] [ref=e163]
+              - table [ref=e164]:
+                - rowgroup [ref=e165]:
+                  - row "平日 10:00 - 20:00" [ref=e166]:
+                    - rowheader "平日" [ref=e167]
+                    - cell "10:00 - 20:00" [ref=e168]
+                  - row "土日祝 10:00 - 18:00" [ref=e169]:
+                    - rowheader "土日祝" [ref=e170]
+                    - cell "10:00 - 18:00" [ref=e171]
+                  - row "定休日 水曜日・第2火曜日" [ref=e172]:
+                    - rowheader "定休日" [ref=e173]
+                    - cell "水曜日・第2火曜日" [ref=e174]
+      - img "Map Location" [ref=e176]
+    - generic [ref=e179]:
+      - heading "まずは、お気軽にご相談ください" [level=2] [ref=e180]
+      - paragraph [ref=e181]: Web予約は24時間受け付けております。 ご不明な点がございましたら、LINEやお問い合わせフォームからもお気軽にどうぞ。
+      - link "event_available Web予約はこちら" [ref=e183] [cursor=pointer]:
+        - /url: "#booking"
+        - generic [ref=e184]: event_available
+        - text: Web予約はこちら
+  - contentinfo [ref=e185]:
+    - generic [ref=e186]:
+      - generic [ref=e187]:
+        - generic [ref=e188]: からだ工房 そら
+        - paragraph [ref=e189]: Atmospheric Clarity in Healing. 心地よい空間で、確かな技術による癒しを提供します。
+      - generic [ref=e190]:
+        - heading "Information" [level=4] [ref=e191]
+        - list [ref=e192]:
+          - listitem [ref=e193]:
+            - link "Privacy Policy" [ref=e194] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e195]:
+            - link "Terms of Service" [ref=e196] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e197]:
+        - heading "Visit Us" [level=4] [ref=e198]
+        - list [ref=e199]:
+          - listitem [ref=e200]:
+            - link "Parking Info" [ref=e201] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e202]:
+            - link "Accessibility" [ref=e203] [cursor=pointer]:
+              - /url: "#"
+    - paragraph [ref=e205]: © 2024 からだ工房 そら. Atmospheric Clarity in Healing.

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>からだ工房 そら | その痛み、空のように晴れやかに。</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface": "#fffcf7",
+                      "primary-fixed-dim": "#8dc1f0",
+                      "on-primary": "#ffffff",
+                      "surface-bright": "#fffcf7",
+                      "error": "#af3d3b",
+                      "tertiary-fixed-dim": "#d7e9b8",
+                      "on-tertiary-container": "#505f39",
+                      "on-secondary-fixed-variant": "#6e573e",
+                      "primary": "#316993",
+                      "outline-variant": "#bbb9b2",
+                      "primary-dim": "#225c87",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#65655e",
+                      "surface-dim": "#e4e3da",
+                      "outline": "#81817a",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-fixed-variant": "#0c4f78",
+                      "tertiary-fixed": "#e5f8c5",
+                      "surface-container-highest": "#eae8e0",
+                      "secondary-fixed": "#fdddbc",
+                      "tertiary-dim": "#4e5d37",
+                      "secondary-fixed-dim": "#eecfaf",
+                      "error-dim": "#67040d",
+                      "on-tertiary": "#ffffff",
+                      "secondary": "#786046",
+                      "primary-container": "#9aceff",
+                      "surface-variant": "#eae8e0",
+                      "surface-container": "#f6f3ec",
+                      "on-primary-container": "#00466d",
+                      "inverse-on-surface": "#9e9d98",
+                      "secondary-dim": "#6b543b",
+                      "on-tertiary-fixed-variant": "#5a6a42",
+                      "background": "#fffcf7",
+                      "primary-fixed": "#9aceff",
+                      "on-surface": "#383833",
+                      "surface-container-high": "#f0eee6",
+                      "on-error-container": "#6e0a12",
+                      "inverse-surface": "#0e0e0c",
+                      "on-secondary-fixed": "#503c24",
+                      "on-background": "#383833",
+                      "surface-container-low": "#fcf9f3",
+                      "on-secondary-container": "#644e35",
+                      "tertiary-container": "#e5f8c5",
+                      "tertiary": "#5a6a42",
+                      "error-container": "#fa746f",
+                      "inverse-primary": "#9aceff",
+                      "on-error": "#ffffff",
+                      "secondary-container": "#fdddbc",
+                      "on-primary-fixed": "#00314e",
+                      "on-tertiary-fixed": "#3e4d28",
+                      "surface-tint": "#316993"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Plus Jakarta Sans", "sans-serif"
+                      ],
+                      "body": [
+                              "Inter", "sans-serif"
+                      ],
+                      "label": [
+                              "Inter", "sans-serif"
+                      ]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-gradient-primary {
+            background: linear-gradient(135deg, #225c87 0%, #316993 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #225c87 0%, #316993 100%);
+        }
+        .glass-panel {
+            background: rgba(255, 252, 247, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .ambient-shadow {
+            box-shadow: 0 12px 40px rgba(56, 56, 51, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased leading-relaxed selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl rounded-full z-50 glass-panel ambient-shadow flex justify-between items-center px-8 py-3 transition-transform duration-300">
+<div class="flex items-center gap-2">
+<span class="text-2xl font-bold tracking-tight text-primary font-headline">からだ工房 そら</span>
+</div>
+<div class="hidden md:flex items-center gap-8 font-headline">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-sm tracking-wide" href="#services">Services</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-sm tracking-wide" href="#pricing">Pricing</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-sm tracking-wide" href="#practitioner">Practitioners</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-sm tracking-wide" href="#faq">FAQ</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden lg:block text-primary font-medium hover:text-primary-dim transition-colors text-sm" href="#contact">Contact</a>
+<a class="bg-gradient-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-semibold text-sm hover:opacity-90 transition-opacity ambient-shadow flex items-center gap-2" href="#booking">
+<span>Book Appointment</span>
+</a>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Modern Japanese chiropractic clinic interior with professional treatment bed and natural wood accents" class="w-full h-full object-cover opacity-90" data-alt="High-quality, wide-angle shot of a modern, clean, and bright Japanese chiropractic clinic interior for a website hero background. Show a professional blue massage table in a private treatment room with natural wood accents, soft sunlight streaming through large windows, and lush green plants." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBESbX6mVIp9SpD1EEWx1TDeSM77_6P52VB_FJTcK1IEjOU_FYhgQnf5JekirIU-wn0tV_G7MXmlRTRWh8Srm89peKjUqjt39XoXQvZN509u3rAzQoJm1nfCm6mEpQwUodyNmy_s-PAAUGJ4NjvCWqqUCcw1XjidVeRZfPR8mWCQjzJ2AeFVC5fhXqmfM5ATEBG2CY0NyrvP7TXGC5EDlNaouKLLHDrDEFIHniyAqRq32MT2aT5N1pt36AqYPqrDIpxzXk73F1iMcg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/90 via-surface/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<h1 class="text-5xl lg:text-7xl font-extrabold font-headline text-on-surface leading-[1.1] tracking-tight">重い肩・腰の悩み、<br/><span class="text-gradient-primary">今日で終わりに。</span></h1>
+<p class="text-lg lg:text-xl text-on-surface-variant max-w-2xl leading-relaxed">どこへ行っても変わらなかったその痛み。国家資格を持つ院長が、根本原因を見極め、あなたの心と体を「空」のように軽くします。</p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="bg-gradient-primary text-on-primary px-8 py-4 rounded-full font-headline font-semibold text-center hover:opacity-90 transition-opacity ambient-shadow inline-flex items-center justify-center gap-2" href="#booking">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+                            Web予約はこちら
+                        </a>
+<a class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-headline font-semibold text-center hover:bg-surface-container transition-colors inline-flex items-center justify-center gap-2" href="#concept">
+                            当院について
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Concept Section -->
+<section class="py-24 bg-surface-container-low" id="concept">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1 space-y-8">
+<div class="space-y-2">
+<span class="text-sm font-bold tracking-widest text-secondary font-headline uppercase">Concept</span>
+<h2 class="text-3xl lg:text-4xl font-bold font-headline text-on-surface">心地よい空間で、<br/>心身ともにリラックス</h2>
+</div>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                            当院は、従来の整骨院のイメージを覆す、まるでサロンのような落ち着いた空間をご用意しています。日々のストレスや緊張から解放され、心からリラックスして施術を受けていただけるよう、照明から香りまで細部にこだわりました。
+                        </p>
+<p class="text-on-surface-variant leading-relaxed">
+                            完全個室のプライベート空間で、周りの目を気にすることなく、あなただけのリトリートタイムをお過ごしください。
+                        </p>
+</div>
+<div class="order-1 lg:order-2 relative rounded-2xl overflow-hidden ambient-shadow h-[400px] lg:h-[500px]">
+<img alt="Reception Area" class="w-full h-full object-cover" data-alt="A tranquil, modern clinic reception area with warm indirect lighting, natural wood paneling, comfortable minimalist seating, and a serene atmosphere inviting relaxation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJEolSFGCKdiCc3NA1EGxFunEKzAXZz-yYpwg-Xc4Yql9blU3816koakSAFrpGZmtGmbLnnJwIf3F3i9HQSHtQCIAb708ESsfCev1efTMqWmYOn2UCiSTtrjXqaBg51Kq2M61vdwxQPPHGBh3v3b5FdIQwrbjm_wLulBvdduJNEi06TQj2s4rOEMmsgqxN2DqsxqSQwNXoR20kWoPb1dZfA249USFEnZyCdmRI0u5RugahcBRjJlzHrrevxzW3GXa88nbHCoN3LUc"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Strengths / Features Bento Grid -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center space-y-4 mb-16">
+<span class="text-sm font-bold tracking-widest text-secondary font-headline uppercase">Why Choose Us</span>
+<h2 class="text-3xl lg:text-4xl font-bold font-headline text-on-surface">当院が選ばれる4つの理由</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Feature 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 ambient-shadow relative overflow-hidden group">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center mb-6 text-on-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<h3 class="text-xl font-bold font-headline mb-3 text-on-surface">完全個室</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            プライバシーに配慮した完全個室。リラックスして施術に集中できる環境を整えています。
+                        </p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 ambient-shadow relative overflow-hidden group">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center mb-6 text-on-tertiary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">schedule</span>
+</div>
+<h3 class="text-xl font-bold font-headline mb-3 text-on-surface">完全予約制</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            お待たせすることなく、あなただけの大切な時間を確保いたします。当日予約も可能です。
+                        </p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 ambient-shadow relative overflow-hidden group">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center mb-6 text-on-secondary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<h3 class="text-xl font-bold font-headline mb-3 text-on-surface">初心者歓迎</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            丁寧なカウンセリングで、痛みの原因を分かりやすく説明。初めての方も安心です。
+                        </p>
+</div>
+<!-- Feature 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 ambient-shadow relative overflow-hidden group">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center mb-6 text-on-surface-variant">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<h3 class="text-xl font-bold font-headline mb-3 text-on-surface">各種保険対応</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            交通事故治療や労災など、各種保険適用のご相談も承っております。
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-surface-container-low" id="services">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col lg:flex-row gap-16">
+<div class="lg:w-1/3 space-y-8">
+<div class="space-y-6 sticky top-32">
+<div class="space-y-2">
+<span class="text-sm font-bold tracking-widest text-secondary font-headline uppercase">Services</span>
+<h2 class="text-3xl lg:text-4xl font-bold font-headline text-on-surface">一人ひとりに合わせた<br/>施術プログラム</h2>
+<p class="text-on-surface-variant pt-4">
+                                症状や目的に合わせて、最適なコースをご提案します。
+                            </p>
+</div>
+<div class="rounded-2xl overflow-hidden ambient-shadow mt-8">
+<img alt="丁寧な手技による施術" class="w-full h-full object-cover aspect-[4/3] lg:aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGsETLCMSSfstGB18tBf3C3hDunQnyIV-RjkPr8vqX6Bl7U3FCS3FT-joiqY4vXMSAcuWXDtCN26sEv6kA7e4SfTsotXkjGFI3JMEtyk66TNSFfSmXt9kk2qAh-wOSYGVO2SsGM_jONUs0gSIZLhuLqtqsiF9T1MP_umuF0LZWWgukpg_NQAr7Bm78y7_6ah8OW-pUQP0zeeTrNjBLqz2IsKy4YtJ8X32lE3xhPVKxbTtMSFe20QTIU0KF2m3mhbqIcF1n5BuzXqM"/>
+</div>
+</div>
+</div>
+<div class="lg:w-2/3 space-y-6">
+<!-- Service Card 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 ambient-shadow flex flex-col sm:flex-row gap-8 items-start">
+<div class="w-16 h-16 rounded-full bg-primary-container flex-shrink-0 flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">accessibility_new</span>
+</div>
+<div>
+<h3 class="text-xl font-bold font-headline mb-2 text-on-surface">基本整体コース</h3>
+<p class="text-on-surface-variant mb-4 leading-relaxed">
+                                    骨盤や背骨の歪みを整え、慢性的な肩こりや腰痛の根本改善を目指します。ボキボキしないソフトな施術です。
+                                </p>
+<div class="flex gap-2">
+<span class="inline-block bg-surface-container-high text-on-surface-variant text-xs px-3 py-1 rounded-full">肩こり</span>
+<span class="inline-block bg-surface-container-high text-on-surface-variant text-xs px-3 py-1 rounded-full">腰痛</span>
+<span class="inline-block bg-surface-container-high text-on-surface-variant text-xs px-3 py-1 rounded-full">骨盤矯正</span>
+</div>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 ambient-shadow flex flex-col sm:flex-row gap-8 items-start">
+<div class="w-16 h-16 rounded-full bg-tertiary-container flex-shrink-0 flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">person_apron</span>
+</div>
+<div>
+<h3 class="text-xl font-bold font-headline mb-2 text-on-surface">オーダーメイド施術</h3>
+<p class="text-on-surface-variant mb-4 leading-relaxed">
+                                    その日の体調や特に辛い部分に合わせて、手技・鍼灸・物理療法を組み合わせた最適なアプローチを行います。
+                                </p>
+<div class="flex gap-2">
+<span class="inline-block bg-surface-container-high text-on-surface-variant text-xs px-3 py-1 rounded-full">疲労回復</span>
+<span class="inline-block bg-surface-container-high text-on-surface-variant text-xs px-3 py-1 rounded-full">自律神経ケア</span>
+</div>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 ambient-shadow flex flex-col sm:flex-row gap-8 items-start">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex-shrink-0 flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">pregnant_woman</span>
+</div>
+<div>
+<h3 class="text-xl font-bold font-headline mb-2 text-on-surface">マタニティ・産後ケア</h3>
+<p class="text-on-surface-variant mb-4 leading-relaxed">
+                                    妊娠中の腰痛やむくみ、産後の骨盤の開きなど、デリケートな時期の女性の体を優しくサポートします。
+                                </p>
+<div class="flex gap-2">
+<span class="inline-block bg-surface-container-high text-on-surface-variant text-xs px-3 py-1 rounded-full">マタニティ</span>
+<span class="inline-block bg-surface-container-high text-on-surface-variant text-xs px-3 py-1 rounded-full">産後骨盤矯正</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-24 bg-surface" id="pricing">
+<div class="max-w-4xl mx-auto px-6">
+<div class="text-center space-y-4 mb-16">
+<span class="text-sm font-bold tracking-widest text-secondary font-headline uppercase">Pricing</span>
+<h2 class="text-3xl lg:text-4xl font-bold font-headline text-on-surface">料金案内</h2>
+<p class="text-on-surface-variant">明朗会計を心がけております。初回は初見料が含まれます。</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden ambient-shadow">
+<div class="divide-y divide-surface-variant outline-variant/15 outline outline-1 rounded-2xl">
+<!-- Pricing Row -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center p-6 hover:bg-surface-container-low transition-colors">
+<div>
+<h4 class="text-lg font-bold text-on-surface">初見料</h4>
+<p class="text-sm text-on-surface-variant mt-1">初回カウンセリング・検査</p>
+</div>
+<div class="mt-4 sm:mt-0 text-right">
+<span class="text-2xl font-bold font-headline text-primary">¥2,200</span>
+<span class="text-sm text-on-surface-variant"> (税込)</span>
+</div>
+</div>
+<!-- Pricing Row -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center p-6 hover:bg-surface-container-low transition-colors">
+<div>
+<h4 class="text-lg font-bold text-on-surface">基本整体コース (約45分)</h4>
+<p class="text-sm text-on-surface-variant mt-1">全身調整・骨盤矯正</p>
+</div>
+<div class="mt-4 sm:mt-0 text-right">
+<span class="text-2xl font-bold font-headline text-primary">¥6,600</span>
+<span class="text-sm text-on-surface-variant"> (税込)</span>
+</div>
+</div>
+<!-- Pricing Row -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center p-6 hover:bg-surface-container-low transition-colors">
+<div>
+<h4 class="text-lg font-bold text-on-surface">オーダーメイド施術 (約60分)</h4>
+<p class="text-sm text-on-surface-variant mt-1">症状に合わせた特別プログラム</p>
+</div>
+<div class="mt-4 sm:mt-0 text-right">
+<span class="text-2xl font-bold font-headline text-primary">¥8,800</span>
+<span class="text-sm text-on-surface-variant"> (税込)</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 text-center text-sm text-on-surface-variant">
+                    ※ 各種クレジットカード、電子マネーがご利用いただけます。
+                </div>
+</div>
+</section>
+<!-- Practitioner Section -->
+<section class="py-24 bg-surface-container-low" id="practitioner">
+<div class="max-w-6xl mx-auto px-6">
+<div class="bg-surface-container-lowest rounded-3xl p-8 lg:p-12 ambient-shadow overflow-hidden relative">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container rounded-bl-full opacity-20 -z-10"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden">
+<img alt="院長 佐藤 健一" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbiq3a5Bzse-H12yZgcR36h51t5GzBtpN3YUrwNeWuPO9GScgnBJV4ldYyV8FcnlnhpA37RjwN-15qiYPEFEeUPC4QwVyR6cDEBk-JV9W2kZI19hgcSWCmyc6teKPHlMbcLMa9t_45p4W7tWwqtF2JMVzvALY3aXjqtbfmIUJ-yZ072s3orvLuXlR90Nlw7_g9zTUqu7GiVh7J-GSzp7l1ckF4xkZ6t0aslQHPjSaylyLHpox-BpSilN95L-2WGUmeOTGLjZB8L-Y"/>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-6">
+<div class="space-y-2">
+<span class="text-sm font-bold tracking-widest text-primary font-headline uppercase">院長プロフィール</span>
+<h2 class="text-3xl font-bold font-headline text-on-surface">佐藤 健一 <span class="text-xl font-normal text-on-surface-variant ml-2">Kenichi Sato</span></h2>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                                「からだ工房 そら」院長の佐藤です。業界歴15年、のべ3万人以上の施術実績に基づく確かな技術で、皆様の健康をサポートいたします。
+                            </p>
+<p class="text-on-surface-variant leading-relaxed">
+                                痛みを取り除くだけでなく、なぜ痛みが起きたのか根本原因を追求し、再発しない体づくりを目指します。お一人おひとりの生活背景や体質に合わせた「オーダーメイドのケア」を大切にしています。どんな些細な不調でも、どうぞお気軽にご相談ください。
+                            </p>
+<div class="pt-6 border-t border-surface-variant/50 flex flex-wrap gap-4">
+<div class="bg-surface-container px-4 py-2 rounded-lg text-sm text-on-surface font-medium">柔道整復師</div>
+<div class="bg-surface-container px-4 py-2 rounded-lg text-sm text-on-surface font-medium">鍼灸師</div>
+<div class="bg-surface-container px-4 py-2 rounded-lg text-sm text-on-surface font-medium">業界歴15年</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Access / Location Section -->
+<section class="py-24 bg-surface" id="contact">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div class="space-y-8">
+<div class="space-y-2">
+<span class="text-sm font-bold tracking-widest text-secondary font-headline uppercase">Access</span>
+<h2 class="text-3xl font-bold font-headline text-on-surface">アクセス・店舗情報</h2>
+</div>
+<div class="space-y-6 bg-surface-container-low p-8 rounded-2xl">
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<h4 class="font-bold text-on-surface mb-1">所在地</h4>
+<p class="text-on-surface-variant text-sm">〒220-0004<br/>神奈川県横浜市西区北幸x-x-x<br/>そらビル 3F</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary mt-1">directions_subway</span>
+<div>
+<h4 class="font-bold text-on-surface mb-1">最寄り駅</h4>
+<p class="text-on-surface-variant text-sm">横浜駅 西口より徒歩5分</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary mt-1">local_parking</span>
+<div>
+<h4 class="font-bold text-on-surface mb-1">駐車場</h4>
+<p class="text-on-surface-variant text-sm">近隣のコインパーキングをご利用ください。<br/>（駐車券提示で一部補助あり）</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary mt-1">schedule</span>
+<div class="w-full">
+<h4 class="font-bold text-on-surface mb-2">営業時間</h4>
+<table class="w-full text-sm text-on-surface-variant text-left">
+<tbody>
+<tr class="border-b border-surface-variant/50">
+<th class="py-2 font-normal">平日</th>
+<td class="py-2">10:00 - 20:00</td>
+</tr>
+<tr class="border-b border-surface-variant/50">
+<th class="py-2 font-normal">土日祝</th>
+<td class="py-2">10:00 - 18:00</td>
+</tr>
+<tr>
+<th class="py-2 font-normal">定休日</th>
+<td class="py-2">水曜日・第2火曜日</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-2xl overflow-hidden ambient-shadow h-[400px] lg:h-auto bg-surface-container-high relative">
+<!-- Map Placeholder -->
+<div class="absolute inset-0 flex items-center justify-center text-on-surface-variant">
+<img alt="Map Location" class="w-full h-full object-cover" data-alt="A stylized, clean map showing the location of the clinic near Yokohama station, using soft blue and beige tones." data-location="Yokohama" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7Q0gJihthCO3VbFlcYvs34OiOcT-2PUDV8xPoe9zg3c2Z-EBUCr3inDPPeImTF0RPAFm1aq5Jg-D8OI1XN5Za-W7m6vp9JywNDE20LHkSHL4t9fkP0tRtAg1MAZxxqJTozYHQ7LLoElXnkddP5iJLf3obDW1Kjx8peG_RwCZBK8oejIyGWCTpss64rtIUiFiJ9nDaQOgQSD17yiGi3yGGVLHMg2MBOb95kywJSVCxz64ch9mXTaJgf9DP4XaL5mu0nhsctcE3-HQ"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 bg-surface-container-highest relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-primary opacity-5"></div>
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10 space-y-8">
+<h2 class="text-3xl lg:text-4xl font-bold font-headline text-on-surface">まずは、お気軽にご相談ください</h2>
+<p class="text-on-surface-variant text-lg">
+                    Web予約は24時間受け付けております。<br class="hidden sm:block"/>ご不明な点がございましたら、LINEやお問い合わせフォームからもお気軽にどうぞ。
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4 pt-6">
+<a class="bg-gradient-primary text-on-primary px-8 py-4 rounded-full font-headline font-semibold hover:opacity-90 transition-opacity ambient-shadow inline-flex items-center justify-center gap-2 text-lg" href="#booking">
+<span class="material-symbols-outlined">event_available</span>
+                        Web予約はこちら
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component from JSON -->
+<footer class="bg-[#f7f2eb] dark:bg-slate-950 full-width pt-20 pb-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<!-- Brand Column -->
+<div class="space-y-4 md:col-span-2">
+<div class="text-xl font-bold text-slate-800 dark:text-slate-200 font-headline">からだ工房 そら</div>
+<p class="text-slate-500 dark:text-slate-400 font-body text-sm max-w-sm">
+                    Atmospheric Clarity in Healing. 心地よい空間で、確かな技術による癒しを提供します。
+                </p>
+</div>
+<!-- Links Column -->
+<div class="space-y-4">
+<h4 class="font-bold text-slate-800 dark:text-slate-200 font-headline text-sm uppercase tracking-wider">Information</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-500 font-body text-sm hover:translate-x-1 transition-transform duration-200 ease-in-out opacity changes on link hover inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-500 font-body text-sm hover:translate-x-1 transition-transform duration-200 ease-in-out opacity changes on link hover inline-block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div class="space-y-4">
+<h4 class="font-bold text-slate-800 dark:text-slate-200 font-headline text-sm uppercase tracking-wider">Visit Us</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-500 font-body text-sm hover:translate-x-1 transition-transform duration-200 ease-in-out opacity changes on link hover inline-block" href="#">Parking Info</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-500 font-body text-sm hover:translate-x-1 transition-transform duration-200 ease-in-out opacity changes on link hover inline-block" href="#">Accessibility</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-slate-200/50 dark:border-slate-800/50 text-center">
+<p class="text-slate-500 dark:text-slate-400 font-body text-sm">
+                © 2024 からだ工房 そら. Atmospheric Clarity in Healing.
+            </p>
+</div>
+</footer>
+</body></html>
