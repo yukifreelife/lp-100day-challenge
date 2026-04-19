@@ -1,0 +1,1034 @@
+- generic [active] [ref=e1]:
+  - link "本文へスキップ" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "LP Portfolio 100 トップへ" [ref=e5] [cursor=pointer]:
+        - /url: "#top"
+        - text: LP Portfolio 100
+      - navigation "グローバルナビゲーション" [ref=e6]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link "Case" [ref=e9] [cursor=pointer]:
+              - /url: "#cases"
+          - listitem [ref=e10]:
+            - link "Works" [ref=e11] [cursor=pointer]:
+              - /url: "#works"
+          - listitem [ref=e12]:
+            - link "Contact" [ref=e13] [cursor=pointer]:
+              - /url: "#contact"
+  - main [ref=e14]:
+    - region "どんなLPを作ってきたかを、最初の10秒で伝える" [ref=e15]:
+      - generic [ref=e16]:
+        - paragraph [ref=e17]: LP Creator Portfolio / 100 Days Challenge
+        - heading "どんなLPを作ってきたかを、最初の10秒で伝える" [level=1] [ref=e18]
+        - paragraph [ref=e19]: LP風の紹介ページではなく、制作実績を主役にしたPortfolio First設計へ再構築。業種・目的・導線設計の幅がひと目でわかる構成にしています。
+        - generic [ref=e20]:
+          - link "全実績を見る" [ref=e21] [cursor=pointer]:
+            - /url: "#works"
+          - link "案件相談する" [ref=e22] [cursor=pointer]:
+            - /url: "#contact"
+        - list "ポートフォリオの統計" [ref=e23]:
+          - listitem [ref=e24]:
+            - generic [ref=e25]: "38"
+            - text: 公開LP
+          - listitem [ref=e26]:
+            - generic [ref=e27]: "16"
+            - text: カテゴリ
+          - listitem [ref=e28]:
+            - generic [ref=e29]: "28"
+            - text: 訴求目的
+      - generic "制作LPリール" [ref=e30]:
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - paragraph [ref=e33]: LP Reel
+            - generic [ref=e34]: 一定時間ごとに自動スライド / ボタン・スワイプで手動操作可能
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - paragraph [ref=e37]: Lane 01
+              - generic "Lane 01 操作" [ref=e38]:
+                - button "前のカードへ" [ref=e39] [cursor=pointer]:
+                  - generic [ref=e40]: ‹
+                - button "次のカードへ" [ref=e41] [cursor=pointer]:
+                  - generic [ref=e42]: ›
+            - generic [ref=e44]:
+              - link "Day01 BtoB SaaS 資料請求LP の成果物を開く" [ref=e45] [cursor=pointer]:
+                - /url: ./day001/
+                - generic [ref=e46]:
+                  - img "Day01 BtoB SaaS 資料請求LP のサムネイル" [ref=e47]
+                  - generic [ref=e48]: Day01 / SaaS
+                - generic [ref=e49]:
+                  - paragraph [ref=e50]: BtoB SaaS 資料請求LP
+                  - paragraph [ref=e51]: 資料請求 | IT
+              - link "Day02 採用向けコーポレートLP の成果物を開く" [ref=e52] [cursor=pointer]:
+                - /url: ./day002/
+                - generic [ref=e53]:
+                  - img "Day02 採用向けコーポレートLP のサムネイル" [ref=e54]
+                  - generic [ref=e55]: Day02 / Corporate
+                - generic [ref=e56]:
+                  - paragraph [ref=e57]: 採用向けコーポレートLP
+                  - paragraph [ref=e58]: 採用応募 | 人材
+              - link "Day03 単品EC 商品販売LP の成果物を開く" [ref=e59] [cursor=pointer]:
+                - /url: ./day003/
+                - generic [ref=e60]:
+                  - img "Day03 単品EC 商品販売LP のサムネイル" [ref=e61]
+                  - generic [ref=e62]: Day03 / EC
+                - generic [ref=e63]:
+                  - paragraph [ref=e64]: 単品EC 商品販売LP
+                  - paragraph [ref=e65]: 購入 | D2C
+              - link "Day04 オンラインスクール説明LP の成果物を開く" [ref=e66] [cursor=pointer]:
+                - /url: ./day004/
+                - generic [ref=e67]:
+                  - img "Day04 オンラインスクール説明LP のサムネイル" [ref=e68]
+                  - generic [ref=e69]: Day04 / Education
+                - generic [ref=e70]:
+                  - paragraph [ref=e71]: オンラインスクール説明LP
+                  - paragraph [ref=e72]: 体験申込 | 教育
+              - link "Day05 美容体験予約LP の成果物を開く" [ref=e73] [cursor=pointer]:
+                - /url: ./day005/
+                - generic [ref=e74]:
+                  - img "Day05 美容体験予約LP のサムネイル" [ref=e75]
+                  - generic [ref=e76]: Day05 / Beauty
+                - generic [ref=e77]:
+                  - paragraph [ref=e78]: 美容体験予約LP
+                  - paragraph [ref=e79]: 来店予約 | 美容
+              - link "Day06 イベント集客キャンペーンLP の成果物を開く" [ref=e80] [cursor=pointer]:
+                - /url: ./day006/
+                - generic [ref=e81]:
+                  - img "Day06 イベント集客キャンペーンLP のサムネイル" [ref=e82]
+                  - generic [ref=e83]: Day06 / Event
+                - generic [ref=e84]:
+                  - paragraph [ref=e85]: イベント集客キャンペーンLP
+                  - paragraph [ref=e86]: 参加登録 | イベント
+              - link "Day07 法人向け無料相談LP の成果物を開く" [ref=e87] [cursor=pointer]:
+                - /url: ./day007/
+                - generic [ref=e88]:
+                  - img "Day07 法人向け無料相談LP のサムネイル" [ref=e89]
+                  - generic [ref=e90]: Day07 / Corporate
+                - generic [ref=e91]:
+                  - paragraph [ref=e92]: 法人向け無料相談LP
+                  - paragraph [ref=e93]: 無料相談 | コンサル
+              - link "Day08 食品D2C定期購入LP の成果物を開く" [ref=e94] [cursor=pointer]:
+                - /url: ./day008/
+                - generic [ref=e95]:
+                  - img "Day08 食品D2C定期購入LP のサムネイル" [ref=e96]
+                  - generic [ref=e97]: Day08 / EC
+                - generic [ref=e98]:
+                  - paragraph [ref=e99]: 食品D2C定期購入LP
+                  - paragraph [ref=e100]: 定期申込 | 食品
+              - link "Day09 SaaS 無料トライアルLP の成果物を開く" [ref=e101] [cursor=pointer]:
+                - /url: ./day009/
+                - generic [ref=e102]:
+                  - img "Day09 SaaS 無料トライアルLP のサムネイル" [ref=e103]
+                  - generic [ref=e104]: Day09 / SaaS
+                - generic [ref=e105]:
+                  - paragraph [ref=e106]: SaaS 無料トライアルLP
+                  - paragraph [ref=e107]: 無料登録 | IT
+              - link "Day10 士業サービス紹介LP の成果物を開く" [ref=e108] [cursor=pointer]:
+                - /url: ./day010/
+                - generic [ref=e109]:
+                  - img "Day10 士業サービス紹介LP のサムネイル" [ref=e110]
+                  - generic [ref=e111]: Day10 / Corporate
+                - generic [ref=e112]:
+                  - paragraph [ref=e113]: 士業サービス紹介LP
+                  - paragraph [ref=e114]: お問い合わせ | 士業
+              - link "Day11 サブスクEC申込LP の成果物を開く" [ref=e115] [cursor=pointer]:
+                - /url: ./day011/
+                - generic [ref=e116]:
+                  - img "Day11 サブスクEC申込LP のサムネイル" [ref=e117]
+                  - generic [ref=e118]: Day11 / EC
+                - generic [ref=e119]:
+                  - paragraph [ref=e120]: サブスクEC申込LP
+                  - paragraph [ref=e121]: 申込 | D2C
+              - link "Day12 BtoB 見積依頼LP の成果物を開く" [ref=e122] [cursor=pointer]:
+                - /url: ./day012/
+                - generic [ref=e123]:
+                  - img "Day12 BtoB 見積依頼LP のサムネイル" [ref=e124]
+                  - generic [ref=e125]: Day12 / SaaS
+                - generic [ref=e126]:
+                  - paragraph [ref=e127]: BtoB 見積依頼LP
+                  - paragraph [ref=e128]: 見積依頼 | 業務支援
+          - generic [ref=e129]:
+            - generic [ref=e130]:
+              - paragraph [ref=e131]: Lane 02
+              - generic "Lane 02 操作" [ref=e132]:
+                - button "前のカードへ" [ref=e133] [cursor=pointer]:
+                  - generic [ref=e134]: ‹
+                - button "次のカードへ" [ref=e135] [cursor=pointer]:
+                  - generic [ref=e136]: ›
+            - generic [ref=e138]:
+              - link "Day84 からだ工房 そら | その痛み、空のように晴れやかに の成果物を開く" [ref=e139] [cursor=pointer]:
+                - /url: ./day084/
+                - generic [ref=e140]:
+                  - text: No image
+                  - generic [ref=e141]: Day84 / Medical
+                - generic [ref=e142]:
+                  - paragraph [ref=e143]: からだ工房 そら | その痛み、空のように晴れやかに
+                  - paragraph [ref=e144]: 来店予約 | 整体院
+              - link "Day83 Trattoria Sole | 家族で楽しむ本場イタリアの味 の成果物を開く" [ref=e145] [cursor=pointer]:
+                - /url: ./day083/
+                - generic [ref=e146]:
+                  - text: No image
+                  - generic [ref=e147]: Day83 / Restaurant
+                - generic [ref=e148]:
+                  - paragraph [ref=e149]: Trattoria Sole | 家族で楽しむ本場イタリアの味
+                  - paragraph [ref=e150]: 来店予約 | 飲食
+              - link "Day82 FocusFlow | 集中力を高めるタスク管理アプリLP の成果物を開く" [ref=e151] [cursor=pointer]:
+                - /url: ./day082/
+                - generic [ref=e152]:
+                  - text: No image
+                  - generic [ref=e153]: Day82 / SaaS
+                - generic [ref=e154]:
+                  - paragraph [ref=e155]: FocusFlow | 集中力を高めるタスク管理アプリLP
+                  - paragraph [ref=e156]: 無料トライアル登録 | プロダクティビティ
+              - link "Day81 鮨 さかだ | 築地前寿司LP の成果物を開く" [ref=e157] [cursor=pointer]:
+                - /url: ./day081/
+                - generic [ref=e158]:
+                  - text: No image
+                  - generic [ref=e159]: Day81 / Food
+                - generic [ref=e160]:
+                  - paragraph [ref=e161]: 鮨 さかだ | 築地前寿司LP
+                  - paragraph [ref=e162]: 来店予約 | 飲食
+              - link "Day80 まなびPLUS | 個人家庭教師LP の成果物を開く" [ref=e163] [cursor=pointer]:
+                - /url: ./day080/
+                - generic [ref=e164]:
+                  - text: No image
+                  - generic [ref=e165]: Day80 / Education
+                - generic [ref=e166]:
+                  - paragraph [ref=e167]: まなびPLUS | 個人家庭教師LP
+                  - paragraph [ref=e168]: 無料体験予約 | 教育
+              - link "Day79 CodeKids | 子ども向けプログラミング教室LP の成果物を開く" [ref=e169] [cursor=pointer]:
+                - /url: ./day079/
+                - generic [ref=e170]:
+                  - text: No image
+                  - generic [ref=e171]: Day79 / Education
+                - generic [ref=e172]:
+                  - paragraph [ref=e173]: CodeKids | 子ども向けプログラミング教室LP
+                  - paragraph [ref=e174]: 体験レッスン予約 | 教育
+              - link "Day78 Nutri Visit | 訪問型管理栄養士LP の成果物を開く" [ref=e175] [cursor=pointer]:
+                - /url: ./day078/
+                - generic [ref=e176]:
+                  - text: No image
+                  - generic [ref=e177]: Day78 / Healthcare
+                - generic [ref=e178]:
+                  - paragraph [ref=e179]: Nutri Visit | 訪問型管理栄養士LP
+                  - paragraph [ref=e180]: 無料相談予約 | 健康管理
+              - link "Day77 Simple Space | 整理収納アドバイザーLP（改善版） の成果物を開く" [ref=e181] [cursor=pointer]:
+                - /url: ./day077/
+                - generic [ref=e182]:
+                  - text: No image
+                  - generic [ref=e183]: Day77 / Home Services
+                - generic [ref=e184]:
+                  - paragraph [ref=e185]: Simple Space | 整理収納アドバイザーLP（改善版）
+                  - paragraph [ref=e186]: 無料相談予約 | 家事代行
+              - link "Day76 Simple Space | 整理収納アドバイザーLP の成果物を開く" [ref=e187] [cursor=pointer]:
+                - /url: ./day076/
+                - generic [ref=e188]:
+                  - text: No image
+                  - generic [ref=e189]: Day76 / Home Services
+                - generic [ref=e190]:
+                  - paragraph [ref=e191]: Simple Space | 整理収納アドバイザーLP
+                  - paragraph [ref=e192]: 無料相談予約 | 家事代行
+              - link "Day75 PAW PARADISE | ドッググルーミングサロンLP の成果物を開く" [ref=e193] [cursor=pointer]:
+                - /url: ./day075/
+                - generic [ref=e194]:
+                  - text: No image
+                  - generic [ref=e195]: Day75 / Pet
+                - generic [ref=e196]:
+                  - paragraph [ref=e197]: PAW PARADISE | ドッググルーミングサロンLP
+                  - paragraph [ref=e198]: グルーミング予約 | ペットサービス
+              - link "Day74 スマイル歯科 | 歯科医院LP の成果物を開く" [ref=e199] [cursor=pointer]:
+                - /url: ./day074/
+                - generic [ref=e200]:
+                  - text: No image
+                  - generic [ref=e201]: Day74 / Medical
+                - generic [ref=e202]:
+                  - paragraph [ref=e203]: スマイル歯科 | 歯科医院LP
+                  - paragraph [ref=e204]: 診療予約 | 医療
+              - link "Day73 Table Harmony - ケータリングサービスLP の成果物を開く" [ref=e205] [cursor=pointer]:
+                - /url: ./day073/
+                - generic [ref=e206]:
+                  - text: No image
+                  - generic [ref=e207]: Day73 / Food
+                - generic [ref=e208]:
+                  - paragraph [ref=e209]: Table Harmony - ケータリングサービスLP
+                  - paragraph [ref=e210]: 見積もり依頼 | 飲食
+              - link "Day72 Piano Garden - ピアノ教室LP の成果物を開く" [ref=e211] [cursor=pointer]:
+                - /url: ./day072/
+                - generic [ref=e212]:
+                  - text: No image
+                  - generic [ref=e213]: Day72 / Education
+                - generic [ref=e214]:
+                  - paragraph [ref=e215]: Piano Garden - ピアノ教室LP
+                  - paragraph [ref=e216]: 体験予約 | 教育
+              - link "Day70 ネイルサロンLP の成果物を開く" [ref=e217] [cursor=pointer]:
+                - /url: ./day070/
+                - generic [ref=e218]:
+                  - text: No image
+                  - generic [ref=e219]: Day70 / Beauty
+                - generic [ref=e220]:
+                  - paragraph [ref=e221]: ネイルサロンLP
+                  - paragraph [ref=e222]: 予約獲得 | ビューティー
+              - link "Day69 カメラマン個人紹介LP の成果物を開く" [ref=e223] [cursor=pointer]:
+                - /url: ./day069/
+                - generic [ref=e224]:
+                  - text: No image
+                  - generic [ref=e225]: Day69 / Photographer
+                - generic [ref=e226]:
+                  - paragraph [ref=e227]: カメラマン個人紹介LP
+                  - paragraph [ref=e228]: 撮影依頼 | クリエイティブ
+              - link "Day68 フィットネスジムLP の成果物を開く" [ref=e229] [cursor=pointer]:
+                - /url: ./day068/current/gym-lp/
+                - generic [ref=e230]:
+                  - text: No image
+                  - generic [ref=e231]: Day68 / Fitness
+                - generic [ref=e232]:
+                  - paragraph [ref=e233]: フィットネスジムLP
+                  - paragraph [ref=e234]: 体験レッスン予約 | フィットネス
+              - link "Day67 ホテルウェディングLP の成果物を開く" [ref=e235] [cursor=pointer]:
+                - /url: ./day067/current/hotel-wedding-lp/
+                - generic [ref=e236]:
+                  - text: No image
+                  - generic [ref=e237]: Day67 / Wedding
+                - generic [ref=e238]:
+                  - paragraph [ref=e239]: ホテルウェディングLP
+                  - paragraph [ref=e240]: フェア予約 | ブライダル
+              - link "Day27 相談しやすさ重視のLP制作ポートフォリオ の成果物を開く" [ref=e241] [cursor=pointer]:
+                - /url: ./day027/
+                - generic [ref=e242]:
+                  - img "Day27 相談しやすさ重視のLP制作ポートフォリオ のサムネイル" [ref=e243]
+                  - generic [ref=e244]: Day27 / Corporate
+                - generic [ref=e245]:
+                  - paragraph [ref=e246]: 相談しやすさ重視のLP制作ポートフォリオ
+                  - paragraph [ref=e247]: 無料相談 | LP制作
+              - link "Day20 新商品ローンチLP の成果物を開く" [ref=e248] [cursor=pointer]:
+                - /url: ./day020/
+                - generic [ref=e249]:
+                  - img "Day20 新商品ローンチLP のサムネイル" [ref=e250]
+                  - generic [ref=e251]: Day20 / EC
+                - generic [ref=e252]:
+                  - paragraph [ref=e253]: 新商品ローンチLP
+                  - paragraph [ref=e254]: 先行予約 | D2C
+              - link "Day19 DX支援サービスLP の成果物を開く" [ref=e255] [cursor=pointer]:
+                - /url: ./day019/
+                - generic [ref=e256]:
+                  - img "Day19 DX支援サービスLP のサムネイル" [ref=e257]
+                  - generic [ref=e258]: Day19 / SaaS
+                - generic [ref=e259]:
+                  - paragraph [ref=e260]: DX支援サービスLP
+                  - paragraph [ref=e261]: お問い合わせ | 業務支援
+              - link "Day18 採用広報LP の成果物を開く" [ref=e262] [cursor=pointer]:
+                - /url: ./day018/
+                - generic [ref=e263]:
+                  - img "Day18 採用広報LP のサムネイル" [ref=e264]
+                  - generic [ref=e265]: Day18 / Corporate
+                - generic [ref=e266]:
+                  - paragraph [ref=e267]: 採用広報LP
+                  - paragraph [ref=e268]: エントリー | 人材
+              - link "Day17 BtoBセミナー申込LP の成果物を開く" [ref=e269] [cursor=pointer]:
+                - /url: ./day017/
+                - generic [ref=e270]:
+                  - img "Day17 BtoBセミナー申込LP のサムネイル" [ref=e271]
+                  - generic [ref=e272]: Day17 / Event
+                - generic [ref=e273]:
+                  - paragraph [ref=e274]: BtoBセミナー申込LP
+                  - paragraph [ref=e275]: セミナー申込 | イベント
+              - link "Day16 美容クリニック予約LP の成果物を開く" [ref=e276] [cursor=pointer]:
+                - /url: ./day016/
+                - generic [ref=e277]:
+                  - img "Day16 美容クリニック予約LP のサムネイル" [ref=e278]
+                  - generic [ref=e279]: Day16 / Beauty
+                - generic [ref=e280]:
+                  - paragraph [ref=e281]: 美容クリニック予約LP
+                  - paragraph [ref=e282]: カウンセリング予約 | 美容
+              - link "Day15 不動産査定依頼LP の成果物を開く" [ref=e283] [cursor=pointer]:
+                - /url: ./day015/
+                - generic [ref=e284]:
+                  - img "Day15 不動産査定依頼LP のサムネイル" [ref=e285]
+                  - generic [ref=e286]: Day15 / RealEstate
+                - generic [ref=e287]:
+                  - paragraph [ref=e288]: 不動産査定依頼LP
+                  - paragraph [ref=e289]: 査定依頼 | 不動産
+              - link "Day14 医療系サービス相談LP の成果物を開く" [ref=e290] [cursor=pointer]:
+                - /url: ./day014/
+                - generic [ref=e291]:
+                  - img "Day14 医療系サービス相談LP のサムネイル" [ref=e292]
+                  - generic [ref=e293]: Day14 / Healthcare
+                - generic [ref=e294]:
+                  - paragraph [ref=e295]: 医療系サービス相談LP
+                  - paragraph [ref=e296]: 無料相談 | 医療
+              - link "Day13 英会話サービス体験LP の成果物を開く" [ref=e297] [cursor=pointer]:
+                - /url: ./day013/
+                - generic [ref=e298]:
+                  - img "Day13 英会話サービス体験LP のサムネイル" [ref=e299]
+                  - generic [ref=e300]: Day13 / Education
+                - generic [ref=e301]:
+                  - paragraph [ref=e302]: 英会話サービス体験LP
+                  - paragraph [ref=e303]: 体験申込 | 教育
+              - link "Day12 BtoB 見積依頼LP の成果物を開く" [ref=e304] [cursor=pointer]:
+                - /url: ./day012/
+                - generic [ref=e305]:
+                  - img "Day12 BtoB 見積依頼LP のサムネイル" [ref=e306]
+                  - generic [ref=e307]: Day12 / SaaS
+                - generic [ref=e308]:
+                  - paragraph [ref=e309]: BtoB 見積依頼LP
+                  - paragraph [ref=e310]: 見積依頼 | 業務支援
+              - link "Day11 サブスクEC申込LP の成果物を開く" [ref=e311] [cursor=pointer]:
+                - /url: ./day011/
+                - generic [ref=e312]:
+                  - img "Day11 サブスクEC申込LP のサムネイル" [ref=e313]
+                  - generic [ref=e314]: Day11 / EC
+                - generic [ref=e315]:
+                  - paragraph [ref=e316]: サブスクEC申込LP
+                  - paragraph [ref=e317]: 申込 | D2C
+              - link "Day10 士業サービス紹介LP の成果物を開く" [ref=e318] [cursor=pointer]:
+                - /url: ./day010/
+                - generic [ref=e319]:
+                  - img "Day10 士業サービス紹介LP のサムネイル" [ref=e320]
+                  - generic [ref=e321]: Day10 / Corporate
+                - generic [ref=e322]:
+                  - paragraph [ref=e323]: 士業サービス紹介LP
+                  - paragraph [ref=e324]: お問い合わせ | 士業
+              - link "Day09 SaaS 無料トライアルLP の成果物を開く" [ref=e325] [cursor=pointer]:
+                - /url: ./day009/
+                - generic [ref=e326]:
+                  - img "Day09 SaaS 無料トライアルLP のサムネイル" [ref=e327]
+                  - generic [ref=e328]: Day09 / SaaS
+                - generic [ref=e329]:
+                  - paragraph [ref=e330]: SaaS 無料トライアルLP
+                  - paragraph [ref=e331]: 無料登録 | IT
+    - region "Portfolio First設計にした理由" [ref=e332]:
+      - generic [ref=e333]:
+        - heading "Portfolio First設計にした理由" [level=2] [ref=e334]
+        - generic [ref=e335]:
+          - article [ref=e336]:
+            - heading "実績をFVで直接提示" [level=3] [ref=e337]
+            - paragraph [ref=e338]: 自己紹介より先に制作物を提示し、対応領域とアウトプット品質を即判断できるようにしました。
+          - article [ref=e339]:
+            - heading "目的別に探せる導線" [level=3] [ref=e340]
+            - paragraph [ref=e341]: カテゴリと検索で、クライアントが自社課題に近いLP事例へ最短で到達できます。
+          - article [ref=e342]:
+            - heading "相談までの距離を短縮" [level=3] [ref=e343]
+            - paragraph [ref=e344]: 実績確認から問い合わせまで一画面で完結し、案件相談のハードルを下げています。
+    - region "Featured Cases" [ref=e345]:
+      - generic [ref=e346]:
+        - generic [ref=e347]:
+          - heading "Featured Cases" [level=2] [ref=e348]
+          - paragraph [ref=e349]: カテゴリ別に代表的なLPを3件ピックアップしています。
+        - generic [ref=e350]:
+          - article [ref=e351]:
+            - generic [ref=e352]:
+              - generic [ref=e353]: Day01
+              - generic [ref=e354]: SaaS
+            - heading "BtoB SaaS 資料請求LP" [level=3] [ref=e355]
+            - paragraph [ref=e356]: 課題訴求から導入効果までを短い導線で提示。比較検討中ユーザーの離脱を抑える構成。
+            - generic [ref=e357]:
+              - paragraph [ref=e358]: "目的: 資料請求"
+              - paragraph [ref=e359]: "業種: IT"
+              - paragraph [ref=e360]: "設計メモ: 導入メリットの即時理解を重視"
+            - link "Day01 BtoB SaaS 資料請求LP を開く" [ref=e361] [cursor=pointer]:
+              - /url: ./day001/
+              - text: 成果物を開く
+          - article [ref=e362]:
+            - generic [ref=e363]:
+              - generic [ref=e364]: Day02
+              - generic [ref=e365]: Corporate
+            - heading "採用向けコーポレートLP" [level=3] [ref=e366]
+            - paragraph [ref=e367]: カルチャー訴求と募集要項を分断せずに接続し、応募までの心理負荷を軽減。
+            - generic [ref=e368]:
+              - paragraph [ref=e369]: "目的: 採用応募"
+              - paragraph [ref=e370]: "業種: 人材"
+              - paragraph [ref=e371]: "設計メモ: 応募導線の視認性を強化"
+            - link "Day02 採用向けコーポレートLP を開く" [ref=e372] [cursor=pointer]:
+              - /url: ./day002/
+              - text: 成果物を開く
+          - article [ref=e373]:
+            - generic [ref=e374]:
+              - generic [ref=e375]: Day03
+              - generic [ref=e376]: EC
+            - heading "単品EC 商品販売LP" [level=3] [ref=e377]
+            - paragraph [ref=e378]: 不安要素をFAQ・レビュー・保証情報で先回りし、購入判断を後押しする設計。
+            - generic [ref=e379]:
+              - paragraph [ref=e380]: "目的: 購入"
+              - paragraph [ref=e381]: "業種: D2C"
+              - paragraph [ref=e382]: "設計メモ: CTA手前の離脱抑制を意識"
+            - link "Day03 単品EC 商品販売LP を開く" [ref=e383] [cursor=pointer]:
+              - /url: ./day003/
+              - text: 成果物を開く
+    - region "All Works" [ref=e384]:
+      - generic [ref=e385]:
+        - generic [ref=e386]:
+          - heading "All Works" [level=2] [ref=e387]
+          - paragraph [ref=e388]: 目的と業種で探しやすいよう、カテゴリフィルタとキーワード検索に対応しています。
+        - generic "成果物の絞り込み" [ref=e389]:
+          - generic [ref=e390]:
+            - paragraph [ref=e391]: カテゴリ
+            - group "カテゴリフィルター" [ref=e392]:
+              - button "All" [pressed] [ref=e393] [cursor=pointer]
+              - button "SaaS" [ref=e394] [cursor=pointer]
+              - button "Corporate" [ref=e395] [cursor=pointer]
+              - button "EC" [ref=e396] [cursor=pointer]
+              - button "Education" [ref=e397] [cursor=pointer]
+              - button "Beauty" [ref=e398] [cursor=pointer]
+              - button "Event" [ref=e399] [cursor=pointer]
+              - button "Healthcare" [ref=e400] [cursor=pointer]
+              - button "RealEstate" [ref=e401] [cursor=pointer]
+              - button "Wedding" [ref=e402] [cursor=pointer]
+              - button "Fitness" [ref=e403] [cursor=pointer]
+              - button "Photographer" [ref=e404] [cursor=pointer]
+              - button "Food" [ref=e405] [cursor=pointer]
+              - button "Medical" [ref=e406] [cursor=pointer]
+              - button "Pet" [ref=e407] [cursor=pointer]
+              - button "Home Services" [ref=e408] [cursor=pointer]
+              - button "Restaurant" [ref=e409] [cursor=pointer]
+          - generic [ref=e410]:
+            - generic [ref=e411]: キーワード検索
+            - searchbox "キーワード検索" [ref=e412]
+        - paragraph [ref=e413]: 38件表示 / 全38件
+        - generic [ref=e414]:
+          - article [ref=e415]:
+            - generic [ref=e416]:
+              - generic [ref=e417]: Day01
+              - heading "BtoB SaaS 資料請求LP" [level=3] [ref=e418]
+            - paragraph [ref=e419]: 課題訴求から導入効果までを短い導線で提示。比較検討中ユーザーの離脱を抑える構成。
+            - paragraph [ref=e420]: "カテゴリ: SaaS | 業種: IT"
+            - paragraph [ref=e421]: "目的: 資料請求"
+            - list [ref=e422]:
+              - listitem [ref=e423]: HTML
+              - listitem [ref=e424]: CSS
+              - listitem [ref=e425]: JavaScript
+            - link "Day01 BtoB SaaS 資料請求LP の詳細を見る" [ref=e426] [cursor=pointer]:
+              - /url: ./day001/
+              - text: 詳細を見る
+          - article [ref=e427]:
+            - generic [ref=e428]:
+              - generic [ref=e429]: Day02
+              - heading "採用向けコーポレートLP" [level=3] [ref=e430]
+            - paragraph [ref=e431]: カルチャー訴求と募集要項を分断せずに接続し、応募までの心理負荷を軽減。
+            - paragraph [ref=e432]: "カテゴリ: Corporate | 業種: 人材"
+            - paragraph [ref=e433]: "目的: 採用応募"
+            - list [ref=e434]:
+              - listitem [ref=e435]: HTML
+              - listitem [ref=e436]: CSS
+              - listitem [ref=e437]: JavaScript
+            - link "Day02 採用向けコーポレートLP の詳細を見る" [ref=e438] [cursor=pointer]:
+              - /url: ./day002/
+              - text: 詳細を見る
+          - article [ref=e439]:
+            - generic [ref=e440]:
+              - generic [ref=e441]: Day03
+              - heading "単品EC 商品販売LP" [level=3] [ref=e442]
+            - paragraph [ref=e443]: 不安要素をFAQ・レビュー・保証情報で先回りし、購入判断を後押しする設計。
+            - paragraph [ref=e444]: "カテゴリ: EC | 業種: D2C"
+            - paragraph [ref=e445]: "目的: 購入"
+            - list [ref=e446]:
+              - listitem [ref=e447]: HTML
+              - listitem [ref=e448]: CSS
+              - listitem [ref=e449]: JavaScript
+            - link "Day03 単品EC 商品販売LP の詳細を見る" [ref=e450] [cursor=pointer]:
+              - /url: ./day003/
+              - text: 詳細を見る
+          - article [ref=e451]:
+            - generic [ref=e452]:
+              - generic [ref=e453]: Day04
+              - heading "オンラインスクール説明LP" [level=3] [ref=e454]
+            - paragraph [ref=e455]: 学習プロセスと卒業後の変化を可視化し、体験申込の納得感を高める構成。
+            - paragraph [ref=e456]: "カテゴリ: Education | 業種: 教育"
+            - paragraph [ref=e457]: "目的: 体験申込"
+            - list [ref=e458]:
+              - listitem [ref=e459]: HTML
+              - listitem [ref=e460]: CSS
+              - listitem [ref=e461]: JavaScript
+            - link "Day04 オンラインスクール説明LP の詳細を見る" [ref=e462] [cursor=pointer]:
+              - /url: ./day004/
+              - text: 詳細を見る
+          - article [ref=e463]:
+            - generic [ref=e464]:
+              - generic [ref=e465]: Day05
+              - heading "美容体験予約LP" [level=3] [ref=e466]
+            - paragraph [ref=e467]: 施術前後イメージと価格情報を同じ画面で提示し、予約判断までの迷いを削減。
+            - paragraph [ref=e468]: "カテゴリ: Beauty | 業種: 美容"
+            - paragraph [ref=e469]: "目的: 来店予約"
+            - list [ref=e470]:
+              - listitem [ref=e471]: HTML
+              - listitem [ref=e472]: CSS
+              - listitem [ref=e473]: JavaScript
+            - link "Day05 美容体験予約LP の詳細を見る" [ref=e474] [cursor=pointer]:
+              - /url: ./day005/
+              - text: 詳細を見る
+          - article [ref=e475]:
+            - generic [ref=e476]:
+              - generic [ref=e477]: Day06
+              - heading "イベント集客キャンペーンLP" [level=3] [ref=e478]
+            - paragraph [ref=e479]: 開催価値と参加特典を先に提示し、残席情報で行動を促すキャンペーン型LP。
+            - paragraph [ref=e480]: "カテゴリ: Event | 業種: イベント"
+            - paragraph [ref=e481]: "目的: 参加登録"
+            - list [ref=e482]:
+              - listitem [ref=e483]: HTML
+              - listitem [ref=e484]: CSS
+              - listitem [ref=e485]: JavaScript
+            - link "Day06 イベント集客キャンペーンLP の詳細を見る" [ref=e486] [cursor=pointer]:
+              - /url: ./day006/
+              - text: 詳細を見る
+          - article [ref=e487]:
+            - generic [ref=e488]:
+              - generic [ref=e489]: Day07
+              - heading "法人向け無料相談LP" [level=3] [ref=e490]
+            - paragraph [ref=e491]: 相談対象を明確にし、失敗事例と改善例を並置することで問い合わせの質を向上。
+            - paragraph [ref=e492]: "カテゴリ: Corporate | 業種: コンサル"
+            - paragraph [ref=e493]: "目的: 無料相談"
+            - list [ref=e494]:
+              - listitem [ref=e495]: HTML
+              - listitem [ref=e496]: CSS
+              - listitem [ref=e497]: JavaScript
+            - link "Day07 法人向け無料相談LP の詳細を見る" [ref=e498] [cursor=pointer]:
+              - /url: ./day007/
+              - text: 詳細を見る
+          - article [ref=e499]:
+            - generic [ref=e500]:
+              - generic [ref=e501]: Day08
+              - heading "食品D2C定期購入LP" [level=3] [ref=e502]
+            - paragraph [ref=e503]: 味・安全性・継続メリットを段階的に伝え、初回申込へのハードルを下げる構成。
+            - paragraph [ref=e504]: "カテゴリ: EC | 業種: 食品"
+            - paragraph [ref=e505]: "目的: 定期申込"
+            - list [ref=e506]:
+              - listitem [ref=e507]: HTML
+              - listitem [ref=e508]: CSS
+              - listitem [ref=e509]: JavaScript
+            - link "Day08 食品D2C定期購入LP の詳細を見る" [ref=e510] [cursor=pointer]:
+              - /url: ./day008/
+              - text: 詳細を見る
+          - article [ref=e511]:
+            - generic [ref=e512]:
+              - generic [ref=e513]: Day09
+              - heading "SaaS 無料トライアルLP" [level=3] [ref=e514]
+            - paragraph [ref=e515]: 導入前後の業務差分をビジュアル中心で示し、登録時点の不安を低減。
+            - paragraph [ref=e516]: "カテゴリ: SaaS | 業種: IT"
+            - paragraph [ref=e517]: "目的: 無料登録"
+            - list [ref=e518]:
+              - listitem [ref=e519]: HTML
+              - listitem [ref=e520]: CSS
+              - listitem [ref=e521]: JavaScript
+            - link "Day09 SaaS 無料トライアルLP の詳細を見る" [ref=e522] [cursor=pointer]:
+              - /url: ./day009/
+              - text: 詳細を見る
+          - article [ref=e523]:
+            - generic [ref=e524]:
+              - generic [ref=e525]: Day10
+              - heading "士業サービス紹介LP" [level=3] [ref=e526]
+            - paragraph [ref=e527]: 信頼形成に必要な実績・対応範囲・料金目安を整理し、相談導線を明確化。
+            - paragraph [ref=e528]: "カテゴリ: Corporate | 業種: 士業"
+            - paragraph [ref=e529]: "目的: お問い合わせ"
+            - list [ref=e530]:
+              - listitem [ref=e531]: HTML
+              - listitem [ref=e532]: CSS
+              - listitem [ref=e533]: JavaScript
+            - link "Day10 士業サービス紹介LP の詳細を見る" [ref=e534] [cursor=pointer]:
+              - /url: ./day010/
+              - text: 詳細を見る
+          - article [ref=e535]:
+            - generic [ref=e536]:
+              - generic [ref=e537]: Day11
+              - heading "サブスクEC申込LP" [level=3] [ref=e538]
+            - paragraph [ref=e539]: 継続メリットを比較表で示し、単発購入と定期購入の判断をしやすく設計。
+            - paragraph [ref=e540]: "カテゴリ: EC | 業種: D2C"
+            - paragraph [ref=e541]: "目的: 申込"
+            - list [ref=e542]:
+              - listitem [ref=e543]: HTML
+              - listitem [ref=e544]: CSS
+              - listitem [ref=e545]: JavaScript
+            - link "Day11 サブスクEC申込LP の詳細を見る" [ref=e546] [cursor=pointer]:
+              - /url: ./day011/
+              - text: 詳細を見る
+          - article [ref=e547]:
+            - generic [ref=e548]:
+              - generic [ref=e549]: Day12
+              - heading "BtoB 見積依頼LP" [level=3] [ref=e550]
+            - paragraph [ref=e551]: 導入条件の整理をサポートする情報設計で、見積依頼までの判断時間を短縮。
+            - paragraph [ref=e552]: "カテゴリ: SaaS | 業種: 業務支援"
+            - paragraph [ref=e553]: "目的: 見積依頼"
+            - list [ref=e554]:
+              - listitem [ref=e555]: HTML
+              - listitem [ref=e556]: CSS
+              - listitem [ref=e557]: JavaScript
+            - link "Day12 BtoB 見積依頼LP の詳細を見る" [ref=e558] [cursor=pointer]:
+              - /url: ./day012/
+              - text: 詳細を見る
+          - article [ref=e559]:
+            - generic [ref=e560]:
+              - generic [ref=e561]: Day13
+              - heading "英会話サービス体験LP" [level=3] [ref=e562]
+            - paragraph [ref=e563]: 受講ステップを可視化し、初心者の不安を取り除く導線を中心に設計。
+            - paragraph [ref=e564]: "カテゴリ: Education | 業種: 教育"
+            - paragraph [ref=e565]: "目的: 体験申込"
+            - list [ref=e566]:
+              - listitem [ref=e567]: HTML
+              - listitem [ref=e568]: CSS
+              - listitem [ref=e569]: JavaScript
+            - link "Day13 英会話サービス体験LP の詳細を見る" [ref=e570] [cursor=pointer]:
+              - /url: ./day013/
+              - text: 詳細を見る
+          - article [ref=e571]:
+            - generic [ref=e572]:
+              - generic [ref=e573]: Day14
+              - heading "医療系サービス相談LP" [level=3] [ref=e574]
+            - paragraph [ref=e575]: 専門性と安心感を担保する情報の順序を調整し、相談行動につなげる構成。
+            - paragraph [ref=e576]: "カテゴリ: Healthcare | 業種: 医療"
+            - paragraph [ref=e577]: "目的: 無料相談"
+            - list [ref=e578]:
+              - listitem [ref=e579]: HTML
+              - listitem [ref=e580]: CSS
+              - listitem [ref=e581]: JavaScript
+            - link "Day14 医療系サービス相談LP の詳細を見る" [ref=e582] [cursor=pointer]:
+              - /url: ./day014/
+              - text: 詳細を見る
+          - article [ref=e583]:
+            - generic [ref=e584]:
+              - generic [ref=e585]: Day15
+              - heading "不動産査定依頼LP" [level=3] [ref=e586]
+            - paragraph [ref=e587]: 査定手順と入力項目の意図を明確にし、フォーム完了率向上を狙った設計。
+            - paragraph [ref=e588]: "カテゴリ: RealEstate | 業種: 不動産"
+            - paragraph [ref=e589]: "目的: 査定依頼"
+            - list [ref=e590]:
+              - listitem [ref=e591]: HTML
+              - listitem [ref=e592]: CSS
+              - listitem [ref=e593]: JavaScript
+            - link "Day15 不動産査定依頼LP の詳細を見る" [ref=e594] [cursor=pointer]:
+              - /url: ./day015/
+              - text: 詳細を見る
+          - article [ref=e595]:
+            - generic [ref=e596]:
+              - generic [ref=e597]: Day16
+              - heading "美容クリニック予約LP" [level=3] [ref=e598]
+            - paragraph [ref=e599]: 比較検討層に向けて症例と料金情報を整理し、予約への納得感を強化。
+            - paragraph [ref=e600]: "カテゴリ: Beauty | 業種: 美容"
+            - paragraph [ref=e601]: "目的: カウンセリング予約"
+            - list [ref=e602]:
+              - listitem [ref=e603]: HTML
+              - listitem [ref=e604]: CSS
+              - listitem [ref=e605]: JavaScript
+            - link "Day16 美容クリニック予約LP の詳細を見る" [ref=e606] [cursor=pointer]:
+              - /url: ./day016/
+              - text: 詳細を見る
+          - article [ref=e607]:
+            - generic [ref=e608]:
+              - generic [ref=e609]: Day17
+              - heading "BtoBセミナー申込LP" [level=3] [ref=e610]
+            - paragraph [ref=e611]: 登壇者・内容・得られる成果を短時間で把握できる情報密度に調整。
+            - paragraph [ref=e612]: "カテゴリ: Event | 業種: イベント"
+            - paragraph [ref=e613]: "目的: セミナー申込"
+            - list [ref=e614]:
+              - listitem [ref=e615]: HTML
+              - listitem [ref=e616]: CSS
+              - listitem [ref=e617]: JavaScript
+            - link "Day17 BtoBセミナー申込LP の詳細を見る" [ref=e618] [cursor=pointer]:
+              - /url: ./day017/
+              - text: 詳細を見る
+          - article [ref=e619]:
+            - generic [ref=e620]:
+              - generic [ref=e621]: Day18
+              - heading "採用広報LP" [level=3] [ref=e622]
+            - paragraph [ref=e623]: 仕事理解コンテンツを深め、応募前のミスマッチ低減を狙った採用LP。
+            - paragraph [ref=e624]: "カテゴリ: Corporate | 業種: 人材"
+            - paragraph [ref=e625]: "目的: エントリー"
+            - list [ref=e626]:
+              - listitem [ref=e627]: HTML
+              - listitem [ref=e628]: CSS
+              - listitem [ref=e629]: JavaScript
+            - link "Day18 採用広報LP の詳細を見る" [ref=e630] [cursor=pointer]:
+              - /url: ./day018/
+              - text: 詳細を見る
+          - article [ref=e631]:
+            - generic [ref=e632]:
+              - generic [ref=e633]: Day19
+              - heading "DX支援サービスLP" [level=3] [ref=e634]
+            - paragraph [ref=e635]: 導入事例と支援範囲を明確化し、課題認識フェーズでも相談しやすい構成へ。
+            - paragraph [ref=e636]: "カテゴリ: SaaS | 業種: 業務支援"
+            - paragraph [ref=e637]: "目的: お問い合わせ"
+            - list [ref=e638]:
+              - listitem [ref=e639]: HTML
+              - listitem [ref=e640]: CSS
+              - listitem [ref=e641]: JavaScript
+            - link "Day19 DX支援サービスLP の詳細を見る" [ref=e642] [cursor=pointer]:
+              - /url: ./day019/
+              - text: 詳細を見る
+          - article [ref=e643]:
+            - generic [ref=e644]:
+              - generic [ref=e645]: Day20
+              - heading "新商品ローンチLP" [level=3] [ref=e646]
+            - paragraph [ref=e647]: ローンチ背景と限定特典を軸に期待値を高め、予約行動を促進する構成。
+            - paragraph [ref=e648]: "カテゴリ: EC | 業種: D2C"
+            - paragraph [ref=e649]: "目的: 先行予約"
+            - list [ref=e650]:
+              - listitem [ref=e651]: HTML
+              - listitem [ref=e652]: CSS
+              - listitem [ref=e653]: JavaScript
+            - link "Day20 新商品ローンチLP の詳細を見る" [ref=e654] [cursor=pointer]:
+              - /url: ./day020/
+              - text: 詳細を見る
+          - article [ref=e655]:
+            - generic [ref=e656]:
+              - generic [ref=e657]: Day27
+              - heading "相談しやすさ重視のLP制作ポートフォリオ" [level=3] [ref=e658]
+            - paragraph [ref=e659]: 実績未掲載段階でも不安を減らせるよう、進行ルールの透明性とCTA2導線で依頼判断を支える構成。
+            - paragraph [ref=e660]: "カテゴリ: Corporate | 業種: LP制作"
+            - paragraph [ref=e661]: "目的: 無料相談"
+            - list [ref=e662]:
+              - listitem [ref=e663]: HTML
+              - listitem [ref=e664]: CSS
+            - link "Day27 相談しやすさ重視のLP制作ポートフォリオ の詳細を見る" [ref=e665] [cursor=pointer]:
+              - /url: ./day027/
+              - text: 詳細を見る
+          - article [ref=e666]:
+            - generic [ref=e667]:
+              - generic [ref=e668]: Day67
+              - heading "ホテルウェディングLP" [level=3] [ref=e669]
+            - paragraph [ref=e670]: ラグジュアリーな空間・料理・おもてなしの3軸でブランド訴求。ブライダルフェア予約へ自然に導く構成。
+            - paragraph [ref=e671]: "カテゴリ: Wedding | 業種: ブライダル"
+            - paragraph [ref=e672]: "目的: フェア予約"
+            - list [ref=e673]:
+              - listitem [ref=e674]: HTML
+              - listitem [ref=e675]: CSS
+              - listitem [ref=e676]: JavaScript
+            - link "Day67 ホテルウェディングLP の詳細を見る" [ref=e677] [cursor=pointer]:
+              - /url: ./day067/current/hotel-wedding-lp/
+              - text: 詳細を見る
+          - article [ref=e678]:
+            - generic [ref=e679]:
+              - generic [ref=e680]: Day68
+              - heading "フィットネスジムLP" [level=3] [ref=e681]
+            - paragraph [ref=e682]: 24時間営業・最新マシン・トレーナー常駐の3つの特徴を訴求。3つの料金プランで会員獲得を促進する構成。
+            - paragraph [ref=e683]: "カテゴリ: Fitness | 業種: フィットネス"
+            - paragraph [ref=e684]: "目的: 体験レッスン予約"
+            - list [ref=e685]:
+              - listitem [ref=e686]: HTML
+              - listitem [ref=e687]: CSS
+              - listitem [ref=e688]: JavaScript
+            - link "Day68 フィットネスジムLP の詳細を見る" [ref=e689] [cursor=pointer]:
+              - /url: ./day068/current/gym-lp/
+              - text: 詳細を見る
+          - article [ref=e690]:
+            - generic [ref=e691]:
+              - generic [ref=e692]: Day69
+              - heading "カメラマン個人紹介LP" [level=3] [ref=e693]
+            - paragraph [ref=e694]: 個人事業主のフォトグラファーが自身のサービス（ウェディング・プロフィール・ビジネス撮影）を紹介・集客するLP。
+            - paragraph [ref=e695]: "カテゴリ: Photographer | 業種: クリエイティブ"
+            - paragraph [ref=e696]: "目的: 撮影依頼"
+            - list [ref=e697]:
+              - listitem [ref=e698]: HTML
+              - listitem [ref=e699]: CSS
+              - listitem [ref=e700]: JavaScript
+            - link "Day69 カメラマン個人紹介LP の詳細を見る" [ref=e701] [cursor=pointer]:
+              - /url: ./day069/
+              - text: 詳細を見る
+          - article [ref=e702]:
+            - generic [ref=e703]:
+              - generic [ref=e704]: Day70
+              - heading "ネイルサロンLP" [level=3] [ref=e705]
+            - paragraph [ref=e706]: 個人事業主が運営するネイルサロンのLP。ギャラリー重視型で、ネイルデザイン作品をメインコンテンツとして配置し、視覚的魅力で予約獲得を促進する。
+            - paragraph [ref=e707]: "カテゴリ: Beauty | 業種: ビューティー"
+            - paragraph [ref=e708]: "目的: 予約獲得"
+            - list [ref=e709]:
+              - listitem [ref=e710]: HTML
+              - listitem [ref=e711]: CSS
+              - listitem [ref=e712]: JavaScript
+            - link "Day70 ネイルサロンLP の詳細を見る" [ref=e713] [cursor=pointer]:
+              - /url: ./day070/
+              - text: 詳細を見る
+          - article [ref=e714]:
+            - generic [ref=e715]:
+              - generic [ref=e716]: Day72
+              - heading "Piano Garden - ピアノ教室LP" [level=3] [ref=e717]
+            - paragraph [ref=e718]: 幼児から小学生を対象とした小規模ピアノ教室のLP。保護者向けに安心感と成長を実感させる情報を提供し、体験予約への誘導を最適化。
+            - paragraph [ref=e719]: "カテゴリ: Education | 業種: 教育"
+            - paragraph [ref=e720]: "目的: 体験予約"
+            - list [ref=e721]:
+              - listitem [ref=e722]: HTML5
+              - listitem [ref=e723]: CSS3
+              - listitem [ref=e724]: JavaScript
+            - link "Day72 Piano Garden - ピアノ教室LP の詳細を見る" [ref=e725] [cursor=pointer]:
+              - /url: ./day072/
+              - text: 詳細を見る
+          - article [ref=e726]:
+            - generic [ref=e727]:
+              - generic [ref=e728]: Day73
+              - heading "Table Harmony - ケータリングサービスLP" [level=3] [ref=e729]
+            - paragraph [ref=e730]: 3名〜50名までのケータリングサービスLP。記念日、法人イベント、ホームパーティー3シーンに対応。シーン別メニュータブ、料理ギャラリー、お客様の声で訴求。
+            - paragraph [ref=e731]: "カテゴリ: Food | 業種: 飲食"
+            - paragraph [ref=e732]: "目的: 見積もり依頼"
+            - list [ref=e733]:
+              - listitem [ref=e734]: HTML5
+              - listitem [ref=e735]: CSS3
+              - listitem [ref=e736]: JavaScript
+            - link "Day73 Table Harmony - ケータリングサービスLP の詳細を見る" [ref=e737] [cursor=pointer]:
+              - /url: ./day073/
+              - text: 詳細を見る
+          - article [ref=e738]:
+            - generic [ref=e739]:
+              - generic [ref=e740]: Day74
+              - heading "スマイル歯科 | 歯科医院LP" [level=3] [ref=e741]
+            - paragraph [ref=e742]: 地域で信頼の歯科医院LP。痛くない・怖くない最新治療を3つの約束として提示。診療メニュータブ、FAQアコーディオン、院長プロフィール、Google Mapsで安心感を醸成。
+            - paragraph [ref=e743]: "カテゴリ: Medical | 業種: 医療"
+            - paragraph [ref=e744]: "目的: 診療予約"
+            - list [ref=e745]:
+              - listitem [ref=e746]: HTML5
+              - listitem [ref=e747]: CSS3
+              - listitem [ref=e748]: JavaScript
+            - link "Day74 スマイル歯科 | 歯科医院LP の詳細を見る" [ref=e749] [cursor=pointer]:
+              - /url: ./day074/
+              - text: 詳細を見る
+          - article [ref=e750]:
+            - generic [ref=e751]:
+              - generic [ref=e752]: Day75
+              - heading "PAW PARADISE | ドッググルーミングサロンLP" [level=3] [ref=e753]
+            - paragraph [ref=e754]: 個人事業主が運営するプライベートドッグサロンLP。1組完全貸切の空間とトリマーの経験を強調。サイズ別メニュータブ、施術後ギャラリー、FAQアコーディオンで予約を獲得。
+            - paragraph [ref=e755]: "カテゴリ: Pet | 業種: ペットサービス"
+            - paragraph [ref=e756]: "目的: グルーミング予約"
+            - list [ref=e757]:
+              - listitem [ref=e758]: HTML5
+              - listitem [ref=e759]: CSS3
+              - listitem [ref=e760]: JavaScript
+            - link "Day75 PAW PARADISE | ドッググルーミングサロンLP の詳細を見る" [ref=e761] [cursor=pointer]:
+              - /url: ./day075/
+              - text: 詳細を見る
+          - article [ref=e762]:
+            - generic [ref=e763]:
+              - generic [ref=e764]: Day76
+              - heading "Simple Space | 整理収納アドバイザーLP" [level=3] [ref=e765]
+            - paragraph [ref=e766]: 散らかった部屋が1日で変わるを強調。Before/AfterスプリットHero、3パターン比較スライダー（ドラッグ操作）、ミントグリーン系デザインでテンプレ感脱却。
+            - paragraph [ref=e767]: "カテゴリ: Home Services | 業種: 家事代行"
+            - paragraph [ref=e768]: "目的: 無料相談予約"
+            - list [ref=e769]:
+              - listitem [ref=e770]: HTML5
+              - listitem [ref=e771]: CSS3
+              - listitem [ref=e772]: JavaScript
+              - listitem [ref=e773]: Clip-path
+              - listitem [ref=e774]: Intersection Observer
+            - link "Day76 Simple Space | 整理収納アドバイザーLP の詳細を見る" [ref=e775] [cursor=pointer]:
+              - /url: ./day076/
+              - text: 詳細を見る
+          - article [ref=e776]:
+            - generic [ref=e777]:
+              - generic [ref=e778]: Day77
+              - heading "Simple Space | 整理収納アドバイザーLP（改善版）" [level=3] [ref=e779]
+            - paragraph [ref=e780]: Day076の改善版。コンバージョン率向上（CTA改善・緊急性バナー・フォーム簡素化）、ターゲット明確化（「こんなあなたに」セクション）、属人性強化（プロフィールストーリー化）を実施。
+            - paragraph [ref=e781]: "カテゴリ: Home Services | 業種: 家事代行"
+            - paragraph [ref=e782]: "目的: 無料相談予約"
+            - list [ref=e783]:
+              - listitem [ref=e784]: HTML5
+              - listitem [ref=e785]: CSS3
+              - listitem [ref=e786]: JavaScript
+            - link "Day77 Simple Space | 整理収納アドバイザーLP（改善版） の詳細を見る" [ref=e787] [cursor=pointer]:
+              - /url: ./day077/
+              - text: 詳細を見る
+          - article [ref=e788]:
+            - generic [ref=e789]:
+              - generic [ref=e790]: Day78
+              - heading "Nutri Visit | 訪問型管理栄養士LP" [level=3] [ref=e791]
+            - paragraph [ref=e792]: ご自宅に訪問する管理栄養士による栄養相談・食育指導LP。食事記録チェック、冷蔵庫診断、家族別食事プランの3プランをタブ切り替えで提示。訪問型ならではのメリット（冷蔵庫チェック・一緒に料理・家族対応）を訴求。
+            - paragraph [ref=e793]: "カテゴリ: Healthcare | 業種: 健康管理"
+            - paragraph [ref=e794]: "目的: 無料相談予約"
+            - list [ref=e795]:
+              - listitem [ref=e796]: HTML5
+              - listitem [ref=e797]: CSS3
+              - listitem [ref=e798]: JavaScript
+            - link "Day78 Nutri Visit | 訪問型管理栄養士LP の詳細を見る" [ref=e799] [cursor=pointer]:
+              - /url: ./day078/
+              - text: 詳細を見る
+          - article [ref=e800]:
+            - generic [ref=e801]:
+              - generic [ref=e802]: Day79
+              - heading "CodeKids | 子ども向けプログラミング教室LP" [level=3] [ref=e803]
+            - paragraph [ref=e804]: 小学生を対象としたプログラミング教室LP。保護者の悩み（スマホ依存・将来への不安）に訴求し、カリキュラムの可視化（初級/中級/上級）と学習効果（論理的思考・創造力・問題解決力）を提示。講師プロフィール・保護者/子供の声・FAQアコーディオンで信頼性構築。
+            - paragraph [ref=e805]: "カテゴリ: Education | 業種: 教育"
+            - paragraph [ref=e806]: "目的: 体験レッスン予約"
+            - list [ref=e807]:
+              - listitem [ref=e808]: HTML5
+              - listitem [ref=e809]: CSS3
+              - listitem [ref=e810]: JavaScript
+            - link "Day79 CodeKids | 子ども向けプログラミング教室LP の詳細を見る" [ref=e811] [cursor=pointer]:
+              - /url: ./day079/
+              - text: 詳細を見る
+          - article [ref=e812]:
+            - generic [ref=e813]:
+              - generic [ref=e814]: Day80
+              - heading "まなびPLUS | 個人家庭教師LP" [level=3] [ref=e815]
+            - paragraph [ref=e816]: 小中学生を対象とした個人家庭教師LP。担任制・毎週の指導報告書・定期的な面談の3つの特徴を強調し、保護者に安心感を提供。講師プロフィール・指導メソッド・導入フロー・料金プラン・保護者/生徒の声タブ切り替え・FAQアコーディオンで信頼性構築。
+            - paragraph [ref=e817]: "カテゴリ: Education | 業種: 教育"
+            - paragraph [ref=e818]: "目的: 無料体験予約"
+            - list [ref=e819]:
+              - listitem [ref=e820]: HTML5
+              - listitem [ref=e821]: CSS3
+              - listitem [ref=e822]: JavaScript
+            - link "Day80 まなびPLUS | 個人家庭教師LP の詳細を見る" [ref=e823] [cursor=pointer]:
+              - /url: ./day080/
+              - text: 詳細を見る
+          - article [ref=e824]:
+            - generic [ref=e825]:
+              - generic [ref=e826]: Day81
+              - heading "鮨 さかだ | 築地前寿司LP" [level=3] [ref=e827]
+            - paragraph [ref=e828]: 築地前・朝穫れを軸にした完全予約制の寿司店LP。職人の技、限定席数、残席表示、FAQ、レビュー導線で高単価予約の不安を解消する構成。
+            - paragraph [ref=e829]: "カテゴリ: Food | 業種: 飲食"
+            - paragraph [ref=e830]: "目的: 来店予約"
+            - list [ref=e831]:
+              - listitem [ref=e832]: HTML5
+              - listitem [ref=e833]: CSS3
+              - listitem [ref=e834]: JavaScript
+            - link "Day81 鮨 さかだ | 築地前寿司LP の詳細を見る" [ref=e835] [cursor=pointer]:
+              - /url: ./day081/
+              - text: 詳細を見る
+          - article [ref=e836]:
+            - generic [ref=e837]:
+              - generic [ref=e838]: Day82
+              - heading "FocusFlow | 集中力を高めるタスク管理アプリLP" [level=3] [ref=e839]
+            - paragraph [ref=e840]: 集中力を高めるタスク管理アプリLP。ポモドーロテクニック、自動休憩通知、進捗可視化で、働く人の生産性向上を支援。
+            - paragraph [ref=e841]: "カテゴリ: SaaS | 業種: プロダクティビティ"
+            - paragraph [ref=e842]: "目的: 無料トライアル登録"
+            - list [ref=e843]:
+              - listitem [ref=e844]: HTML5
+              - listitem [ref=e845]: CSS3
+              - listitem [ref=e846]: JavaScript
+            - link "Day82 FocusFlow | 集中力を高めるタスク管理アプリLP の詳細を見る" [ref=e847] [cursor=pointer]:
+              - /url: ./day082/
+              - text: 詳細を見る
+          - article [ref=e848]:
+            - generic [ref=e849]:
+              - generic [ref=e850]: Day83
+              - heading "Trattoria Sole | 家族で楽しむ本場イタリアの味" [level=3] [ref=e851]
+            - paragraph [ref=e852]: トスカーナの温かな中庭のようなひとときを提供するイタリアンレストランLP。家族連れ・カップル向けに本場の味と空間を訴求し、予約導線を最適化。
+            - paragraph [ref=e853]: "カテゴリ: Restaurant | 業種: 飲食"
+            - paragraph [ref=e854]: "目的: 来店予約"
+            - list [ref=e855]:
+              - listitem [ref=e856]: HTML5
+              - listitem [ref=e857]: Tailwind CSS
+              - listitem [ref=e858]: JavaScript
+            - link "Day83 Trattoria Sole | 家族で楽しむ本場イタリアの味 の詳細を見る" [ref=e859] [cursor=pointer]:
+              - /url: ./day083/
+              - text: 詳細を見る
+          - article [ref=e860]:
+            - generic [ref=e861]:
+              - generic [ref=e862]: Day84
+              - heading "からだ工房 そら | その痛み、空のように晴れやかに" [level=3] [ref=e863]
+            - paragraph [ref=e864]: 国家資格を持つ院長が根本原因を見極め、心身を「空」のように軽くする整体院LP。完全個室・完全予約制・初心者歓迎の特徴を伝え、不安を解消する構成。
+            - paragraph [ref=e865]: "カテゴリ: Medical | 業種: 整体院"
+            - paragraph [ref=e866]: "目的: 来店予約"
+            - list [ref=e867]:
+              - listitem [ref=e868]: HTML5
+              - listitem [ref=e869]: CSS3
+              - listitem [ref=e870]: JavaScript
+            - link "Day84 からだ工房 そら | その痛み、空のように晴れやかに の詳細を見る" [ref=e871] [cursor=pointer]:
+              - /url: ./day084/
+              - text: 詳細を見る
+    - region "Contact" [ref=e872]:
+      - generic [ref=e873]:
+        - heading "Contact" [level=2] [ref=e874]
+        - paragraph [ref=e875]: 新規LP制作、既存LPの改善、短納期案件のご相談に対応しています。目的・ターゲット・希望納期を添えてご連絡ください。
+        - generic [ref=e876]:
+          - link "メールで相談する" [ref=e877] [cursor=pointer]:
+            - /url: mailto:hello@example.com?subject=LP%E5%88%B6%E4%BD%9C%E7%9B%B8%E8%AB%87
+          - link "フォーム（ダミー）" [ref=e878] [cursor=pointer]:
+            - /url: https://example.com/contact
+  - contentinfo [ref=e879]:
+    - generic [ref=e880]:
+      - paragraph [ref=e881]: LP Portfolio 100
+      - generic [ref=e882]: © 2026 LP Portfolio 100
