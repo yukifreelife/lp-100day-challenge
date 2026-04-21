@@ -423,6 +423,17 @@ const worksData = [
     tech: ["HTML5", "CSS3", "JavaScript"],
     url: "./day084/",
   },
+  {
+    day: "Day85",
+    title: "FRAME by Sato | フリーランス映像クリエイター",
+    category: "Video Creator",
+    industry: "映像クリエイティブ",
+    focus: "無料相談予約",
+    summary: "フリーランス映像クリエイター FRAME by Sato のLP。企画・撮影・編集までワンストップ対応で、YouTube動画、企業インタビュー、PR動画、イベント、ウェディングなど幅広いジャンルに対応。",
+    metric: "The Cinematic Apertureデザイン・実績ギャラリー・3つの料金プラン・クリエイタープロフィール",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    url: "./day085/",
+  },
 ];
 
 const colorByCategory = {
@@ -441,6 +452,8 @@ const colorByCategory = {
   Medical: "#4A90A4",
   Pet: "#E87D6E",
   "Home Services": "#7FB099",
+  "Video Creator": "#8B5A3C",
+  Restaurant: "#E85D4C",
 };
 
 const REEL_INTERVAL_MS = 3200;

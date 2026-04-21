@@ -1,0 +1,948 @@
+/* ========================================
+   Design System: The Cinematic Aperture
+   FRAME by Sato LP
+   ======================================== */
+
+/* Color Palette */
+:root {
+    /* Primary - Brown */
+    --primary: #513526;
+    --primary-container: #6b4c3b;
+    --primary-fixed: #ffdbc9;
+    --primary-fixed-dim: #e8bea8;
+
+    /* Surface - Light Beige */
+    --surface: #fef9f1;
+    --surface-container: #f2ede5;
+    --surface-container-high: #ece8e0;
+    --surface-container-highest: #e7e2da;
+    --surface-container-low: #f8f3eb;
+    --surface-container-lowest: #ffffff;
+    --surface-dim: #ded9d2;
+
+    /* Text */
+    --on-surface: #1d1c17;
+    --on-surface-variant: #50443f;
+    --on-primary: #ffffff;
+    --on-primary-container: #e8bea8;
+
+    /* Secondary */
+    --secondary: #6b5c4c;
+    --secondary-container: #f4dfcb;
+    --on-secondary-container: #716252;
+
+    /* Tertiary - Amber */
+    --tertiary: #612e04;
+    --tertiary-container: #7e441a;
+    --on-tertiary-container: #ffb78a;
+
+    /* Outline */
+    --outline: #82746e;
+    --outline-variant: #d4c3bc;
+
+    /* Spacing */
+    --section-padding: 120px;
+    --container-width: 1200px;
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+}
+
+/* ========================================
+   Reset & Base Styles
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans JP', sans-serif;
+    background-color: var(--surface);
+    color: var(--on-surface);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ========================================
+   Typography
+   ======================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Epilogue', 'Noto Serif JP', serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+/* ========================================
+   Container
+   ======================================== */
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ========================================
+   Navigation
+   ======================================== */
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(254, 249, 241, 0.7);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-bottom: none;
+    transition: all 0.3s ease;
+}
+
+.nav.scrolled {
+    background: rgba(254, 249, 241, 0.95);
+    box-shadow: 0 2px 24px rgba(29, 28, 23, 0.06);
+}
+
+.nav-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-family: 'Epilogue', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: -0.02em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--on-surface);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.btn-cta {
+    padding: 12px 24px;
+    background: var(--primary);
+    color: var(--on-primary);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-cta:hover {
+    transform: scale(0.98);
+    box-shadow: 0 8px 32px rgba(81, 53, 38, 0.2);
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(254, 249, 241, 0.85) 0%, rgba(254, 249, 241, 0.4) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 120px 24px;
+    max-width: 800px;
+}
+
+.hero-label {
+    display: inline-block;
+    font-family: 'Epilogue', serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--tertiary);
+    margin-bottom: 24px;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: var(--on-surface);
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    color: var(--on-surface-variant);
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    background: var(--primary);
+    color: var(--on-primary);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(0.98);
+    box-shadow: 0 12px 40px rgba(81, 53, 38, 0.25);
+}
+
+.btn-large {
+    padding: 20px 40px;
+    font-size: 1.125rem;
+}
+
+/* ========================================
+   Section Styles
+   ======================================== */
+
+section {
+    padding: var(--section-padding) 0;
+}
+
+.pain-points {
+    background-color: var(--surface);
+}
+
+.features {
+    background-color: var(--surface-container-low);
+}
+
+.works {
+    background-color: var(--surface);
+}
+
+.flow {
+    background-color: var(--surface-container-low);
+}
+
+.pricing {
+    background-color: var(--surface);
+}
+
+.creator {
+    background-color: var(--surface-container-low);
+}
+
+.faq {
+    background-color: var(--surface);
+}
+
+/* ========================================
+   Section Header
+   ======================================== */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-label {
+    display: block;
+    font-family: 'Epilogue', serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--tertiary);
+    margin-bottom: 16px;
+}
+
+.section-title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    color: var(--on-surface);
+}
+
+/* ========================================
+   Pain Points Section
+   ======================================== */
+
+.pain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.pain-card {
+    background-color: var(--surface-container-lowest);
+    border-radius: var(--radius-lg);
+    padding: 40px 32px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pain-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(29, 28, 23, 0.08);
+}
+
+.pain-card .material-symbols-outlined {
+    font-size: 48px;
+    color: var(--primary);
+    margin-bottom: 24px;
+}
+
+.pain-title {
+    font-family: 'Epilogue', serif;
+    font-size: 1.25rem;
+    color: var(--on-surface);
+    margin-bottom: 16px;
+}
+
+.pain-text {
+    color: var(--on-surface-variant);
+    font-size: 0.9375rem;
+    line-height: 1.8;
+}
+
+/* ========================================
+   Value Prop Section
+   ======================================== */
+
+.value-prop {
+    position: relative;
+    padding: 80px 0;
+}
+
+.value-prop-bg {
+    position: absolute;
+    inset: 0;
+}
+
+.value-prop-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.value-prop-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(254, 249, 241, 0.85);
+}
+
+.value-prop-text {
+    position: relative;
+    z-index: 2;
+    font-family: 'Epilogue', serif;
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    color: var(--on-surface);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* ========================================
+   Features Section
+   ======================================== */
+
+.feature-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.feature-item:last-child {
+    margin-bottom: 0;
+}
+
+.feature-item.reverse {
+    direction: rtl;
+}
+
+.feature-item.reverse > * {
+    direction: ltr;
+}
+
+.feature-image {
+    aspect-ratio: 16/9;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.feature-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feature-number {
+    display: inline-block;
+    font-family: 'Epilogue', serif;
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--primary);
+    opacity: 0.3;
+    margin-bottom: 16px;
+}
+
+.feature-title {
+    font-family: 'Epilogue', serif;
+    font-size: 1.75rem;
+    color: var(--on-surface);
+    margin-bottom: 16px;
+}
+
+.feature-text {
+    color: var(--on-surface-variant);
+    line-height: 1.8;
+}
+
+/* ========================================
+   Works Section
+   ======================================== */
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.work-card {
+    position: relative;
+    aspect-ratio: 16/9;
+    background: var(--surface-container-high);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.work-card:hover {
+    transform: scale(1.02);
+}
+
+.work-thumbnail {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--primary), var(--primary-container));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-icon {
+    font-size: 64px;
+    color: var(--surface-container-lowest);
+    opacity: 0.9;
+}
+
+.work-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    background: linear-gradient(to top, rgba(29, 28, 23, 0.8), transparent);
+}
+
+.work-category {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--primary-fixed-dim);
+    margin-bottom: 4px;
+}
+
+.work-title {
+    font-family: 'Epilogue', serif;
+    font-size: 1.125rem;
+    color: var(--on-primary);
+}
+
+/* ========================================
+   Flow Section
+   ======================================== */
+
+.flow-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flow-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.flow-icon {
+    font-size: 40px;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.flow-step {
+    display: inline-block;
+    font-family: 'Epilogue', serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.flow-title {
+    font-family: 'Epilogue', serif;
+    font-size: 1.25rem;
+    color: var(--on-surface);
+    margin-bottom: 8px;
+}
+
+.flow-text {
+    color: var(--on-surface-variant);
+}
+
+/* ========================================
+   Pricing Section
+   ======================================== */
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.price-card {
+    position: relative;
+    background-color: var(--surface-container-lowest);
+    border-radius: var(--radius-xl);
+    padding: 48px 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(29, 28, 23, 0.1);
+}
+
+.price-card.popular {
+    border: 2px solid var(--primary);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: var(--on-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 16px;
+    border-radius: 100px;
+}
+
+.plan-name {
+    font-family: 'Epilogue', serif;
+    font-size: 1.5rem;
+    color: var(--on-surface);
+    margin-bottom: 8px;
+}
+
+.plan-desc {
+    color: var(--on-surface-variant);
+    margin-bottom: 24px;
+}
+
+.plan-price {
+    margin-bottom: 32px;
+}
+
+.price-gold {
+    font-family: 'Epilogue', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.plan-features {
+    list-style: none;
+}
+
+.plan-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: var(--on-surface);
+}
+
+.plan-features .material-symbols-outlined {
+    color: var(--primary);
+    font-size: 20px;
+}
+
+/* ========================================
+   Creator Section
+   ======================================== */
+
+.creator-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.creator-image {
+    aspect-ratio: 4/5;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+}
+
+.creator-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.creator-name {
+    font-family: 'Epilogue', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--on-surface);
+    margin-bottom: 8px;
+}
+
+.creator-role {
+    color: var(--secondary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.creator-bio {
+    color: var(--on-surface-variant);
+    line-height: 2;
+    margin-bottom: 32px;
+}
+
+.skills-section {
+    margin-top: 40px;
+}
+
+.skills-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--tertiary);
+    margin-bottom: 16px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-tag {
+    background-color: var(--surface-container-high);
+    padding: 8px 16px;
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    color: var(--on-surface);
+}
+
+/* ========================================
+   FAQ Section
+   ======================================== */
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--outline-variant);
+    border-bottom: 1px solid rgba(212, 195, 188, 0.3);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Epilogue', serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--on-surface);
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: var(--primary);
+}
+
+.faq-question .material-symbols-outlined {
+    color: var(--outline);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question .material-symbols-outlined {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding-bottom: 32px;
+}
+
+.faq-answer p {
+    color: var(--on-surface-variant);
+    line-height: 1.8;
+}
+
+/* ========================================
+   CTA Section
+   ======================================== */
+
+.cta {
+    position: relative;
+    padding: 120px 0;
+}
+
+.cta-bg {
+    position: absolute;
+    inset: 0;
+}
+
+.cta-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cta-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(81, 53, 38, 0.9) 0%, rgba(107, 76, 59, 0.85) 100%);
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--on-primary);
+}
+
+.cta-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 24px;
+}
+
+.cta-subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.cta .btn-primary {
+    background: var(--on-primary);
+    color: var(--primary);
+}
+
+.cta .btn-primary:hover {
+    background: var(--surface-container-lowest);
+    box-shadow: 0 12px 40px rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+
+.footer {
+    background-color: var(--on-surface);
+    padding: 40px 24px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-logo {
+    font-family: 'Epilogue', serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--surface);
+}
+
+.footer-copy {
+    color: var(--surface-container-high);
+    font-size: 0.875rem;
+}
+
+/* ========================================
+   Animation Classes
+   ======================================== */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+@media (max-width: 768px) {
+    :root {
+        --section-padding: 80px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-container {
+        padding: 16px 24px;
+    }
+
+    .hero-content {
+        padding: 80px 24px;
+    }
+
+    .feature-item,
+    .feature-item.reverse {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        direction: ltr;
+    }
+
+    .creator-layout {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .pain-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flow-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ========================================
+   Print Styles
+   ======================================== */
+
+@media print {
+    .nav,
+    .btn-primary,
+    .btn-cta,
+    .cta {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+}
