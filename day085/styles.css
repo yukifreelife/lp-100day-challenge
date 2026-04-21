@@ -1028,8 +1028,9 @@ img {
     transition: color 0.2s;
 }
 
-.footer-nav a .material-symbols-outlined {
-    font-size: 1.125rem;
+.footer-nav a .social-icon {
+    width: 20px;
+    height: 20px;
 }
 
 .footer-nav a:hover {
