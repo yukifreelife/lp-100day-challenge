@@ -1,0 +1,122 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: SALON LUMIÈRE
+      - list [ref=e5]:
+        - listitem [ref=e6]:
+          - link "Concept" [ref=e7] [cursor=pointer]:
+            - /url: "#concept"
+        - listitem [ref=e8]:
+          - link "Menu" [ref=e9] [cursor=pointer]:
+            - /url: "#menu"
+        - listitem [ref=e10]:
+          - link "Stylist" [ref=e11] [cursor=pointer]:
+            - /url: "#stylist"
+        - listitem [ref=e12]:
+          - link "Access" [ref=e13] [cursor=pointer]:
+            - /url: "#access"
+      - link "ご予約はこちら" [ref=e14] [cursor=pointer]:
+        - /url: "#contact"
+  - generic [ref=e18]:
+    - heading "光が差す、 あなただけの美しさへ" [level=1] [ref=e19]:
+      - text: 光が差す、
+      - text: あなただけの美しさへ
+    - paragraph [ref=e20]: 上質な時間と最高の技術で、あなたの魅力を最大限に引き出します
+    - link "ご予約はこちら" [ref=e21] [cursor=pointer]:
+      - /url: "#contact"
+  - generic [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e27]: PHILOSOPHY
+      - heading "Salon Lumièreのこだわり" [level=2] [ref=e28]
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - img "卓越した技術 - ハサミと櫛" [ref=e32]
+        - heading "卓越した技術" [level=3] [ref=e33]
+        - paragraph [ref=e34]: 経験豊富なスタイリストによる高度な技術で、あなただけの最適なスタイルを提案します。
+      - generic [ref=e35]:
+        - img "上質な空間 - レザーチェア" [ref=e37]
+        - heading "上質な空間" [level=3] [ref=e38]
+        - paragraph [ref=e39]: プライベートな空間で、日々の忙しさを忘れ、完全にリラックスして過ごせます。
+      - generic [ref=e40]:
+        - img "丁寧なカウンセリング" [ref=e42]
+        - heading "丁寧なカウンセリング" [level=3] [ref=e43]
+        - paragraph [ref=e44]: 一人ひとりのライフスタイルや要望を丁寧にヒアリングし、理想のスタイルを共に創り上げます。
+  - generic [ref=e46]:
+    - generic [ref=e47]:
+      - generic [ref=e48]: MENU
+      - heading "施術メニュー" [level=2] [ref=e49]
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - heading "Signature Cut" [level=3] [ref=e53]
+          - paragraph [ref=e54]: カウンセリング・シャンプー・カット・スタイリング
+        - generic [ref=e56]: ¥12,000
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - heading "Bespoke Color" [level=3] [ref=e59]
+          - paragraph [ref=e60]: オーダーメイドのカラーで深みと立体感を
+        - generic [ref=e61]:
+          - generic [ref=e62]: ¥15,000
+          - generic [ref=e63]: ~
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - heading "Lumière Perm" [level=3] [ref=e66]
+          - paragraph [ref=e67]: 毛質・顔タイプに合わせたパーマデザイン
+        - generic [ref=e68]:
+          - generic [ref=e69]: ¥18,000
+          - generic [ref=e70]: ~
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - heading "Lumière Treatment" [level=3] [ref=e73]
+          - paragraph [ref=e74]: 傷んだ髪を蘇らせる集中トリートメント
+        - generic [ref=e76]: ¥10,000
+  - generic [ref=e79]:
+    - img "Kento Yajima - Master Stylist" [ref=e82]
+    - generic [ref=e83]:
+      - generic [ref=e84]: ART DIRECTOR
+      - heading "Kento Yajima" [level=2] [ref=e85]
+      - paragraph [ref=e86]: Master Stylist
+      - paragraph [ref=e87]: 10年以上にわたり、ハイファッション雑誌やラグジュアリーサロンで経験を積んでまいりました。髪を構造的なメディアとして捉え、大胆でありながら驚くほどナチュラルなシルエットを創り出すことを哲学としています。
+      - link "View Portfolio" [ref=e88] [cursor=pointer]:
+        - /url: "#"
+  - generic [ref=e91]:
+    - generic [ref=e92]:
+      - generic [ref=e93]:
+        - generic [ref=e94]: ACCESS
+        - heading "ご予約・アクセス" [level=2] [ref=e95]
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - term [ref=e98]: 住所
+          - definition [ref=e99]: 東京都中央区銀座1-2-3 ルミエールビル 5F
+        - generic [ref=e100]:
+          - term [ref=e101]: 営業時間
+          - definition [ref=e102]: 10:00 - 20:00（年中無休）
+        - generic [ref=e103]:
+          - term [ref=e104]: 電話
+          - definition [ref=e105]:
+            - link "03-1234-5678" [ref=e106] [cursor=pointer]:
+              - /url: tel:03-1234-5678
+        - generic [ref=e107]:
+          - term [ref=e108]: 最寄り駅
+          - definition [ref=e109]: 東京メトロ銀座線・丸ノ内線・日比谷線「銀座駅」A1出口より徒歩3分
+    - generic [ref=e111]:
+      - img [ref=e112]
+      - paragraph [ref=e115]: MAP
+  - generic [ref=e118]:
+    - generic [ref=e119]:
+      - generic [ref=e120]: RESERVATION
+      - heading "ご予約はお電話・フォームにて" [level=2] [ref=e121]
+    - paragraph [ref=e122]: ご予約・お問い合わせはお電話またはフォームより承っております。
+    - link "03-1234-5678" [ref=e124] [cursor=pointer]:
+      - /url: tel:03-1234-5678
+      - img [ref=e125]
+      - text: 03-1234-5678
+  - contentinfo [ref=e127]:
+    - generic [ref=e128]:
+      - generic [ref=e129]: SALON LUMIÈRE
+      - generic [ref=e130]:
+        - link "Privacy Policy" [ref=e131] [cursor=pointer]:
+          - /url: "#"
+        - link "Terms of Service" [ref=e132] [cursor=pointer]:
+          - /url: "#"
+      - paragraph [ref=e133]: © 2026 Salon Lumière. The Midnight Atelier.

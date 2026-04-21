@@ -193,17 +193,14 @@ h1 {
     object-fit: cover;
 }
 
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(254, 249, 241, 0.85) 0%, rgba(254, 249, 241, 0.4) 100%);
-}
-
 .hero-content {
     position: relative;
     z-index: 2;
     padding: 120px 24px;
     max-width: 800px;
+    background: rgba(254, 249, 241, 0.85);
+    border-radius: var(--radius-lg);
+    margin: 40px;
 }
 
 .hero-label {
@@ -379,12 +376,6 @@ section {
     object-fit: cover;
 }
 
-.value-prop-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(254, 249, 241, 0.85);
-}
-
 .value-prop-text {
     position: relative;
     z-index: 2;
@@ -395,6 +386,9 @@ section {
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
+    background: rgba(254, 249, 241, 0.9);
+    padding: 48px;
+    border-radius: var(--radius-lg);
 }
 
 /* ========================================
@@ -795,38 +789,38 @@ section {
     object-fit: cover;
 }
 
-.cta-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(81, 53, 38, 0.9) 0%, rgba(107, 76, 59, 0.85) 100%);
-}
-
 .cta-content {
     position: relative;
     z-index: 2;
     text-align: center;
-    color: var(--on-primary);
+    color: var(--on-surface);
+    background: rgba(254, 249, 241, 0.9);
+    padding: 48px;
+    border-radius: var(--radius-lg);
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .cta-title {
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 24px;
+    color: var(--on-surface);
 }
 
 .cta-subtitle {
     font-size: 1.125rem;
     margin-bottom: 40px;
-    opacity: 0.9;
+    color: var(--on-surface-variant);
 }
 
 .cta .btn-primary {
-    background: var(--on-primary);
-    color: var(--primary);
+    background: var(--primary);
+    color: var(--on-primary);
 }
 
 .cta .btn-primary:hover {
-    background: var(--surface-container-lowest);
-    box-shadow: 0 12px 40px rgba(255, 255, 255, 0.2);
+    transform: scale(0.98);
+    box-shadow: 0 12px 40px rgba(81, 53, 38, 0.25);
 }
 
 /* ========================================

@@ -1,0 +1,236 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: FRAME by Sato
+      - list [ref=e5]:
+        - listitem [ref=e6]:
+          - link "特徴" [ref=e7] [cursor=pointer]:
+            - /url: "#features"
+        - listitem [ref=e8]:
+          - link "実績" [ref=e9] [cursor=pointer]:
+            - /url: "#works"
+        - listitem [ref=e10]:
+          - link "料金" [ref=e11] [cursor=pointer]:
+            - /url: "#pricing"
+        - listitem [ref=e12]:
+          - link "クリエイター" [ref=e13] [cursor=pointer]:
+            - /url: "#creator"
+        - listitem [ref=e14]:
+          - link "FAQ" [ref=e15] [cursor=pointer]:
+            - /url: "#faq"
+      - link "無料相談を予約" [ref=e16] [cursor=pointer]:
+        - /url: "#contact"
+  - generic [ref=e20]:
+    - generic [ref=e21]: Visual Storytelling
+    - heading "あなたの\"伝えたい\"を、 映像にする。" [level=1] [ref=e22]:
+      - text: あなたの"伝えたい"を、
+      - text: 映像にする。
+    - paragraph [ref=e23]:
+      - text: 企画・撮影・編集まで、すべてお任せください。
+      - text: フリーランス映像クリエイター FRAME by Sato
+    - link "無料相談を予約する" [ref=e24] [cursor=pointer]:
+      - /url: "#contact"
+  - generic [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e28]: PAIN POINTS
+      - heading "こんなお悩みありませんか？" [level=2] [ref=e29]
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]: help_outline
+        - heading "何から頼めばいい？" [level=3] [ref=e33]
+        - paragraph [ref=e34]: 動画制作のフローが分からず、具体的な相談ができない。
+      - generic [ref=e35]:
+        - generic [ref=e36]: payments
+        - heading "高額で手が出ない" [level=3] [ref=e37]
+        - paragraph [ref=e38]: 制作会社の見積もりが高く、予算内で収めたい。
+      - generic [ref=e39]:
+        - generic [ref=e40]: schedule
+        - heading "SNS動画を作る時間がない" [level=3] [ref=e41]
+        - paragraph [ref=e42]: クオリティを保ちつつ、定期的に動画を発信したい。
+      - generic [ref=e43]:
+        - generic [ref=e44]: trending_up
+        - heading "魅力が伝わらない" [level=3] [ref=e45]
+        - paragraph [ref=e46]: 自社サービスの良さをどう映像で見せればいいか悩んでいる。
+  - paragraph [ref=e51]: ヒアリングから納品まで、一貫してサポート。あなたのビジョンを形にするための最適なパートナーとして伴走します。
+  - generic [ref=e53]:
+    - generic [ref=e56]:
+      - generic [ref=e57]: "01"
+      - heading "ワンストップ対応" [level=3] [ref=e58]
+      - paragraph [ref=e59]: 企画構成、撮影、編集まで一貫して担当します。連絡の不一致がなく、当初のコンセプトを忠実に再現した映像制作が可能です。
+    - generic [ref=e62]:
+      - generic [ref=e63]: "02"
+      - heading "幅広いジャンル" [level=3] [ref=e64]
+      - paragraph [ref=e65]: YouTube動画、企業インタビュー、PR動画、イベント、ウェディングなど、多種多様なニーズに応える柔軟なクリエイティブを提供します。
+    - generic [ref=e68]:
+      - generic [ref=e69]: "03"
+      - heading "個人ならではの コストパフォーマンス" [level=3] [ref=e70]:
+        - text: 個人ならではの
+        - text: コストパフォーマンス
+      - paragraph [ref=e71]: 制作会社のバックオフィス費用がないため、適正な価格で高品質な映像をお届けできます。急な変更にも迅速に対応可能です。
+  - generic [ref=e73]:
+    - generic [ref=e74]:
+      - generic [ref=e75]: PROMOTION
+      - heading "実績紹介" [level=2] [ref=e76]
+    - generic [ref=e77]:
+      - generic [ref=e78] [cursor=pointer]:
+        - generic [ref=e80]: play_circle
+        - generic [ref=e81]:
+          - text: Cafe
+          - heading "Cafe L'Aube Concept Movie" [level=3] [ref=e82]
+      - generic [ref=e83] [cursor=pointer]:
+        - generic [ref=e85]: play_circle
+        - generic [ref=e86]:
+          - text: Wedding
+          - heading "Eternal Bonds | Highlight Reel" [level=3] [ref=e87]
+      - generic [ref=e88] [cursor=pointer]:
+        - generic [ref=e90]: play_circle
+        - generic [ref=e91]:
+          - text: Corporate
+          - heading "TechInnovate CEO Interview" [level=3] [ref=e92]
+      - generic [ref=e93] [cursor=pointer]:
+        - generic [ref=e95]: play_circle
+        - generic [ref=e96]:
+          - text: Event
+          - heading "Summer Groove Music Fest Recap" [level=3] [ref=e97]
+  - generic [ref=e99]:
+    - generic [ref=e100]:
+      - generic [ref=e101]: FLOW
+      - heading "制作フロー" [level=2] [ref=e102]
+    - generic [ref=e103]:
+      - generic [ref=e104]:
+        - generic [ref=e105]: chat
+        - generic [ref=e106]:
+          - generic [ref=e107]: "01"
+          - heading "相談" [level=3] [ref=e108]
+          - paragraph [ref=e109]: 目的やターゲットをヒアリングします。
+      - generic [ref=e110]:
+        - generic [ref=e111]: lightbulb
+        - generic [ref=e112]:
+          - generic [ref=e113]: "02"
+          - heading "企画" [level=3] [ref=e114]
+          - paragraph [ref=e115]: 構成案、絵コンテの作成・提案。
+      - generic [ref=e116]:
+        - generic [ref=e117]: photo_camera
+        - generic [ref=e118]:
+          - generic [ref=e119]: "03"
+          - heading "撮影" [level=3] [ref=e120]
+          - paragraph [ref=e121]: 最適な機材で現場撮影を行います。
+      - generic [ref=e122]:
+        - generic [ref=e123]: edit
+        - generic [ref=e124]:
+          - generic [ref=e125]: "04"
+          - heading "編集" [level=3] [ref=e126]
+          - paragraph [ref=e127]: カット、BGM、カラーグレーディング。
+      - generic [ref=e128]:
+        - generic [ref=e129]: task_alt
+        - generic [ref=e130]:
+          - generic [ref=e131]: "05"
+          - heading "納品" [level=3] [ref=e132]
+          - paragraph [ref=e133]: チェック・修正を経てデータ納品。
+  - generic [ref=e135]:
+    - generic [ref=e136]:
+      - generic [ref=e137]: PRICING
+      - heading "料金プラン" [level=2] [ref=e138]
+    - generic [ref=e139]:
+      - generic [ref=e140]:
+        - heading "Light" [level=3] [ref=e141]
+        - paragraph [ref=e142]: SNS用のショート動画制作に
+        - generic [ref=e143]: ¥30,000〜
+        - list [ref=e144]:
+          - listitem [ref=e145]:
+            - generic [ref=e146]: check
+            - text: 動画尺 1分以内
+          - listitem [ref=e147]:
+            - generic [ref=e148]: check
+            - text: 基本編集・テロップ
+          - listitem [ref=e149]:
+            - generic [ref=e150]: check
+            - text: 修正1回まで無料
+      - generic [ref=e151]:
+        - generic [ref=e152]: Popular No.1
+        - heading "Standard" [level=3] [ref=e153]
+        - paragraph [ref=e154]: 企業PRやインタビュー動画に
+        - generic [ref=e155]: ¥80,000〜
+        - list [ref=e156]:
+          - listitem [ref=e157]:
+            - generic [ref=e158]: check
+            - text: 動画尺 3〜5分
+          - listitem [ref=e159]:
+            - generic [ref=e160]: check
+            - text: 企画構成案の作成
+          - listitem [ref=e161]:
+            - generic [ref=e162]: check
+            - text: 半日撮影対応
+          - listitem [ref=e163]:
+            - generic [ref=e164]: check
+            - text: 修正2回まで無料
+      - generic [ref=e165]:
+        - heading "Premium" [level=3] [ref=e166]
+        - paragraph [ref=e167]: 本格的なブランディング映像に
+        - generic [ref=e168]: ¥150,000〜
+        - list [ref=e169]:
+          - listitem [ref=e170]:
+            - generic [ref=e171]: check
+            - text: 尺無制限
+          - listitem [ref=e172]:
+            - generic [ref=e173]: check
+            - text: コンサルティング込み
+          - listitem [ref=e174]:
+            - generic [ref=e175]: check
+            - text: 終日・複数日撮影
+          - listitem [ref=e176]:
+            - generic [ref=e177]: check
+            - text: 無制限修正
+  - generic [ref=e180]:
+    - img "Sato Kenji" [ref=e182]
+    - generic [ref=e183]:
+      - generic [ref=e184]: CREATOR
+      - heading "Sato Kenji" [level=2] [ref=e185]
+      - paragraph [ref=e186]: Director / Cinematographer / Editor
+      - paragraph [ref=e187]: 都内制作会社にて5年間、TVCMやWEB広告の制作に携わった後、2020年に独立。単なる「綺麗な映像」ではなく、ビジネスの課題を解決する「伝わる映像」をモットーに活動しています。映像を通じて、想いを形にし、温度感を伝えるお手伝いをします。
+      - generic [ref=e188]:
+        - generic [ref=e189]: Main Skills
+        - generic [ref=e190]:
+          - generic [ref=e191]: Premiere Pro
+          - generic [ref=e192]: After Effects
+          - generic [ref=e193]: DaVinci Resolve
+          - generic [ref=e194]: Cinema 4D
+          - generic [ref=e195]: Drone Pilot
+  - generic [ref=e197]:
+    - generic [ref=e198]:
+      - generic [ref=e199]: FAQ
+      - heading "よくある質問" [level=2] [ref=e200]
+    - generic [ref=e201]:
+      - generic [ref=e202]:
+        - button "制作期間はどのくらいかかりますか？ expand_more" [ref=e203] [cursor=pointer]:
+          - generic [ref=e204]: 制作期間はどのくらいかかりますか？
+          - generic [ref=e205]: expand_more
+        - paragraph [ref=e206]: 内容によりますが、Standardプランで通常2週間〜1ヶ月程度です。お急ぎの場合はご相談ください。
+      - generic [ref=e207]:
+        - button "撮影のみ、または編集のみの依頼は可能ですか？ expand_more" [ref=e208] [cursor=pointer]:
+          - generic [ref=e209]: 撮影のみ、または編集のみの依頼は可能ですか？
+          - generic [ref=e210]: expand_more
+        - paragraph [ref=e211]: はい、可能です。素材の提供を受けての編集のみや、イベント当日の撮影のみといったご依頼も承っております。
+      - generic [ref=e212]:
+        - button "全国どこでも撮影に来ていただけますか？ expand_more" [ref=e213] [cursor=pointer]:
+          - generic [ref=e214]: 全国どこでも撮影に来ていただけますか？
+          - generic [ref=e215]: expand_more
+        - paragraph [ref=e216]: はい。全国対応可能です。ただし、東京（拠点は渋谷）から離れる場合は別途交通費・宿泊費を頂戴しております。
+      - generic [ref=e217]:
+        - button "予算が限られていますが、相談に乗ってもらえますか？ expand_more" [ref=e218] [cursor=pointer]:
+          - generic [ref=e219]: 予算が限られていますが、相談に乗ってもらえますか？
+          - generic [ref=e220]: expand_more
+        - paragraph [ref=e221]: もちろん可能です。ご予算に合わせた最適な構成プランをご提案させていただきますので、まずはお気軽にお問い合わせください。
+  - generic [ref=e226]:
+    - heading "映像の力で、 あなたの想いを届けませんか？" [level=2] [ref=e227]:
+      - text: 映像の力で、
+      - text: あなたの想いを届けませんか？
+    - paragraph [ref=e228]: まずは30分の無料相談から承っております。
+    - link "calendar_today 無料相談を予約する" [ref=e229] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=e230]: calendar_today
+      - text: 無料相談を予約する
+  - contentinfo [ref=e231]:
+    - generic [ref=e233]:
+      - generic [ref=e234]: FRAME by Sato
+      - paragraph [ref=e235]: © 2026 Salon Lumière. The Midnight Atelier.
