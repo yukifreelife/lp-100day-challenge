@@ -1,31 +1,23 @@
-/**
- * FRAME by Sato LP - Main Script
- * The Cinematic Aperture
- */
+// ============================================
+// Salon Lumière - Script.js
+// The Midnight Atelier
+// ============================================
 
-// ========================================
-// Navigation Scroll Effect
-// ========================================
-
+// === Navigation Scroll Effect ===
 const navbar = document.getElementById('navbar');
-let lastScroll = 0;
 
-function handleNavScroll() {
-    const currentScroll = window.pageYOffset;
-
-    if (currentScroll > 100) {
-        navbar.classList.add('scrolled');
+function updateNavbar() {
+    if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(19, 19, 19, 0.95)';
     } else {
-        navbar.classList.remove('scrolled');
+        navbar.style.background = 'transparent';
     }
-
-    lastScroll = currentScroll;
 }
 
-// ========================================
-// Smooth Scroll for Navigation Links
-// ========================================
+window.addEventListener('scroll', updateNavbar);
+updateNavbar();
 
+// === Smooth Scroll for Anchor Links ===
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
@@ -44,122 +36,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ========================================
-// Intersection Observer for Fade-in Animations
-// ========================================
-
+// === Fade-in Animation on Scroll ===
 const observerOptions = {
     root: null,
     rootMargin: '0px',
     threshold: 0.1
 };
 
-function handleIntersection(entries, observer) {
-    entries.forEach((entry, index) => {
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
         if (entry.isIntersecting) {
-            const delay = entry.target.dataset.delay || 0;
-            setTimeout(() => {
-                entry.target.classList.add('visible');
-            }, delay);
-            observer.unobserve(entry.target);
+            entry.target.classList.add('visible');
         }
     });
-}
+}, observerOptions);
 
-const observer = new IntersectionObserver(handleIntersection, observerOptions);
+// Observe all fade-in elements
+document.querySelectorAll('.fade-in').forEach(el => {
+    observer.observe(el);
+});
 
-function observeFadeInElements() {
-    const fadeElements = document.querySelectorAll('.fade-in');
-    fadeElements.forEach((el, index) => {
-        const parent = el.closest('.pain-grid, .works-grid, .flow-list, .pricing-grid, .faq-list');
-        if (parent) {
-            const siblings = Array.from(parent.children);
-            const elementIndex = siblings.indexOf(el);
-            el.dataset.delay = elementIndex * 100;
-        }
-        observer.observe(el);
-    });
-}
-
-// ========================================
-// FAQ Accordion (auto-close other items)
-// ========================================
-
-function initFAQ() {
-    const faqDetails = document.querySelectorAll('.faq-details');
-
-    faqDetails.forEach(detail => {
-        detail.addEventListener('toggle', () => {
-            if (detail.open) {
-                // Close all other details
-                faqDetails.forEach(otherDetail => {
-                    if (otherDetail !== detail) {
-                        otherDetail.removeAttribute('open');
-                    }
-                });
+// === Reserve Button Click Handler ===
+document.querySelectorAll('.btn-primary').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#contact' || href === 'tel:□□□-□□□□-□□□□') {
+            // For demo: show alert (in production, would open reservation form)
+            if (href.startsWith('tel:')) {
+                // Allow default behavior for tel links
+                return;
             }
-        });
+        }
     });
-}
-
-// ========================================
-// Initialize on DOM Ready
-// ========================================
-
-function init() {
-    observeFadeInElements();
-    handleNavScroll();
-    initFAQ();
-}
-
-// ========================================
-// Event Listeners
-// ========================================
-
-let ticking = false;
-
-function onScroll() {
-    if (!ticking) {
-        window.requestAnimationFrame(() => {
-            handleNavScroll();
-            ticking = false;
-        });
-        ticking = true;
-    }
-}
-
-window.addEventListener('scroll', onScroll, { passive: true });
-window.addEventListener('DOMContentLoaded', init);
-window.addEventListener('load', () => {
-    observeFadeInElements();
 });
-
-// ========================================
-// Accessibility: Reduce Motion
-// ========================================
-
-const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-
-if (prefersReducedMotion.matches) {
-    document.documentElement.style.setProperty('--section-padding', '60px');
-    document.querySelectorAll('.fade-in').forEach(el => {
-        el.style.opacity = '1';
-        el.style.transform = 'none';
-    });
-}
-
-prefersReducedMotion.addEventListener('change', () => {
-    if (prefersReducedMotion.matches) {
-        document.querySelectorAll('.fade-in').forEach(el => {
-            el.style.opacity = '1';
-            el.style.transform = 'none';
-        });
-    }
-});
-
-// ========================================
-// Console Branding
-// ========================================
-
-console.log('%cFRAME by Sato', 'font-family: serif; font-size: 24px; color: #6B4C3B;');
-console.log('%cVisual Storytelling', 'font-size: 12px; letter-spacing: 0.2em; color: #888;');

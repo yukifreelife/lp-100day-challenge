@@ -3,147 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>特定商取引法に基づく表記 | FRAME by Sato</title>
+    <title>特定商取引法に基づく表記 | Salon Lumière</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
         .legal-page {
-            padding: 120px 20px 80px;
+            padding: 120px 0 80px;
             min-height: 100vh;
-            background: #0a0a0a;
         }
-        .legal-container {
+        .legal-content {
             max-width: 800px;
             margin: 0 auto;
         }
         .legal-title {
-            font-family: 'Epilogue', sans-serif;
-            font-size: clamp(1.5rem, 4vw, 2rem);
-            font-weight: 700;
-            color: #fff;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #333;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--on-surface);
         }
         .legal-section {
-            margin-bottom: 30px;
+            margin-bottom: 2rem;
         }
-        .legal-label {
-            font-family: 'Plus Jakarta Sans', sans-serif;
+        .legal-section h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        .legal-section p,
+        .legal-section dd {
+            font-family: var(--font-body);
             font-size: 0.875rem;
-            font-weight: 600;
-            color: #888;
-            margin-bottom: 4px;
-        }
-        .legal-content {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 0.9375rem;
-            font-weight: 400;
-            color: #e0e0e0;
+            color: var(--on-surface-variant);
             line-height: 1.8;
         }
-        .legal-content a {
-            color: #fff;
-            text-decoration: underline;
-        }
-        .legal-back {
-            margin-top: 40px;
-        }
-        .legal-back a {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            font-family: 'Plus Jakarta Sans', sans-serif;
+        .legal-section dt {
+            font-family: var(--font-headline);
             font-size: 0.875rem;
-            font-weight: 500;
-            color: #888;
-            text-decoration: none;
-            transition: color 0.3s ease;
+            color: var(--on-surface);
+            margin-top: 1rem;
         }
-        .legal-back a:hover {
-            color: #fff;
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary);
+            font-size: 0.875rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="nav" id="navbar">
+    <nav class="nav">
         <div class="nav-container">
-            <a class="nav-logo" href="index.html">FRAME by Sato</a>
-            <ul class="nav-links">
-                <li><a href="index.html#work">Work</a></li>
-                <li><a href="index.html#process">Process</a></li>
-                <li><a href="index.html#pricing">Pricing</a></li>
-                <li><a href="index.html#faq">FAQ</a></li>
-            </ul>
-            <a href="index.html#contact" class="btn-cta">Start Project</a>
+            <div class="nav-logo">SALON LUMIÈRE</div>
+            <div class="nav-links">
+                <a href="index.html#concept" class="nav-link">Concept</a>
+                <a href="index.html#menu" class="nav-link">Menu</a>
+                <a href="index.html#stylists" class="nav-link">Stylists</a>
+                <a href="index.html#location" class="nav-link">Location</a>
+            </div>
+            <a href="index.html#contact" class="btn-primary">ご予約はこちら</a>
         </div>
     </nav>
 
+    <!-- Legal Content -->
     <div class="legal-page">
-        <div class="legal-container">
-            <h1 class="legal-title">特定商取引法に基づく表記</h1>
+        <div class="container">
+            <div class="legal-content">
+                <a href="index.html" class="back-link">← トップページに戻る</a>
+                <h1 class="legal-title">特定商取引法に基づく表記</h1>
 
-            <div class="legal-section">
-                <p class="legal-label">販売業者名</p>
-                <p class="legal-content">FRAME by Sato</p>
-            </div>
+                <dl class="legal-section">
+                    <dt>販売事業者名</dt>
+                    <dd>○○○○○</dd>
 
-            <div class="legal-section">
-                <p class="legal-label">代表者名</p>
-                <p class="legal-content">佐藤 ○○○</p>
-            </div>
+                    <dt>代表責任者名</dt>
+                    <dd>○○○○○</dd>
 
-            <div class="legal-section">
-                <p class="legal-label">所在地</p>
-                <p class="legal-content">〒□□□-□□□□<br>東京都○○区○○○-□-□</p>
-            </div>
+                    <dt>所在地</dt>
+                    <dd>〒□□□-□□□□<br>東京都○○区○○○-□-□</dd>
 
-            <div class="legal-section">
-                <p class="legal-label">連絡先</p>
-                <p class="legal-content">メールアドレス：<a href="mailto:info@frame-sato.com">info@frame-sato.com</a></p>
-            </div>
+                    <dt>電話番号</dt>
+                    <dd>□□□-□□□□-□□□□</dd>
 
-            <div class="legal-section">
-                <p class="legal-label">販売価格</p>
-                <p class="legal-content">各サービスページに記載の通り</p>
-            </div>
+                    <dt>メールアドレス</dt>
+                    <dd>contact@salonlumiere.demo</dd>
 
-            <div class="legal-section">
-                <p class="legal-label">代金の支払時期・方法</p>
-                <p class="legal-content">銀行振込・クレジットカード（Stripe経由）<br>サービス開始前に前払いにてお支払いいただきます。</p>
-            </div>
+                    <dt>営業時間</dt>
+                    <dd>火曜日〜日曜日 10:00〜20:00<br>（最終カット受付 18:00）<br>月曜定休</dd>
 
-            <div class="legal-section">
-                <p class="legal-label">商品の引渡時期</p>
-                <p class="legal-content">企画・撮影・編集を含めた映像制作サービスのため、納期は契約内容及びスケジュールによりますが、通常契約後2週間〜1ヶ月以内に納品いたします。</p>
-            </div>
+                    <dt>商品提供価格</dt>
+                    <dd>各メニューページに記載の通り</dd>
 
-            <div class="legal-section">
-                <p class="legal-label">キャンセル・返品について</p>
-                <p class="legal-content">お客様のご都合によるキャンセルの場合、制作進行状況に応じてキャンセル料を申し受けます。<br>制作着手前：無料<br>構成案提出後：見積金額の30％<br>撮影実施後：見積金額の50％<br>編集作業開始後：お断りいたします</p>
-            </div>
+                    <dt>商品代金以外の必要料金</dt>
+                    <dd>特にございません</dd>
 
-            <div class="legal-section">
-                <p class="legal-label">動作環境</p>
-                <p class="legal-content">本サービスはインターネット接続及び動画再生が可能なデバイス（PC、タブレット、スマートフォン等）でご利用いただけます。</p>
-            </div>
+                    <dt>お支払方法</dt>
+                    <dd>現金、クレジットカード、電子マネー</dd>
 
-            <div class="legal-section">
-                <p class="legal-label">販売数量</p>
-                <p class="legal-content">受注生産のため特に制限はありませんが、スケジュールの都合上、ご希望に添えない場合がございます。</p>
-            </div>
+                    <dt>サービス提供時期</dt>
+                    <dd>ご予約日時におけるサービス提供</dd>
 
-            <div class="legal-back">
-                <a href="index.html">
-                    <span class="material-symbols-outlined">arrow_back</span>
-                    トップページに戻る
-                </a>
+                    <dt>キャンセルポリシー</dt>
+                    <dd>ご予約日の前日までのキャンセルは無料。<br>当日キャンセル: メニュー料金の50%<br>無断欠席: メニュー料金の100%</dd>
+
+                    <dt>返品・交換について</dt>
+                    <dd>美容サービスの性質上、返品・交換はお受けできません。<br>ご不満な場合は、担当スタイリストまでご相談ください。</dd>
+
+                    <dt>動産販売の個別換金について</dt>
+                    <dd>該当商品はございません。</dd>
+
+                    <dt>動産販売の申込履行完了時期について</dt>
+                    <dd>サービス提供時に完了となります。</dd>
+
+                    <dt>動産販売の申込の有効期限について</dt>
+                    <dd>ご予約日より30日間</dd>
+
+                    <dt>不良品の場合の対応</dt>
+                    <dd>商品の性質上、該当ございません。</dd>
+
+                    <dt>追加手数料について</dt>
+                    <dd>特にございません。</dd>
+
+                    <dt>消費税について</dt>
+                    <dd>表示価格はすべて税込み価格です。</dd>
+
+                    <dt>動産販売の引渡し方法</dt>
+                    <dd>該当商品はございません。</dd>
+
+                    <dt>動産販売のお支払い時期</dt>
+                    <dd>サービス提供時のお支払いとなります。</dd>
+                </dl>
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">SALON LUMIÈRE</div>
+            <div class="footer-links">
+                <a href="tokusho.html">特定商取引法に基づく表記</a>
+                <a href="privacy.html">プライバシーポリシー</a>
+            </div>
+            <p class="footer-copy">© 2024 SALON LUMIÈRE. THE MIDNIGHT ATELIER.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
