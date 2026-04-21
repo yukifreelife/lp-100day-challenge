@@ -1019,10 +1019,17 @@ img {
 }
 
 .footer-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     font-size: 0.875rem;
     color: var(--on-secondary-container);
     text-decoration: none;
     transition: color 0.2s;
+}
+
+.footer-nav a .material-symbols-outlined {
+    font-size: 1.125rem;
 }
 
 .footer-nav a:hover {
