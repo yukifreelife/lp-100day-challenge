@@ -82,25 +82,21 @@ function observeFadeInElements() {
 }
 
 // ========================================
-// FAQ Accordion
+// FAQ Accordion (auto-close other items)
 // ========================================
 
 function initFAQ() {
-    const faqItems = document.querySelectorAll('.faq-item');
+    const faqDetails = document.querySelectorAll('.faq-details');
 
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        question.addEventListener('click', () => {
-            const isActive = item.classList.contains('active');
-
-            // Close all other items
-            faqItems.forEach(otherItem => {
-                otherItem.classList.remove('active');
-            });
-
-            // Toggle current item
-            if (!isActive) {
-                item.classList.add('active');
+    faqDetails.forEach(detail => {
+        detail.addEventListener('toggle', () => {
+            if (detail.open) {
+                // Close all other details
+                faqDetails.forEach(otherDetail => {
+                    if (otherDetail !== detail) {
+                        otherDetail.removeAttribute('open');
+                    }
+                });
             }
         });
     });
