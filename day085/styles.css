@@ -1051,6 +1051,30 @@ img {
     text-underline-offset: 4px;
 }
 
+.footer-legal {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.footer-legal a {
+    font-size: 0.75rem;
+    color: var(--on-secondary-container);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-legal a:hover {
+    color: var(--primary);
+}
+
+.footer-separator {
+    color: var(--outline-variant);
+    font-size: 0.75rem;
+}
+
 .footer-copy {
     margin-top: 3rem;
     font-size: 0.75rem;
