@@ -9,6 +9,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Preload hero image for LCP -->
+    <link rel="preload" href="images/hero-bg.png" as="image">
+
+    <!-- Analytics & Performance -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PLACEHOLDER', {
+        'send_page_view': false,
+        'anonymize_ip': true,
+        'custom_map': {
+          'custom_dimension_1': 'lp_theme',
+          'custom_dimension_2': 'lp_category'
+        }
+      });
+      gtag('event', 'page_view', {
+        lp_theme: 'TERRA Premium Japan Tours',
+        lp_category: 'travel',
+        lp_version: 'v2.0'
+      });
+    </script>
+
     <link rel="stylesheet" href="styles.css">
     <!-- 構造化データ -->
     <script type="application/ld+json">
@@ -44,22 +75,22 @@
                 <a href="#reviews" class="nav-link">お客様の声</a>
                 <a href="#reservation" class="nav-link">予約</a>
             </div>
-            <a href="#reservation" class="btn btn-primary">予約する</a>
+            <a href="#reservation" class="btn btn-primary" data-tracking="cta" data-position="nav" data-type="primary">予約する</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-bg">
-            <img src="images/hero-bg.png" alt="日本の森林、木漏れ日が差し込む古代の杉の木々" class="hero-image">
+            <img src="images/hero-bg.png" alt="日本の森林、木漏れ日が差し込む古代の杉の木々" class="hero-image" width="1920" height="1080" loading="eager" decoding="async">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
             <h1 class="hero-title">ガイドブックには載らない、<br>日本へ。</h1>
             <p class="hero-subtitle">地元を知り尽くしたガイドによる、少人数のプライベートツアー</p>
             <div class="hero-buttons">
-                <a href="#reservation" class="btn btn-primary btn-lg">旅を予約する</a>
-                <a href="#tours" class="btn btn-outline btn-lg">ツアーを見る</a>
+                <a href="#reservation" class="btn btn-primary btn-lg" data-tracking="cta" data-position="hero" data-type="primary">旅を予約する</a>
+                <a href="#tours" class="btn btn-outline btn-lg" data-tracking="cta" data-position="hero" data-type="secondary">ツアーを見る</a>
             </div>
         </div>
         <div class="hero-scroll">
@@ -108,7 +139,7 @@
             </div>
             <div class="tour-grid">
                 <div class="tour-image-wrapper">
-                    <img src="images/hero-tour.png" alt="杉の木々に囲まれた古代の神社" class="tour-image">
+                    <img src="images/hero-tour.png" alt="杉の木々に囲まれた古代の神社" class="tour-image" width="800" height="600" loading="lazy" decoding="async">
                     <div class="tour-image-overlay"></div>
                     <div class="tour-image-caption">
                         <span class="tour-caption-label">所要時間: 6時間</span>
@@ -134,7 +165,7 @@
                             <p class="timeline-desc">僧侶との座禅体験後、帰路へ。</p>
                         </div>
                     </div>
-                    <a href="#reservation" class="btn btn-primary btn-block">詳細を見る</a>
+                    <a href="#reservation" class="btn btn-primary btn-block" data-tracking="cta" data-position="tour" data-type="primary">詳細を見る</a>
                 </div>
             </div>
         </div>
@@ -177,7 +208,7 @@
         <div class="container">
             <div class="story-grid">
                 <div class="story-image-wrapper">
-                    <img src="images/guide-portrait.jpg" alt="メインガイド ケンジ" class="story-image">
+                    <img src="images/guide-portrait.jpg" alt="メインガイド ケンジ" class="story-image" width="400" height="500" loading="lazy" decoding="async">
                 </div>
                 <div class="story-content">
                     <span class="story-label">メインガイド | ケンジ / Kenji</span>
@@ -216,19 +247,19 @@
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="images/gallery-moss.png" alt="鮮やかな緑の苔" loading="lazy">
+                    <img src="images/gallery-moss.png" alt="鮮やかな緑の苔" width="600" height="400" loading="lazy" decoding="async">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/gallery-mountains.png" alt="山並みの霧" loading="lazy">
+                    <img src="images/gallery-mountains.png" alt="山並みの霧" width="600" height="400" loading="lazy" decoding="async">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/gallery-architecture.png" alt="伝統的な木造建築" loading="lazy">
+                    <img src="images/gallery-architecture.png" alt="伝統的な木造建築" width="600" height="400" loading="lazy" decoding="async">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/gallery-garden.png" alt="枯山水庭園" loading="lazy">
+                    <img src="images/gallery-garden.png" alt="枯山水庭園" width="600" height="400" loading="lazy" decoding="async">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/gallery-bamboo.png" alt="竹林の小道" loading="lazy">
+                    <img src="images/gallery-bamboo.png" alt="竹林の小道" width="600" height="400" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
@@ -343,7 +374,7 @@
         <div class="container">
             <div class="cta-grid">
                 <div class="cta-map">
-                    <img src="images/map-placeholder.png" alt="京都周辺地图" class="cta-map-image">
+                    <img src="images/map-placeholder.png" alt="京都周辺地图" class="cta-map-image" width="600" height="400" loading="lazy" decoding="async">
                     <div class="cta-map-overlay">
                         <span class="material-symbols-outlined cta-map-icon">location_on</span>
                         <h4 class="cta-map-title">京都の山々</h4>
@@ -353,7 +384,7 @@
                 <div class="cta-content">
                     <h2 class="cta-title">冒険の準備はできましたか？</h2>
                     <p class="cta-desc">席には限りがございます。特別な体験を確実にするため、お早めのご予約をお勧めいたします。</p>
-                    <a href="#reservation" class="btn btn-primary btn-lg">
+                    <a href="#reservation" class="btn btn-primary btn-lg" data-tracking="cta" data-position="cta" data-type="primary">
                         このツアーを予約する
                         <span class="material-symbols-outlined btn-icon">arrow_forward</span>
                     </a>
@@ -370,7 +401,7 @@
                 <h2 class="reservation-title">予約リクエスト</h2>
                 <p class="reservation-desc">私たちの体験は厳選されたものです。詳細をお知らせいただければ、コンシェルジュがご相談を承ります。</p>
             </div>
-            <form class="reservation-form" id="reservationForm">
+            <form class="reservation-form" id="reservationForm" data-tracking="contact">
                 <div class="form-group">
                     <label for="name">お名前</label>
                     <input type="text" id="name" name="name" placeholder="氏名を入力してください" required>
@@ -420,18 +451,26 @@
             <div class="footer-content">
                 <div class="footer-logo">TERRA</div>
                 <nav class="footer-nav">
-                    <a href="#">サステナビリティ</a>
-                    <a href="#">プライバシー</a>
-                    <a href="#">利用規約</a>
-                    <a href="#">お問い合わせ</a>
+                    <a href="#tours">ツアー</a>
+                    <a href="#story">ストーリー</a>
+                    <a href="#reviews">お客様の声</a>
+                    <a href="#reservation">予約</a>
+                </nav>
+                <nav class="footer-nav">
+                    <a href="legal-act.html">特定商取引法に基づく表記</a>
+                    <a href="privacy.html">プライバシーポリシー</a>
+                    <a href="#reservation">お問い合わせ</a>
                 </nav>
                 <div class="footer-copy">
-                    © 2024 TERRA Japanese Expeditions.
+                    © 2026 TERRA Japanese Expeditions.
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Analytics Scripts -->
+    <script src="js/analytics.js" defer></script>
+    <script src="js/scroll-tracking.js" defer></script>
     <script src="script.js"></script>
 </body>
 </html>
