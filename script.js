@@ -434,6 +434,17 @@ const worksData = [
     tech: ["HTML5", "CSS3", "JavaScript"],
     url: "./day085/",
   },
+  {
+    day: "Day87",
+    title: "TERRA | プレミアム日本ツアー",
+    category: "Travel",
+    industry: "観光・旅行",
+    focus: "ツアー予約",
+    summary: "地元を知り尽くしたガイドによる少人数プライベートツアーLP。『木漏れ日（Komorebi）』と『余白（Yutori）』をコンセプトに、深森グリーンとウォームクリームのカラーパレットで、日本の静寂な美しさを表現。",
+    metric: "高級感あるエディトリアルデザイン・ガイドプロフィール・ツアー詳細・予約フォーム",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    url: "./day087/",
+  },
 ];
 
 const colorByCategory = {
@@ -454,6 +465,7 @@ const colorByCategory = {
   "Home Services": "#7FB099",
   "Video Creator": "#8B5A3C",
   Restaurant: "#E85D4C",
+  Travel: "#1B4332",
 };
 
 const REEL_INTERVAL_MS = 3200;
