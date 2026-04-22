@@ -10,6 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles.css">
+    <!-- 構造化データ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "TERRA",
+      "description": "地元を知り尽くしたガイドによる、少人数のプライベートツアー",
+      "url": "https://terra-tours.example.com",
+      "image": "https://terra-tours.example.com/images/hero-bg.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "京都",
+        "addressCountry": "JP"
+      },
+      "priceRange": "¥18,000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127"
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -19,7 +41,7 @@
             <div class="nav-menu">
                 <a href="#tours" class="nav-link active">ツアー</a>
                 <a href="#story" class="nav-link">ストーリー</a>
-                <a href="#gallery" class="nav-link">ギャラリー</a>
+                <a href="#reviews" class="nav-link">お客様の声</a>
                 <a href="#reservation" class="nav-link">予約</a>
             </div>
             <a href="#reservation" class="btn btn-primary">予約する</a>
@@ -207,6 +229,110 @@
                 </div>
                 <div class="gallery-item">
                     <img src="images/gallery-bamboo.png" alt="竹林の小道" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">REVIEWS</span>
+                <h2 class="section-title">お客様の声</h2>
+                <p class="section-desc">TERRAをご利用いただいたお客様の体験談</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                    <p class="review-text">「一生忘れない経験になりました。ケンジさんの案内で、日本の本当の美しさを知ることができました。」</p>
+                    <div class="reviewer">
+                        <span class="reviewer-name">M.T.</span>
+                        <span class="reviewer-location">東京</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                    <p class="review-text">「静寂の中で心が洗われる体験。観光地では決して味わえない、日本の奥深さを感じられました。」</p>
+                    <div class="reviewer">
+                        <span class="reviewer-name">S.K.</span>
+                        <span class="reviewer-location">大阪</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                    <p class="review-text">「初心者でも安心して参加できました。ペース配分が丁寧で、景色を楽しみながら歩けました。」</p>
+                    <div class="reviewer">
+                        <span class="reviewer-name">Y.H.</span>
+                        <span class="reviewer-location">名古屋</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">よくある質問</h2>
+                <p class="section-desc">ご予約前にご確認いただきたい事項</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>初心者でも参加できますか？</span>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>はい、初心者の方も大歓迎です。歩きやすいトレイルを選定し、お一人おひとりのペースに合わせて案内します。休憩も適宜取りますので、ご安心ください。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>服装と持ち物は？</span>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>歩きやすいトレッキングシューズと動きやすい服装をご用意ください。季節に応じてレインウェアや帽子などをご持参ください。詳細な持ち物リストはご予約後にお送りします。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>雨天でも実施しますか？</span>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>小雨の場合は実施します。大雨や荒天時は安全を考慮し、別日程への変更をご提案させていただきます。お客様のご希望に応じてキャンセルも可能です。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>キャンセルポリシーは？</span>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>ツアー3日前までのごキャンセルは無料です。2日前〜前日の場合は50%、当日は100%のキャンセル料が発生いたします。ただし、天候不良によるキャンセルは無料です。</p>
+                    </div>
                 </div>
             </div>
         </div>

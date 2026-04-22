@@ -240,5 +240,32 @@ window.addEventListener('resize', () => {
     }
 });
 
+// FAQ Accordion
+const faqQuestions = document.querySelectorAll('.faq-question');
+faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const isActive = item.classList.contains('active');
+        const wasExpanded = question.getAttribute('aria-expanded') === 'true';
+
+        // Close all other items
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+            if (otherItem !== item) {
+                otherItem.classList.remove('active');
+                otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Toggle current item
+        if (isActive) {
+            item.classList.remove('active');
+            question.setAttribute('aria-expanded', 'false');
+        } else {
+            item.classList.add('active');
+            question.setAttribute('aria-expanded', 'true');
+        }
+    });
+});
+
 // Console log for development
 console.log('TERRA LP loaded successfully');

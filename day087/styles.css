@@ -1004,3 +1004,169 @@ section {
         text-align: center;
     }
 }
+
+/* ===================================
+   Reviews Section
+   =================================== */
+.reviews {
+    padding: 120px 0;
+    background-color: var(--color-bg-surface-low);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.section-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-tertiary);
+    margin-bottom: 16px;
+}
+
+.section-title {
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 16px;
+}
+
+.section-desc {
+    font-size: 16px;
+    color: var(--color-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.review-card {
+    background: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.review-stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+    color: var(--color-tertiary);
+}
+
+.review-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.reviewer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.reviewer-name {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.reviewer-location {
+    color: var(--color-secondary);
+}
+
+/* ===================================
+   FAQ Section
+   =================================== */
+.faq {
+    padding: 120px 0;
+    background-color: var(--color-bg-surface-high);
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-primary);
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: var(--color-tertiary);
+}
+
+.faq-question .material-symbols-outlined {
+    transition: transform 0.3s ease;
+}
+
+.faq-question[aria-expanded="true"] .material-symbols-outlined {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer p {
+    padding-bottom: 24px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--color-secondary);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+}
+
+/* ===================================
+   Reviews & FAQ Responsive
+   =================================== */
+@media (max-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+}
