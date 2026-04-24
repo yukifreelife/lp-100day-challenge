@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KUROGANE BREWING | 黒鉄醸造所</title>
+<!-- OGP -->
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="KUROGANE BREWING | 黒鉄醸造所"/>
+<meta property="og:description" content="職人の魂が宿る究極のクラフトビール"/>
+<meta property="og:image" content="https://your-domain.com/images/ogp.svg"/>
+<meta property="og:url" content="https://your-domain.com/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&amp;family=Space+Grotesk:wght@500;600&amp;family=Manrope:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#534435",
+                        "surface-tint": "#ffb86b",
+                        "surface-bright": "#41372f",
+                        "tertiary-container": "#009fde",
+                        "inverse-primary": "#895100",
+                        "inverse-surface": "#efe0d3",
+                        "on-primary-container": "#452700",
+                        "secondary": "#ffb68c",
+                        "error": "#ffb4ab",
+                        "on-error": "#690005",
+                        "tertiary": "#85cfff",
+                        "secondary-fixed-dim": "#ffb68c",
+                        "on-primary-fixed": "#2c1700",
+                        "surface-container-high": "#312820",
+                        "secondary-container": "#753401",
+                        "outline": "#a18d7b",
+                        "surface-container": "#261e16",
+                        "primary-fixed": "#ffdcbc",
+                        "on-secondary-container": "#fb9f66",
+                        "on-tertiary-fixed": "#001e2e",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-lowest": "#140d06",
+                        "on-tertiary-fixed-variant": "#004c6c",
+                        "on-secondary-fixed": "#321200",
+                        "primary-container": "#d4820a",
+                        "error-container": "#93000a",
+                        "on-secondary": "#532200",
+                        "on-primary": "#492900",
+                        "inverse-on-surface": "#382f26",
+                        "surface-container-highest": "#3c332b",
+                        "surface": "#19120b",
+                        "surface-variant": "#3c332b",
+                        "on-tertiary-container": "#003148",
+                        "primary-fixed-dim": "#ffb86b",
+                        "tertiary-fixed-dim": "#85cfff",
+                        "on-background": "#efe0d3",
+                        "background": "#19120b",
+                        "surface-container-low": "#221a13",
+                        "on-surface": "#efe0d3",
+                        "tertiary-fixed": "#c7e7ff",
+                        "on-surface-variant": "#d9c3af",
+                        "primary": "#ffb86b",
+                        "on-tertiary": "#00344c",
+                        "surface-dim": "#19120b",
+                        "secondary-fixed": "#ffdbc9",
+                        "on-secondary-fixed-variant": "#753401",
+                        "on-primary-fixed-variant": "#683d00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "gutter": "24px",
+                        "md": "24px",
+                        "xs": "4px",
+                        "lg": "48px",
+                        "sm": "12px",
+                        "xl": "80px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "section-header": ["Space Grotesk", "Noto Serif JP"],
+                        "label": ["Space Grotesk", "Noto Serif JP"],
+                        "body-lg": ["Manrope", "Noto Serif JP"],
+                        "body-md": ["Manrope", "Noto Serif JP"],
+                        "brand-display": ["Noto Serif", "Noto Serif JP"]
+                    },
+                    "fontSize": {
+                        "section-header": ["14px", {"lineHeight": "1.5", "letterSpacing": "0.25em", "fontWeight": "500"}],
+                        "label": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.7", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "brand-display": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #19120b;
+            color: #efe0d3;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(25, 18, 11, 0.4) 0%, rgba(25, 18, 11, 0.9) 100%);
+        }
+        .metallic-border {
+            border-image: linear-gradient(to bottom, #8B4513, #D4820A) 1;
+        }
+    </style>
+</head>
+<body class="font-body-md bg-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#1A1510]/80 backdrop-blur-2xl border-b border-[#8B4513]/30">
+<div class="flex justify-between items-center w-full px-8 h-20 max-w-full">
+<div class="text-2xl font-brand-display tracking-[0.4em] text-amber-600 uppercase">
+                KUROGANE BREWING
+            </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-serif tracking-[0.2em] uppercase text-xs text-stone-400 hover:text-amber-200 transition-colors" href="#story">STORY</a>
+<a class="font-serif tracking-[0.2em] uppercase text-xs text-stone-400 hover:text-amber-200 transition-colors" href="#lineup">LINEUP</a>
+<a class="font-serif tracking-[0.2em] uppercase text-xs text-stone-400 hover:text-amber-200 transition-colors" href="#process">PROCESS</a>
+<a class="font-serif tracking-[0.2em] uppercase text-xs text-stone-400 hover:text-amber-200 transition-colors" href="#taproom">TAPROOM</a>
+<a class="font-serif tracking-[0.2em] uppercase text-xs text-stone-400 hover:text-amber-200 transition-colors" href="#shop">SHOP</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="font-serif tracking-[0.2em] uppercase text-xs bg-primary-container text-on-primary px-6 py-2.5 hover:opacity-90 transition-opacity">
+                    RESERVE
+                </button>
+<span class="material-symbols-outlined text-amber-600 cursor-pointer" data-icon="shopping_bag">shopping_bag</span>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Moody dark brewery interior with massive gleaming copper fermentation tanks, dim industrial lighting, and a mist of steam in the air." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB87byobcPeKU1U7SgUmrkiapknWxXCAwHhDB1E0dzwSTfK7jHUoKT9Mvakkvf6MEjq_SVNlT_q-zTK5LvVPRTPOZ-0GwdGkrvXbQtJSCfGsLDUrHtU37O60dsBZ9Lb2uoWBDHncAxNAotnkG-zKXGgP7J3vHUj0R_ZYIQK7SB4jXOApOaLVaRN8icwzNwp651sZr81RVfZB0S-L_ppjs-_KpVQAhmUN9DEUOhMu1h8FuYg3gqtBIBoeTwXSTpD3mQj_MmmslhWXE3"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 text-center px-4 max-w-4xl">
+<h2 class="font-brand-display text-amber-600 mb-2 tracking-widest">黒鉄醸造所</h2>
+<h1 class="font-brand-display text-4xl md:text-6xl lg:text-7xl mb-8 leading-tight">KUROGANE BREWING</h1>
+<p class="font-body-lg text-on-surface-variant mb-12 tracking-[0.3em]">一切の妥協を許さない。職人の魂が宿る、究極の一杯をその手に。</p>
+<a class="inline-block border border-amber-600 text-amber-600 px-12 py-4 font-label uppercase tracking-widest hover:bg-amber-600 hover:text-on-primary transition-all duration-300" href="#lineup">
+                ラインナップを見る
+            </a>
+</div>
+</section>
+<!-- Brand Story Section -->
+<section class="py-xl px-gutter max-w-container-max mx-auto overflow-hidden" id="story">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-xl items-center">
+<div class="md:col-span-5 space-y-8">
+<div>
+<span class="font-section-header text-amber-600 mb-4 block">OUR STORY</span>
+<h2 class="font-brand-display text-4xl leading-tight">職人の魂が宿るビール</h2>
+</div>
+<div class="space-y-6 font-body-md text-on-surface-variant leading-relaxed"><p>北海道の雄大な大地が育んだ清冽な水、そして厳選された最高品質のホップ。黒鉄醸造所（KUROGANE BREWING）の歴史は、理想の一杯を追い求める飽くなき情熱から幕を開けました。</p><p>私たちは、先人から受け継がれた伝統的な醸造技術を核に、現代の精密なクラフトマンシップを融合。鉄のように揺るぎない品質と、奥深い味わいを追求し続けています。一口ごとに広がる豊かなコクと芳醇な香りは、まさに職人の魂が結実した一滴です。</p></div>
+<div class="pt-4">
+<div class="inline-flex items-center gap-4 py-2 px-4 border-l-2 border-primary">
+<span class="text-xs font-label uppercase tracking-widest text-primary">Heritage Batch 2024</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 relative">
+<div class="aspect-[4/5] md:aspect-square overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover" data-alt="Cinematic close-up of a master brewer checking the clarity of dark beer in a glass vessel, dramatic lighting hitting the liquid amber." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL0l4VeVHd0l6yv2AdPrhMxPCDJIz-fdPkk7v9TyIGDTuEzuq_ggXWsAwjDfm9BnVZLtDskQogIonSlEF940JbJ4eMIURgUIpN4UNDOVxJUJm83H5_O3z3pHfuOjzzcdV7WO3H9p9K1vlu3jwZxBg6nrwszq17gx4B1oT4H17xljp112cNm9iJGre_U4LXsCOX5-3gb6_DP3DqPWujEpyGlvcMEt-NBqI4GVrnlSst2ptCCDe-LEENvztc4iXXFVhD6JAqKn5Z5d7j"/>
+</div>
+<div class="absolute -bottom-10 -left-10 bg-surface-container p-8 hidden md:block border-t-2 border-amber-600">
+<p class="font-brand-display text-2xl text-amber-600">Pure Craft</p>
+<p class="text-[10px] font-label tracking-tighter opacity-60">ESTABLISHED IN HOKKAIDO</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Beer Lineup Section -->
+<section class="bg-surface-container-lowest py-xl" id="lineup">
+<div class="px-gutter max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<span class="font-section-header text-amber-600 mb-4 block">LINEUP</span>
+<h2 class="font-brand-display text-4xl">至高の四重奏</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Beer Card 1 -->
+<div class="group border-b border-outline-variant hover:border-amber-600 transition-colors pb-8">
+<div class="aspect-[3/4] mb-6 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-all duration-700" data-alt="Glass of golden IPA with thick white foam on a dark industrial metal surface, amber lighting highlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVYN0M8NFRe_CxA2U84sy3zRnWlFw8RDeHNIHIj5liaRw9PMe3a4qiHGNXp9N-65OBJJFi_GGdkyUmyEOSAf7jlH9nuf3XqMuXApxcebZMxFxiU8LPRlMfFmr9yfxPs_wk-2MopyVTsOV-q-pGPlxbys5eg--tlzEsXCP3NBEmeceXPNrEkcRK_544RrdL9IHbnqjialid9rzFuPtH8ZO0X0mQU8c-VsralQEiDSogNfJnTJDjtSq1uWSL9uv_jG0jq-efb3yAfCAe"/>
+</div>
+<h3 class="font-brand-display text-xl mb-1">IPA</h3>
+<p class="font-label text-amber-600 mb-4 tracking-widest">アイ・ピー・エー</p>
+<div class="flex gap-4 mb-4">
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-label uppercase tracking-widest">ABV 6.5%</span>
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-label uppercase tracking-widest">IBU 55</span>
+</div>
+<p class="text-on-surface-variant text-sm font-body-md leading-relaxed">数種類のホップが織りなす鮮烈な柑橘の香りと、心地よく響く力強い苦味。当醸造所を象徴する、品格ある看板銘柄です。</p>
+</div>
+<!-- Beer Card 2 -->
+<div class="group border-b border-outline-variant hover:border-amber-600 transition-colors pb-8">
+<div class="aspect-[3/4] mb-6 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-all duration-700" data-alt="Rich black stout in a glass with creamy head, dark chocolate and roasted coffee beans scattered nearby on wood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuiH8BtYIGh5NgGgHzQGOUB1nK1-wnDIAs_-NXRSS9DRjiDhTuEiUhkEqCGSvkYr0fjxfaVb4pwB4ssH_ARfSn3wGXRwuM9LH4rxFaTu_g_X3UBfP5QIzziokvODBNZO1MAj2wTmNiuxoIehw_bTYAcKI5UxFi9V7NgME29TbMd89uLpK1fJ-f3AvlUmoVvMMO5-atz449q0fIRrG7A5q5pWG0h8WGTe5tYbyjIjDXEkCAtDcMwBPMKeHHyPlMrD1WNCxPY2eM8BUY"/>
+</div>
+<h3 class="font-brand-display text-xl mb-1">STOUT</h3>
+<p class="font-label text-amber-600 mb-4 tracking-widest">スタウト</p>
+<div class="flex gap-4 mb-4">
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-label uppercase tracking-widest">ABV 7.0%</span>
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-label uppercase tracking-widest">MALT 4 TYPES</span>
+</div>
+<p class="text-on-surface-variant text-sm font-body-md leading-relaxed">じっくりと焙煎された麦芽の香ばしさと、シルクのように滑らかな漆黒のボディ。深煎りコーヒーを思わせる贅沢な余韻をお愉しみください。</p>
+</div>
+<!-- Beer Card 3 -->
+<div class="group border-b border-outline-variant hover:border-amber-600 transition-colors pb-8">
+<div class="aspect-[3/4] mb-6 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-all duration-700" data-alt="Cloudy pale wheat beer in a tall glass, bright soft backlighting highlighting the hazy texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd5DexXULyA7JULjzKLF3EBAqPWsiLy1_w2K4z0vjdVIvONanSiAvtTaAWh6X0yPq_tz_A1XNog__FrsFYgBXoBc5A7RrP42tBp9g8_vdBUqkwlSBKMWXvtMIS_VQPA1tDfF5oZtLTAaJdALAUev9tzhuO4KKCaT9A_6nn7gmavGLM5ixA0dG05v_MH7KQ7gxc7O7315mCahfecsXTrgdPn2wZ6koK3ha-t-M0Daua35uNaEdj-e5TsSRs2ZIM7vaSgPevEYNuVXNr"/>
+</div>
+<h3 class="font-brand-display text-xl mb-1">WEIZEN</h3>
+<p class="font-label text-amber-600 mb-4 tracking-widest">ヴァイツェン</p>
+<div class="flex gap-4 mb-4">
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-label uppercase tracking-widest">ABV 5.2%</span>
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-label uppercase tracking-widest">HAZY</span>
+</div>
+<p class="text-on-surface-variant text-sm font-body-md leading-relaxed">小麦由来のまろやかで優しい口当たりと、バナナやクローブを思わせるフルーティーな芳香。無濾過ならではの深みのある味わいです。</p>
+</div>
+<!-- Beer Card 4 -->
+<div class="group border-b border-outline-variant hover:border-amber-600 transition-colors pb-8">
+<div class="aspect-[3/4] mb-6 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-all duration-700" data-alt="Vibrant ruby-colored sour ale with condensation on the glass, set against a dark rustic background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0Qv4aTdXIwvpXObOFrA9tlk6N6yXhUX4LtQrEqLJZBZ9wS3gZ2LdQhBr6lrKbM4xico3ApAtWhxhVPEDRZIjTuTH9enj-ebmbkkONw3bPGNjqxPxQtqzNNTIDun14pMfEQiUc1y0Bji40x2Z3Gcn8E09Vogt-3tYbznZiK8SwS0C9I3NY6DJMbf5i54LYB5CFQdi5JXhuuJlTNurNsY9VsSCflQ8JIGkueM9EXZ0WxNRcgp4K568G22vUoZigNn07m0RPkyj9XOj2"/>
+</div>
+<h3 class="font-brand-display text-xl mb-1">SOUR ALE</h3>
+<p class="font-label text-amber-600 mb-4 tracking-widest">サワーエール</p>
+<div class="flex gap-4 mb-4">
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-label uppercase tracking-widest">ABV 4.5%</span>
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-label uppercase tracking-widest">ACIDIC</span>
+</div>
+<p class="text-on-surface-variant text-sm font-body-md leading-relaxed">洗練された爽快な酸味と、摘みたての果実を思わせる華やかなニュアンス。どんな料理にも寄り添う、軽やかで優美な一杯です。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Brewing Process Section -->
+<section class="py-xl" id="process">
+<div class="px-gutter max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<span class="font-section-header text-amber-600 mb-4 block">PROCESS</span>
+<h2 class="font-brand-display text-4xl">黒鉄の醸造工程</h2>
+</div>
+<div class="max-w-md">
+<p class="text-on-surface-variant font-body-md text-sm italic border-l-2 border-outline-variant pl-4">
+                        "Precision is the ingredient that binds the elements."
+                    </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="relative space-y-6">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 flex items-center justify-center border border-amber-600 rounded-full font-brand-display text-amber-600">01</div>
+<h4 class="font-brand-display text-2xl">仕込み <span class="text-sm font-label text-stone-500 uppercase ml-2">Mashing</span></h4>
+</div>
+<p class="font-body-md text-on-surface-variant leading-relaxed">厳選された麦芽を最適の粒度に粉砕し、温水と混ぜ合わせることで糖化を促します。この繊細な工程が、ビールの骨格となる「麦汁」の質を決定づけます。</p>
+<img class="w-full h-48 object-cover rounded shadow-lg" data-alt="Top down view of crushed grain and malt inside a stainless steel mash tun, steam rising softly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmgtodUd6dzWKonDGFqxEJj0Qhzdz4JE0-obPe7G19051TmfTHn9Kg-lxC75mwKS3LaxYUratCyTd3uVPbi_rd5tprO07UMwH3gl6cPXXC8aaYZwUchjXPt-ugTbcsXLO9az6F-_b0188atBlZFFsmVlSu4pszj1Ua7U8kl7k2BFKjaMnOW0CR6n0Q7QL7ZV__LEz02yCsYyuvxYmPdv91zgglaDKvEM6ssbzMBVYqEh6LmD08BKjHKFbD0rS1s2fylToFgokiFoVZ"/>
+</div>
+<div class="relative space-y-6 md:mt-12">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 flex items-center justify-center border border-amber-600 rounded-full font-brand-display text-amber-600">02</div>
+<h4 class="font-brand-display text-2xl">発酵 <span class="text-sm font-label text-stone-500 uppercase ml-2">Fermentation</span></h4>
+</div>
+<p class="font-body-md text-on-surface-variant leading-relaxed">煮沸を経て冷却された麦汁に、自社培養した酵母を投入。徹底した温度管理のもと、酵母が糖を分解し、豊かなアルコールと芳醇なアロマを生成します。</p>
+<img class="w-full h-48 object-cover rounded shadow-lg" data-alt="Microscopic view of active beer fermentation bubbles on the surface of dark liquid in a tank." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3blljrxoMQhsxDXJlCyugdLt7HgjvCSdaO3AzGn-AQnC3zNMIbGdwIPB0_b0Iiu9BzlFGmNFLJSmzLYQPhxtTL1TMq3S3DJPs5aheqMlzyVTzzMt8CM5vUeBb-v75kb8UTWo-pN1OQsy8tejkfijSayKSEVYxy_Jgc4koUkglSOqVogSCJROem6-fQ9K70-rOkI598LE0NxxKWA96iwC0kCOfT0UZAf9i8is7wtMzXs1SlP--pCjnynp3ZWnctWSOMuvoPGBEQ9F0"/>
+</div>
+<div class="relative space-y-6 md:mt-24">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 flex items-center justify-center border border-amber-600 rounded-full font-brand-display text-amber-600">03</div>
+<h4 class="font-brand-display text-2xl">熟成 <span class="text-sm font-label text-stone-500 uppercase ml-2">Aging</span></h4>
+</div>
+<p class="font-body-md text-on-surface-variant leading-relaxed">発酵を終えた若ビールを低温の貯蔵タンクでじっくりと寝かせます。味の角が取れ、調和が生まれることで、透明感のある洗練された仕上がりへと導きます。</p>
+<img class="w-full h-48 object-cover rounded shadow-lg" data-alt="Rows of large cold storage tanks in a dark cellar, frost visible on the metal surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7VHhnn8IYfGiHdnRQiT-qD3R9OiHvb2rcMIO0izkDqm2A4_AOfPaJZdVEM_OnNZ_Zm3EU-7weezDfOxxuc-BI0K1qhpMKXsRwuHYtaKosjomFbT1GH-pzxSRxBEAmncqHyTYZuxJrwiPiRHTO4XDW5Wi-kjzEZQ2R2vLPJYRAzaPnprnggS72tJ7vDaOoEZVyWPLjcXsrwaNm102U-bz09aBRTwyF_9uzt_SKdwtzWlJFDB_cRUxZjY3e4BrsvIQ8HYiCDWpFeNN5"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Taproom Section -->
+<section class="relative py-xl overflow-hidden min-h-[600px] flex items-center" id="taproom">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Warmly lit taproom interior with industrial iron furniture, exposed brick, and several beer taps with golden light reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_LW2e-K6qj5E-8uWn9Iyte-ChM6eJQEUPGvr7vyPvUvd7WdordXH7MLZFGYd6rgM8XbRjGuHNoxEXCoIVXbFYRA63_Lb6-sf9eRfm7graSRLdOGzZCsqB6Qjnf4769LHCfttlJr7eKHlF0vKXRApo9roseQaCiXBtY2QrWQXbNMp6Q-L1WhLqiqbgcoJ6uZHKcArE1Uxmf4UH1U5EcQnJ_wI9iRhxEkNz-qbVjg5WikP7jPQnGAw7lEMTSZXzwWYXLmNC69G8AJt8"/>
+<div class="absolute inset-0 bg-black/70 backdrop-blur-[2px]"></div>
+</div>
+<div class="px-gutter max-w-container-max mx-auto relative z-10 w-full">
+<div class="max-w-2xl bg-surface-container/60 backdrop-blur-xl p-12 border-l-4 border-amber-600">
+<span class="font-section-header text-amber-600 mb-4 block">TAPROOM</span>
+<h2 class="font-brand-display text-3xl md:text-4xl mb-8 leading-tight">醸造所直営テイスティングルーム</h2>
+<div class="space-y-6 font-body-md">
+<p class="text-on-surface">醸造所に併設された、特別なテイスティング空間。熟練の注ぎ手が提供する、出来たてならではの究極の鮮度と感動をご体験ください。</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-sm pt-4">
+<div>
+<h5 class="font-label text-amber-600 uppercase mb-2">Location</h5>
+<p class="text-on-surface-variant">〒060-0001<br/>北海道札幌市中央区北1条西1丁目<br/>黒鉄ビル 1F</p>
+</div>
+<div>
+<h5 class="font-label text-amber-600 uppercase mb-2">Hours</h5>
+<p class="text-on-surface-variant">火〜金：16:00 - 22:00 (L.O. 21:30)<br/>土・日：13:00 - 21:00 (L.O. 20:30)<br/>定休日：月曜日</p>
+</div>
+</div>
+<div class="pt-6">
+<button class="border border-amber-600 text-amber-600 px-8 py-3 text-xs font-label uppercase tracking-widest hover:bg-amber-600 hover:text-white transition-all">ご来店予約はこちら</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Online Shop Section -->
+<section class="py-xl bg-[#120D08]" id="shop">
+<div class="px-gutter max-w-container-max mx-auto">
+<div class="border border-[#8B4513]/30 p-12 md:p-20 flex flex-col md:flex-row items-center justify-between gap-12 text-center md:text-left relative overflow-hidden">
+<div class="absolute top-0 right-0 opacity-10 pointer-events-none">
+<span class="font-brand-display text-[120px] leading-none select-none">KUROGANE</span>
+</div>
+<div class="relative z-10">
+<h2 class="font-brand-display text-4xl mb-4">公式オンラインショップ</h2>
+<p class="font-body-lg text-amber-600/80 mb-2">北海道直送、あなたの元へ。</p>
+<p class="text-on-surface-variant max-w-md">黒鉄醸造所が誇る限定銘柄やギフトセットを、徹底した品質管理のもと、鮮度を損なうことなく全国各地へお届けいたします。</p>
+</div>
+<div class="relative z-10 shrink-0">
+<a class="inline-block bg-amber-600 text-on-primary px-16 py-5 font-label text-sm uppercase tracking-[0.3em] hover:scale-105 transition-transform duration-300" href="#">オンラインストアを見る</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#120D08] border-t border-[#8B4513]/20 py-20 px-12">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-container-max mx-auto">
+<div class="text-lg font-brand-display text-amber-600 tracking-tighter uppercase">
+                KUROGANE BREWING
+            </div>
+<div class="flex flex-wrap justify-center gap-x-12 gap-y-4">
+<a class="font-serif tracking-widest text-[10px] uppercase text-stone-600 hover:text-amber-400 transition-colors" href="#">CONTACT</a>
+<a class="font-serif tracking-widest text-[10px] uppercase text-stone-600 hover:text-amber-400 transition-colors" href="#">PRIVACY</a>
+<a class="font-serif tracking-widest text-[10px] uppercase text-stone-600 hover:text-amber-400 transition-colors" href="#">PRESS</a>
+<a class="font-serif tracking-widest text-[10px] uppercase text-stone-600 hover:text-amber-400 transition-colors" href="#">CAREERS</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-stone-600 hover:text-amber-600 cursor-pointer text-xl" data-icon="facebook">social_leaderboard</span>
+<span class="material-symbols-outlined text-stone-600 hover:text-amber-600 cursor-pointer text-xl" data-icon="instagram">retweet</span>
+</div>
+</div>
+<div class="mt-16 text-center">
+<p class="font-serif tracking-widest text-[10px] uppercase text-stone-600">
+                © 2024 KUROGANE BREWING. ALL RIGHTS RESERVED.
+            </p>
+</div>
+</footer>
+</body></html>
