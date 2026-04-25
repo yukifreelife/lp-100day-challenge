@@ -233,23 +233,6 @@ class Router {
         if (this.navToggle) {
             this.navToggle.addEventListener('click', () => this.toggleMobileMenu());
         }
-    }
-
-    toggleMobileMenu() {
-        if (this.navToggle && this.navMenu) {
-            this.navToggle.classList.toggle('active');
-            this.navMenu.classList.toggle('active');
-            document.body.style.overflow = this.navMenu.classList.contains('active') ? 'hidden' : '';
-        }
-    }
-
-    closeMobileMenu() {
-        if (this.navToggle && this.navMenu) {
-            this.navToggle.classList.remove('active');
-            this.navMenu.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-    }
 
         // 初期ロード時のURLを処理
         let initialPath = window.location.pathname;
@@ -293,6 +276,22 @@ class Router {
         const targetPage = document.querySelector(`[data-page="${pageName}"]`);
         if (targetPage) {
             targetPage.classList.add('active', 'visible');
+        }
+    }
+
+    toggleMobileMenu() {
+        if (this.navToggle && this.navMenu) {
+            this.navToggle.classList.toggle('active');
+            this.navMenu.classList.toggle('active');
+            document.body.style.overflow = this.navMenu.classList.contains('active') ? 'hidden' : '';
+        }
+    }
+
+    closeMobileMenu() {
+        if (this.navToggle && this.navMenu) {
+            this.navToggle.classList.remove('active');
+            this.navMenu.classList.remove('active');
+            document.body.style.overflow = '';
         }
     }
 
