@@ -17,8 +17,32 @@
 <meta name="author" content="FLEURISTE MADO">
 <meta name="theme-color" content="#506448">
 <link rel="canonical" href="https://fleuriste-mado.jp/">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Analytics 4 (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PLACEHOLDER', {
+    'send_page_view': false,
+    'anonymize_ip': true,
+    'custom_map': {
+      'custom_dimension_1': 'lp_theme',
+      'custom_dimension_2': 'lp_category'
+    }
+  });
+
+  // カスタムディメンションの設定
+  gtag('event', 'page_view', {
+    lp_theme: 'fleurist',
+    lp_category: 'flower_shop',
+    lp_version: 'v1.0'
+  });
+</script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" defer></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700&amp;family=Manrope:wght@200;300;400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./toast.css">
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -104,14 +128,18 @@
     </style>
 </head>
 <body class="bg-background text-on-surface font-body leading-relaxed antialiased min-h-screen flex flex-col">
+<!-- Skip to main content (accessibility) -->
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-on-primary focus:rounded focus:shadow-lg">
+  コンテンツへスキップ
+</a>
 <!-- TopAppBar from SCREEN_16 -->
-<header class="docked full-width top-0 sticky z-50 bg-[#fbf9f4]/80 backdrop-blur-md dark:bg-stone-950/80 transition-colors duration-500 flat no-shadow border-none">
+<header id="nav" role="banner" class="docked full-width top-0 sticky z-50 bg-[#fbf9f4]/80 backdrop-blur-md dark:bg-stone-950/80 transition-colors duration-500 flat no-shadow border-none">
 <div class="flex justify-between items-center w-full px-8 md:px-16 py-6 max-w-[1920px] mx-auto scale-100 active:scale-95 transition-transform">
 <a class="text-2xl font-serif tracking-[0.2em] text-[#54634d] dark:text-[#96A68D] uppercase font-['Noto_Serif_JP'] font-light hover:opacity-70 transition-all duration-500 ease-out" href="#">
                 FLEURISTE MADO
             </a>
 <!-- Desktop Nav -->
-<nav class="hidden md:flex items-center gap-12 font-['Noto_Serif_JP'] font-light tracking-wide">
+<nav id="navMenu" class="hidden md:flex items-center gap-12 font-['Noto_Serif_JP'] font-light tracking-wide">
 <a class="text-[#54634d] dark:text-[#96A68D] border-b border-[#54634d]/30 pb-1 font-medium hover:opacity-70 transition-all duration-500 ease-out" href="#">Atelier</a>
 <a class="text-[#54634d]/60 dark:text-[#96A68D]/60 hover:text-[#54634d] hover:opacity-70 transition-all duration-500 ease-out" href="#">Boutique</a>
 <a class="text-[#54634d]/60 dark:text-[#96A68D]/60 hover:text-[#54634d] hover:opacity-70 transition-all duration-500 ease-out" href="#">Seasonals</a>
@@ -122,17 +150,17 @@
 <button aria-label="shopping_bag" class="hover:opacity-70 transition-all duration-500 ease-out">
 <span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
 </button>
-<button aria-label="menu" class="md:hidden hover:opacity-70 transition-all duration-500 ease-out">
+<button id="hamburger" aria-label="メニューを開く" aria-controls="navMenu" aria-expanded="false" class="md:hidden hover:opacity-70 transition-all duration-500 ease-out">
 <span class="material-symbols-outlined" data-icon="menu">menu</span>
 </button>
 </div>
 </div>
 </header>
-<main class="flex-grow">
+<main id="main-content" role="main" class="flex-grow">
 <!-- Hero Section from SCREEN_16 -->
-<section aria-label="メインビジュアル" class="relative w-full min-h-[921px] flex items-center justify-center overflow-hidden bg-surface-container-low">
+<section aria-label="メインビジュアル" class="fade-in relative w-full min-h-[921px] flex items-center justify-center overflow-hidden bg-surface-container-low">
 <div class="absolute inset-0 z-0">
-<img alt="窓辺に咲くピンクの牡丹のアレンジメント - FLEURISTE MADO" class="w-full h-full object-cover object-center opacity-80" loading="eager" fetchpriority="high" src="./images/img-06.jpg"/>
+<img alt="窓辺に咲くピンクの牡丹のアレンジメント - FLEURISTE MADO" class="w-full h-full object-cover object-center opacity-80" loading="eager" fetchpriority="high" src="./images/img-06.jpg" width="512" height="512" decoding="async"/>
 <div class="absolute inset-0 bg-gradient-to-r from-surface/60 via-surface/30 to-transparent z-10"></div>
 </div>
 <div class="relative z-20 container mx-auto px-8 md:px-16 flex flex-col md:flex-row items-center md:items-start justify-between h-full py-24">
@@ -168,7 +196,7 @@
 </div>
 </section>
 <!-- Features Section (Restored) -->
-<section aria-label="特徴・こだわり" class="py-32 px-12 bg-surface-container-low">
+<section aria-label="特徴・こだわり" class="fade-in py-32 px-12 bg-surface-container-low">
 <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-24">
 <div class="flex flex-col items-center text-center space-y-6">
 <div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center">
@@ -200,7 +228,7 @@
 </div>
 </section>
 <!-- Menu Section (Restored) -->
-<section aria-label="商品ラインナップ" class="py-32 px-12 bg-surface">
+<section aria-label="商品ラインナップ" class="fade-in py-32 px-12 bg-surface">
 <div class="max-w-7xl mx-auto">
 <div class="flex items-end justify-between mb-20">
 <div class="space-y-4">
@@ -212,7 +240,7 @@
 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
 <div class="group space-y-6">
 <div class="aspect-[3/4] overflow-hidden rounded-lg bg-surface-container-low">
-<img alt="クリーム紙に包まれた定番ブーケ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" src="./images/img-07.jpg"/>
+<img alt="クリーム紙に包まれた定番ブーケ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" src="./images/img-07.jpg" width="512" height="512"/>
 </div>
 <div class="space-y-2">
 <h4 class="font-display text-2xl">Bouquet</h4>
@@ -221,7 +249,7 @@
 </div>
 <div class="group space-y-6 translate-y-12">
 <div class="aspect-[3/4] overflow-hidden rounded-lg bg-surface-container-low">
-<img alt="陶器ベースに活けた紫系アレンジメント" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" src="./images/img-08.jpg"/>
+<img alt="陶器ベースに活けた紫系アレンジメント" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" src="./images/img-08.jpg" width="512" height="512"/>
 </div>
 <div class="space-y-2">
 <h4 class="font-display text-2xl">Arrangement</h4>
@@ -230,7 +258,7 @@
 </div>
 <div class="group space-y-6">
 <div class="aspect-[3/4] overflow-hidden rounded-lg bg-surface-container-low">
-<img alt="ドライフラワーのギフトボックスセット" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" src="./images/img-09.jpg"/>
+<img alt="ドライフラワーのギフトボックスセット" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" src="./images/img-09.jpg" width="512" height="512"/>
 </div>
 <div class="space-y-2">
 <h4 class="font-display text-2xl">Gift</h4>
@@ -241,11 +269,11 @@
 </div>
 </section>
 <!-- Testimonial (Restored) -->
-<section aria-label="お客様の声" class="py-32 px-12 bg-surface-container-low overflow-hidden">
+<section aria-label="お客様の声" class="fade-in py-32 px-12 bg-surface-container-low overflow-hidden">
 <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
 <div class="w-full md:w-1/2 relative">
 <div class="aspect-square rounded-lg overflow-hidden relative z-10">
-<img alt="ワイルドフラワーの花束を抱える笑顔の女性" class="w-full h-full object-cover" loading="lazy" decoding="async" src="./images/img-10.jpg"/>
+<img alt="ワイルドフラワーの花束を抱える笑顔の女性" class="w-full h-full object-cover" loading="lazy" decoding="async" src="./images/img-10.jpg" width="512" height="512"/>
 </div>
 <div class="absolute -top-10 -left-10 w-40 h-40 bg-primary-container/20 rounded-full blur-3xl z-0"></div>
 </div>
@@ -259,7 +287,7 @@
 </div>
 </section>
 <!-- Order Process (Restored) -->
-<section aria-label="ご注文の流れ" class="py-32 px-12 bg-surface">
+<section aria-label="ご注文の流れ" class="fade-in py-32 px-12 bg-surface">
 <div class="max-w-4xl mx-auto text-center space-y-20">
 <h2 class="font-display text-3xl">ご注文の流れ</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
@@ -295,7 +323,7 @@
 </div>
 </section>
 <!-- CTA Banner (Restored) -->
-<section aria-label="LINE登録" class="px-12 pb-32">
+<section aria-label="LINE登録" class="fade-in px-12 pb-32">
 <div class="max-w-7xl mx-auto bg-primary rounded-xl p-16 text-center text-on-primary space-y-8 relative overflow-hidden">
 <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl"></div>
 <h3 class="font-display text-4xl">LINE友だち追加</h3>
@@ -309,7 +337,7 @@
 </section>
 </main>
 <!-- Footer (Restored) -->
-<footer class="bg-[#f4f4f0] dark:bg-stone-900 docked full-width py-20">
+<footer role="contentinfo" class="bg-[#f4f4f0] dark:bg-stone-900 docked full-width py-20">
 <div class="grid grid-cols-1 md:grid-cols-5 gap-12 px-12 max-w-7xl mx-auto items-start">
 <div class="col-span-1 md:col-span-1 space-y-6">
 <div class="font-serif text-3xl text-stone-700 dark:text-stone-300">FLEURISTE MADO</div>
@@ -366,40 +394,12 @@
   "sameAs": ["https://www.instagram.com/fleuriste_mado"]
 }
 </script>
-<script>
-// CV Tracking（GA4実装時に有効化）
-document.addEventListener('DOMContentLoaded', function() {
-  // CTAクリック計測
-  document.querySelectorAll('[data-tracking="cta"]').forEach(btn => {
-    btn.addEventListener('click', function() {
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'cta_click', {
-          event_category: 'engagement',
-          event_label: this.textContent.trim(),
-          cta_position: this.dataset.position || 'unknown'
-        });
-      }
-      console.log('[Tracking] CTA clicked:', this.dataset.position);
-    });
-  });
-
-  // スクロール深度計測
-  const depths = [25, 50, 75, 90, 100];
-  const tracked = new Set();
-  window.addEventListener('scroll', function() {
-    const pct = Math.round((window.scrollY + window.innerHeight) / document.body.scrollHeight * 100);
-    depths.forEach(d => {
-      if (pct >= d && !tracked.has(d)) {
-        tracked.add(d);
-        if (typeof gtag !== 'undefined') {
-          gtag('event', 'scroll_depth', { event_label: d + '%', value: d });
-        }
-        console.log('[Tracking] Scroll depth:', d + '%');
-      }
-    });
-  }, { passive: true });
-});
-</script>
+<!-- Analytics Tracking Script -->
+<script src="./js/analytics.js" defer></script>
+<!-- UX Enhancement: Toast Notification System -->
+<script src="./toast.js" defer></script>
+<!-- Script for fade-in and navigation -->
+<script src="./script.js" defer></script>
 <button id="back-to-top" aria-label="ページトップへ戻る"
   style="position:fixed;bottom:2rem;right:2rem;width:48px;height:48px;border-radius:50%;background:#506448;color:#fff;border:none;cursor:pointer;display:none;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,0.15);z-index:100;font-size:1.2rem;">
   ↑
@@ -460,5 +460,22 @@ document.addEventListener('DOMContentLoaded', function() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
+
+  /* ============================================
+     UX Enhancement: Image Error Handling
+     ============================================ */
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      img.addEventListener('error', function() {
+        this.classList.add('img-error');
+        this.alt = '画像を読み込めませんでした';
+        console.warn('[UX] Image failed to load:', this.src);
+      });
+      img.addEventListener('load', function() {
+        this.classList.remove('img-error');
+      });
+    });
+  });
 </script>
 </body></html>

@@ -1,0 +1,135 @@
+/* ============================================
+   Toast Notification Styles
+   ============================================ */
+
+#toast-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  pointer-events: none;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 280px;
+  max-width: 400px;
+  padding: 1rem 1rem 1rem 0.875rem;
+  background: #faf9f5;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.08);
+  pointer-events: auto;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-left: 3px solid #747870;
+}
+
+.toast--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.toast--removing {
+  opacity: 0;
+  transform: translateX(20%);
+}
+
+/* Toast types */
+.toast--success {
+  border-left-color: #506448;
+}
+
+.toast--success .toast__icon {
+  color: #506448;
+}
+
+.toast--error {
+  border-left-color: #ba1a1a;
+}
+
+.toast--error .toast__icon {
+  color: #ba1a1a;
+}
+
+.toast--warning {
+  border-left-color: #725a38;
+}
+
+.toast--warning .toast__icon {
+  color: #725a38;
+}
+
+.toast--info {
+  border-left-color: #506448;
+}
+
+.toast--info .toast__icon {
+  color: #506448;
+}
+
+.toast__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+.toast__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.toast__message {
+  flex: 1;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #1b1c1a;
+  font-weight: 400;
+}
+
+.toast__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #747870;
+  transition: color 0.2s ease;
+  border-radius: 0.25rem;
+}
+
+.toast__close:hover {
+  color: #1b1c1a;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.toast__close:focus-visible {
+  outline: 2px solid #506448;
+  outline-offset: 2px;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  #toast-container {
+    top: 0.5rem;
+    right: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .toast {
+    min-width: 0;
+    max-width: none;
+  }
+}

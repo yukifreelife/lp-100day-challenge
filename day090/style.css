@@ -1045,3 +1045,121 @@ button {
     grid-column: span 2;
   }
 }
+
+/* ============================================
+   UX Enhancement: Loading States
+   ============================================ */
+
+/* Screen Reader Only Utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ボタンローディング状態 */
+.btn,
+button {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn.is-loading,
+button.is-loading {
+  color: transparent;
+  pointer-events: none;
+}
+
+.btn.is-loading::before,
+button.is-loading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: -0.625rem 0 0 -0.625rem;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 0.8s linear infinite;
+}
+
+/* 骨格スケルトンローディング */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* 画像ローディングプレースホルダー */
+img[loading="lazy"] {
+  background-color: #f0f0f0;
+  min-height: 200px;
+}
+
+/* 画像エラー時のスタイル */
+.img-error {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-surface);
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  padding: 1rem;
+  min-height: 200px;
+}
+
+.img-error::before {
+  content: '画像を読み込めませんでした';
+}
+
+/* ============================================
+   UX Enhancement: Focus Visible
+   ============================================ */
+
+/* キーボードナビゲーション用のフォーカススタイル */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* マウス操作時のフォーカスは非表示 */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ボタンのフォーカススタイル */
+.btn:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* リンクのフォーカススタイル */
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
