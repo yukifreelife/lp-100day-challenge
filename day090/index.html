@@ -268,6 +268,35 @@
 </div>
 </div>
 </section>
+<!-- Gallery Section (作品集) -->
+<section aria-label="作品集" class="fade-in py-32 px-12 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="text-center space-y-4 mb-16">
+<p class="text-secondary label-md tracking-[0.2em] uppercase font-light">Gallery</p>
+<h2 class="font-display text-4xl">作品集</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+<div class="aspect-[3/4] overflow-hidden rounded-lg bg-surface-container-low group">
+<img alt="フラワー作品 ブーケ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" src="./images/img-06.jpg" width="512" height="683"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-lg bg-surface-container-low group">
+<img alt="フラワー作品 アレンジメント" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" src="./images/img-07.jpg" width="512" height="512"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-lg bg-surface-container-low group">
+<img alt="フラワー作品 プリザーブド" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" src="./images/img-08.jpg" width="512" height="512"/>
+</div>
+<div class="col-span-2 aspect-[2/1] overflow-hidden rounded-lg bg-surface-container-low group">
+<img alt="フラワー作品 ギフトボックス" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" src="./images/img-09.jpg" width="1024" height="512"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-lg bg-surface-container-low group">
+<img alt="フラワー作品 ウェディング" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" src="./images/img-10.jpg" width="512" height="512"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-lg bg-surface-container-low group">
+<img alt="フラワー作品 スタンド花" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" src="./images/img-13.jpg" width="512" height="512"/>
+</div>
+</div>
+</div>
+</section>
 <!-- Testimonial (Restored) -->
 <section aria-label="お客様の声" class="fade-in py-32 px-12 bg-surface-container-low overflow-hidden">
 <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
@@ -323,16 +352,25 @@
 </div>
 </section>
 <!-- CTA Banner (Restored) -->
-<section aria-label="LINE登録" class="fade-in px-12 pb-32">
-<div class="max-w-7xl mx-auto bg-primary rounded-xl p-16 text-center text-on-primary space-y-8 relative overflow-hidden">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl"></div>
-<h3 class="font-display text-4xl">LINE友だち追加</h3>
-<p class="text-lg font-light tracking-widest opacity-90">最新の入荷情報や、オーダーの相談はこちらから</p>
-<div class="flex justify-center">
-<button class="bg-surface text-primary px-12 py-5 rounded-full font-bold hover:bg-surface-bright transition-all flex items-center gap-4" style="font-family:'Noto Serif JP','Manrope',sans-serif;" data-tracking="cta" data-position="footer" data-type="line">
-                        公式LINEを友だち登録する
-                    </button>
+<!-- CTA Section (LINEでオーダー相談) -->
+<section aria-label="LINEでオーダー相談" class="fade-in relative py-32 px-12 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="花のギフト" class="w-full h-full object-cover" loading="lazy" decoding="async" src="./images/img-14.jpg" width="1920" height="600"/>
+<div class="absolute inset-0 bg-primary/90"></div>
 </div>
+<div class="max-w-4xl mx-auto text-center text-on-primary space-y-8 relative z-10">
+<p class="text-primary-fixed label-md tracking-[0.2em] uppercase font-light">First Order</p>
+<h2 class="font-display text-4xl md:text-5xl">はじめてのご注文、<br/>お気軽にどうぞ</h2>
+<p class="text-lg font-light tracking-wider opacity-90 max-w-2xl mx-auto">
+LINEで気軽に相談できます。予算・用途・イメージを教えていただければ、<br class="hidden md:block"/>担当スタッフが最適なプランをご提案します。
+</p>
+<div class="flex justify-center">
+<a href="https://line.me/ti/p/@fleuriste_mado" class="inline-flex items-center gap-3 bg-[#06C755] text-white px-10 py-5 rounded-full font-bold hover:bg-[#05b04d] transition-all shadow-lg hover:shadow-xl" data-tracking="cta" data-position="footer" data-type="line" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+LINEでオーダー相談
+</a>
+</div>
+<p class="text-sm opacity-75">返信は通常24時間以内。初回相談は無料です。</p>
 </div>
 </section>
 </main>
