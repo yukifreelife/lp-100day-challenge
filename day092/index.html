@@ -3,7 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClothShare - ファッションレンタルサービス</title>
+    <title>ClothShare｜人気ブランドを月額定額でレンタル｜無料トライアル実施中</title>
+    <meta name="description" content="ClothShareは月額定額で人気ブランドのバッグ・アクセ・ウォッチをレンタルできるサブスクリプションサービス。送料無料、修理込み、最小7日間からお試し可能。今なら無料トライアル実施中。">
+    <link rel="canonical" href="https://clothshare.example.com/">
+
+    <!-- OGP -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://clothshare.example.com/">
+    <meta property="og:title" content="ClothShare｜人気ブランドを月額定額でレンタル">
+    <meta property="og:description" content="月額定額で人気ブランドのバッグ・アクセ・ウォッチをレンタル。送料無料、修理込み。今なら無料トライアル実施中。">
+    <meta property="og:image" content="https://clothshare.example.com/images/assets/ogp.jpg">
+    <meta property="og:site_name" content="ClothShare">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ClothShare｜人気ブランドを月額定額でレンタル">
+    <meta name="twitter:description" content="月額定額で人気ブランドのバッグ・アクセ・ウォッチをレンタル。送料無料、修理込み。">
+    <meta name="twitter:image" content="https://clothshare.example.com/images/assets/ogp.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/assets/apple-touch-icon.png">
+
+    <!-- JSON-LD 構造化データ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "ClothShare",
+      "description": "月額定額で人気ブランドのバッグ・アクセ・ウォッチをレンタルできるサブスクリプションサービス",
+      "url": "https://clothshare.example.com",
+      "category": "Fashion Rental",
+      "provider": {
+        "@type": "Organization",
+        "name": "ClothShare株式会社",
+        "url": "https://clothshare.example.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "無料トライアル",
+        "price": "0",
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Japan"
+      }
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
@@ -114,11 +165,11 @@
                     <div class="grid grid-cols-12 grid-rows-6 gap-4 h-[500px] md:h-[700px]">
                         <!-- Primary Image -->
                         <div class="col-span-8 row-span-6 rounded-lg overflow-hidden shadow-2xl shadow-on-background/10 group">
-                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="three diverse fashionable women walking confidently in high-end trendy outfits on a bright urban street with modern architecture background" src="images/assets/hero-main.jpg"/>
+                            <img width="512" height="512" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="three diverse fashionable women walking confidently in high-end trendy outfits on a bright urban street with modern architecture background" src="images/assets/hero-main.jpg"/>
                         </div>
                         <!-- Secondary Detail Image -->
                         <div class="col-span-4 row-span-3 rounded-lg overflow-hidden shadow-xl shadow-on-background/5 group">
-                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="close-up of elegant designer clothing on high-end wooden hangers in a bright minimalist boutique setting" src="images/assets/hero-secondary.jpg"/>
+                            <img width="512" height="512" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="close-up of elegant designer clothing on high-end wooden hangers in a bright minimalist boutique setting" src="images/assets/hero-secondary.jpg"/>
                         </div>
                         <!-- Accented Card -->
                         <div class="col-span-4 row-span-3 bg-surface-container-low rounded-lg p-6 flex flex-col justify-end space-y-2">
@@ -158,7 +209,7 @@
         <section id="features" class="py-20 bg-surface">
             <!-- Hero Visual Element -->
             <div class="relative h-[200px] overflow-hidden flex items-center justify-center">
-                <img alt="" class="absolute inset-0 w-full h-full object-cover opacity-20" data-alt="Soft focused elegant silk garments hanging in a minimalist light-filled fashion atelier with warm sunlight and soft shadows" src="images/assets/stitch_asset_022.png"/>
+                <img width="512" height="512" alt="" class="absolute inset-0 w-full h-full object-cover opacity-20" data-alt="Soft focused elegant silk garments hanging in a minimalist light-filled fashion atelier with warm sunlight and soft shadows" src="images/assets/stitch_asset_022.png"/>
                 <div class="relative z-10 text-center px-8">
                     <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">The Digital Atelier</span>
                     <h2 class="font-display text-4xl md:text-5xl font-extrabold tracking-tighter text-on-surface">ClothShareの4つの魅力</h2>
@@ -177,7 +228,7 @@
                             <p class="text-on-surface-variant leading-relaxed text-lg">トレンドを押さえた最新のコーディネートが毎月届きます。</p>
                         </div>
                         <div class="mt-12 overflow-hidden rounded-lg aspect-video relative">
-                            <img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Flat lay of a curated capsule wardrobe for spring including a neutral blazer, linen trousers, and minimal accessories on a white surface" src="images/assets/stitch_asset_002.png"/>
+                            <img width="512" height="512" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Flat lay of a curated capsule wardrobe for spring including a neutral blazer, linen trousers, and minimal accessories on a white surface" src="images/assets/stitch_asset_002.png"/>
                         </div>
                     </div>
                     <!-- Feature 2 -->
@@ -190,7 +241,7 @@
                             <p class="text-on-surface-variant leading-relaxed text-lg">プロのスタイリストがあなたに最適な一着をセレクト。</p>
                         </div>
                         <div class="mt-12 overflow-hidden rounded-lg aspect-video relative">
-                            <img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A professional fashion stylist working in a bright studio, arranging high-quality fabrics and fashion sketches on a mood board" src="images/assets/stitch_asset_011.png"/>
+                            <img width="512" height="512" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A professional fashion stylist working in a bright studio, arranging high-quality fabrics and fashion sketches on a mood board" src="images/assets/stitch_asset_011.png"/>
                         </div>
                     </div>
                     <!-- Feature 3 -->
@@ -203,7 +254,7 @@
                             <p class="text-on-surface-variant leading-relaxed text-lg">送料はすべて無料。気に入らなければいつでも返品可能です。</p>
                         </div>
                         <div class="mt-12 overflow-hidden rounded-lg aspect-video relative">
-                            <img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist white shipping box with elegant branding on a marble floor, surrounded by soft afternoon light" src="images/assets/stitch_asset_001.png"/>
+                            <img width="512" height="512" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist white shipping box with elegant branding on a marble floor, surrounded by soft afternoon light" src="images/assets/stitch_asset_001.png"/>
                         </div>
                     </div>
                     <!-- Feature 4 -->
@@ -216,7 +267,7 @@
                             <p class="text-on-surface-variant leading-relaxed text-lg">万が一サイズが合わなくても、無料で交換を承ります。</p>
                         </div>
                         <div class="mt-12 overflow-hidden rounded-lg aspect-video relative">
-                            <img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close up of high quality fabric textures and buttons on a tailored garment in a bright boutique setting" src="images/assets/stitch_asset_031.png"/>
+                            <img width="512" height="512" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close up of high quality fabric textures and buttons on a tailored garment in a bright boutique setting" src="images/assets/stitch_asset_031.png"/>
                         </div>
                     </div>
                 </div>
@@ -231,7 +282,7 @@
                     </div>
                     <div class="relative z-10 w-full md:w-1/3">
                         <div class="aspect-[3/4] bg-primary-container rounded-lg rotate-3 shadow-2xl overflow-hidden border-4 border-on-primary/10">
-                            <img alt="" class="w-full h-full object-cover" data-alt="Young woman wearing stylish high-fashion streetwear posing against a clean architectural wall" src="images/assets/stitch_asset_019.png"/>
+                            <img width="512" height="512" alt="" class="w-full h-full object-cover" data-alt="Young woman wearing stylish high-fashion streetwear posing against a clean architectural wall" src="images/assets/stitch_asset_019.png"/>
                         </div>
                     </div>
                     <!-- Abstract decorative element -->
@@ -261,7 +312,7 @@
                             <h3 class="font-headline text-2xl font-bold mb-4 tracking-tight">選ぶ</h3>
                             <p class="text-on-surface-variant leading-relaxed">アプリで好きな服を選ぶ</p>
                             <div class="mt-8 overflow-hidden rounded-lg">
-                                <img class="w-full h-40 object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="close up of a hand scrolling through a luxury fashion app on a sleek smartphone screen with vibrant apparel images" src="images/assets/stitch_asset_026.png"/>
+                                <img width="512" height="512" class="w-full h-40 object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="close up of a hand scrolling through a luxury fashion app on a sleek smartphone screen with vibrant apparel images" src="images/assets/stitch_asset_026.png"/>
                             </div>
                         </div>
                     </div>
@@ -277,7 +328,7 @@
                             <h3 class="font-headline text-2xl font-bold mb-4 tracking-tight">届く</h3>
                             <p class="text-on-surface-variant leading-relaxed">自宅に送料無料で届く</p>
                             <div class="mt-8 overflow-hidden rounded-lg">
-                                <img class="w-full h-40 object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="a premium branded cardboard delivery box placed on a clean minimalist doorstep in soft morning sunlight" src="images/assets/stitch_asset_033.png"/>
+                                <img width="512" height="512" class="w-full h-40 object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="a premium branded cardboard delivery box placed on a clean minimalist doorstep in soft morning sunlight" src="images/assets/stitch_asset_033.png"/>
                             </div>
                         </div>
                     </div>
@@ -293,7 +344,7 @@
                             <h3 class="font-headline text-2xl font-bold mb-4 tracking-tight">着る</h3>
                             <p class="text-on-surface-variant leading-relaxed">期間中好きなだけ着れる</p>
                             <div class="mt-8 overflow-hidden rounded-lg">
-                                <img class="w-full h-40 object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="fashionable person wearing a high-end designer blazer walking through an urban architectural setting with soft shadows" src="images/assets/stitch_asset_013.png"/>
+                                <img width="512" height="512" class="w-full h-40 object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="fashionable person wearing a high-end designer blazer walking through an urban architectural setting with soft shadows" src="images/assets/stitch_asset_013.png"/>
                             </div>
                         </div>
                     </div>
@@ -309,7 +360,7 @@
                             <h3 class="font-headline text-2xl font-bold mb-4 tracking-tight">返す</h3>
                             <p class="text-on-surface-variant leading-relaxed">ポスト投函で返却完了</p>
                             <div class="mt-8 overflow-hidden rounded-lg">
-                                <img class="w-full h-40 object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="a stylish red mailbox on a clean urban street corner with soft bokeh background and warm afternoon glow" src="images/assets/stitch_asset_006.png"/>
+                                <img width="512" height="512" class="w-full h-40 object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="a stylish red mailbox on a clean urban street corner with soft bokeh background and warm afternoon glow" src="images/assets/stitch_asset_006.png"/>
                             </div>
                         </div>
                     </div>
@@ -336,7 +387,7 @@
                     <!-- Work Card -->
                     <div class="group relative overflow-hidden bg-surface-container-lowest rounded-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
                         <div class="aspect-[3/4] overflow-hidden">
-                            <img alt="Business Fashion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Sophisticated professional woman in a sharp beige blazer and tailored trousers standing in a bright modern office lobby with minimalist architecture" src="images/assets/stitch_asset_017.png"/>
+                            <img width="512" height="512" alt="Business Fashion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Sophisticated professional woman in a sharp beige blazer and tailored trousers standing in a bright modern office lobby with minimalist architecture" src="images/assets/stitch_asset_017.png"/>
                         </div>
                         <div class="p-6">
                             <span class="font-display text-2xl font-bold text-primary block mb-2">仕事</span>
@@ -349,7 +400,7 @@
                     <!-- Date Card -->
                     <div class="group relative overflow-hidden bg-surface-container-lowest rounded-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 lg:mt-8">
                         <div class="aspect-[3/4] overflow-hidden">
-                            <img alt="Date Fashion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Elegant woman in a flowing silk midi dress walking through a romantic cobblestone street at dusk with warm glowing streetlights" src="images/assets/stitch_asset_024.png"/>
+                            <img width="512" height="512" alt="Date Fashion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Elegant woman in a flowing silk midi dress walking through a romantic cobblestone street at dusk with warm glowing streetlights" src="images/assets/stitch_asset_024.png"/>
                         </div>
                         <div class="p-6">
                             <span class="font-display text-2xl font-bold text-primary block mb-2">デート</span>
@@ -362,7 +413,7 @@
                     <!-- Party Card -->
                     <div class="group relative overflow-hidden bg-surface-container-lowest rounded-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
                         <div class="aspect-[3/4] overflow-hidden">
-                            <img alt="Party Fashion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-fashion model in a glamorous shimmering sequined gown at a luxury rooftop party with city lights blurred in the background" src="images/assets/stitch_asset_005.png"/>
+                            <img width="512" height="512" alt="Party Fashion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-fashion model in a glamorous shimmering sequined gown at a luxury rooftop party with city lights blurred in the background" src="images/assets/stitch_asset_005.png"/>
                         </div>
                         <div class="p-6">
                             <span class="font-display text-2xl font-bold text-primary block mb-2">パーティー</span>
@@ -375,7 +426,7 @@
                     <!-- Casual Card -->
                     <div class="group relative overflow-hidden bg-surface-container-lowest rounded-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 lg:mt-8">
                         <div class="aspect-[3/4] overflow-hidden">
-                            <img alt="Casual Fashion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Trendy woman in high-quality oversized knitwear and relaxed denim lounging at a stylish minimalist cafe with soft natural sunlight" src="images/assets/stitch_asset_026.png"/>
+                            <img width="512" height="512" alt="Casual Fashion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Trendy woman in high-quality oversized knitwear and relaxed denim lounging at a stylish minimalist cafe with soft natural sunlight" src="images/assets/stitch_asset_026.png"/>
                         </div>
                         <div class="p-6">
                             <span class="font-display text-2xl font-bold text-primary block mb-2">カジュアル</span>
@@ -530,7 +581,7 @@
                 <div class="pb-16">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-surface-container-low p-8 md:p-16 rounded-xl">
                         <div class="relative group">
-                            <img alt="Elegant wardrobe" class="rounded-lg shadow-2xl w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-[1.02]" data-alt="Close-up of high-end fashion garments on a wooden minimalist rack in a sunlit bright studio with soft shadows" src="images/assets/stitch_asset_012.png"/>
+                            <img width="512" height="512" alt="Elegant wardrobe" class="rounded-lg shadow-2xl w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-[1.02]" data-alt="Close-up of high-end fashion garments on a wooden minimalist rack in a sunlit bright studio with soft shadows" src="images/assets/stitch_asset_012.png"/>
                             <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-primary rounded-lg -z-10 opacity-10"></div>
                         </div>
                         <div>
@@ -586,6 +637,11 @@
     <footer class="bg-gray-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <div class="font-epilogue text-2xl font-bold mb-4" style="color: #E91E63;">ClothShare</div>
+            <nav class="flex justify-center gap-6 mb-4 text-sm">
+                <a href="privacy.html" class="text-gray-400 hover:text-white transition">プライバシーポリシー</a>
+                <a href="tokusho.html" class="text-gray-400 hover:text-white transition">特定商取引法に基づく表記</a>
+                <a href="index.html#contact" class="text-gray-400 hover:text-white transition">お問い合わせ</a>
+            </nav>
             <p class="text-gray-400 text-sm">© 2026 ClothShare. All rights reserved.</p>
         </div>
     </footer>
