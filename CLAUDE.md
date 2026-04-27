@@ -57,3 +57,31 @@ Then open `http://localhost:8080` in browser.
 - Daily progress logs are centralized in `lp100-progress/daily/`
 - Format evolved from simple LP learning logs (day001〜day040) to detailed clientwork logs (day041〜day050)
 - README.md in day directories is for project-specific context and handoff, not for daily progress logging
+
+## LP Skills Usage (MANDATORY)
+**CRITICAL**: All LP-related work MUST use the dedicated skills located at `/Users/yuuki/.claude/skills/`
+
+### Available LP Skills
+| Skill | Purpose | Location |
+|-------|---------|----------|
+| `lp-category-settings` | Category configuration | `/Users/yuuki/.claude/skills/lp-category-settings/` |
+| `lp-legal` | Privacy policy & legal pages | `/Users/yuuki/.claude/skills/lp-legal/` |
+| `lp-seo.md` | SEO meta tags, OGP, JSON-LD | `/Users/yuuki/.claude/skills/lp-seo.md` |
+| `lp-performance` | Core Web Vitals, lazy loading | `/Users/yuuki/.claude/skills/lp-performance/` |
+| `lp-mobile.md` | Touch targets, responsive | `/Users/yuuki/.claude/skills/lp-mobile.md` |
+| `lp-content.md` | Heading structure, alt attributes | `/Users/yuuki/.claude/skills/lp-content.md` |
+| `lp-ux` | Toast, loading states, error handling | `/Users/yuuki/.claude/skills/lp-ux/` |
+| `lp-code-check.md` | Duplicate IDs, console errors | `/Users/yuuki/.claude/skills/lp-code-check.md` |
+| `lp-analytics` | GA4 tracking, CV events | `/Users/yuuki/.claude/skills/lp-analytics/` |
+
+### When to Use Skills
+**Always use the `Skill` tool before starting LP work:**
+
+1. **New LP Creation** → `lp-category-settings` → `lp-legal` → `lp-seo.md` → `lp-analytics`
+2. **LP Evaluation** → `lp-seo.md` → `lp-performance` → `lp-mobile.md` → `lp-content.md` → `lp-ux` → `lp-code-check.md`
+3. **LP Improvement** → Use specific skill based on improvement area
+
+### Skill Invocation Rule
+**"If there's even a 1% chance a skill might apply, you ABSOLUTELY MUST invoke it."**
+
+See `LP_SKILLS_MAPPING.md` for detailed mapping of work types to skills.
