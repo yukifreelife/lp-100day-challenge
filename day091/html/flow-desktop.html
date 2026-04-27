@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Serif JP', sans-serif;
+        }
+        .serif {
+            font-family: 'Noto Serif JP', serif;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#9f5f69",
+                        "surface-variant": "#e4e2df",
+                        "surface-container-high": "#eae8e5",
+                        "inverse-on-surface": "#f2f0ed",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#536757",
+                        "secondary": "#4f6353",
+                        "on-surface-variant": "#414942",
+                        "primary-fixed": "#b9efc5",
+                        "tertiary-fixed-dim": "#ffb2bc",
+                        "primary": "#316342",
+                        "surface": "#fbf9f6",
+                        "secondary-fixed-dim": "#b6ccb8",
+                        "primary-fixed-dim": "#9dd3aa",
+                        "on-tertiary-container": "#fff5f5",
+                        "surface-bright": "#fbf9f6",
+                        "secondary-container": "#cfe5d1",
+                        "surface-container-highest": "#e4e2df",
+                        "primary-container": "#4a7c59",
+                        "on-secondary-fixed-variant": "#384b3c",
+                        "on-primary-fixed-variant": "#1e5031",
+                        "on-primary-fixed": "#00210e",
+                        "surface-tint": "#376847",
+                        "inverse-primary": "#9dd3aa",
+                        "on-tertiary-fixed": "#380b16",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#d2e8d4",
+                        "on-background": "#1b1c1a",
+                        "tertiary": "#834751",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#717971",
+                        "outline-variant": "#c1c9bf",
+                        "on-secondary-fixed": "#0d1f13",
+                        "surface-container-low": "#f5f3f0",
+                        "inverse-surface": "#30312f",
+                        "surface-container": "#efeeeb",
+                        "on-surface": "#1b1c1a",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#ffd9dd",
+                        "on-tertiary-fixed-variant": "#6d363f",
+                        "on-primary-container": "#e1ffe5",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "background": "#fbf9f6",
+                        "surface-dim": "#dbdad7",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-[#fbf9f6]/80 backdrop-blur-xl dark:bg-[#1b1c1a]/80 docked full-width top-0 sticky z-50 shadow-[0_40px_40px_rgba(27,28,26,0.05)]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#316342] dark:text-[#4a7c59] cursor-pointer scale-95 transition-transform duration-200" data-icon="menu">menu</span>
+<h1 class="font-['Noto_Serif'] text-2xl font-black text-[#316342] dark:text-[#4a7c59]">The Harvest</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#1b1c1a]/60 dark:text-[#fbf9f6]/60 font-['Plus_Jakarta_Sans'] hover:text-[#4a7c59] transition-colors duration-300" href="#">Home</a>
+<a class="text-[#1b1c1a]/60 dark:text-[#fbf9f6]/60 font-['Plus_Jakarta_Sans'] hover:text-[#4a7c59] transition-colors duration-300" href="#">Shop</a>
+<a class="text-[#316342] border-b-2 border-[#316342] pb-1 font-['Plus_Jakarta_Sans']" href="#">Flow</a>
+<a class="text-[#1b1c1a]/60 dark:text-[#fbf9f6]/60 font-['Plus_Jakarta_Sans'] hover:text-[#4a7c59] transition-colors duration-300" href="#">Account</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#316342] dark:text-[#4a7c59] cursor-pointer" data-icon="shopping_basket">shopping_basket</span>
+</div>
+</div>
+</header>
+<!-- Hero Content / Introduction -->
+<main class="min-h-screen pb-32">
+<section class="max-w-screen-2xl mx-auto px-6 py-20 lg:py-32 flex flex-col md:flex-row items-center gap-12 overflow-hidden">
+<div class="w-full md:w-1/2 space-y-6 z-10">
+<span class="inline-block px-4 py-1.5 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-bold serif uppercase tracking-widest">Organic Certified</span>
+<h2 class="serif text-5xl md:text-7xl font-black text-primary leading-tight">アース・ナチュラル・グリーン</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-lg">
+                    私たちの農園では、大地の生命力をそのままに、化学肥料に頼らない自然な栽培を続けています。旬の恵みが最高の状態で届くまでのストーリー。
+                </p>
+</div>
+<div class="w-full md:w-1/2 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Close-up of vibrant green organic kale and various root vegetables in a rustic wooden crate with soft natural morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCBox5xta2ek0iJGOrltcylD-aVehj6jS-lKHumcnHQdPbOhu5fkYg3XLLjmrF_PL3eLshx8wh_m9LOWw_jHMJr56bBogke1bsiIQeWazP1iIEwjqAAvJcAhaS9b3lWtYEygccZ4hSl0jngIEa1xUoAkxCLd_Ag4T4HRE_bFZWGSWMajIl_Xe1YJXgIA9NZ56f8MzBYCR3Rt3THUnGN7qhbdL81UPHKAfw_YI4AugSLrS_UfiZCJq8W-vz0USxQ3sVJm0lL62wmTB0"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-primary-container p-8 rounded-xl shadow-xl hidden lg:block">
+<p class="text-on-primary-container serif text-3xl font-bold">100%<br/>Organic</p>
+</div>
+</div>
+</section>
+<!-- Delivery Flow Section -->
+<section class="bg-surface-container-low py-24 lg:py-32">
+<div class="max-w-screen-2xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+<div class="max-w-2xl">
+<h2 class="serif text-4xl lg:text-5xl font-black text-primary mb-6">新鮮な野菜が届くまで</h2>
+<p class="text-on-surface-variant font-medium">アース・ナチュラル・グリーンがお届けする、安心と鮮度のサイクル。注文から食卓までの4つのステップをご紹介します。</p>
+</div>
+<div class="hidden lg:block h-[1px] flex-grow bg-outline-variant/30 mx-12 mb-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+<!-- Step 1 -->
+<div class="group relative flex flex-col items-start bg-surface p-10 rounded-xl transition-all duration-300 hover:shadow-[0_40px_80px_rgba(49,99,66,0.08)]">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-primary text-white flex items-center justify-center rounded-full serif text-xl font-bold shadow-lg">1</div>
+<div class="w-16 h-16 bg-secondary-container text-primary rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl" data-icon="shopping_cart">shopping_cart</span>
+</div>
+<h3 class="serif text-2xl font-bold text-on-surface mb-4">注文</h3>
+<p class="text-primary font-bold text-sm mb-4">Webで簡単注文</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Webからいつでもお好きなコースを注文いただけます。旬のラインナップも随時更新中。</p>
+</div>
+<!-- Arrow 1 (Desktop) -->
+<div class="hidden lg:flex absolute left-[23%] top-[40%] text-primary/20 z-0 pointer-events-none">
+<span class="material-symbols-outlined text-6xl" data-icon="east">east</span>
+</div>
+<!-- Step 2 -->
+<div class="group relative flex flex-col items-start bg-surface p-10 rounded-xl transition-all duration-300 hover:shadow-[0_40px_80px_rgba(49,99,66,0.08)] lg:mt-8">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-primary text-white flex items-center justify-center rounded-full serif text-xl font-bold shadow-lg">2</div>
+<div class="w-16 h-16 bg-secondary-container text-primary rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl" data-icon="agriculture">agriculture</span>
+</div>
+<h3 class="serif text-2xl font-bold text-on-surface mb-4">収穫</h3>
+<p class="text-primary font-bold text-sm mb-4">朝採りで新鮮</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">その日の朝に収穫されたばかりの新鮮な野菜を厳選。土の香りと生命力をそのままパッキング。</p>
+</div>
+<!-- Arrow 2 (Desktop) -->
+<div class="hidden lg:flex absolute left-[48%] top-[45%] text-primary/20 z-0 pointer-events-none">
+<span class="material-symbols-outlined text-6xl" data-icon="east">east</span>
+</div>
+<!-- Step 3 -->
+<div class="group relative flex flex-col items-start bg-surface p-10 rounded-xl transition-all duration-300 hover:shadow-[0_40px_80px_rgba(49,99,66,0.08)]">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-primary text-white flex items-center justify-center rounded-full serif text-xl font-bold shadow-lg">3</div>
+<div class="w-16 h-16 bg-secondary-container text-primary rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl" data-icon="local_shipping">local_shipping</span>
+</div>
+<h3 class="serif text-2xl font-bold text-on-surface mb-4">配送</h3>
+<p class="text-primary font-bold text-sm mb-4">冷蔵便でお届け</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">鮮度を保つためにクール便で丁寧にお届けします。配送状況はいつでもマイページから確認可能です。</p>
+</div>
+<!-- Arrow 3 (Desktop) -->
+<div class="hidden lg:flex absolute left-[73%] top-[40%] text-primary/20 z-0 pointer-events-none">
+<span class="material-symbols-outlined text-6xl" data-icon="east">east</span>
+</div>
+<!-- Step 4 -->
+<div class="group relative flex flex-col items-start bg-surface p-10 rounded-xl transition-all duration-300 hover:shadow-[0_40px_80px_rgba(49,99,66,0.08)] lg:mt-8">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-primary text-white flex items-center justify-center rounded-full serif text-xl font-bold shadow-lg">4</div>
+<div class="w-16 h-16 bg-secondary-container text-primary rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl" data-icon="restaurant">restaurant</span>
+</div>
+<h3 class="serif text-2xl font-bold text-on-surface mb-4">到着</h3>
+<p class="text-primary font-bold text-sm mb-4">食卓へ</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">最短で翌日には新鮮な大地の恵みが食卓に並びます。素材本来の味を存分にお楽しみください。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Highlight Bento Grid -->
+<section class="max-w-screen-2xl mx-auto px-6 py-24">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 auto-rows-[300px]">
+<div class="lg:col-span-2 lg:row-span-2 rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An expansive aerial view of a vibrant green organic farm with neat rows of crops under a soft morning mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgFasXhCBw3eP-Ts0jfeblpRsXngE4qM8fQEWwbqY6PHFs6GWfSamKOWg7TaOESxcHYCWPyNM1DIjTE-v0o16EmDFojINbtN5MRf-6R5TLylz4usfjHNvVyK4makFhUjx6Bb-VVAc97hc8Jgson9gY3jVTSsrvvt8pmvEj_9ofRFlkoGEEJ7in1UeEVRVhkzUkKTdSfgD34dVmvuoNFBtRC9SSq7k01ufJWMOP_ZS_roJiFG9ZwPATznyxqAQJf9io6DFPANpOgYEQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<p class="serif text-sm uppercase tracking-[0.2em] mb-2">Our Mission</p>
+<h4 class="serif text-4xl font-bold">地球と調和する農法</h4>
+</div>
+</div>
+<div class="bg-surface-container-highest rounded-xl p-8 flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="eco">eco</span>
+<div>
+<h5 class="serif text-xl font-bold mb-2 text-on-surface">完全無農薬</h5>
+<p class="text-on-surface-variant text-sm">虫や微生物、雑草さえも共生する豊かな生態系が、野菜に深い旨味を与えます。</p>
+</div>
+</div>
+<div class="bg-primary text-white rounded-xl p-8 flex flex-col justify-between relative overflow-hidden">
+<div class="z-10">
+<h5 class="serif text-xl font-bold mb-2">今週のピックアップ</h5>
+<p class="text-on-primary-container text-sm">旬の「紅はるか」と「春菊」が最高の食べごろを迎えています。</p>
+</div>
+<button class="bg-white text-primary px-6 py-3 rounded-full text-sm font-bold w-fit z-10 transition-transform active:scale-95">ショップを見る</button>
+<div class="absolute -right-8 -bottom-8 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="potted_plant">potted_plant</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-end px-4 pb-6 pt-2 bg-[#fbf9f6]/90 backdrop-blur-2xl dark:bg-[#1b1c1a]/90 z-50 shadow-[0_-10px_40px_rgba(27,28,26,0.04)] bg-gradient-to-t from-[#f5f3f0] to-transparent rounded-t-[2rem]">
+<div class="flex flex-col items-center justify-center text-[#1b1c1a]/50 dark:text-[#fbf9f6]/50 hover:scale-110 transition-all">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1b1c1a]/50 dark:text-[#fbf9f6]/50 hover:scale-110 transition-all">
+<span class="material-symbols-outlined" data-icon="potted_plant">potted_plant</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-1">Shop</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#4a7c59] text-white rounded-full w-14 h-14 -mt-6 shadow-lg hover:scale-110 transition-all">
+<span class="material-symbols-outlined" data-icon="Timeline">timeline</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1b1c1a]/50 dark:text-[#fbf9f6]/50 hover:scale-110 transition-all">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-1">Account</span>
+</div>
+</nav>
+</body></html>

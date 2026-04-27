@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Harvest | Earth Natural Green</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#4f6353",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#cfe5d1",
+                    "on-secondary-container": "#536757",
+                    "inverse-primary": "#9dd3aa",
+                    "on-background": "#1b1c1a",
+                    "on-tertiary-fixed-variant": "#6d363f",
+                    "surface-variant": "#e4e2df",
+                    "secondary-fixed": "#d2e8d4",
+                    "on-tertiary-fixed": "#380b16",
+                    "tertiary-fixed": "#ffd9dd",
+                    "surface-container-low": "#f5f3f0",
+                    "outline-variant": "#c1c9bf",
+                    "surface": "#fbf9f6",
+                    "surface-container-highest": "#e4e2df",
+                    "secondary-fixed-dim": "#b6ccb8",
+                    "on-primary-fixed-variant": "#1e5031",
+                    "on-primary-fixed": "#00210e",
+                    "error-container": "#ffdad6",
+                    "outline": "#717971",
+                    "surface-bright": "#fbf9f6",
+                    "primary-fixed-dim": "#9dd3aa",
+                    "on-secondary-fixed-variant": "#384b3c",
+                    "inverse-surface": "#30312f",
+                    "on-tertiary-container": "#fff5f5",
+                    "on-surface-variant": "#414942",
+                    "surface-tint": "#376847",
+                    "primary-fixed": "#b9efc5",
+                    "tertiary-container": "#9f5f69",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb2bc",
+                    "surface-container": "#efeeeb",
+                    "error": "#ba1a1a",
+                    "background": "#fbf9f6",
+                    "on-tertiary": "#ffffff",
+                    "tertiary": "#834751",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#0d1f13",
+                    "primary": "#316342",
+                    "on-primary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#eae8e5",
+                    "on-primary-container": "#e1ffe5",
+                    "primary-container": "#4a7c59",
+                    "inverse-on-surface": "#f2f0ed",
+                    "on-surface": "#1b1c1a",
+                    "surface-dim": "#dbdad7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif JP", "serif"],
+                    "display": ["Noto Serif JP", "serif"],
+                    "body": ["Plus Jakarta Sans", "sans-serif"],
+                    "label": ["Plus Jakarta Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #fbf9f6; color: #1b1c1a; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-secondary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur-lg no-border shadow-[0_40px_40px_rgba(27,28,26,0.05)]">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="font-['Noto_Serif'] text-2xl font-bold text-emerald-900 dark:text-emerald-400">The Harvest</div>
+<nav class="hidden md:flex items-center space-x-12">
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-emerald-800 transition-colors font-['Noto_Serif'] text-lg tracking-tight" href="#">Our Story</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-emerald-800 transition-colors font-['Noto_Serif'] text-lg tracking-tight" href="#">The Produce</a>
+<a class="text-emerald-900 dark:text-emerald-400 font-semibold border-b-2 border-emerald-900 dark:border-emerald-400 pb-1 font-['Noto_Serif'] text-lg tracking-tight" href="#">Farm Visits</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-emerald-800 transition-colors font-['Noto_Serif'] text-lg tracking-tight" href="#">Journal</a>
+</nav>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-semibold hover:opacity-80 transition-all duration-300 scale-95 duration-200 ease-in-out">
+                Book a Visit
+            </button>
+</div>
+</header>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<div class="max-w-screen-2xl mx-auto px-8 mb-16">
+<h1 class="font-display text-5xl md:text-7xl font-bold text-on-surface leading-tight tracking-tighter mb-4">
+                私たちの農場へようこそ
+            </h1>
+<p class="font-label text-on-surface-variant max-w-2xl text-lg">
+                Earth Natural Greenは、土壌の健康と自然の循環を第一に考えるオーガニックファームです。私たちの育てる生命力あふれる野菜と、それを支える大地をぜひ体感してください。
+            </p>
+</div>
+<!-- Two-Column Editorial Layout -->
+<section class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Side: Large Hero Image -->
+<div class="lg:col-span-7 rounded-xl overflow-hidden shadow-2xl">
+<img alt="Earth Natural Green Farm View" class="w-full h-[700px] object-cover" data-alt="Lush green organic farm landscape at sunrise with rolling hills, a clear blue sky, and rows of vibrant vegetable crops" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4HjTN1ghhyrIpAGDQv8OG0hCCeaXgvME9DlpKqQM8v5q27bBFCg2nMQwPMeIrBJ-ycj7mehScMdreKH13SjTOLTVP4M76lqLKhi4yLAmp7sJuFizm8TXnFOjXDALcU3oHoKN83hl0GAwYS_XuSgeHn46XgZPsC7gqtTbCFAxnhEU6ij8A9ZaIRCLwSfLWlUbdg_9j91Oiflj9XxNOQWmLNP0lbmWNv2itJXPqxP6cxkBuQZawNkg051SHSpY4buOCUmZjGnp_eGxG"/>
+</div>
+<!-- Right Side: Content & Info -->
+<div class="lg:col-span-5 space-y-12">
+<!-- Info Grid -->
+<div class="space-y-8 bg-surface-container-low p-10 rounded-xl">
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<p class="text-xs uppercase tracking-widest text-outline font-bold mb-1">所在地</p>
+<p class="text-xl font-headline font-bold">千葉県山武郡横芝光町 214-1</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">potted_plant</span>
+<div>
+<p class="text-xs uppercase tracking-widest text-outline font-bold mb-1">栽培面積</p>
+<p class="text-xl font-headline font-bold">12.5 ヘクタール</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">history</span>
+<div>
+<p class="text-xs uppercase tracking-widest text-outline font-bold mb-1">創業</p>
+<p class="text-xl font-headline font-bold">2008年 春</p>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/20 space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">train</span>
+<div>
+<p class="text-xs uppercase tracking-widest text-outline font-bold mb-1">最寄駅</p>
+<p class="text-on-surface-variant">JR総武本線 横芝駅から車で15分</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">event_available</span>
+<div>
+<p class="text-xs uppercase tracking-widest text-outline font-bold mb-1">見学受付</p>
+<p class="text-on-surface-variant">水・金・土曜日（要事前予約）</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Google Maps Placeholder -->
+<div class="relative w-full aspect-video rounded-xl overflow-hidden shadow-sm">
+<div class="absolute inset-0 bg-surface-container-highest flex items-center justify-center">
+<div class="text-center">
+<span class="material-symbols-outlined text-4xl text-outline mb-2">map</span>
+<p class="font-label text-sm text-on-surface-variant">インタラクティブマップを読み込み中...</p>
+</div>
+</div>
+<img alt="Location Map" class="w-full h-full object-cover mix-blend-multiply opacity-30" data-alt="abstract top-down artistic map view of a countryside landscape with soft green and beige tones" data-location="Yokoshibahikari, Chiba, Japan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_v5CL--83zCkHf3UyRs61GFNHzbfGKwrxdF-niCecoSdYBuDwJ-TmHszhvLMUHnZ0il0DI8yn2QKNuIVwLRJO8IYDhG_FDdDK4pCvLDz-vaBX71nmYdlr8Svvz_w2nQu38uESfYllu89YTF8zfNvkUfE3p7jndGDVXE9RuD2kRu4asY36GKlLWSe6FYQGjshJOM2z9RsnYKg-9l6Q29PLFALiQQNcLmq_vI8EjX_SQCJOgIPLe9EJOmKKxo_oGZlBVmaZeW_ggDPf"/>
+</div>
+<!-- Action Button -->
+<div>
+<button class="group w-full bg-primary text-on-primary py-6 rounded-full font-headline text-xl font-bold flex items-center justify-center gap-3 transition-all hover:bg-primary-container shadow-xl">
+<span>見学を予約する</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<p class="text-center mt-4 text-sm text-on-surface-variant font-label">
+                        ※団体での見学をご希望の場合は別途お問い合わせください。
+                    </p>
+</div>
+</div>
+</section>
+<!-- Asymmetrical Secondary Section -->
+<section class="mt-32 max-w-screen-2xl mx-auto px-8">
+<div class="bg-secondary-container rounded-[2rem] p-12 md:p-20 grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<div class="inline-block bg-tertiary-container text-on-tertiary-container px-4 py-1 rounded-full text-sm font-bold">
+                        Limited Harvest
+                    </div>
+<h2 class="font-display text-4xl font-bold leading-tight">
+                        季節の恵みを、<br/>そのまま食卓へ。
+                    </h2>
+<p class="font-label text-on-secondary-container">
+                        私たちは、ただ野菜を育てるだけではありません。その土地が持つ本来の力を引き出し、季節ごとに最も栄養価が高く、美味しい瞬間をお届けします。
+                    </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<img alt="Fresh Carrots" class="rounded-xl w-full h-48 object-cover shadow-lg" data-alt="Close-up of fresh organic carrots with green tops held by a farmer in rustic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5u_2MtSXZ4t67xTbFBSD98IipVF9wDEkYF2rR7JLucLGZUXDqCinp2xQQ-i_PSXDVPkSkMS4D_mHWMH8FbdHe4KbPaF35v_v6b_47aZTH8Zr76pzRWvokgia1nmuI8__FuhZjdoOxRUGjFNXmFn9SgGzX26nc0tK2iLbBs5pbvlS-pd4fWNg_xFe9oZoC-1T5Ymj2ZMok4PK3v_xEO4ZMBmKXdGuYiR_C8AHx8UzBviXNtJG1aHwKaZi2K9xFtr74vIKMhtWUeqMe"/>
+<img alt="Heritage Tomatoes" class="rounded-xl w-full h-48 object-cover shadow-lg translate-y-8" data-alt="A variety of heritage tomatoes in a wooden crate with soft natural side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXSt0GGPxPYwYz3cVKmnoR5Wd0zXz9a5tSoZNOM2P8fkdIGCihCCHJ5f1RbPvtM02y5sqAC0yP6aF_ivQ5DvSweMfaD3Oi2wQAPp0Hi09BNVDIn-3bDg-aPYdukPWuLAkHZZv0mDMS3H-M1WAmoqKm1jwZCD_8cVYg9z5KhC4VlbO9ng-Md8m0FOz_Vg_qOStEqX8LhuH7jCmZDGoHaukJgWfZQZfk4jbTBLaGZcSCKD2a-nd9wbymANLXzafuUN_G8OJSx0P7-kNZ"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-stone-100 dark:bg-stone-900 tonal-shift-no-border flat">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-12 max-w-screen-2xl mx-auto items-center">
+<div>
+<div class="font-['Noto_Serif'] text-xl font-semibold text-emerald-900 dark:text-emerald-400 mb-4">The Editorial Harvest</div>
+<p class="text-stone-500 dark:text-stone-400 font-['Plus_Jakarta_Sans'] text-sm tracking-wide">
+                    © 2024 The Editorial Harvest. Grown with intention.
+                </p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4 md:justify-end">
+<a class="text-stone-500 dark:text-stone-400 font-['Plus_Jakarta_Sans'] text-sm tracking-wide hover:text-emerald-700 dark:hover:text-emerald-300 underline-offset-4 opacity-90 hover:opacity-100 transition-opacity" href="#">Sustainability Report</a>
+<a class="text-stone-500 dark:text-stone-400 font-['Plus_Jakarta_Sans'] text-sm tracking-wide hover:text-emerald-700 dark:hover:text-emerald-300 underline-offset-4 opacity-90 hover:opacity-100 transition-opacity" href="#">Accessibility</a>
+<a class="text-stone-500 dark:text-stone-400 font-['Plus_Jakarta_Sans'] text-sm tracking-wide hover:text-emerald-700 dark:hover:text-emerald-300 underline-offset-4 opacity-90 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+<a class="text-stone-500 dark:text-stone-400 font-['Plus_Jakarta_Sans'] text-sm tracking-wide hover:text-emerald-700 dark:hover:text-emerald-300 underline-offset-4 opacity-90 hover:opacity-100 transition-opacity" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+</body></html>

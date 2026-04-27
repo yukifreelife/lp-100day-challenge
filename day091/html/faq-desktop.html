@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#9f5f69",
+                    "outline": "#717971",
+                    "on-secondary-container": "#536757",
+                    "surface-container-highest": "#e4e2df",
+                    "primary": "#316342",
+                    "surface-bright": "#fbf9f6",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#efeeeb",
+                    "primary-container": "#4a7c59",
+                    "on-tertiary-fixed": "#380b16",
+                    "on-primary-fixed": "#00210e",
+                    "background": "#fbf9f6",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed": "#ffd9dd",
+                    "secondary-container": "#cfe5d1",
+                    "on-primary-fixed-variant": "#1e5031",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed-variant": "#6d363f",
+                    "on-background": "#1b1c1a",
+                    "secondary-fixed": "#d2e8d4",
+                    "inverse-surface": "#30312f",
+                    "outline-variant": "#c1c9bf",
+                    "on-primary-container": "#e1ffe5",
+                    "surface-tint": "#376847",
+                    "secondary-fixed-dim": "#b6ccb8",
+                    "surface-container-low": "#f5f3f0",
+                    "on-secondary-fixed": "#0d1f13",
+                    "surface": "#fbf9f6",
+                    "surface-container-high": "#eae8e5",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#fff5f5",
+                    "primary-fixed-dim": "#9dd3aa",
+                    "secondary": "#4f6353",
+                    "tertiary": "#834751",
+                    "surface-dim": "#dbdad7",
+                    "primary-fixed": "#b9efc5",
+                    "on-secondary-fixed-variant": "#384b3c",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#9dd3aa",
+                    "on-surface": "#1b1c1a",
+                    "inverse-on-surface": "#f2f0ed",
+                    "surface-variant": "#e4e2df",
+                    "tertiary-fixed-dim": "#ffb2bc",
+                    "on-surface-variant": "#414942",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif JP"],
+                    "display": ["Noto Serif JP"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-item:focus-within .accordion-content {
+            max-height: 200px;
+        }
+        .accordion-item:focus-within .question-text {
+            color: #4A7C59;
+        }
+        .accordion-item:focus-within .icon-rotate {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur-xl shadow-[0_40px_40px_0_rgba(27,28,26,0.05)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-[1440px] mx-auto">
+<div class="font-['Noto_Serif'] text-2xl font-bold tracking-tight text-emerald-900 dark:text-emerald-50">The Harvest</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-emerald-800 transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Shop</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-emerald-800 transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Farm to Table</a>
+<a class="text-stone-600 dark:text-stone-400 font-['Plus_Jakarta_Sans'] hover:text-emerald-800 transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Seasonal</a>
+<a class="text-emerald-900 dark:text-emerald-400 border-b-2 border-emerald-900 dark:border-emerald-400 pb-1 hover:opacity-80 transition-opacity duration-300" href="#">FAQ</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="material-symbols-outlined text-emerald-900 dark:text-emerald-400 scale-95 active:scale-100 transition-transform cursor-pointer" data-icon="shopping_basket">shopping_basket</span>
+<span class="material-symbols-outlined text-emerald-900 dark:text-emerald-400 scale-95 active:scale-100 transition-transform cursor-pointer" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-[1440px] mx-auto">
+<!-- Hero Section Header -->
+<header class="mb-20 text-center md:text-left md:ml-[10%]">
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-on-background tracking-tight mb-6">よくある質問</h1>
+<p class="font-body text-on-surface-variant max-w-xl text-lg leading-relaxed">
+                Earth Natural Greenのサービスや、私たちの無農薬・有機栽培へのこだわりについて、皆さまからよく寄せられるご質問にお答えします。
+            </p>
+</header>
+<!-- Main Content: FAQ Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Image/Branding Decor -->
+<div class="lg:col-span-4 hidden lg:block sticky top-32">
+<div class="rounded-xl overflow-hidden shadow-sm h-[600px]">
+<img alt="Organic vegetables" class="w-full h-full object-cover" data-alt="Close-up of fresh organic kale and root vegetables with natural morning dew in a rustic wooden crate, soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxSlIKDzjnbpPZDhMjr66KSEfIob3QBhhsApVgXzIxy9it_YKXifIfYuznhixfNoXtb8ZtkNzioF2Bpm_-sBrnNCt-X73iSsNBKhobJd9TYu-fdrH7LAVfgveicoLPiw3zeBBe1XlD5WwAsRy7Xq4l5ilQN97596plQAJnqbDkYZpwrKADlR75NDS0DIP1qj4sMzpkFeh00DfjUvhQBWCKqGpzKx3a8PzFvpEI569-uuH7cYdapYQGl7iVO2VqdkWcpRoU05Q4ZiPm"/>
+</div>
+<div class="mt-8 bg-primary-container/10 p-8 rounded-xl">
+<p class="font-headline italic text-primary text-xl">"自然の力だけで、ありのままの美味しさを。"</p>
+</div>
+</div>
+<!-- Right Column: Accordion Grid -->
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-1 gap-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+<!-- Accordion Item 1 -->
+<div class="accordion-item outline-none group" tabindex="0">
+<div class="bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 rounded-xl p-6 cursor-pointer">
+<div class="flex justify-between items-center gap-4">
+<span class="font-headline font-bold text-lg question-text transition-colors">無農薬ってどういう意味？</span>
+<span class="material-symbols-outlined icon-rotate transition-transform text-outline" data-icon="expand_more">expand_more</span>
+</div>
+<div class="accordion-content">
+<div class="pt-4 text-on-surface-variant leading-relaxed">
+                                    化学農薬・化学肥料を使わず自然の力だけで育てています。土本来の活力を引き出すことで、栄養価の高い野菜が育ちます。
+                                </div>
+</div>
+</div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="accordion-item outline-none group" tabindex="0">
+<div class="bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 rounded-xl p-6 cursor-pointer">
+<div class="flex justify-between items-center gap-4">
+<span class="font-headline font-bold text-lg question-text transition-colors">配送日は選べますか？</span>
+<span class="material-symbols-outlined icon-rotate transition-transform text-outline" data-icon="expand_more">expand_more</span>
+</div>
+<div class="accordion-content">
+<div class="pt-4 text-on-surface-variant leading-relaxed">
+                                    毎週火曜日・金曜日からお選びいただけます。お客様のライフスタイルに合わせて最適なサイクルをご提案いたします。
+                                </div>
+</div>
+</div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="accordion-item outline-none group" tabindex="0">
+<div class="bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 rounded-xl p-6 cursor-pointer">
+<div class="flex justify-between items-center gap-4">
+<span class="font-headline font-bold text-lg question-text transition-colors">最初から定期契約ですか？</span>
+<span class="material-symbols-outlined icon-rotate transition-transform text-outline" data-icon="expand_more">expand_more</span>
+</div>
+<div class="accordion-content">
+<div class="pt-4 text-on-surface-variant leading-relaxed">
+                                    まずはお試しセットからスタートOK。一度きりのご利用も歓迎しておりますので、お気軽にお試しください。
+                                </div>
+</div>
+</div>
+</div>
+<!-- Accordion Item 4 -->
+<div class="accordion-item outline-none group" tabindex="0">
+<div class="bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 rounded-xl p-6 cursor-pointer">
+<div class="flex justify-between items-center gap-4">
+<span class="font-headline font-bold text-lg question-text transition-colors">野菜の種類は選べますか？</span>
+<span class="material-symbols-outlined icon-rotate transition-transform text-outline" data-icon="expand_more">expand_more</span>
+</div>
+<div class="accordion-content">
+<div class="pt-4 text-on-surface-variant leading-relaxed">
+                                    旬の野菜詰め合わせを基本としていますが、アレルギー対応も可能です。苦手な野菜がございましたら事前にご相談ください。
+                                </div>
+</div>
+</div>
+</div>
+<!-- Accordion Item 5 -->
+<div class="accordion-item outline-none group" tabindex="0">
+<div class="bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 rounded-xl p-6 cursor-pointer">
+<div class="flex justify-between items-center gap-4">
+<span class="font-headline font-bold text-lg question-text transition-colors">キャンセルはいつでも？</span>
+<span class="material-symbols-outlined icon-rotate transition-transform text-outline" data-icon="expand_more">expand_more</span>
+</div>
+<div class="accordion-content">
+<div class="pt-4 text-on-surface-variant leading-relaxed">
+                                    次回配送の10日前まで無料で承ります。マイページ、またはお電話・メールにてご連絡いただけます。
+                                </div>
+</div>
+</div>
+</div>
+<!-- Accordion Item 6 -->
+<div class="accordion-item outline-none group" tabindex="0">
+<div class="bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 rounded-xl p-6 cursor-pointer">
+<div class="flex justify-between items-center gap-4">
+<span class="font-headline font-bold text-lg question-text transition-colors">農場は見学できますか？</span>
+<span class="material-symbols-outlined icon-rotate transition-transform text-outline" data-icon="expand_more">expand_more</span>
+</div>
+<div class="accordion-content">
+<div class="pt-4 text-on-surface-variant leading-relaxed">
+                                    是非、収穫体験もご一緒ください。季節ごとにイベントを開催しており、生産者と直接触れ合える機会を設けています。
+                                </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action Section -->
+<div class="mt-16 bg-surface-container-highest p-12 rounded-xl text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-8">
+<div>
+<h3 class="font-headline text-2xl font-bold mb-2">解決しない場合は</h3>
+<p class="font-body text-on-surface-variant">専任のコンシェルジュが丁寧にお答えいたします。</p>
+</div>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-bold hover:opacity-90 transition-opacity shadow-lg shadow-primary/20">
+                        お問い合わせフォーム
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-16 pb-8 bg-stone-100 dark:bg-stone-900 tonal-shift-bg">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-[1440px] mx-auto">
+<div class="font-['Noto_Serif'] italic text-lg text-emerald-900 dark:text-emerald-50 mb-8 md:mb-0">
+                The Editorial Harvest
+            </div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-stone-500 hover:text-emerald-700 transition-colors hover:underline decoration-emerald-900/30 opacity-90 hover:opacity-100" href="#">Sustainability</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-stone-500 hover:text-emerald-700 transition-colors hover:underline decoration-emerald-900/30 opacity-90 hover:opacity-100" href="#">Terms of Harvest</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-stone-500 hover:text-emerald-700 transition-colors hover:underline decoration-emerald-900/30 opacity-90 hover:opacity-100" href="#">Privacy</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-stone-500 hover:text-emerald-700 transition-colors hover:underline decoration-emerald-900/30 opacity-90 hover:opacity-100" href="#">Contact Us</a>
+</div>
+<div class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-stone-500 text-center md:text-right">
+                © 2024 The Editorial Harvest. Grown with intention.
+            </div>
+</div>
+</footer>
+</body></html>

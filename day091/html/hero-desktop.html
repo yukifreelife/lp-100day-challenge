@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Editorial Harvest | Earth Natural Green</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#1b1c1a",
+                        "tertiary-fixed-dim": "#ffb2bc",
+                        "surface-container-low": "#f5f3f0",
+                        "secondary-container": "#cfe5d1",
+                        "on-tertiary-fixed-variant": "#6d363f",
+                        "on-primary-container": "#e1ffe5",
+                        "tertiary": "#834751",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#efeeeb",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#b6ccb8",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "background": "#fbf9f6",
+                        "secondary": "#4f6353",
+                        "on-tertiary-container": "#fff5f5",
+                        "secondary-fixed": "#d2e8d4",
+                        "surface-variant": "#e4e2df",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e4e2df",
+                        "on-tertiary-fixed": "#380b16",
+                        "on-primary-fixed": "#00210e",
+                        "outline": "#717971",
+                        "surface-container-high": "#eae8e5",
+                        "outline-variant": "#c1c9bf",
+                        "surface": "#fbf9f6",
+                        "on-secondary-fixed-variant": "#384b3c",
+                        "surface-dim": "#dbdad7",
+                        "tertiary-fixed": "#ffd9dd",
+                        "primary": "#316342",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed": "#0d1f13",
+                        "inverse-on-surface": "#f2f0ed",
+                        "tertiary-container": "#9f5f69",
+                        "primary-container": "#4a7c59",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#376847",
+                        "primary-fixed": "#b9efc5",
+                        "on-surface-variant": "#414942",
+                        "primary-fixed-dim": "#9dd3aa",
+                        "on-secondary-container": "#536757",
+                        "on-background": "#1b1c1a",
+                        "inverse-primary": "#9dd3aa",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#30312f",
+                        "on-primary-fixed-variant": "#1e5031",
+                        "surface-bright": "#fbf9f6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif JP", "serif"],
+                        "display": ["Noto Serif JP", "serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fbf9f6; color: #1b1c1a; }
+        .font-serif-jp { font-family: 'Noto Serif JP', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="bg-surface/80 dark:bg-zinc-950/80 backdrop-blur-xl docked full-width top-0 sticky z-50 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-emerald-900 dark:text-emerald-50">
+                The Editorial Harvest
+            </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-emerald-900 dark:text-emerald-400 font-bold border-b-2 border-emerald-800 dark:border-emerald-500 pb-1 hover:text-emerald-700 transition-colors duration-300" href="#">Seasonal Collections</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium hover:text-emerald-700 transition-colors duration-300" href="#">Our Growers</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium hover:text-emerald-700 transition-colors duration-300" href="#">The Journal</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium hover:text-emerald-700 transition-colors duration-300" href="#">Wholesale</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium hover:text-emerald-700 transition-colors duration-300" href="#">Sustainability</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-4 text-emerald-900">
+<span class="material-symbols-outlined cursor-pointer hover:scale-110 transition-transform">shopping_basket</span>
+<span class="material-symbols-outlined cursor-pointer hover:scale-110 transition-transform">account_circle</span>
+</div>
+<button class="bg-primary text-on-primary px-8 py-2.5 rounded-full font-bold hover:bg-primary-container hover:text-on-primary-container transition-all shadow-md">
+                    Shop Now
+                </button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section: Intentional Asymmetry -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden px-12 py-24 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-12 gap-12 w-full items-center">
+<div class="col-span-12 lg:col-span-5 z-10">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-semibold text-sm mb-6">ESTABLISHED 1982</span>
+<h1 class="text-6xl lg:text-8xl font-serif-jp font-black text-on-surface leading-[1.1] mb-8">
+                        安心の有機野菜を、<br/>あなたの食卓へ
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-md mb-12 leading-relaxed">
+                        We curate the finest organic produce from local growers who honor the earth. Experience the true vitality of seasonal harvests delivered to your door.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all flex items-center gap-2">
+                            Explore Harvest <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-surface-container-highest text-on-surface px-10 py-4 rounded-full font-bold text-lg hover:bg-surface-variant transition-all">
+                            Our Story
+                        </button>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-7 relative h-[700px]">
+<div class="absolute inset-0 bg-secondary-fixed/20 rounded-xl -rotate-2 scale-105"></div>
+<img alt="Organic Vegetables" class="w-full h-full object-cover rounded-xl shadow-2xl relative z-0" data-alt="Close-up editorial photograph of vibrant heirloom carrots, kale, and radishes on a rustic wooden table with natural morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYm9unJDjV3fPltogfH40RsFZArf23dc-YCE7Icig7-8SjtN0g6AjNCWawIJgaDB5hewyXPsmWnAM2lRlJwgBTbNIWKEVm1jO8pK2P4flq9V8dpTJb9zpn4XGpwboTZWtOyX1QquHOuVCIhkd0n3kIcGtEBVP1jRmsbooPE-CDCtPUP4rC0q5KTkoQpQRlut2kc5f5-Mhk52FM9eBPNzw5I7rCSc1-kBTCSuwS5OilLw9-rAYSiqVHYAHTmupGN-Hi9eEzMVZsl4ZS"/>
+</div>
+</div>
+</section>
+<!-- Seasonal Recommendations: Bento Grid Style -->
+<section class="bg-surface-container-low py-32 px-12">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-4xl font-serif-jp text-on-surface mb-4">今月の旬をお届け</h2>
+<p class="text-on-surface-variant max-w-md">The season's most vibrant selections, handpicked for peak ripeness and nutritional density.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 hover:underline" href="#">View Seasonal Calendar <span class="material-symbols-outlined">event</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Product Card 1 -->
+<div class="group bg-surface rounded-xl overflow-hidden hover:shadow-2xl transition-all flex flex-col h-full">
+<div class="h-80 overflow-hidden relative">
+<span class="absolute top-4 left-4 z-10 px-4 py-1 bg-tertiary-container text-on-tertiary-container rounded-full font-serif text-sm">LIMITED</span>
+<img alt="Red Tomatoes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Sun-ripened red heirloom tomatoes on a vine, dewy and fresh, set against a blurred garden background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNzec8_IDBeb3kg56p8riiNkGOEv7c0XePdJJtLg8-awQPFFh4oyRu6Lu0yoCkGxWL-jsMjlurn2mwcgzG4iRFGIa4qxbGJrS3ZA4ZiwTGQFnpNhJPBDQcohRKD59XU9_iWXdvswMpQJKHPvuGl-nFExFE2CRRIfrwURJf6mdX26rhHQLi2Zh7vtrORsuG_JybVJRETb5C_0bJBIIx-TA8FZ-wkCvsS3gcC4hFYt04Fu9t_hwyDbXkHJnO_9Zg9Tg2mHI_S_yxVPye"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-2xl font-serif-jp mb-2 text-on-surface">完熟蜜トマト</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Sweet like honey, these sun-drenched tomatoes are picked at their peak.</p>
+<div class="mt-auto flex justify-between items-center">
+<span class="text-xl font-bold text-primary">¥850 <small class="text-xs font-normal">/ 500g</small></span>
+<button class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group bg-surface rounded-xl overflow-hidden hover:shadow-2xl transition-all flex flex-col h-full">
+<div class="h-80 overflow-hidden relative">
+<img alt="Carrots" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Earth-covered organic carrots with fresh green tops arranged elegantly on a neutral stone surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy9uvypDqnHxWKoGkjAY2CWJwbuMsLgTKrJUHAj5hM9heRilpCx0TbDzeKUP4rZbaHour-5E5RcrV4b57oj7iH1PbPISjx0-QPxyOR2_b6yRm8T4SiTudSK5pKTpd8SsxtDxSJr44xsh_ZBFoDInIbGwltcfqOLHnwKYX6IDRLQPypeiH8RrPakB9ItRlz21BTAGgfXsmIpaZMikkCSrZF3PHenvHrazJuHtAiFzRpM1z_SFDkuuAlGkV6o7ev4SDJoJOyG2UN5Zju"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-2xl font-serif-jp mb-2 text-on-surface">朝採り泥つき人参</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Harvested at dawn to preserve crispness and natural earth-borne sweetness.</p>
+<div class="mt-auto flex justify-between items-center">
+<span class="text-xl font-bold text-primary">¥420 <small class="text-xs font-normal">/ bunch</small></span>
+<button class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group bg-surface rounded-xl overflow-hidden hover:shadow-2xl transition-all flex flex-col h-full">
+<div class="h-80 overflow-hidden relative">
+<span class="absolute top-4 left-4 z-10 px-4 py-1 bg-primary text-on-primary rounded-full font-serif text-sm">NEW</span>
+<img alt="Purple Eggplant" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Vibrant purple Japanese eggplants with smooth glossy skin in a hand-woven basket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtAlAtIDjAF8XHWpvkU0kBCHkqHUwRnOMDz8FwR2em4RLyNtJC0vnZZtLrCOSn_WK2a3O1meLs4bMnx-B5drdnLTaohJA0mvMas9nlQaO9shYPLwV2-wVMu5zRhfjvbXmW44mWH6WJI8GsP-VJM6keI13Gfz7mU-Ccz9mvi7S5EdpUNMuqSFmbR-YzgAjprLrMmyeMgI8Va3rsz-L_Jp-LbblA8KOuTBj16pwypYfKhDN3Yhi8B4Muzms603T6yb-ucBum63yYdMf_"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-2xl font-serif-jp mb-2 text-on-surface">京むらさき茄子</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">A traditional variety with tender flesh and an exceptionally rich, umami profile.</p>
+<div class="mt-auto flex justify-between items-center">
+<span class="text-xl font-bold text-primary">¥680 <small class="text-xs font-normal">/ pack</small></span>
+<button class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section: Why Us -->
+<section class="py-32 px-12 max-w-screen-2xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="text-5xl font-serif-jp text-on-surface mb-6">私たちが選ばれる理由</h2>
+<div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+<p class="text-on-surface-variant max-w-2xl mx-auto text-lg leading-relaxed">Cultivating a legacy of health and sustainability through transparent partnerships with the earth.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="text-center">
+<div class="w-20 h-20 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center mx-auto mb-8">
+<span class="material-symbols-outlined text-4xl">eco</span>
+</div>
+<h3 class="text-2xl font-serif-jp mb-4">100% Organic certified</h3>
+<p class="text-on-surface-variant leading-relaxed">Our soil is free from chemicals, ensuring every bite is as nature intended—pure and nutritious.</p>
+</div>
+<div class="text-center">
+<div class="w-20 h-20 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center mx-auto mb-8">
+<span class="material-symbols-outlined text-4xl">local_shipping</span>
+</div>
+<h3 class="text-2xl font-serif-jp mb-4">Direct from farm</h3>
+<p class="text-on-surface-variant leading-relaxed">By cutting out the middleman, we deliver vegetables within 24 hours of being picked.</p>
+</div>
+<div class="text-center">
+<div class="w-20 h-20 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center mx-auto mb-8">
+<span class="material-symbols-outlined text-4xl">recycling</span>
+</div>
+<h3 class="text-2xl font-serif-jp mb-4">Eco-friendly practices</h3>
+<p class="text-on-surface-variant leading-relaxed">From solar-powered irrigation to compostable packaging, we minimize our carbon footprint.</p>
+</div>
+</div>
+</section>
+<!-- Subscription Plan: Premium Visual -->
+<section class="bg-primary-container text-on-primary-container overflow-hidden">
+<div class="max-w-screen-2xl mx-auto flex flex-col lg:flex-row items-stretch">
+<div class="lg:w-1/2 p-16 lg:p-24 flex flex-col justify-center">
+<h2 class="text-5xl font-serif-jp mb-8 leading-tight">定期お届け便で、<br/>毎日の食卓を豊かに。</h2>
+<p class="text-xl mb-12 opacity-90 leading-relaxed">Subscribe to the '農家直送便プラン' and receive a curated basket of the week's best harvest. Flexible, seasonal, and always fresh.</p>
+<ul class="space-y-4 mb-12">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined">check_circle</span> 8-10 seasonal organic vegetables</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined">check_circle</span> Exclusive farm-to-table recipes</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined">check_circle</span> 15% discount vs individual orders</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined">check_circle</span> Pause or skip anytime</li>
+</ul>
+<button class="bg-surface text-primary px-12 py-5 rounded-full font-bold text-xl w-fit hover:bg-secondary-container transition-all shadow-xl">
+                        View Subscription Plans
+                    </button>
+</div>
+<div class="lg:w-1/2 min-h-[500px] relative">
+<img alt="Harvest Basket" class="absolute inset-0 w-full h-full object-cover" data-alt="A large wicker basket overflowing with diverse organic vegetables, bread, and herbs, sitting on a sunlit stone floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKtA3RXGsmbLGXGVj3ojFrvIA_h3FaQRM9WJ3xKnZSFumdVOBDfN5fGVDJun_dVownGTicMODZrXvnVfAKd8IoF7gySKCbeAJa-ATSHd_k1Hmi95bW8gEXk96FeiXmF5m-88urJSV12T7KwcFkdEYU3gmQ51SyG1GSut-7lZ6dI9dJ3BA3lgKQ_6B4GWdfNgu-adEAbfthMBb4z3Fbv5787dPrTkRTpdUY07gvOjwpeFkqbicpXjEwebzFF4upDDuwenyMWlnjnlzM"/>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="py-32 px-12 max-w-screen-2xl mx-auto text-center">
+<div class="bg-surface-container rounded-3xl p-16 lg:p-24 relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="text-4xl font-serif-jp text-on-surface mb-6">The Harvest Journal</h2>
+<p class="text-on-surface-variant max-w-lg mx-auto mb-10 text-lg">Receive seasonal recipes, grower stories, and exclusive member early access to limited harvests.</p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+<input class="flex-grow bg-surface border-none focus:ring-2 focus:ring-primary rounded-full px-8 py-4 text-lg" placeholder="Email address" type="email"/>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-emerald-800 transition-colors" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-emerald-900 dark:bg-emerald-950 text-emerald-50">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-24 w-full max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-3xl font-serif text-emerald-50 mb-6">
+                    The Editorial Harvest
+                </div>
+<p class="text-emerald-200/70 leading-relaxed mb-8">
+                    © 2024 The Editorial Harvest. Curating nature's finest since 1982.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-emerald-200/50 cursor-pointer hover:text-emerald-50">public</span>
+<span class="material-symbols-outlined text-emerald-200/50 cursor-pointer hover:text-emerald-50">mail</span>
+<span class="material-symbols-outlined text-emerald-200/50 cursor-pointer hover:text-emerald-50">call</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 uppercase tracking-widest text-xs text-emerald-200/40">Shop</h4>
+<ul class="space-y-4">
+<li><a class="text-emerald-200/70 hover:text-emerald-100 transition-opacity duration-200" href="#">Vegetable Boxes</a></li>
+<li><a class="text-emerald-200/70 hover:text-emerald-100 transition-opacity duration-200" href="#">Single Picks</a></li>
+<li><a class="text-emerald-200/70 hover:text-emerald-100 transition-opacity duration-200" href="#">Organic Fruits</a></li>
+<li><a class="text-emerald-200/70 hover:text-emerald-100 transition-opacity duration-200" href="#">Pantry Essentials</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 uppercase tracking-widest text-xs text-emerald-200/40">Support</h4>
+<ul class="space-y-4">
+<li><a class="text-emerald-200/70 hover:text-emerald-100 transition-opacity duration-200" href="#">Shipping &amp; Returns</a></li>
+<li><a class="text-emerald-200/70 hover:text-emerald-100 transition-opacity duration-200" href="#">FAQ</a></li>
+<li><a class="text-emerald-200/70 hover:text-emerald-100 transition-opacity duration-200" href="#">Contact Us</a></li>
+<li><a class="text-emerald-200/70 hover:text-emerald-100 transition-opacity duration-200" href="#">Store Locator</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 uppercase tracking-widest text-xs text-emerald-200/40">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-emerald-200/70 hover:text-emerald-100 transition-opacity duration-200" href="#">Privacy Policy</a></li>
+<li><a class="text-emerald-200/70 hover:text-emerald-100 transition-opacity duration-200" href="#">Terms of Service</a></li>
+<li><a class="text-emerald-200/70 hover:text-emerald-100 transition-opacity duration-200" href="#">Sustainability Report</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

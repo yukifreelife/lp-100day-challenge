@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>お申し込みフォーム | アース・ナチュラル・グリーン</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#384b3c",
+                    "on-primary-fixed": "#00210e",
+                    "tertiary": "#834751",
+                    "tertiary-fixed": "#ffd9dd",
+                    "surface": "#fbf9f6",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#cfe5d1",
+                    "primary-fixed": "#b9efc5",
+                    "outline": "#717971",
+                    "on-surface": "#1b1c1a",
+                    "inverse-primary": "#9dd3aa",
+                    "surface-container-highest": "#e4e2df",
+                    "secondary": "#4f6353",
+                    "primary": "#316342",
+                    "tertiary-fixed-dim": "#ffb2bc",
+                    "secondary-fixed-dim": "#b6ccb8",
+                    "on-primary-container": "#e1ffe5",
+                    "outline-variant": "#c1c9bf",
+                    "surface-container-low": "#f5f3f0",
+                    "primary-fixed-dim": "#9dd3aa",
+                    "surface-variant": "#e4e2df",
+                    "on-tertiary-fixed": "#380b16",
+                    "surface-dim": "#dbdad7",
+                    "surface-tint": "#376847",
+                    "background": "#fbf9f6",
+                    "surface-bright": "#fbf9f6",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#f2f0ed",
+                    "primary-container": "#4a7c59",
+                    "on-secondary-fixed": "#0d1f13",
+                    "error": "#ba1a1a",
+                    "on-surface-variant": "#414942",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#9f5f69",
+                    "on-tertiary-fixed-variant": "#6d363f",
+                    "surface-container-high": "#eae8e5",
+                    "secondary-fixed": "#d2e8d4",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#fff5f5",
+                    "on-secondary-container": "#536757",
+                    "on-primary-fixed-variant": "#1e5031",
+                    "on-background": "#1b1c1a",
+                    "inverse-surface": "#30312f",
+                    "surface-container": "#efeeeb",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif JP", "serif"],
+                    "display": ["Noto Serif JP", "serif"],
+                    "body": ["Plus Jakarta Sans", "sans-serif"],
+                    "label": ["Plus Jakarta Sans", "sans-serif"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+      body { font-family: 'Plus Jakarta Sans', sans-serif; }
+      .font-serif { font-family: 'Noto Serif JP', serif; }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fbf9f6]/80 backdrop-blur-2xl transition-colors shadow-[0_40px_40px_rgba(27,28,26,0.05)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto w-full">
+<div class="font-serif text-2xl font-bold tracking-tighter text-[#316342]">アース・ナチュラル・グリーン</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#444744] hover:text-[#316342] transition-colors" href="#">私たちの想い</a>
+<a class="text-[#444744] hover:text-[#316342] transition-colors" href="#">旬の野菜</a>
+<a class="text-[#444744] hover:text-[#316342] transition-colors" href="#">定期便プラン</a>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-full font-medium hover:bg-primary-container transition-all scale-95 duration-200 ease-in-out" href="#">ログイン</a>
+</nav>
+</div>
+</header>
+<main class="flex-grow pt-32 pb-20 px-6">
+<div class="max-w-4xl mx-auto">
+<!-- Header Section -->
+<div class="text-center mb-16">
+<p class="text-primary font-medium tracking-widest mb-4">まずはお試しから</p>
+<h1 class="font-serif text-4xl md:text-5xl font-bold text-on-surface tracking-tight">お申し込みフォーム</h1>
+<div class="mt-8 w-24 h-1 bg-primary/20 mx-auto rounded-full"></div>
+</div>
+<!-- Form Container -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+<!-- Editorial Image Side (Asymmetric Layout) -->
+<div class="md:col-span-4 sticky top-40 hidden md:block">
+<div class="rounded-xl overflow-hidden shadow-2xl rotate-2">
+<img class="w-full h-80 object-cover" data-alt="close-up of fresh organic green vegetables in a rustic wooden crate with soft natural morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACYFN4-by1CrMJx7SLGBOuZRPtz8Oq-yL3lBNyg6WLIpFyCaFgaUZBPKlVkrw6E459UjHv6xaLVTvfIkHkOhlnnwZSCY1vtnWAx8fomvJvJHUfuonKNoT2JiOKkW76yM_-hdRNjEawBZjE3RBfbuFAIJC9C9-gDpSnnMYBxS0IAJH_PeqzUf511sZyDLxY8RWH8kzTvEOXyVpPGPAABLZAojswGr6XjrIMtgQiUOh3SsqHt5oBz9U5c3Pwwj_8cuL6qHmFEI1jqYaO"/>
+</div>
+<div class="mt-8 p-6 bg-surface-container-low rounded-xl border-l-4 border-primary">
+<p class="font-serif text-on-surface-variant italic leading-relaxed">
+                            「大地の息吹を、そのまま食卓へ。私たちは、化学肥料に頼らない、自然本来の力を信じた野菜作りを続けています。」
+                        </p>
+</div>
+</div>
+<!-- Form Card -->
+<div class="md:col-span-8 bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-[0_40px_40px_rgba(27,28,26,0.05)] border border-outline-variant/10">
+<form action="#" class="space-y-8">
+<!-- Name Group -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="flex items-center text-sm font-semibold text-on-surface-variant">
+                                    お名前 <span class="ml-1 text-error text-xs">※</span>
+</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary/20 p-4 transition-all" placeholder="山田 太郎" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant">ふりがな</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary/20 p-4 transition-all" placeholder="やまだ たろう" type="text"/>
+</div>
+</div>
+<!-- Contact Group -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="flex items-center text-sm font-semibold text-on-surface-variant">
+                                    メールアドレス <span class="ml-1 text-error text-xs">※</span>
+</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary/20 p-4 transition-all" placeholder="example@earth.com" required="" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="flex items-center text-sm font-semibold text-on-surface-variant">
+                                    電話番号 <span class="ml-1 text-error text-xs">※</span>
+</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary/20 p-4 transition-all" placeholder="090-0000-0000" required="" type="tel"/>
+</div>
+</div>
+<!-- Address -->
+<div class="space-y-2">
+<label class="flex items-center text-sm font-semibold text-on-surface-variant">
+                                お届け先住所 <span class="ml-1 text-error text-xs">※</span>
+</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary/20 p-4 transition-all" placeholder="都道府県・市区町村・番地・建物名" required="" type="text"/>
+</div>
+<!-- Plan Selection (Bento Style) -->
+<div class="space-y-4">
+<label class="text-sm font-semibold text-on-surface-variant">プラン選択</label>
+<div class="grid grid-cols-1 gap-4">
+<label class="relative flex items-center p-4 bg-surface-container-low rounded-xl cursor-pointer hover:bg-secondary-container/30 transition-all border-2 border-transparent has-[:checked]:border-primary has-[:checked]:bg-secondary-container/20 group">
+<input checked="" class="w-5 h-5 text-primary border-outline-variant focus:ring-primary" name="plan" type="radio"/>
+<div class="ml-4 flex flex-col md:flex-row md:items-center justify-between w-full">
+<span class="font-bold text-on-surface">お試しセット</span>
+<span class="text-primary font-bold text-lg">初回¥1,980</span>
+</div>
+<span class="absolute -top-2 -right-2 bg-tertiary text-white text-[10px] px-2 py-1 rounded-full font-bold">RECOMMEND</span>
+</label>
+<label class="relative flex items-center p-4 bg-surface-container-low rounded-xl cursor-pointer hover:bg-secondary-container/30 transition-all border-2 border-transparent has-[:checked]:border-primary has-[:checked]:bg-secondary-container/20">
+<input class="w-5 h-5 text-primary border-outline-variant focus:ring-primary" name="plan" type="radio"/>
+<div class="ml-4 flex flex-col md:flex-row md:items-center justify-between w-full">
+<span class="font-bold text-on-surface">単身プラン</span>
+<span class="text-on-surface-variant">月¥3,980</span>
+</div>
+</label>
+<label class="relative flex items-center p-4 bg-surface-container-low rounded-xl cursor-pointer hover:bg-secondary-container/30 transition-all border-2 border-transparent has-[:checked]:border-primary has-[:checked]:bg-secondary-container/20">
+<input class="w-5 h-5 text-primary border-outline-variant focus:ring-primary" name="plan" type="radio"/>
+<div class="ml-4 flex flex-col md:flex-row md:items-center justify-between w-full">
+<span class="font-bold text-on-surface">ファミリープラン</span>
+<span class="text-on-surface-variant">月¥5,980</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Delivery Day -->
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant">配送日選択</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary/20 p-4 appearance-none transition-all">
+<option>毎週火曜日にお届け</option>
+<option>毎週金曜日にお届け</option>
+</select>
+<div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Notes -->
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant">アレルギー等の備考</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary/20 p-4 transition-all" placeholder="苦手な野菜やアレルギーなど、ご要望がございましたらご記入ください。" rows="4"></textarea>
+</div>
+<!-- Terms -->
+<div class="flex items-start gap-3 py-4">
+<div class="pt-1">
+<input class="w-5 h-5 rounded text-primary border-outline-variant focus:ring-primary" id="terms" required="" type="checkbox"/>
+</div>
+<label class="text-sm text-on-surface-variant leading-relaxed" for="terms">
+<a class="text-primary underline underline-offset-4" href="#">利用規約</a>に同意する
+                            </label>
+</div>
+<!-- Submit Button -->
+<div class="pt-6">
+<button class="w-full bg-primary-container text-on-primary py-5 rounded-full text-lg font-bold shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 flex justify-center items-center gap-2" type="submit">
+<span>申し込む</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<p class="text-center text-xs text-on-surface-variant mt-4">
+                                ※お申し込み後、登録メールアドレスに確認メールが届きます。
+                            </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f5f3f0] w-full py-12 px-8 mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+<div class="font-serif text-lg text-[#316342]">アース・ナチュラル・グリーン</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-sans text-sm tracking-wide text-[#444744] hover:text-[#316342] underline underline-offset-4 transition-all" href="#">特定商取引法に基づく表記</a>
+<a class="font-sans text-sm tracking-wide text-[#444744] hover:text-[#316342] underline underline-offset-4 transition-all" href="#">プライバシーポリシー</a>
+<a class="font-sans text-sm tracking-wide text-[#444744] hover:text-[#316342] underline underline-offset-4 transition-all" href="#">お問い合わせ</a>
+</div>
+<p class="font-sans text-sm tracking-wide text-[#444744] opacity-80">© 2024 Earth Natural Green. Harvested with intention.</p>
+</div>
+</footer>
+</body></html>

@@ -445,6 +445,17 @@ const worksData = [
     tech: ["HTML5", "CSS3", "JavaScript"],
     url: "./day087/",
   },
+  {
+    day: "Day091",
+    title: "アース・ナチュラル・グリーン | 有機野菜の定期宅配",
+    category: "Organic Farm",
+    industry: "有機農園",
+    focus: "お試し申し込み",
+    summary: "無農薬・無化学肥料の有機野菜を新鮮なままご自宅までお届けする定期宅配LP。アースグリーンを基調に、土の命を感じる本当においしい有機野菜を訴求。",
+    metric: "有機JAS認定・24時間以内配送・生産者顔見え・FAQアコーディオン",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    url: "./day091/",
+  },
 ];
 
 const colorByCategory = {

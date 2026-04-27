@@ -1,0 +1,244 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: 🌱
+        - generic [ref=e7]: Earth Natural Green
+      - navigation [ref=e8]:
+        - link "私たちについて" [ref=e9] [cursor=pointer]:
+          - /url: "#about"
+        - link "特徴" [ref=e10] [cursor=pointer]:
+          - /url: "#features"
+        - link "野菜紹介" [ref=e11] [cursor=pointer]:
+          - /url: "#products"
+        - link "ご利用の流れ" [ref=e12] [cursor=pointer]:
+          - /url: "#flow"
+        - link "よくある質問" [ref=e13] [cursor=pointer]:
+          - /url: "#faq"
+      - link "お申し込み" [ref=e14] [cursor=pointer]:
+        - /url: "#contact"
+  - generic [ref=e15]:
+    - generic [ref=e18]:
+      - generic [ref=e19]: 有機JAS認定取得
+      - heading "土の命を感じる 本当においしい 有機野菜をお届け" [level=1] [ref=e20]:
+        - text: 土の命を感じる
+        - text: 本当においしい
+        - text: 有機野菜をお届け
+      - paragraph [ref=e21]: 無農薬・無化学肥料で育てた野菜を、 収穫から24時間以内にご自宅へ
+      - generic [ref=e22]:
+        - link "無料お試し申し込み →" [ref=e23] [cursor=pointer]:
+          - /url: "#contact"
+          - text: 無料お試し申し込み
+          - generic [ref=e24]: →
+        - link "詳しく見る" [ref=e25] [cursor=pointer]:
+          - /url: "#about"
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: 1,200
+          - text: ご家族
+        - generic [ref=e29]:
+          - generic [ref=e30]: 98%
+          - text: 継続率
+        - generic [ref=e31]:
+          - generic [ref=e32]: "4.9"
+          - text: 評価
+    - generic:
+      - img "新鮮なトマト"
+      - img "ナス"
+      - img "ピーマン"
+  - generic [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e36]: ABOUT
+      - heading "アース・ナチュラル・グリーンとは" [level=2] [ref=e37]
+      - paragraph [ref=e38]: 土の力を信じ、自然のサイクルに寄り添った農法
+    - generic [ref=e39]:
+      - img "有機農場の新鮮な野菜" [ref=e41]
+      - generic [ref=e42]:
+        - heading "私たちは、土と一緒に野菜を育てています" [level=3] [ref=e43]
+        - paragraph [ref=e44]: 1998年創業以来、私たちは「土こそが全て」という信念のもと、 無農薬・無化学肥料の有機農法にこだわり続けています。
+        - paragraph [ref=e45]: 化学合成の農薬や肥料を使わず、堆肥と緑肥で土を耕し、 自然の生態系を活かした循環型農業を実践。 だからこそ、本当の野菜の味がする。 食べた瞬間にわかります。
+        - list [ref=e46]:
+          - listitem [ref=e47]:
+            - generic [ref=e48]: ✓
+            - text: 有機JAS認定取得農場
+          - listitem [ref=e49]:
+            - generic [ref=e50]: ✓
+            - text: 25年間無農薬栽培を実践
+          - listitem [ref=e51]:
+            - generic [ref=e52]: ✓
+            - text: 地元約15km圏内への配送
+  - generic [ref=e54]:
+    - generic [ref=e55]:
+      - generic [ref=e56]: FEATURES
+      - heading "3つの約束" [level=2] [ref=e57]
+      - paragraph [ref=e58]: 私たちがこだわり続ける、当たり前のこと
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - img "無農薬栽培" [ref=e62]
+        - heading "無農薬・無化学肥料" [level=3] [ref=e63]
+        - paragraph [ref=e64]: 農薬も化学肥料も一切使用しません。 自然の力だけで育てた野菜は、 本当に優しい味わいです。
+      - generic [ref=e65]:
+        - img "新鮮配送" [ref=e67]
+        - heading "収穫から24時間以内" [level=3] [ref=e68]
+        - paragraph [ref=e69]: 朝採れた野菜をその日のうちに宅配。 スーパーでは味わえない鮮度をお届けします。
+      - generic [ref=e70]:
+        - img "安心安全" [ref=e72]
+        - heading "生産者顔見え" [level=3] [ref=e73]
+        - paragraph [ref=e74]: 野菜一つひとつに生産者の顔が見えます。 「誰が作ったか」を明確にするから安心。
+  - generic [ref=e76]:
+    - generic [ref=e77]:
+      - generic [ref=e78]: PRODUCTS
+      - heading "季節の野菜をお届け" [level=2] [ref=e79]
+      - paragraph [ref=e80]: その季節に一番おいしい野菜をお届けします
+    - generic [ref=e81]:
+      - generic [ref=e82]:
+        - img "季節の野菜セット" [ref=e83]
+        - generic [ref=e84]:
+          - generic [ref=e85]: 人気No.1
+          - heading "お試しセット" [level=3] [ref=e86]
+          - paragraph [ref=e87]: 初めての方にもおすすめ。旬の野菜8〜10種類をお届け。
+          - generic [ref=e88]:
+            - generic [ref=e89]: ¥2,980
+            - generic [ref=e90]: （税込）
+      - generic [ref=e91]:
+        - img "ご家族セット" [ref=e92]
+        - generic [ref=e93]:
+          - generic [ref=e94]: 家族向け
+          - heading "ご家族セット" [level=3] [ref=e95]
+          - paragraph [ref=e96]: 3〜4人家族に最適。野菜12〜15種類をたっぷりと。
+          - generic [ref=e97]:
+            - generic [ref=e98]: ¥4,980
+            - generic [ref=e99]: （税込）
+      - generic [ref=e100]:
+        - img "定期コース" [ref=e101]
+        - generic [ref=e102]:
+          - generic [ref=e103]: お得
+          - heading "定期コース" [level=3] [ref=e104]
+          - paragraph [ref=e105]: 週1回の定期配送。いつでも解約OK、初月20%OFF。
+          - generic [ref=e106]:
+            - generic [ref=e107]: ¥3,980
+            - generic [ref=e108]: （税込）〜
+  - generic [ref=e110]:
+    - generic [ref=e111]:
+      - generic [ref=e112]: FLOW
+      - heading "ご利用の流れ" [level=2] [ref=e113]
+      - paragraph [ref=e114]: かんたん3ステップで始められます
+    - generic [ref=e115]:
+      - generic [ref=e116]:
+        - generic [ref=e117]: "1"
+        - heading "お申し込み" [level=3] [ref=e118]
+        - paragraph [ref=e119]:
+          - text: フォームから必要事項を入力。
+          - text: 1分で完了します。
+      - generic [ref=e120]: →
+      - generic [ref=e121]:
+        - generic [ref=e122]: "2"
+        - heading "初回配送" [level=3] [ref=e123]
+        - paragraph [ref=e124]:
+          - text: 申し込みから1週間以内に
+          - text: 最初の野菜をお届け。
+      - generic [ref=e125]: →
+      - generic [ref=e126]:
+        - generic [ref=e127]: "3"
+        - heading "継続または解約" [level=3] [ref=e128]
+        - paragraph [ref=e129]:
+          - text: お試ししてから継続を決めてOK。
+          - text: いつでも解約可能です。
+  - generic [ref=e131]:
+    - generic [ref=e132]:
+      - generic [ref=e133]: FAQ
+      - heading "よくある質問" [level=2] [ref=e134]
+      - paragraph [ref=e135]: 皆様からいただくご質問にお答えします
+    - generic [ref=e136]:
+      - generic [ref=e137]:
+        - button "最低利用期間はありますか？ +" [ref=e138] [cursor=pointer]:
+          - generic [ref=e139]: 最低利用期間はありますか？
+          - generic [ref=e140]: +
+        - paragraph [ref=e141]: 最低利用期間はありません。初回お試し後、継続するかどうかをご判断いただけます。 定期コースもお届け回数の制限なく、いつでも解約可能です。
+      - generic [ref=e142]:
+        - button "配送日は選べますか？ +" [ref=e143] [cursor=pointer]:
+          - generic [ref=e144]: 配送日は選べますか？
+          - generic [ref=e145]: +
+        - paragraph [ref=e146]: はい、お届け可能な曜日の中からご希望の日時をお選びいただけます。 地域によっては配送日が限定される場合がございます。
+      - generic [ref=e147]:
+        - button "アレルギーのある食材は除外できますか？ +" [ref=e148] [cursor=pointer]:
+          - generic [ref=e149]: アレルギーのある食材は除外できますか？
+          - generic [ref=e150]: +
+        - paragraph [ref=e151]: はい、苦手な野菜やアレルギーのある食材は除外可能です。 お申し込み時にお知らせください。
+      - generic [ref=e152]:
+        - button "支払い方法は？ +" [ref=e153] [cursor=pointer]:
+          - generic [ref=e154]: 支払い方法は？
+          - generic [ref=e155]: +
+        - paragraph [ref=e156]: クレジットカード（Visa, Mastercard, AMEX）または 口座振替、コンビニ払いがご利用いただけます。
+      - generic [ref=e157]:
+        - button "配送エリアはどこですか？ +" [ref=e158] [cursor=pointer]:
+          - generic [ref=e159]: 配送エリアはどこですか？
+          - generic [ref=e160]: +
+        - paragraph [ref=e161]: 現在、○○県内（○○市、○○市、○○町）へ配送しております。 対応エリアは順次拡大予定です。
+  - generic [ref=e163]:
+    - heading "まずは無料お試しから" [level=2] [ref=e164]
+    - paragraph [ref=e165]:
+      - text: 本当においしい有機野菜を、
+      - text: あなたの食卓へ。
+    - link "今すぐ申し込む →" [ref=e166] [cursor=pointer]:
+      - /url: "#contact"
+      - text: 今すぐ申し込む
+      - generic [ref=e167]: →
+    - paragraph [ref=e168]: ※ 初回お試しセット送料無料
+  - generic [ref=e170]:
+    - generic [ref=e171]:
+      - generic [ref=e172]: CONTACT
+      - heading "お申し込み" [level=2] [ref=e173]
+      - paragraph [ref=e174]: お気軽にご相談ください
+    - generic [ref=e175]:
+      - generic [ref=e176]:
+        - heading "お電話でのお問い合わせ" [level=3] [ref=e177]
+        - paragraph [ref=e178]: 0120-XXX-XXX
+        - paragraph [ref=e179]: 受付時間：平日 9:00〜17:00
+        - heading "メールでのお問い合わせ" [level=3] [ref=e180]
+        - paragraph [ref=e181]: info@earthnaturalgreen.jp
+      - generic [ref=e182]:
+        - generic [ref=e183]:
+          - generic [ref=e184]: お名前 *
+          - textbox "お名前 *" [ref=e185]
+        - generic [ref=e186]:
+          - generic [ref=e187]: メールアドレス *
+          - textbox "メールアドレス *" [ref=e188]
+        - generic [ref=e189]:
+          - generic [ref=e190]: 電話番号
+          - textbox "電話番号" [ref=e191]
+        - generic [ref=e192]:
+          - generic [ref=e193]: お試しプラン *
+          - combobox "お試しプラン *" [ref=e194]:
+            - option "選択してください" [selected]
+            - option "お試しセット（¥2,980）"
+            - option "ご家族セット（¥4,980）"
+            - option "定期コース（初月¥3,980〜）"
+        - generic [ref=e195]:
+          - generic [ref=e196]: ご質問・ご要望
+          - textbox "ご質問・ご要望" [ref=e197]
+        - generic [ref=e198]:
+          - checkbox "プライバシーポリシーに同意する" [ref=e199]
+          - generic [ref=e200]:
+            - link "プライバシーポリシー" [ref=e201] [cursor=pointer]:
+              - /url: "#privacy"
+            - text: に同意する
+        - button "確認画面へ →" [ref=e202] [cursor=pointer]:
+          - text: 確認画面へ
+          - generic [ref=e203]: →
+  - contentinfo [ref=e204]:
+    - generic [ref=e206]:
+      - generic [ref=e207]:
+        - generic [ref=e208]: 🌱
+        - generic [ref=e209]: Earth Natural Green
+      - paragraph [ref=e210]:
+        - text: 無農薬・無化学肥料の有機野菜を、
+        - text: 新鮮なままご自宅までお届け。
+      - generic [ref=e211]:
+        - link "会社概要" [ref=e212] [cursor=pointer]:
+          - /url: "#"
+        - link "プライバシーポリシー" [ref=e213] [cursor=pointer]:
+          - /url: "#"
+        - link "特定商取引法に基づく表記" [ref=e214] [cursor=pointer]:
+          - /url: "#"
+      - paragraph [ref=e215]: © 2024 Earth Natural Green. All rights reserved.
