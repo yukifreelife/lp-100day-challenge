@@ -61,25 +61,29 @@ Then open `http://localhost:8080` in browser.
 ## LP Skills Usage (MANDATORY)
 **CRITICAL**: All LP-related work MUST use the dedicated skills located at `/Users/yuuki/.claude/skills/`
 
-### Available LP Skills
-| Skill | Purpose | Location |
-|-------|---------|----------|
-| `lp-category-settings` | Category configuration | `/Users/yuuki/.claude/skills/lp-category-settings/` |
-| `lp-legal` | Privacy policy & legal pages | `/Users/yuuki/.claude/skills/lp-legal/` |
-| `lp-seo.md` | SEO meta tags, OGP, JSON-LD | `/Users/yuuki/.claude/skills/lp-seo.md` |
-| `lp-performance` | Core Web Vitals, lazy loading | `/Users/yuuki/.claude/skills/lp-performance/` |
-| `lp-mobile.md` | Touch targets, responsive | `/Users/yuuki/.claude/skills/lp-mobile.md` |
-| `lp-content.md` | Heading structure, alt attributes | `/Users/yuuki/.claude/skills/lp-content.md` |
-| `lp-ux` | Toast, loading states, error handling | `/Users/yuuki/.claude/skills/lp-ux/` |
-| `lp-code-check.md` | Duplicate IDs, console errors | `/Users/yuuki/.claude/skills/lp-code-check.md` |
-| `lp-analytics` | GA4 tracking, CV events | `/Users/yuuki/.claude/skills/lp-analytics/` |
+### All 12 LP Skills
+| Skill | Type | Purpose | Location |
+|-------|------|---------|----------|
+| `lp-automation-v2` | Orchestrator | **Full automation**: 11-step LP creation | `/Users/yuuki/.claude/skills/lp-automation-v2/` |
+| `auto-improve` | Improvement | Auto-improve based on evaluation scores | `/Users/yuuki/.claude/skills/auto-improve/` |
+| `image-license` | Image | Check image license & attribution | `/Users/yuuki/.claude/skills/image-license/` |
+| `lp-category-settings` | Settings | Category configuration | `/Users/yuuki/.claude/skills/lp-category-settings/` |
+| `lp-legal` | Legal | Privacy policy & legal pages | `/Users/yuuki/.claude/skills/lp-legal/` |
+| `lp-seo.md` | SEO | SEO meta tags, OGP, JSON-LD | `/Users/yuuki/.claude/skills/lp-seo.md` |
+| `lp-performance` | Performance | Core Web Vitals, lazy loading | `/Users/yuuki/.claude/skills/lp-performance/` |
+| `lp-mobile.md` | Mobile | Touch targets, responsive | `/Users/yuuki/.claude/skills/lp-mobile.md` |
+| `lp-content.md` | Content | Heading structure, alt attributes | `/Users/yuuki/.claude/skills/lp-content.md` |
+| `lp-ux` | UX | Toast, loading states, error handling | `/Users/yuuki/.claude/skills/lp-ux/` |
+| `lp-code-check.md` | Code | Duplicate IDs, console errors | `/Users/yuuki/.claude/skills/lp-code-check.md` |
+| `lp-analytics` | Analytics | GA4 tracking, CV events | `/Users/yuuki/.claude/skills/lp-analytics/` |
 
 ### When to Use Skills
 **Always use the `Skill` tool before starting LP work:**
 
-1. **New LP Creation** → `lp-category-settings` → `lp-legal` → `lp-seo.md` → `lp-analytics`
-2. **LP Evaluation** → `lp-seo.md` → `lp-performance` → `lp-mobile.md` → `lp-content.md` → `lp-ux` → `lp-code-check.md`
-3. **LP Improvement** → Use specific skill based on improvement area
+1. **Full Auto LP Creation** → `lp-automation-v2` (recommended - handles everything)
+2. **Manual LP Creation** → `lp-category-settings` → `image-license` → `lp-legal` → `lp-seo.md` → `lp-analytics`
+3. **LP Evaluation** → `lp-seo.md` → `lp-performance` → `lp-mobile.md` → `lp-content.md` → `lp-ux` → `lp-code-check.md`
+4. **LP Improvement** → `auto-improve` (auto) or specific skill based on area
 
 ### Skill Invocation Rule
 **"If there's even a 1% chance a skill might apply, you ABSOLUTELY MUST invoke it."**
