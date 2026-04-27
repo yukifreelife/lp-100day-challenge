@@ -456,6 +456,17 @@ const worksData = [
     tech: ["HTML5", "CSS3", "JavaScript"],
     url: "./day091/",
   },
+  {
+    day: "Day092",
+    title: "ClothShare | ファッションレンタルサブスク",
+    category: "Fashion",
+    industry: "ファッション",
+    focus: "無料トライアル申込",
+    summary: "月額定額で上位ブランドのバッグ・アクセ・ウォッチを無制限レンタルするサブスクリプションLP。シックモーブを基調に、高級感とトレンド感を両立したミニマルデザインで訴求。",
+    metric: "4つの魅力・カンタン4ステップ・利用シーン・料金プラン3種・FAQ",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    url: "./day092/",
+  },
 ];
 
 const colorByCategory = {
