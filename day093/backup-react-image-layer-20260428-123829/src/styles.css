@@ -1,0 +1,139 @@
+:root {
+  --stage-width: min(100vw, calc(100vh * 16 / 9));
+  --stage-height: calc(var(--stage-width) * 9 / 16);
+  --focus-ring: #2f8f83;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background: #fcfcf8;
+  font-family:
+    "Inter",
+    "Noto Sans JP",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+button {
+  border: 0;
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.nemunote-app {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  animation: page-fade 260ms ease-out both;
+}
+
+.nemunote-shell {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  place-items: center;
+}
+
+.page-stage {
+  position: relative;
+  width: var(--stage-width);
+  height: var(--stage-height);
+  overflow: hidden;
+}
+
+.page-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  user-select: none;
+}
+
+.hotspot {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.hotspot:focus {
+  outline: none;
+}
+
+.hotspot:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.sr-only-nav {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap;
+}
+
+.sr-only-nav:focus-within {
+  z-index: 10;
+}
+
+@keyframes page-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  :root {
+    --stage-width: 100vw;
+  }
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  :root {
+    --stage-width: calc(100vh * 16 / 9);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+}
