@@ -467,6 +467,17 @@ const worksData = [
     tech: ["HTML5", "CSS3", "JavaScript"],
     url: "./day092/",
   },
+  {
+    day: "Day093",
+    title: "SleepTune Coach | 女性向け睡眠改善コーチング",
+    category: "Wellness",
+    industry: "睡眠改善・オンラインコーチング",
+    focus: "無料診断申込",
+    summary: "忙しい30〜40代女性の睡眠リズムを、アプリの可視化と専門コーチの伴走で整える7日間プログラムLP。案2のCV重視構造に、案1の上質ウェルネス感を加えたデザイン。",
+    metric: "無料診断CTA・アプリ×コーチ訴求・7日間プログラム・改善数値・料金比較・FAQ",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    url: "./day093/",
+  },
 ];
 
 const colorByCategory = {
@@ -488,6 +499,7 @@ const colorByCategory = {
   "Video Creator": "#8B5A3C",
   Restaurant: "#E85D4C",
   Travel: "#1B4332",
+  Wellness: "#8D7CF1",
 };
 
 const REEL_INTERVAL_MS = 3200;

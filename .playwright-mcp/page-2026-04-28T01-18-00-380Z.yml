@@ -1,0 +1,231 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "SleepTune Coach トップへ" [ref=e3] [cursor=pointer]:
+      - /url: "#top"
+      - generic [ref=e4]: S
+      - generic [ref=e5]:
+        - strong [ref=e6]: SleepTune Coach
+        - generic [ref=e7]: スリープチューンコーチ
+  - main [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - paragraph [ref=e11]: 30から40代女性のためのオンライン睡眠改善
+        - heading "あなたの睡眠リズムを、 やさしく毎晩チューニング。" [level=1] [ref=e12]:
+          - text: あなたの睡眠リズムを、
+          - generic [ref=e13]: やさしく毎晩チューニング。
+        - paragraph [ref=e14]: 睡眠ログ・生活習慣・コーチの伴走で、朝のだるさを軽くする7日間プログラム。無理な早寝ではなく、今の暮らしに合う眠り方を整えます。
+        - generic [ref=e15]:
+          - link "無料診断をはじめる" [ref=e16] [cursor=pointer]:
+            - /url: "#diagnosis"
+          - link "使い方を見る" [ref=e17] [cursor=pointer]:
+            - /url: "#program"
+        - list "サービスの特徴" [ref=e18]:
+          - listitem [ref=e19]:
+            - strong [ref=e20]: 85%
+            - generic [ref=e21]: 睡眠満足度が改善
+          - listitem [ref=e22]:
+            - strong [ref=e23]: 7日間
+            - generic [ref=e24]: 生活リズムを可視化
+          - listitem [ref=e25]:
+            - strong [ref=e26]: LINE可
+            - generic [ref=e27]: 夜の不安も相談
+      - generic [ref=e28]:
+        - img "夜の自宅で睡眠アプリを見ながら穏やかに過ごす女性" [ref=e29]
+        - generic "睡眠スコア例" [ref=e30]:
+          - generic [ref=e31]: 睡眠スコア
+          - strong [ref=e32]: "85"
+          - generic [ref=e33]: 良い傾向です
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - paragraph [ref=e36]: Sleep concerns
+        - heading "こんなお悩み、ありませんか？" [level=2] [ref=e37]
+      - generic [ref=e38]:
+        - article [ref=e39]:
+          - paragraph [ref=e41]: 寝ても疲れがとれない
+        - article [ref=e42]:
+          - paragraph [ref=e44]: 夜、スマホを見てつい夜更かし
+        - article [ref=e45]:
+          - paragraph [ref=e47]: 朝起きるのがつらい
+        - article [ref=e48]:
+          - paragraph [ref=e50]: 家事や仕事で自分時間がない
+        - article [ref=e51]:
+          - paragraph [ref=e53]: 何を試しても続かない
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - paragraph [ref=e56]: App plus coach
+        - heading "アプリの見える化と、コーチの伴走をひとつに。" [level=2] [ref=e57]
+        - paragraph [ref=e58]: 睡眠時間だけを記録して終わりではありません。就寝前の行動、日中の疲労感、心の負担まで整理し、あなた専用の改善プランに落とし込みます。
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - strong [ref=e61]: "01"
+            - generic [ref=e62]: 睡眠ログを毎日自動整理
+          - generic [ref=e63]:
+            - strong [ref=e64]: "02"
+            - generic [ref=e65]: コーチが週2回フィードバック
+          - generic [ref=e66]:
+            - strong [ref=e67]: "03"
+            - generic [ref=e68]: 続けやすい夜のルーティン提案
+      - img "睡眠スコアとチャット相談を表示するアプリ画面" [ref=e70]
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - paragraph [ref=e73]: 7 days program
+        - heading "1週間で「眠りの土台」を整えるプログラム" [level=2] [ref=e74]
+      - list [ref=e75]:
+        - listitem [ref=e76]:
+          - strong [ref=e77]: Day 1
+          - generic [ref=e78]: 知る
+          - paragraph [ref=e79]: 眠りの癖と生活リズムを診断。
+        - listitem [ref=e80]:
+          - strong [ref=e81]: Day 2
+          - generic [ref=e82]: 整える
+          - paragraph [ref=e83]: 夜のルーティンを決める。
+        - listitem [ref=e84]:
+          - strong [ref=e85]: Day 3
+          - generic [ref=e86]: ゆるめる
+          - paragraph [ref=e87]: 心と体の緊張をほどく。
+        - listitem [ref=e88]:
+          - strong [ref=e89]: Day 4
+          - generic [ref=e90]: 戻す
+          - paragraph [ref=e91]: 朝の光と食事を調整。
+        - listitem [ref=e92]:
+          - strong [ref=e93]: Day 5
+          - generic [ref=e94]: 続ける
+          - paragraph [ref=e95]: 無理なく続く条件を探す。
+        - listitem [ref=e96]:
+          - strong [ref=e97]: Day 6
+          - generic [ref=e98]: 定着
+          - paragraph [ref=e99]: 崩れた日の戻し方を作る。
+        - listitem [ref=e100]:
+          - strong [ref=e101]: Day 7
+          - generic [ref=e102]: 次へ
+          - paragraph [ref=e103]: 翌週の改善計画を受け取る。
+    - generic [ref=e104]:
+      - generic [ref=e105]:
+        - paragraph [ref=e106]: Before and after
+        - heading "多くの方が、変化を実感しています" [level=2] [ref=e107]
+      - generic [ref=e108]:
+        - article [ref=e109]:
+          - generic [ref=e110]: 睡眠スコア
+          - strong [ref=e111]: 58 → 82
+          - generic [ref=e112]: 平均+24点
+        - article [ref=e113]:
+          - generic [ref=e114]: 寝つき時間
+          - strong [ref=e115]: 45分 → 18分
+          - generic [ref=e116]: 平均-27分
+        - article [ref=e117]:
+          - generic [ref=e118]: 中途覚醒
+          - strong [ref=e119]: 2.3回 → 0.9回
+          - generic [ref=e120]: 平均-1.4回
+        - article [ref=e121]:
+          - generic [ref=e122]: 朝のすっきり度
+          - strong [ref=e123]: 2.4 → 4.3
+          - generic [ref=e124]: 5段階評価
+      - paragraph [ref=e125]: 2026年1月から3月にプログラムを完了した方へのアンケート結果です。効果には個人差があります。
+    - generic [ref=e126]:
+      - generic [ref=e127]:
+        - paragraph [ref=e128]: Reviews
+        - heading "お客様の声" [level=2] [ref=e129]
+      - generic [ref=e130]:
+        - article [ref=e131]:
+          - generic [ref=e132]: A
+          - heading "朝のだるさが少しずつ軽くなりました" [level=3] [ref=e133]
+          - paragraph [ref=e134]: 夜の過ごし方を一緒に見直せたので、自己流で頑張るより続けやすかったです。
+          - text: 会社員・36歳
+        - article [ref=e135]:
+          - generic [ref=e136]: M
+          - heading "自分に合う方法が見つかりました" [level=3] [ref=e137]
+          - paragraph [ref=e138]: 寝る前に考え込む癖がありましたが、書き出し方まで教えてもらえて安心でした。
+          - text: フリーランス・41歳
+        - article [ref=e139]:
+          - generic [ref=e140]: K
+          - heading "夜の時間が楽しみになりました" [level=3] [ref=e141]
+          - paragraph [ref=e142]: 睡眠を義務にせず、心地よいルーティンとして整えられたのがよかったです。
+          - text: パート・38歳
+    - generic [ref=e143]:
+      - generic [ref=e144]:
+        - paragraph [ref=e145]: Plans
+        - heading "料金プラン" [level=2] [ref=e146]
+      - generic [ref=e147]:
+        - article [ref=e148]:
+          - heading "7日間お試しプラン" [level=3] [ref=e149]
+          - paragraph [ref=e150]: 0円
+          - list [ref=e151]:
+            - listitem [ref=e152]: アプリ全機能
+            - listitem [ref=e153]: 睡眠タイプ診断
+            - listitem [ref=e154]: コーチのチャット1往復
+          - link "無料で始める" [ref=e155] [cursor=pointer]:
+            - /url: "#diagnosis"
+        - article [ref=e156]:
+          - paragraph [ref=e157]: 人気No.1
+          - heading "ベーシックプラン" [level=3] [ref=e158]
+          - paragraph [ref=e159]: 9,800円/月
+          - list [ref=e160]:
+            - listitem [ref=e161]: アプリ全機能
+            - listitem [ref=e162]: 週2回のコーチフィードバック
+            - listitem [ref=e163]: 夜のルーティン作成
+            - listitem [ref=e164]: 生活リズム改善レポート
+          - link "このプランを選ぶ" [ref=e165] [cursor=pointer]:
+            - /url: "#diagnosis"
+        - article [ref=e166]:
+          - heading "プレミアムプラン" [level=3] [ref=e167]
+          - paragraph [ref=e168]: 19,800円/月
+          - list [ref=e169]:
+            - listitem [ref=e170]: 月1回のビデオ面談
+            - listitem [ref=e171]: 個別睡眠改善プラン
+            - listitem [ref=e172]: 30日間の優先チャット
+          - link "相談して決める" [ref=e173] [cursor=pointer]:
+            - /url: "#diagnosis"
+    - generic [ref=e174]:
+      - generic [ref=e175]:
+        - paragraph [ref=e176]: FAQ
+        - heading "よくある質問" [level=2] [ref=e177]
+      - generic [ref=e178]:
+        - group [ref=e179]:
+          - generic "本当に7日間で変わりますか？" [ref=e180] [cursor=pointer]
+        - group [ref=e181]:
+          - generic "忙しくても続けられますか？" [ref=e182] [cursor=pointer]
+        - group [ref=e183]:
+          - generic "医療行為ですか？" [ref=e184] [cursor=pointer]
+        - group [ref=e185]:
+          - generic "途中で解約できますか？" [ref=e186] [cursor=pointer]
+    - generic [ref=e187]:
+      - generic [ref=e188]:
+        - paragraph [ref=e189]: Free diagnosis
+        - heading "今夜から、眠りの整え方を変えましょう。" [level=2] [ref=e190]
+        - paragraph [ref=e191]: まずは3分の無料診断で、あなたの睡眠タイプと改善ポイントを確認できます。
+      - generic [ref=e192]:
+        - generic [ref=e193]:
+          - text: お名前
+          - textbox "お名前" [ref=e194]:
+            - /placeholder: 山田 花子
+        - generic [ref=e195]:
+          - text: メールアドレス
+          - textbox "メールアドレス" [ref=e196]:
+            - /placeholder: sample@example.com
+        - generic [ref=e197]:
+          - text: 一番近いお悩み
+          - combobox "一番近いお悩み" [ref=e198]:
+            - option "選択してください" [selected]
+            - option "寝つきが悪い"
+            - option "夜中に目が覚める"
+            - option "朝起きるのがつらい"
+            - option "生活リズムが乱れている"
+        - button "無料診断を送信する" [ref=e199]
+        - paragraph [ref=e200]: 送信後、診断結果の案内をメールでお送りします。
+  - contentinfo [ref=e201]:
+    - generic [ref=e202]:
+      - link "S SleepTune Coach スリープチューンコーチ" [ref=e203] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=e204]: S
+        - generic [ref=e205]:
+          - strong [ref=e206]: SleepTune Coach
+          - generic [ref=e207]: スリープチューンコーチ
+      - paragraph [ref=e208]: 睡眠習慣を、無理なく整えるオンラインコーチング。
+    - navigation "フッターナビゲーション" [ref=e209]:
+      - link "プライバシーポリシー" [ref=e210] [cursor=pointer]:
+        - /url: privacy.html
+      - link "特定商取引法に基づく表記" [ref=e211] [cursor=pointer]:
+        - /url: tokusho.html
+      - link "お問い合わせ" [ref=e212] [cursor=pointer]:
+        - /url: "#diagnosis"
+    - generic [ref=e213]: © 2026 SleepTune Coach. All rights reserved.
