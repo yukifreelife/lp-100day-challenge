@@ -1,0 +1,487 @@
+{
+  "description": "Curated reusable assets for the next NemuNote LP implementation. Use these first; extracted/ contains raw auto-sliced extras.",
+  "assets": [
+    {
+      "id": "phone-dashboard",
+      "file": "public/assets/nemunote-v2/curated/phone-dashboard.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/app-assets-01-phone-dashboard.png",
+      "size": [
+        428,
+        789
+      ],
+      "usage": "app UI screenshot / device mockup"
+    },
+    {
+      "id": "phone-weekly-report",
+      "file": "public/assets/nemunote-v2/curated/phone-weekly-report.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/app-assets-02-phone-weekly-report.png",
+      "size": [
+        414,
+        789
+      ],
+      "usage": "app UI screenshot / device mockup"
+    },
+    {
+      "id": "photo-white-bed-plant",
+      "file": "public/assets/nemunote-v2/curated/photo-white-bed-plant.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/app-assets-03-photo-plant-window.png",
+      "size": [
+        326,
+        294
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "photo-bedside-book-lamp",
+      "file": "public/assets/nemunote-v2/curated/photo-bedside-book-lamp.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/app-assets-04-photo-bedside-table.png",
+      "size": [
+        326,
+        282
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "photo-warm-bath",
+      "file": "public/assets/nemunote-v2/curated/photo-warm-bath.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/app-assets-05-photo-bath-small.png",
+      "size": [
+        326,
+        298
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "decor-mint-crescent-large",
+      "file": "public/assets/nemunote-v2/curated/decor-mint-crescent-large.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/app-assets-06-score-ring-badge.png",
+      "size": [
+        182,
+        194
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "decor-peach-star-large",
+      "file": "public/assets/nemunote-v2/curated/decor-peach-star-large.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/app-assets-07-music-badge.png",
+      "size": [
+        79,
+        78
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "decor-peach-star-soft",
+      "file": "public/assets/nemunote-v2/curated/decor-peach-star-soft.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/app-assets-08-morning-badge.png",
+      "size": [
+        82,
+        80
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "decor-lilac-star-large",
+      "file": "public/assets/nemunote-v2/curated/decor-lilac-star-large.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/app-assets-09-cloud-large.png",
+      "size": [
+        82,
+        80
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "decor-lilac-star-small",
+      "file": "public/assets/nemunote-v2/curated/decor-lilac-star-small.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/app-assets-10-asset-10.png",
+      "size": [
+        97,
+        96
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "decor-lilac-cloud",
+      "file": "public/assets/nemunote-v2/curated/decor-lilac-cloud.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/app-assets-12-asset-12.png",
+      "size": [
+        425,
+        243
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "icon-sleep-score-badge",
+      "file": "public/assets/nemunote-v2/curated/icon-sleep-score-badge.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/app-assets-13-asset-13.png",
+      "size": [
+        187,
+        200
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icon-sleep-sound-badge",
+      "file": "public/assets/nemunote-v2/curated/icon-sleep-sound-badge.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/app-assets-14-asset-14.png",
+      "size": [
+        186,
+        200
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icon-morning-reflection-badge",
+      "file": "public/assets/nemunote-v2/curated/icon-morning-reflection-badge.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/app-assets-15-asset-15.png",
+      "size": [
+        184,
+        200
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "decor-sleeping-moon",
+      "file": "public/assets/nemunote-v2/curated/decor-sleeping-moon.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-a-01-moon-cloud-stars.png",
+      "size": [
+        317,
+        332
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "decor-star-mint",
+      "file": "public/assets/nemunote-v2/curated/decor-star-mint.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-a-02-star-small-01.png",
+      "size": [
+        114,
+        113
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "decor-star-lilac",
+      "file": "public/assets/nemunote-v2/curated/decor-star-lilac.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-a-03-star-small-02.png",
+      "size": [
+        115,
+        113
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "decor-star-peach",
+      "file": "public/assets/nemunote-v2/curated/decor-star-peach.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-a-04-star-small-03.png",
+      "size": [
+        115,
+        113
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "decor-cloud-sleep",
+      "file": "public/assets/nemunote-v2/curated/decor-cloud-sleep.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-a-05-star-small-04.png",
+      "size": [
+        300,
+        217
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "icon-privacy-shield",
+      "file": "public/assets/nemunote-v2/curated/icon-privacy-shield.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-a-13-asset-13.png",
+      "size": [
+        267,
+        315
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icon-score-ring",
+      "file": "public/assets/nemunote-v2/curated/icon-score-ring.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-a-12-asset-12.png",
+      "size": [
+        317,
+        320
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icon-music-note",
+      "file": "public/assets/nemunote-v2/curated/icon-music-note.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-a-11-phone-mini.png",
+      "size": [
+        217,
+        227
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icon-smile-sleep",
+      "file": "public/assets/nemunote-v2/curated/icon-smile-sleep.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-a-14-asset-14.png",
+      "size": [
+        120,
+        122
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icon-sun-face",
+      "file": "public/assets/nemunote-v2/curated/icon-sun-face.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-a-19-asset-19.png",
+      "size": [
+        203,
+        209
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icon-bath",
+      "file": "public/assets/nemunote-v2/curated/icon-bath.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-b-22-asset-22.png",
+      "size": [
+        257,
+        237
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icon-bell",
+      "file": "public/assets/nemunote-v2/curated/icon-bell.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-b-23-asset-23.png",
+      "size": [
+        205,
+        216
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icon-bar-chart",
+      "file": "public/assets/nemunote-v2/curated/icon-bar-chart.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-b-24-asset-24.png",
+      "size": [
+        70,
+        218
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icon-phone-list",
+      "file": "public/assets/nemunote-v2/curated/icon-phone-list.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-b-29-asset-29.png",
+      "size": [
+        172,
+        273
+      ],
+      "usage": "app UI screenshot / device mockup"
+    },
+    {
+      "id": "icon-headset",
+      "file": "public/assets/nemunote-v2/curated/icon-headset.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-b-30-asset-30.png",
+      "size": [
+        257,
+        228
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icon-mail",
+      "file": "public/assets/nemunote-v2/curated/icon-mail.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/icons-b-31-asset-31.png",
+      "size": [
+        262,
+        189
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "photo-guide-bedside",
+      "file": "public/assets/nemunote-v2/curated/photo-guide-bedside.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/photos-01-photo-bedside-lamp.png",
+      "size": [
+        474,
+        399
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "photo-guide-phone-bed",
+      "file": "public/assets/nemunote-v2/curated/photo-guide-phone-bed.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/photos-02-photo-phone-bed.png",
+      "size": [
+        468,
+        399
+      ],
+      "usage": "app UI screenshot / device mockup"
+    },
+    {
+      "id": "photo-guide-morning-window",
+      "file": "public/assets/nemunote-v2/curated/photo-guide-morning-window.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/photos-03-photo-morning-window.png",
+      "size": [
+        471,
+        399
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "photo-guide-forest",
+      "file": "public/assets/nemunote-v2/curated/photo-guide-forest.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/photos-04-photo-bath.png",
+      "size": [
+        467,
+        401
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "photo-guide-bath",
+      "file": "public/assets/nemunote-v2/curated/photo-guide-bath.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/photos-05-photo-forest-light.png",
+      "size": [
+        475,
+        400
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "photo-guide-rain-window",
+      "file": "public/assets/nemunote-v2/curated/photo-guide-rain-window.png",
+      "sourceExtract": "public/assets/nemunote-v2/extracted/photos-06-photo-white-bedroom.png",
+      "size": [
+        474,
+        402
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "lp-hero-phone-combo",
+      "file": "public/assets/nemunote-v2/curated/lp-hero-phone-combo.png",
+      "sourceExtract": "public/assets/nemunote-v2/sources/lp-reference.png",
+      "box": [
+        429,
+        57,
+        806,
+        451
+      ],
+      "size": [
+        377,
+        394
+      ],
+      "usage": "app UI screenshot / device mockup"
+    },
+    {
+      "id": "lp-download-photo-band",
+      "file": "public/assets/nemunote-v2/curated/lp-download-photo-band.png",
+      "sourceExtract": "public/assets/nemunote-v2/sources/lp-reference.png",
+      "box": [
+        0,
+        1592,
+        374,
+        1752
+      ],
+      "size": [
+        374,
+        160
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "lp-app-icon",
+      "file": "public/assets/nemunote-v2/curated/lp-app-icon.png",
+      "sourceExtract": "public/assets/nemunote-v2/sources/lp-reference.png",
+      "box": [
+        96,
+        1659,
+        169,
+        1730
+      ],
+      "size": [
+        73,
+        71
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "lp-badge-app-store",
+      "file": "public/assets/nemunote-v2/curated/lp-badge-app-store.png",
+      "sourceExtract": "public/assets/nemunote-v2/sources/lp-reference.png",
+      "box": [
+        386,
+        1708,
+        480,
+        1736
+      ],
+      "size": [
+        94,
+        28
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "lp-badge-google-play",
+      "file": "public/assets/nemunote-v2/curated/lp-badge-google-play.png",
+      "sourceExtract": "public/assets/nemunote-v2/sources/lp-reference.png",
+      "box": [
+        504,
+        1708,
+        615,
+        1736
+      ],
+      "size": [
+        111,
+        28
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "lp-qr-download-card",
+      "file": "public/assets/nemunote-v2/curated/lp-qr-download-card.png",
+      "sourceExtract": "public/assets/nemunote-v2/sources/lp-reference.png",
+      "box": [
+        687,
+        1620,
+        816,
+        1748
+      ],
+      "size": [
+        129,
+        128
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "lp-qr-download-code",
+      "file": "public/assets/nemunote-v2/curated/lp-qr-download-code.png",
+      "sourceExtract": "public/assets/nemunote-v2/sources/lp-reference.png",
+      "box": [
+        656,
+        1662,
+        756,
+        1748
+      ],
+      "size": [
+        100,
+        86
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "photo-white-bed-plant-muted",
+      "file": "public/assets/nemunote-v2/curated/photo-white-bed-plant-muted.png",
+      "sourceExtract": "public/assets/nemunote-v2/curated/photo-white-bed-plant.png",
+      "size": [
+        326,
+        294
+      ],
+      "usage": "muted hero background photo derived from curated bedroom photo"
+    }
+  ]
+}

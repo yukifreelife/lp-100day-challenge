@@ -41,6 +41,7 @@ coverage/
 # Test / deployment tool outputs
 playwright-report/
 test-results/
+.playwright-mcp/
 .wrangler/
 .vercel/
 .netlify/

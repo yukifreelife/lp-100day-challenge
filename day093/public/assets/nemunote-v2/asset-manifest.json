@@ -1,0 +1,1239 @@
+{
+  "description": "NemuNote v2 reusable generated assets. Source sheets are preserved, extracted assets are transparent PNGs.",
+  "sources": {
+    "icons-a": "public/assets/nemunote-v2/sources/icons-a.png",
+    "icons-b": "public/assets/nemunote-v2/sources/icons-b.png",
+    "photos": "public/assets/nemunote-v2/sources/photos.png",
+    "app-assets": "public/assets/nemunote-v2/sources/app-assets.png",
+    "lp-reference": "public/assets/nemunote-v2/sources/lp-reference.png"
+  },
+  "references": {
+    "mock-section-01-hero": "public/assets/nemunote-v2/references/mock-section-01-hero.png",
+    "mock-section-02-features": "public/assets/nemunote-v2/references/mock-section-02-features.png",
+    "mock-section-03-report": "public/assets/nemunote-v2/references/mock-section-03-report.png",
+    "mock-section-04-pricing": "public/assets/nemunote-v2/references/mock-section-04-pricing.png",
+    "mock-section-05-guide": "public/assets/nemunote-v2/references/mock-section-05-guide.png",
+    "mock-section-06-download": "public/assets/nemunote-v2/references/mock-section-06-download.png",
+    "mock-section-07-privacy": "public/assets/nemunote-v2/references/mock-section-07-privacy.png",
+    "mock-section-08-support": "public/assets/nemunote-v2/references/mock-section-08-support.png",
+    "mock-section-09-faq": "public/assets/nemunote-v2/references/mock-section-09-faq.png"
+  },
+  "assets": [
+    {
+      "id": "icons-a-01-moon-cloud-stars",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-01-moon-cloud-stars.png",
+      "source": "icons-a",
+      "box": [
+        93,
+        32,
+        410,
+        364
+      ],
+      "size": [
+        317,
+        332
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "icons-a-02-star-small-01",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-02-star-small-01.png",
+      "source": "icons-a",
+      "box": [
+        440,
+        53,
+        554,
+        166
+      ],
+      "size": [
+        114,
+        113
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "icons-a-03-star-small-02",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-03-star-small-02.png",
+      "source": "icons-a",
+      "box": [
+        590,
+        53,
+        705,
+        166
+      ],
+      "size": [
+        115,
+        113
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "icons-a-04-star-small-03",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-04-star-small-03.png",
+      "source": "icons-a",
+      "box": [
+        736,
+        53,
+        851,
+        166
+      ],
+      "size": [
+        115,
+        113
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "icons-a-05-star-small-04",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-05-star-small-04.png",
+      "source": "icons-a",
+      "box": [
+        884,
+        68,
+        1184,
+        285
+      ],
+      "size": [
+        300,
+        217
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "icons-a-06-cloud-sleep",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-06-cloud-sleep.png",
+      "source": "icons-a",
+      "box": [
+        262,
+        85,
+        364,
+        185
+      ],
+      "size": [
+        102,
+        100
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "icons-a-07-shield-privacy",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-07-shield-privacy.png",
+      "source": "icons-a",
+      "box": [
+        474,
+        196,
+        525,
+        248
+      ],
+      "size": [
+        51,
+        52
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icons-a-08-score-ring-icon",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-08-score-ring-icon.png",
+      "source": "icons-a",
+      "box": [
+        586,
+        196,
+        638,
+        248
+      ],
+      "size": [
+        52,
+        52
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icons-a-09-music-note-icon",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-09-music-note-icon.png",
+      "source": "icons-a",
+      "box": [
+        690,
+        196,
+        742,
+        249
+      ],
+      "size": [
+        52,
+        53
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icons-a-10-sun-icon",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-10-sun-icon.png",
+      "source": "icons-a",
+      "box": [
+        743,
+        225,
+        848,
+        344
+      ],
+      "size": [
+        105,
+        119
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icons-a-11-phone-mini",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-11-phone-mini.png",
+      "source": "icons-a",
+      "box": [
+        903,
+        400,
+        1120,
+        627
+      ],
+      "size": [
+        217,
+        227
+      ],
+      "usage": "app UI screenshot / device mockup"
+    },
+    {
+      "id": "icons-a-12-asset-12",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-12-asset-12.png",
+      "source": "icons-a",
+      "box": [
+        470,
+        411,
+        787,
+        731
+      ],
+      "size": [
+        317,
+        320
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-a-13-asset-13",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-13-asset-13.png",
+      "source": "icons-a",
+      "box": [
+        113,
+        417,
+        380,
+        732
+      ],
+      "size": [
+        267,
+        315
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-a-14-asset-14",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-14-asset-14.png",
+      "source": "icons-a",
+      "box": [
+        568,
+        521,
+        688,
+        643
+      ],
+      "size": [
+        120,
+        122
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-a-15-asset-15",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-15-asset-15.png",
+      "source": "icons-a",
+      "box": [
+        754,
+        666,
+        1126,
+        1202
+      ],
+      "size": [
+        372,
+        536
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-a-16-asset-16",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-16-asset-16.png",
+      "source": "icons-a",
+      "box": [
+        287,
+        794,
+        333,
+        871
+      ],
+      "size": [
+        46,
+        77
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-a-17-asset-17",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-17-asset-17.png",
+      "source": "icons-a",
+      "box": [
+        181,
+        838,
+        247,
+        905
+      ],
+      "size": [
+        66,
+        67
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-a-18-asset-18",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-18-asset-18.png",
+      "source": "icons-a",
+      "box": [
+        374,
+        838,
+        439,
+        905
+      ],
+      "size": [
+        65,
+        67
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-a-19-asset-19",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-19-asset-19.png",
+      "source": "icons-a",
+      "box": [
+        209,
+        863,
+        412,
+        1072
+      ],
+      "size": [
+        203,
+        209
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-a-20-asset-20",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-20-asset-20.png",
+      "source": "icons-a",
+      "box": [
+        138,
+        944,
+        214,
+        992
+      ],
+      "size": [
+        76,
+        48
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-a-21-asset-21",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-21-asset-21.png",
+      "source": "icons-a",
+      "box": [
+        407,
+        944,
+        482,
+        992
+      ],
+      "size": [
+        75,
+        48
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-a-22-asset-22",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-22-asset-22.png",
+      "source": "icons-a",
+      "box": [
+        181,
+        1029,
+        247,
+        1097
+      ],
+      "size": [
+        66,
+        68
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-a-23-asset-23",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-23-asset-23.png",
+      "source": "icons-a",
+      "box": [
+        374,
+        1029,
+        439,
+        1097
+      ],
+      "size": [
+        65,
+        68
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-a-24-asset-24",
+      "file": "public/assets/nemunote-v2/extracted/icons-a-24-asset-24.png",
+      "source": "icons-a",
+      "box": [
+        287,
+        1064,
+        333,
+        1140
+      ],
+      "size": [
+        46,
+        76
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-01-moon-stars",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-01-moon-stars.png",
+      "source": "icons-b",
+      "box": [
+        117,
+        49,
+        388,
+        328
+      ],
+      "size": [
+        271,
+        279
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "icons-b-02-shield-lock-icon",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-02-shield-lock-icon.png",
+      "source": "icons-b",
+      "box": [
+        250,
+        80,
+        352,
+        183
+      ],
+      "size": [
+        102,
+        103
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icons-b-03-star-outline-icon",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-03-star-outline-icon.png",
+      "source": "icons-b",
+      "box": [
+        586,
+        84,
+        702,
+        200
+      ],
+      "size": [
+        116,
+        116
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "icons-b-04-music-note-icon",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-04-music-note-icon.png",
+      "source": "icons-b",
+      "box": [
+        864,
+        96,
+        1162,
+        305
+      ],
+      "size": [
+        298,
+        209
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icons-b-05-sun-icon",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-05-sun-icon.png",
+      "source": "icons-b",
+      "box": [
+        457,
+        99,
+        569,
+        214
+      ],
+      "size": [
+        112,
+        115
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icons-b-06-bell-icon",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-06-bell-icon.png",
+      "source": "icons-b",
+      "box": [
+        695,
+        151,
+        786,
+        242
+      ],
+      "size": [
+        91,
+        91
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icons-b-07-bar-chart-icon",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-07-bar-chart-icon.png",
+      "source": "icons-b",
+      "box": [
+        508,
+        230,
+        559,
+        282
+      ],
+      "size": [
+        51,
+        52
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icons-b-08-bed-icon",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-08-bed-icon.png",
+      "source": "icons-b",
+      "box": [
+        593,
+        230,
+        644,
+        282
+      ],
+      "size": [
+        51,
+        52
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icons-b-09-phone-icon",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-09-phone-icon.png",
+      "source": "icons-b",
+      "box": [
+        677,
+        246,
+        729,
+        297
+      ],
+      "size": [
+        52,
+        51
+      ],
+      "usage": "app UI screenshot / device mockup"
+    },
+    {
+      "id": "icons-b-10-mail-icon",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-10-mail-icon.png",
+      "source": "icons-b",
+      "box": [
+        1006,
+        371,
+        1049,
+        433
+      ],
+      "size": [
+        43,
+        62
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "icons-b-11-headphones-icon",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-11-headphones-icon.png",
+      "source": "icons-b",
+      "box": [
+        105,
+        380,
+        309,
+        615
+      ],
+      "size": [
+        204,
+        235
+      ],
+      "usage": "app UI screenshot / device mockup"
+    },
+    {
+      "id": "icons-b-12-cloud-sleep",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-12-cloud-sleep.png",
+      "source": "icons-b",
+      "box": [
+        375,
+        388,
+        589,
+        600
+      ],
+      "size": [
+        214,
+        212
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "icons-b-13-asset-13",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-13-asset-13.png",
+      "source": "icons-b",
+      "box": [
+        644,
+        388,
+        837,
+        595
+      ],
+      "size": [
+        193,
+        207
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-14-asset-14",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-14-asset-14.png",
+      "source": "icons-b",
+      "box": [
+        931,
+        400,
+        987,
+        455
+      ],
+      "size": [
+        56,
+        55
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-15-asset-15",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-15-asset-15.png",
+      "source": "icons-b",
+      "box": [
+        1069,
+        400,
+        1124,
+        455
+      ],
+      "size": [
+        55,
+        55
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-16-asset-16",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-16-asset-16.png",
+      "source": "icons-b",
+      "box": [
+        952,
+        419,
+        1105,
+        573
+      ],
+      "size": [
+        153,
+        154
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-17-asset-17",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-17-asset-17.png",
+      "source": "icons-b",
+      "box": [
+        902,
+        473,
+        963,
+        518
+      ],
+      "size": [
+        61,
+        45
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-18-asset-18",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-18-asset-18.png",
+      "source": "icons-b",
+      "box": [
+        1095,
+        473,
+        1157,
+        517
+      ],
+      "size": [
+        62,
+        44
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-19-asset-19",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-19-asset-19.png",
+      "source": "icons-b",
+      "box": [
+        930,
+        535,
+        985,
+        589
+      ],
+      "size": [
+        55,
+        54
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-20-asset-20",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-20-asset-20.png",
+      "source": "icons-b",
+      "box": [
+        1071,
+        535,
+        1126,
+        590
+      ],
+      "size": [
+        55,
+        55
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-21-asset-21",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-21-asset-21.png",
+      "source": "icons-b",
+      "box": [
+        1006,
+        559,
+        1049,
+        619
+      ],
+      "size": [
+        43,
+        60
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-22-asset-22",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-22-asset-22.png",
+      "source": "icons-b",
+      "box": [
+        831,
+        647,
+        1088,
+        884
+      ],
+      "size": [
+        257,
+        237
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-23-asset-23",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-23-asset-23.png",
+      "source": "icons-b",
+      "box": [
+        144,
+        653,
+        349,
+        869
+      ],
+      "size": [
+        205,
+        216
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-24-asset-24",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-24-asset-24.png",
+      "source": "icons-b",
+      "box": [
+        650,
+        656,
+        720,
+        874
+      ],
+      "size": [
+        70,
+        218
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-25-asset-25",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-25-asset-25.png",
+      "source": "icons-b",
+      "box": [
+        938,
+        695,
+        980,
+        738
+      ],
+      "size": [
+        42,
+        43
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-26-asset-26",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-26-asset-26.png",
+      "source": "icons-b",
+      "box": [
+        588,
+        716,
+        657,
+        873
+      ],
+      "size": [
+        69,
+        157
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-27-asset-27",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-27-asset-27.png",
+      "source": "icons-b",
+      "box": [
+        525,
+        758,
+        595,
+        873
+      ],
+      "size": [
+        70,
+        115
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-28-asset-28",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-28-asset-28.png",
+      "source": "icons-b",
+      "box": [
+        465,
+        799,
+        534,
+        874
+      ],
+      "size": [
+        69,
+        75
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-29-asset-29",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-29-asset-29.png",
+      "source": "icons-b",
+      "box": [
+        156,
+        912,
+        328,
+        1185
+      ],
+      "size": [
+        172,
+        273
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-30-asset-30",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-30-asset-30.png",
+      "source": "icons-b",
+      "box": [
+        841,
+        941,
+        1098,
+        1169
+      ],
+      "size": [
+        257,
+        228
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "icons-b-31-asset-31",
+      "file": "public/assets/nemunote-v2/extracted/icons-b-31-asset-31.png",
+      "source": "icons-b",
+      "box": [
+        466,
+        966,
+        728,
+        1155
+      ],
+      "size": [
+        262,
+        189
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "photos-01-photo-bedside-lamp",
+      "file": "public/assets/nemunote-v2/extracted/photos-01-photo-bedside-lamp.png",
+      "source": "photos",
+      "box": [
+        17,
+        131,
+        491,
+        530
+      ],
+      "size": [
+        474,
+        399
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "photos-02-photo-phone-bed",
+      "file": "public/assets/nemunote-v2/extracted/photos-02-photo-phone-bed.png",
+      "source": "photos",
+      "box": [
+        491,
+        131,
+        959,
+        530
+      ],
+      "size": [
+        468,
+        399
+      ],
+      "usage": "app UI screenshot / device mockup"
+    },
+    {
+      "id": "photos-03-photo-morning-window",
+      "file": "public/assets/nemunote-v2/extracted/photos-03-photo-morning-window.png",
+      "source": "photos",
+      "box": [
+        959,
+        131,
+        1430,
+        530
+      ],
+      "size": [
+        471,
+        399
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "photos-04-photo-bath",
+      "file": "public/assets/nemunote-v2/extracted/photos-04-photo-bath.png",
+      "source": "photos",
+      "box": [
+        491,
+        547,
+        958,
+        948
+      ],
+      "size": [
+        467,
+        401
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "photos-05-photo-forest-light",
+      "file": "public/assets/nemunote-v2/extracted/photos-05-photo-forest-light.png",
+      "source": "photos",
+      "box": [
+        16,
+        548,
+        491,
+        948
+      ],
+      "size": [
+        475,
+        400
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "photos-06-photo-white-bedroom",
+      "file": "public/assets/nemunote-v2/extracted/photos-06-photo-white-bedroom.png",
+      "source": "photos",
+      "box": [
+        958,
+        548,
+        1432,
+        950
+      ],
+      "size": [
+        474,
+        402
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "app-assets-01-phone-dashboard",
+      "file": "public/assets/nemunote-v2/extracted/app-assets-01-phone-dashboard.png",
+      "source": "app-assets",
+      "box": [
+        34,
+        19,
+        462,
+        808
+      ],
+      "size": [
+        428,
+        789
+      ],
+      "usage": "app UI screenshot / device mockup"
+    },
+    {
+      "id": "app-assets-02-phone-weekly-report",
+      "file": "public/assets/nemunote-v2/extracted/app-assets-02-phone-weekly-report.png",
+      "source": "app-assets",
+      "box": [
+        483,
+        19,
+        897,
+        808
+      ],
+      "size": [
+        414,
+        789
+      ],
+      "usage": "app UI screenshot / device mockup"
+    },
+    {
+      "id": "app-assets-03-photo-plant-window",
+      "file": "public/assets/nemunote-v2/extracted/app-assets-03-photo-plant-window.png",
+      "source": "app-assets",
+      "box": [
+        912,
+        44,
+        1238,
+        338
+      ],
+      "size": [
+        326,
+        294
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "app-assets-04-photo-bedside-table",
+      "file": "public/assets/nemunote-v2/extracted/app-assets-04-photo-bedside-table.png",
+      "source": "app-assets",
+      "box": [
+        913,
+        351,
+        1239,
+        633
+      ],
+      "size": [
+        326,
+        282
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "app-assets-05-photo-bath-small",
+      "file": "public/assets/nemunote-v2/extracted/app-assets-05-photo-bath-small.png",
+      "source": "app-assets",
+      "box": [
+        913,
+        646,
+        1239,
+        944
+      ],
+      "size": [
+        326,
+        298
+      ],
+      "usage": "sleep guide or article thumbnail"
+    },
+    {
+      "id": "app-assets-06-score-ring-badge",
+      "file": "public/assets/nemunote-v2/extracted/app-assets-06-score-ring-badge.png",
+      "source": "app-assets",
+      "box": [
+        59,
+        814,
+        241,
+        1008
+      ],
+      "size": [
+        182,
+        194
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "app-assets-07-music-badge",
+      "file": "public/assets/nemunote-v2/extracted/app-assets-07-music-badge.png",
+      "source": "app-assets",
+      "box": [
+        278,
+        834,
+        357,
+        912
+      ],
+      "size": [
+        79,
+        78
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "app-assets-08-morning-badge",
+      "file": "public/assets/nemunote-v2/extracted/app-assets-08-morning-badge.png",
+      "source": "app-assets",
+      "box": [
+        550,
+        834,
+        632,
+        914
+      ],
+      "size": [
+        82,
+        80
+      ],
+      "usage": "feature, pricing, privacy, or support icon"
+    },
+    {
+      "id": "app-assets-09-cloud-large",
+      "file": "public/assets/nemunote-v2/extracted/app-assets-09-cloud-large.png",
+      "source": "app-assets",
+      "box": [
+        777,
+        855,
+        859,
+        935
+      ],
+      "size": [
+        82,
+        80
+      ],
+      "usage": "decorative LP motif"
+    },
+    {
+      "id": "app-assets-10-asset-10",
+      "file": "public/assets/nemunote-v2/extracted/app-assets-10-asset-10.png",
+      "source": "app-assets",
+      "box": [
+        654,
+        871,
+        751,
+        967
+      ],
+      "size": [
+        97,
+        96
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "app-assets-11-asset-11",
+      "file": "public/assets/nemunote-v2/extracted/app-assets-11-asset-11.png",
+      "source": "app-assets",
+      "box": [
+        453,
+        885,
+        525,
+        957
+      ],
+      "size": [
+        72,
+        72
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "app-assets-12-asset-12",
+      "file": "public/assets/nemunote-v2/extracted/app-assets-12-asset-12.png",
+      "source": "app-assets",
+      "box": [
+        774,
+        970,
+        1199,
+        1213
+      ],
+      "size": [
+        425,
+        243
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "app-assets-13-asset-13",
+      "file": "public/assets/nemunote-v2/extracted/app-assets-13-asset-13.png",
+      "source": "app-assets",
+      "box": [
+        76,
+        1012,
+        263,
+        1212
+      ],
+      "size": [
+        187,
+        200
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "app-assets-14-asset-14",
+      "file": "public/assets/nemunote-v2/extracted/app-assets-14-asset-14.png",
+      "source": "app-assets",
+      "box": [
+        308,
+        1012,
+        494,
+        1212
+      ],
+      "size": [
+        186,
+        200
+      ],
+      "usage": "general reusable LP asset"
+    },
+    {
+      "id": "app-assets-15-asset-15",
+      "file": "public/assets/nemunote-v2/extracted/app-assets-15-asset-15.png",
+      "source": "app-assets",
+      "box": [
+        534,
+        1012,
+        718,
+        1212
+      ],
+      "size": [
+        184,
+        200
+      ],
+      "usage": "general reusable LP asset"
+    }
+  ]
+}
