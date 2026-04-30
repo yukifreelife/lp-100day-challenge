@@ -1,0 +1,50 @@
+<svg width="1120" height="760" viewBox="0 0 1120 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">MiraSkill AI tactile course cards</title>
+  <desc id="desc">Three tactile course cards on a desk for work efficiency, career, and side project AI learning paths.</desc>
+  <defs>
+    <linearGradient id="desk" x1="62" y1="56" x2="1054" y2="710" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E9F6F1"/>
+    </linearGradient>
+    <filter id="lift" x="-10%" y="-10%" width="120%" height="130%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#172126" flood-opacity=".13"/>
+    </filter>
+  </defs>
+  <rect width="1120" height="760" rx="32" fill="url(#desk)"/>
+  <path d="M92 162H1028M154 626H966" stroke="#DCE9E5" stroke-width="3" stroke-linecap="round" stroke-dasharray="12 20"/>
+  <rect x="88" y="92" width="224" height="122" rx="24" fill="#172126" transform="rotate(-7 88 92)" filter="url(#lift)"/>
+  <path d="M132 146L162 122L192 146L162 170L132 146Z" fill="#DFF4EC"/>
+  <rect x="210" y="134" width="66" height="10" rx="5" fill="#8FB8AD"/>
+  <rect x="210" y="158" width="86" height="10" rx="5" fill="#8FB8AD"/>
+  <rect x="798" y="94" width="218" height="116" rx="24" fill="#FFF3D1" transform="rotate(8 798 94)" filter="url(#lift)"/>
+  <circle cx="884" cy="156" r="34" fill="#F4B740"/>
+  <path d="M872 156H896M884 144V168" stroke="#172126" stroke-width="7" stroke-linecap="round"/>
+  <rect x="194" y="270" width="260" height="344" rx="28" fill="white" filter="url(#lift)"/>
+  <rect x="230" y="314" width="92" height="14" rx="7" fill="#168466"/>
+  <circle cx="324" cy="404" r="58" fill="#DFF4EC"/>
+  <path d="M298 406L320 428L356 374" stroke="#168466" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="246" y="498" width="156" height="18" rx="9" fill="#172126"/>
+  <rect x="246" y="540" width="156" height="12" rx="6" fill="#DCE9E5"/>
+  <rect x="246" y="568" width="132" height="12" rx="6" fill="#DCE9E5"/>
+  <rect x="246" y="626" width="132" height="40" rx="20" fill="#168466"/>
+  <rect x="430" y="220" width="280" height="404" rx="30" fill="#172126" filter="url(#lift)"/>
+  <rect x="472" y="268" width="86" height="14" rx="7" fill="#F4B740"/>
+  <circle cx="570" cy="370" r="64" fill="#DFF4EC"/>
+  <path d="M540 374C562 338 598 338 620 374" stroke="#168466" stroke-width="13" stroke-linecap="round"/>
+  <path d="M540 406H620" stroke="#168466" stroke-width="13" stroke-linecap="round"/>
+  <rect x="492" y="484" width="156" height="18" rx="9" fill="white"/>
+  <rect x="492" y="528" width="156" height="12" rx="6" fill="#7FA39B"/>
+  <rect x="492" y="556" width="132" height="12" rx="6" fill="#7FA39B"/>
+  <rect x="492" y="626" width="132" height="40" rx="20" fill="white"/>
+  <rect x="676" y="270" width="260" height="344" rx="28" fill="white" filter="url(#lift)"/>
+  <rect x="712" y="314" width="92" height="14" rx="7" fill="#54B9C6"/>
+  <circle cx="806" cy="404" r="58" fill="#E3F8FB"/>
+  <path d="M776 406C804 360 836 360 862 406" stroke="#54B9C6" stroke-width="12" stroke-linecap="round"/>
+  <path d="M788 438H848" stroke="#54B9C6" stroke-width="12" stroke-linecap="round"/>
+  <rect x="728" y="498" width="156" height="18" rx="9" fill="#172126"/>
+  <rect x="728" y="540" width="156" height="12" rx="6" fill="#DCE9E5"/>
+  <rect x="728" y="568" width="132" height="12" rx="6" fill="#DCE9E5"/>
+  <rect x="728" y="626" width="132" height="40" rx="20" fill="#168466"/>
+  <path d="M148 632C202 684 286 694 344 650" stroke="#168466" stroke-width="8" stroke-linecap="round"/>
+  <path d="M930 234C982 278 986 344 942 396" stroke="#F4B740" stroke-width="8" stroke-linecap="round"/>
+</svg>

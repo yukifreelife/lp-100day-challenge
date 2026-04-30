@@ -1,0 +1,57 @@
+<svg width="1120" height="820" viewBox="0 0 1120 820" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">MiraSkill AI diagnosis dashboard rich visual</title>
+  <desc id="desc">A polished AI diagnosis dashboard with score, skill map, mentor comments, and weekly roadmap cards.</desc>
+  <defs>
+    <linearGradient id="dashBg" x1="90" y1="74" x2="1010" y2="744" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EAF7F3"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="220" y1="140" x2="930" y2="706" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A2A2F"/>
+      <stop offset="1" stop-color="#0E4A3D"/>
+    </linearGradient>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="125%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#172126" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <rect width="1120" height="820" rx="30" fill="url(#dashBg)"/>
+  <circle cx="928" cy="120" r="76" fill="#F4B740" opacity=".24"/>
+  <circle cx="164" cy="704" r="96" fill="#54B9C6" opacity=".16"/>
+  <rect x="72" y="74" width="976" height="672" rx="34" fill="white" filter="url(#card)"/>
+  <rect x="116" y="118" width="296" height="640" rx="28" fill="url(#ink)"/>
+  <rect x="154" y="164" width="136" height="16" rx="8" fill="white"/>
+  <rect x="154" y="202" width="196" height="12" rx="6" fill="#8FB8AD"/>
+  <circle cx="264" cy="338" r="104" fill="#123D35"/>
+  <path d="M264 234A104 104 0 1 1 169 380" stroke="#315D54" stroke-width="20" stroke-linecap="round"/>
+  <path d="M264 234A104 104 0 0 1 362 372" stroke="#DFF4EC" stroke-width="20" stroke-linecap="round"/>
+  <rect x="222" y="316" width="84" height="30" rx="15" fill="white"/>
+  <rect x="228" y="361" width="72" height="12" rx="6" fill="#F4B740"/>
+  <rect x="154" y="500" width="220" height="62" rx="18" fill="white" opacity=".94"/>
+  <rect x="182" y="522" width="82" height="10" rx="5" fill="#168466"/>
+  <rect x="182" y="544" width="144" height="10" rx="5" fill="#DCE9E5"/>
+  <rect x="154" y="592" width="220" height="62" rx="18" fill="#DFF4EC"/>
+  <rect x="182" y="614" width="118" height="10" rx="5" fill="#172126"/>
+  <rect x="182" y="636" width="132" height="10" rx="5" fill="#168466"/>
+  <rect x="458" y="126" width="536" height="108" rx="24" fill="#F7FBFA" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="500" y="162" width="164" height="14" rx="7" fill="#172126"/>
+  <rect x="500" y="194" width="330" height="12" rx="6" fill="#DCE9E5"/>
+  <rect x="860" y="154" width="90" height="44" rx="22" fill="#168466"/>
+  <rect x="458" y="278" width="252" height="196" rx="24" fill="#FFFFFF" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="496" y="314" width="124" height="14" rx="7" fill="#172126"/>
+  <rect x="496" y="360" width="166" height="14" rx="7" fill="#DCE9E5"/>
+  <rect x="496" y="360" width="132" height="14" rx="7" fill="#168466"/>
+  <rect x="496" y="402" width="166" height="14" rx="7" fill="#DCE9E5"/>
+  <rect x="496" y="402" width="110" height="14" rx="7" fill="#F4B740"/>
+  <rect x="746" y="278" width="248" height="196" rx="24" fill="#FFFFFF" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="784" y="314" width="118" height="14" rx="7" fill="#172126"/>
+  <path d="M808 424C834 368 872 354 918 396C938 414 958 420 974 410" stroke="#168466" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="812" cy="424" r="9" fill="#168466"/>
+  <circle cx="876" cy="372" r="9" fill="#F4B740"/>
+  <circle cx="936" cy="412" r="9" fill="#54B9C6"/>
+  <rect x="458" y="520" width="536" height="146" rx="24" fill="#F7FBFA" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="498" y="556" width="104" height="14" rx="7" fill="#168466"/>
+  <rect x="498" y="594" width="118" height="34" rx="17" fill="white"/>
+  <rect x="642" y="594" width="118" height="34" rx="17" fill="#FFF3D1"/>
+  <rect x="786" y="594" width="118" height="34" rx="17" fill="#DFF4EC"/>
+  <rect x="800" y="704" width="180" height="38" rx="19" fill="#172126"/>
+</svg>

@@ -1,0 +1,14 @@
+:root {
+  --mira-white: #ffffff;
+  --mira-cloud: #f7fbfa;
+  --mira-ink: #172126;
+  --mira-slate: #5f6f72;
+  --mira-green: #168466;
+  --mira-deep: #0d5e4b;
+  --mira-mint: #dff4ec;
+  --mira-amber: #f4b740;
+  --mira-cyan: #54b9c6;
+  --mira-line: #dce9e5;
+  --mira-radius: 8px;
+  --mira-shadow-soft: 0 18px 42px rgba(23, 33, 38, 0.09);
+}

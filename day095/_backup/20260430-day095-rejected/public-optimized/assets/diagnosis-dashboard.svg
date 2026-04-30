@@ -1,0 +1,24 @@
+<svg width="880" height="560" viewBox="0 0 880 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI skill diagnosis result card</title>
+  <desc id="desc">A compact dashboard showing AI readiness score, recommended course, and weekly learning plan.</desc>
+  <rect width="880" height="560" rx="24" fill="white"/>
+  <rect x="34" y="34" width="812" height="492" rx="22" fill="#F7FBFA" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="72" y="72" width="220" height="18" rx="9" fill="#172126"/>
+  <rect x="72" y="112" width="320" height="12" rx="6" fill="#DCE9E5"/>
+  <circle cx="194" cy="266" r="108" fill="#DFF4EC"/>
+  <path d="M194 158A108 108 0 1 1 117.6 342.4" stroke="#DCE9E5" stroke-width="20" stroke-linecap="round"/>
+  <path d="M194 158A108 108 0 0 1 293.6 307.8" stroke="#168466" stroke-width="20" stroke-linecap="round"/>
+  <rect x="158" y="246" width="72" height="18" rx="9" fill="#172126"/>
+  <rect x="146" y="280" width="96" height="12" rx="6" fill="#168466"/>
+  <rect x="380" y="158" width="414" height="74" rx="16" fill="white" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="410" y="181" width="116" height="12" rx="6" fill="#168466"/>
+  <rect x="410" y="207" width="282" height="10" rx="5" fill="#DCE9E5"/>
+  <rect x="380" y="256" width="414" height="74" rx="16" fill="white" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="410" y="279" width="146" height="12" rx="6" fill="#F4B740"/>
+  <rect x="410" y="305" width="238" height="10" rx="5" fill="#DCE9E5"/>
+  <rect x="380" y="354" width="414" height="74" rx="16" fill="white" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="410" y="377" width="166" height="12" rx="6" fill="#54B9C6"/>
+  <rect x="410" y="403" width="304" height="10" rx="5" fill="#DCE9E5"/>
+  <rect x="72" y="430" width="240" height="42" rx="21" fill="#168466"/>
+  <rect x="120" y="445" width="144" height="12" rx="6" fill="white"/>
+</svg>

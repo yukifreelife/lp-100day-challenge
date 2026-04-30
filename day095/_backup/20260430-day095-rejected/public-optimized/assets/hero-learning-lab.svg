@@ -1,0 +1,47 @@
+<svg width="1120" height="820" viewBox="0 0 1120 820" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">MiraSkill AI learning dashboard</title>
+  <desc id="desc">A professional AI learning dashboard with skill diagnosis, roadmap, and mentor feedback panels.</desc>
+  <rect width="1120" height="820" rx="28" fill="#F7FBFA"/>
+  <path d="M0 110H1120" stroke="#DCE9E5" stroke-width="2"/>
+  <path d="M116 0V820M258 0V820M400 0V820M542 0V820M684 0V820M826 0V820M968 0V820" stroke="#E8F1EE" stroke-width="2"/>
+  <circle cx="58" cy="56" r="14" fill="#CE4B4B"/>
+  <circle cx="104" cy="56" r="14" fill="#F4B740"/>
+  <circle cx="150" cy="56" r="14" fill="#168466"/>
+  <rect x="226" y="36" width="504" height="40" rx="20" fill="white" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="250" y="50" width="190" height="12" rx="6" fill="#DFF4EC"/>
+  <rect x="64" y="160" width="290" height="580" rx="22" fill="white" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="92" y="194" width="142" height="18" rx="9" fill="#172126"/>
+  <rect x="92" y="232" width="214" height="12" rx="6" fill="#DCE9E5"/>
+  <rect x="92" y="270" width="224" height="86" rx="14" fill="#DFF4EC"/>
+  <path d="M120 328C134 298 158 292 184 314C210 336 237 322 260 292" stroke="#168466" stroke-width="9" stroke-linecap="round"/>
+  <rect x="92" y="390" width="224" height="54" rx="14" fill="#172126"/>
+  <rect x="118" y="411" width="118" height="12" rx="6" fill="#F4B740"/>
+  <rect x="92" y="474" width="224" height="64" rx="14" fill="#F7FBFA" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="118" y="494" width="46" height="10" rx="5" fill="#168466"/>
+  <rect x="118" y="516" width="154" height="10" rx="5" fill="#DCE9E5"/>
+  <rect x="92" y="558" width="224" height="64" rx="14" fill="#F7FBFA" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="118" y="578" width="64" height="10" rx="5" fill="#54B9C6"/>
+  <rect x="118" y="600" width="128" height="10" rx="5" fill="#DCE9E5"/>
+  <rect x="400" y="160" width="656" height="220" rx="24" fill="#172126"/>
+  <rect x="438" y="198" width="178" height="18" rx="9" fill="white"/>
+  <rect x="438" y="236" width="300" height="12" rx="6" fill="#8FA0A2"/>
+  <rect x="438" y="260" width="246" height="12" rx="6" fill="#8FA0A2"/>
+  <rect x="438" y="310" width="168" height="38" rx="19" fill="#168466"/>
+  <path d="M842 216C871 188 925 188 954 216C984 244 984 298 954 326C925 354 871 354 842 326C812 298 812 244 842 216Z" fill="#DFF4EC"/>
+  <path d="M848 302C872 256 902 238 948 218" stroke="#168466" stroke-width="13" stroke-linecap="round"/>
+  <path d="M820 262H988M902 180V350" stroke="white" stroke-opacity=".75" stroke-width="7" stroke-linecap="round"/>
+  <rect x="400" y="416" width="312" height="324" rx="24" fill="white" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="432" y="452" width="132" height="16" rx="8" fill="#172126"/>
+  <rect x="432" y="492" width="220" height="12" rx="6" fill="#DCE9E5"/>
+  <rect x="432" y="528" width="232" height="30" rx="15" fill="#DFF4EC"/>
+  <rect x="432" y="584" width="180" height="30" rx="15" fill="#FFF2CC"/>
+  <rect x="432" y="640" width="212" height="30" rx="15" fill="#E3F6FA"/>
+  <rect x="750" y="416" width="306" height="324" rx="24" fill="white" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="782" y="452" width="152" height="16" rx="8" fill="#172126"/>
+  <rect x="782" y="500" width="214" height="16" rx="8" fill="#DCE9E5"/>
+  <rect x="782" y="500" width="174" height="16" rx="8" fill="#168466"/>
+  <rect x="782" y="552" width="214" height="16" rx="8" fill="#DCE9E5"/>
+  <rect x="782" y="552" width="138" height="16" rx="8" fill="#F4B740"/>
+  <rect x="782" y="604" width="214" height="16" rx="8" fill="#DCE9E5"/>
+  <rect x="782" y="604" width="164" height="16" rx="8" fill="#54B9C6"/>
+</svg>

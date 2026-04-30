@@ -1,0 +1,30 @@
+<svg width="960" height="620" viewBox="0 0 960 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI learning course path cards</title>
+  <desc id="desc">Three practical AI reskilling course cards for work efficiency, career building, and side projects.</desc>
+  <rect width="960" height="620" rx="24" fill="#F7FBFA"/>
+  <rect x="44" y="46" width="872" height="528" rx="22" fill="white" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="84" y="90" width="176" height="18" rx="9" fill="#172126"/>
+  <rect x="84" y="128" width="320" height="12" rx="6" fill="#DCE9E5"/>
+  <rect x="84" y="186" width="236" height="300" rx="18" fill="#F7FBFA" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="118" y="222" width="82" height="12" rx="6" fill="#168466"/>
+  <rect x="118" y="258" width="128" height="24" rx="12" fill="#172126"/>
+  <rect x="118" y="316" width="154" height="12" rx="6" fill="#DCE9E5"/>
+  <rect x="118" y="352" width="128" height="12" rx="6" fill="#DCE9E5"/>
+  <rect x="118" y="388" width="170" height="12" rx="6" fill="#DCE9E5"/>
+  <rect x="118" y="434" width="136" height="34" rx="17" fill="#168466"/>
+  <rect x="362" y="160" width="236" height="348" rx="18" fill="#172126"/>
+  <rect x="396" y="198" width="76" height="12" rx="6" fill="#F4B740"/>
+  <rect x="396" y="234" width="132" height="24" rx="12" fill="white"/>
+  <rect x="396" y="292" width="154" height="12" rx="6" fill="#6F7C7E"/>
+  <rect x="396" y="328" width="128" height="12" rx="6" fill="#6F7C7E"/>
+  <rect x="396" y="364" width="170" height="12" rx="6" fill="#6F7C7E"/>
+  <rect x="396" y="400" width="146" height="12" rx="6" fill="#6F7C7E"/>
+  <rect x="396" y="452" width="136" height="34" rx="17" fill="white"/>
+  <rect x="640" y="186" width="236" height="300" rx="18" fill="#F7FBFA" stroke="#DCE9E5" stroke-width="2"/>
+  <rect x="674" y="222" width="82" height="12" rx="6" fill="#54B9C6"/>
+  <rect x="674" y="258" width="128" height="24" rx="12" fill="#172126"/>
+  <rect x="674" y="316" width="154" height="12" rx="6" fill="#DCE9E5"/>
+  <rect x="674" y="352" width="128" height="12" rx="6" fill="#DCE9E5"/>
+  <rect x="674" y="388" width="170" height="12" rx="6" fill="#DCE9E5"/>
+  <rect x="674" y="434" width="136" height="34" rx="17" fill="#168466"/>
+</svg>
