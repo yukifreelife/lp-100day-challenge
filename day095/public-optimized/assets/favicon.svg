@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="StockOps Atelier">
+  <rect width="64" height="64" rx="12" fill="#0d5c63"/>
+  <path d="M15 22 32 13l17 9v20l-17 9-17-9V22Z" fill="#f7f5ef" stroke="#d8d2c4" stroke-width="2"/>
+  <path d="m15 22 17 9 17-9M32 31v20" fill="none" stroke="#0d5c63" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M23 20.5 40 30" fill="none" stroke="#c96f32" stroke-width="3" stroke-linecap="round"/>
+</svg>

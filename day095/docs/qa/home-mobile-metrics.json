@@ -1,0 +1,250 @@
+{
+  "href": "http://127.0.0.1:8095/",
+  "viewport": 390,
+  "documentScrollWidth": 390,
+  "bodyScrollWidth": 390,
+  "h1": "小さなEC運営を、静かな管制室に変える。",
+  "overflowCount": 30,
+  "overflow": [
+    {
+      "tag": "div",
+      "text": "StockOpsAtelierダッシュボード在庫価格SKU台帳アラート連携レポート設定最終同期07:202025/05/20 07:20同期",
+      "left": 20,
+      "right": 840,
+      "width": 820,
+      "cls": "dashboard-shell max-w-full overflow-hidden rounded-md border border-grid bg-[#fb"
+    },
+    {
+      "tag": "div",
+      "text": "StockOpsAtelierダッシュボード在庫価格SKU台帳アラート連携レポート設定最終同期07:202025/05/20 07:20同期",
+      "left": 21,
+      "right": 839,
+      "width": 818,
+      "cls": "grid lg:grid-cols-[220px_1fr]"
+    },
+    {
+      "tag": "aside",
+      "text": "StockOpsAtelierダッシュボード在庫価格SKU台帳アラート連携レポート設定最終同期07:202025/05/20 07:20同期",
+      "left": 21,
+      "right": 915,
+      "width": 894,
+      "cls": "dashboard-sidebar bg-teal p-5 text-white"
+    },
+    {
+      "tag": "div",
+      "text": "StockOpsAtelier",
+      "left": 37,
+      "right": 899,
+      "width": 862,
+      "cls": "mb-8 flex items-center gap-3"
+    },
+    {
+      "tag": "nav",
+      "text": "ダッシュボード在庫価格SKU台帳アラート連携レポート設定",
+      "left": 37,
+      "right": 899,
+      "width": 862,
+      "cls": "space-y-2"
+    },
+    {
+      "tag": "a",
+      "text": "ダッシュボード",
+      "left": 37,
+      "right": 464,
+      "width": 427,
+      "cls": "flex items-center gap-3 rounded-md px-3 py-3 text-sm font-semibold transition fo"
+    },
+    {
+      "tag": "a",
+      "text": "在庫",
+      "left": 472,
+      "right": 899,
+      "width": 427,
+      "cls": "flex items-center gap-3 rounded-md px-3 py-3 text-sm font-semibold transition fo"
+    },
+    {
+      "tag": "svg",
+      "text": "",
+      "left": 484,
+      "right": 505,
+      "width": 21,
+      "cls": "[object SVGAnimatedString]"
+    },
+    {
+      "tag": "path",
+      "text": "",
+      "left": 487,
+      "right": 502,
+      "width": 15,
+      "cls": "[object SVGAnimatedString]"
+    },
+    {
+      "tag": "a",
+      "text": "価格",
+      "left": 37,
+      "right": 464,
+      "width": 427,
+      "cls": "flex items-center gap-3 rounded-md px-3 py-3 text-sm font-semibold transition fo"
+    },
+    {
+      "tag": "a",
+      "text": "SKU台帳",
+      "left": 472,
+      "right": 899,
+      "width": 427,
+      "cls": "flex items-center gap-3 rounded-md px-3 py-3 text-sm font-semibold transition fo"
+    },
+    {
+      "tag": "svg",
+      "text": "",
+      "left": 484,
+      "right": 505,
+      "width": 21,
+      "cls": "[object SVGAnimatedString]"
+    },
+    {
+      "tag": "path",
+      "text": "",
+      "left": 488,
+      "right": 502,
+      "width": 14,
+      "cls": "[object SVGAnimatedString]"
+    },
+    {
+      "tag": "path",
+      "text": "",
+      "left": 488,
+      "right": 502,
+      "width": 14,
+      "cls": "[object SVGAnimatedString]"
+    },
+    {
+      "tag": "a",
+      "text": "アラート",
+      "left": 37,
+      "right": 464,
+      "width": 427,
+      "cls": "flex items-center gap-3 rounded-md px-3 py-3 text-sm font-semibold transition fo"
+    },
+    {
+      "tag": "a",
+      "text": "連携",
+      "left": 472,
+      "right": 899,
+      "width": 427,
+      "cls": "flex items-center gap-3 rounded-md px-3 py-3 text-sm font-semibold transition fo"
+    },
+    {
+      "tag": "svg",
+      "text": "",
+      "left": 484,
+      "right": 505,
+      "width": 21,
+      "cls": "[object SVGAnimatedString]"
+    },
+    {
+      "tag": "path",
+      "text": "",
+      "left": 497,
+      "right": 502,
+      "width": 4,
+      "cls": "[object SVGAnimatedString]"
+    },
+    {
+      "tag": "path",
+      "text": "",
+      "left": 488,
+      "right": 492,
+      "width": 4,
+      "cls": "[object SVGAnimatedString]"
+    },
+    {
+      "tag": "path",
+      "text": "",
+      "left": 488,
+      "right": 501,
+      "width": 13,
+      "cls": "[object SVGAnimatedString]"
+    },
+    {
+      "tag": "path",
+      "text": "",
+      "left": 488,
+      "right": 502,
+      "width": 13,
+      "cls": "[object SVGAnimatedString]"
+    },
+    {
+      "tag": "a",
+      "text": "レポート",
+      "left": 37,
+      "right": 464,
+      "width": 427,
+      "cls": "flex items-center gap-3 rounded-md px-3 py-3 text-sm font-semibold transition fo"
+    },
+    {
+      "tag": "a",
+      "text": "設定",
+      "left": 472,
+      "right": 899,
+      "width": 427,
+      "cls": "flex items-center gap-3 rounded-md px-3 py-3 text-sm font-semibold transition fo"
+    },
+    {
+      "tag": "svg",
+      "text": "",
+      "left": 484,
+      "right": 505,
+      "width": 21,
+      "cls": "[object SVGAnimatedString]"
+    },
+    {
+      "tag": "path",
+      "text": "",
+      "left": 491,
+      "right": 498,
+      "width": 6,
+      "cls": "[object SVGAnimatedString]"
+    },
+    {
+      "tag": "path",
+      "text": "",
+      "left": 488,
+      "right": 502,
+      "width": 14,
+      "cls": "[object SVGAnimatedString]"
+    },
+    {
+      "tag": "div",
+      "text": "最終同期07:202025/05/20 07:20同期を実行",
+      "left": 37,
+      "right": 899,
+      "width": 862,
+      "cls": "mt-10 border-t border-white/[0.18] pt-6"
+    },
+    {
+      "tag": "p",
+      "text": "最終同期",
+      "left": 37,
+      "right": 899,
+      "width": 862,
+      "cls": "text-xs font-semibold text-white/75"
+    },
+    {
+      "tag": "p",
+      "text": "07:20",
+      "left": 37,
+      "right": 899,
+      "width": 862,
+      "cls": "mt-2 text-3xl font-semibold"
+    },
+    {
+      "tag": "p",
+      "text": "2025/05/20 07:20",
+      "left": 37,
+      "right": 899,
+      "width": 862,
+      "cls": "mt-1 text-xs text-white/75"
+    }
+  ]
+}

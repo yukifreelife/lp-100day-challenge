@@ -1,0 +1,82 @@
+[
+  {
+    "route": "home",
+    "href": "http://127.0.0.1:8095/#home",
+    "h1": "小さなEC運営を、静かな管制室に変える。",
+    "scrollWidth": 1440,
+    "viewport": 1440,
+    "mainTop": 65,
+    "brokenImages": [],
+    "devLabels": false
+  },
+  {
+    "route": "demo",
+    "href": "http://127.0.0.1:8095/#demo",
+    "h1": "毎朝の管制室を、そのままデモで確認。",
+    "scrollWidth": 1440,
+    "viewport": 1440,
+    "mainTop": 65,
+    "brokenImages": [],
+    "devLabels": false
+  },
+  {
+    "route": "features",
+    "href": "http://127.0.0.1:8095/#features",
+    "h1": "在庫、価格、SKUを一枚の運営台帳にまとめる。",
+    "scrollWidth": 1440,
+    "viewport": 1440,
+    "mainTop": 65,
+    "brokenImages": [],
+    "devLabels": false
+  },
+  {
+    "route": "channels",
+    "href": "http://127.0.0.1:8095/#channels",
+    "h1": "販売チャネルごとのズレを、カードで追える。",
+    "scrollWidth": 1440,
+    "viewport": 1440,
+    "mainTop": 65,
+    "brokenImages": [],
+    "devLabels": false
+  },
+  {
+    "route": "cases",
+    "href": "http://127.0.0.1:8095/#cases",
+    "h1": "小規模ECの現場で、判断の順番を変える。",
+    "scrollWidth": 1440,
+    "viewport": 1440,
+    "mainTop": 65,
+    "brokenImages": [],
+    "devLabels": false
+  },
+  {
+    "route": "help",
+    "href": "http://127.0.0.1:8095/#help",
+    "h1": "迷った時に、運用台帳へ戻れるヘルプセンター。",
+    "scrollWidth": 1440,
+    "viewport": 1440,
+    "mainTop": 65,
+    "brokenImages": [],
+    "devLabels": false
+  },
+  {
+    "route": "news",
+    "href": "http://127.0.0.1:8095/#news",
+    "h1": "連携状況と運用案内を、時系列で確認する。",
+    "scrollWidth": 1440,
+    "viewport": 1440,
+    "mainTop": 65,
+    "brokenImages": [],
+    "devLabels": false
+  },
+  {
+    "route": "legal",
+    "href": "http://127.0.0.1:8095/#legal",
+    "h1": "安心して運用を預けるための法務・ポリシー。",
+    "scrollWidth": 1440,
+    "viewport": 1440,
+    "mainTop": 65,
+    "brokenImages": [],
+    "devLabels": false
+  }
+]

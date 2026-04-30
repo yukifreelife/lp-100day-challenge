@@ -1,0 +1,114 @@
+[
+  {
+    "route": "diagnosis",
+    "href": "http://127.0.0.1:8095/#diagnosis",
+    "h1": "在庫・価格・SKUの詰まりを、無料で棚卸し。",
+    "scrollWidth": 390,
+    "bodyScrollWidth": 390,
+    "viewport": 390,
+    "buttonSample": [
+      {
+        "text": "-",
+        "type": "button",
+        "ariaExpanded": null
+      },
+      {
+        "text": "+",
+        "type": "button",
+        "ariaExpanded": null
+      },
+      {
+        "text": "-",
+        "type": "button",
+        "ariaExpanded": null
+      },
+      {
+        "text": "+",
+        "type": "button",
+        "ariaExpanded": null
+      },
+      {
+        "text": "診断内容を確認する",
+        "type": "button",
+        "ariaExpanded": null
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "route": "pricing",
+    "href": "http://127.0.0.1:8095/#pricing",
+    "h1": "SKU数と相談頻度で選べる、静かな月額プラン。",
+    "scrollWidth": 390,
+    "bodyScrollWidth": 390,
+    "viewport": 390,
+    "buttonSample": [],
+    "brokenImages": []
+  },
+  {
+    "route": "security",
+    "href": "http://127.0.0.1:8095/#security",
+    "h1": "ひとり運営でも、データの扱いを曖昧にしない。",
+    "scrollWidth": 390,
+    "bodyScrollWidth": 390,
+    "viewport": 390,
+    "buttonSample": [],
+    "brokenImages": []
+  },
+  {
+    "route": "faq",
+    "href": "http://127.0.0.1:8095/#faq",
+    "h1": "導入前の疑問を、ひとつずつ消していく。",
+    "scrollWidth": 390,
+    "bodyScrollWidth": 390,
+    "viewport": 390,
+    "buttonSample": [
+      {
+        "text": "QExcelやスプレッドシートから移行できますか？-",
+        "type": "button",
+        "ariaExpanded": "true"
+      },
+      {
+        "text": "Q個人事業主でも契約できますか？+",
+        "type": "button",
+        "ariaExpanded": "false"
+      },
+      {
+        "text": "Q対応していないカートでも使えますか？+",
+        "type": "button",
+        "ariaExpanded": "false"
+      },
+      {
+        "text": "Q導入までどれくらいかかりますか？+",
+        "type": "button",
+        "ariaExpanded": "false"
+      },
+      {
+        "text": "Qアラートは毎日確認が必要ですか？+",
+        "type": "button",
+        "ariaExpanded": "false"
+      },
+      {
+        "text": "Qスタッフごとに見られる範囲を変えられますか？+",
+        "type": "button",
+        "ariaExpanded": "false"
+      },
+      {
+        "text": "Qイベント販売の在庫も管理できますか？+",
+        "type": "button",
+        "ariaExpanded": "false"
+      },
+      {
+        "text": "Qプランは途中で変更できますか？+",
+        "type": "button",
+        "ariaExpanded": "false"
+      },
+      {
+        "text": "Q請求書払いに対応していますか？+",
+        "type": "button",
+        "ariaExpanded": "false"
+      }
+    ],
+    "brokenImages": []
+  }
+]

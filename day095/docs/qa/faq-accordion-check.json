@@ -1,0 +1,26 @@
+{
+  "count": 9,
+  "before": [
+    "true",
+    "true",
+    "false",
+    "false",
+    "false",
+    "false",
+    "false",
+    "false",
+    "false"
+  ],
+  "after": [
+    "true",
+    "false",
+    "false",
+    "false",
+    "false",
+    "false",
+    "false",
+    "false",
+    "false"
+  ],
+  "secondText": "Q個人事業主でも契約できますか？+"
+}

@@ -1,0 +1,299 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --texture-grid: linear-gradient(rgba(216, 210, 196, 0.45) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(216, 210, 196, 0.45) 1px, transparent 1px);
+  --texture-size: 28px 28px;
+  --paper-noise: radial-gradient(circle at 18% 20%, rgba(201, 111, 50, 0.08), transparent 18%),
+    radial-gradient(circle at 86% 10%, rgba(13, 92, 99, 0.08), transparent 16%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f7f5ef;
+  color: #171a1c;
+  font-family: Inter, "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid rgba(13, 92, 99, 0.45);
+  outline-offset: 3px;
+}
+
+@layer utilities {
+  .paper-bg {
+    background:
+      var(--paper-noise),
+      var(--texture-grid),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(247, 245, 239, 0.94));
+    background-size: auto, var(--texture-size), auto;
+  }
+
+  .section-shell {
+    background:
+      linear-gradient(rgba(255, 255, 255, 0.44), rgba(255, 255, 255, 0.18)),
+      var(--texture-grid);
+    background-size: auto, var(--texture-size);
+  }
+
+  .paper-card {
+    position: relative;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    background-image:
+      linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(250, 248, 241, 0.76)),
+      var(--texture-grid);
+    background-size: auto, 22px 22px;
+  }
+
+  .dashboard-sidebar {
+    background:
+      radial-gradient(circle at 30% 10%, rgba(105, 185, 157, 0.22), transparent 28%),
+      linear-gradient(160deg, #0d5c63, #004e54 54%, #07383d);
+  }
+
+  .reveal {
+    animation: reveal-up 0.7s ease both;
+  }
+
+  .line-draw {
+    stroke-dasharray: 260;
+    stroke-dashoffset: 260;
+    animation: line-draw 1.8s ease forwards;
+  }
+
+  .label-float {
+    animation: label-float 3.2s ease-in-out infinite;
+  }
+
+  .cta-pulse {
+    animation: cta-pulse 2.8s ease-in-out infinite;
+  }
+
+  .home-hero::after {
+    position: absolute;
+    inset: auto 0 0;
+    height: 120px;
+    pointer-events: none;
+    content: "";
+    background: linear-gradient(180deg, transparent, rgba(247, 245, 239, 0.86));
+  }
+
+  .dashboard-reveal {
+    animation: reveal-up 0.85s ease 0.12s both;
+  }
+
+  .flow-card {
+    animation: reveal-up 0.62s ease both;
+  }
+
+  .flow-card:nth-child(2) {
+    animation-delay: 90ms;
+  }
+
+  .flow-card:nth-child(3) {
+    animation-delay: 180ms;
+  }
+
+  .flow-card:nth-child(4) {
+    animation-delay: 270ms;
+  }
+
+  .flow-card:nth-child(5) {
+    animation-delay: 360ms;
+  }
+
+  .flow-card:not(:last-child)::after {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    z-index: 2;
+    width: 30px;
+    height: 1px;
+    content: "";
+    background: linear-gradient(90deg, #0d5c63, transparent);
+  }
+
+  .feature-card::before,
+  .faq-card::before,
+  .diagnosis-strip::before {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    content: "";
+    background-image: url("/assets/decor/paper-grid-tile.png");
+    background-size: 160px 160px;
+    opacity: 0.12;
+  }
+
+  .diagnosis-strip {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .diagnosis-strip > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .paper-card:hover {
+    border-color: rgba(13, 92, 99, 0.24);
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes line-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes label-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(1deg);
+  }
+}
+
+@keyframes cta-pulse {
+  0%,
+  100% {
+    box-shadow: 0 12px 28px rgba(13, 92, 99, 0.18);
+  }
+  50% {
+    box-shadow: 0 16px 36px rgba(13, 92, 99, 0.32);
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-hero .dashboard-shell {
+    min-width: 980px;
+    transform-origin: left center;
+    transform: scale(0.86);
+  }
+}
+
+@media (min-width: 1280px) {
+  .home-hero .dashboard-shell {
+    transform: scale(0.92);
+  }
+}
+
+@media (max-width: 1023px) {
+  .home-hero .dashboard-shell {
+    min-width: 900px;
+  }
+
+  .dashboard-reveal {
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .flow-card:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .section-shell {
+    overflow: hidden;
+  }
+
+  .paper-card {
+    padding: 1rem;
+  }
+
+  .dashboard-shell {
+    border-radius: 8px;
+  }
+
+  .dashboard-shell aside {
+    padding: 1rem;
+  }
+
+  .dashboard-shell nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .dashboard-shell nav a {
+    min-width: 0;
+    padding: 0.7rem 0.75rem;
+  }
+
+  .dashboard-shell nav a svg {
+    flex: 0 0 auto;
+  }
+
+  .home-hero .dashboard-shell {
+    min-width: 820px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .line-draw {
+    stroke-dashoffset: 0;
+  }
+}

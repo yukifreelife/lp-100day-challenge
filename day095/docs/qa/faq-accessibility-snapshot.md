@@ -1,0 +1,140 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "StockOps Atelier ホームへ" [ref=e6] [cursor=pointer]:
+        - /url: "#home"
+        - img [ref=e8]
+        - generic [ref=e12]: StockOps Atelier
+      - navigation [ref=e735]:
+        - link "機能" [ref=e736] [cursor=pointer]:
+          - /url: "#features"
+        - link "導入の流れ" [ref=e737] [cursor=pointer]:
+          - /url: "#demo"
+        - link "料金" [ref=e738] [cursor=pointer]:
+          - /url: "#pricing"
+        - link "活用方法" [ref=e739] [cursor=pointer]:
+          - /url: "#column"
+        - link "連携カード" [ref=e740] [cursor=pointer]:
+          - /url: "#channels"
+        - link "よくある質問" [ref=e741] [cursor=pointer]:
+          - /url: "#faq"
+        - link "お知らせ" [ref=e742] [cursor=pointer]:
+          - /url: "#news"
+      - generic [ref=e13]:
+        - link "ログイン" [ref=e743] [cursor=pointer]:
+          - /url: "#legal"
+        - link "無料で棚卸し診断を受ける" [ref=e744] [cursor=pointer]:
+          - /url: "#diagnosis"
+          - generic [ref=e745]: 無料で棚卸し診断を受ける
+          - img [ref=e16]
+  - main [ref=e19]:
+    - generic [ref=e904]:
+      - generic [ref=e905]:
+        - generic [ref=e906]: FAQ
+        - heading "導入前の疑問を、ひとつずつ消していく。" [level=1] [ref=e907]
+        - paragraph [ref=e908]: 契約、移行、連携、毎日の運用について、個人事業主や小規模ECから多い質問をまとめました。
+      - generic [ref=e910]:
+        - generic [ref=e911]:
+          - generic [ref=e912]
+          - generic [ref=e915]: 確認済み
+        - generic [ref=e916]:
+          - generic [ref=e917]
+          - generic [ref=e921]
+          - generic [ref=e925]
+    - generic [ref=e930]:
+      - generic [ref=e931]:
+        - paragraph [ref=e932]: 導入前
+        - heading "導入前に関する質問" [level=2] [ref=e933]
+      - generic [ref=e934]:
+        - generic [ref=e935]:
+          - button "Q Excelやスプレッドシートから移行できますか？ -" [expanded] [ref=e936] [cursor=pointer]
+          - paragraph [ref=e940]: 可能です。既存のSKU表、原価表、在庫表を確認し、列名の整理から初期インポートまで支援します。
+        - button "Q 個人事業主でも契約できますか？ +" [ref=e942] [cursor=pointer]:
+          - generic [ref=e943]: Q
+          - generic [ref=e944]: 個人事業主でも契約できますか？
+          - generic [ref=e945]: +
+        - button "Q 対応していないカートでも使えますか？ +" [ref=e947] [cursor=pointer]:
+          - generic [ref=e948]: Q
+          - generic [ref=e949]: 対応していないカートでも使えますか？
+          - generic [ref=e950]: +
+        - button "Q 導入までどれくらいかかりますか？ +" [ref=e952] [cursor=pointer]:
+          - generic [ref=e953]: Q
+          - generic [ref=e954]: 導入までどれくらいかかりますか？
+          - generic [ref=e955]: +
+    - generic [ref=e957]:
+      - generic [ref=e958]:
+        - paragraph [ref=e959]: 運用
+        - heading "運用に関する質問" [level=2] [ref=e960]
+      - generic [ref=e961]:
+        - button "Q アラートは毎日確認が必要ですか？ +" [ref=e963] [cursor=pointer]:
+          - generic [ref=e964]: Q
+          - generic [ref=e965]: アラートは毎日確認が必要ですか？
+          - generic [ref=e966]: +
+        - button "Q スタッフごとに見られる範囲を変えられますか？ +" [ref=e968] [cursor=pointer]:
+          - generic [ref=e969]: Q
+          - generic [ref=e970]: スタッフごとに見られる範囲を変えられますか？
+          - generic [ref=e971]: +
+        - button "Q イベント販売の在庫も管理できますか？ +" [ref=e973] [cursor=pointer]:
+          - generic [ref=e974]: Q
+          - generic [ref=e975]: イベント販売の在庫も管理できますか？
+          - generic [ref=e976]: +
+    - generic [ref=e978]:
+      - generic [ref=e979]:
+        - paragraph [ref=e980]: 契約
+        - heading "契約に関する質問" [level=2] [ref=e981]
+      - generic [ref=e982]:
+        - button "Q プランは途中で変更できますか？ +" [ref=e984] [cursor=pointer]:
+          - generic [ref=e985]: Q
+          - generic [ref=e986]: プランは途中で変更できますか？
+          - generic [ref=e987]: +
+        - button "Q 請求書払いに対応していますか？ +" [ref=e989] [cursor=pointer]:
+          - generic [ref=e990]: Q
+          - generic [ref=e991]: 請求書払いに対応していますか？
+          - generic [ref=e992]: +
+    - generic [ref=e994]:
+      - generic [ref=e995]:
+        - generic [ref=e996]: サポート
+        - paragraph [ref=e997]: 台帳を見ても迷う時は、運用相談へ。
+        - paragraph [ref=e998]: CSV、連携、価格判断の詰まりをサポート担当が一緒に確認します。
+      - generic [ref=e999]:
+        - link "相談する" [ref=e1000] [cursor=pointer]:
+          - /url: "#contact"
+          - text: 相談する
+          - img [ref=e1001]
+        - link "無料診断へ" [ref=e1004] [cursor=pointer]:
+          - /url: "#diagnosis"
+          - text: 無料診断へ
+          - img [ref=e1005]
+  - generic [ref=e578]:
+    - generic [ref=e579]:
+      - img [ref=e581]
+      - generic [ref=e585]:
+        - paragraph [ref=e586]: 小さなEC運営を、静かな管制室に変える。
+        - paragraph [ref=e587]: 在庫・価格・SKUを、毎朝見える状態へ。
+    - generic [ref=e588]:
+      - link "無料で棚卸し診断を受ける" [ref=e589] [cursor=pointer]:
+        - /url: "#diagnosis"
+      - link "デモ画面を見る" [ref=e590] [cursor=pointer]:
+        - /url: "#demo"
+        - text: デモ画面を見る
+        - img [ref=e591]
+  - contentinfo [ref=e594]:
+    - generic [ref=e595]:
+      - generic [ref=e596]:
+        - generic [ref=e597]:
+          - img [ref=e599]
+          - paragraph [ref=e603]: StockOps Atelier
+        - paragraph [ref=e604]: StockOps Atelierは、小規模EC・個人ブランドの在庫、価格変動、チャネル別販売状況を一枚の運営台帳にまとめる在庫オペレーション支援サービスです。
+      - generic [ref=e605]:
+        - generic [ref=e606]:
+          - paragraph [ref=e607]: 機能
+          - generic [ref=e608]
+        - generic [ref=e612]:
+          - paragraph [ref=e613]: 参考情報
+          - generic [ref=e614]
+        - generic [ref=e618]:
+          - paragraph [ref=e619]: サポート
+          - generic [ref=e620]
+        - generic [ref=e624]:
+          - paragraph [ref=e625]: 導入相談
+          - generic [ref=e626]

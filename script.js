@@ -489,6 +489,17 @@ const worksData = [
     tech: ["React", "Tailwind CSS", "Vite"],
     url: "./day094/",
   },
+  {
+    day: "Day095",
+    title: "StockOps Atelier | 小規模ECの在庫オペレーション台帳",
+    category: "Operations",
+    industry: "小規模EC・在庫管理",
+    focus: "無料棚卸し診断 / デモ相談",
+    summary: "ひとり運営・小規模ECの在庫、価格、SKU、チャネル同期を毎朝見える状態に整える架空サービスサイト。紙台帳の質感と管理画面UIを組み合わせ、診断、デモ、料金、連携、事例、セキュリティ、ヘルプまで多ページで再構築。",
+    metric: "14ルート構成・無料棚卸し診断・ライブダッシュボード・透過アイコン・下層ページUI・Browser Use検収",
+    tech: ["React", "Tailwind CSS", "Vite"],
+    url: "./day095/",
+  },
 ];
 
 const colorByCategory = {
@@ -512,6 +523,7 @@ const colorByCategory = {
   Travel: "#1B4332",
   Wellness: "#8D7CF1",
   "Emergency Preparedness": "#2F7F88",
+  Operations: "#0D5C63",
 };
 
 const REEL_INTERVAL_MS = 3200;

@@ -1,0 +1,74 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "StockOps Atelier ホームへ" [ref=e6] [cursor=pointer]:
+        - /url: "#home"
+        - img [ref=e8]
+        - generic [ref=e12]: StockOps Atelier
+      - navigation [ref=e735]:
+        - link "機能" [ref=e736] [cursor=pointer]:
+          - /url: "#features"
+        - link "導入の流れ" [ref=e737] [cursor=pointer]:
+          - /url: "#demo"
+        - link "料金" [ref=e738] [cursor=pointer]:
+          - /url: "#pricing"
+        - link "活用方法" [ref=e739] [cursor=pointer]:
+          - /url: "#column"
+        - link "連携カード" [ref=e740] [cursor=pointer]:
+          - /url: "#channels"
+        - link "よくある質問" [ref=e741] [cursor=pointer]:
+          - /url: "#faq"
+        - link "お知らせ" [ref=e742] [cursor=pointer]:
+          - /url: "#news"
+      - generic [ref=e13]:
+        - link "ログイン" [ref=e743] [cursor=pointer]:
+          - /url: "#legal"
+        - link "無料で棚卸し診断を受ける" [ref=e744] [cursor=pointer]:
+          - /url: "#diagnosis"
+  - main [ref=e19]:
+    - generic [ref=e747]:
+      - generic [ref=e748]:
+        - generic [ref=e749]: Legal / Policy
+        - heading "安心して運用を預けるための法務・ポリシー。" [level=1] [ref=e750]
+        - paragraph [ref=e751]: 利用規約、プライバシー、特商法表記、セキュリティ方針を、確認しやすい台帳形式で整理しています。
+      - generic [ref=e753]:
+        - generic [ref=e754]
+        - generic [ref=e759]
+    - generic [ref=e773]:
+      - generic [ref=e774]:
+        - paragraph [ref=e775]: Documents
+        - heading "確認できる文書" [level=2] [ref=e776]
+      - generic [ref=e777]:
+        - generic [ref=e778]
+        - generic [ref=e805]
+    - generic [ref=e891]:
+      - generic [ref=e892]:
+        - paragraph [ref=e893]: Contact
+        - heading "規約・個人情報に関するお問い合わせ" [level=2] [ref=e894]
+      - generic [ref=e895]:
+        - generic [ref=e896]
+        - link "問い合わせる" [ref=e899] [cursor=pointer]:
+          - /url: "#contact"
+  - generic [ref=e578]:
+    - generic [ref=e579]:
+      - img [ref=e581]
+      - generic [ref=e585]:
+        - paragraph [ref=e586]: 小さなEC運営を、静かな管制室に変える。
+        - paragraph [ref=e587]: 在庫・価格・SKUを、毎朝見える状態へ。
+    - generic [ref=e588]:
+      - link "無料で棚卸し診断を受ける" [ref=e589] [cursor=pointer]:
+        - /url: "#diagnosis"
+      - link "デモ画面を見る" [ref=e590] [cursor=pointer]:
+        - /url: "#demo"
+        - text: デモ画面を見る
+        - img [ref=e591]
+  - contentinfo [ref=e594]:
+    - generic [ref=e595]:
+      - generic [ref=e596]:
+        - generic [ref=e597]
+        - paragraph [ref=e604]: StockOps Atelierは、小規模EC・個人ブランドの在庫、価格変動、チャネル別販売状況を一枚の運営台帳にまとめる在庫オペレーション支援サービスです。
+      - generic [ref=e605]:
+        - generic [ref=e606]
+        - generic [ref=e612]
+        - generic [ref=e618]
+        - generic [ref=e624]
