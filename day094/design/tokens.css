@@ -1,0 +1,21 @@
+:root {
+  --color-clean-white: #ffffff;
+  --color-mist-white: #f6faf8;
+  --color-deep-charcoal: #1f2a2e;
+  --color-calm-slate: #66777a;
+  --color-trust-teal: #2f7f88;
+  --color-harbor-teal: #1f5f68;
+  --color-fresh-mint: #ddf3ec;
+  --color-prepared-yellow: #f4b84a;
+  --color-soft-peach: #ffe4d2;
+  --color-pale-line: #dce8e5;
+  --color-gentle-red: #d95c5c;
+
+  --font-sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-soft: 0 18px 45px rgba(31, 95, 104, 0.12);
+  --shadow-card: 0 10px 28px rgba(31, 42, 46, 0.08);
+  --border-subtle: 1px solid var(--color-pale-line);
+}

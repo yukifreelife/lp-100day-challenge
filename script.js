@@ -478,6 +478,17 @@ const worksData = [
     tech: ["React", "Tailwind CSS", "Vite"],
     url: "./day093/",
   },
+  {
+    day: "Day094",
+    title: "SONAE BOX | 防災備蓄サブスクリプション",
+    category: "Emergency Preparedness",
+    industry: "防災備蓄",
+    focus: "無料備蓄診断 / プラン申込",
+    summary: "家族・ひとり暮らし・オフィスの防災備蓄を、診断・定期配送・期限管理で続けやすくする架空サービスLP。白基調にトラストティールとミントを組み合わせ、信頼感と親しみやすさを両立。",
+    metric: "13ルート構成・備蓄診断・プラン比較・マイページ・申込導線・WebP最適化",
+    tech: ["React", "Tailwind CSS", "Vite"],
+    url: "./day094/",
+  },
 ];
 
 const colorByCategory = {
@@ -500,6 +511,7 @@ const colorByCategory = {
   Restaurant: "#E85D4C",
   Travel: "#1B4332",
   Wellness: "#8D7CF1",
+  "Emergency Preparedness": "#2F7F88",
 };
 
 const REEL_INTERVAL_MS = 3200;
