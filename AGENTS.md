@@ -38,6 +38,11 @@
 - Update existing daily files carefully and keep the established format.
 - Do not delete or reset prior daily logs.
 
+## LP Direction Rule
+- Before proposing or creating a new LP, read `lp100-progress/PROJECT_DIRECTION.md`.
+- Base new LP themes on the project direction: `個人事業主・個人サービス展開者向けLP制作`.
+- Prefer themes for individual business owners, freelancers, solo service providers, specialist practitioners, and local small services unless the user explicitly requests a different direction.
+
 ## Handoff Rule
 - Use `day046+/logs/HANDOFF_LOG.md` for decisions, risks, changes, and next actions (standard structure for clientwork days).
 - When work is paused and will resume in a later day directory, create or update a restart brief in the relevant `logs/` directory.
