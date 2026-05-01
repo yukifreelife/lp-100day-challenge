@@ -21,11 +21,51 @@ const channels = [
   { name: "自社EC / その他", type: "汎用CSV", status: "テンプレート対応", icon: "document", items: ["独自列", "セット品", "メモ"] }
 ];
 
+const channelAssets = [
+  ["/assets/supplemental/crops/channel-card-shopify-generic.png", "Shopify の連携カード"],
+  ["/assets/supplemental/crops/channel-card-base-generic.png", "BASE の連携カード"],
+  ["/assets/supplemental/crops/channel-card-rakuten-generic.png", "楽天市場の連携カード"],
+  ["/assets/supplemental/crops/channel-card-amazon-generic.png", "Amazon の連携カード"],
+  ["/assets/supplemental/crops/channel-card-yahoo-generic.png", "Yahoo!ショッピングの連携カード"],
+  ["/assets/supplemental/crops/channel-card-own-ec.png", "自社ECの連携カード"],
+  ["/assets/supplemental/crops/channel-card-other-csv.png", "汎用CSVの連携カード"]
+];
+
+const integrationAssets = [
+  ["/assets/supplemental/crops/integration-stockops-hub-card.png", "StockOps連携ハブカード"],
+  ["/assets/supplemental/crops/integration-connector-arrows.png", "チャネル連携の矢印"],
+  ["/assets/supplemental/crops/integration-data-icon-set.png", "連携データのアイコンセット"],
+  ["/assets/supplemental/crops/integration-method-cards.png", "連携方法カード"],
+  ["/assets/supplemental/crops/integration-mini-kpi-cards.png", "連携ミニKPIカード"],
+  ["/assets/supplemental/crops/integration-status-badges.png", "連携ステータスバッジ"],
+  ["/assets/supplemental/crops/integration-compatibility-table.png", "連携互換表"],
+  ["/assets/supplemental/crops/integration-memo-card.png", "連携メモカード"],
+  ["/assets/supplemental/crops/integration-request-cta.png", "連携リクエスト導線"]
+];
+
 const securityItems = [
   { title: "権限ごとの閲覧範囲", icon: "lock", text: "仕入れ、出荷、価格確認など担当に合わせて見える台帳を分けられます。" },
   { title: "同期履歴の保存", icon: "calendar", text: "誰が、いつ、どのチャネルを更新したかを履歴として残します。" },
   { title: "CSVの扱いを固定", icon: "document", text: "初期設定時に列名と用途を確認し、不要な個人情報を取り込まない運用にします。" },
   { title: "通知先の管理", icon: "mail", text: "欠品や価格差分の通知先を担当別に整理し、見落としを減らします。" }
+];
+
+const securityAssets = [
+  ["/assets/supplemental/crops/security-status-icon-row.png", "セキュリティステータス"],
+  ["/assets/supplemental/crops/security-information-cards.png", "扱う情報の整理カード"],
+  ["/assets/supplemental/crops/security-integration-methods.png", "安全な連携方法"],
+  ["/assets/supplemental/crops/security-permission-matrix.png", "権限マトリクス"],
+  ["/assets/supplemental/crops/security-stamp-and-barcode.png", "セキュリティ確認スタンプとバーコード"],
+  ["/assets/supplemental/crops/security-data-flow-diagram.png", "データフロー図"]
+];
+
+const casePhotoCrops = [
+  ["/assets/supplemental/crops/photo-case-apparel-inventory.png", "アパレル在庫の現場写真"],
+  ["/assets/supplemental/crops/photo-case-cosmetics-inventory.png", "コスメ在庫の現場写真"],
+  ["/assets/supplemental/crops/photo-case-food-d2c-inventory.png", "食品D2C在庫の現場写真"],
+  ["/assets/supplemental/crops/photo-case-lifestyle-goods-shelf.png", "生活雑貨棚の現場写真"],
+  ["/assets/supplemental/crops/photo-case-shipping-desk.png", "出荷デスクの現場写真"],
+  ["/assets/supplemental/crops/photo-case-stationery-inventory.png", "文具在庫の現場写真"]
 ];
 
 const securityIconRow = [
@@ -65,6 +105,19 @@ function MockImageFrame({ src, alt, label }) {
         <span className="text-xs font-semibold text-slip">画面イメージ</span>
       </div>
       <img className="h-full max-h-[440px] w-full object-cover object-top" src={src} alt={alt} loading="lazy" />
+    </PaperCard>
+  );
+}
+
+function AssetImageCard({ src, alt, label, className = "", ...props }) {
+  return (
+    <PaperCard className={`reveal overflow-hidden p-0 ${className}`} {...props}>
+      {label ? (
+        <div className="border-b border-grid bg-[#f5f1e9]/80 px-4 py-3">
+          <Badge tone="mint">{label}</Badge>
+        </div>
+      ) : null}
+      <img className="h-full w-full object-cover object-top" src={src} alt={alt} loading="eager" />
     </PaperCard>
   );
 }
@@ -291,8 +344,15 @@ export function ChannelsPage() {
         title="販売チャネルごとのズレを、カードで追える。"
         description="Shopify、BASE、楽天、Amazon、自社EC、CSVを同じ台帳へ寄せ、更新履歴と確認キューを残します。"
       >
-        <MockImageFrame src="/assets/stockops-full-lp-ui.webp" alt="StockOps Atelier の管理画面モック" label="連携状況ボード" />
+        <AssetImageCard src="/assets/supplemental/crops/integration-flow-diagram.png" alt="販売チャネルからStockOps台帳へ流れる連携図" label="連携フロー" />
       </PageHero>
+      <SectionShell eyebrow="Channel Cards" title="販売先ごとの状態を、同じ粒度で並べる。">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {channelAssets.map(([src, alt], index) => (
+            <AssetImageCard key={src} src={src} alt={alt} className="min-h-[210px]" style={{ animationDelay: `${index * 60}ms` }} />
+          ))}
+        </div>
+      </SectionShell>
       <SectionShell eyebrow="Cards" title="連携状態が、担当者に伝わるカード設計。">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {channels.map((channel, index) => (
@@ -318,6 +378,13 @@ export function ChannelsPage() {
                 ))}
               </div>
             </PaperCard>
+          ))}
+        </div>
+      </SectionShell>
+      <SectionShell eyebrow="Integration" title="CSV、API、手動確認の違いを先に整理する。">
+        <div className="grid gap-5 lg:grid-cols-3">
+          {integrationAssets.map(([src, alt]) => (
+            <AssetImageCard key={src} src={src} alt={alt} className="min-h-[260px]" />
           ))}
         </div>
       </SectionShell>
@@ -352,6 +419,13 @@ export function CasesPage() {
           ))}
         </div>
       </SectionShell>
+      <SectionShell eyebrow="Field Photos" title="現場写真も、在庫判断の文脈に合わせて整理。">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {casePhotoCrops.map(([src, alt], index) => (
+            <AssetImageCard key={src} src={src} alt={alt} className="aspect-[4/3]" style={{ animationDelay: `${index * 60}ms` }} />
+          ))}
+        </div>
+      </SectionShell>
     </>
   );
 }
@@ -364,8 +438,18 @@ export function SecurityPage() {
         title="ひとり運営でも、データの扱いを曖昧にしない。"
         description="在庫表、原価表、注文CSVを安全に扱うため、権限・履歴・通知先を最初から見える形にします。"
       >
-        <SecurityHeroCard />
+        <AssetImageCard src="/assets/supplemental/crops/security-data-flow-diagram.png" alt="安全なデータ連携フロー" label="データの流れ" />
       </PageHero>
+      <SectionShell eyebrow="Safety Board" title="共有範囲、権限、同期ログをひと目で確認。">
+        <div className="grid gap-4 md:grid-cols-2">
+          {securityAssets.map(([src, alt]) => (
+            <AssetImageCard key={src} src={src} alt={alt} className="min-h-[280px]" />
+          ))}
+        </div>
+      </SectionShell>
+      <SectionShell eyebrow="Security Summary" title="取り込む情報と残さない情報を分ける。">
+        <SecurityHeroCard />
+      </SectionShell>
       <SectionShell eyebrow="Security Controls" title="権限、同期ログ、通知先、CSV列管理をひと目で確認。">
         <SecurityIconStrip />
       </SectionShell>

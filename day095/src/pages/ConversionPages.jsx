@@ -68,6 +68,17 @@ function MockPreview({ src, alt, label }) {
   );
 }
 
+function AssetPreview({ src, alt, label, className = "" }) {
+  return (
+    <PaperCard className={`reveal overflow-hidden p-0 ${className}`}>
+      <div className="border-b border-grid bg-[#f5f1e9]/75 px-4 py-3">
+        <Badge tone="mint">{label}</Badge>
+      </div>
+      <img src={src} alt={alt} className="h-full w-full object-cover object-top" loading="eager" />
+    </PaperCard>
+  );
+}
+
 function FloatingIcon({ src, className = "" }) {
   return <img src={src} alt="" className={`label-float pointer-events-none absolute hidden object-contain opacity-90 lg:block ${className}`} />;
 }
@@ -253,7 +264,7 @@ export function DiagnosisPage() {
       </SectionShell>
 
       <SectionShell eyebrow="Check Sheet" title="診断で見る項目">
-        <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="grid gap-5 lg:grid-cols-[0.82fr_1fr_1.18fr]">
           <PaperCard>
             <Checklist
               items={[
@@ -271,6 +282,12 @@ export function DiagnosisPage() {
               ["粗利率", "注意", "価格表を更新"],
               ["同期履歴", "未記録", "朝の確認列を追加"]
             ]}
+          />
+          <AssetPreview
+            src="/assets/supplemental/crops/supplemental-form-diagnostic-widget.png"
+            alt="診断フォームと診断結果プレビュー"
+            label="診断プレビュー"
+            className="min-h-[280px]"
           />
         </div>
       </SectionShell>
@@ -369,13 +386,21 @@ export function PricingPage() {
       </SectionShell>
 
       <SectionShell eyebrow="Compare" title="迷ったら、台帳の複雑さで選びます。">
-        <MiniLedger
-          rows={[
-            ["1チャネル中心 / 300 SKUまで", "Starter", "CSVで整える"],
-            ["複数モール / 2,000 SKUまで", "Studio", "週次相談つき"],
-            ["担当分業 / 10,000 SKUまで", "Atelier Plus", "権限と通知を設計"]
-          ]}
-        />
+        <div className="grid gap-5 lg:grid-cols-[1.08fr_0.92fr]">
+          <AssetPreview
+            src="/assets/supplemental/crops/supplemental-pricing-cards.png"
+            alt="Starter、Studio、Atelier Plus の料金カード"
+            label="料金カード"
+            className="min-h-[320px]"
+          />
+          <MiniLedger
+            rows={[
+              ["1チャネル中心 / 300 SKUまで", "Starter", "CSVで整える"],
+              ["複数モール / 2,000 SKUまで", "Studio", "週次相談つき"],
+              ["担当分業 / 10,000 SKUまで", "Atelier Plus", "権限と通知を設計"]
+            ]}
+          />
+        </div>
       </SectionShell>
     </>
   );
@@ -396,6 +421,12 @@ export function ContactPage() {
         <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
           <ContactForm />
           <div className="space-y-5">
+            <AssetPreview
+              src="/assets/supplemental/crops/supplemental-support-flow.png"
+              alt="お問い合わせから初期設定までのサポートフロー"
+              label="相談後の流れ"
+              className="min-h-[260px]"
+            />
             <PaperCard className="reveal">
               <Badge tone="mint">返信目安</Badge>
               <h2 className="mt-5 text-2xl font-semibold text-ink">1営業日以内に、確認ポイントを整理して返信します。</h2>

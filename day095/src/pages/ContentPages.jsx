@@ -108,7 +108,7 @@ export function HelpPage() {
         title="迷った時に、運用台帳へ戻れるヘルプセンター。"
         description="初期設定から毎朝の確認まで、StockOps Atelierの使い方を紙台帳の見出しのように探せます。"
       >
-        <HeroLedger type="help" />
+        <SupportAsset src="/assets/supplemental/crops/help-search-and-category-cards.png" alt="ヘルプ検索とカテゴリカード" label="ヘルプ検索" />
       </PageHero>
       <SectionShell eyebrow="Search" title="まずは困っている作業を選ぶ">
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
@@ -128,6 +128,13 @@ export function HelpPage() {
       </SectionShell>
       <SectionShell eyebrow="Popular" title="よく読まれている運用ドキュメント">
         <ArticleTable rows={helpArticles} />
+      </SectionShell>
+      <SectionShell eyebrow="Document Parts" title="検索、人気記事、メタ情報を同じ紙面で扱う。">
+        <div className="grid gap-4 lg:grid-cols-3">
+          <SupportAsset src="/assets/supplemental/crops/help-popular-articles-and-support.png" alt="人気記事とサポート導線" label="人気記事" />
+          <SupportAsset src="/assets/supplemental/crops/documentation-metadata-chips.png" alt="ドキュメントのメタ情報チップ" label="メタ情報" />
+          <SupportAsset src="/assets/supplemental/crops/supplemental-ui-helper-parts.png" alt="補助UIパーツ" label="補助パーツ" />
+        </div>
       </SectionShell>
       <SupportCta />
     </>
@@ -156,7 +163,7 @@ export function FaqPage() {
         title="導入前の疑問を、ひとつずつ消していく。"
         description="契約、移行、連携、毎日の運用について、個人事業主や小規模ECから多い質問をまとめました。"
       >
-        <HeroLedger type="faq" />
+        <SupportAsset src="/assets/supplemental/crops/faq-category-and-accordion.png" alt="FAQカテゴリとアコーディオン" label="FAQ" />
       </PageHero>
       {faqGroups.map((group) => (
         <SectionShell key={group.label} eyebrow={group.label} title={`${group.label}に関する質問`}>
@@ -192,6 +199,9 @@ export function FaqPage() {
           </div>
         </SectionShell>
       ))}
+      <SectionShell eyebrow="FAQ Pattern" title="質問をカテゴリごとに折りたたんで確認する。">
+        <SupportAsset src="/assets/supplemental/crops/supplemental-faq-accordion.png" alt="FAQアコーディオンのUIパターン" label="アコーディオン" />
+      </SectionShell>
       <SupportCta />
     </>
   );
@@ -205,7 +215,7 @@ export function NewsPage() {
         title="連携状況と運用案内を、時系列で確認する。"
         description="機能追加、テンプレート更新、相談枠の案内など、日々の運用に関わる変更を掲載しています。"
       >
-        <HeroLedger type="news" />
+        <SupportAsset src="/assets/supplemental/crops/status-news-release-panel.png" alt="連携ステータスとリリース情報" label="お知らせ" />
       </PageHero>
       <SectionShell eyebrow="Latest" title="最新のお知らせ">
         <div className="grid gap-4">
@@ -220,6 +230,9 @@ export function NewsPage() {
             </PaperCard>
           ))}
         </div>
+      </SectionShell>
+      <SectionShell eyebrow="News List" title="更新情報は、確認すべき順に並べる。">
+        <SupportAsset src="/assets/supplemental/crops/supplemental-news-list.png" alt="ニュース一覧のUIパターン" label="ニュース一覧" />
       </SectionShell>
       <SectionShell eyebrow="Release Note" title="運用担当者向けの補足">
         <div className="grid gap-4 md:grid-cols-3">
@@ -243,7 +256,7 @@ export function ColumnPage() {
         title="小さなECの在庫判断を、明日の手順に変える。"
         description="欠品、価格、SKU整備の悩みを、実務で使えるチェックリストと台帳の見方に落とし込みます。"
       >
-        <HeroLedger type="column" />
+        <SupportAsset src="/assets/supplemental/crops/supplemental-article-card.png" alt="在庫運用コラムの記事カード" label="運用コラム" />
       </PageHero>
       <SectionShell eyebrow="Articles" title="活用方法コラム">
         <div className="grid gap-4 lg:grid-cols-3">
@@ -285,7 +298,7 @@ export function LegalPage() {
         title="安心して運用を預けるための法務・ポリシー。"
         description="利用規約、プライバシー、特商法表記、セキュリティ方針を、確認しやすい台帳形式で整理しています。"
       >
-        <HeroLedger type="legal" />
+        <SupportAsset src="/assets/supplemental/crops/supplemental-legal-side-nav.png" alt="法務文書のサイドナビゲーション" label="ポリシー一覧" />
       </PageHero>
       <SectionShell eyebrow="Documents" title="確認できる文書">
         <div className="grid gap-4 lg:grid-cols-[260px_1fr]">
@@ -337,6 +350,17 @@ export function LegalPage() {
         </PaperCard>
       </SectionShell>
     </>
+  );
+}
+
+function SupportAsset({ src, alt, label }) {
+  return (
+    <PaperCard className="reveal overflow-hidden p-0">
+      <div className="border-b border-grid bg-[#f5f1e9]/80 px-4 py-3">
+        <Badge tone="mint">{label}</Badge>
+      </div>
+      <img src={src} alt={alt} className="h-full max-h-[390px] w-full object-cover object-top" loading="eager" />
+    </PaperCard>
   );
 }
 
@@ -392,12 +416,18 @@ function ArticleTable({ rows }) {
 function SupportCta() {
   return (
     <section className="border-t border-grid/70 bg-[#f1eee6] px-5 py-10 md:px-8">
-      <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-[1fr_auto] md:items-center">
+      <div className="mx-auto grid max-w-7xl gap-5 lg:grid-cols-[1fr_360px_auto] lg:items-center">
         <div>
           <Badge tone="teal">サポート</Badge>
           <p className="mt-3 text-2xl font-semibold leading-8 text-ink">台帳を見ても迷う時は、運用相談へ。</p>
           <p className="mt-2 text-sm leading-7 text-slip">CSV、連携、価格判断の詰まりをサポート担当が一緒に確認します。</p>
         </div>
+        <img
+          src="/assets/supplemental/crops/supplemental-bottom-cta-bar.png"
+          alt="サポート相談の下部CTAバー"
+          className="hidden w-full rounded-md border border-grid bg-white/70 object-cover object-top lg:block"
+          loading="eager"
+        />
         <div className="flex flex-col gap-3 sm:flex-row md:justify-end">
           <Button href="#contact" className="cta-pulse" icon="mail">相談する</Button>
           <Button href="#diagnosis" variant="secondary" icon="search">無料診断へ</Button>

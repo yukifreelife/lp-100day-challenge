@@ -114,6 +114,42 @@ textarea:focus-visible {
     animation: reveal-up 0.85s ease 0.12s both;
   }
 
+  .hero-title {
+    text-wrap: balance;
+  }
+
+  .hero-dashboard-frame {
+    animation: reveal-up 0.85s ease 0.12s both;
+    max-width: 100%;
+  }
+
+  .hero-dashboard-scroll {
+    overflow: hidden;
+    border: 1px solid rgba(216, 210, 196, 0.94);
+    border-radius: 8px;
+    background: #fbfaf6;
+    box-shadow: 0 24px 42px rgba(23, 26, 28, 0.16);
+  }
+
+  .hero-dashboard-image {
+    display: block;
+    width: 100%;
+    min-height: 440px;
+    object-fit: cover;
+    object-position: left top;
+  }
+
+  .hero-sync-card {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    width: 150px;
+  }
+
+  .operation-panel img {
+    max-height: 190px;
+  }
+
   .flow-card {
     animation: reveal-up 0.62s ease both;
   }
@@ -210,27 +246,26 @@ textarea:focus-visible {
 }
 
 @media (min-width: 1024px) {
-  .home-hero .dashboard-shell {
-    min-width: 980px;
-    transform-origin: left center;
-    transform: scale(0.86);
+  .hero-dashboard-frame {
+    margin-right: -18px;
   }
 }
 
 @media (min-width: 1280px) {
-  .home-hero .dashboard-shell {
-    transform: scale(0.92);
+  .hero-dashboard-frame {
+    margin-right: -34px;
   }
 }
 
 @media (max-width: 1023px) {
-  .home-hero .dashboard-shell {
-    min-width: 900px;
+  .hero-dashboard-scroll {
+    overflow-x: auto;
   }
 
-  .dashboard-reveal {
-    overflow-x: auto;
-    padding-bottom: 10px;
+  .hero-dashboard-image {
+    width: 720px;
+    max-width: none;
+    min-height: 0;
   }
 
   .flow-card:not(:last-child)::after {
@@ -276,6 +311,10 @@ textarea:focus-visible {
 
   .home-hero .dashboard-shell {
     min-width: 820px;
+  }
+
+  .operation-panel img {
+    max-height: 150px;
   }
 }
 

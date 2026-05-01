@@ -1,7 +1,7 @@
 import { Icon } from "./Icons";
 
 const buttonBase =
-  "inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 py-3 text-center text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-teal/40 focus-visible:ring-offset-2 hover:-translate-y-0.5 active:translate-y-0";
+  "inline-flex min-h-11 max-w-full items-center justify-center gap-2 rounded-full px-5 py-3 text-center text-sm font-semibold leading-5 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-teal/40 focus-visible:ring-offset-2 hover:-translate-y-0.5 active:translate-y-0";
 
 export function Button({ children, href, variant = "primary", className = "", icon, ...props }) {
   const styles = {
@@ -14,7 +14,7 @@ export function Button({ children, href, variant = "primary", className = "", ic
 
   return (
     <Comp className={`${buttonBase} ${styles[variant] ?? styles.primary} ${className}`} href={href} type={href ? undefined : props.type ?? "button"} {...props}>
-      {children}
+      <span className="min-w-0 break-words">{children}</span>
       {icon ? <Icon name={icon} size={18} /> : null}
     </Comp>
   );
@@ -36,8 +36,15 @@ export function SectionShell({ eyebrow, title, children, className = "", id }) {
   );
 }
 
-export function PaperCard({ children, className = "" }) {
-  return <div className={`paper-card rounded-md border border-grid/80 bg-white/[0.82] p-5 shadow-sm transition-shadow hover:shadow-md ${className}`}>{children}</div>;
+export function PaperCard({ children, className = "", ...props }) {
+  return (
+    <div
+      className={`paper-card rounded-md border border-grid/80 bg-white/[0.82] p-5 shadow-sm transition-shadow hover:shadow-md ${className}`}
+      {...props}
+    >
+      {children}
+    </div>
+  );
 }
 
 export function Badge({ children, tone = "teal", className = "" }) {
