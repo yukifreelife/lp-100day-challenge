@@ -1,0 +1,225 @@
+# 医療LP設定
+
+## 概要
+信頼感と安心感を重視した、医療機関向けのデザイン設定
+
+## カラーパレット
+```yaml
+primary: "#4A90A4"      # 信頼感のあるティールブルー
+secondary: "#5B7C99"    # ネイビーブルー
+accent: "#7CB9E8"       # ライトブルー
+background: "#F0F7FA"   # 非常に薄いブルー
+text: "#2C3E50"         # ダークスレートグレー
+border: "#D4E5ED"       # ライトブルー
+shadow: "rgba(74, 144, 164, 0.1)"
+```
+
+## フォント設定
+```yaml
+japanese:
+  primary: "Noto Sans JP, sans-serif"
+  fallback: "Hiragino Sans, sans-serif"
+  weights: [400, 500, 700]
+
+english:
+  primary: "Inter, sans-serif"
+  fallback: "Helvetica Neue, sans-serif"
+  weights: [400, 500, 600]
+
+line_height:
+  base: 1.7
+  heading: 1.4
+
+letter_spacing:
+  base: 0.02em
+  heading: 0.05em
+```
+
+## セクション構成
+```yaml
+sections:
+  - id: hero
+    name: ヒーロー
+    required: true
+    description: メインビジュアルとクリニックメッセージ
+
+  - id: problem
+    name: 悩み・症状
+    required: true
+    description: 患者様の悩みを提示
+
+  - id: solution
+    name: 解決策
+    required: true
+    description: 治療法・施術内容
+
+  - id: features
+    name: 特徴
+    required: true
+    description: クリニックの特徴・こだわり
+
+  - id: doctors
+    name: 医師・スタッフ紹介
+    required: true
+    description: 経歴、専門分野
+
+  - id: flow
+    name: 診療の流れ
+    required: true
+    description: 初診から治療までの流れ
+
+  - id: voice
+    name: 患者様の声
+    required: true
+    description: 施術経験者の声
+
+  - id: faq
+    name: よくある質問
+    required: true
+    description: 不安解消のためのQ&A
+
+  - id: access
+    name: アクセス
+    required: true
+    description: 地図、診療時間
+
+  - id: reservation
+    name: 予約・問い合わせ
+    required: true
+    description: WEB予約、電話予約
+```
+
+## サブカテゴリー別調整
+```yaml
+歯科医院:
+  tone: "清潔・信頼"
+  primary_color: "#4A90A4"
+  secondary_color: "#5B7C99"
+  accent_color: "#7CB9E8"
+  key_sections: [problem, solution, doctors, flow, voice]
+  specific_features:
+    - 痛みへの配慮
+    - 最新設備
+    - セカンドオピニオン
+
+美容皮膚科:
+  tone: "エレガント・美しさ"
+  primary_color: "#E8B4B8"
+  secondary_color: "#C49A9E"
+  accent_color: "#F5D5D8"
+  key_sections: [problem, solution, gallery, doctors, pricing]
+  specific_features:
+    - カウンセリング重視
+    - 施術写真ギャラリー
+    - 料金プラン明示
+
+整体院:
+  tone: "自然・穏やか"
+  primary_color: "#6B8E23"
+  secondary_color: "#8FBC8F"
+  accent_color: "#D4E8D4"
+  key_sections: [problem, solution, features, flow, voice]
+  specific_features:
+    - 施術の丁寧な説明
+    - オーダーメイド施術
+    - アフターフォロー
+
+整骨院:
+  tone: "アクティブ・スポーツ"
+  primary_color: "#4169E1"
+  secondary_color: "#6495ED"
+  accent_color: "#B0C4DE"
+  key_sections: [problem, solution, features, flow]
+  specific_features:
+    - スポーツ障害
+    - 保険適用
+    - 即日施術
+
+心理咨询:
+  tone: "温かい・安心"
+  primary_color: "#9370DB"
+  secondary_color: "#B8A9E8"
+  accent_color: "#E6E1F5"
+  key_sections: [problem, solution, doctors, flow, faq]
+  specific_features:
+    - 完全守秘義務
+    - 初めての方へ
+    - カウンセラー紹介
+
+美容クリニック:
+  tone: "先進・洗練"
+  primary_color: "#2C3E50"
+  secondary_color: "#34495E"
+  accent_color: "#BDC3C7"
+  key_sections: [problem, solution, features, pricing, faq]
+  specific_features:
+    - 自由診療
+    - 最新技術
+    - カウンセリング
+```
+
+## コピーパターン
+```yaml
+hero:
+  catch_patterns:
+    - "{地域}で信頼されている{診療科目}"
+    - "患者様に寄り添う、丁寧な診療"
+    - "不安を解消する、{特色}のある診療"
+  sub_patterns:
+    - "最先端の{技術}で、あなたの悩みを解決"
+    - "経験豊富な{医師}が、真心を込めて"
+
+problem:
+  patterns:
+    - "こんな悩み、ありませんか？"
+    - "{症状}でお困りではありませんか？"
+    - "これまで、{不満}を感じていませんでしたか？"
+
+solution:
+  patterns:
+    - "{クリニック名}なら、解決できます"
+    - "独自の{メソッド}で、根本から改善"
+
+cta:
+  primary: "無料カウンセリングを予約する"
+  secondary: "詳しく見る"
+```
+
+## よくある質問カテゴリー
+```yaml
+faq_categories:
+  - 初診・ご予約について
+  - 治療・施術について
+  - 料金・保険について
+  - アフターケアについて
+```
+
+## 特有要素
+```yaml
+reservation:
+  types: [web, phone]
+  online_booking: true
+  required_fields: [name, phone, email, preferred_date, symptom]
+
+trust_elements:
+  - 医師免許・資格
+  - 学会所属
+  - 診療実績数値
+  - 保険適用可否
+  - アクセス良さ
+```
+
+## 画像キーワード
+```yaml
+hero:
+  - "{診療科目} クリニック 内観"
+  - "医療施設 清潔"
+
+doctors:
+  - "医師 笑顔"
+  - "医療スタッフ 親切"
+
+flow:
+  - "診療 イラスト"
+  - "医療 フロー 図解"
+```

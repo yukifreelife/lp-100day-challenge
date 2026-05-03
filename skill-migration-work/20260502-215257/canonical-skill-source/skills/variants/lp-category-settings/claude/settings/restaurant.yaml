@@ -1,0 +1,202 @@
+# 飲食店LP設定
+
+## 概要
+高級感と温かみを両立した、飲食店向けのデザイン設定
+
+## カラーパレット
+```yaml
+primary: "#D4A574"      # 温かみのあるブラウン
+secondary: "#8B5E3C"    # 濃いブラウン
+accent: "#E8B4B8"      # パステルピンク
+background: "#FDFBF7"  # クリーム色
+text: "#333333"        # ダークグレー
+border: "#E5D5C5"      # ライトブラウン
+shadow: "rgba(139, 94, 60, 0.1)"
+```
+
+## フォント設定
+```yaml
+japanese:
+  primary: "Shippori Mincho, serif"
+  fallback: "Noto Serif JP, serif"
+  weights: [400, 500, 600, 700]
+
+english:
+  primary: "Cormorant Garamond, serif"
+  fallback: "Playfair Display, serif"
+  weights: [400, 500, 600]
+
+line_height:
+  base: 1.8
+  heading: 1.4
+
+letter_spacing:
+  base: 0.05em
+  heading: 0.1em
+```
+
+## セクション構成
+```yaml
+sections:
+  - id: hero
+    name: ヒーロー
+    required: true
+    description: メインビジュアルとキャッチコピー
+
+  - id: problem
+    name: 悩み・不安
+    required: true
+    description: ターゲットの不安を提示（例：高級寿司店の懸念）
+
+  - id: concept
+    name: コンセプト
+    required: true
+    description: お店の想い、哲学
+
+  - id: features
+    name: こだわり
+    required: true
+    description: 素材、職人、空間等のこだわり
+
+  - id: course
+    name: コース・料金
+    required: true
+    description: メニュー、価格帯
+
+  - id: chef
+    name: 職人プロフィール
+    optional: true
+    description: シェフ・職人の紹介
+
+  - id: one-day
+    name: 職人の一日（O2N）
+    optional: true
+    description: One Day Narrative - 一日タイムライン
+
+  - id: gallery
+    name: ギャラリー
+    required: true
+    description: 料理写真メイン
+
+  - id: voice
+    name: お客様の声
+    required: true
+    description: ソーシャルプルーフ
+
+  - id: access
+    name: アクセス
+    required: true
+    description: 地図、営業時間
+
+  - id: reservation
+    name: 予約
+    required: true
+    description: 予約フォーム・電話予約
+```
+
+## サブカテゴリー別調整
+```yaml
+寿司店:
+  tone: "高級・伝統"
+  primary_color: "#8B5E3C"
+  secondary_color: "#D4A574"
+  font_jp: "Shippori Mincho"
+  accent_color: "#C9A96E"
+  unique_sections: [one-day, chef]
+
+カフェ:
+  tone: "カジュアル・親しみやすい"
+  primary_color: "#A67C52"
+  secondary_color: "#E8D5C5"
+  font_jp: "Noto Sans JP"
+  accent_color: "#F5E6D3"
+  unique_sections: [menu, atmosphere]
+
+居酒屋:
+  tone: "賑やか・夜遊び"
+  primary_color: "#C44D42"
+  secondary_color: "#E8B4B8"
+  font_jp: "Noto Sans JP"
+  accent_color: "#FFD166"
+  unique_sections: [drink-menu, party-plans]
+
+ベーカリー:
+  tone: "温かみ・手作り"
+  primary_color: "#E8B4B8"
+  secondary_color: "#D4A574"
+  font_jp: "Shippori Mincho"
+  accent_color: "#F5E6D3"
+  unique_sections: [baking-process, daily-menu]
+
+カクテルバー:
+  tone: "大人・洗練"
+  primary_color: "#2C3E50"
+  secondary_color: "#34495E"
+  font_jp: "Noto Sans JP"
+  accent_color: "#D4A574"
+  unique_sections: [cocktail-menu, bartender]
+
+レストラン:
+  tone: "フォーマル・エレガント"
+  primary_color: "#5B4B4B"
+  secondary_color: "#8B7355"
+  font_jp: "Shippori Mincho"
+  accent_color: "#C9A96E"
+  unique_sections: [chef, course, wine-pairing]
+```
+
+## コピーパターン
+```yaml
+hero:
+  catch_patterns:
+    - "{こだわり素材}で、特別なひとときを"
+    - "毎朝{時間}から仕込む、本物の味わい"
+    - "{地域}で育まれた、{特色}"
+  sub_patterns:
+    - "その日一番美味しい「朝穫れ」を"
+    - "職人が「見立てる」特別な体験"
+
+problem:
+  patterns:
+    - "特別な日なのに、不安はありませんか？"
+    - "高級{業態}なのに、{不満}..."
+
+cta:
+  primary: "ご予約をご確認ください"
+  secondary: "お店について"
+```
+
+## 特有要素
+```yaml
+o2n:
+  enabled: true
+  description: 職人の一日をタイムラインで紹介
+  sections:
+    - time: "4:00"
+      title: "仕込み開始"
+    - time: "5:30"
+      title: "市場で競り"
+    - time: "18:00"
+      title: "開店・お客様をお迎え"
+
+reservation:
+  types: [phone, form]
+  required_fields: [name, phone, email, date, time, people]
+```
+
+## 画像キーワード
+```yaml
+hero:
+  - "{業態} 内装 高級"
+  - "{業態} 雰囲気"
+
+concept:
+  - "{業態} 匠"
+  - "{業態} 職人"
+
+gallery:
+  - "{業態} 料理"
+  - "{業態} プレート"
+  - "寿司 握り"
+  - "カフェ ラテ"
+```

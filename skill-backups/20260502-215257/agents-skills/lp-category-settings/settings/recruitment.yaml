@@ -1,0 +1,210 @@
+# 採用LP設定
+
+## 概要
+活力と成長を感じさせる、採用向けのデザイン設定
+
+## カラーパレット
+```yaml
+primary: "#2563EB"      # 明るいブルー（活力）
+secondary: "#1E40AF"    # ダークブルー
+accent: "#F59E0B"       # アクションを促すオレンジ
+background: "#FFFFFF"   # ホワイト
+text: "#1F2937"         # ダークグレー
+border: "#DBEAFE"       # ライトブルー
+shadow: "rgba(37, 99, 235, 0.1)"
+```
+
+## フォント設定
+```yaml
+japanese:
+  primary: "Noto Sans JP, sans-serif"
+  fallback: "Hiragino Sans, sans-serif"
+  weights: [400, 500, 700]
+
+english:
+  primary: "Inter, sans-serif"
+  fallback: "Roboto, sans-serif"
+  weights: [400, 500, 600, 700]
+
+line_height:
+  base: 1.7
+  heading: 1.4
+
+letter_spacing:
+  base: 0.01em
+  heading: 0.03em
+```
+
+## セクション構成
+```yaml
+sections:
+  - id: hero
+    name: ヒーロー
+    required: true
+    description: メッセージとビジュアル
+
+  - id: about
+    name: 会社概要・事業内容
+    required: true
+    description: 会社の基本情報
+
+  - id: culture
+    name: 文化・価値観
+    required: true
+    description: ミッション、ビジョン、バリュー
+
+  - id: benefits
+    name: 待遇・福利厚生
+    required: true
+    description: 給与、休日、福利厚生
+
+  - id: interviews
+    name: 社員インタビュー
+    required: true
+    description: 現役社員の声
+
+  - id: jobs
+    name: 募集職種
+    required: true
+    description: 職種別の詳細
+
+  - id: flow
+    name: 選考フロー
+    required: true
+    description: 選考プロセスの可視化
+
+  - id: faq
+    name: よくある質問
+    optional: true
+    description: 応募前の疑問解消
+
+  - id: cta
+    name: 応募
+    required: true
+    description: エントリーフォーム
+```
+
+## サブカテゴリー別調整
+```yaml
+正社員採用:
+  tone: "成長・キャリア"
+  primary_color: "#2563EB"
+  key_sections: [hero, about, culture, benefits, interviews, jobs, flow, cta]
+  specific_features:
+    - キャリアパス
+    - 研修制度
+    - 評価制度
+
+アルバイト:
+  tone: "気軽・柔軟"
+  primary_color: "#10B981"
+  key_sections: [hero, about, culture, benefits, voice, jobs, cta]
+  specific_features:
+    - シフト自由
+    - 日払い
+    - 学生歓迎
+
+新卒採用:
+  tone: "挑戦・未来"
+  primary_color: "#8B5CF6"
+  key_sections: [hero, about, culture, benefits, interviews, flow, faq, cta]
+  specific_features:
+    - 新卒研修
+    - メンター制度
+    - インターン
+
+中途採用:
+  tone: "活躍・即戦力"
+  primary_color: "#2563EB"
+  key_sections: [hero, about, culture, benefits, interviews, jobs, flow, cta]
+  specific_features:
+    - 活躍事例
+    - 前職活かせる
+    - 選考スピード
+
+エンジニア採用:
+  tone: "技術・挑戦"
+  primary_color: "#059669"
+  key_sections: [hero, about, culture, tech-stack, benefits, interviews, jobs, cta]
+  specific_features:
+    - 技術スタック
+    - 開発環境
+    - 技術博客
+```
+
+## コピーパターン
+```yaml
+hero:
+  catch_patterns:
+    - "あなたの{価値}を、{場所}で活かそう"
+    - "{地域}で、{特色}な働き方を"
+    - "一緒に、{ビジョン}を叶えよう"
+  sub_patterns:
+    - "成長し続ける環境がここに"
+    - "あなたのキャリアの次のステージへ"
+
+culture:
+  patterns:
+    - "私たちが大切にすること"
+    - "{会社名}の価値観"
+    - "チームとしての働き方"
+
+interviews:
+  patterns:
+    - "先輩社員に聞く、リアルな働き方"
+    - "{役職}の1日"
+    - "こんな人にとって、最高の職場です"
+
+cta:
+  primary: "エントリーする"
+  secondary: "求人詳細を見る"
+  tertiary: "会社を知る"
+```
+
+## 特有要素
+```yaml
+company_culture:
+  values: ["誠実", "挑戦", "成長", "チームワーク"]
+  work_style:
+    - フレックスタイム
+    - リモートワーク
+    - サテライトオフィス
+
+benefits:
+  salary:
+    - 給与水準
+    - 昇給・賞与
+  time_off:
+    - 有給休暇
+    - 休日
+    - リフレッシュ休暇
+  welfare:
+    - 社会保険完備
+    - 住宅手当
+    - 家族手当
+    - 資格取得支援
+
+selection_flow:
+  steps:
+    - エントリー
+    - 書類選考
+    - 一次面接
+    - 二次面接
+    - 最終面接
+    - 内定
+```
+
+## 画像キーワード
+```yaml
+hero:
+  - "オフィス チーム ワーク"
+  - "ビジネス 協力"
+
+interviews:
+  - "社員 インタビュー"
+  - "職場 笑顔"
+
+culture:
+  - "チーム 会議"
+  - "作業 空間"
+```

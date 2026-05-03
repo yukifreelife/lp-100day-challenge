@@ -1,0 +1,607 @@
+[
+  {
+    "skill": "auto-improve",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "code-review",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "codex-primary-runtime",
+    "codex": {
+      "kind": "directory",
+      "files": [],
+      "has_SKILL": false,
+      "has_skill_lower": false
+    },
+    "claude": null,
+    "agents": null
+  },
+  {
+    "skill": "cognee",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "debug-helper",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "doc-generation",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "figma",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md",
+        "references/figma-mcp-config.md",
+        "references/figma-tools-and-prompts.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": null,
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md",
+        "references/figma-mcp-config.md",
+        "references/figma-tools-and-prompts.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "figma-implement-design",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": null,
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "image-license",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "lp-analytics",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "lp-automation",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": null,
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "lp-automation-v2",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "CHECKLIST.md",
+        "CODE_EXAMPLES.md",
+        "README.md",
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "lp-category-settings",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md",
+        "templates/copy-patterns.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "lp-code-check",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "lp-content",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "lp-design-first-flow",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": null,
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "lp-legal",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "lp-mobile",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "lp-performance",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "lp-seo",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "lp-ux",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "pdf",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": null,
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "security-audit",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  },
+  {
+    "skill": "test-generation",
+    "codex": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "claude": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    },
+    "agents": {
+      "kind": "directory",
+      "files": [
+        "SKILL.md"
+      ],
+      "has_SKILL": true,
+      "has_skill_lower": false
+    }
+  }
+]

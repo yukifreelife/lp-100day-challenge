@@ -500,6 +500,28 @@ const worksData = [
     tech: ["React", "Tailwind CSS", "Vite"],
     url: "./day095/",
   },
+  {
+    day: "Day096",
+    title: "YADO Review Lab | 古民家民泊の予約ページ改善",
+    category: "Hospitality",
+    industry: "地方の古民家民泊・一棟貸し",
+    focus: "無料診断 / 改善相談",
+    summary: "地方の古民家民泊オーナー向けに、写真・案内文・チェックイン導線・レビュー返信を見直し、予約前後の不安を減らす架空LP。藍墨、朱印、真鍮鍵を軸に、和風旅館ではなく予約ページ改善アドバイザーとして訴求。",
+    metric: "7項目診断・改善指標・Before/After・対応範囲明記・料金プラン・Browser Use検収",
+    tech: ["React", "Tailwind CSS", "Vite"],
+    url: "./day096/",
+  },
+  {
+    day: "Day097",
+    title: "たのめる秘書室 | オンライン秘書サービス",
+    category: "Online Assistant",
+    industry: "オンライン秘書・事務サポート",
+    focus: "無料相談 / 事務サポート依頼",
+    summary: "個人事業主や小規模チームが、メール返信・日程調整・資料整理を必要な分だけ頼める架空オンライン秘書サービスサイト。オレンジ基調で、形式ばらず気軽に相談できる親しみやすさを重視。",
+    metric: "4ルート構成・相談フォーム・料金プラン・サービス詳細・透過PNGアイコン・Playwrightスクリーンショット検収",
+    tech: ["React", "Tailwind CSS", "Vite"],
+    url: "./day097/",
+  },
 ];
 
 const colorByCategory = {
@@ -524,6 +546,7 @@ const colorByCategory = {
   Wellness: "#8D7CF1",
   "Emergency Preparedness": "#2F7F88",
   Operations: "#0D5C63",
+  Hospitality: "#1C274C",
 };
 
 const REEL_INTERVAL_MS = 3200;

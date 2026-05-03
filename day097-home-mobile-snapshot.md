@@ -1,0 +1,105 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "たのめる秘書室 ホーム" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img [ref=e8]
+        - generic [ref=e10]: たのめる秘書室
+      - navigation "グローバルナビゲーション" [ref=e11]:
+        - link "ホーム" [ref=e12] [cursor=pointer]:
+          - /url: /
+        - link "頼めること" [ref=e13] [cursor=pointer]:
+          - /url: /service
+        - link "料金" [ref=e14] [cursor=pointer]:
+          - /url: /pricing
+        - link "相談する" [ref=e15] [cursor=pointer]:
+          - /url: /contact
+      - link "まずは15分だけ相談する >" [ref=e16] [cursor=pointer]:
+        - /url: /contact
+        - img [ref=e17]
+        - generic [ref=e18]: まずは15分だけ相談する
+        - text: ">"
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - paragraph [ref=e22]: ちょっと頼める、オンライン秘書サービス
+        - heading "その事務作業、今日からひとりで抱えなくて大丈夫。" [level=1] [ref=e23]
+        - paragraph [ref=e24]: ちょっと頼めるオンライン秘書が、メール返信、日程調整、資料整理を必要な分だけ手伝います。
+        - list [ref=e25]
+        - generic [ref=e32]
+      - generic [ref=e39]:
+        - img [ref=e42]
+        - list "対応できる作業例"
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - paragraph [ref=e45]: Small Tasks
+        - heading "毎日の細かい事務を、頼みやすい単位に分けました" [level=2] [ref=e46]
+        - paragraph [ref=e47]: 採用するほどではないけれど、ひとりで抱えるには重い作業を切り出せます。
+      - generic [ref=e48]:
+        - article [ref=e49]
+        - article [ref=e53]
+        - article [ref=e57]
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - paragraph [ref=e63]: Service
+        - heading "よく頼まれるお手伝い" [level=2] [ref=e64]
+        - paragraph [ref=e65]: メール、日程、資料、予約、調査、請求まわりまで。普段のツールに合わせて進めます。
+      - generic [ref=e66]:
+        - article [ref=e67]
+        - article [ref=e72]
+        - article [ref=e77]
+        - article [ref=e82]
+        - article [ref=e87]
+        - article [ref=e92]
+    - generic [ref=e97]:
+      - generic [ref=e98]:
+        - paragraph [ref=e99]: Flow
+        - heading "相談から完了まで3ステップ" [level=2] [ref=e100]
+      - generic [ref=e101]:
+        - article [ref=e102]
+        - article [ref=e106]
+        - article [ref=e110]
+    - generic [ref=e114]:
+      - generic [ref=e115]:
+        - generic [ref=e116]
+        - list [ref=e119]
+      - generic [ref=e124]:
+        - article [ref=e125]
+        - article [ref=e128]
+    - article [ref=e132]:
+      - img [ref=e133]
+      - generic [ref=e134]:
+        - paragraph [ref=e135]: Price
+        - heading "1件からでも、月ごとでも選べます" [level=2] [ref=e136]
+        - paragraph [ref=e137]: スポット依頼から月額プランまで、作業量に合わせて無理なく始められます。
+      - link "料金を見る >" [ref=e138] [cursor=pointer]:
+        - /url: /pricing
+    - generic [ref=e139]:
+      - generic [ref=e140]:
+        - paragraph [ref=e141]: FAQ
+        - heading "よくある質問" [level=2] [ref=e142]
+      - generic [ref=e143]:
+        - group [ref=e144]
+        - group [ref=e146]
+        - group [ref=e148]
+        - group [ref=e150]
+  - generic [ref=e153]:
+    - img [ref=e155]
+    - paragraph [ref=e156]: ちょっと頼める、オンライン秘書サービス
+    - heading "小さな事務から、今日のうちに手放しましょう。" [level=2] [ref=e157]
+    - paragraph [ref=e158]: 相談だけでも大丈夫。作業の切り出し方から一緒に整理します。
+    - generic [ref=e159]:
+      - link "まずは15分だけ相談する >" [ref=e160] [cursor=pointer]:
+        - /url: /contact
+        - img [ref=e161]
+        - generic [ref=e162]: まずは15分だけ相談する
+        - text: ">"
+      - link "頼める内容を見る >" [ref=e163] [cursor=pointer]:
+        - /url: /service
+        - img [ref=e164]
+        - generic [ref=e165]: 頼める内容を見る
+        - text: ">"
+  - contentinfo [ref=e166]:
+    - generic [ref=e167]:
+      - paragraph [ref=e168]: たのめる秘書室
+      - paragraph [ref=e169]: 個人事業主や小規模チームの事務・日程調整・メール返信・資料整理を、必要な分だけ頼めるオンライン秘書サービスです。

@@ -1,0 +1,278 @@
+[
+  {
+    "skill": "auto-improve",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": false,
+    "hashes": {
+      "codex-user": "409d4847649a15e57a000b2ae624ab36f65b185fc3803dc3a4c2d1912172866d",
+      "codex-legacy": "409d4847649a15e57a000b2ae624ab36f65b185fc3803dc3a4c2d1912172866d",
+      "claude": "bec357d1911a6b018e38c6617102adb5569dd4c4c60f11f4dca80994cbcd4221"
+    }
+  },
+  {
+    "skill": "code-review",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": false,
+    "hashes": {
+      "codex-user": "2a88a18e63e389ed2f91e4e0709e2e61cc54b2fd2c6f343f6ed834353a3f430a",
+      "codex-legacy": "2a88a18e63e389ed2f91e4e0709e2e61cc54b2fd2c6f343f6ed834353a3f430a",
+      "claude": "e53a00819d3a9721bbf8ffc550865a5665a60e73c8235e9dcb10f4d913f623d9"
+    }
+  },
+  {
+    "skill": "cognee",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": false,
+    "hashes": {
+      "codex-user": "28e45e4592f27a07d92afd5e8dd34c38ff584b71ba5caf33deb7f70331471c37",
+      "codex-legacy": "28e45e4592f27a07d92afd5e8dd34c38ff584b71ba5caf33deb7f70331471c37",
+      "claude": "f7983c5af021c64b474910ad56fa7b8575c17342f462bd62ecce671674ed242f"
+    }
+  },
+  {
+    "skill": "debug-helper",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": false,
+    "hashes": {
+      "codex-user": "0ec70b6c71d915bcfa3e00b23303808478b28a27944c3f6f3c3a9ae5a64f49a8",
+      "codex-legacy": "0ec70b6c71d915bcfa3e00b23303808478b28a27944c3f6f3c3a9ae5a64f49a8",
+      "claude": "cbea5d3e6d458ad8a5c5b0348642194ba3d9eaf12df805cd5537896334f0620b"
+    }
+  },
+  {
+    "skill": "doc-generation",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": false,
+    "hashes": {
+      "codex-user": "ee6e4ff0d82165f0c7b29c037813e47c3186ed0bec394badcb1a380ff7f55700",
+      "codex-legacy": "ee6e4ff0d82165f0c7b29c037813e47c3186ed0bec394badcb1a380ff7f55700",
+      "claude": "5936f6fe9e707d99db739695c573ced87d15b4997bf8437600cec68dabb5efaa"
+    }
+  },
+  {
+    "skill": "figma",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "missing",
+    "same_content": true,
+    "hashes": {
+      "codex-user": "5b11f7c8d0ce4c047b401323e7b8fe6559bd3162a3397bf5248634a5444609d5",
+      "codex-legacy": "5b11f7c8d0ce4c047b401323e7b8fe6559bd3162a3397bf5248634a5444609d5",
+      "claude": null
+    }
+  },
+  {
+    "skill": "figma-implement-design",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "missing",
+    "same_content": true,
+    "hashes": {
+      "codex-user": "adea0fa5ed0b77a75112f64737f4aa562fcc231d242370f8cbdb25d050be19ad",
+      "codex-legacy": "adea0fa5ed0b77a75112f64737f4aa562fcc231d242370f8cbdb25d050be19ad",
+      "claude": null
+    }
+  },
+  {
+    "skill": "image-license",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": false,
+    "hashes": {
+      "codex-user": "54398ca585b9f8811837db7a091ed176d7357d88b1d185c311cbe48dd8339137",
+      "codex-legacy": "54398ca585b9f8811837db7a091ed176d7357d88b1d185c311cbe48dd8339137",
+      "claude": "378edf4ee17abff3c0ff2b5fcc28675f6865883c38fc7885d47ff4db7dbf6aff"
+    }
+  },
+  {
+    "skill": "lp-analytics",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": true,
+    "hashes": {
+      "codex-user": "0fbbee41b8ce69dbc58be06f30dec03fdc41a2af8117341706d95b7c21890241",
+      "codex-legacy": "0fbbee41b8ce69dbc58be06f30dec03fdc41a2af8117341706d95b7c21890241",
+      "claude": "0fbbee41b8ce69dbc58be06f30dec03fdc41a2af8117341706d95b7c21890241"
+    }
+  },
+  {
+    "skill": "lp-automation",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": false,
+    "hashes": {
+      "codex-user": "2936be8dcbf984b8edced1d80ab20abcae9fcfeaee1828c9094e600c5a0408b2",
+      "codex-legacy": "2936be8dcbf984b8edced1d80ab20abcae9fcfeaee1828c9094e600c5a0408b2",
+      "claude": "1eaa013442d62a3e7813567d4c2d6eb1bb67ec59c053dfe2c3593aff0e39df88"
+    }
+  },
+  {
+    "skill": "lp-automation-v2",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": false,
+    "hashes": {
+      "codex-user": "d8d24fe868aa7ef8e41a34d0935201b5ddd14f58814103a844b2678e5932b4f8",
+      "codex-legacy": "d8d24fe868aa7ef8e41a34d0935201b5ddd14f58814103a844b2678e5932b4f8",
+      "claude": "e4070b2d7efd0323c6172f0f08722611f49838ca4cb3ffd92a17ffb1a8c7adaa"
+    }
+  },
+  {
+    "skill": "lp-category-settings",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": false,
+    "hashes": {
+      "codex-user": "070608ee37766993371cfd49995f9da5c28a65a82a966a046a50643b23454a7d",
+      "codex-legacy": "070608ee37766993371cfd49995f9da5c28a65a82a966a046a50643b23454a7d",
+      "claude": "12be7ea4ebcc9cd4a7c958f1b8873b65c4f140a15fc3e727641606c49cf0aaa9"
+    }
+  },
+  {
+    "skill": "lp-code-check",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": true,
+    "hashes": {
+      "codex-user": "226b7cca76372ae254ba94ba70d533b262bf954e185996f373f69f823e8ec531",
+      "codex-legacy": "226b7cca76372ae254ba94ba70d533b262bf954e185996f373f69f823e8ec531",
+      "claude": "226b7cca76372ae254ba94ba70d533b262bf954e185996f373f69f823e8ec531"
+    }
+  },
+  {
+    "skill": "lp-content",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": true,
+    "hashes": {
+      "codex-user": "0f4ac5879cf79a9dbc72c0317707071d90cacfa14feeee0915e20427bcec583b",
+      "codex-legacy": "0f4ac5879cf79a9dbc72c0317707071d90cacfa14feeee0915e20427bcec583b",
+      "claude": "0f4ac5879cf79a9dbc72c0317707071d90cacfa14feeee0915e20427bcec583b"
+    }
+  },
+  {
+    "skill": "lp-design-first-flow",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": false,
+    "hashes": {
+      "codex-user": "b6b252ee5bfaa5d4d1caa2310fc7fe752735e5fb25d0465035ca9ef9063b6294",
+      "codex-legacy": "b6b252ee5bfaa5d4d1caa2310fc7fe752735e5fb25d0465035ca9ef9063b6294",
+      "claude": "cea23ad34eaf5abc8d22d1c75cc7813a9eb4ae27d28f725f00a163234f1d3128"
+    }
+  },
+  {
+    "skill": "lp-legal",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": true,
+    "hashes": {
+      "codex-user": "831769408ce21e719f9e6397c01eba00c2119b159883817d68fc24615bf88fc1",
+      "codex-legacy": "831769408ce21e719f9e6397c01eba00c2119b159883817d68fc24615bf88fc1",
+      "claude": "831769408ce21e719f9e6397c01eba00c2119b159883817d68fc24615bf88fc1"
+    }
+  },
+  {
+    "skill": "lp-mobile",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": true,
+    "hashes": {
+      "codex-user": "4751d95ba5f8ae051adbbcfae6c88a906963920ec0ec949e29eeac9e7a4ad89f",
+      "codex-legacy": "4751d95ba5f8ae051adbbcfae6c88a906963920ec0ec949e29eeac9e7a4ad89f",
+      "claude": "4751d95ba5f8ae051adbbcfae6c88a906963920ec0ec949e29eeac9e7a4ad89f"
+    }
+  },
+  {
+    "skill": "lp-performance",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": true,
+    "hashes": {
+      "codex-user": "cd5254dbb76504646a5b63533b5ceefd8127d4c00435ebff681f9021f3a6dc0a",
+      "codex-legacy": "cd5254dbb76504646a5b63533b5ceefd8127d4c00435ebff681f9021f3a6dc0a",
+      "claude": "cd5254dbb76504646a5b63533b5ceefd8127d4c00435ebff681f9021f3a6dc0a"
+    }
+  },
+  {
+    "skill": "lp-seo",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": true,
+    "hashes": {
+      "codex-user": "7d16442ba9392aee466b02038f78414ffaeac6052bb6a13fa8431c32eefefa31",
+      "codex-legacy": "7d16442ba9392aee466b02038f78414ffaeac6052bb6a13fa8431c32eefefa31",
+      "claude": "7d16442ba9392aee466b02038f78414ffaeac6052bb6a13fa8431c32eefefa31"
+    }
+  },
+  {
+    "skill": "lp-ux",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": true,
+    "hashes": {
+      "codex-user": "f90c77b3441d4fb6eff352f6111ca8c425abbe845df8e0de606e97d674820f12",
+      "codex-legacy": "f90c77b3441d4fb6eff352f6111ca8c425abbe845df8e0de606e97d674820f12",
+      "claude": "f90c77b3441d4fb6eff352f6111ca8c425abbe845df8e0de606e97d674820f12"
+    }
+  },
+  {
+    "skill": "pdf",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": false,
+    "hashes": {
+      "codex-user": "d108cf2b36355ab37eb5962933f4d09785ec002f3105c506129320209306b9d2",
+      "codex-legacy": "d108cf2b36355ab37eb5962933f4d09785ec002f3105c506129320209306b9d2",
+      "claude": "283baf24630935957c92a1cd583b56a0e3a2096ef732e7613e412725e816b21a"
+    }
+  },
+  {
+    "skill": "security-audit",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": false,
+    "hashes": {
+      "codex-user": "2fbbe663975f99ff0707f9bc24455558f26d2c07971b190c617b5c91c20a940e",
+      "codex-legacy": "2fbbe663975f99ff0707f9bc24455558f26d2c07971b190c617b5c91c20a940e",
+      "claude": "9b833c331a650c8e5d3ce82cfce632f14fba53a8f6125ba70a6969d1dd319fe5"
+    }
+  },
+  {
+    "skill": "test-generation",
+    "codex-user": "present",
+    "codex-legacy": "present",
+    "claude": "present",
+    "same_content": false,
+    "hashes": {
+      "codex-user": "1ea206ce27a262e5096e25fbfbf248cbc4f40465ceac1172915c65249af11cc9",
+      "codex-legacy": "1ea206ce27a262e5096e25fbfbf248cbc4f40465ceac1172915c65249af11cc9",
+      "claude": "fc842d8da3f581e121411a32c6baef49143b4e6636d76e142e064c10f972f022"
+    }
+  }
+]

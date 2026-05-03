@@ -1,0 +1,125 @@
+{
+  "source_root": "/Users/yuuki/Works/lp-100/skill-migration-work/20260502-215257/canonical-skill-source",
+  "counts": {
+    "variant": 13,
+    "codex-only": 2,
+    "common": 8
+  },
+  "manifest": [
+    {
+      "skill": "auto-improve",
+      "classification": "variant",
+      "source": "codex-user+claude"
+    },
+    {
+      "skill": "code-review",
+      "classification": "variant",
+      "source": "codex-user+claude"
+    },
+    {
+      "skill": "cognee",
+      "classification": "variant",
+      "source": "codex-user+claude"
+    },
+    {
+      "skill": "debug-helper",
+      "classification": "variant",
+      "source": "codex-user+claude"
+    },
+    {
+      "skill": "doc-generation",
+      "classification": "variant",
+      "source": "codex-user+claude"
+    },
+    {
+      "skill": "figma",
+      "classification": "codex-only",
+      "source": "codex-user"
+    },
+    {
+      "skill": "figma-implement-design",
+      "classification": "codex-only",
+      "source": "codex-user"
+    },
+    {
+      "skill": "image-license",
+      "classification": "variant",
+      "source": "codex-user+claude"
+    },
+    {
+      "skill": "lp-analytics",
+      "classification": "common",
+      "source": "codex-user"
+    },
+    {
+      "skill": "lp-automation",
+      "classification": "variant",
+      "source": "codex-user+claude"
+    },
+    {
+      "skill": "lp-automation-v2",
+      "classification": "variant",
+      "source": "codex-user+claude"
+    },
+    {
+      "skill": "lp-category-settings",
+      "classification": "variant",
+      "source": "codex-user+claude"
+    },
+    {
+      "skill": "lp-code-check",
+      "classification": "common",
+      "source": "codex-user"
+    },
+    {
+      "skill": "lp-content",
+      "classification": "common",
+      "source": "codex-user"
+    },
+    {
+      "skill": "lp-design-first-flow",
+      "classification": "variant",
+      "source": "codex-user+claude"
+    },
+    {
+      "skill": "lp-legal",
+      "classification": "common",
+      "source": "codex-user"
+    },
+    {
+      "skill": "lp-mobile",
+      "classification": "common",
+      "source": "codex-user"
+    },
+    {
+      "skill": "lp-performance",
+      "classification": "common",
+      "source": "codex-user"
+    },
+    {
+      "skill": "lp-seo",
+      "classification": "common",
+      "source": "codex-user"
+    },
+    {
+      "skill": "lp-ux",
+      "classification": "common",
+      "source": "codex-user"
+    },
+    {
+      "skill": "pdf",
+      "classification": "variant",
+      "source": "codex-user+claude"
+    },
+    {
+      "skill": "security-audit",
+      "classification": "variant",
+      "source": "codex-user+claude"
+    },
+    {
+      "skill": "test-generation",
+      "classification": "variant",
+      "source": "codex-user+claude"
+    }
+  ]
+}

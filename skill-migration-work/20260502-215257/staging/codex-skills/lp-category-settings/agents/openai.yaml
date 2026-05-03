@@ -1,0 +1,4 @@
+interface:
+  display_name: "LP Category Settings"
+  short_description: "Industry-specific palette, typography, and section guidance"
+  default_prompt: "Choose the appropriate lp-100 LP category settings and use them to guide the design and copy direction."

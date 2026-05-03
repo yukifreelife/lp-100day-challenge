@@ -1,0 +1,192 @@
+# 不動産LP設定
+
+## 概要
+信頼感と安心感を重視した、不動産向けのデザイン設定
+
+## カラーパレット
+```yaml
+primary: "#2D6A4F"      # 信頼感のあるダークグリーン
+secondary: "#40916C"    # ミディアムグリーン
+accent: "#D8F3DC"       # ライトグリーン
+background: "#F8FAF9"   # オフホワイト
+text: "#1B4332"         # ダークグリーン
+border: "#D4E8D8"       # ライトグリーン
+shadow: "rgba(45, 106, 79, 0.1)"
+```
+
+## フォント設定
+```yaml
+japanese:
+  primary: "Noto Sans JP, sans-serif"
+  fallback: "Hiragino Sans, sans-serif"
+  weights: [400, 500, 700]
+
+english:
+  primary: "Inter, sans-serif"
+  fallback: "Helvetica Neue, sans-serif"
+  weights: [400, 500, 600]
+
+line_height:
+  base: 1.7
+  heading: 1.4
+
+letter_spacing:
+  base: 0.02em
+  heading: 0.05em
+```
+
+## セクション構成
+```yaml
+sections:
+  - id: hero
+    name: ヒーロー
+    required: true
+    description: メインビジュアルと物件概要
+
+  - id: search
+    name: 物件検索
+    required: true
+    description: 条件検索機能
+
+  - id: features
+    name: 特徴
+    required: true
+    description: 立地、設備等の特徴
+
+  - id: gallery
+    name: ギャラリー
+    required: true
+    description: 部屋の写真
+
+  - id: floor-plan
+    name: 間取り
+    required: true
+    description: 間取り図
+
+  - id: area
+    name: 周辺環境
+    required: true
+    description: 地図、周辺施設
+
+  - id: access
+    name: アクセス
+    required: true
+    description: 交通手段
+
+  - id: voice
+    name: 入居者の声
+    optional: true
+    description: 現在の入居者の声
+
+  - id: faq
+    name: よくある質問
+    optional: true
+    description: 不動産に関するQ&A
+
+  - id: inquiry
+    name: 問い合わせ/内見予約
+    required: true
+    description: 資料請求、内見予約
+```
+
+## サブカテゴリー別調整
+```yaml
+賃貸:
+  tone: "親しみやすい・新生活"
+  primary_color: "#2D6A4F"
+  key_sections: [hero, search, features, gallery, floor-plan, area, access, inquiry]
+  specific_features:
+    - 敷金礼金なし
+    - 新着物件
+    - 特典付き
+
+売買:
+  tone: "人生の購入・信頼"
+  primary_color: "#1B4332"
+  key_sections: [hero, features, gallery, floor-plan, area, voice, inquiry]
+  specific_features:
+    - ローンシミュレーション
+    - 購入事例
+    - 建物診断
+
+投資用:
+  tone: "資産形成・利回り"
+  primary_color: "#1E3A5F"
+  key_sections: [hero, features, benefits, area, roi, inquiry]
+  specific_features:
+    - 想定利回り
+    - 投資事例
+    - 管理体制
+
+リノベーション:
+  tone: "おしゃれ・個性"
+  primary_color: "#6B4C4A"
+  key_sections: [hero, features, gallery, before-after, voice, inquiry]
+  specific_features:
+    - Before/After
+    - デザインテーマ
+    - 施工事例
+
+シェアハウス:
+  tone: "コミュニティ・交流"
+  primary_color: "#E07A5F"
+  key_sections: [hero, features, gallery, community, residents, inquiry]
+  specific_features:
+    - 共有スペース
+    - イベント情報
+    - 入居者紹介
+```
+
+## コピーパターン
+```yaml
+hero:
+  catch_patterns:
+    - "{エリア}で見つける、理想の{タイプ}"
+    - "新生活のスタートを{特色}で"
+    - "{エリア}の{特徴}な住まい"
+  sub_patterns:
+    - "{駅名}から徒歩{分数}分"
+    - "{広さ}の広々とした空間"
+
+features:
+  patterns:
+    - "充実の設備"
+    - "便利な立地"
+    - "安心の管理体制"
+
+cta:
+  primary: "内見を予約する"
+  secondary: "資料をダウンロード"
+  tertiary: "詳細を見る"
+```
+
+## 特有要素
+```yaml
+search_conditions:
+  - エリア
+  - 家賃
+  - 間取り
+  - 築年数
+  - 設備条件
+
+property_details:
+  - 家賃
+  - 敷金・礼金
+  - 間取り
+  - 専有面積
+  - 築年数
+  - 所在階
+  - 向き
+```
+
+## 画像キーワード
+```yaml
+hero:
+  - "部屋 内装 明るい"
+  - "リビング モダン"
+
+gallery:
+  - "キッチン システムキッチン"
+  - "バスルーム おしゃれ"
+  - "ベッドルーム 快適"
+```

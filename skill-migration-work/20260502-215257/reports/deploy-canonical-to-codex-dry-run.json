@@ -1,0 +1,101 @@
+{
+  "target": "codex",
+  "target_root": "/Users/yuuki/.agents/skills",
+  "apply": false,
+  "overwrite": false,
+  "actions": [
+    {
+      "skill": "auto-improve",
+      "action": "up to date"
+    },
+    {
+      "skill": "code-review",
+      "action": "up to date"
+    },
+    {
+      "skill": "cognee",
+      "action": "up to date"
+    },
+    {
+      "skill": "debug-helper",
+      "action": "up to date"
+    },
+    {
+      "skill": "doc-generation",
+      "action": "up to date"
+    },
+    {
+      "skill": "figma",
+      "action": "up to date"
+    },
+    {
+      "skill": "figma-implement-design",
+      "action": "up to date"
+    },
+    {
+      "skill": "image-license",
+      "action": "up to date"
+    },
+    {
+      "skill": "lp-analytics",
+      "action": "up to date"
+    },
+    {
+      "skill": "lp-automation",
+      "action": "up to date"
+    },
+    {
+      "skill": "lp-automation-v2",
+      "action": "up to date"
+    },
+    {
+      "skill": "lp-category-settings",
+      "action": "up to date"
+    },
+    {
+      "skill": "lp-code-check",
+      "action": "up to date"
+    },
+    {
+      "skill": "lp-content",
+      "action": "up to date"
+    },
+    {
+      "skill": "lp-design-first-flow",
+      "action": "up to date"
+    },
+    {
+      "skill": "lp-legal",
+      "action": "up to date"
+    },
+    {
+      "skill": "lp-mobile",
+      "action": "up to date"
+    },
+    {
+      "skill": "lp-performance",
+      "action": "up to date"
+    },
+    {
+      "skill": "lp-seo",
+      "action": "up to date"
+    },
+    {
+      "skill": "lp-ux",
+      "action": "up to date"
+    },
+    {
+      "skill": "pdf",
+      "action": "up to date"
+    },
+    {
+      "skill": "security-audit",
+      "action": "up to date"
+    },
+    {
+      "skill": "test-generation",
+      "action": "up to date"
+    }
+  ],
+  "issues": []
+}

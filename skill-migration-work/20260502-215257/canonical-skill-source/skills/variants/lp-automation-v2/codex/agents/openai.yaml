@@ -1,0 +1,4 @@
+interface:
+  display_name: "LP Automation V2"
+  short_description: "Create lp-100 LPs with the established workflow"
+  default_prompt: "Create or update an LP in /Users/yuuki/Works/lp-100 using the established LP automation v2 workflow."

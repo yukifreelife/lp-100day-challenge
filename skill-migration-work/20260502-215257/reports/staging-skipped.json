@@ -1,0 +1,147 @@
+[
+  {
+    "target": "codex",
+    "skill": "auto-improve",
+    "reason": "already exists; requires manual conflict review"
+  },
+  {
+    "target": "claude",
+    "skill": "auto-improve",
+    "reason": "already exists; no overwrite"
+  },
+  {
+    "target": "codex",
+    "skill": "code-review",
+    "reason": "already exists; requires manual conflict review"
+  },
+  {
+    "target": "claude",
+    "skill": "code-review",
+    "reason": "already exists; no overwrite"
+  },
+  {
+    "target": "codex",
+    "skill": "cognee",
+    "reason": "already exists; requires manual conflict review"
+  },
+  {
+    "target": "claude",
+    "skill": "cognee",
+    "reason": "already exists; no overwrite"
+  },
+  {
+    "target": "codex",
+    "skill": "debug-helper",
+    "reason": "already exists; requires manual conflict review"
+  },
+  {
+    "target": "claude",
+    "skill": "debug-helper",
+    "reason": "already exists; no overwrite"
+  },
+  {
+    "target": "codex",
+    "skill": "doc-generation",
+    "reason": "already exists; requires manual conflict review"
+  },
+  {
+    "target": "claude",
+    "skill": "doc-generation",
+    "reason": "already exists; no overwrite"
+  },
+  {
+    "target": "codex",
+    "skill": "image-license",
+    "reason": "already exists; requires manual conflict review"
+  },
+  {
+    "target": "claude",
+    "skill": "image-license",
+    "reason": "already exists; no overwrite"
+  },
+  {
+    "target": "codex",
+    "skill": "lp-analytics",
+    "reason": "already exists; requires manual conflict review"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-analytics",
+    "reason": "already exists; no overwrite"
+  },
+  {
+    "target": "codex",
+    "skill": "lp-automation-v2",
+    "reason": "already exists; requires manual conflict review"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-automation-v2",
+    "reason": "already exists; no overwrite"
+  },
+  {
+    "target": "codex",
+    "skill": "lp-automation-v2.backup",
+    "reason": "invalid Codex skill name"
+  },
+  {
+    "target": "codex",
+    "skill": "lp-category-settings",
+    "reason": "already exists; requires manual conflict review"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-category-settings",
+    "reason": "already exists; no overwrite"
+  },
+  {
+    "target": "codex",
+    "skill": "lp-legal",
+    "reason": "already exists; requires manual conflict review"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-legal",
+    "reason": "already exists; no overwrite"
+  },
+  {
+    "target": "codex",
+    "skill": "lp-performance",
+    "reason": "already exists; requires manual conflict review"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-performance",
+    "reason": "already exists; no overwrite"
+  },
+  {
+    "target": "codex",
+    "skill": "lp-ux",
+    "reason": "already exists; requires manual conflict review"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-ux",
+    "reason": "already exists; no overwrite"
+  },
+  {
+    "target": "codex",
+    "skill": "security-audit",
+    "reason": "already exists; requires manual conflict review"
+  },
+  {
+    "target": "claude",
+    "skill": "security-audit",
+    "reason": "already exists; no overwrite"
+  },
+  {
+    "target": "codex",
+    "skill": "test-generation",
+    "reason": "already exists; requires manual conflict review"
+  },
+  {
+    "target": "claude",
+    "skill": "test-generation",
+    "reason": "already exists; no overwrite"
+  }
+]

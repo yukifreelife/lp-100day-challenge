@@ -1,0 +1,20 @@
+:root {
+  --color-warm-white: #fffaf3;
+  --color-soft-cream: #fff3e2;
+  --color-friendly-orange: #f47a2a;
+  --color-trust-orange: #c8561c;
+  --color-apricot: #ffb16a;
+  --color-mint-note: #ddf5e8;
+  --color-desk-ink: #24303a;
+  --color-warm-slate: #6c747c;
+  --color-gentle-line: #eadfd2;
+  --color-coral-red: #d94a3a;
+
+  --font-sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-soft: 0 18px 42px rgba(200, 86, 28, 0.12);
+  --shadow-card: 0 10px 26px rgba(36, 48, 58, 0.08);
+  --border-subtle: 1px solid var(--color-gentle-line);
+}

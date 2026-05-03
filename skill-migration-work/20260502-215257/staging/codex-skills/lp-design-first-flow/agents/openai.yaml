@@ -1,0 +1,7 @@
+interface:
+  display_name: "LP Design First Flow"
+  short_description: "LPの方向性設計から実装完了まで導く制作フロー"
+  default_prompt: "Use $lp-design-first-flow to guide a new LP from direction, tone, image generation, implementation, evaluation, and completion logging."
+
+policy:
+  allow_implicit_invocation: true

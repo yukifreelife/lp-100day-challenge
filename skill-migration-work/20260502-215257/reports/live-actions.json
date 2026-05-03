@@ -1,0 +1,177 @@
+[
+  {
+    "target": "codex",
+    "skill": "auto-improve",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "codex",
+    "skill": "code-review",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "codex",
+    "skill": "cognee",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "codex",
+    "skill": "debug-helper",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "codex",
+    "skill": "doc-generation",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "codex",
+    "skill": "image-license",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "codex",
+    "skill": "lp-analytics",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "codex",
+    "skill": "lp-code-check",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "codex",
+    "skill": "lp-content",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "codex",
+    "skill": "lp-legal",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "codex",
+    "skill": "lp-mobile",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "codex",
+    "skill": "lp-performance",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "codex",
+    "skill": "lp-seo",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "codex",
+    "skill": "lp-ux",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "codex",
+    "skill": "security-audit",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "codex",
+    "skill": "test-generation",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-code-check",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-content",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-mobile",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-seo",
+    "action": "skipped existing directory"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-analytics",
+    "action": "SKILL.md already exists; no change"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-category-settings",
+    "action": "SKILL.md already exists; no change"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-legal",
+    "action": "SKILL.md already exists; no change"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-performance",
+    "action": "SKILL.md already exists; no change"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-ux",
+    "action": "SKILL.md already exists; no change"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-automation-v2.backup",
+    "action": "backup directory not present"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-code-check",
+    "action": "root markdown not present"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-content",
+    "action": "root markdown not present"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-mobile",
+    "action": "root markdown not present"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-seo",
+    "action": "root markdown not present"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-analytics",
+    "action": "moved to /Users/yuuki/.claude/skill-archives/20260502-215257/lowercase-skill-md/lp-analytics/skill.legacy.md"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-category-settings",
+    "action": "moved to /Users/yuuki/.claude/skill-archives/20260502-215257/lowercase-skill-md/lp-category-settings/skill.legacy.md"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-legal",
+    "action": "moved to /Users/yuuki/.claude/skill-archives/20260502-215257/lowercase-skill-md/lp-legal/skill.legacy.md"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-performance",
+    "action": "moved to /Users/yuuki/.claude/skill-archives/20260502-215257/lowercase-skill-md/lp-performance/skill.legacy.md"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-ux",
+    "action": "moved to /Users/yuuki/.claude/skill-archives/20260502-215257/lowercase-skill-md/lp-ux/skill.legacy.md"
+  }
+]

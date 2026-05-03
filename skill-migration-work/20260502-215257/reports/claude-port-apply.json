@@ -1,0 +1,19 @@
+{
+  "staged": "/Users/yuuki/Works/lp-100/skill-migration-work/20260502-215257/staging/claude-port/skills",
+  "target": "/Users/yuuki/.claude/skills",
+  "actions": [
+    {
+      "skill": "lp-automation",
+      "action": "copied to ClaudeCode personal skills"
+    },
+    {
+      "skill": "lp-design-first-flow",
+      "action": "copied to ClaudeCode personal skills"
+    },
+    {
+      "skill": "pdf",
+      "action": "copied to ClaudeCode personal skills"
+    }
+  ],
+  "issues": []
+}

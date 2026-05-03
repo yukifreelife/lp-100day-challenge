@@ -1,0 +1,217 @@
+# 教育LP設定
+
+## 概要
+知的で親しみやすい、教育サービス向けのデザイン設定
+
+## カラーパレット
+```yaml
+primary: "#5B4B9E"      # 知的なパープル
+secondary: "#7C73DD"    # ライトパープル
+accent: "#FFD166"       # 親しみやすいイエロー
+background: "#FFF9E6"   # クリームイエロー
+text: "#333333"         # ダークグレー
+border: "#E8DFF0"       # ライトパープル
+shadow: "rgba(91, 75, 158, 0.1)"
+```
+
+## フォント設定
+```yaml
+japanese:
+  primary: "Noto Sans JP, sans-serif"
+  fallback: "Hiragino Sans, sans-serif"
+  weights: [400, 500, 700]
+
+english:
+  primary: "Inter, sans-serif"
+  fallback: "Roboto, sans-serif"
+  weights: [400, 500, 600, 700]
+
+line_height:
+  base: 1.8
+  heading: 1.4
+
+letter_spacing:
+  base: 0.03em
+  heading: 0.05em
+```
+
+## セクション構成
+```yaml
+sections:
+  - id: hero
+    name: ヒーロー
+    required: true
+    description: メッセージとビジュアル
+
+  - id: problem
+    name: 悩み
+    required: true
+    description: 学習の悩み、キャリアの悩み
+
+  - id: solution
+    name: 解決策
+    required: true
+    description: カリキュラム、メソッド
+
+  - id: features
+    name: 特徴
+    required: true
+    description: サービスの特徴
+
+  - id: curriculum
+    name: カリキュラム
+    required: true
+    description: 学習内容の明示
+
+  - id: instructors
+    name: 講師紹介
+    optional: true
+    description: 講師プロフィール
+
+  - id: voice
+    name: 受講生の声
+    required: true
+    description: 卒業生の声
+
+  - id: results
+    name: 学習成果・実績
+    required: true
+    description: 成果発表、就職実績
+
+  - id: pricing
+    name: 料金
+    required: true
+    description: コース別料金
+
+  - id: faq
+    name: よくある質問
+    optional: true
+    description: 不安解消Q&A
+
+  - id: cta
+    name: 無料体験/お問い合わせ
+    required: true
+    description: 無料体験、お申し込み
+```
+
+## サブカテゴリー別調整
+```yaml
+プログラミングスクール:
+  tone: "モダン・実践的"
+  primary_color: "#2563EB"
+  secondary_color: "#3B82F6"
+  accent_color: "#10B981"
+  key_sections: [hero, problem, solution, curriculum, instructors, voice, results, pricing, cta]
+  specific_features:
+    - 実践的カリキュラム
+    - 就職サポート
+    - メンター制度
+    - ポートフォリオ作成
+
+英会話:
+  tone: "国際・コミュニケーション"
+  primary_color: "#DC2626"
+  secondary_color: "#EF4444"
+  accent_color: "#3B82F6"
+  key_sections: [hero, problem, solution, features, instructors, voice, pricing, cta]
+  specific_features:
+    - ネイティブ講師
+    - レベル別クラス
+    - オンライン対応
+    - 無料体験レッスン
+
+予備校:
+  tone: "熱意・成果"
+  primary_color: "#DC2626"
+  secondary_color: "#B91C1C"
+  accent_color: "#FBBF24"
+  key_sections: [hero, problem, solution, curriculum, instructors, results, voice, pricing, cta]
+  specific_features:
+    - 合格実績
+    - 指導実績
+    - 学習管理
+    - 模試
+
+ヨガスタジオ:
+  tone: "穏やか・健康"
+  primary_color: "#7C73DD"
+  secondary_color: "#9E94E8"
+  accent_color: "#FCC2D7"
+  key_sections: [hero, problem, solution, features, instructors, schedule, voice, cta]
+  specific_features:
+    - レッスンスケジュール
+    - 講師紹介
+    - スタジオ設備
+    - 初心者歓迎
+
+音楽教室:
+  tone: "芸術・感性"
+  primary_color: "#5B4B9E"
+  secondary_color: "#7C73DD"
+  accent_color: "#FCC2D7"
+  key_sections: [hero, problem, solution, features, instructors, curriculum, voice, cta]
+  specific_features:
+    - 楽器別コース
+    - 講師プロフィール
+    - 発表会
+    - 教室紹介
+```
+
+## コピーパターン
+```yaml
+hero:
+  catch_patterns:
+    - "あなたの{目標}を、{方法}で叶える"
+    - "{期間}で、{成果}を実感"
+    - "誰でも、{目標}になれる"
+  sub_patterns:
+    - "挫折しない、継続できる学習"
+    - "プロから学ぶ、本物の技術"
+
+problem:
+  patterns:
+    - "こんな悩み、ありませんか？"
+    - "勉強しているのに、{不満}"
+    - "{目標}への近道が見つからない"
+
+results:
+  patterns:
+    - "{数値}%の方が、{期間}以内に{成果}"
+    - "累計{数値}名以上の卒業生"
+
+cta:
+  primary: "無料体験を予約する"
+  secondary: "カリキュラムを見る"
+  tertiary: "お問い合わせ"
+```
+
+## 特有要素
+```yaml
+trial:
+  enabled: true
+  duration: "60分"
+  types: [online, offline]
+
+learning_support:
+  - メンター制度
+  - 質問対応
+  - 学習管理ツール
+  - コミュニティ
+
+results_metrics:
+  - 受講満足度
+  - 卒業生数
+  - 就職・転職実績
+  - 目標達成率
+```
+
+## 画像キーワード
+```yaml
+hero:
+  - "学習 勉強 笑顔"
+  - "教室 授業 風景"
+
+instructors:
+  - "講師 先生"
+  - "指導 教える"
+```

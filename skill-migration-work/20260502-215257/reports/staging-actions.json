@@ -1,0 +1,27 @@
+[
+  {
+    "target": "claude",
+    "skill": "lp-analytics",
+    "action": "moved skill.legacy.md into archive staging"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-category-settings",
+    "action": "moved skill.legacy.md into archive staging"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-legal",
+    "action": "moved skill.legacy.md into archive staging"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-performance",
+    "action": "moved skill.legacy.md into archive staging"
+  },
+  {
+    "target": "claude",
+    "skill": "lp-ux",
+    "action": "moved skill.legacy.md into archive staging"
+  }
+]

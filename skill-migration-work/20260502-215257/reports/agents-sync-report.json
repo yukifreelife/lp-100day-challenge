@@ -1,0 +1,113 @@
+{
+  "source": "/Users/yuuki/.codex/skills",
+  "target": "/Users/yuuki/.agents/skills",
+  "copied_count": 23,
+  "skipped_existing_count": 0,
+  "actions": [
+    {
+      "skill": ".DS_Store",
+      "action": "skipped hidden/system directory"
+    },
+    {
+      "skill": ".system",
+      "action": "skipped hidden/system directory"
+    },
+    {
+      "skill": "codex-primary-runtime",
+      "action": "skipped missing SKILL.md"
+    },
+    {
+      "skill": "auto-improve",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "code-review",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "cognee",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "debug-helper",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "doc-generation",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "figma",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "figma-implement-design",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "image-license",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "lp-analytics",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "lp-automation",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "lp-automation-v2",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "lp-category-settings",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "lp-code-check",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "lp-content",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "lp-design-first-flow",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "lp-legal",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "lp-mobile",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "lp-performance",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "lp-seo",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "lp-ux",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "pdf",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "security-audit",
+      "action": "copied from ~/.codex/skills"
+    },
+    {
+      "skill": "test-generation",
+      "action": "copied from ~/.codex/skills"
+    }
+  ],
+  "issues": []
+}

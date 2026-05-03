@@ -1,0 +1,122 @@
+{
+  "source": "/Users/yuuki/.agents/skills",
+  "target": "/Users/yuuki/.claude/skills",
+  "apply": false,
+  "checks": [
+    {
+      "skill": "auto-improve",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "code-review",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "cognee",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "debug-helper",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "doc-generation",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "figma",
+      "action": "would copy",
+      "issues": []
+    },
+    {
+      "skill": "figma-implement-design",
+      "action": "would copy",
+      "issues": []
+    },
+    {
+      "skill": "image-license",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "lp-analytics",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "lp-automation",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "lp-automation-v2",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "lp-category-settings",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "lp-code-check",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "lp-content",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "lp-design-first-flow",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "lp-legal",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "lp-mobile",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "lp-performance",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "lp-seo",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "lp-ux",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "pdf",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "security-audit",
+      "action": "skipped existing",
+      "issues": []
+    },
+    {
+      "skill": "test-generation",
+      "action": "skipped existing",
+      "issues": []
+    }
+  ]
+}

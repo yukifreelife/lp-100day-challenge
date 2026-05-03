@@ -1,0 +1,214 @@
+# B2B/SaaS LP設定
+
+## 概要
+プロフェッショナルで信頼感のある、B2B/SaaS向けのデザイン設定
+
+## カラーパレット
+```yaml
+primary: "#2C5282"      # プロフェッショナルなロイヤルブルー
+secondary: "#4A5568"    # グレー
+accent: "#48BB78"       # 行動喚起のグリーン（CTAボタン用）
+background: "#FFFFFF"   # ホワイト
+text: "#1A202C"         # ダークグレー
+border: "#E2E8F0"       # ライトグレー
+shadow: "rgba(44, 82, 130, 0.1)"
+```
+
+## フォント設定
+```yaml
+japanese:
+  primary: "Noto Sans JP, sans-serif"
+  fallback: "Hiragino Sans, sans-serif"
+  weights: [400, 500, 700]
+
+english:
+  primary: "Inter, sans-serif"
+  fallback: "Roboto, sans-serif"
+  weights: [400, 500, 600, 700]
+
+line_height:
+  base: 1.6
+  heading: 1.3
+
+letter_spacing:
+  base: 0em
+  heading: 0.01em
+```
+
+## セクション構成
+```yaml
+sections:
+  - id: hero
+    name: ヒーロー
+    required: true
+    description: 価値提案（Value Proposition）
+
+  - id: problem
+    name: 課題提示
+    required: true
+    description: ターゲット企業の課題を明確化
+
+  - id: solution
+    name: 解決策
+    required: true
+    description: サービス概要
+
+  - id: features
+    name: 機能・特徴
+    required: true
+    description: 主要機能の紹介
+
+  - id: benefits
+    name: メリット
+    required: true
+    description: ROI、効率化等の数値メリット
+
+  - id: use-cases
+    name: 導入事例
+    required: true
+    description: 業種別の成功事例
+
+  - id: pricing
+    name: 料金プラン
+    required: true
+    description: プラン別料金
+
+  - id: faq
+    name: よくある質問
+    optional: true
+    description: 導入前の疑問解消
+
+  - id: cta
+    name: コールトゥアクション
+    required: true
+    description: 無料トライアル/お問い合わせ
+```
+
+## サブカテゴリー別調整
+```yaml
+SaaS:
+  tone: "モダン・効率的"
+  primary_color: "#2C5282"
+  secondary_color: "#4A5568"
+  accent_color: "#48BB78"
+  key_sections: [hero, problem, solution, features, benefits, use-cases, pricing, cta]
+  specific_features:
+    - 無料トライアル
+    - 料金プラン比較
+    - APIドキュメント
+    - セキュリティ証明
+
+採用ページ:
+  tone: "情熱・成長"
+  primary_color: "#2563EB"
+  secondary_color: "#1E40AF"
+  accent_color: "#F59E0B"
+  key_sections: [hero, about, culture, benefits, interviews, jobs, flow, cta]
+  specific_features:
+    - 会社文化・価値観
+    - 社員インタビュー
+    - 働き方改革
+    - 福利厚生
+
+コンサルティング:
+  tone: "専門・信頼"
+  primary_color: "#1E3A5F"
+  secondary_color: "#2C5282"
+  accent_color: "#C9A96E"
+  key_sections: [hero, problem, solution, methodology, team, use-cases, cta]
+  specific_features:
+    - コンサルタント紹介
+    - メソドロジー
+    - 実績数値
+    - 導入プロセス
+
+人材派遣:
+  tone: "親身・迅速"
+  primary_color: "#3B82F6"
+  secondary_color: "#2563EB"
+  accent_color: "#10B981"
+  key_sections: [hero, problem, solution, features, voice, process, cta]
+  specific_features:
+    - 登録者数
+    - 派遣実績
+    - サポート体制
+    - キャリアパス
+
+業務システム:
+  tone: "堅実・安定"
+  primary_color: "#374151"
+  secondary_color: "#4B5563"
+  accent_color: "#3B82F6"
+  key_sections: [hero, problem, solution, features, security, support, cta]
+  specific_features:
+    - セキュリティ
+    - サポート体制
+    - 導入実績
+    - カスタマイズ性
+```
+
+## コピーパターン
+```yaml
+hero:
+  catch_patterns:
+    - "{課題}を、{解決策}で解決"
+    - "{ターゲット}のための{サービス名}"
+    - "{数値}の企業が選ぶ{カテゴリー}"
+  sub_patterns:
+    - "{課題}で悩む担当者様へ"
+    - "導入から{期間}で効果を実感"
+
+problem:
+  patterns:
+    - "こんな課題、ありませんか？"
+    - "{課題}に頭を悩ませていませんか？"
+    - "これまで、{不満}を感じていませんでしたか？"
+
+benefits:
+  patterns:
+    - "{数値}%の業務効率化"
+    - "平均{期間}でROI達成"
+    - "{数値}社以上の導入実績"
+
+cta:
+  primary: "無料トライアルを始める"
+  secondary: "資料ダウンロード"
+  tertiary: "デモを依頼する"
+```
+
+## 特有要素
+```yaml
+metrics:
+  - 導入企業数
+  - 業務効率化率
+  - ROI達成期間
+  - 顧客満足度
+
+trust_elements:
+  - 導入企業ロゴ
+  - お客様の声
+  - セキュリティ認証
+  - プライバシーマーク
+  - サポート体制
+
+pricing_plans:
+  - Free: 無料トライアル
+  - Basic: 基本プラン
+  - Pro: プロフェッショナル
+  - Enterprise: エンタープライズ
+```
+
+## 画像キーワード
+```yaml
+hero:
+  - "ビジネス チーム 会议"
+  - "オフィス ワークスペース"
+
+features:
+  - "ダッシュボード UI"
+  - "データ 分析"
+
+use-cases:
+  - "ビジネス 握手"
+  - "成功 チーム"
+```
