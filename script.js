@@ -522,6 +522,17 @@ const worksData = [
     tech: ["React", "Tailwind CSS", "Vite"],
     url: "./day097/",
   },
+  {
+    day: "Day098",
+    title: "しろとはちのひなた時間 | 猫YouTubeチャンネルLP",
+    category: "Pet",
+    industry: "猫YouTubeチャンネル",
+    focus: "チャンネル登録 / 最新動画視聴",
+    summary: "白猫しろとハチワレ猫はちが登場する架空YouTubeチャンネルLP。モックアップ4枚をもとに、猫の毛並みやオッドアイ配色を感じる可愛らしいUIをReact + Tailwind CSSで再構成。",
+    metric: "4モック再現・抽出PNG素材・WebP/AVIF最適化・GA4仮計測・Browser Use QA・Lighthouse 99/100/100/100",
+    tech: ["React", "Tailwind CSS", "Vite"],
+    url: "./day098/",
+  },
 ];
 
 const colorByCategory = {
