@@ -1,0 +1,181 @@
+# Orchestrator Browser Use Baseline
+
+- URL: http://127.0.0.1:5173/#home
+- Screenshot: /Users/yuuki/Works/lp-100/day099/qa-screenshots/evaluation-browseruse-home.png
+- Console warn/error count: 1
+
+## Console Logs
+
+```json
+[
+  {
+    "level": "error",
+    "message": "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. グリップ力-★★★★★",
+    "timestamp": "2026-05-04T04:22:01.077Z",
+    "url": "http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=266de2c8"
+  }
+]
+```
+
+## DOM Snapshot
+
+```text
+- banner:
+  - link "トップへ戻る":
+    - /url: "#home"
+    - generic: ボルダリングギア通販
+  - navigation "主要ページ":
+    - link "特徴":
+      - /url: "#home"
+    - link "商品ラインナップ":
+      - /url: "#products"
+    - link "スターターセット":
+      - /url: "#starter-kit"
+    - link "使い方":
+      - /url: "#howto"
+    - link "比較・選び方":
+      - /url: "#guide"
+    - link "よくある質問":
+      - /url: "#faq"
+  - link "カートへ進む":
+    - /url: "#cart"
+    - generic: カート
+- main:
+  - paragraph: 基本ギアシステム
+  - heading "一手目から、指先を整える。" [level=1]
+  - paragraph: 液体チョーク、ブラシ、バッグ、テープを黒基調のスターター構成で。登る直前の迷いを減らし、グリップと携帯性を両立します。
+  - link "スターターセットを購入する":
+    - /url: "#starter-kit"
+  - link "商品ラインナップを見る":
+    - /url: "#products"
+  - paragraph: 準備時間
+  - paragraph: 60秒
+  - paragraph: ウォームアップ前に完了
+  - paragraph: 携帯点数
+  - paragraph: 6点
+  - paragraph: ジムバッグに収まる構成
+  - paragraph: 初心者適性
+  - paragraph: 高
+  - paragraph: 迷わず選べる基本セット
+  - img "スターターギアセット"
+  - paragraph: これひとつで、登りに集中できる。
+  - paragraph: 不安を減らす
+  - heading "登る前の詰まりを、ギアでほどく" [level=2]
+  - article:
+    - heading "手汗で一手目が不安定" [level=3]
+    - paragraph: 登る直前に指先が滑ると、ムーブの確認より不安が先に来ます。
+  - article:
+    - heading "道具がバッグ内で散らばる" [level=3]
+    - paragraph: チョーク、テープ、ブラシが分かれていると準備に余計な時間がかかります。
+  - article:
+    - heading "ホールドの粉残りが気になる" [level=3]
+    - paragraph: ブラシで整えないまま登ると、狙った保持感が戻りにくくなります。
+  - paragraph: 商品ラインナップ
+  - heading "必要なギアをまとめて選ぶ" [level=2]
+  - paragraph: 単品でも、セットでも。初級者が迷いやすい基本用品を中心に揃えました。
+  - article:
+    - link "液体チョーク":
+      - /url: "#product-liquid-chalk"
+      - img "液体チョーク"
+    - paragraph: チョーク
+    - heading "液体チョーク" [level=3]
+    - generic: 定番
+    - paragraph: 手汗を抑え、粉飛びを減らしながら指先の摩擦感を整えるベースチョーク。
+    - paragraph: ¥1,480
+    - link "詳しく見る":
+      - /url: "#product-liquid-chalk"
+  - article:
+    - link "チョークバッグ":
+      - /url: "#products"
+      - img "チョークバッグ"
+    - paragraph: 収納
+    - heading "チョークバッグ" [level=3]
+    - paragraph: 広口で手を入れやすく、ブラシとテープをまとめて持ち運べる軽量バッグ。
+    - paragraph: ¥2,400
+    - link "詳しく見る":
+      - /url: "#products"
+  - article:
+    - link "ホールドブラシ":
+      - /url: "#products"
+      - img "ホールドブラシ"
+    - paragraph: メンテナンス
+    - heading "ホールドブラシ" [level=3]
+    - paragraph: 細かい凹凸に残ったチョークを落とし、次の一手の摩擦を戻すブラシ。
+    - paragraph: ¥980
+    - link "詳しく見る":
+      - /url: "#products"
+  - article:
+    - link "フィンガーテープ":
+      - /url: "#products"
+      - img "フィンガーテープ"
+    - paragraph: 保護
+    - heading "フィンガーテープ" [level=3]
+    - paragraph: 皮膚の消耗が気になる指先を固定し、長時間の練習を支えます。
+    - paragraph: ¥760
+    - link "詳しく見る":
+      - /url: "#products"
+  - article:
+    - link "グリップバーム":
+      - /url: "#products"
+      - img "グリップバーム"
+    - paragraph: 保護
+    - heading "グリップバーム" [level=3]
+    - paragraph: 登った後の乾燥した手肌を整え、翌日のコンディション維持に使えるケア用品。
+    - paragraph: ¥1,260
+    - link "詳しく見る":
+      - /url: "#products"
+  - article:
+    - link "ミニホールド":
+      - /url: "#products"
+      - img "ミニホールド"
+    - paragraph: トレーニング
+    - heading "ミニホールド" [level=3]
+    - paragraph: 指先の置き方を確認するための小型ホールド。自宅でのフォーム確認に。
+    - paragraph: ¥3,600
+    - link "詳しく見る":
+      - /url: "#products"
+  - paragraph: 実感値
+  - heading "ギアが変われば、登りの準備が変わる" [level=2]
+  - paragraph: 自社テスト想定の参考値です。効果には個人差があります。
+  - paragraph: 密着感
+  - paragraph: +34%
+  - paragraph: 指先の接地感を整える
+  - paragraph: 準備の迷い
+  - paragraph: "-45%"
+  - paragraph: 必要品をひとまとめ
+  - paragraph: 清掃維持
+  - paragraph: +28%
+  - paragraph: ブラシ習慣を作りやすい
+  - img "ミニホールド"
+  - img "スターターギアセット"
+  - paragraph: スターターセット
+  - heading "登りの準備を最短に。" [level=2]
+  - list:
+    - listitem: ✓ 選ぶ時間を短縮：最初に必要な道具だけをまとめ、余計な買い足しを減らします。
+    - listitem: ✓ 練習前後まで対応：登る前のチョーク、登った後のケア、ホールド清掃まで一式で管理できます。
+    - listitem: ✓ ロゴなしの統一感：主張しすぎない黒基調で、ジムでも自宅でも使いやすい見た目です。
+  - paragraph: セット価格
+  - paragraph: ¥8,900
+  - link "詳細を見る":
+    - /url: "#starter-kit"
+  - paragraph: よくあるご質問
+  - heading "よくあるご質問" [level=2]
+  - generic "初めてなら何から買うべきですか？ +":
+    - generic: 初めてなら何から買うべきですか？
+    - generic: +
+  - paragraph: 液体チョーク、チョークバッグ、ブラシを優先すると、ジムでの準備と片付けが安定します。
+  - generic "商品にメーカー名やロゴは入っていますか？ +":
+    - generic: 商品にメーカー名やロゴは入っていますか？
+    - generic: +
+  - generic "液体チョークは毎回使いますか？ +":
+    - generic: 液体チョークは毎回使いますか？
+    - generic: +
+  - generic "セット内容を変更できますか？ +":
+    - generic: セット内容を変更できますか？
+    - generic: +
+  - heading "さあ、次の一手へ。" [level=2]
+  - link "今すぐギアを選ぶ":
+    - /url: "#products"
+- link "スターターセットを購入する":
+  - /url: "#starter-kit"
+```
