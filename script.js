@@ -533,6 +533,17 @@ const worksData = [
     tech: ["React", "Tailwind CSS", "Vite"],
     url: "./day098/",
   },
+  {
+    day: "Day099",
+    title: "ボルダリングギア通販 | スターターギアセットLP",
+    category: "EC",
+    industry: "ボルダリング用品・クライミングギア",
+    focus: "スターターセット購入 / 商品購入",
+    summary: "初めてボルダリングジムへ通う人が、液体チョーク、チョークバッグ、ブラシ、フィンガーテープ、グリップバームを迷わずそろえられる架空EC LP。黒基調のサイバーパンクUIとリアル写真調の商品素材で購入導線を強化。",
+    metric: "11ルート構成・カート/購入手続き・FAQフィルター・問い合わせフォーム・Lighthouse 100/100/100/100",
+    tech: ["React", "Tailwind CSS", "Vite"],
+    url: "./day099/",
+  },
 ];
 
 const colorByCategory = {
