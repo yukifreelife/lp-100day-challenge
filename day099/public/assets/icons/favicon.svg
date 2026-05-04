@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Bouldering gear favicon">
+  <defs>
+    <linearGradient id="frame" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.48" stop-color="#f0abfc"/>
+      <stop offset="1" stop-color="#fb923c"/>
+    </linearGradient>
+    <linearGradient id="hold" x1="20" y1="15" x2="47" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fb923c"/>
+      <stop offset="0.55" stop-color="#f472b6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.15 0 0 0 0 0.9 0 0 0 0 1 0 0 0 0.65 0"/>
+      <feBlend in="SourceGraphic" mode="screen"/>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#05060a"/>
+  <path d="M12 5h40l7 7v40l-7 7H12l-7-7V12z" fill="none" stroke="url(#frame)" stroke-width="3" filter="url(#glow)"/>
+  <path d="M17 43 25 18h18l6 12-9 17H25z" fill="#111827" stroke="#22d3ee" stroke-width="2.2"/>
+  <path d="M22 41 29 21h12l4 9-7 13H27z" fill="url(#hold)"/>
+  <path d="M30 26h11M27 33h16M25 39h13" stroke="#05060a" stroke-width="2.4" stroke-linecap="round" opacity="0.7"/>
+  <circle cx="16" cy="16" r="2.2" fill="#22d3ee"/>
+  <circle cx="49" cy="49" r="2.2" fill="#fb923c"/>
+</svg>

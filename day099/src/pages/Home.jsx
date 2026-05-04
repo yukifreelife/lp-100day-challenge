@@ -55,7 +55,7 @@ export default function Home() {
         </div>
 
         <NeonPanel className="relative overflow-hidden p-3" accent="cyan">
-          <OptimizedImage src={hero.image} alt="スターターギアセット" className="aspect-[5/4] w-full object-cover" loading="eager" fetchPriority="high" />
+          <OptimizedImage src={hero.image} alt="スターターギアセット" className="aspect-[5/4] w-full object-cover" loading="eager" fetchPriority="high" sizes="(max-width: 640px) 40vw, (max-width: 1024px) 52vw, 560px" />
           <div className="absolute bottom-5 left-5 right-5 border border-fuchsia-400/50 bg-black/70 p-4 backdrop-blur">
             <p className="text-sm font-bold text-cyan-200">これひとつで、登りに集中できる。</p>
           </div>
@@ -68,7 +68,7 @@ export default function Home() {
           {problemCards.map((card) => (
             <article key={card.title} className="carbon-panel p-4">
               <div className="relative z-10">
-                <OptimizedImage src={card.image} alt={card.title} className="aspect-[16/9] w-full border border-slate-700 object-cover" />
+                <OptimizedImage src={card.image} alt={card.title} className="aspect-[16/9] w-full border border-slate-700 object-cover" sizes="(max-width: 640px) 40vw, (max-width: 768px) 60vw, 360px" />
                 <h3 className="mt-5 text-xl font-black text-white">{card.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-300">{card.text}</p>
               </div>
@@ -96,13 +96,13 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <OptimizedImage src="/assets/products/mini-holds.webp" alt="ミニホールド" className="aspect-[4/3] w-full border border-cyan-300/40 object-cover" />
+          <OptimizedImage src="/assets/products/mini-holds.webp" alt="ミニホールド" className="aspect-[4/3] w-full border border-cyan-300/40 object-cover" sizes="(max-width: 640px) 40vw, (max-width: 1024px) 52vw, 460px" />
         </div>
       </CyberSection>
 
       <CyberSection className="section-container">
         <NeonPanel accent="magenta" className="grid items-center gap-6 p-4 md:grid-cols-[0.42fr_0.58fr]">
-          <OptimizedImage src={starterKitDetail.image} alt="スターターギアセット" className="aspect-[4/3] w-full object-cover" />
+          <OptimizedImage src={starterKitDetail.image} alt="スターターギアセット" className="aspect-[4/3] w-full object-cover" sizes="(max-width: 640px) 40vw, (max-width: 768px) 60vw, 430px" />
           <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
               <p className="eyebrow">スターターセット</p>

@@ -373,7 +373,7 @@ img[data-error='true'] {
   }
 
   .reveal.is-visible {
-    animation: reveal-up 520ms ease both;
+    animation: none;
   }
 
   .mobile-bottom-cta {

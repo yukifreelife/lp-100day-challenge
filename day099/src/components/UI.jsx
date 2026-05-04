@@ -19,9 +19,22 @@ const imageDimensions = {
   "mini-holds": [1402, 1122],
 };
 
+const responsiveProductImages = new Set(Object.keys(imageDimensions));
+
 function getImageDimensions(src = "") {
   const filename = src.split("/").pop()?.replace(/\.(png|webp|jpg|jpeg)$/i, "");
   return imageDimensions[filename] || [];
+}
+
+function getResponsiveImageProps(src = "", sizes) {
+  const match = src.match(/^(.*\/products\/)([^/.]+)\.webp$/);
+  if (!match || !responsiveProductImages.has(match[2])) return {};
+
+  const base = `${match[1]}${match[2]}`;
+  return {
+    srcSet: `${base}-480.webp 480w, ${base}-768.webp 768w, ${base}-1024.webp 1024w, ${src} 1536w`,
+    sizes: sizes || "(max-width: 640px) 40vw, (max-width: 1024px) 48vw, 520px",
+  };
 }
 
 export function IconSprite({ index = 0, size = 28, label = "", className = "" }) {
@@ -52,7 +65,7 @@ export function Button({ href, children, variant = "primary", className = "", tr
     "inline-flex items-center justify-center gap-2 border px-5 py-3 text-sm font-bold tracking-normal transition focus:outline-none focus:ring-2 focus:ring-cyan-300";
   const variants = {
     primary:
-      "border-orange-500 bg-orange-600 text-white shadow-[0_0_26px_rgba(255,90,31,0.35)] hover:border-cyan-300 hover:shadow-[0_0_30px_rgba(0,229,255,0.35)]",
+      "border-orange-500 bg-orange-700 text-white shadow-[0_0_26px_rgba(255,90,31,0.35)] hover:border-cyan-300 hover:shadow-[0_0_30px_rgba(0,229,255,0.35)]",
     secondary:
       "border-cyan-300/80 bg-black/30 text-cyan-100 shadow-[0_0_18px_rgba(0,229,255,0.16)] hover:bg-cyan-300/10",
     ghost: "border-slate-700 bg-slate-950/40 text-slate-200 hover:border-fuchsia-400 hover:text-white",
@@ -112,9 +125,11 @@ export function OptimizedImage({
   loading = "lazy",
   decoding = "async",
   fetchPriority,
+  sizes,
   ...props
 }) {
   const [width, height] = getImageDimensions(src);
+  const responsiveProps = getResponsiveImageProps(src, sizes);
 
   return (
     <img
@@ -124,6 +139,7 @@ export function OptimizedImage({
       loading={loading}
       decoding={decoding}
       fetchPriority={fetchPriority}
+      {...responsiveProps}
       width={width}
       height={height}
       onError={(event) => {
@@ -162,8 +178,9 @@ export function FaqRow({ question, answer, defaultOpen = false }) {
     <details className="group border border-slate-700 bg-slate-950/70 p-5" open={defaultOpen}>
       <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-left font-bold text-white">
         <span>{question}</span>
-        <span className="grid h-7 w-7 place-items-center border border-cyan-300 text-cyan-200 group-open:border-fuchsia-400 group-open:text-fuchsia-200">
-          +
+        <span className="grid h-7 w-7 place-items-center border border-cyan-300 text-cyan-200 group-open:border-fuchsia-400 group-open:text-fuchsia-200" aria-hidden="true">
+          <span className="group-open:hidden">+</span>
+          <span className="hidden group-open:block">−</span>
         </span>
       </summary>
       <p className="mt-4 leading-7 text-slate-300">{answer}</p>

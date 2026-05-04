@@ -1,19 +1,21 @@
-import { useEffect, useMemo, useState } from 'react';
+import { Suspense, lazy, useEffect, useMemo, useState } from 'react';
 import Home from './pages/Home.jsx';
-import Products from './pages/Products.jsx';
-import ProductDetail from './pages/ProductDetail.jsx';
-import StarterKit from './pages/StarterKit.jsx';
-import HowTo from './pages/HowTo.jsx';
-import Guide from './pages/Guide.jsx';
-import Faq from './pages/Faq.jsx';
-import Cart from './pages/Cart.jsx';
-import Checkout from './pages/Checkout.jsx';
-import Legal from './pages/Legal.jsx';
 import ErrorBoundary from './components/ErrorBoundary.jsx';
 import { bindScrollDepth, bindTrackedClicks, trackEvent, trackPageView } from './utils/analytics.js';
 import { couponCode, couponDiscount, formatPrice, getCartSummary } from './utils/cartMath.js';
 import { applyRouteMeta } from './utils/seo.js';
 import { cart } from './data/siteData.js';
+
+const Products = lazy(() => import('./pages/Products.jsx'));
+const ProductDetail = lazy(() => import('./pages/ProductDetail.jsx'));
+const StarterKit = lazy(() => import('./pages/StarterKit.jsx'));
+const HowTo = lazy(() => import('./pages/HowTo.jsx'));
+const Guide = lazy(() => import('./pages/Guide.jsx'));
+const Faq = lazy(() => import('./pages/Faq.jsx'));
+const Cart = lazy(() => import('./pages/Cart.jsx'));
+const Checkout = lazy(() => import('./pages/Checkout.jsx'));
+const Legal = lazy(() => import('./pages/Legal.jsx'));
+const Support = lazy(() => import('./pages/Support.jsx'));
 
 const routes = {
   home: Home,
@@ -31,6 +33,9 @@ const routes = {
   cart: Cart,
   checkout: Checkout,
   legal: Legal,
+  'support-chat': Support,
+  'support-email': Support,
+  'support-contact': Support,
 };
 
 const navItems = [
@@ -99,7 +104,10 @@ export default function App() {
   const [cartItems, setCartItems] = useState(readStoredCartItems);
   const [couponApplied, setCouponApplied] = useState(readStoredCouponApplied);
   const ActivePage = useMemo(() => routes[currentRoute] ?? Home, [currentRoute]);
-  const showGlobalMobileCta = !currentRoute.startsWith('product-') && !['starter-kit', 'cart', 'checkout'].includes(currentRoute);
+  const showGlobalMobileCta =
+    !currentRoute.startsWith('product-') &&
+    !currentRoute.startsWith('support-') &&
+    !['starter-kit', 'cart', 'checkout'].includes(currentRoute);
   const cartSummary = useMemo(() => getCartSummary(cartItems, { couponApplied }), [cartItems, couponApplied]);
   const cartCount = cartSummary.selectedItems.reduce((sum, item) => sum + item.quantity, 0);
 
@@ -191,16 +199,6 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const animationFrame = window.requestAnimationFrame(() => {
-      document.querySelectorAll('.reveal').forEach((element) => {
-        element.classList.add('is-visible');
-      });
-    });
-
-    return () => window.cancelAnimationFrame(animationFrame);
-  }, [currentRoute]);
-
-  useEffect(() => {
     const meta = applyRouteMeta(currentRoute);
     trackPageView(currentRoute, meta);
 
@@ -219,7 +217,7 @@ export default function App() {
     <div className="app-shell min-h-screen overflow-x-hidden bg-deep text-text-white">
       <a className="skip-link" href="#main-content">本文へ移動</a>
       <header className="site-header">
-        <a className="site-mark" href="#home" aria-label="トップへ戻る">
+        <a className="site-mark" href="#home" aria-label="ボルダリングギア通販 トップへ戻る">
           <span className="site-mark__text">ボルダリングギア通販</span>
         </a>
 
@@ -241,7 +239,6 @@ export default function App() {
         <a
           className="header-cart"
           href="#cart"
-          aria-label={`カートへ進む。${cartCount}点、合計${formatPrice(cartSummary.total)}`}
           data-tracking="cta_click"
           data-position="header_cart"
           data-type="navigation"
@@ -250,21 +247,24 @@ export default function App() {
           <span>カート</span>
           <span className="header-cart__badge" data-header-cart-count>{cartCount}</span>
           <span className="header-cart__total" data-header-cart-total>{formatPrice(cartSummary.total)}</span>
+          <span className="sr-only">へ進む</span>
         </a>
       </header>
 
       <main id="main-content" className="page-frame" tabIndex="-1">
         <ErrorBoundary resetKey={currentRoute}>
-          <ActivePage
-            cartItems={cartItems}
-            addToCart={addToCart}
-            updateCartQuantity={updateCartQuantity}
-            removeCartItem={removeCartItem}
-            couponApplied={couponApplied}
-            applyCouponCode={applyCouponCode}
-            removeCoupon={removeCoupon}
-            activeRoute={currentRoute}
-          />
+          <Suspense fallback={<div className="section-container py-20 text-slate-300">読み込み中...</div>}>
+            <ActivePage
+              cartItems={cartItems}
+              addToCart={addToCart}
+              updateCartQuantity={updateCartQuantity}
+              removeCartItem={removeCartItem}
+              couponApplied={couponApplied}
+              applyCouponCode={applyCouponCode}
+              removeCoupon={removeCoupon}
+              activeRoute={currentRoute}
+            />
+          </Suspense>
         </ErrorBoundary>
       </main>
 
