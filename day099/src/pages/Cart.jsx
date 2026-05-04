@@ -82,10 +82,9 @@ export default function Cart({
 
       <section className="section-container grid gap-6 pb-10 lg:grid-cols-[1fr_360px]">
         <NeonPanel accent="cyan" className="p-4 md:p-6">
-          <div className="grid grid-cols-[1fr_auto_auto] border-b border-slate-700 pb-4 text-sm font-bold text-slate-400">
+          <div className="grid grid-cols-[1fr_auto] border-b border-slate-700 pb-4 text-sm font-bold text-slate-400">
             <span>商品</span>
-            <span>数量</span>
-            <span className="text-right">価格</span>
+            <span className="text-right">数量・金額</span>
           </div>
 
           <div className="divide-y divide-slate-700/80">
@@ -93,7 +92,7 @@ export default function Cart({
               cartItems.map(({ product, quantity }) => (
                 <article
                   key={product.id}
-                  className={`grid gap-4 py-6 md:grid-cols-[180px_1fr_auto_auto] md:items-center ${quantity === 0 ? "opacity-70" : ""}`}
+                  className={`grid gap-4 py-6 md:grid-cols-[180px_minmax(0,1fr)_minmax(148px,auto)] md:items-center ${quantity === 0 ? "opacity-70" : ""}`}
                   data-cart-item={product.id}
                   data-cart-quantity={quantity}
                 >
@@ -102,7 +101,13 @@ export default function Cart({
                     <p className="inline-block border border-fuchsia-400 px-2 py-1 text-xs font-bold text-fuchsia-200">{product.badge || product.category}</p>
                     <h2 className="mt-3 text-2xl font-black text-white">{product.name}</h2>
                     <p className="mt-2 text-sm leading-6 text-slate-300">{product.summary}</p>
-                    {quantity === 0 && <p className="mt-2 text-sm font-bold text-lime-200">数量0のため購入対象外です。</p>}
+                    <p
+                      className={`mt-2 min-h-5 text-sm font-bold leading-5 ${quantity === 0 ? "text-lime-200" : "text-transparent"}`}
+                      aria-live="polite"
+                      aria-hidden={quantity === 0 ? undefined : true}
+                    >
+                      {quantity === 0 ? "数量0のため購入対象外です。" : ""}
+                    </p>
                     <button
                       className="mt-3 min-h-11 text-xs font-bold text-slate-400 transition hover:text-fuchsia-200"
                       type="button"
@@ -111,26 +116,30 @@ export default function Cart({
                       削除
                     </button>
                   </div>
-                  <div className="flex w-fit items-center border border-slate-600 bg-black/40">
-                    <button
-                      className="h-11 w-11 border-r border-slate-600 text-xl text-slate-200 transition hover:bg-cyan-300/10"
-                      type="button"
-                      aria-label={`${product.name}を減らす`}
-                      onClick={() => updateQuantity(product.id, product.name, quantity - 1)}
-                    >
-                      −
-                    </button>
-                    <span className="grid h-11 w-12 place-items-center font-black text-white" aria-live="polite" data-cart-quantity-value={product.id}>{quantity}</span>
-                    <button
-                      className="h-11 w-11 border-l border-slate-600 text-xl text-slate-200 transition hover:bg-cyan-300/10"
-                      type="button"
-                      aria-label={`${product.name}を増やす`}
-                      onClick={() => updateQuantity(product.id, product.name, quantity + 1)}
-                    >
-                      ＋
-                    </button>
+                  <div className="flex flex-col gap-3 md:items-end md:justify-self-end">
+                    <div className="flex w-[148px] items-center border border-slate-600 bg-black/40" aria-label={`${product.name}の数量`}>
+                      <button
+                        className="h-11 w-11 shrink-0 border-r border-slate-600 text-xl text-slate-200 transition hover:bg-cyan-300/10"
+                        type="button"
+                        aria-label={`${product.name}を減らす`}
+                        onClick={() => updateQuantity(product.id, product.name, quantity - 1)}
+                      >
+                        −
+                      </button>
+                      <span className="grid h-11 flex-1 place-items-center font-black text-white" aria-live="polite" data-cart-quantity-value={product.id}>{quantity}</span>
+                      <button
+                        className="h-11 w-11 shrink-0 border-l border-slate-600 text-xl text-slate-200 transition hover:bg-cyan-300/10"
+                        type="button"
+                        aria-label={`${product.name}を増やす`}
+                        onClick={() => updateQuantity(product.id, product.name, quantity + 1)}
+                      >
+                        ＋
+                      </button>
+                    </div>
+                    <p className="min-w-[148px] text-left text-2xl font-black text-white md:text-right" data-line-total={product.id}>
+                      {formatPrice(priceValue(product.price) * quantity)}
+                    </p>
                   </div>
-                  <p className="text-right text-2xl font-black text-white" data-line-total={product.id}>{formatPrice(priceValue(product.price) * quantity)}</p>
                 </article>
               ))
             ) : (

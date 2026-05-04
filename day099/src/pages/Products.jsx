@@ -8,9 +8,10 @@ const compareRows = ['グリップ力', '携帯性', 'メンテナンス性', '�
 const categoryOptions = ['すべて', 'セット', ...productCategories];
 const priceValue = (price) => Number(price.replace(/[^\d]/g, ''));
 
-export default function Products() {
+export default function Products({ addToCart }) {
   const [selectedCategory, setSelectedCategory] = useState('すべて');
   const [sortOrder, setSortOrder] = useState('recommended');
+  const [notice, setNotice] = useState('');
 
   const visibleProducts = useMemo(() => {
     const filtered =
@@ -29,6 +30,11 @@ export default function Products() {
       return products.findIndex((product) => product.id === a.id) - products.findIndex((product) => product.id === b.id);
     });
   }, [selectedCategory, sortOrder]);
+
+  const addProductToCart = (productId, productName) => {
+    const message = addToCart?.(productId, productName);
+    setNotice(message || `${productName}をカートに追加しました。`);
+  };
 
   return (
     <>
@@ -78,7 +84,10 @@ export default function Products() {
             <option value="starter">初めて向け順</option>
           </select>
         </div>
-        <ProductGrid products={visibleProducts} />
+        <p className="mb-4 min-h-6 text-sm font-bold text-lime-200" role="status" aria-live="polite">
+          {notice}
+        </p>
+        <ProductGrid products={visibleProducts} cta="カートに追加" onAddToCart={addProductToCart} />
       </CyberSection>
 
       <CyberSection className="section-container">

@@ -1,7 +1,8 @@
 import { CyberSection } from '../components/Layout.jsx';
-import { Button, FaqRow, IconSprite, NeonPanel, OptimizedImage, StickyPurchaseBar } from '../components/UI.jsx';
-import { ProductCard, PurchasePanel } from '../components/Product.jsx';
-import { faqs, getProductById, starterKitDetail } from '../data/siteData.js';
+import { Button, IconSprite, NeonPanel, OptimizedImage, StickyPurchaseBar } from '../components/UI.jsx';
+import { PurchasePanel } from '../components/Product.jsx';
+import { getProductById, starterKitDetail } from '../data/siteData.js';
+import { formatPrice, priceValue } from '../utils/cartMath.js';
 
 const reasonCards = [
   ['基本をしっかりカバー', 'ジム通いで使う基本ギアをまとめました。'],
@@ -18,6 +19,9 @@ const reviews = [
 
 export default function StarterKit({ addToCart }) {
   const included = starterKitDetail.includedIds.map(getProductById).filter(Boolean);
+  const singleItemTotal = included.reduce((sum, item) => sum + priceValue(item.price), 0);
+  const starterPrice = priceValue(starterKitDetail.purchase.price);
+  const priceDifference = starterPrice - singleItemTotal;
   const addStarterKit = () => {
     addToCart?.("starter-kit", starterKitDetail.title);
     window.location.hash = "cart";
@@ -71,15 +75,21 @@ export default function StarterKit({ addToCart }) {
                 </div>
               ))}
               <div className="flex justify-between gap-4 pt-2 text-lg font-black">
-                <dt>通常合計</dt>
-                <dd>¥9,240</dd>
+                <dt>単品合計</dt>
+                <dd>{formatPrice(singleItemTotal)}</dd>
               </div>
             </dl>
           </div>
           <div className="border border-fuchsia-400/60 bg-fuchsia-400/10 p-6 text-center">
-            <p className="text-sm font-bold text-fuchsia-200">スターターセットなら</p>
+            <p className="text-sm font-bold text-fuchsia-200">5点セット価格</p>
             <p className="mt-2 text-6xl font-black text-orange-300">{starterKitDetail.purchase.price}</p>
-            <p className="mt-4 border border-lime-300/70 px-4 py-3 text-2xl font-black text-lime-200">1,260円お得</p>
+            <p className={`mt-4 border px-4 py-3 text-xl font-black ${priceDifference >= 0 ? "border-orange-400/70 text-orange-200" : "border-lime-300/70 text-lime-200"}`}>
+              {priceDifference < 0 ? "セット割引" : "単品合計との差額"}{" "}
+              {priceDifference === 0
+                ? "なし"
+                : `${priceDifference > 0 ? "+" : "-"}${formatPrice(Math.abs(priceDifference))}`}
+            </p>
+            <p className="mt-3 text-xs font-bold leading-5 text-slate-400">表示価格はカート内のセット商品価格と連動しています。</p>
           </div>
           <div className="grid content-center">
             <OptimizedImage src="/assets/products/hands-chalk.webp" alt="チョークをつけた手" className="aspect-[16/10] w-full border border-slate-700 object-cover" />
@@ -109,15 +119,6 @@ export default function StarterKit({ addToCart }) {
               <h3 className="mt-3 text-lg font-black text-white">{title}</h3>
               <p className="mt-3 text-sm leading-7 text-slate-300">{text}</p>
             </article>
-          ))}
-        </div>
-      </CyberSection>
-
-      <CyberSection className="section-container">
-        <h2 className="mb-6 text-3xl font-black text-white">よくあるご質問</h2>
-        <div className="grid gap-3 md:grid-cols-2">
-          {faqs.slice(0, 4).map((faq, index) => (
-            <FaqRow key={faq.question} {...faq} defaultOpen={index === 0} />
           ))}
         </div>
       </CyberSection>
