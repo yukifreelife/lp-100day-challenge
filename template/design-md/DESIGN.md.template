@@ -1,0 +1,218 @@
+---
+version: "0.1.0"
+name: "{{PROJECT_NAME}}"
+description: "{{ONE_SENTENCE_DESCRIPTION}}"
+colors:
+  primary: "{{HEX_PRIMARY}}"
+  secondary: "{{HEX_SECONDARY}}"
+  accent: "{{HEX_ACCENT}}"
+  background: "{{HEX_BACKGROUND}}"
+  surface: "{{HEX_SURFACE}}"
+  surface-variant: "{{HEX_SURFACE_VARIANT}}"
+  outline: "{{HEX_OUTLINE}}"
+  text-primary: "{{HEX_TEXT_PRIMARY}}"
+  text-secondary: "{{HEX_TEXT_SECONDARY}}"
+  cta-primary: "{{HEX_CTA_PRIMARY}}"
+  success: "{{HEX_SUCCESS}}"
+  warning: "{{HEX_WARNING}}"
+  error: "{{HEX_ERROR}}"
+typography:
+  headline-xl:
+    fontFamily: "{{HEADLINE_FONT}}"
+    fontSize: "{{HEADLINE_XL_SIZE}}"
+    fontWeight: "{{HEADLINE_XL_WEIGHT}}"
+    lineHeight: "{{HEADLINE_XL_LINE_HEIGHT}}"
+    letterSpacing: "0"
+  headline-lg:
+    fontFamily: "{{HEADLINE_FONT}}"
+    fontSize: "{{HEADLINE_LG_SIZE}}"
+    fontWeight: "{{HEADLINE_LG_WEIGHT}}"
+    lineHeight: "{{HEADLINE_LG_LINE_HEIGHT}}"
+    letterSpacing: "0"
+  headline-md:
+    fontFamily: "{{HEADLINE_FONT}}"
+    fontSize: "{{HEADLINE_MD_SIZE}}"
+    fontWeight: "{{HEADLINE_MD_WEIGHT}}"
+    lineHeight: "{{HEADLINE_MD_LINE_HEIGHT}}"
+    letterSpacing: "0"
+  body-md:
+    fontFamily: "{{BODY_FONT}}"
+    fontSize: "16px"
+    fontWeight: 400
+    lineHeight: 1.7
+    letterSpacing: "0"
+  label-md:
+    fontFamily: "{{LABEL_FONT}}"
+    fontSize: "14px"
+    fontWeight: 700
+    lineHeight: 1.3
+    letterSpacing: "0"
+spacing:
+  xs: "8px"
+  sm: "12px"
+  md: "16px"
+  lg: "24px"
+  xl: "32px"
+  xxl: "48px"
+  section: "{{SECTION_SPACING}}"
+  container: "{{CONTAINER_WIDTH}}"
+rounded:
+  none: "0"
+  sm: "{{RADIUS_SM}}"
+  md: "{{RADIUS_MD}}"
+  lg: "{{RADIUS_LG}}"
+  full: "999px"
+elevation:
+  none: "none"
+  sm: "{{SHADOW_SM}}"
+  md: "{{SHADOW_MD}}"
+  lg: "{{SHADOW_LG}}"
+components:
+  button-primary:
+    background: "{colors.cta-primary}"
+    text: "{colors.background}"
+    minHeight: "48px"
+    radius: "{rounded.md}"
+    shadow: "{elevation.sm}"
+  button-secondary:
+    background: "transparent"
+    border: "{colors.primary}"
+    text: "{colors.primary}"
+    minHeight: "48px"
+    radius: "{rounded.md}"
+  card:
+    background: "{colors.surface}"
+    border: "{colors.outline}"
+    radius: "{rounded.lg}"
+    shadow: "{elevation.sm}"
+  input:
+    background: "{colors.surface}"
+    border: "{colors.outline}"
+    text: "{colors.text-primary}"
+    radius: "{rounded.md}"
+---
+
+# Design System
+
+## Overview
+
+{{PROJECT_NAME}} is {{PROJECT_CONTEXT}}.
+
+The visual identity should feel {{VISUAL_IDENTITY}}. The primary conversion goal is {{PRIMARY_CONVERSION_GOAL}}. This file is the design source of truth for AI agents and future UI edits.
+
+Use this DESIGN.md before implementing or revising:
+
+1. Read the YAML tokens for exact values.
+2. Read the Markdown sections for intent and usage rules.
+3. Map each screen element to a token or component rule before coding.
+4. Add a new token only when an existing token cannot express the design safely.
+
+## Colors
+
+- **Primary** (`{{HEX_PRIMARY}}`): {{PRIMARY_USAGE}}.
+- **Secondary** (`{{HEX_SECONDARY}}`): {{SECONDARY_USAGE}}.
+- **Accent** (`{{HEX_ACCENT}}`): {{ACCENT_USAGE}}.
+- **Background** (`{{HEX_BACKGROUND}}`): {{BACKGROUND_USAGE}}.
+- **Surface** (`{{HEX_SURFACE}}`): {{SURFACE_USAGE}}.
+- **Outline** (`{{HEX_OUTLINE}}`): {{OUTLINE_USAGE}}.
+- **Text primary** (`{{HEX_TEXT_PRIMARY}}`): main headings and body text.
+- **Text secondary** (`{{HEX_TEXT_SECONDARY}}`): supporting copy, captions, metadata.
+- **CTA primary** (`{{HEX_CTA_PRIMARY}}`): primary conversion actions only.
+
+Use color by role, not by visual preference. If a color is assigned to CTA, do not use it as decoration.
+
+## Typography
+
+- **Headline font**: `{{HEADLINE_FONT}}` for hero and section titles.
+- **Body font**: `{{BODY_FONT}}` for descriptions, forms, FAQ, and legal text.
+- **Label font**: `{{LABEL_FONT}}` for navigation, badges, captions, and technical labels.
+
+Rules:
+
+- Keep Japanese text readable at mobile width.
+- Use `letterSpacing: 0` unless the project explicitly requires another value.
+- Do not scale font size with viewport width.
+- Keep body copy concise and useful for the conversion goal.
+
+## Layout
+
+- Container: `{{CONTAINER_WIDTH}}`.
+- Section spacing: `{{SECTION_SPACING}}`.
+- Primary layout rhythm: {{LAYOUT_RHYTHM}}.
+- Hero layout: {{HERO_LAYOUT_RULE}}.
+- Product/service cards: {{CARD_LAYOUT_RULE}}.
+- Forms: {{FORM_LAYOUT_RULE}}.
+- Mobile: {{MOBILE_LAYOUT_RULE}}.
+
+Keep fixed-format UI elements stable with aspect ratio, grid tracks, min/max widths, and reserved content height where data changes.
+
+## Elevation & Depth
+
+Depth should be expressed through {{DEPTH_STRATEGY}}.
+
+- Use `{elevation.sm}` for small interactive lift.
+- Use `{elevation.md}` for floating panels or sticky UI.
+- Use `{elevation.lg}` only for major conversion panels, modals, or overlays.
+
+Avoid adding new shadows that conflict with the surface hierarchy.
+
+## Shapes
+
+- Default radius: `{rounded.md}`.
+- Card radius: `{rounded.lg}`.
+- Full pill radius: `{rounded.full}` only for small badges or segmented controls.
+
+Shape language: {{SHAPE_LANGUAGE}}.
+
+Do not mix strongly rounded and strongly angular components in the same view unless this contrast is explicitly part of the concept.
+
+## Components
+
+### Header
+
+{{HEADER_RULES}}
+
+### Buttons
+
+- Primary: use `{components.button-primary}` for the single most important conversion action.
+- Secondary: use `{components.button-secondary}` for navigation, comparison, or lower-priority actions.
+- Minimum tap target: 44px.
+- Primary purchase/contact buttons should be at least 48px high.
+
+### Cards
+
+{{CARD_RULES}}
+
+### Forms
+
+{{FORM_RULES}}
+
+### Media
+
+{{MEDIA_RULES}}
+
+### FAQ
+
+{{FAQ_RULES}}
+
+### Conversion Area
+
+{{CONVERSION_RULES}}
+
+## Do's and Don'ts
+
+Do:
+
+- Use this file as the first design reference for UI changes.
+- Keep tokens synchronized with implementation tokens in Tailwind/CSS.
+- Preserve the intended visual identity and conversion path.
+- Use real project assets and write clear alt text.
+- Verify desktop and mobile after visual changes.
+
+Don't:
+
+- Do not paste a full mockup as one background image.
+- Do not invent one-off colors, radii, or shadows without adding a token.
+- Do not use CTA colors for decorative noise.
+- Do not let implementation notes leak into customer-facing copy.
+- Do not create card-in-card clutter unless the component rule explicitly allows it.

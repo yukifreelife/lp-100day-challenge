@@ -43,6 +43,13 @@
 - Base new LP themes on the project direction: `個人事業主・個人サービス展開者向けLP制作`.
 - Prefer themes for individual business owners, freelancers, solo service providers, specialist practitioners, and local small services unless the user explicitly requests a different direction.
 
+## DESIGN.md Rule
+- For new design-heavy LP work, create or update `dayXXX/DESIGN.md` as the design source of truth.
+- Prefer the reusable template at `template/design-md/DESIGN.md.template`.
+- Use the current DESIGN.md style: YAML front matter for machine-readable design tokens, followed by Markdown sections for rationale and agent-facing rules.
+- Keep the canonical section order: Overview, Colors, Typography, Layout, Elevation & Depth, Shapes, Components, Do's and Don'ts.
+- Treat older files such as `design/tone-and-manner.md` or `design/TONE_AND_PALETTE.md` as supporting context; promote reusable visual rules into `DESIGN.md`.
+
 ## Handoff Rule
 - Use `day046+/logs/HANDOFF_LOG.md` for decisions, risks, changes, and next actions (standard structure for clientwork days).
 - When work is paused and will resume in a later day directory, create or update a restart brief in the relevant `logs/` directory.
