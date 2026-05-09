@@ -43,6 +43,10 @@ coverage/
 playwright-report/
 test-results/
 .playwright-mcp/
+**/.playwright-mcp/
+**/*storage-state*.json
+**/*storage_state*.json
+**/*state*.json
 .wrangler/
 .vercel/
 .netlify/
