@@ -72,4 +72,6 @@ day[0-9][0-9][0-9]-*.json
 *.rej
 
 # Sensitive project artifacts
+**/delivery_mail_password_*.md
+**/delivery_zip_password_*.txt
 day023/secure/delivery_zip_password_*.txt
