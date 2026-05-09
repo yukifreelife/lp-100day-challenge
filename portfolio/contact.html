@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | ゆうき LP Portfolio</title>
+  <meta name="description" content="LP制作相談の問い合わせページ。お名前、メール、相談内容を入力してメール作成へ進めます。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | ゆうき LP Portfolio">
+  <meta property="og:description" content="LP制作相談の問い合わせページ。お名前、メール、相談内容を入力してメール作成へ進めます。">
+  <link rel="canonical" href="https://yuki-lp-portfolio.pages.dev/contact.html">
+  <meta property="og:url" content="https://yuki-lp-portfolio.pages.dev/contact.html">
+  <meta property="og:image" content="https://yuki-lp-portfolio.pages.dev/assets/ogp.png">
+  <meta property="og:site_name" content="ゆうき LP Portfolio">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact | ゆうき LP Portfolio",
+      "url": "https://yuki-lp-portfolio.pages.dev/contact.html",
+      "description": "LP制作相談の問い合わせページ。"
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">Y</span><span>ゆうき</span><span class="brand-sub">LP Portfolio</span></a>
+      <button class="nav-toggle" type="button" aria-label="ナビゲーションを開閉" aria-expanded="false" data-nav-toggle><span></span></button>
+      <nav class="site-nav" aria-label="主要ナビゲーション" data-site-nav>
+        <a href="index.html">Home</a>
+        <a href="works.html">Works</a>
+        <a href="case-day100.html">Case</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="page-main">
+    <section class="section">
+      <div class="wrap contact-layout">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h1>相談内容を送る。</h1>
+          <p class="lead">下記フォームに入力すると、内容を反映したメール作成画面を開きます。相談内容が固まりきっていない段階でも送信できます。</p>
+          <form class="contact-form" data-contact-form novalidate>
+            <div class="field">
+              <label for="name">お名前</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">メール</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="message">相談内容</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <p class="form-status" aria-live="polite" data-form-status></p>
+            <button class="button red" type="submit">メールを作成する</button>
+          </form>
+        </div>
+        <aside class="aside-box" aria-labelledby="direct-mail-title">
+          <h2 id="direct-mail-title">直接メール</h2>
+          <p>フォームが動作しない場合は、下記メールアドレスをご利用ください。</p>
+          <p><a class="text-link" href="mailto:yuki.freelife@gmail.com">yuki.freelife@gmail.com</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <span>ゆうき / LP Portfolio</span>
+      <a href="works.html">実績を見る</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

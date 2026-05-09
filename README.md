@@ -16,12 +16,14 @@ python3 -m http.server 8080
 ```
 
 ブラウザで `http://localhost:8080` を開いて確認します。
+公開用の専用サイトは `http://localhost:8080/portfolio/` で確認します。
 
 ## ファイル構成
 
 - `index.html`: ポートフォリオ用レイアウト（FVリール / Featured Cases / All Works / Contact）
 - `styles.css`: デザイン、アニメーション、レスポンシブ
 - `script.js`: 実績データ管理、リール生成、事例生成、フィルタ検索
+- `portfolio/`: Day093〜Day100を厳選して見せる公開用ポートフォリオ専用サイト
 - `README.md`: この説明
 - `lp100-progress/`: LP-100チャレンジの進捗、作業時間、振り返り、スキル管理の集約フォルダ
 
@@ -49,9 +51,10 @@ python3 -m http.server 8080
 
 ## 差し替えポイント
 
-- メール連絡先: `index.html` の `mailto:hello@example.com`
-- フォームURL: `index.html` の `https://example.com/contact`
-- OGP: `index.html` の `og:url`, `og:image`
+- 公開用連絡先: `portfolio/script.js` の `CONTACT_EMAIL` と `portfolio/contact.html` の直接メールリンク。現在は `yuki.freelife@gmail.com`
+- 公開URL: `https://yuki-lp-portfolio.pages.dev/`。`portfolio/*.html` の canonical、`og:url`、JSON-LD URL、`og:image` は公開URL基準で設定済み
+- OGP画像: `portfolio/assets/ogp.png`
+- 内部ドキュメント: `portfolio/docs/` は公開デプロイ対象から除外する
 
 ## 補足
 

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case Day100 | 受付導線整理LP</title>
+  <meta name="description" content="Day100 受付導線整理LPのケーススタディ。課題設定、設計、実装、検証、改善ループを説明。">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Case Day100 | 受付導線整理LP">
+  <meta property="og:description" content="Day100 受付導線整理LPのケーススタディ。課題設定、設計、実装、検証、改善ループを説明。">
+  <link rel="canonical" href="https://yuki-lp-portfolio.pages.dev/case-day100.html">
+  <meta property="og:url" content="https://yuki-lp-portfolio.pages.dev/case-day100.html">
+  <meta property="og:image" content="https://yuki-lp-portfolio.pages.dev/assets/ogp.png">
+  <meta property="og:site_name" content="ゆうき LP Portfolio">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Day100 受付導線整理LP",
+      "url": "https://yuki-lp-portfolio.pages.dev/case-day100.html",
+      "description": "個人サービスの受付導線を整理したLP制作ケーススタディ。",
+      "creator": {
+        "@type": "Person",
+        "name": "ゆうき"
+      }
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">Y</span><span>ゆうき</span><span class="brand-sub">LP Portfolio</span></a>
+      <button class="nav-toggle" type="button" aria-label="ナビゲーションを開閉" aria-expanded="false" data-nav-toggle><span></span></button>
+      <nav class="site-nav" aria-label="主要ナビゲーション" data-site-nav>
+        <a href="index.html">Home</a>
+        <a href="works.html">Works</a>
+        <a href="case-day100.html">Case</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="page-main">
+    <section class="section case-hero">
+      <div class="wrap">
+        <p class="eyebrow">Case Study / Day100</p>
+        <h1>受付導線整理LP</h1>
+        <p class="lead">個人サービスの「何を頼めるか」「いくらかかるか」「どう相談するか」を整理し、問い合わせ前の迷いを減らすLPとして設計しました。</p>
+        <div class="case-frame">
+          <img src="assets/works/day100.png" alt="Day100 受付導線整理LPのプレビュー" width="320" height="7076" loading="eager" decoding="async" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <p class="eyebrow">Project Notes</p>
+        <h2>課題設定から改善まで。</h2>
+        <div class="case-grid">
+          <article class="case-block">
+            <h3>課題設定</h3>
+            <p>個人サービスでは、提供内容、価格、問い合わせ条件、対応範囲が散らばると、相談前の不安が大きくなります。LPでは受付前に確認したい情報を一画面ずつ整理する方針にしました。</p>
+          </article>
+          <article class="case-block">
+            <h3>設計</h3>
+            <p>ホーム、サービス内容、流れ、事例、料金、問い合わせ、FAQを分け、ユーザーが必要な情報へすぐ移動できる構造にしました。</p>
+          </article>
+          <article class="case-block">
+            <h3>実装</h3>
+            <p>React + Tailwind CSS + Viteで構築し、生成素材を個別アセットとして利用。モックを一枚貼りするのではなく、DOM、CSS、画像素材を組み合わせて再構成しました。</p>
+          </article>
+          <article class="case-block">
+            <h3>検証</h3>
+            <p>ブラウザで主要ルート、アセット表示、フォーム入力、FAQ開閉、横スクロールの有無を確認。気づいた不整合を改善項目として切り出しました。</p>
+          </article>
+          <article class="case-block">
+            <h3>改善ループ</h3>
+            <p>制作後にSEO、モバイル、法務、パフォーマンス、UXの観点で見直し、弱い箇所を次の改善対象として整理しました。</p>
+          </article>
+          <article class="case-block">
+            <h3>制作姿勢</h3>
+            <p>AIを制作工程に組み込み、設計・実装・検証を回すことで、見た目だけでなく判断材料として使えるページを目指しました。</p>
+          </article>
+        </div>
+        <p><a class="button red" href="contact.html">制作相談をする</a></p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <span>ゆうき / LP Portfolio</span>
+      <a href="contact.html">相談する</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
