@@ -544,6 +544,18 @@ const worksData = [
     tech: ["React", "Tailwind CSS", "Vite"],
     url: "./day099/",
   },
+  {
+    day: "Day100",
+    title: "みちしるべ整理室 | 受付導線整理LP",
+    category: "Operations",
+    industry: "個人サロン・教室運営",
+    focus: "無料診断 / 受付導線整理",
+    summary: "完全予約制の小さな個人サロン・教室向けに、初回LINE、体験メニュー、予約ページ、当日案内、継続案内をひとつの受付導線へ整理する架空サービスLP。ペルソナ再設計、生成アセット分離、評価・改善ループまで実施。",
+    metric: "9ハッシュルート構成・AVIF/WebP最適化・フォームUX・SEO/法務導線・Browser Use/Playwright QA",
+    tech: ["React", "Tailwind CSS", "Vite"],
+    url: "./day100/dist/",
+    thumbnail: "./portfolio/assets/works/day100.png",
+  },
 ];
 
 const colorByCategory = {
@@ -631,7 +643,8 @@ function getThumbnailCandidates(work) {
     `${dayDir}README.png`,
   ];
 
-  return Array.from(new Set(names.map((name) => `${base}${name}`)));
+  const generatedCandidates = names.map((name) => `${base}${name}`);
+  return Array.from(new Set([work.thumbnail, ...generatedCandidates].filter(Boolean)));
 }
 
 function createReelCard(work) {
